@@ -138,14 +138,14 @@
     background: var(--color-paper-2);
     font-family: var(--font-display);
     font-size: var(--text-xl);
-    line-height: 1.45;
+    line-height: var(--text-xl--line-height);
   }
 
   .guess {
     font-family: var(--font-display);
     font-weight: 600;
     font-size: var(--text-figure);
-    line-height: 1.25;
+    line-height: var(--text-figure--line-height);
     font-variant-numeric: tabular-nums;
     overflow-wrap: break-word;
     min-width: 0;
@@ -247,7 +247,7 @@
     translate: -50% -50%;
     font-family: var(--font-body);
     font-size: var(--text-sm);
-    line-height: 1.2;
+    line-height: var(--text-sm--line-height);
     white-space: nowrap;
     color: var(--color-muted);
     text-shadow:
@@ -341,13 +341,5 @@
     cursor: not-allowed;
     opacity: 0.5;
     translate: none;
-  }
-}
-
-@layer base {
-  h1,
-  h2,
-  h3 {
-    line-height: 1.35;
   }
 }
