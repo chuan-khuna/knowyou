@@ -21,8 +21,12 @@ One prompt shown to the player, with a fixed set of answer options. Every answer
 _Avoid_: Item, card
 
 **Pick question**:
-A question that names three titles from different eras and asks which one the player watched or met at a stage of life, such as "ตอนประถม คุณดูเรื่องไหนบ่อยที่สุด?". Its answer probabilities come from the named titles' own question facts.
+A question that names a few things and asks which one the player knows. In Anime Age it names three titles from different eras and asks which one the player watched or met at a stage of life, such as "ตอนประถม คุณดูเรื่องไหนบ่อยที่สุด?". In Province it names the front-runners' signatures, is built during the play, and is identified by those signatures. Its answer probabilities come from the named titles' or provinces' own facts.
 _Avoid_: Multiple choice, which-one question
+
+**Signature**:
+A food, tradition or souvenir a local recognises as their province's own, such as ข้าวสังข์หยด for Phatthalung. Province's pick questions name signatures, never landmarks.
+_Avoid_: Landmark, specialty, OTOP
 
 **Question bank**:
 All the questions a game can ask.
@@ -53,6 +57,18 @@ _Avoid_: Prediction, answer, result
 **Reveal**:
 The moment the game shows its guess and the player says whether it is right.
 _Avoid_: Result, verdict
+
+**Live map**:
+The Province map beside each question. Provinces the game has ruled out fade to the paper tone, the rest are tinted by belief, and Thailand's neighbours sit around it as context.
+_Avoid_: Heatmap, progress map
+
+**Ruled out**:
+A province whose belief has fallen below 1% of the leader's. It fades on the live map, but a later answer can still bring it back.
+_Avoid_: Eliminated, excluded
+
+**Saved play**:
+A play kept in the browser so a refresh doesn't lose it: its seed, its answer keys and the reveal. It is kept until the player starts again.
+_Avoid_: Session, save game
 
 **Memory strata**:
 The Anime Age result view: era bands showing how much of each era's anime the player knew.
