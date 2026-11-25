@@ -27,9 +27,9 @@ Sound reinforces visible feedback, never replaces it. Every sound below has a vi
 | --- | --- | --- |
 | เริ่มเลย, เล่นอีกครั้ง | `sound.start` | `start` |
 | Choosing an answer | `sound.answer` | `select` |
-| The guess appears | `sound.guess` | `complete` |
-| The player says the guess is right | `sound.right` | `success` |
-| The player says it is wrong | `sound.wrong` | `info`, never the harsh `error` |
+| The guess appears, the quiz result opens | `sound.guess` | `complete` |
+| The player says the guess is right, a right quiz answer | `sound.right` | `success` |
+| The player says it is wrong, a wrong quiz answer | `sound.wrong` | `info`, never the harsh `error` |
 | The real-age stepper | `sound.step` | `progress-step` |
 | A game card on the home page | `sound.openGame` | `open` |
 | Picking a real province | `sound.pickProvince` | `select` |
