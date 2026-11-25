@@ -1,0 +1,60 @@
+/* Surfaces: the confidence meter, paper sheets, the cue, the guess figure and links. */
+@layer components {
+  .meter {
+    height: 10px;
+    overflow: hidden;
+    border-radius: var(--radius-pill);
+    background: var(--color-paper-3);
+  }
+
+  .meter-fill {
+    height: 100%;
+    border-radius: var(--radius-pill);
+    background: var(--color-mint);
+    transform-origin: left center;
+    transition: transform var(--dur-long) var(--ease-snap);
+  }
+
+  .meter-fill--inferred {
+    background: color-mix(in oklab, var(--color-mint) 45%, var(--color-paper-3));
+  }
+
+  .sheet {
+    border-radius: var(--radius-card);
+    background: var(--color-card);
+    box-shadow: inset 0 0 0 1px var(--color-rule), var(--shadow-card);
+  }
+
+  .sheet--gold {
+    background: var(--color-highlight);
+    color: var(--color-highlight-ink);
+  }
+
+  .cue {
+    margin: 0;
+    padding: var(--space-md) var(--space-lg);
+    border-radius: var(--radius-stock);
+    background: var(--color-paper-2);
+    font-family: var(--font-display);
+    font-size: var(--text-xl);
+    line-height: var(--text-xl--line-height);
+  }
+
+  .guess {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: var(--text-figure);
+    line-height: var(--text-figure--line-height);
+    font-variant-numeric: tabular-nums;
+    overflow-wrap: break-word;
+    min-width: 0;
+  }
+
+  .link {
+    color: var(--color-accent-2);
+  }
+
+  .guess--words {
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
+}
