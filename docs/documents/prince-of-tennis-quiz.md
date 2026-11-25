@@ -86,6 +86,7 @@ The same rules as the games' saved play (`play-screen.md`), in the quiz's own `r
 
 1. Find a page that confirms the answer, such as the Prince of Tennis wiki or Wikipedia. Keep to the manga, the TV anime and the National Tournament OVAs, up to the end of the National Tournament.
 2. Add an entry to `bank.ts` under a new, stable id. Never reuse or rename an id.
-3. Write the prompt, the answer and three plausible decoys in the spellings Thai fans use.
-4. Set the tier, and the page's URL as `source`. Add a one-line `note` if it makes the reveal better.
-5. Run `bun test src/games/prince-of-tennis`.
+3. Ask only about moves and special moves, schools, or story events. Don't ask about birthdays, numbers, scores or personal trivia (family, pets, hobbies, food).
+4. Write the prompt, the answer and three plausible decoys in the spellings Thai fans use.
+5. Set the tier, and the page's URL as `source`. Add a one-line `note` if it makes the reveal better.
+6. Run `bun test src/games/prince-of-tennis`.
