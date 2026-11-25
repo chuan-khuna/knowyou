@@ -35,6 +35,8 @@ A playable game at `/province`, on the shared play screen. It asks one question 
 19. As a question author, I want to write questions as facts about provinces (dialect mix, region, food and tradition tags), not as 77-row tables, so that the bank is reviewable.
 20. As a maintainer, I want simulated-player and persona suites like Anime Age's, so that I know the engine and the bank work.
 21. As a maintainer, I want the province engine to implement the shared engine contract, so that the play screen and back button work unchanged.
+22. As a player, I want a play in progress to survive a page refresh, so that a reload doesn't throw away my answers. This uses the shared restore that Anime Age gets.
+23. As a player, I want UI sounds with a mute toggle, so that the game feels alive and I can silence it. These are the same sounds as Anime Age.
 
 ## Implementation Decisions
 

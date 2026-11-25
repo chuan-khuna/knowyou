@@ -1,6 +1,8 @@
 # Spec: Anime Age v1
 
-Status: ready-for-agent
+Status: done
+
+v1 is merged on `main`. The scope has grown since: see **Changes since v1** below. Those changes are implemented on the unmerged branches `anime-cues` and `hallmark-redesign` (stacked `main` → `anime-cues` → `hallmark-redesign` → `province`), or are still in progress. Follow-up work is in `issues/`.
 
 Terms follow `GLOSSARY.md`. Decisions come from `docs/records/2026-11-25-foundation-and-stack.md`.
 
@@ -10,7 +12,7 @@ Thai players have no game that guesses something personal about them from what t
 
 ## Solution
 
-A browser game in Thai at `/anime-age`. It asks about anime and anime-adjacent memories one question at a time, and shows a live confidence meter. When it is confident, or runs out of useful questions, it makes exactly one guess ("คุณอายุ 27 ปี"). The player says whether it is right. If not, they can enter their real age. The result screen shows the memory strata: how much the player knew of each era's anime, with sample titles. `/` is a game picker that lists Anime Age as playable and Province and University as coming later.
+A browser game in Thai at `/anime-age`. It asks about anime only (no era or life questions, see Changes since v1) one question at a time, and shows a live confidence meter. When it is confident, or runs out of useful questions, it makes exactly one guess ("คุณอายุ 27 ปี"). The player says whether it is right. If not, they can enter their real age. The result screen shows the memory strata: how much the player knew of each era's anime, with sample titles. `/` is a game picker that lists Anime Age as playable and Province and University as coming later.
 
 ## User Stories
 
@@ -22,7 +24,7 @@ A browser game in Thai at `/anime-age`. It asks about anime and anime-adjacent m
 6. As a player, I want a live confidence meter, so that I can watch the game narrow down on me.
 7. As a player, I want familiarity questions to offer four levels (watched it a lot / seen it / only know the name / don't know), so that I can answer honestly at my real level of memory.
 8. As a player, I want the answer wording to fit the question type, for example a film asks whether I saw it in a cinema or on TV or streaming, so that the options make sense.
-9. As a player, I want some questions about what watching anime was like back then (which channel, what time slot, dubbed or subbed, VCD or streaming), so that the game isn't only about titles.
+9. ~~As a player, I want some questions about what watching anime was like back then (which channel, what time slot, dubbed or subbed, VCD or streaming), so that the game isn't only about titles.~~ Removed after v1: the game asks about anime only.
 10. As a player, I want "don't know" on every question, so that I am never forced to guess.
 11. As a PC player, I want number keys to pick answers, so that I can play without the mouse.
 12. As a mobile player, I want big tap targets, so that I can play one-handed.
@@ -61,8 +63,8 @@ A browser game in Thai at `/anime-age`. It asks about anime and anime-adjacent m
 - **Engine per game.** Each game owns its engine. The play screen talks to an engine only through a small interface: start a play, get the next question (or learn that it is ready to guess), record an answer, read confidence, read the guess. Anime Age adds a memory strata read for its result screen. The exact interface comes out of the architect step.
 - **Anime Age engine.** It keeps a posterior over the hidden value, ages 10–50, and updates it with Bayes on every answer. The prior bumps gently over roughly ages 15–35. Ages are ordered, so evidence for one age smooths onto its neighbours. Confidence is the posterior mass within ±1 year of the best age. Edge guesses collapse to "≤10" or "≥50". The next question is chosen by expected information gain. The stop rule is: confidence at or above a threshold (about 0.88) after a minimum number of questions (about 12), or a maximum number of questions (about 45), or no remaining question that is expected to move the posterior. Question choice has some randomness, so plays vary.
 - **Question facts.** Each question stores facts, not tables. A familiarity question about a title records its first-run years in Thailand, its channel or platform, its audience (kids, teens, general, adult), and how popular it was in Thailand. A model derives P(answer | age) from these facts, including the effect of parents knowing kids' shows and the long tail of classics everyone has heard of. A question may carry an override table for one or more answers. The question bank is typed TypeScript modules.
-- **Answer sets.** Familiarity questions use four levels plus the wording variants for films. Era and life questions ("what channel did you watch anime on as a kid?") use 3–5 choices and always include "don't know".
-- **Memory strata.** Era bands (for example ≤1995, 1996–2002, 2003–2009, 2010–2016, 2017–2021, 2022+) are sized by how much the player knew of each band's titles, with sample titles.
+- **Answer sets.** Familiarity questions use four levels plus the wording variants for films. Every question has 4–5 options, each with one clear meaning and an optional hint, and "don't know" is always last. ~~Era and life questions use 3–5 choices.~~ Era and life questions were removed after v1.
+- **Memory strata.** Era bands (for example ≤1995, 1996–2002, 2003–2009, 2010–2016, 2017–2021, 2022+) are sized by how much the player knew of each band's titles, with sample titles. Bands are labelled in Common Era years (ค.ศ.), not พ.ศ.
 - **Deciding answer.** The answer whose update moved the posterior most toward the final guess.
 
 ## Testing Decisions
@@ -83,7 +85,24 @@ A browser game in Thai at `/anime-age`. It asks about anime and anime-adjacent m
 - Share and export, share images, and per-result OG cards.
 - English or any other language.
 - A browser test of the play screen.
-- Restoring a play after a page refresh.
+- ~~Restoring a play after a page refresh.~~ Now in scope, see Changes since v1.
+
+## Changes since v1
+
+Each change was asked for by the user after v1 merged.
+
+| Change | State |
+| --- | --- |
+| **Pick questions** ("เรื่องไหน…"): choose a title from a list. | Merged in v1. |
+| **Clear options.** Each option has one meaning and an optional hint; 4–5 options; don't-know last. | Merged in v1. |
+| **Era and life `choice` questions removed** ("anime only, no ways/methods"). Story 9 is obsolete. | Done on `anime-cues`, not merged. |
+| **Cue questions** (about 45): "this song line, quote or character is from which anime?", with 3 titles plus ไม่รู้ / นึกไม่ออก. | Done on `anime-cues`, not merged. |
+| **Memory strata labelled in ค.ศ.** | Done, not merged. |
+| **Visual redesign** with the Hallmark skill: Rosé Pine palette, Mali headings, Noto Sans Thai Looped body text, thin card-stock answers. Story 29 (light and dark themes) still holds. | Done on `hallmark-redesign`, not merged. |
+| **Refresh restore.** A play survives a page refresh. Local storage keeps the seed, the answers and the reveal until the player presses start or play again. Shared with Province. | In progress. |
+| **UI sounds** (CC0) with a mute toggle. Shared with Province. | In progress. |
+
+Latest measured numbers on `anime-cues`: hit rate 0.845 pooled, worst age 45 at 0.675, mean 27.8 questions.
 
 ## Further Notes
 
