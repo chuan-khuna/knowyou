@@ -114,6 +114,27 @@ export const bank = {
     decoys: ["ฟู ริน คา ซัง", "เทะสึกะโซน", "สภาวะไร้ตัวตน"],
     source: `${WIKI}Triple_Counters`,
   },
+  "ryoma-drive-series": {
+    tier: "easy",
+    prompt: "ท่าชุดไดรฟ์ A ถึง D เป็นท่าของใคร?",
+    answer: "เอจิเซ็น เรียวมะ",
+    decoys: ["โมโมชิโระ ทาเคชิ", "อาคุสึ จิน", "คิริฮาระ อาคายะ"],
+    source: `${WIKI}Ryoma_Echizen/Playing_Style_%26_Techniques`,
+  },
+  "tezuka-left-handed": {
+    tier: "easy",
+    prompt: "เทะสึกะ คุนิมิสึ ตีเทนนิสด้วยมือข้างไหน?",
+    answer: "มือซ้าย",
+    decoys: ["มือขวา", "ใช้ได้ทั้งสองมือ", "เปลี่ยนมือตามลูก"],
+    source: `${WIKI}Kunimitsu_Tezuka`,
+  },
+  "sanada-school": {
+    tier: "easy",
+    prompt: "ซานาดะ เก็นอิจิโร่ เป็นนักเทนนิสของโรงเรียนอะไร?",
+    answer: "ริคไค",
+    decoys: ["เฮียวเท", "ชิเทนโฮจิ", "ยามาบุกิ"],
+    source: `${WIKI}Genichir%C5%8D_Sanada`,
+  },
 
   // medium
   "rikkai-captain": {
@@ -224,6 +245,55 @@ export const bank = {
     answer: "ริคไค",
     decoys: ["เฮียวเท", "ฟุโดมิเนะ", "รคคาคุ"],
     source: `${WIKI}Rikkai_Dai_Fuzoku_Chuu`,
+  },
+  "oishi-territory": {
+    tier: "medium",
+    prompt: "ท่าที่โออิชิยืนคุมเส้นหลังให้คิคุมารุบุกหน้าเน็ตได้เต็มที่ ชื่ออะไร?",
+    answer: "อาณาเขตของโออิชิ",
+    decoys: ["มูนวอลเลย์", "ออสเตรเลียนฟอร์เมชัน", "คิคุมารุบีม"],
+    source: `${WIKI}Sh%C5%ABichir%C5%8D_%C5%8Cishi`,
+  },
+  "ryoma-split-step": {
+    tier: "medium",
+    prompt: "เทคนิคกระโดดเบา ๆ ตอนคู่แข่งตีลูก เพื่อให้เรียวมะออกตัวได้เร็ว เรียกว่าอะไร?",
+    answer: "สปลิตสเต็ป",
+    decoys: ["ซามูไรไดรฟ์", "มูนวอลเลย์", "ทวิสต์เสิร์ฟ"],
+    source: `${WIKI}Split_Step`,
+  },
+  "tezuka-zero-shiki": {
+    tier: "medium",
+    prompt: "ลูกหยอดของเทะสึกะที่ตกแล้วกลิ้งกลับเข้าหาเน็ตโดยไม่เด้ง ชื่ออะไร?",
+    answer: "ซีโร่ชิกิ ดร็อปช็อต",
+    decoys: ["นางแอ่นหวนกลับ", "มูนวอลเลย์", "สเน็ค"],
+    source: `${WIKI}Zero-Shiki_Drop_Shot`,
+  },
+  "yanagi-data-tennis": {
+    tier: "medium",
+    prompt: "ยานางิ เร็นจิ แห่งริคไค เล่นเทนนิสสไตล์ไหน?",
+    answer: "เทนนิสข้อมูล",
+    decoys: ["เทนนิสกายกรรม", "เทนนิสพลัง", "เทนนิสลวงตา"],
+    source: `${WIKI}Renji_Yanagi`,
+  },
+  "sengoku-school": {
+    tier: "medium",
+    prompt: "เซนโงคุ คิโยสุมิ เป็นนักเทนนิสของโรงเรียนอะไร?",
+    answer: "ยามาบุกิ",
+    decoys: ["ฟุโดมิเนะ", "เซนต์รูดอล์ฟ", "เฮียวเท"],
+    source: `${WIKI}Kiyosumi_Sengoku`,
+  },
+  "mizuki-school": {
+    tier: "medium",
+    prompt: "มิซึกิ ฮาจิเมะ ผู้วางแผนให้ทีม เป็นนักเทนนิสของโรงเรียนอะไร?",
+    answer: "เซนต์รูดอล์ฟ",
+    decoys: ["ยามาบุกิ", "ริคไค", "ฟุโดมิเนะ"],
+    source: `${WIKI}Hajime_Mizuki`,
+  },
+  "shitenhoji-captain": {
+    tier: "medium",
+    prompt: "ใครเป็นกัปตันโรงเรียนชิเทนโฮจิ?",
+    answer: "ชิราอิชิ คุราโนะสุเกะ",
+    decoys: ["โทยามะ คินทาโร่", "จิโทเสะ เซ็นริ", "โอชิทาริ เคนยะ"],
+    source: `${WIKI}Shitenh%C5%8Dji_Junior_High`,
   },
 
   // hard
@@ -369,6 +439,34 @@ export const bank = {
     decoys: ["ซานาดะ เก็นอิจิโร่", "อาโตเบะ เคย์โกะ", "โทยามะ คินทาโร่"],
     source: `${WIKI}Ryoma_Echizen/Tennis_Record`,
   },
+  "kaido-boomerang-snake": {
+    tier: "hard",
+    prompt: "สเน็คของไคโดที่ลูกโค้งอ้อมเสาเน็ตเข้าสนาม ชื่ออะไร?",
+    answer: "บูมเมอแรงสเน็ค",
+    decoys: ["สเน็ค", "ทวิสต์เสิร์ฟ", "แจ็คไนฟ์"],
+    source: `${WIKI}Kaoru_Kaid%C5%8D`,
+  },
+  "marui-tightrope": {
+    tier: "hard",
+    prompt: "ลูกหยอดของมารุอิ บุนตะ ที่ลูกกลิ้งไปตามสายเน็ตก่อนตกฝั่งคู่แข่ง ชื่ออะไร?",
+    answer: "ไต่เชือก (สึนะวาตาริ)",
+    decoys: ["ซามูไรไดรฟ์", "ฮาโดคิว", "นางแอ่นหวนกลับ"],
+    source: `${WIKI}Bunta_Marui`,
+  },
+  "yagyu-laser-beam": {
+    tier: "hard",
+    prompt: "ลูกตีพุ่งตรงความเร็วสูงของยางิว ฮิโรชิ ชื่ออะไร?",
+    answer: "เลเซอร์บีม",
+    decoys: ["สกั๊ดเสิร์ฟ", "คิคุมารุบีม", "ฮาโดคิว"],
+    source: `${WIKI}Hiroshi_Yagy%C5%AB`,
+  },
+  "nationals-before-hyotei": {
+    tier: "hard",
+    prompt: "ระดับประเทศ ก่อนเจอเฮียวเท เซชุนเอาชนะโรงเรียนไหน?",
+    answer: "ฮิงะ",
+    decoys: ["ริคไค", "ชิเทนโฮจิ", "ยามาบุกิ"],
+    source: `${WIKI}Higa_Junior_High`,
+  },
 
   // very-hard
   "tezuka-phantom": {
@@ -512,5 +610,19 @@ export const bank = {
     answer: "คิเทะ เอชิโร่",
     decoys: ["คาอิ ยูจิโร่", "ทานิชิ เคอิ", "ฮิราโคบะ ริน"],
     source: `${WIKI}Higa_Junior_High`,
+  },
+  "kirihara-knuckle-serve": {
+    tier: "very-hard",
+    prompt: "ลูกเสิร์ฟของคิริฮาระที่เด้งพุ่งเข้าหาตัวคู่แข่ง ชื่ออะไร?",
+    answer: "ลูกเสิร์ฟนัคเคิล",
+    decoys: ["ทวิสต์เสิร์ฟ", "สกั๊ดเสิร์ฟ", "ลูกเสิร์ฟล่องหน"],
+    source: `${WIKI}Akaya_Kirihara`,
+  },
+  "hyotei-host-wildcard": {
+    tier: "very-hard",
+    prompt: "แม้จะตกรอบระดับคันโต เฮียวเทได้ไปแข่งระดับประเทศเพราะอะไร?",
+    answer: "ได้สิทธิ์พิเศษจากการเป็นเจ้าภาพ",
+    decoys: ["ชนะรอบแก้ตัว", "ทีมอื่นถอนตัว", "ได้คะแนนสะสมสูงสุด"],
+    source: `${WIKI}Hyotei_Academy`,
   },
 } as const satisfies QuestionBank;

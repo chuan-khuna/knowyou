@@ -5,18 +5,21 @@ import { BigButton, PlayAgainBar, Shell } from "@/components/play-screen";
 import {
   QUESTIONS_PER_PLAY,
   QUIZ_RECORD_KEY,
+  bank,
   encodeQuizRecord,
   princeOfTennisQuiz as quiz,
   restoreQuiz,
   type AnsweredQuizQuestion,
   type FinishedQuizPlay,
   type QuizCard,
+  type QuizMode,
   type QuizPlay,
   type Tier,
 } from "@/games/prince-of-tennis";
 import { sound } from "@/lib/sound";
 
 const TITLE = "คุณรู้จัก Prince of Tennis ดีแค่ไหน";
+const BANK_SIZE = Object.keys(bank).length;
 
 const TIER_LABELS: Record<Tier, string> = {
   easy: "ง่าย",
@@ -68,11 +71,14 @@ export function PrinceOfTennisQuiz() {
     writeStored(keep ? encodeQuizRecord(screen.play) : null);
   }, [screen]);
 
-  const start = useCallback(() => {
+  const startIn = useCallback((mode: QuizMode) => {
     sound.start();
     writeStored(null);
-    setScreen({ kind: "playing", play: quiz.start(randomSeed()), seen: 0 });
+    setScreen({ kind: "playing", play: quiz.start(randomSeed(), mode), seen: 0 });
   }, []);
+  const start = useCallback(() => startIn("standard"), [startIn]);
+  const startAll = useCallback(() => startIn("all"), [startIn]);
+  const playAgain = useCallback(() => startIn(screen.kind === "playing" ? screen.play.mode : "standard"), [startIn, screen]);
 
   const play = screen.kind === "playing" ? screen.play : null;
   const revealing = screen.kind === "playing" && screen.seen < screen.play.answered.length;
@@ -123,6 +129,10 @@ export function PrinceOfTennisQuiz() {
           <p>ตอบแต่ละข้อแล้วจะรู้ทันทีว่าถูกหรือผิด จบแล้วดูคะแนนและฉายาแฟนของคุณ ไม่มีจับเวลา คิดได้เต็มที่</p>
         </div>
         <BigButton onClick={start}>เริ่มเลย</BigButton>
+        <button type="button" onClick={startAll} className="stock mt-4 text-lg">
+          ตอบทุกข้อ ({BANK_SIZE} ข้อ)
+        </button>
+        <p className="mt-2 text-center text-sm text-muted">โหมดตอบทุกข้อ ถามทุกคำถามในคลัง เรียงจากง่ายไปยาก ไม่มีฉายาแฟน</p>
       </Shell>
     );
   }
@@ -132,7 +142,7 @@ export function PrinceOfTennisQuiz() {
   if (revealing) {
     const last = current.answered.at(-1)!;
     return (
-      <Shell status={<Progress number={last.question.number} score={current.score} />}>
+      <Shell status={<Progress number={last.question.number} total={current.total} score={current.score} />}>
         <QuestionHeading card={last.question} />
         <Reveal answer={last} />
         <BigButton onClick={advance} autoFocus>
@@ -146,13 +156,13 @@ export function PrinceOfTennisQuiz() {
   if (current.phase === "finished") {
     return (
       <Shell>
-        <Result play={current} playAgain={start} />
+        <Result play={current} playAgain={playAgain} />
       </Shell>
     );
   }
 
   return (
-    <Shell status={<Progress number={current.question.number} score={current.score} />}>
+    <Shell status={<Progress number={current.question.number} total={current.total} score={current.score} />}>
       <QuestionHeading card={current.question} />
       <ol className="mt-8 grid gap-4">
         {current.question.options.map((option, i) => (
@@ -169,11 +179,11 @@ export function PrinceOfTennisQuiz() {
   );
 }
 
-function Progress({ number, score }: { number: number; score: number }) {
+function Progress({ number, total, score }: { number: number; total: number; score: number }) {
   return (
     <span className="num flex gap-3">
       <span>
-        ข้อ {number}/{QUESTIONS_PER_PLAY}
+        ข้อ {number}/{total}
       </span>
       <span>ได้ {score} คะแนน</span>
     </span>
@@ -244,10 +254,14 @@ function Result({ play, playAgain }: { play: FinishedQuizPlay; playAgain: () => 
       <section className="sheet--gold mt-8 rounded-card p-6 sm:p-8">
         <p className="font-semibold">คะแนนของคุณ</p>
         <p className="guess">
-          {play.score}/{QUESTIONS_PER_PLAY}
+          {play.score}/{play.total}
         </p>
-        <h1 className="mt-4 max-w-none text-3xl">{play.band.title}</h1>
-        <p className="mt-2 text-lg">{play.band.line}</p>
+        {play.band ? (
+          <>
+            <h1 className="mt-4 max-w-none text-3xl">{play.band.title}</h1>
+            <p className="mt-2 text-lg">{play.band.line}</p>
+          </>
+        ) : null}
       </section>
 
       <section className="mt-12">

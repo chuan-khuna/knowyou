@@ -31,12 +31,14 @@ interface QuizQuestion {
 
 ## A play
 
-A play is its seed plus the answer keys so far. `createQuiz(bank)` returns `start(seed)` and `answer(play, optionKey)`, and both rebuild the whole play from those two values, so the same seed and answers always give the same play. `princeOfTennisQuiz` is the quiz over the shipped bank.
+A play is its mode, its seed and the answer keys so far. `createQuiz(bank)` returns `start(seed, mode?)` and `answer(play, optionKey)`, and both rebuild the whole play from those values, so the same mode, seed and answers always give the same play.
+
+**Modes.** `standard` (the default) asks 20 questions, 5 per tier, and ends with a fan title. `all` asks every question in the bank, easiest tier first and shuffled within each tier, and ends with the score out of the bank size and no fan title (`band` is `null`). The play's `total` is the number of questions it asks. `princeOfTennisQuiz` is the quiz over the shipped bank.
 
 **Drawing.** One seeded generator (mulberry32) drives the whole draw, in this order:
 
-1. For each tier, easy first, sort the tier's ids, shuffle them, and take the first 5. Sorting first means the order of the bank file doesn't change a draw.
-2. For each of the 20 questions, shuffle the answer and the three decoys into four options.
+1. For each tier, easy first, sort the tier's ids, shuffle them, and take the first 5 (all of them in `all` mode). Sorting first means the order of the bank file doesn't change a draw.
+2. For each drawn question, shuffle the answer and the three decoys into four options.
 
 **Option keys.** Each option's key is `<question id>:<slot>`, with slot `a` to `d` by position on screen. A key names its question, so an answer log replayed on a changed bank fails instead of quietly answering other questions.
 
@@ -44,11 +46,11 @@ A play is its seed plus the answer keys so far. `createQuiz(bank)` returns `star
 
 | Field | `asking` | `finished` |
 | --- | --- | --- |
-| `seed`, `answerKeys` | yes | yes |
-| `answered` | each answer so far, with its question, the right key, the chosen key, `correct`, the note and the source | all 20 |
+| `mode`, `seed`, `total`, `answerKeys` | yes | yes |
+| `answered` | each answer so far, with its question, the right key, the chosen key, `correct`, the note and the source | all of them |
 | `score` | right answers so far | the final score |
-| `question` | the current question: id, tier, number 1 to 20, prompt, four options | |
-| `band` | | the score band |
+| `question` | the current question: id, tier, number 1 to `total`, prompt, four options | |
+| `band` | | the score band, or `null` in `all` mode |
 
 `answer` throws on a key that isn't one of the current question's options, and on a finished play.
 
@@ -70,17 +72,17 @@ A play is its seed plus the answer keys so far. `createQuiz(bank)` returns `star
 
 The same rules as the games' saved play (`play-screen.md`), in the quiz's own `record.ts`, because `src/lib/play-record.ts` is typed to the game `Engine`.
 
-- **The record.** `{ v: 1, seed, answerKeys }` in localStorage under `knowyou:play:prince-of-tennis`.
+- **The record.** `{ v: 1, mode?, seed, answerKeys }`, with `mode` left out for a standard play so older records still restore, in localStorage under `knowyou:play:prince-of-tennis`.
 - **When it is saved.** After every answer. A play with no answers is not saved.
 - **When it is cleared.** On เริ่มเลย, on เล่นอีกครั้ง, and when a record fails to restore.
-- **Restoring.** `restoreQuiz` starts the play from the seed and replays each key. A record that isn't JSON, has another `v`, has a malformed seed or keys, holds a key the play rejects, or holds more than 20 answers is dropped silently, and the intro shows. A restored play opens at the next question, past the last reveal.
+- **Restoring.** `restoreQuiz` starts the play from the seed and replays each key. A record that isn't JSON, has another `v`, an unknown mode, a malformed seed or keys, holds a key the play rejects, or holds more answers than the play asks is dropped silently, and the intro shows. A restored play opens at the next question, past the last reveal.
 
 ## Screens and sound
 
-- **Intro.** The title, two lines about the quiz, and เริ่มเลย (or Enter). Sound `start`.
-- **Question.** ข้อ N/20 and the running score in the top strip, the tier, the prompt, and four options. Tap or press 1 to 4. Sound `right` or `wrong` on the answer.
-- **Reveal.** The options lock. A check and ถูกต้อง!, or a cross and the right answer, in colour, icon and text. The right option is tagged คำตอบที่ถูก, a wrong choice is tagged คุณเลือก, and the note shows when there is one. ข้อต่อไป (ดูคะแนน after question 20) or Enter moves on.
-- **Result.** The score out of 20, the band title and line, every question with its right answer and, on a miss, the player's answer, and เล่นอีกครั้ง. Sound `guess` when it opens.
+- **Intro.** The title, two lines about the quiz, เริ่มเลย (or Enter) for a standard play, and ตอบทุกข้อ (N ข้อ) for an `all` play. Sound `start`.
+- **Question.** ข้อ N/total and the running score in the top strip, the tier, the prompt, and four options. Tap or press 1 to 4. Sound `right` or `wrong` on the answer.
+- **Reveal.** The options lock. A check and ถูกต้อง!, or a cross and the right answer, in colour, icon and text. The right option is tagged คำตอบที่ถูก, a wrong choice is tagged คุณเลือก, and the note shows when there is one. ข้อต่อไป (ดูคะแนน after the last question) or Enter moves on.
+- **Result.** The score out of `total`, the band title and line (standard only), every question with its right answer and, on a miss, the player's answer, and เล่นอีกครั้ง, which starts a new play in the same mode. Sound `guess` when it opens.
 
 ## How to add a question
 

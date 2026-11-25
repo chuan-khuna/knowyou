@@ -14,12 +14,14 @@ export { TIERS, type QuestionBank, type QuizQuestion, type Tier } from "./questi
 export {
   QUESTIONS_PER_PLAY,
   QUESTIONS_PER_TIER,
+  QUIZ_MODES,
   createQuiz,
   type AnsweredQuizQuestion,
   type AskingQuizPlay,
   type FinishedQuizPlay,
   type Quiz,
   type QuizCard,
+  type QuizMode,
   type QuizOption,
   type QuizPlay,
 } from "./quiz";

@@ -110,6 +110,47 @@ describe("a play", () => {
   });
 });
 
+describe("an all-questions play", () => {
+  const all = (seed: number, count = Infinity, isRight?: (i: number) => boolean) => {
+    let play: QuizPlay = quiz.start(seed, "all");
+    for (let i = 0; i < count && play.phase === "asking"; i++) {
+      play = quiz.answer(play, (isRight?.(i) ?? true) ? rightKey(play) : wrongKey(play));
+    }
+    return play;
+  };
+
+  test("asks every question in the bank once, easiest tier first", () => {
+    const play = all(11);
+    expect(play.phase).toBe("finished");
+    expect(play.total).toBe(32);
+    const questions = play.answered.map((a) => a.question);
+    expect(questions.map((q) => q.number)).toEqual(Array.from({ length: 32 }, (_, i) => i + 1));
+    expect(new Set(questions.map((q) => q.id)).size).toBe(32);
+    expect(questions.map((q) => q.tier)).toEqual(TIERS.flatMap((tier) => Array(8).fill(tier)));
+  });
+
+  test("ends with the score out of the whole bank and no fan title", () => {
+    const play = all(12, Infinity, (i) => i % 2 === 0);
+    expect(play.phase === "finished" && play.band).toBeNull();
+    expect(play.score).toBe(16);
+  });
+
+  test("a standard play still asks 20 and carries its mode", () => {
+    expect(quiz.start(1).mode).toBe("standard");
+    expect(quiz.start(1).total).toBe(QUESTIONS_PER_PLAY);
+  });
+
+  test("a saved all-questions play comes back in the same mode", () => {
+    const play = all(13, 25);
+    expect(JSON.parse(encodeQuizRecord(play)).mode).toBe("all");
+    expect(restoreQuiz(quiz, encodeQuizRecord(play))).toEqual(play);
+  });
+
+  test("a saved record with an unknown mode is dropped", () => {
+    expect(restoreQuiz(quiz, JSON.stringify({ v: 1, mode: "blitz", seed: 1, answerKeys: [] }))).toBeNull();
+  });
+});
+
 describe("score bands", () => {
   test("every score from 0 to 20 maps to exactly one band", () => {
     for (let score = 0; score <= 20; score++) {

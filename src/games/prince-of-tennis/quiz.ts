@@ -1,6 +1,6 @@
 /**
- * A play of the quiz is an immutable value: its seed plus the answer keys so
- * far. Every other field is derived from those two by `advance`, so a play
+ * A play of the quiz is an immutable value: its mode, its seed and the answer
+ * keys so far. Every other field is derived from those by `advance`, so a play
  * replays exactly and a saved record needs nothing else.
  */
 
@@ -9,6 +9,10 @@ import { TIERS, type QuestionBank, type Tier } from "./question";
 
 export const QUESTIONS_PER_TIER = 5;
 export const QUESTIONS_PER_PLAY = QUESTIONS_PER_TIER * TIERS.length;
+
+/** `standard` draws 5 questions per tier; `all` asks the whole bank. Both go easiest tier first. */
+export const QUIZ_MODES = ["standard", "all"] as const;
+export type QuizMode = (typeof QUIZ_MODES)[number];
 
 const SLOTS = ["a", "b", "c", "d"] as const;
 
@@ -37,7 +41,10 @@ export interface AnsweredQuizQuestion {
 }
 
 interface QuizPlayBase {
+  readonly mode: QuizMode;
   readonly seed: number;
+  /** How many questions this play asks. */
+  readonly total: number;
   readonly answerKeys: readonly string[];
   /** One entry per answer, in order. The last one is the answer just given. */
   readonly answered: readonly AnsweredQuizQuestion[];
@@ -51,13 +58,14 @@ export interface AskingQuizPlay extends QuizPlayBase {
 
 export interface FinishedQuizPlay extends QuizPlayBase {
   readonly phase: "finished";
-  readonly band: ScoreBand;
+  /** The fan title; only a standard play has one. */
+  readonly band: ScoreBand | null;
 }
 
 export type QuizPlay = AskingQuizPlay | FinishedQuizPlay;
 
 export interface Quiz {
-  start(seed: number): AskingQuizPlay;
+  start(seed: number, mode?: QuizMode): AskingQuizPlay;
   /** Throws if `optionKey` is not one of the current question's options. */
   answer(play: AskingQuizPlay, optionKey: string): QuizPlay;
 }
@@ -82,9 +90,10 @@ export function createQuiz(bank: QuestionBank): Quiz {
     }
   }
 
-  const draw = (seed: number): readonly DrawnQuestion[] => {
+  const draw = (seed: number, mode: QuizMode): readonly DrawnQuestion[] => {
     const random = rng(seed);
-    const ids = byTier.flatMap((tierIds) => shuffle(tierIds, random).slice(0, QUESTIONS_PER_TIER));
+    const take = mode === "all" ? Infinity : QUESTIONS_PER_TIER;
+    const ids = byTier.flatMap((tierIds) => shuffle(tierIds, random).slice(0, take));
     return ids.map((id, i) => {
       const q = bank[id]!;
       const labels = shuffle([q.answer, ...q.decoys], random);
@@ -98,8 +107,8 @@ export function createQuiz(bank: QuestionBank): Quiz {
     });
   };
 
-  const advance = (seed: number, answerKeys: readonly string[]): QuizPlay => {
-    const drawn = draw(seed);
+  const advance = (mode: QuizMode, seed: number, answerKeys: readonly string[]): QuizPlay => {
+    const drawn = draw(seed, mode);
     const answered = answerKeys.map((chosenKey, i): AnsweredQuizQuestion => {
       const { card, rightKey, note, source } = drawn[i]!;
       return {
@@ -112,19 +121,20 @@ export function createQuiz(bank: QuestionBank): Quiz {
       };
     });
     const score = answered.filter((a) => a.correct).length;
-    const base = { seed, answerKeys, answered, score };
+    const base = { mode, seed, total: drawn.length, answerKeys, answered, score };
     const next = drawn[answerKeys.length];
-    return next ? { ...base, phase: "asking", question: next.card } : { ...base, phase: "finished", band: bandFor(score) };
+    if (next) return { ...base, phase: "asking", question: next.card };
+    return { ...base, phase: "finished", band: mode === "standard" ? bandFor(score) : null };
   };
 
   return {
-    start: (seed) => advance(seed, []) as AskingQuizPlay,
+    start: (seed, mode = "standard") => advance(mode, seed, []) as AskingQuizPlay,
     answer: (play, optionKey) => {
       if (play.phase !== "asking") throw new Error("the quiz is finished");
       if (!play.question.options.some((o) => o.key === optionKey)) {
         throw new Error(`"${optionKey}" is not an option of question ${play.question.number}`);
       }
-      return advance(play.seed, [...play.answerKeys, optionKey]);
+      return advance(play.mode, play.seed, [...play.answerKeys, optionKey]);
     },
   };
 }
