@@ -11,8 +11,10 @@ import {
   restoreQuiz,
   type AnsweredQuizQuestion,
   type FinishedQuizPlay,
+  type Gloss,
   type QuizCard,
   type QuizMode,
+  type QuizOption,
   type QuizPlay,
   type Tier,
 } from "@/games/prince-of-tennis";
@@ -169,7 +171,7 @@ export function PrinceOfTennisQuiz() {
           <li key={option.key}>
             <button type="button" onClick={() => choose(option.key)} className="stock option">
               <kbd className="option-key">{i + 1}</kbd>
-              <span className="text-lg">{option.label}</span>
+              <OptionLabel option={option} />
             </button>
           </li>
         ))}
@@ -218,7 +220,7 @@ function Reveal({ answer }: { answer: AnsweredQuizQuestion }) {
             <li key={option.key}>
               <div className={`stock option option--locked ${tone}`}>
                 <kbd className="option-key">{i + 1}</kbd>
-                <span className="flex-1 text-lg">{option.label}</span>
+                <OptionLabel option={option} className="flex-1" />
                 {right ? (
                   <span className="option-tag">
                     <Mark correct />
@@ -236,6 +238,28 @@ function Reveal({ answer }: { answer: AnsweredQuizQuestion }) {
         })}
       </ol>
       {answer.note ? <p className="cue mt-6 text-lg">{answer.note}</p> : null}
+    </>
+  );
+}
+
+function OptionLabel({ option, className = "" }: { option: QuizOption; className?: string }) {
+  return (
+    <span className={`text-left ${className}`}>
+      <span className="block text-lg">{option.label}</span>
+      {option.gloss ? <GlossLines gloss={option.gloss} /> : null}
+    </span>
+  );
+}
+
+function GlossLines({ gloss }: { gloss: Gloss }) {
+  return (
+    <>
+      <span lang="ja-Latn" className="block text-sm font-normal text-muted">
+        {gloss.romaji}, <span lang="ja">{gloss.kanji}</span>
+      </span>
+      <span lang="en" className="block text-sm font-normal text-muted">
+        {gloss.english}
+      </span>
     </>
   );
 }
@@ -279,7 +303,8 @@ function Result({ play, playAgain }: { play: FinishedQuizPlay; playAgain: () => 
 }
 
 function ReviewItem({ answer }: { answer: AnsweredQuizQuestion }) {
-  const label = (key: string) => answer.question.options.find((o) => o.key === key)!.label;
+  const option = (key: string) => answer.question.options.find((o) => o.key === key)!;
+  const right = option(answer.rightKey);
   return (
     <li className="flex gap-3 px-5 py-4">
       <span className={answer.correct ? "verdict--right" : "verdict--wrong"}>
@@ -290,8 +315,9 @@ function ReviewItem({ answer }: { answer: AnsweredQuizQuestion }) {
         <span className="block text-sm text-muted">
           {answer.question.number}. {answer.question.prompt}
         </span>
-        <span className="block font-semibold">{label(answer.rightKey)}</span>
-        {answer.correct ? null : <span className="block text-sm">คุณตอบ: {label(answer.chosenKey)}</span>}
+        <span className="block font-semibold">{right.label}</span>
+        {right.gloss ? <GlossLines gloss={right.gloss} /> : null}
+        {answer.correct ? null : <span className="block text-sm">คุณตอบ: {option(answer.chosenKey).label}</span>}
       </span>
     </li>
   );

@@ -1,5 +1,5 @@
 import { describe, expect, test } from "bun:test";
-import { MIN_QUESTIONS_PER_TIER, TIERS, bank, bankIssues, type QuestionBank } from ".";
+import { GLOSSES, MIN_QUESTIONS_PER_TIER, TIERS, bank, bankIssues, createQuiz, type QuestionBank, type QuizPlay } from ".";
 import { fixtureBank } from "./testing/fixture-bank";
 
 describe("the question bank", () => {
@@ -10,6 +10,24 @@ describe("the question bank", () => {
   test(`has at least ${MIN_QUESTIONS_PER_TIER} questions in every tier`, () => {
     for (const tier of TIERS) {
       expect(Object.values(bank).filter((q) => q.tier === tier).length).toBeGreaterThanOrEqual(MIN_QUESTIONS_PER_TIER);
+    }
+  });
+});
+
+describe("English glosses", () => {
+  test("every gloss names an option in the bank", () => {
+    const labels = new Set<string>(Object.values(bank).flatMap((q) => [q.answer, ...q.decoys]));
+    expect(Object.keys(GLOSSES).filter((label) => !labels.has(label))).toEqual([]);
+  });
+
+  test("an option with a gloss carries it on the card", () => {
+    const quiz = createQuiz(bank);
+    for (let seed = 0; seed < 50; seed++) {
+      let play: QuizPlay = quiz.start(seed, "all");
+      while (play.phase === "asking") {
+        for (const option of play.question.options) expect(option.gloss).toEqual(GLOSSES[option.label]);
+        play = quiz.answer(play, play.question.options[0]!.key);
+      }
     }
   });
 });

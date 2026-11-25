@@ -10,6 +10,7 @@ import { createQuiz } from "./quiz";
 export { bank } from "./bank";
 export { SCORE_BANDS, bandFor, type ScoreBand } from "./bands";
 export { MIN_QUESTIONS_PER_TIER, bankIssues } from "./check";
+export { GLOSSES, type Gloss } from "./glosses";
 export { TIERS, type QuestionBank, type QuizQuestion, type Tier } from "./question";
 export {
   QUESTIONS_PER_PLAY,

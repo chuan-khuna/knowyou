@@ -5,6 +5,7 @@
  */
 
 import { bandFor, type ScoreBand } from "./bands";
+import { GLOSSES, type Gloss } from "./glosses";
 import { TIERS, type QuestionBank, type Tier } from "./question";
 
 export const QUESTIONS_PER_TIER = 5;
@@ -20,6 +21,8 @@ export interface QuizOption {
   /** `<question id>:<slot>`, so a saved key never replays onto a different question. */
   readonly key: string;
   readonly label: string;
+  /** The original and English names, shown under a Japanese technique name. */
+  readonly gloss?: Gloss;
 }
 
 export interface QuizCard {
@@ -97,7 +100,10 @@ export function createQuiz(bank: QuestionBank): Quiz {
     return ids.map((id, i) => {
       const q = bank[id]!;
       const labels = shuffle([q.answer, ...q.decoys], random);
-      const options = labels.map((label, slot) => ({ key: `${id}:${SLOTS[slot]}`, label }));
+      const options = labels.map((label, slot) => {
+        const gloss = GLOSSES[label];
+        return { key: `${id}:${SLOTS[slot]}`, label, ...(gloss === undefined ? {} : { gloss }) };
+      });
       return {
         card: { id, tier: q.tier, number: i + 1, prompt: q.prompt, options },
         rightKey: options[labels.indexOf(q.answer)]!.key,

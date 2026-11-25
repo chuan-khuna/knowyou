@@ -90,5 +90,6 @@ The same rules as the games' saved play (`play-screen.md`), in the quiz's own `r
 2. Add an entry to `bank.ts` under a new, stable id. Never reuse or rename an id.
 3. Ask only about moves and special moves, schools, or story events. Don't ask about birthdays, numbers, scores or personal trivia (family, pets, hobbies, food).
 4. Write the prompt, the answer and three plausible decoys in the spellings Thai fans use.
-5. Set the tier, and the page's URL as `source`. Add a one-line `note` if it makes the reveal better.
-6. Run `bun test src/games/prince-of-tennis`.
+5. If an option is a Japanese technique name, or a Thai translation of one, add its romaji, kanji and English name to `GLOSSES` in `glosses.ts`, keyed by the exact label. Under the option they show as two lines, `Romaji, 漢字` then the English name, and the same under the right answer in เฉลย.
+6. Set the tier, and the page's URL as `source`. Add a one-line `note` if it makes the reveal better.
+7. Run `bun test src/games/prince-of-tennis`.
