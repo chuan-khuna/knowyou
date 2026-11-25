@@ -286,7 +286,6 @@
   .question-live {
     flex: none;
     width: clamp(72px, 22vw, 120px);
-    transition: width var(--dur-short) var(--ease-snap);
   }
   .question-live:has(.map-frame--labelled) {
     width: clamp(120px, 40vw, 180px);
