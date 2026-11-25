@@ -440,6 +440,6 @@ function memoryStrata(
         knowledge += (belief[i]! * expected) / titles.length;
       }
     }
-    return { band, knowledge, basis: "inferred", samples: byReach.slice(0, STRATA_SAMPLES).map(titleOf) };
+    return { band, knowledge, basis: "inferred", samples: [...new Set(byReach.map(titleOf))].slice(0, STRATA_SAMPLES) };
   });
 }

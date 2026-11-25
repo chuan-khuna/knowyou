@@ -55,6 +55,12 @@ describe("simulated players over the full bank", () => {
       }
     }
   });
+
+  test("a memory stratum never names the same title twice", () => {
+    for (const { play } of results) {
+      for (const s of play.extras.strata) expect(new Set(s.samples).size).toBe(s.samples.length);
+    }
+  });
 });
 
 describe("a play", () => {
