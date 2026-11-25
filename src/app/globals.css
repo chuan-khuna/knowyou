@@ -173,54 +173,40 @@
     gap: var(--space-sm);
   }
 
-  .toggle {
+  .icon-button {
     display: inline-flex;
     align-items: center;
-    gap: var(--space-xs);
-    min-height: 44px;
-    padding-inline: var(--space-sm) var(--space-md);
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
     border: 0;
-    border-radius: var(--radius-pill);
+    border-radius: var(--radius-input);
     background: transparent;
     color: var(--color-muted);
-    font-size: var(--text-sm);
     cursor: pointer;
-    box-shadow: inset 0 0 0 1px var(--color-rule);
     transition:
       background-color var(--dur-micro) var(--ease-snap),
       color var(--dur-micro) var(--ease-snap),
       translate var(--dur-micro) var(--ease-snap);
   }
-  .toggle:hover {
+  .icon-button:hover {
     background: var(--color-paper-2);
     color: var(--color-ink);
   }
-  .toggle:active {
+  .icon-button:active {
     translate: 0 1px;
     background: var(--color-paper-3);
   }
-  .toggle:focus-visible {
+  .icon-button:focus-visible {
     outline: 2px solid var(--color-focus);
     outline-offset: 2px;
+    transition: none;
   }
-  .toggle:disabled {
+  .icon-button:disabled {
     cursor: not-allowed;
     opacity: 0.5;
-  }
-  .toggle-dot {
-    width: 10px;
-    height: 10px;
-    border-radius: var(--radius-pill);
-    background: var(--color-paper-3);
-    box-shadow: inset 0 0 0 1px var(--color-edge);
-    transition: background-color var(--dur-short) var(--ease-snap);
-  }
-  .toggle[aria-pressed="true"] {
-    color: var(--color-ink);
-  }
-  .toggle[aria-pressed="true"] .toggle-dot {
-    background: var(--color-mint);
-    box-shadow: none;
+    translate: none;
   }
 }
 
