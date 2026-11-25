@@ -17,7 +17,7 @@ export const GLOSSES: Readonly<Record<string, Gloss>> = {
   "ฮยาคุเร็น จิโทคุ โนะ คิวามิ": g("Hyakuren Jitoku no Kiwami", "百錬自得の極み", "Pinnacle of Hard Work"),
   "ไซกิ คัมปัตสึ โนะ คิวามิ": g("Saiki Kanpatsu no Kiwami", "才気煥発の極み", "Pinnacle of Great Wisdom"),
   "เท็นอิ มุโฮ โนะ คิวามิ": g("Ten'i Muhō no Kiwami", "天衣無縫の極み", "Pinnacle of Perfection"),
-  "ฟู ริน คา ซัง": g("Fūrinkazan", "風林火山", "Wind, Forest, Fire, Mountain"),
+  "ฟู ริน คา ซัน": g("Fūrinkazan", "風林火山", "Wind, Forest, Fire, Mountain"),
   "นางแอ่นหวนกลับ": g("Tsubame Gaeshi", "燕返し", "Swallow Return"),
   "พิฆาตหมีสีน้ำตาล": g("Higuma Otoshi", "羆落とし", "Brown Bear Drop"),
   "ปลาวาฬเผือก": g("Hakugei", "白鯨", "White Whale"),
