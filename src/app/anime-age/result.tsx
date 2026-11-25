@@ -158,7 +158,7 @@ function MemoryStrata({ strata }: { strata: readonly Stratum[] }) {
         {[...strata].reverse().map((stratum) => (
           <li key={stratum.band.label}>
             <div className="flex items-baseline justify-between gap-3">
-              <span className="font-semibold">พ.ศ. {stratum.band.label}</span>
+              <span className="font-semibold">ค.ศ. {stratum.band.label}</span>
               <span className="text-sm text-muted">
                 {stratum.basis === "empty" ? "ไม่มีข้อมูล" : `${Math.round(stratum.knowledge * 100)}%`}
               </span>

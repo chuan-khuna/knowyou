@@ -104,11 +104,11 @@ interface FinishedPlay<V, X> extends PlayBase {
 
 - **Guess.** A centre of 10 or 50 collapses to "ไม่เกิน 10 ปี" or "50 ปีขึ้นไป", and the hit test counts it as a hit for every age on that side.
 - **Deciding answer.** The answer that raised the mass of the final guess's window the most.
-- **Memory strata.** Six era bands, labelled in พ.ศ. Each band's knowledge comes from the answers to its titles where they were asked. Otherwise it is the familiarity expected under the final posterior, marked `basis: "inferred"` so the screen can dim it. A band with no titles is `"empty"`. Titles whose runs span more than 12 years, such as Doraemon, are left out of strata because they carry no era signal.
+- **Memory strata.** Six era bands, labelled in ค.ศ. (Common Era) years. Each band's knowledge comes from the answers to its titles where they were asked. Otherwise it is the familiarity expected under the final posterior, marked `basis: "inferred"` so the screen can fade its bar. A band with no titles is `"empty"`. Titles whose runs span more than 12 years, such as Doraemon, are left out of strata because they carry no era signal.
 
 ## Decisions taken for v1
 
 - **Hit-rate target.** The simulated-player suite needs at least 80% hits pooled over all ages, with no single age below 50%.
-- **Strata labels.** Labelled in พ.ศ., which Thai players read more naturally.
+- **Strata labels.** Labelled in ค.ศ., because anime airing years are usually quoted in Common Era years (changed from พ.ศ. at the user's request on 2026-11-25).
 - **Not modelled.** Gender and recall decay. Personas will show whether either is needed.
 - **Facts are unverified.** Airing facts are written from memory. Any shaky fact is listed in its question's `unsure`.

@@ -20,7 +20,7 @@ export type AgeGuessValue =
   | { readonly kind: "atLeast"; readonly age: 50 };
 
 export interface EraBand {
-  /** In พ.ศ. */
+  /** In ค.ศ. (Common Era) years. */
   readonly label: string;
   readonly from: Year | null;
   readonly to: Year | null;
@@ -80,12 +80,12 @@ const PRIOR_SHAPE: readonly (readonly [age: number, weight: number])[] = [
 ];
 
 export const ERA_BANDS: readonly EraBand[] = [
-  { label: "ก่อน 2539", from: null, to: 1995 },
-  { label: "2539–2545", from: 1996, to: 2002 },
-  { label: "2546–2552", from: 2003, to: 2009 },
-  { label: "2553–2559", from: 2010, to: 2016 },
-  { label: "2560–2564", from: 2017, to: 2021 },
-  { label: "2565 ขึ้นไป", from: 2022, to: null },
+  { label: "ก่อน 1996", from: null, to: 1995 },
+  { label: "1996–2002", from: 1996, to: 2002 },
+  { label: "2003–2009", from: 2003, to: 2009 },
+  { label: "2010–2016", from: 2010, to: 2016 },
+  { label: "2017–2021", from: 2017, to: 2021 },
+  { label: "2022 ขึ้นไป", from: 2022, to: null },
 ];
 
 /** Titles shown on air over more years than this carry no era signal for the strata. */
