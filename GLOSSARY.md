@@ -10,6 +10,10 @@ A family of guessing games that ask questions until they are confident, then gue
 One guessing game, defined by the hidden fact it guesses and its question bank. The three games are Province, University and Anime Age.
 _Avoid_: Mode, quiz
 
+**Quiz**:
+A set of questions about one title that each have one right answer, shown to the player as right or wrong, ending in a score. It guesses nothing about the player, so it is not a game. The first is the Prince of Tennis quiz.
+_Avoid_: Game, test, trivia game
+
 **Hidden value**:
 The fact a game guesses about the player: one province, one university, or one age.
 _Avoid_: Target, answer, label
