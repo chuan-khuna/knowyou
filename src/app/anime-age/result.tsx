@@ -1,13 +1,27 @@
 "use client";
 
 import { useState } from "react";
-import { BigButton } from "@/components/play-screen";
+import { BigButton, type ResultControls } from "@/components/play-screen";
+import type { RevealParser } from "@/lib/play-record";
 import { isHit, toPersonaSource, type AgeGuessValue, type FinishedAnimeAgePlay, type Stratum } from "@/games/anime-age";
 
-type Reveal = { readonly kind: "pending" } | { readonly kind: "right" } | { readonly kind: "wrong"; readonly realAge: number };
+/** What the player said about the guess. Before they answer there is no reveal. */
+export type AnimeAgeReveal = { readonly kind: "right" } | { readonly kind: "wrong"; readonly realAge: number };
 
 const REAL_AGE_MIN = 5;
 const REAL_AGE_MAX = 90;
+
+const clampAge = (age: number) => Math.min(REAL_AGE_MAX, Math.max(REAL_AGE_MIN, age));
+
+export const parseAnimeAgeReveal: RevealParser<AnimeAgeReveal> = (value) => {
+  if (typeof value !== "object" || value === null) return null;
+  const { kind, realAge } = value as { kind?: unknown; realAge?: unknown };
+  if (kind === "right") return { kind: "right" };
+  if (kind === "wrong" && typeof realAge === "number" && Number.isInteger(realAge)) {
+    return { kind: "wrong", realAge: clampAge(realAge) };
+  }
+  return null;
+};
 
 function yearsOff(guess: AgeGuessValue, realAge: number): number {
   switch (guess.kind) {
@@ -20,8 +34,13 @@ function yearsOff(guess: AgeGuessValue, realAge: number): number {
   }
 }
 
-export function AnimeAgeResult({ play, playAgain }: { play: FinishedAnimeAgePlay; playAgain: () => void }) {
-  const [reveal, setReveal] = useState<Reveal>({ kind: "pending" });
+export function AnimeAgeResult({
+  play,
+  controls: { reveal, setReveal, playAgain },
+}: {
+  play: FinishedAnimeAgePlay;
+  controls: ResultControls<AnimeAgeReveal>;
+}) {
   const guess = play.guess.value;
   const deciding = play.decidingAnswer === null ? null : play.answers[play.decidingAnswer];
 
@@ -36,7 +55,7 @@ export function AnimeAgeResult({ play, playAgain }: { play: FinishedAnimeAgePlay
       </section>
 
       <section className="sheet mt-6 p-6">
-        {reveal.kind === "pending" ? (
+        {reveal === undefined ? (
           <>
             <p className="text-lg font-semibold">ทายถูกไหม?</p>
             <p className="text-sm text-muted">คลาดไม่เกิน 1 ปี นับว่าถูก</p>
@@ -58,13 +77,7 @@ export function AnimeAgeResult({ play, playAgain }: { play: FinishedAnimeAgePlay
         ) : (
           <RealAgeStepper
             realAge={reveal.realAge}
-            onStep={(delta) =>
-              setReveal((current) =>
-                current.kind === "wrong"
-                  ? { kind: "wrong", realAge: Math.min(REAL_AGE_MAX, Math.max(REAL_AGE_MIN, current.realAge + delta)) }
-                  : current,
-              )
-            }
+            onStep={(delta) => setReveal({ kind: "wrong", realAge: clampAge(reveal.realAge + delta) })}
             guess={guess}
           />
         )}
@@ -176,9 +189,10 @@ function MemoryStrata({ strata }: { strata: readonly Stratum[] }) {
   );
 }
 
-function PersonaRecorder({ play, reveal }: { play: FinishedAnimeAgePlay; reveal: Reveal }) {
+function PersonaRecorder({ play, reveal }: { play: FinishedAnimeAgePlay; reveal: AnimeAgeReveal | undefined }) {
   const [copied, setCopied] = useState(false);
-  const realAge = reveal.kind === "wrong" ? reveal.realAge : reveal.kind === "right" && play.guess.value.kind === "exact" ? play.guess.value.age : null;
+  const realAge =
+    reveal?.kind === "wrong" ? reveal.realAge : reveal?.kind === "right" && play.guess.value.kind === "exact" ? play.guess.value.age : null;
   if (realAge === null) return null;
   const copy = async () => {
     await navigator.clipboard.writeText(toPersonaSource(play, realAge, new Date().toISOString().slice(0, 10)));

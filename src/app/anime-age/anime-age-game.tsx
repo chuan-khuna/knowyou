@@ -2,11 +2,12 @@
 
 import { PlayScreen } from "@/components/play-screen";
 import { animeAge } from "@/games/anime-age";
-import { AnimeAgeResult } from "./result";
+import { AnimeAgeResult, parseAnimeAgeReveal } from "./result";
 
 export function AnimeAgeGame() {
   return (
     <PlayScreen
+      game="anime-age"
       engine={animeAge}
       title="ทายอายุจากการ์ตูน"
       intro={
@@ -15,7 +16,8 @@ export function AnimeAgeGame() {
           <p>ตอบตามจริงนะ เรื่องไหนไม่รู้จักหรือจำไม่ได้ ให้ตอบตามนั้น อย่าเดา</p>
         </>
       }
-      result={(play, playAgain) => <AnimeAgeResult play={play} playAgain={playAgain} />}
+      parseReveal={parseAnimeAgeReveal}
+      result={(play, controls) => <AnimeAgeResult play={play} controls={controls} />}
     />
   );
 }

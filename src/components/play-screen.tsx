@@ -3,43 +3,107 @@
 import Link from "next/link";
 import { useCallback, useEffect, useState, type ReactNode } from "react";
 import type { Cue, Engine, FinishedPlay, Play } from "@/games/engine";
+import { encodePlayRecord, playRecordKey, restorePlay, type GameId, type RevealParser } from "@/lib/play-record";
 
-interface PlayScreenProps<V, X> {
+export interface ResultControls<R> {
+  /** Undefined until the player says whether the guess was right. */
+  readonly reveal: R | undefined;
+  readonly setReveal: (reveal: R) => void;
+  readonly playAgain: () => void;
+}
+
+interface PlayScreenProps<V, X, R> {
+  readonly game: GameId;
   readonly engine: Engine<V, X>;
   readonly title: string;
   readonly intro: ReactNode;
-  readonly result: (play: FinishedPlay<V, X>, playAgain: () => void) => ReactNode;
+  readonly parseReveal: RevealParser<R>;
+  readonly result: (play: FinishedPlay<V, X>, controls: ResultControls<R>) => ReactNode;
 }
 
+type Screen<V, X, R> =
+  | { readonly kind: "checking" }
+  | { readonly kind: "intro" }
+  | { readonly kind: "playing"; readonly play: Play<V, X>; readonly reveal: R | undefined };
+
 const randomSeed = () => crypto.getRandomValues(new Uint32Array(1))[0]!;
+
+function readStored(key: string): string | null {
+  try {
+    return localStorage.getItem(key);
+  } catch {
+    return null;
+  }
+}
+
+function writeStored(key: string, value: string | null): void {
+  try {
+    if (value === null) localStorage.removeItem(key);
+    else localStorage.setItem(key, value);
+  } catch {
+    // Storage can be full or blocked; the play still works, it just won't survive a refresh.
+  }
+}
 
 /**
  * The play screen every game shares: intro, one question at a time with a
  * live confidence meter, then the game's own result screen. It knows a game
- * only through the engine contract.
+ * only through the engine contract. A play with at least one answer is kept
+ * in localStorage until the player starts again, so a refresh doesn't lose it.
  */
-export function PlayScreen<V, X>({ engine, title, intro, result }: PlayScreenProps<V, X>) {
-  const [play, setPlay] = useState<Play<V, X> | null>(null);
+export function PlayScreen<V, X, R>({ game, engine, title, intro, parseReveal, result }: PlayScreenProps<V, X, R>) {
+  const storageKey = playRecordKey(game);
+  const [screen, setScreen] = useState<Screen<V, X, R>>({ kind: "checking" });
 
-  const start = useCallback(() => setPlay(engine.start({ seed: randomSeed() })), [engine]);
+  useEffect(() => {
+    const restored = restorePlay(engine, readStored(storageKey), parseReveal);
+    if (restored === null) writeStored(storageKey, null);
+    setScreen(restored === null ? { kind: "intro" } : { kind: "playing", ...restored });
+  }, [engine, storageKey, parseReveal]);
+
+  useEffect(() => {
+    if (screen.kind === "checking") return;
+    const keep = screen.kind === "playing" && screen.play.answers.length > 0;
+    writeStored(storageKey, keep ? encodePlayRecord(screen.play, screen.reveal) : null);
+  }, [screen, storageKey]);
+
+  const start = useCallback(() => {
+    writeStored(storageKey, null);
+    setScreen({ kind: "playing", play: engine.start({ seed: randomSeed() }), reveal: undefined });
+  }, [engine, storageKey]);
+
   const choose = useCallback(
-    (key: string) => setPlay((current) => (current?.phase === "asking" ? engine.answer(current, key) : current)),
+    (key: string) =>
+      setScreen((current) =>
+        current.kind === "playing" && current.play.phase === "asking"
+          ? { kind: "playing", play: engine.answer(current.play, key), reveal: undefined }
+          : current,
+      ),
     [engine],
   );
+
+  const setReveal = useCallback(
+    (reveal: R) => setScreen((current) => (current.kind === "playing" ? { ...current, reveal } : current)),
+    [],
+  );
+
+  const play = screen.kind === "playing" ? screen.play : null;
 
   useEffect(() => {
     const onKey = (event: KeyboardEvent) => {
       if (event.altKey || event.ctrlKey || event.metaKey) return;
-      if (play === null && event.key === "Enter") return start();
+      if (screen.kind === "intro" && event.key === "Enter") return start();
       if (play?.phase !== "asking") return;
       const option = play.question.options[Number(event.key) - 1];
       if (option) choose(option.key);
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [play, start, choose]);
+  }, [screen.kind, play, start, choose]);
 
-  if (play === null) {
+  if (screen.kind === "checking") return <Shell>{null}</Shell>;
+
+  if (screen.kind === "intro") {
     return (
       <Shell>
         <h1 className="mt-10 text-3xl sm:text-[2.75rem]">{title}</h1>
@@ -49,26 +113,29 @@ export function PlayScreen<V, X>({ engine, title, intro, result }: PlayScreenPro
     );
   }
 
-  if (play.phase === "finished") return <Shell>{result(play, start)}</Shell>;
+  const current = screen.play;
+  if (current.phase === "finished") {
+    return <Shell>{result(current, { reveal: screen.reveal, setReveal, playAgain: start })}</Shell>;
+  }
 
-  const confidence = Math.round(play.confidence * 100);
+  const confidence = Math.round(current.confidence * 100);
   return (
-    <Shell status={<span className="num">ข้อ {play.questionNumber}</span>}>
+    <Shell status={<span className="num">ข้อ {current.questionNumber}</span>}>
       <div className="mt-4 flex items-center gap-3">
         <div className="meter flex-1" role="meter" aria-label="ความมั่นใจ" aria-valuemin={0} aria-valuemax={100} aria-valuenow={confidence}>
-          <div className="meter-fill" style={{ transform: `scaleX(${play.confidence})` }} />
+          <div className="meter-fill" style={{ transform: `scaleX(${current.confidence})` }} />
         </div>
         <span className="num w-24 text-right text-sm text-muted">มั่นใจ {confidence}%</span>
       </div>
 
-      <h2 key={play.question.id} className="mt-10 max-w-none text-2xl">
-        {play.question.prompt}
+      <h2 key={current.question.id} className="mt-10 max-w-none text-2xl">
+        {current.question.prompt}
       </h2>
-      {play.question.subtitle ? <p className="mt-2 text-muted">{play.question.subtitle}</p> : null}
-      {play.question.cue ? <CueText cue={play.question.cue} /> : null}
+      {current.question.subtitle ? <p className="mt-2 text-muted">{current.question.subtitle}</p> : null}
+      {current.question.cue ? <CueText cue={current.question.cue} /> : null}
 
       <ol className="mt-8 grid gap-4">
-        {play.question.options.map((option, i) => (
+        {current.question.options.map((option, i) => (
           <li key={option.key}>
             <button type="button" onClick={() => choose(option.key)} className="stock option">
               <kbd className="option-key">{i + 1}</kbd>
