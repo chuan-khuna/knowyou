@@ -1,10 +1,9 @@
 import type { Metadata, Viewport } from "next";
-import { IBM_Plex_Sans_Thai } from "next/font/google";
+import { Noto_Sans_Thai_Looped } from "next/font/google";
 import "./globals.css";
 
-const thai = IBM_Plex_Sans_Thai({
+const thai = Noto_Sans_Thai_Looped({
   subsets: ["thai", "latin"],
-  weight: ["400", "500", "700"],
   variable: "--font-thai",
   display: "swap",
 });
