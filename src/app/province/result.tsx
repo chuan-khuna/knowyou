@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { BigButton, type ResultControls } from "@/components/play-screen";
+import { PlayAgainBar, type ResultControls } from "@/components/play-screen";
 import { PROVINCES, PROVINCE_IDS, REGION_NAMES, isProvinceId, toPersonaSource, type FinishedProvincePlay, type ProvinceId, type Region } from "@/games/province";
 import type { RevealParser } from "@/lib/play-record";
 import { sound } from "@/lib/sound";
@@ -171,7 +171,7 @@ export function ProvinceResult({
 
       {process.env.NODE_ENV === "development" ? <PersonaRecorder play={play} real={real} /> : null}
 
-      <BigButton onClick={playAgain}>เล่นอีกครั้ง</BigButton>
+      <PlayAgainBar onClick={playAgain} />
     </div>
   );
 }

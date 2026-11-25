@@ -292,6 +292,15 @@
     width: clamp(120px, 40vw, 180px);
   }
 
+  .play-again {
+    position: sticky;
+    bottom: 0;
+    z-index: var(--z-sticky);
+    margin-top: var(--space-xl);
+    padding-block: var(--space-sm) calc(var(--space-sm) + env(safe-area-inset-bottom));
+    background: var(--color-paper);
+  }
+
   .topbar-end {
     display: flex;
     align-items: center;

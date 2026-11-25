@@ -188,6 +188,21 @@ function Shell({ status, children }: { status?: ReactNode; children: ReactNode }
   );
 }
 
+/**
+ * เล่นอีกครั้ง, pinned to the bottom of the viewport on a paper band while the
+ * result scrolls under it. It is the result's last element, so it rests after
+ * the content once the page is scrolled to the end, and comes last in focus order.
+ */
+export function PlayAgainBar({ onClick }: { onClick: () => void }) {
+  return (
+    <div className="play-again">
+      <button type="button" onClick={onClick} className="stock stock--primary text-lg">
+        เล่นอีกครั้ง
+      </button>
+    </div>
+  );
+}
+
 export function BigButton({ children, onClick }: { children: ReactNode; onClick: () => void }) {
   return (
     <button type="button" onClick={onClick} className="stock stock--primary mt-10 text-lg">
