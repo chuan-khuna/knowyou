@@ -8,29 +8,32 @@ const GAMES = [
 
 export default function Home() {
   return (
-    <main className="mx-auto w-full max-w-xl px-4 py-10 sm:py-16">
-      <h1 className="text-3xl font-bold">Pinpoint</h1>
-      <p className="mt-3 text-lg text-muted">ถามจนกว่าจะมั่นใจ แล้วทายครั้งเดียว</p>
-      <ul className="mt-8 space-y-4">
-        {GAMES.map((game) => (
-          <li key={game.href}>
-            {game.ready ? (
-              <Link
-                href={game.href}
-                className="block rounded-2xl border border-line bg-card p-5 transition-colors hover:border-accent"
-              >
-                <span className="text-xl font-bold">{game.title}</span>
-                <span className="mt-1 block text-muted">{game.blurb}</span>
+    <main className="shell">
+      <header className="topbar">
+        <span className="wordmark">Pinpoint</span>
+      </header>
+
+      <h1 className="mt-10 text-3xl sm:text-[2.75rem]">ถามจนกว่าจะมั่นใจ แล้วทายครั้งเดียว</h1>
+
+      <ul className="mt-10 grid gap-5">
+        {GAMES.map((game) =>
+          game.ready ? (
+            <li key={game.href}>
+              <Link href={game.href} className="stock stock--primary flex-col items-start p-6 text-left">
+                <span className="font-display text-2xl font-semibold">{game.title}</span>
+                <span>{game.blurb}</span>
               </Link>
-            ) : (
-              <div className="rounded-2xl border border-dashed border-line p-5 opacity-60" aria-disabled="true">
-                <span className="text-xl font-bold">{game.title}</span>
-                <span className="ml-2 rounded-full border border-line px-2 py-0.5 text-sm">เร็ว ๆ นี้</span>
-                <span className="mt-1 block text-muted">{game.blurb}</span>
-              </div>
-            )}
-          </li>
-        ))}
+            </li>
+          ) : (
+            <li key={game.href} className="rounded-card bg-paper-2 p-6" aria-disabled="true">
+              <span className="flex flex-wrap items-baseline gap-x-3">
+                <span className="font-display text-xl font-semibold text-muted">{game.title}</span>
+                <span className="text-sm text-muted">เร็ว ๆ นี้</span>
+              </span>
+              <span className="mt-1 block text-muted">{game.blurb}</span>
+            </li>
+          ),
+        )}
       </ul>
     </main>
   );

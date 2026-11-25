@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useCallback, useEffect, useState, type ReactNode } from "react";
 import type { Cue, Engine, FinishedPlay, Play } from "@/games/engine";
 
@@ -41,8 +42,8 @@ export function PlayScreen<V, X>({ engine, title, intro, result }: PlayScreenPro
   if (play === null) {
     return (
       <Shell>
-        <h1 className="text-3xl font-bold">{title}</h1>
-        <div className="mt-4 space-y-3 text-lg leading-relaxed text-muted">{intro}</div>
+        <h1 className="mt-10 text-3xl sm:text-[2.75rem]">{title}</h1>
+        <div className="mt-5 space-y-3 text-lg">{intro}</div>
         <BigButton onClick={start}>เริ่มเลย</BigButton>
       </Shell>
     );
@@ -50,72 +51,65 @@ export function PlayScreen<V, X>({ engine, title, intro, result }: PlayScreenPro
 
   if (play.phase === "finished") return <Shell>{result(play, start)}</Shell>;
 
+  const confidence = Math.round(play.confidence * 100);
   return (
-    <Shell>
-      <div className="flex items-center justify-between text-sm text-muted">
-        <span>ข้อ {play.questionNumber}</span>
-        <span>มั่นใจ {Math.round(play.confidence * 100)}%</span>
-      </div>
-      <div
-        className="mt-2 h-2 overflow-hidden rounded-full bg-line"
-        role="meter"
-        aria-label="ความมั่นใจ"
-        aria-valuemin={0}
-        aria-valuemax={100}
-        aria-valuenow={Math.round(play.confidence * 100)}
-      >
-        <div className="h-full rounded-full bg-accent transition-[width] duration-500" style={{ width: `${play.confidence * 100}%` }} />
+    <Shell status={<span className="num">ข้อ {play.questionNumber}</span>}>
+      <div className="mt-4 flex items-center gap-3">
+        <div className="meter flex-1" role="meter" aria-label="ความมั่นใจ" aria-valuemin={0} aria-valuemax={100} aria-valuenow={confidence}>
+          <div className="meter-fill" style={{ transform: `scaleX(${play.confidence})` }} />
+        </div>
+        <span className="num w-24 text-right text-sm text-muted">มั่นใจ {confidence}%</span>
       </div>
 
-      <h2 key={play.question.id} className="mt-8 text-2xl leading-snug font-bold">
+      <h2 key={play.question.id} className="mt-10 max-w-none text-2xl">
         {play.question.prompt}
       </h2>
       {play.question.subtitle ? <p className="mt-2 text-muted">{play.question.subtitle}</p> : null}
       {play.question.cue ? <CueText cue={play.question.cue} /> : null}
 
-      <ol className="mt-6 space-y-3">
+      <ol className="mt-8 grid gap-4">
         {play.question.options.map((option, i) => (
           <li key={option.key}>
-            <button
-              type="button"
-              onClick={() => choose(option.key)}
-              className="flex min-h-16 w-full items-center gap-4 rounded-2xl border border-line bg-card px-4 py-3 text-left transition-colors hover:border-accent focus-visible:border-accent focus-visible:outline-none active:bg-line"
-            >
-              <kbd className="hidden size-8 shrink-0 items-center justify-center rounded-lg border border-line text-sm text-muted sm:flex">
-                {i + 1}
-              </kbd>
+            <button type="button" onClick={() => choose(option.key)} className="stock option">
+              <kbd className="option-key">{i + 1}</kbd>
               <span>
-                <span className="block text-lg font-medium">{option.label}</span>
+                <span className="block text-lg">{option.label}</span>
                 {option.hint ? <span className="block text-sm text-muted">{option.hint}</span> : null}
               </span>
             </button>
           </li>
         ))}
       </ol>
-      <p className="mt-6 hidden text-center text-sm text-muted sm:block">กดปุ่มตัวเลขบนคีย์บอร์ดเพื่อตอบได้</p>
+      <p className="mt-8 hidden text-center text-sm text-muted sm:block">กดปุ่มตัวเลขบนคีย์บอร์ดเพื่อตอบได้</p>
     </Shell>
   );
 }
 
 function CueText({ cue }: { cue: Cue }) {
   return cue.quoted ? (
-    <blockquote className="mt-5 border-l-4 border-accent py-1 pl-4 text-xl leading-relaxed font-medium">“{cue.text}”</blockquote>
+    <blockquote className="cue mt-6">“{cue.text}”</blockquote>
   ) : (
-    <p className="mt-5 rounded-lg bg-line/60 px-4 py-3 text-xl leading-relaxed font-medium">{cue.text}</p>
+    <p className="cue mt-6">{cue.text}</p>
   );
 }
 
-function Shell({ children }: { children: ReactNode }) {
-  return <main className="mx-auto w-full max-w-xl px-4 py-8 sm:py-12">{children}</main>;
+function Shell({ status, children }: { status?: ReactNode; children: ReactNode }) {
+  return (
+    <main className="shell">
+      <header className="topbar">
+        <Link href="/" className="wordmark">
+          Pinpoint
+        </Link>
+        {status}
+      </header>
+      {children}
+    </main>
+  );
 }
 
 export function BigButton({ children, onClick }: { children: ReactNode; onClick: () => void }) {
   return (
-    <button
-      type="button"
-      onClick={onClick}
-      className="mt-8 min-h-14 w-full rounded-2xl bg-accent px-6 text-lg font-bold text-accent-fg transition-opacity hover:opacity-90 active:opacity-80"
-    >
+    <button type="button" onClick={onClick} className="stock stock--primary mt-10 text-lg">
       {children}
     </button>
   );

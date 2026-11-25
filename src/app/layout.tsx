@@ -1,10 +1,17 @@
 import type { Metadata, Viewport } from "next";
-import { Noto_Sans_Thai_Looped } from "next/font/google";
+import { Mali, Noto_Sans_Thai_Looped } from "next/font/google";
 import "./globals.css";
 
 const thai = Noto_Sans_Thai_Looped({
   subsets: ["thai", "latin"],
   variable: "--font-thai",
+  display: "swap",
+});
+
+const mali = Mali({
+  subsets: ["thai", "latin"],
+  weight: ["500", "600"],
+  variable: "--font-mali",
   display: "swap",
 });
 
@@ -20,8 +27,8 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="th" className={thai.variable}>
-      <body className="min-h-dvh font-sans antialiased">{children}</body>
+    <html lang="th" className={`${thai.variable} ${mali.variable}`}>
+      <body>{children}</body>
     </html>
   );
 }

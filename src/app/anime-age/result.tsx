@@ -27,35 +27,34 @@ export function AnimeAgeResult({ play, playAgain }: { play: FinishedAnimeAgePlay
 
   return (
     <div>
-      <p className="text-muted">
-        ถาม {play.questionsAsked} ข้อ · มั่นใจ {Math.round(play.confidence * 100)}%
-      </p>
-      <h1 className="mt-2 text-4xl font-bold">{play.guess.label}</h1>
+      <section className="sheet--gold mt-8 rounded-card p-6 sm:p-8">
+        <h1 className="guess max-w-none">{play.guess.label}</h1>
+        <p className="num mt-6 flex flex-wrap gap-x-4 font-semibold">
+          <span>ถาม {play.questionsAsked} ข้อ</span>
+          <span>มั่นใจ {Math.round(play.confidence * 100)}%</span>
+        </p>
+      </section>
 
-      <section className="mt-6 rounded-2xl border border-line bg-card p-5">
+      <section className="sheet mt-6 p-6">
         {reveal.kind === "pending" ? (
           <>
-            <p className="text-lg font-medium">ทายถูกไหม?</p>
+            <p className="text-lg font-semibold">ทายถูกไหม?</p>
             <p className="text-sm text-muted">คลาดไม่เกิน 1 ปี นับว่าถูก</p>
-            <div className="mt-4 grid grid-cols-2 gap-3">
-              <button
-                type="button"
-                onClick={() => setReveal({ kind: "right" })}
-                className="min-h-14 rounded-xl bg-good text-lg font-bold text-bg"
-              >
+            <div className="mt-5 grid grid-cols-2 gap-4">
+              <button type="button" onClick={() => setReveal({ kind: "right" })} className="stock stock--primary text-lg">
                 ถูก
               </button>
               <button
                 type="button"
                 onClick={() => setReveal({ kind: "wrong", realAge: guess.age })}
-                className="min-h-14 rounded-xl bg-bad text-lg font-bold text-bg"
+                className="stock text-lg"
               >
                 ไม่ถูก
               </button>
             </div>
           </>
         ) : reveal.kind === "right" ? (
-          <p className="text-lg font-medium text-good">เย้! ทายถูก</p>
+          <p className="font-display text-2xl font-semibold text-mint-deep">เย้! ทายถูก</p>
         ) : (
           <RealAgeStepper
             realAge={reveal.realAge}
@@ -74,26 +73,26 @@ export function AnimeAgeResult({ play, playAgain }: { play: FinishedAnimeAgePlay
       <MemoryStrata strata={play.extras.strata} />
 
       {deciding ? (
-        <section className="mt-8">
-          <h2 className="text-xl font-bold">คำตอบที่ทำให้ทายได้</h2>
-          <p className="mt-2 rounded-xl border border-accent bg-card p-4">
+        <section className="mt-12">
+          <h2 className="text-2xl">คำตอบที่ทำให้ทายได้</h2>
+          <p className="sheet mt-4 p-5">
             <span className="block">{deciding.prompt}</span>
             {deciding.cue ? <span className="mt-1 block text-muted">“{deciding.cue}”</span> : null}
-            <span className="mt-1 block font-bold">{deciding.answerLabel}</span>
+            <span className="mt-1 block font-semibold">{deciding.answerLabel}</span>
           </p>
         </section>
       ) : null}
 
-      <section className="mt-8">
-        <h2 className="text-xl font-bold">คำตอบของคุณ</h2>
-        <ol className="mt-3 divide-y divide-line rounded-xl border border-line bg-card">
+      <section className="mt-12">
+        <h2 className="text-2xl">คำตอบของคุณ</h2>
+        <ol className="sheet mt-4 divide-y divide-rule overflow-hidden">
           {play.answers.map((answer, i) => (
-            <li key={answer.questionId} className={`px-4 py-3 ${i === play.decidingAnswer ? "bg-line/50" : ""}`}>
+            <li key={answer.questionId} className={`px-5 py-3 ${i === play.decidingAnswer ? "bg-paper-2" : ""}`}>
               <span className="block text-sm text-muted">
                 {i + 1}. {answer.prompt}
                 {answer.cue ? <> “{answer.cue}”</> : null}
               </span>
-              <span className="block font-medium">{answer.answerLabel}</span>
+              <span className="block font-semibold">{answer.answerLabel}</span>
             </li>
           ))}
         </ol>
@@ -118,12 +117,12 @@ function RealAgeStepper({
   const off = yearsOff(guess, realAge);
   return (
     <div>
-      <p className="text-lg font-medium">จริง ๆ แล้วคุณอายุเท่าไหร่?</p>
+      <p className="text-lg font-semibold">จริง ๆ แล้วคุณอายุเท่าไหร่?</p>
       <div className="mt-4 flex items-center justify-center gap-4">
         <StepButton label="ลดอายุ" onClick={() => onStep(-1)}>
           −
         </StepButton>
-        <output className="w-24 text-center text-4xl font-bold tabular-nums" aria-live="polite">
+        <output className="num w-24 text-center font-display text-5xl font-semibold" aria-live="polite">
           {realAge}
         </output>
         <StepButton label="เพิ่มอายุ" onClick={() => onStep(1)}>
@@ -143,7 +142,7 @@ function StepButton({ label, onClick, children }: { label: string; onClick: () =
       type="button"
       aria-label={label}
       onClick={onClick}
-      className="size-14 rounded-full border border-line bg-bg text-2xl font-bold hover:border-accent"
+      className="stock size-14 rounded-full p-0 text-2xl"
     >
       {children}
     </button>
@@ -152,26 +151,23 @@ function StepButton({ label, onClick, children }: { label: string; onClick: () =
 
 function MemoryStrata({ strata }: { strata: readonly Stratum[] }) {
   return (
-    <section className="mt-8">
-      <h2 className="text-xl font-bold">ชั้นความทรงจำการ์ตูน</h2>
+    <section className="mt-12">
+      <h2 className="text-2xl">ชั้นความทรงจำการ์ตูน</h2>
       <p className="mt-1 text-sm text-muted">คุณรู้จักการ์ตูนแต่ละยุคมากแค่ไหน แถบจาง ๆ คือยุคที่ไม่ได้ถาม เกมเดาจากคำตอบอื่น</p>
-      <ol className="mt-4 space-y-3">
+      <ol className="mt-6 space-y-5">
         {[...strata].reverse().map((stratum) => (
-          <li key={stratum.band.label} className={stratum.basis === "answered" ? "" : "opacity-50"}>
+          <li key={stratum.band.label}>
             <div className="flex items-baseline justify-between gap-3">
-              <span className="font-medium">พ.ศ. {stratum.band.label}</span>
+              <span className="font-semibold">พ.ศ. {stratum.band.label}</span>
               <span className="text-sm text-muted">
                 {stratum.basis === "empty" ? "ไม่มีข้อมูล" : `${Math.round(stratum.knowledge * 100)}%`}
               </span>
             </div>
-            <div className="mt-1 h-4 overflow-hidden rounded-md bg-line">
-              <div
-                className="h-full rounded-md bg-accent"
-                style={{ width: `${stratum.knowledge * 100}%` }}
-              />
+            <div className="meter mt-2 h-4">
+              <div className={stratum.basis === "answered" ? "meter-fill" : "meter-fill meter-fill--inferred"} style={{ transform: `scaleX(${stratum.knowledge})` }} />
             </div>
             {stratum.samples.length > 0 ? (
-              <p className="mt-1 text-sm text-muted">{stratum.samples.join(" · ")}</p>
+              <p className="mt-1 text-sm text-muted">{stratum.samples.map((title) => `“${title}”`).join(" ")}</p>
             ) : null}
           </li>
         ))}
@@ -189,8 +185,8 @@ function PersonaRecorder({ play, reveal }: { play: FinishedAnimeAgePlay; reveal:
     setCopied(true);
   };
   return (
-    <button type="button" onClick={copy} className="mt-8 w-full rounded-xl border border-dashed border-line p-3 text-sm text-muted">
-      {copied ? "คัดลอกแล้ว" : `คัดลอกเป็นไฟล์ persona (อายุจริง ${realAge}) · dev`}
+    <button type="button" onClick={copy} className="stock mt-10 text-sm text-muted">
+      {copied ? "คัดลอกแล้ว" : `คัดลอกเป็นไฟล์ persona (อายุจริง ${realAge}), dev`}
     </button>
   );
 }
