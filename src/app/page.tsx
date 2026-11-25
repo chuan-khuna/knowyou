@@ -1,4 +1,5 @@
-import Link from "next/link";
+import { GameLink } from "@/components/game-link";
+import { SoundToggle } from "@/components/sound-toggle";
 
 const GAMES = [
   { href: "/anime-age", title: "ทายอายุจากการ์ตูน", blurb: "ตอบว่าคุณรู้จักการ์ตูนเรื่องไหนบ้าง แล้วเกมจะทายอายุคุณ", ready: true },
@@ -11,6 +12,7 @@ export default function Home() {
     <main className="shell">
       <header className="topbar">
         <span className="wordmark">KnowYou</span>
+        <SoundToggle />
       </header>
 
       <h1 className="mt-10 text-3xl sm:text-[2.75rem]">ถามจนกว่าจะมั่นใจ แล้วทายครั้งเดียว</h1>
@@ -19,10 +21,10 @@ export default function Home() {
         {GAMES.map((game) =>
           game.ready ? (
             <li key={game.href}>
-              <Link href={game.href} className="stock stock--primary flex-col items-start p-6 text-left">
+              <GameLink href={game.href} className="stock stock--primary flex-col items-start p-6 text-left">
                 <span className="font-display text-2xl font-semibold">{game.title}</span>
                 <span>{game.blurb}</span>
-              </Link>
+              </GameLink>
             </li>
           ) : (
             <li key={game.href} className="rounded-card bg-paper-2 p-6" aria-disabled="true">

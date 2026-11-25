@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { useCallback, useEffect, useState, type ReactNode } from "react";
 import type { Cue, Engine, FinishedPlay, Play } from "@/games/engine";
+import { sound } from "@/lib/sound";
+import { SoundToggle } from "./sound-toggle";
 import { encodePlayRecord, playRecordKey, restorePlay, type GameId, type RevealParser } from "@/lib/play-record";
 
 export interface ResultControls<R> {
@@ -68,26 +70,28 @@ export function PlayScreen<V, X, R>({ game, engine, title, intro, parseReveal, r
   }, [screen, storageKey]);
 
   const start = useCallback(() => {
+    sound.start();
     writeStored(storageKey, null);
     setScreen({ kind: "playing", play: engine.start({ seed: randomSeed() }), reveal: undefined });
   }, [engine, storageKey]);
 
+  const play = screen.kind === "playing" ? screen.play : null;
+
   const choose = useCallback(
-    (key: string) =>
-      setScreen((current) =>
-        current.kind === "playing" && current.play.phase === "asking"
-          ? { kind: "playing", play: engine.answer(current.play, key), reveal: undefined }
-          : current,
-      ),
-    [engine],
+    (key: string) => {
+      if (play?.phase !== "asking") return;
+      const next = engine.answer(play, key);
+      if (next.phase === "finished") sound.guess();
+      else sound.answer();
+      setScreen({ kind: "playing", play: next, reveal: undefined });
+    },
+    [engine, play],
   );
 
   const setReveal = useCallback(
     (reveal: R) => setScreen((current) => (current.kind === "playing" ? { ...current, reveal } : current)),
     [],
   );
-
-  const play = screen.kind === "playing" ? screen.play : null;
 
   useEffect(() => {
     const onKey = (event: KeyboardEvent) => {
@@ -167,7 +171,10 @@ function Shell({ status, children }: { status?: ReactNode; children: ReactNode }
         <Link href="/" className="wordmark">
           KnowYou
         </Link>
-        {status}
+        <div className="topbar-end">
+          {status}
+          <SoundToggle />
+        </div>
       </header>
       {children}
     </main>

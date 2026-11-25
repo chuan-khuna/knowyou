@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { BigButton, type ResultControls } from "@/components/play-screen";
 import type { RevealParser } from "@/lib/play-record";
+import { sound } from "@/lib/sound";
 import { isHit, toPersonaSource, type AgeGuessValue, type FinishedAnimeAgePlay, type Stratum } from "@/games/anime-age";
 
 /** What the player said about the guess. Before they answer there is no reveal. */
@@ -60,12 +61,18 @@ export function AnimeAgeResult({
             <p className="text-lg font-semibold">ทายถูกไหม?</p>
             <p className="text-sm text-muted">คลาดไม่เกิน 1 ปี นับว่าถูก</p>
             <div className="mt-5 grid grid-cols-2 gap-4">
-              <button type="button" onClick={() => setReveal({ kind: "right" })} className="stock stock--primary text-lg">
+              <button type="button" onClick={() => {
+                  sound.right();
+                  setReveal({ kind: "right" });
+                }} className="stock stock--primary text-lg">
                 ถูก
               </button>
               <button
                 type="button"
-                onClick={() => setReveal({ kind: "wrong", realAge: guess.age })}
+                onClick={() => {
+                  sound.wrong();
+                  setReveal({ kind: "wrong", realAge: guess.age });
+                }}
                 className="stock text-lg"
               >
                 ไม่ถูก
@@ -77,7 +84,10 @@ export function AnimeAgeResult({
         ) : (
           <RealAgeStepper
             realAge={reveal.realAge}
-            onStep={(delta) => setReveal({ kind: "wrong", realAge: clampAge(reveal.realAge + delta) })}
+            onStep={(delta) => {
+              sound.step();
+              setReveal({ kind: "wrong", realAge: clampAge(reveal.realAge + delta) });
+            }}
             guess={guess}
           />
         )}
