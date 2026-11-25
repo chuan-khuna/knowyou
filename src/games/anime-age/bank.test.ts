@@ -39,7 +39,7 @@ describe("question bank", () => {
 
   test("the bank has every kind of question", () => {
     const kinds = new Set(animeAgeBank.list.map((q) => q.kind));
-    expect([...kinds].sort()).toEqual(["film", "pick", "series"]);
+    expect([...kinds].sort()).toEqual(["cue", "film", "pick", "series"]);
   });
 });
 

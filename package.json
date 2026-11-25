@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "typecheck": "tsc --noEmit",
-    "curve": "bun scripts/curve.ts"
+    "curve": "bun scripts/curve.ts",
+    "sim": "bun scripts/sim.ts"
   },
   "dependencies": {
     "next": "^16.4.6",

@@ -81,4 +81,34 @@ export const picks = {
     stage: "secondary",
     titles: ["kenshin", "sword-art-online", "frieren"],
   }),
+  "pick-primary-arale": pick({
+    prompt: "ตอนเรียนประถม คุณดูเรื่องไหนบ่อยที่สุด?",
+    aside: MOST_OFTEN,
+    stage: "primary",
+    titles: ["dr-slump", "chibi-maruko", "yu-gi-oh"],
+  }),
+  "pick-primary-seiya": pick({
+    prompt: "ตอนเรียนประถม การ์ตูนเรื่องไหนที่คุณติดที่สุด?",
+    aside: MOST_OFTEN,
+    stage: "primary",
+    titles: ["saint-seiya", "digimon", "keroro"],
+  }),
+  "pick-first-sailor": pick({
+    prompt: "ในสามเรื่องนี้ เรื่องไหนที่คุณได้ดูเป็นเรื่องแรก?",
+    aside: FIRST,
+    stage: "primary",
+    titles: ["sailor-moon", "hamtaro", "yokai-watch"],
+  }),
+  "pick-class-fight": pick({
+    prompt: "ตอนเรียนมัธยม เรื่องไหนที่คุณกับเพื่อนในห้องคุยกันมากที่สุด?",
+    aside: TALKED,
+    stage: "secondary",
+    titles: ["yu-yu-hakusho", "naruto", "tokyo-ghoul"],
+  }),
+  "pick-secondary-detective": pick({
+    prompt: "ตอนเรียนมัธยม คุณดูเรื่องไหนบ่อยที่สุด?",
+    aside: MOST_OFTEN,
+    stage: "secondary",
+    titles: ["kindaichi", "death-note", "spy-x-family"],
+  }),
 } satisfies BankPart;
