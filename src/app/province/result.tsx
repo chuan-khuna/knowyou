@@ -1,7 +1,8 @@
 "use client";
 
+import { useState } from "react";
 import { BigButton, type ResultControls } from "@/components/play-screen";
-import { PROVINCES, PROVINCE_IDS, REGION_NAMES, isProvinceId, type FinishedProvincePlay, type ProvinceId, type Region } from "@/games/province";
+import { PROVINCES, PROVINCE_IDS, REGION_NAMES, isProvinceId, toPersonaSource, type FinishedProvincePlay, type ProvinceId, type Region } from "@/games/province";
 import type { RevealParser } from "@/lib/play-record";
 import { sound } from "@/lib/sound";
 import { ResultMap } from "./maps";
@@ -168,7 +169,23 @@ export function ProvinceResult({
         </ol>
       </section>
 
+      {process.env.NODE_ENV === "development" ? <PersonaRecorder play={play} real={real} /> : null}
+
       <BigButton onClick={playAgain}>เล่นอีกครั้ง</BigButton>
     </div>
+  );
+}
+
+function PersonaRecorder({ play, real }: { play: FinishedProvincePlay; real: ProvinceId | undefined }) {
+  const [copied, setCopied] = useState(false);
+  if (real === undefined) return null;
+  const copy = async () => {
+    await navigator.clipboard.writeText(toPersonaSource(play, real, new Date().toISOString().slice(0, 10)));
+    setCopied(true);
+  };
+  return (
+    <button type="button" onClick={copy} className="stock mt-10 text-sm text-muted">
+      {copied ? "คัดลอกแล้ว" : `คัดลอกเป็นไฟล์ persona (${PROVINCES[real].name}), dev`}
+    </button>
   );
 }
