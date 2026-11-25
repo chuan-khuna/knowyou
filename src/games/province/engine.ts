@@ -2,7 +2,7 @@ import type { AnsweredQuestion, AnswerOption, AskingPlay, Engine, FinishedPlay, 
 import { pickRows, rowsFor, type Rows } from "./derive";
 import { PROVINCE_COUNT, PROVINCE_IDS, isProvinceId, type ProvinceId } from "./ids";
 import { PROVINCES } from "./provinces";
-import { UNSURE_OPTION, answerOptions, type Question, type Signature } from "./schema";
+import { UNSURE_OPTION, answerOptions, type Question } from "./schema";
 
 export const PROVINCE_RULES = {
   minQuestions: 12,
@@ -31,7 +31,6 @@ export const PROVINCE_RULES = {
 
 export const PICK_PROMPT = "อันไหนเป็นของขึ้นชื่อหรือของกินที่คุ้นที่สุดแถวบ้านคุณ?";
 const NONE_OPTION = { key: "none", label: "ไม่มีอันไหนเลย" } as const;
-const SIGNATURE_HINT: Record<Signature["kind"], string> = { food: "ของกิน", tradition: "ประเพณี", souvenir: "ของฝาก" };
 
 export interface Candidate {
   readonly id: ProvinceId;
@@ -196,10 +195,10 @@ function compileStatic(question: Question): Compiled {
 function pickCard(owners: readonly { province: number; signature: number }[]): Compiled {
   const id = `pick:${owners.map((o) => `${PROVINCE_IDS[o.province]}.${o.signature}`).join("+")}`;
   const options: AnswerOption[] = [
-    ...owners.map((o) => {
-      const signature = PROVINCES[PROVINCE_IDS[o.province]!].signatures[o.signature]!;
-      return { key: PROVINCE_IDS[o.province]!, label: signature.label, hint: SIGNATURE_HINT[signature.kind] };
-    }),
+    ...owners.map((o) => ({
+      key: PROVINCE_IDS[o.province]!,
+      label: PROVINCES[PROVINCE_IDS[o.province]!].signatures[o.signature]!.label,
+    })),
     NONE_OPTION,
     UNSURE_OPTION,
   ];

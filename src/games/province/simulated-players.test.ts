@@ -61,7 +61,7 @@ describe("simulated players over the full bank", () => {
     expect(results.reduce((s, r) => s + r.play.questionsAsked, 0) / results.length).toBeLessThanOrEqual(THRESHOLDS.meanQuestionsAtMost);
   });
 
-  test("asks at most four pick questions, never two in a row, each with 3–4 signatures", () => {
+  test("asks at most four pick questions, never two in a row, each with 3–4 signatures and no hints", () => {
     for (const { play } of results) {
       const picks = play.answers.map((a) => a.questionId.startsWith("pick:"));
       expect(picks.filter(Boolean).length).toBeLessThanOrEqual(PROVINCE_RULES.picksPerPlay);
@@ -74,6 +74,7 @@ describe("simulated players over the full bank", () => {
       expect(options.length - 2).toBeGreaterThanOrEqual(3);
       expect(options.length - 2).toBeLessThanOrEqual(4);
       expect(options.slice(-2).map((o) => o.label)).toEqual(["ไม่มีอันไหนเลย", "ไม่แน่ใจ"]);
+      expect(options.filter((o) => o.hint !== undefined)).toEqual([]);
     }
   });
 
