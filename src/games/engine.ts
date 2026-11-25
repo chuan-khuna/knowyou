@@ -6,11 +6,9 @@
  * of the type, so a guess exists only on a finished play and only an asking
  * play accepts an answer.
  *
- * Two optional extensions let a game show more than the shared screen knows,
+ * One optional extension lets a game show more than the shared screen knows,
  * without the screen importing the game: `AskingPlay.live`, data the game's
- * own live view reads while asking (typed per game, `never` by default), and
- * `QuestionCard.figure`, the name of a figure the game's renderer draws with
- * the question.
+ * own live view reads while asking (typed per game, `never` by default).
  */
 
 export interface AnswerOption {
@@ -32,8 +30,6 @@ export interface QuestionCard {
   readonly prompt: string;
   readonly subtitle?: string;
   readonly cue?: Cue;
-  /** A figure the game draws with the question, such as "neighbours". The screen asks the game to render it. */
-  readonly figure?: string;
   readonly options: readonly AnswerOption[];
 }
 

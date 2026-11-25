@@ -2,7 +2,7 @@
 
 import { PlayScreen } from "@/components/play-screen";
 import { province } from "@/games/province";
-import { LiveMap, NeighboursMap } from "./maps";
+import { LiveMap } from "./maps";
 import { ProvinceResult, parseProvinceReveal } from "./result";
 
 export function ProvinceGame() {
@@ -18,8 +18,7 @@ export function ProvinceGame() {
         </>
       }
       parseReveal={parseProvinceReveal}
-      live={(live) => <LiveMap belief={live.belief} />}
-      figure={(figure) => (figure === "neighbours" ? <NeighboursMap /> : null)}
+      live={(live) => <LiveMap belief={live.belief} neighboursLabelled={live.neighboursLabelled} />}
       result={(play, controls) => <ProvinceResult play={play} controls={controls} />}
     />
   );

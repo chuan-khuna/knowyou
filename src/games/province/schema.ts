@@ -120,9 +120,6 @@ export const MEASURES = {
 export type Measure = keyof typeof MEASURES;
 export type MeasureKey<M extends Measure> = (typeof MEASURES)[M][number];
 
-/** A figure the play screen shows with a question. */
-export type Figure = "neighbours";
-
 /** Distributes over measures, so GeoFacts (no argument) is the union of every measure's facts. */
 export type GeoFacts<M extends Measure = Measure> = M extends Measure
   ? {
@@ -131,7 +128,6 @@ export type GeoFacts<M extends Measure = Measure> = M extends Measure
       readonly measure: M;
       readonly prompt: string;
       readonly aside?: string;
-      readonly figure?: Figure;
       readonly labels: { readonly [K in MeasureKey<M>]: string };
     }
   : never;

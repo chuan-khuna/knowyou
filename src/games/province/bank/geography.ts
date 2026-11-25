@@ -35,8 +35,7 @@ export const geography = {
   neighbour: geo({
     measure: "neighbour",
     prompt: "ประเทศเพื่อนบ้านที่ใกล้บ้านคุณที่สุดคือประเทศไหน?",
-    aside: "ดูจากแผนที่ได้",
-    figure: "neighbours",
+    aside: "ดูจากแผนที่ข้าง ๆ ได้",
     labels: { MM: "เมียนมา", LA: "ลาว", KH: "กัมพูชา", MY: "มาเลเซีย" },
   }),
 } as const;

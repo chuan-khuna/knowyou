@@ -53,6 +53,8 @@ export interface ProvinceExtras {
 export interface ProvinceLive {
   /** The current belief, in PROVINCE_IDS order. */
   readonly belief: readonly number[];
+  /** True while the question asks about the neighbouring countries, so the map names them. */
+  readonly neighboursLabelled: boolean;
 }
 
 export interface AnswerRows {
@@ -77,6 +79,7 @@ export interface ProvinceEngineOptions {
 interface Compiled {
   readonly card: QuestionCard;
   readonly rows: Rows;
+  readonly aboutNeighbours?: true;
   /** For a pick: each owner's province index and signature index, in option order. */
   readonly owners?: readonly { readonly province: number; readonly signature: number }[];
 }
@@ -150,7 +153,7 @@ export function createProvinceEngine(questions: readonly Question[], { picks = t
       confidence,
       questionNumber: asked + 1,
       question: next.card,
-      live: { belief: Array.from(belief) },
+      live: { belief: Array.from(belief), neighboursLabelled: next.aboutNeighbours === true },
     };
   };
 
@@ -183,10 +186,10 @@ function compileStatic(question: Question): Compiled {
       id: question.id,
       prompt: question.prompt,
       ...(question.aside ? { subtitle: question.aside } : {}),
-      ...(question.kind === "geo" && question.figure ? { figure: question.figure } : {}),
       options: answerOptions(question),
     },
     rows: rowsFor(question),
+    ...(question.kind === "geo" && question.measure === "neighbour" ? { aboutNeighbours: true as const } : {}),
   };
 }
 

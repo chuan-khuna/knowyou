@@ -23,8 +23,6 @@ interface PlayScreenProps<V, X, L, R> {
   readonly result: (play: FinishedPlay<V, X>, controls: ResultControls<R>) => ReactNode;
   /** The game's live view beside each question, drawn from the asking play's `live` data. */
   readonly live?: (live: L) => ReactNode;
-  /** Draws a question's named figure. */
-  readonly figure?: (figure: string) => ReactNode;
 }
 
 type Screen<V, X, L, R> =
@@ -57,7 +55,7 @@ function writeStored(key: string, value: string | null): void {
  * only through the engine contract. A play with at least one answer is kept
  * in localStorage until the player starts again, so a refresh doesn't lose it.
  */
-export function PlayScreen<V, X, L, R>({ game, engine, title, intro, parseReveal, result, live, figure }: PlayScreenProps<V, X, L, R>) {
+export function PlayScreen<V, X, L, R>({ game, engine, title, intro, parseReveal, result, live }: PlayScreenProps<V, X, L, R>) {
   const storageKey = playRecordKey(game);
   const [screen, setScreen] = useState<Screen<V, X, L, R>>({ kind: "checking" });
 
@@ -146,7 +144,6 @@ export function PlayScreen<V, X, L, R>({ game, engine, title, intro, parseReveal
         {live && current.live !== undefined ? <div className="question-live">{live(current.live)}</div> : null}
       </div>
       {current.question.cue ? <CueText cue={current.question.cue} /> : null}
-      {figure && current.question.figure ? <div className="mt-6">{figure(current.question.figure)}</div> : null}
 
       <ol className="mt-8 grid gap-4">
         {current.question.options.map((option, i) => (

@@ -24,8 +24,8 @@ export {
 export { provinceBank, type AnswerOf, type BankAnswers, type QuestionId } from "./bank";
 export { PROVINCE_COUNT, PROVINCE_IDS, PROVINCE_ISO, isProvinceId, type ProvinceId } from "./ids";
 export { PROVINCES } from "./provinces";
-export { NEIGHBOURS_VIEWBOX, NEIGHBOUR_SHAPES, PROVINCE_SHAPES, THAILAND_VIEWBOX, type NeighbourCode } from "./map/shapes";
-export { REGION_NAMES, type Figure, type ProvinceFacts, type Region } from "./schema";
+export { MAP_VIEWBOX, NEIGHBOUR_SHAPES, PROVINCE_SHAPES, type NeighbourCode } from "./map/shapes";
+export { REGION_NAMES, type ProvinceFacts, type Region } from "./schema";
 export { definePersona, toPersonaSource, type Persona } from "./personas";
 
 /** The engine over the shipped bank, compiled once at module load. */

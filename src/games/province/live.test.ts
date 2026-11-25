@@ -11,14 +11,14 @@ test("an asking play carries the current belief for the live map", () => {
   }
 });
 
-test("the neighbours question names its figure; others name none", () => {
+test("the live map names the neighbours only while the neighbouring-country question is on screen", () => {
   const engine = createProvinceEngine(provinceBank.list.filter((q) => q.kind === "geo"), { picks: false });
-  const figures = new Map<string, string | undefined>();
+  const labelled = new Map<string, boolean | undefined>();
   let play = engine.start({ seed: 1 });
   while (play.phase === "asking") {
-    figures.set(play.question.id, play.question.figure);
+    labelled.set(play.question.id, play.live?.neighboursLabelled);
     play = engine.answer(play, play.question.options[0]!.key);
   }
-  expect(figures.get("neighbour")).toBe("neighbours");
-  expect([...figures].filter(([id, f]) => id !== "neighbour" && f !== undefined)).toEqual([]);
+  expect(labelled.get("neighbour")).toBe(true);
+  expect([...labelled].filter(([id, on]) => id !== "neighbour" && on !== false)).toEqual([]);
 });

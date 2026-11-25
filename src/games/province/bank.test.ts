@@ -77,9 +77,8 @@ describe("question bank", () => {
     expect(count("geography")).toBeLessThanOrEqual(5);
   });
 
-  test("the neighbours question shows the neighbours map", () => {
-    const neighbour = provinceBank.list.find((q) => q.kind === "geo" && q.measure === "neighbour");
-    expect(neighbour?.kind === "geo" && neighbour.figure).toBe("neighbours");
+  test("the bank asks which neighbouring country is nearest", () => {
+    expect(provinceBank.list.some((q) => q.kind === "geo" && q.measure === "neighbour")).toBe(true);
   });
 
   test("an answer points where its facts say", () => {
