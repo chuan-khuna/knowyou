@@ -98,7 +98,7 @@ function Shell({ status, children }: { status?: ReactNode; children: ReactNode }
     <main className="shell">
       <header className="topbar">
         <Link href="/" className="wordmark">
-          Pinpoint
+          KnowYou
         </Link>
         {status}
       </header>

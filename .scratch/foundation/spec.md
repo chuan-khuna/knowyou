@@ -2,7 +2,7 @@
 
 Status: ready-for-agent
 
-The settled foundation for all Pinpoint games, from the grilling session on 2026-11-25. Terms follow `GLOSSARY.md`. The discussion record is `docs/records/2026-11-25-foundation-and-stack.md`. The first game built on this foundation is specified in `.scratch/anime-age/spec.md`.
+The settled foundation for all KnowYou games, from the grilling session on 2026-11-25. Terms follow `GLOSSARY.md`. The discussion record is `docs/records/2026-11-25-foundation-and-stack.md`. The first game built on this foundation is specified in `.scratch/anime-age/spec.md`.
 
 ## Decisions
 

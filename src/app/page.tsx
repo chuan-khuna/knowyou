@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <main className="shell">
       <header className="topbar">
-        <span className="wordmark">Pinpoint</span>
+        <span className="wordmark">KnowYou</span>
       </header>
 
       <h1 className="mt-10 text-3xl sm:text-[2.75rem]">ถามจนกว่าจะมั่นใจ แล้วทายครั้งเดียว</h1>

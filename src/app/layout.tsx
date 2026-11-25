@@ -16,7 +16,7 @@ const mali = Mali({
 });
 
 export const metadata: Metadata = {
-  title: "Pinpoint",
+  title: "KnowYou",
   description: "เกมทายใจ ถามจนแน่ใจ แล้วทายครั้งเดียว",
 };
 

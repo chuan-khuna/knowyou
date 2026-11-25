@@ -3,7 +3,7 @@
   "configVersion": 1,
   "workspaces": {
     "": {
-      "name": "pinpoint",
+      "name": "knowyou",
       "dependencies": {
         "next": "^16.4.6",
         "react": "^19.3.1",
