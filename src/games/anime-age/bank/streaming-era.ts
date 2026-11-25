@@ -1,0 +1,165 @@
+/**
+ * Titles from the Netflix and streaming-app years, plus the films that filled
+ * Thai cinemas in them. Airing facts are written from memory; doubtful ones
+ * are listed in `unsure`.
+ */
+
+import { film, series, type BankPart } from "../schema";
+
+export const streamingEra = {
+  "violet-evergarden": series({
+    title: "ไวโอเล็ต เอเวอร์การ์เดน",
+    runs: [{ on: "streaming", from: 2018, to: 2021 }],
+    audience: "teens",
+    reach: "niche",
+  }),
+  "weathering-with-you": film({
+    title: "ฤดูฝัน ฉันมีเธอ",
+    aside: "Weathering with You",
+    released: 2019,
+    later: [{ on: "streaming", from: 2021, to: "now" }],
+    audience: "teens",
+    reach: "known",
+    unsure: ["later"],
+  }),
+  "demon-slayer": series({
+    title: "ดาบพิฆาตอสูร",
+    aside: "Kimetsu no Yaiba",
+    runs: [
+      { on: "streaming", from: 2019, to: "now" },
+      { on: "digital-tv", from: 2020, to: 2022 },
+    ],
+    audience: "general",
+    reach: "phenomenon",
+    franchise: "demon-slayer",
+    unsure: ["runs"],
+  }),
+  "promised-neverland": series({
+    title: "พันธสัญญาเนเวอร์แลนด์",
+    runs: [{ on: "streaming", from: 2019, to: 2022 }],
+    audience: "teens",
+    reach: "niche",
+  }),
+  "mugen-train": film({
+    title: "ดาบพิฆาตอสูร เดอะมูฟวี่ ศึกรถไฟสู่นิรันดร์",
+    released: 2020,
+    later: [{ on: "streaming", from: 2021, to: "now" }],
+    audience: "general",
+    reach: "hit",
+    franchise: "demon-slayer",
+    unsure: ["released"],
+  }),
+  "jujutsu-kaisen": series({
+    title: "มหาเวทย์ผนึกมาร",
+    aside: "Jujutsu Kaisen",
+    runs: [{ on: "streaming", from: 2020, to: "now" }],
+    audience: "teens",
+    reach: "hit",
+    franchise: "jujutsu-kaisen",
+  }),
+  "tokyo-revengers": series({
+    title: "โตเกียว รีเวนเจอร์ส",
+    runs: [{ on: "streaming", from: 2021, to: 2024 }],
+    audience: "teens",
+    reach: "known",
+  }),
+  "jujutsu-kaisen-0": film({
+    title: "มหาเวทย์ผนึกมาร ซีโร่",
+    released: 2022,
+    later: [{ on: "streaming", from: 2022, to: "now" }],
+    audience: "teens",
+    reach: "known",
+    franchise: "jujutsu-kaisen",
+  }),
+  "spy-x-family": series({
+    title: "สปาย x แฟมิลี",
+    aside: "อาเนียกับครอบครัวสายลับจำแลง",
+    runs: [{ on: "streaming", from: 2022, to: "now" }],
+    audience: "general",
+    reach: "hit",
+  }),
+  "chainsaw-man": series({
+    title: "เชนซอว์แมน",
+    runs: [{ on: "streaming", from: 2022, to: "now" }],
+    audience: "adults",
+    reach: "known",
+  }),
+  "blue-lock": series({
+    title: "บลูล็อก ขังดวลแข้ง",
+    runs: [{ on: "streaming", from: 2022, to: "now" }],
+    audience: "teens",
+    reach: "known",
+  }),
+  "bocchi-the-rock": series({
+    title: "บจจิ เดอะ ร็อก!",
+    runs: [{ on: "streaming", from: 2022, to: "now" }],
+    audience: "teens",
+    reach: "niche",
+  }),
+  "first-slam-dunk": film({
+    title: "เดอะ เฟิสต์ สแลมดังก์",
+    released: 2023,
+    later: [{ on: "streaming", from: 2024, to: "now" }],
+    audience: "adults",
+    reach: "hit",
+    franchise: "slam-dunk",
+    unsure: ["later", "reach"],
+  }),
+  suzume: film({
+    title: "การผนึกประตูของซุซุเมะ",
+    released: 2023,
+    later: [{ on: "streaming", from: 2024, to: "now" }],
+    audience: "teens",
+    reach: "known",
+    unsure: ["later"],
+  }),
+  "boy-and-the-heron": film({
+    title: "เด็กชายกับนกกระสา",
+    aside: "ผลงานของฮายาโอะ มิยาซากิ",
+    released: 2023,
+    later: [{ on: "streaming", from: 2024, to: "now" }],
+    audience: "general",
+    reach: "known",
+    unsure: ["later"],
+  }),
+  frieren: series({
+    title: "คำอธิษฐานในวันที่จากลา ฟรีเรน",
+    runs: [{ on: "streaming", from: 2023, to: "now" }],
+    audience: "teens",
+    reach: "known",
+  }),
+  "oshi-no-ko": series({
+    title: "เกิดใหม่เป็นลูกโอชิ",
+    aside: "Oshi no Ko",
+    runs: [{ on: "streaming", from: 2023, to: "now" }],
+    audience: "teens",
+    reach: "known",
+  }),
+  "solo-leveling": series({
+    title: "โซโล่ เลเวลลิ่ง",
+    runs: [{ on: "streaming", from: 2024, to: "now" }],
+    audience: "teens",
+    reach: "known",
+  }),
+  dandadan: series({
+    title: "ดันดาดัน",
+    runs: [{ on: "streaming", from: 2024, to: "now" }],
+    audience: "teens",
+    reach: "known",
+  }),
+  "kaiju-no-8": series({
+    title: "ไคจูหมายเลข 8",
+    runs: [{ on: "streaming", from: 2024, to: "now" }],
+    audience: "teens",
+    reach: "niche",
+  }),
+  "infinity-castle": film({
+    title: "ดาบพิฆาตอสูร ปราสาทไร้ขอบเขต",
+    released: 2025,
+    later: [],
+    audience: "general",
+    reach: "hit",
+    franchise: "demon-slayer",
+    unsure: ["released"],
+  }),
+} satisfies BankPart;
