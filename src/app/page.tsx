@@ -3,7 +3,7 @@ import { SoundToggle } from "@/components/sound-toggle";
 
 const GAMES = [
   { href: "/anime-age", title: "ทายอายุจากการ์ตูน", blurb: "ตอบว่าคุณรู้จักการ์ตูนเรื่องไหนบ้าง แล้วเกมจะทายอายุคุณ", ready: true },
-  { href: "/province", title: "ทายจังหวัด", blurb: "เกมจะทายว่าคุณมาจากจังหวัดไหน", ready: false },
+  { href: "/province", title: "ทายจังหวัด", blurb: "ตอบเรื่องภาษา อาหาร และประเพณีแถวบ้าน แล้วเกมจะทายจังหวัดคุณ", ready: true },
   { href: "/university", title: "ทายมหาวิทยาลัย", blurb: "เกมจะทายว่าคุณเรียนที่ไหน", ready: false },
 ] as const;
 
@@ -21,7 +21,7 @@ export default function Home() {
         {GAMES.map((game) =>
           game.ready ? (
             <li key={game.href}>
-              <GameLink href={game.href} className="stock stock--primary flex-col items-start p-6 text-left">
+              <GameLink href={game.href} className="stock game-card">
                 <span className="font-display text-2xl font-semibold">{game.title}</span>
                 <span>{game.blurb}</span>
               </GameLink>

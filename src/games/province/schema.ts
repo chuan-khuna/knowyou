@@ -13,6 +13,16 @@ import type { ProvinceId } from "./ids";
 
 export type Region = "north" | "northeast" | "central" | "east" | "west" | "south";
 
+/** The six regions in the order the province picker lists them. */
+export const REGION_NAMES: Readonly<Record<Region, string>> = {
+  north: "ภาคเหนือ",
+  northeast: "ภาคตะวันออกเฉียงเหนือ",
+  central: "ภาคกลาง",
+  east: "ภาคตะวันออก",
+  west: "ภาคตะวันตก",
+  south: "ภาคใต้",
+};
+
 /** The home dialect: กลาง, คำเมือง, อีสาน/ลาว, ใต้, เขมร/กูย, มลายู. */
 export type Dialect = "klang" | "muang" | "isan" | "tai" | "khmer" | "malay";
 export const DIALECTS: readonly Dialect[] = ["klang", "muang", "isan", "tai", "khmer", "malay"];
