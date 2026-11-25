@@ -1,5 +1,5 @@
 import { describe, expect, test } from "bun:test";
-import { AGES, BankError, animeAge, animeAgeBank, choice, defineBank, pickFrom, series } from ".";
+import { AGES, BankError, animeAge, animeAgeBank, defineBank, pickFrom, series } from ".";
 
 describe("question bank", () => {
   test("question ids are unique", () => {
@@ -27,7 +27,7 @@ describe("question bank", () => {
   });
 
   test("every question shows 4–5 options with unique labels and the don't-know answer last", () => {
-    const dontKnow = { series: "none", film: "none", choice: "unsure", pick: "unsure" } as const;
+    const dontKnow = { series: "none", film: "none", pick: "unsure" } as const;
     for (const q of animeAgeBank.list) {
       const options = animeAge.answerCurves(q.id).options;
       expect(options.length).toBeGreaterThanOrEqual(4);
@@ -39,7 +39,7 @@ describe("question bank", () => {
 
   test("the bank has every kind of question", () => {
     const kinds = new Set(animeAgeBank.list.map((q) => q.kind));
-    expect([...kinds].sort()).toEqual(["choice", "film", "pick", "series"]);
+    expect([...kinds].sort()).toEqual(["film", "pick", "series"]);
   });
 });
 
@@ -73,30 +73,10 @@ describe("defineBank rejects facts the types cannot check", () => {
     expect(issuesOf(() => defineBank({ a: series({ ...ok, title: "a", runs: [{ on: "itv", from: 2005, to: 2010 }] }) }))).toHaveLength(1);
   });
 
-  test("a choice share of zero", () => {
-    const bad = choice({
-      prompt: "p",
-      stage: "primary",
-      choices: { x: { label: "x", years: [1990, 2000], share: 0 }, y: { label: "y", years: [2000, 2010] }, z: { label: "z", years: [2000, 2010] } },
-    });
-    expect(issuesOf(() => defineBank({ bad }))).toHaveLength(1);
-  });
-
-  test("a choice question with too few or too many choices", () => {
-    const years = [1990, 2000] as const;
-    const two = choice({ prompt: "p", stage: "primary", choices: { a: { label: "a", years }, b: { label: "b", years } } });
-    const five = choice({
-      prompt: "p",
-      stage: "primary",
-      choices: { a: { label: "a", years }, b: { label: "b", years }, c: { label: "c", years }, d: { label: "d", years }, e: { label: "e", years } },
-    });
-    expect(issuesOf(() => defineBank({ two, five }))).toHaveLength(2);
-  });
-
   test("two answers with one label", () => {
-    const years = [1990, 2000] as const;
-    const same = choice({ prompt: "p", stage: "primary", choices: { a: { label: "x", years }, b: { label: "x", years }, c: { label: "c", years } } });
-    expect(issuesOf(() => defineBank({ same }))).toHaveLength(1);
+    const titles = { a: series({ ...ok, title: "x" }), b: series({ ...ok, title: "x" }), c: series({ ...ok, title: "c" }) };
+    const same = pickFrom(titles)({ prompt: "p", stage: "primary", titles: ["a", "b", "c"] });
+    expect(issuesOf(() => defineBank(titles, { same }))).toHaveLength(1);
   });
 
   test("a pick whose titles all share one franchise, or name one title twice", () => {

@@ -15,7 +15,6 @@ import {
   anchorAt,
   type Anchors,
   type Audience,
-  type ChoiceFacts,
   type FilmFacts,
   type LifeStage,
   type Outlet,
@@ -99,11 +98,9 @@ const STAGE_AGES: Record<LifeStage, readonly [from: number, to: number]> = {
   secondary: [13, 18],
   university: [18, 22],
 };
-/** Base "unsure" rate on a choice question, plus memory fade per year of age past 30. */
+/** Base "unsure" rate on a pick question, plus memory fade per year of age past 30. */
 const UNSURE_BASE = 0.08;
 const UNSURE_FADE = 0.004;
-/** Prevalence of a choice one year either side of its years. */
-const CHOICE_SHOULDER = 0.5;
 
 /** Ages below this leave no memory that survives to answer a question. */
 const MEMORY_AGE = 4;
@@ -134,8 +131,6 @@ export function curve(question: Question): AnswerCurve {
         return seriesAt(question, x);
       case "film":
         return filmAt(question, x);
-      case "choice":
-        return choiceAt(question, x);
       case "pick":
         return pickAt(question, x);
     }
@@ -276,25 +271,6 @@ function stage(lifeStage: LifeStage, x: number): { years: Years; lived: number; 
   const lived = Math.max(0, years[1] - years[0] + 1) / (w1 - w0 + 1);
   const base = UNSURE_BASE + UNSURE_FADE * Math.max(0, x - 30);
   return { years, lived, unsure: base + (1 - base) * (1 - lived) };
-}
-
-/** Answers in order [...choices, unsure]. */
-function choiceAt(facts: ChoiceFacts, x: number): number[] {
-  const { years, unsure } = stage(facts.stage, x);
-  const span = years[1] - years[0] + 1;
-  const weights = Object.values(facts.choices).map((spec) => {
-    if (span <= 0) return 0;
-    const start = spec.years[0];
-    const end = spec.years[1] === "now" ? BANK_YEAR : spec.years[1];
-    const prevalence = (y: number) =>
-      y >= start && y <= end ? 1 : y === start - 1 || y === end + 1 ? CHOICE_SHOULDER : 0;
-    let sum = 0;
-    for (let y = years[0]; y <= years[1]; y++) sum += prevalence(y);
-    return ((spec.share ?? 1) * sum) / span;
-  });
-  const total = weights.reduce((s, w) => s + w, 0);
-  const known = weights.map((w) => (total > 0 ? ((1 - unsure) * w) / total : (1 - unsure) / weights.length));
-  return [...known, unsure];
 }
 
 /**

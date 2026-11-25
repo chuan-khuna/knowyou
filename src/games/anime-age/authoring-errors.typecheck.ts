@@ -3,19 +3,18 @@
  * file: each `@ts-expect-error` fails the build if its line stops being an error.
  */
 
-import { animeAge, choice, film, pickFrom, series, type AnswerOf, type BankAnswers, type BankPart, type QuestionId } from ".";
+import { animeAge, film, pickFrom, series, type AnswerOf, type BankAnswers, type BankPart, type QuestionId } from ".";
 
 const ok = { audience: "kids", reach: "hit" } as const;
 const run = { on: "ch9", from: 1990, to: 1991 } as const;
 
 const seriesAnswer: AnswerOf<"doraemon"> = "lot";
-const choiceAnswer: AnswerOf<"primary-source"> = "tv";
-const unsureAnswer: AnswerOf<"primary-source"> = "unsure";
 const filmAnswer: AnswerOf<"your-name"> = "cinema";
 const knownId: QuestionId = "stand-by-me-doraemon";
 const pickAnswers: BankAnswers = { "pick-primary-battle": "pokemon", "pick-class-sport": "neither", "pick-first-ikkyu": "unsure" };
 
-const pick = pickFrom({ a: series({ ...ok, title: "a", runs: [run] }), b: series({ ...ok, title: "b", runs: [run] }), c: series({ ...ok, title: "c", runs: [run] }), q: choice({ prompt: "p", stage: "primary", choices: { x: { label: "x", years: [1990, 2000] } } }) });
+const titles = { a: series({ ...ok, title: "a", runs: [run] }), b: series({ ...ok, title: "b", runs: [run] }), c: series({ ...ok, title: "c", runs: [run] }) };
+const pick = pickFrom({ ...titles, q: pickFrom(titles)({ prompt: "p", stage: "primary", titles: ["a", "b", "c"] }) });
 pick({ prompt: "p", stage: "primary", titles: ["a", "b", "c"], override: { neither: { 10: 0.2 } } });
 
 // @ts-expect-error a year outside 1960–2026
@@ -34,13 +33,9 @@ series({ ...ok, title: "x", runs: [run], popularity: "hit" });
 film({ ...ok, title: "x", released: 2014, later: [], unsure: ["runs"] });
 // @ts-expect-error an audience that does not exist
 series({ title: "x", runs: [run], audience: "toddlers", reach: "hit" });
-// @ts-expect-error an override for a choice the question doesn't have
-choice({ prompt: "p", stage: "primary", choices: { a: { label: "a", years: [1990, 2000] } }, override: { b: { 10: 0.1 } } });
-// @ts-expect-error writing the automatic unsure choice by hand
-choice({ prompt: "p", stage: "primary", choices: { a: { label: "a", years: [1990, 2000] }, unsure: { label: "u", years: [1990, 2000] } } });
 // @ts-expect-error a pick naming a title id that isn't in the bank
 pick({ prompt: "p", stage: "primary", titles: ["a", "b", "zz"] });
-// @ts-expect-error a pick naming a choice question instead of a title
+// @ts-expect-error a pick naming another pick instead of a title
 pick({ prompt: "p", stage: "primary", titles: ["a", "b", "q"] });
 // @ts-expect-error a pick with two titles
 pick({ prompt: "p", stage: "primary", titles: ["a", "b"] });
@@ -75,4 +70,4 @@ export function playPhases() {
   }
 }
 
-void [seriesAnswer, choiceAnswer, unsureAnswer, filmAnswer, knownId, duplicate, wrongKind, typo, persona, pickAnswers, pickPersona];
+void [seriesAnswer, filmAnswer, knownId, duplicate, wrongKind, typo, persona, pickAnswers, pickPersona];

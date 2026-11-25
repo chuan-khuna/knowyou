@@ -2,8 +2,8 @@
  * Question facts: what an author writes about the world. Never probabilities,
  * except an explicit `override`.
  *
- * The author writes questions with `series(...)`, `film(...)` and `choice(...)`
- * into plain objects keyed by question id, so a duplicate id inside one file is
+ * The author writes questions with `series(...)`, `film(...)` and the builder
+ * `pickFrom` returns, into plain objects keyed by question id, so a duplicate id inside one file is
  * a compile error. `defineBank` merges the files and checks, once at load, the
  * rules the types cannot express.
  */
@@ -111,31 +111,6 @@ export interface FilmFacts extends TitleFacts<FilmKey, "released" | "later"> {
   readonly later: readonly Run[];
 }
 
-export interface ChoiceSpec {
-  readonly label: string;
-  /** A short line that settles which choice to pick when more than one might seem to fit. */
-  readonly hint?: string;
-  /** The years in which this was a common answer for someone at the question's life stage. */
-  readonly years: readonly [from: Year, to: Year | "now"];
-  /** Relative commonness among choices that overlap in time. Default 1. */
-  readonly share?: number;
-}
-
-export interface ChoiceFacts<K extends string = string> {
-  readonly kind: "choice";
-  readonly prompt: string;
-  /** A small line under the prompt, such as how to pick when several choices fit. */
-  readonly aside?: string;
-  readonly stage: LifeStage;
-  /**
-   * 3 or 4 choices, shown in key order and followed by the automatic "unsure"
-   * answer. Each real person at the stage has exactly one fitting choice.
-   */
-  readonly choices: { readonly [C in K]: ChoiceSpec };
-  readonly unsure?: readonly ("years" | "share")[];
-  readonly override?: Override<K | UnsureKey>;
-}
-
 export type TitleQuestionFacts = SeriesFacts | FilmFacts;
 
 export type NeitherKey = "neither";
@@ -157,7 +132,7 @@ export interface PickFacts<K extends string = string> {
   readonly override?: Override<K | NeitherKey | UnsureKey>;
 }
 
-export type Facts = SeriesFacts | FilmFacts | ChoiceFacts<string> | PickFacts<string>;
+export type Facts = SeriesFacts | FilmFacts | PickFacts<string>;
 
 export type Question = Facts & { readonly id: string };
 
@@ -165,11 +140,9 @@ export type AnswerKeyOf<F extends Facts> = F extends SeriesFacts
   ? SeriesKey
   : F extends FilmFacts
     ? FilmKey
-    : F extends ChoiceFacts<infer K>
-      ? K | UnsureKey
-      : F extends PickFacts<infer K>
-        ? K | NeitherKey | UnsureKey
-        : never;
+    : F extends PickFacts<infer K>
+      ? K | NeitherKey | UnsureKey
+      : never;
 
 export function series(facts: Omit<SeriesFacts, "kind">): SeriesFacts {
   return { kind: "series", ...facts };
@@ -177,12 +150,6 @@ export function series(facts: Omit<SeriesFacts, "kind">): SeriesFacts {
 
 export function film(facts: Omit<FilmFacts, "kind">): FilmFacts {
   return { kind: "film", ...facts };
-}
-
-export function choice<const K extends string>(
-  facts: Omit<ChoiceFacts<K>, "kind"> & { readonly choices: { readonly unsure?: never } },
-): ChoiceFacts<K> {
-  return { kind: "choice", ...facts };
 }
 
 type TitleIdsOf<P> = { [I in keyof P]: P[I] extends TitleQuestionFacts ? I : never }[keyof P] & string;
@@ -218,12 +185,6 @@ const FILM_OPTIONS = [
   NOT_AT_ALL,
 ] as const satisfies readonly (AnswerOption & { key: FilmKey })[];
 
-/** Author choices per choice question; with "unsure" the question shows 4–5 options. */
-const MIN_CHOICES = 3;
-const MAX_CHOICES = 4;
-
-const UNSURE_OPTION = { key: "unsure", label: "ไม่แน่ใจ / จำไม่ได้" } as const;
-
 /** The answers a question offers, in display order. Curves are computed in this order too. */
 export function answerOptions(facts: Facts): readonly AnswerOption[] {
   switch (facts.kind) {
@@ -231,11 +192,6 @@ export function answerOptions(facts: Facts): readonly AnswerOption[] {
       return SERIES_OPTIONS;
     case "film":
       return FILM_OPTIONS;
-    case "choice":
-      return [
-        ...Object.entries(facts.choices).map(([key, { label, hint }]) => (hint ? { key, label, hint } : { key, label })),
-        UNSURE_OPTION,
-      ];
     case "pick":
       return [
         ...facts.titles.map((key, i) => ({ key, label: facts.sources[i]!.title })),
@@ -251,7 +207,6 @@ export function promptOf(facts: Facts): string {
       return `คุณรู้จักการ์ตูนเรื่อง "${facts.title}" ไหม?`;
     case "film":
       return `คุณเคยดูการ์ตูนเรื่อง "${facts.title}" ไหม?`;
-    case "choice":
     case "pick":
       return facts.prompt;
   }
@@ -317,16 +272,6 @@ function factIssues(id: string, facts: Facts): string[] {
   const issues: string[] = [];
   if (facts.kind === "series") for (const run of facts.runs) issues.push(...runIssues(id, run));
   if (facts.kind === "film") for (const run of facts.later) issues.push(...runIssues(id, run));
-  if (facts.kind === "choice") {
-    for (const [key, spec] of Object.entries(facts.choices)) {
-      if (spec.years[0] > endYear(spec.years[1])) issues.push(`${id}.${key}: years run backwards`);
-      if (spec.share !== undefined && !(spec.share > 0)) issues.push(`${id}.${key}: share must be above 0`);
-    }
-    const count = Object.keys(facts.choices).length;
-    if (count < MIN_CHOICES || count > MAX_CHOICES) {
-      issues.push(`${id}: has ${count} choices; write ${MIN_CHOICES}–${MAX_CHOICES} so the question shows 4–5 options with "unsure"`);
-    }
-  }
   if (facts.kind === "pick") {
     if (new Set(facts.titles).size !== facts.titles.length) issues.push(`${id}: names one title twice`);
     const franchises = facts.sources.map((s) => s.franchise);
