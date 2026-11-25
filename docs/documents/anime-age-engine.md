@@ -12,7 +12,7 @@ This design combines two independent design candidates from the architect step o
 - **Probabilities are compiled once.** When the engine is created, every question becomes one `Float64Array(41)` per answer: P(answer | age) for ages 10–50. Bayes updates and question selection only read these arrays.
 - **Neighbouring ages share evidence through the probabilities, not the belief.** Each question's probabilities are smoothed across ages once, at compile time (Gaussian, σ about 1 year). Smoothing the posterior after every update would blur the same evidence again and again, and confidence could never reach the threshold.
 - **No probability is ever zero.** Each answer's probabilities are mixed with a 4% uniform floor. One careless answer lowers the true age's probability but never rules it out, so nenrei's backtracking isn't needed.
-- **Confidence equals the chance of a hit.** The guess is the centre of the 3-age window with the most posterior mass, and confidence is that mass. The meter, the stop rule and the hit test use this one rule.
+- **Confidence equals the chance of a hit.** The guess is the centre of the 3-age window with the most posterior mass, and confidence is that mass. The meter, the stop rule and the hit test use this one rule. The edge bins hold several real ages, so a window next to an edge counts only the share of the edge bin within one year of its centre (bin 10 counts 0.4 toward a guess of 11, by the edge-fold weights). Without this, centre 11 always outweighs centre 10 and the "ไม่เกิน 10 ปี" guess could never be made.
 - **Question choice.** Expected information gain in bits, scaled down for a franchise already asked. One question is drawn at random from a shortlist near the best gain, using a generator seeded from (seed, step). Plays vary, but a clearly weaker question is never asked. Expected information gain moves from coarse to fine on its own, so there's no coded phase switch.
 - **Stop rule.** Stop at 45 answers, or when the question bank is used up. After 12 answers, also stop when confidence reaches 0.88 or the best gain drops below 0.01 bits. These numbers live in one exported constant, `ANIME_AGE_RULES`.
 - **Persona replay.** A persona is replayed on an engine built from only the questions it answered, so the engine needs no persona flag.
@@ -81,7 +81,7 @@ interface FinishedPlay<V, X> extends PlayBase {
   - Engagement each year: e_y = max over runs of access(outlet, y) × receptivity(audience, t), counted only for t ≥ 4.
   - Opportunity: O = 1 − Π(1 − 0.35·e_y).
   - watched = C_reach·O, and lot = watched·D_reach·max e_y.
-  - fame = F_reach·min(1, presence/6), where presence counts the years from the first run to the last run plus the reach's tail, at ages 8 and up. A phenomenon's tail is infinite, which models classics everyone has heard of.
+  - fame = max(L_reach, F_reach·min(1, presence/6)), where presence counts the years from the first run to the last run plus the reach's tail, at ages 8 and up. A phenomenon's tail is infinite, which models classics everyone has heard of. L_reach is the name recognition that outlasts the tail through reruns, memes and talk. Without it a 1980s hit's name was unknowable to anyone born after the tail, so "รู้จักแค่ชื่อ" pinned the age far too hard.
   - parent = C·pull_audience·max access·Ψ(t), where Ψ is the share of people aged t with a child aged 4–11 at home. This models parents knowing kids' shows.
   - know = 1 − (1−watched)(1−fame)(1−parent).
   - seen = watched − lot + 0.25·parent·(1−watched), the co-viewing parent.
