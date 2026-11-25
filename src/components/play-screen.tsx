@@ -14,19 +14,23 @@ export interface ResultControls<R> {
   readonly playAgain: () => void;
 }
 
-interface PlayScreenProps<V, X, R> {
+interface PlayScreenProps<V, X, L, R> {
   readonly game: GameId;
-  readonly engine: Engine<V, X>;
+  readonly engine: Engine<V, X, L>;
   readonly title: string;
   readonly intro: ReactNode;
   readonly parseReveal: RevealParser<R>;
   readonly result: (play: FinishedPlay<V, X>, controls: ResultControls<R>) => ReactNode;
+  /** The game's live view beside each question, drawn from the asking play's `live` data. */
+  readonly live?: (live: L) => ReactNode;
+  /** Draws a question's named figure. */
+  readonly figure?: (figure: string) => ReactNode;
 }
 
-type Screen<V, X, R> =
+type Screen<V, X, L, R> =
   | { readonly kind: "checking" }
   | { readonly kind: "intro" }
-  | { readonly kind: "playing"; readonly play: Play<V, X>; readonly reveal: R | undefined };
+  | { readonly kind: "playing"; readonly play: Play<V, X, L>; readonly reveal: R | undefined };
 
 const randomSeed = () => crypto.getRandomValues(new Uint32Array(1))[0]!;
 
@@ -53,9 +57,9 @@ function writeStored(key: string, value: string | null): void {
  * only through the engine contract. A play with at least one answer is kept
  * in localStorage until the player starts again, so a refresh doesn't lose it.
  */
-export function PlayScreen<V, X, R>({ game, engine, title, intro, parseReveal, result }: PlayScreenProps<V, X, R>) {
+export function PlayScreen<V, X, L, R>({ game, engine, title, intro, parseReveal, result, live, figure }: PlayScreenProps<V, X, L, R>) {
   const storageKey = playRecordKey(game);
-  const [screen, setScreen] = useState<Screen<V, X, R>>({ kind: "checking" });
+  const [screen, setScreen] = useState<Screen<V, X, L, R>>({ kind: "checking" });
 
   useEffect(() => {
     const restored = restorePlay(engine, readStored(storageKey), parseReveal);
@@ -132,11 +136,17 @@ export function PlayScreen<V, X, R>({ game, engine, title, intro, parseReveal, r
         <span className="num w-24 text-right text-sm text-muted">มั่นใจ {confidence}%</span>
       </div>
 
-      <h2 key={current.question.id} className="mt-10 max-w-none text-2xl">
-        {current.question.prompt}
-      </h2>
-      {current.question.subtitle ? <p className="mt-2 text-muted">{current.question.subtitle}</p> : null}
+      <div className="question-head mt-10">
+        <div>
+          <h2 key={current.question.id} className="max-w-none text-2xl">
+            {current.question.prompt}
+          </h2>
+          {current.question.subtitle ? <p className="mt-2 text-muted">{current.question.subtitle}</p> : null}
+        </div>
+        {live && current.live !== undefined ? <div className="question-live">{live(current.live)}</div> : null}
+      </div>
       {current.question.cue ? <CueText cue={current.question.cue} /> : null}
+      {figure && current.question.figure ? <div className="mt-6">{figure(current.question.figure)}</div> : null}
 
       <ol className="mt-8 grid gap-4">
         {current.question.options.map((option, i) => (

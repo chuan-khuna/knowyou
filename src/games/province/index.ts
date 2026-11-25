@@ -18,6 +18,7 @@ export {
   type FinishedProvincePlay,
   type ProvinceEngine,
   type ProvinceExtras,
+  type ProvinceLive,
   type ProvincePlay,
 } from "./engine";
 export { provinceBank, type AnswerOf, type BankAnswers, type QuestionId } from "./bank";

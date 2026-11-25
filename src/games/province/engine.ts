@@ -49,18 +49,24 @@ export interface ProvinceExtras {
   readonly pointers: readonly number[];
 }
 
+/** What the live map reads while asking. */
+export interface ProvinceLive {
+  /** The current belief, in PROVINCE_IDS order. */
+  readonly belief: readonly number[];
+}
+
 export interface AnswerRows {
   readonly options: readonly AnswerOption[];
   /** P(each option | province), in option order. */
   at(province: ProvinceId): readonly number[];
 }
 
-export interface ProvinceEngine extends Engine<ProvinceId, ProvinceExtras> {
+export interface ProvinceEngine extends Engine<ProvinceId, ProvinceExtras, ProvinceLive> {
   /** The compiled P(answer | province) for a bank question or a pick question id. Throws on an unknown id. */
   answerRows(questionId: string): AnswerRows;
 }
 
-export type ProvincePlay = Play<ProvinceId, ProvinceExtras>;
+export type ProvincePlay = Play<ProvinceId, ProvinceExtras, ProvinceLive>;
 export type FinishedProvincePlay = FinishedPlay<ProvinceId, ProvinceExtras>;
 
 export interface ProvinceEngineOptions {
@@ -137,12 +143,20 @@ export function createProvinceEngine(questions: readonly Question[], { picks = t
     const best = Math.max(...gains);
     if (asked >= rules.minQuestions && (confidence >= rules.confidenceTarget || best < rules.minUsefulGain)) return finish();
     const next = pickQuestion(candidates, gains, rngFor(seed, asked));
-    return { phase: "asking", seed, answers, confidence, questionNumber: asked + 1, question: next.card };
+    return {
+      phase: "asking",
+      seed,
+      answers,
+      confidence,
+      questionNumber: asked + 1,
+      question: next.card,
+      live: { belief: Array.from(belief) },
+    };
   };
 
   return {
     start: ({ seed }) => advance(seed, []),
-    answer(play: AskingPlay, answerKey: string) {
+    answer(play: AskingPlay<ProvinceLive>, answerKey: string) {
       const option = play.question.options.find((o) => o.key === answerKey);
       if (!option) throw new Error(`"${answerKey}" is not an answer to ${play.question.id}`);
       const entry: AnsweredQuestion = {
@@ -169,6 +183,7 @@ function compileStatic(question: Question): Compiled {
       id: question.id,
       prompt: question.prompt,
       ...(question.aside ? { subtitle: question.aside } : {}),
+      ...(question.kind === "geo" && question.figure ? { figure: question.figure } : {}),
       options: answerOptions(question),
     },
     rows: rowsFor(question),
