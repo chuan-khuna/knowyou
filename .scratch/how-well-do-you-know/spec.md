@@ -1,6 +1,6 @@
 # Spec: คุณรู้จัก Prince of Tennis ดีแค่ไหน
 
-Status: ready-for-agent
+Status: done
 
 A new quiz in the KnowYou app, separate from Anime Age. Terms follow `GLOSSARY.md`. This is a **Quiz**, not a **Game**: it guesses nothing, it scores the player. The decisions come from a grilling session on 2026-11-25, recorded under Grill decisions at the end. Anime Age is the precedent for code layout, tests and UI: `docs/documents/anime-age-engine.md`, `docs/documents/play-screen.md` and `src/games/anime-age/`.
 
@@ -121,3 +121,7 @@ Taken without asking, per `CLAUDE.md`. Veto any of these by editing this list.
 - **Q2.** 20 questions a play, 5 per tier (easy, medium, hard, very hard), drawn at random each play and shown easiest tier first. Right or wrong shows straight after each answer, with the right answer on a miss. No timer and no "don't know". The end shows the score out of 20, a fan title from 5 bands, the answer list and play again.
 - **Q3.** The implementing session writes the bank and checks every question against a web source, and stores the source URL. Unconfirmed questions are dropped. The user reviews the bank before release.
 - **Scope.** Prince of Tennis only. The manga, the TV anime and the National Tournament OVAs, up to the end of the National Tournament. No The New Prince of Tennis and no films.
+
+## Comments
+
+- 2026-11-25: Merged to main in de7f39a. The bank review in `issues/01-review-question-bank.md` is still open.
