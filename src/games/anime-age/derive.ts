@@ -15,6 +15,8 @@ import {
   anchorAt,
   type Anchors,
   type Audience,
+  type CueFacts,
+  type CueType,
   type FilmFacts,
   type LifeStage,
   type Outlet,
@@ -23,6 +25,8 @@ import {
   type Reach,
   type Run,
   type SeriesFacts,
+  type Spread,
+  type TitleQuestionFacts,
 } from "./schema";
 
 /** One answer's curve. `p[i]` is P(this answer | age MIN_AGE + i). */
@@ -102,6 +106,16 @@ const STAGE_AGES: Record<LifeStage, readonly [from: number, to: number]> = {
 const UNSURE_BASE = 0.08;
 const UNSURE_FADE = 0.004;
 
+/**
+ * Chance a viewer of the cue's title recognises it: a theme song plays every
+ * episode, a main character is named in every episode, a line is said once.
+ */
+const CUE_RECALL: Record<CueType, number> = { song: 0.85, character: 0.75, quote: 0.65 };
+/** Share of the title's name recognition that carries the cue to non-viewers. */
+const SPREAD_LIFT: Record<Spread, number> = { viewers: 0.15, wide: 0.5, everyone: 0.9 };
+/** Chance someone who doesn't recognise a cue says so instead of guessing. */
+const CUE_DONT_KNOW = 0.6;
+
 /** Ages below this leave no memory that survives to answer a question. */
 const MEMORY_AGE = 4;
 /** Hearing a title's name needs this age at least. */
@@ -133,6 +147,8 @@ export function curve(question: Question): AnswerCurve {
         return filmAt(question, x);
       case "pick":
         return pickAt(question, x);
+      case "cue":
+        return cueAt(question, x);
     }
   };
   let rows = edgeBins(rawAt);
@@ -234,13 +250,33 @@ function filmViewing(facts: FilmFacts, born: number, within: Years = ALL_YEARS):
   return { cinema, screen };
 }
 
+/** Chance someone born in `born` watched a title during `within`, in any way. */
+function watchedDuring(facts: TitleQuestionFacts, born: number, within: Years = ALL_YEARS): number {
+  if (facts.kind === "series") return seriesViewing(facts, born, within).watched;
+  const { cinema, screen } = filmViewing(facts, born, within);
+  return cinema + screen;
+}
+
+/** A title's name recognition, from its own runs or its release and later runs. */
+function titleAwareness(facts: TitleQuestionFacts, born: number): { fame: number; parent: number } {
+  const spans =
+    facts.kind === "series"
+      ? facts.runs.map(runSpan)
+      : [{ from: facts.released, to: facts.released, access: CINEMA_PARENT_ACCESS }, ...facts.later.map(runSpan)];
+  return awareness(spans, facts.audience, facts.reach, born);
+}
+
+/** Chance of knowing a title at all: watched it, heard of it, or a parent of a viewer. */
+const knowFrom = (watched: number, fame: number, parent: number): number =>
+  1 - (1 - watched) * (1 - fame) * (1 - parent);
+
 /** Answers in order [lot, seen, name, none]. */
 function seriesAt(facts: SeriesFacts, x: number): number[] {
   const born = BANK_YEAR - x;
   const { watched, peak } = seriesViewing(facts, born);
-  const { fame, parent } = awareness(facts.runs.map(runSpan), facts.audience, facts.reach, born);
+  const { fame, parent } = titleAwareness(facts, born);
   const lot = watched * REACH[facts.reach].D * peak;
-  const know = 1 - (1 - watched) * (1 - fame) * (1 - parent);
+  const know = knowFrom(watched, fame, parent);
   const seen = watched - lot + COVIEW * parent * (1 - watched);
   return [lot, seen, know - lot - seen, 1 - know];
 }
@@ -249,13 +285,9 @@ function seriesAt(facts: SeriesFacts, x: number): number[] {
 function filmAt(facts: FilmFacts, x: number): number[] {
   const born = BANK_YEAR - x;
   const { cinema, screen } = filmViewing(facts, born);
-  const spans = [
-    { from: facts.released, to: facts.released, access: CINEMA_PARENT_ACCESS },
-    ...facts.later.map(runSpan),
-  ];
-  const { fame, parent } = awareness(spans, facts.audience, facts.reach, born);
+  const { fame, parent } = titleAwareness(facts, born);
   const watched = cinema + screen;
-  const know = 1 - (1 - watched) * (1 - fame) * (1 - parent);
+  const know = knowFrom(watched, fame, parent);
   return [cinema, screen, know - watched, 1 - know];
 }
 
@@ -281,15 +313,35 @@ function stage(lifeStage: LifeStage, x: number): { years: Years; lived: number; 
 function pickAt(facts: PickFacts, x: number): number[] {
   const born = BANK_YEAR - x;
   const { years, unsure } = stage(facts.stage, x);
-  const watched = facts.sources.map((source) => {
-    if (source.kind === "series") return seriesViewing(source, born, years).watched;
-    const { cinema, screen } = filmViewing(source, born, years);
-    return cinema + screen;
-  });
+  const watched = facts.sources.map((source) => watchedDuring(source, born, years));
   const neither = watched.reduce((miss, w) => miss * (1 - w), 1);
   const total = watched.reduce((s, w) => s + w, 0);
   const titles = watched.map((w) => (total > 0 ? ((1 - unsure) * (1 - neither) * w) / total : 0));
   return [...titles, (1 - unsure) * neither, unsure];
+}
+
+/**
+ * Answers in order [...titles, unsure]. A player who recognises the cue picks
+ * its title. One who doesn't says so with chance CUE_DONT_KNOW, or else guesses
+ * among the three, leaning toward titles whose names they know.
+ */
+function cueAt(facts: CueFacts, x: number): number[] {
+  const born = BANK_YEAR - x;
+  const from = facts.sources[facts.titles.indexOf(facts.from)]!;
+  const recognise =
+    1 -
+    (1 - watchedDuring(from, born) * CUE_RECALL[facts.type]) *
+      (1 - titleAwareness(from, born).fame * SPREAD_LIFT[facts.spread]);
+  const nameKnown = facts.sources.map((source) => {
+    const { fame, parent } = titleAwareness(source, born);
+    return knowFrom(watchedDuring(source, born), fame, parent);
+  });
+  const total = nameKnown.reduce((s, k) => s + k, 0);
+  const guess = (1 - recognise) * (1 - CUE_DONT_KNOW);
+  const titles = facts.titles.map(
+    (id, j) => (id === facts.from ? recognise : 0) + guess * (total > 0 ? nameKnown[j]! / total : 1 / 3),
+  );
+  return [...titles, (1 - recognise) * CUE_DONT_KNOW];
 }
 
 function mix(rows: readonly (readonly [number[], number])[]): number[] {

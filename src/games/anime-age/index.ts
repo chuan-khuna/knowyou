@@ -25,6 +25,7 @@ export { animeAgeBank, type AnswerOf, type BankAnswers, type QuestionId } from "
 export {
   AGES,
   BankError,
+  cueFrom,
   defineBank,
   film,
   pickFrom,

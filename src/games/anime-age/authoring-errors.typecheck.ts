@@ -3,7 +3,7 @@
  * file: each `@ts-expect-error` fails the build if its line stops being an error.
  */
 
-import { animeAge, film, pickFrom, series, type AnswerOf, type BankAnswers, type BankPart, type QuestionId } from ".";
+import { animeAge, cueFrom, film, pickFrom, series, type AnswerOf, type BankAnswers, type BankPart, type QuestionId } from ".";
 
 const ok = { audience: "kids", reach: "hit" } as const;
 const run = { on: "ch9", from: 1990, to: 1991 } as const;
@@ -16,6 +16,19 @@ const pickAnswers: BankAnswers = { "pick-primary-battle": "pokemon", "pick-class
 const titles = { a: series({ ...ok, title: "a", runs: [run] }), b: series({ ...ok, title: "b", runs: [run] }), c: series({ ...ok, title: "c", runs: [run] }) };
 const pick = pickFrom({ ...titles, q: pickFrom(titles)({ prompt: "p", stage: "primary", titles: ["a", "b", "c"] }) });
 pick({ prompt: "p", stage: "primary", titles: ["a", "b", "c"], override: { neither: { 10: 0.2 } } });
+
+const cue = cueFrom(titles);
+cue({ type: "song", text: "t", from: "a", decoys: ["b", "c"], spread: "wide", override: { unsure: { 10: 0.5 } } });
+// @ts-expect-error a cue from a title id that isn't in the bank
+cue({ type: "song", text: "t", from: "zz", decoys: ["b", "c"], spread: "wide" });
+// @ts-expect-error a cue decoy that isn't in the bank
+cue({ type: "quote", text: "t", from: "a", decoys: ["b", "zz"], spread: "wide" });
+// @ts-expect-error a cue type that doesn't exist
+cue({ type: "poster", text: "t", from: "a", decoys: ["b", "c"], spread: "wide" });
+// @ts-expect-error a cue with one decoy
+cue({ type: "quote", text: "t", from: "a", decoys: ["b"], spread: "wide" });
+// @ts-expect-error a cue override for an answer the cue doesn't offer
+cue({ type: "quote", text: "t", from: "a", decoys: ["b", "c"], spread: "wide", override: { neither: { 10: 0.2 } } });
 
 // @ts-expect-error a year outside 1960–2026
 series({ ...ok, title: "x", runs: [{ on: "ch9", from: 2062, to: "now" }] });

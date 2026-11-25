@@ -2,8 +2,8 @@
  * Question facts: what an author writes about the world. Never probabilities,
  * except an explicit `override`.
  *
- * The author writes questions with `series(...)`, `film(...)` and the builder
- * `pickFrom` returns, into plain objects keyed by question id, so a duplicate id inside one file is
+ * The author writes questions with `series(...)`, `film(...)` and the builders
+ * `pickFrom` and `cueFrom` return, into plain objects keyed by question id, so a duplicate id inside one file is
  * a compile error. `defineBank` merges the files and checks, once at load, the
  * rules the types cannot express.
  */
@@ -132,7 +132,43 @@ export interface PickFacts<K extends string = string> {
   readonly override?: Override<K | NeitherKey | UnsureKey>;
 }
 
-export type Facts = SeriesFacts | FilmFacts | PickFacts<string>;
+/** What a cue is: a theme song, a famous line, or a character. */
+export type CueType = "song" | "quote" | "character";
+
+/**
+ * How far a cue travelled beyond the show's viewers: mostly viewers, many
+ * non-viewers too (memes, TV variety, covers), or a national catchphrase or song.
+ */
+export type Spread = "viewers" | "wide" | "everyone";
+
+/**
+ * "Which anime is this from?" A short piece of an anime and three title
+ * questions from the bank, referenced by id. No answer is ever marked correct
+ * to the player: the pick is only an age signal.
+ */
+export interface CueFacts<K extends string = string> {
+  readonly kind: "cue";
+  readonly type: CueType;
+  /**
+   * One line of the theme song or its well-known name, one famous line as Thai
+   * viewers heard it, or a character's name with a line that doesn't name the show.
+   */
+  readonly text: string;
+  /** The title the cue comes from. */
+  readonly from: K;
+  /** Two plausible titles it doesn't come from, ideally of a similar genre and other eras. */
+  readonly decoys: readonly [K, K];
+  readonly spread: Spread;
+  /** The three titles in display order, oldest first Thai year first. Filled in by the builder. */
+  readonly titles: readonly [K, K, K];
+  /** The titles' facts, in `titles` order. Filled in by the builder. */
+  readonly sources: readonly [TitleQuestionFacts, TitleQuestionFacts, TitleQuestionFacts];
+  /** Facts the author doubts: the text itself, which title it is from, or how far it spread. */
+  readonly unsure?: readonly ("text" | "from" | "spread")[];
+  readonly override?: Override<K | UnsureKey>;
+}
+
+export type Facts = SeriesFacts | FilmFacts | PickFacts<string> | CueFacts<string>;
 
 export type Question = Facts & { readonly id: string };
 
@@ -142,7 +178,9 @@ export type AnswerKeyOf<F extends Facts> = F extends SeriesFacts
     ? FilmKey
     : F extends PickFacts<infer K>
       ? K | NeitherKey | UnsureKey
-      : never;
+      : F extends CueFacts<infer K>
+        ? K | UnsureKey
+        : never;
 
 export function series(facts: Omit<SeriesFacts, "kind">): SeriesFacts {
   return { kind: "series", ...facts };
@@ -166,6 +204,40 @@ export function pickFrom<const P extends BankPart>(titles: P) {
     return { kind: "pick", ...facts, sources };
   };
 }
+
+/** The first year Thai viewers could see a title, which orders a cue's options. */
+const firstYear = (facts: TitleQuestionFacts): number =>
+  facts.kind === "series" ? Math.min(...facts.runs.map((r) => r.from)) : facts.released;
+
+/**
+ * Returns a `cue` builder whose `from` and `decoys` are type-checked against
+ * the ids of title questions in `titles`. Options show oldest title first, so
+ * where the cue's own title sits depends on the eras, not on the author.
+ */
+export function cueFrom<const P extends BankPart>(titles: P) {
+  return function cue<const F extends TitleIdsOf<P>, const D extends TitleIdsOf<P>>(
+    facts: Omit<CueFacts<F | D>, "kind" | "from" | "decoys" | "titles" | "sources"> & {
+      readonly from: F;
+      readonly decoys: readonly [D, D];
+    },
+  ): CueFacts<F | D> {
+    const factsOf = (id: F | D) => titles[id] as TitleQuestionFacts;
+    const ordered = [facts.from, ...facts.decoys].sort(
+      (a, b) => firstYear(factsOf(a)) - firstYear(factsOf(b)) || a.localeCompare(b),
+    ) as unknown as CueFacts<F | D>["titles"];
+    const sources = ordered.map(factsOf) as unknown as CueFacts<F | D>["sources"];
+    return { kind: "cue", ...facts, titles: ordered, sources };
+  };
+}
+
+const CUE_PROMPTS: Record<CueType, string> = {
+  song: "เพลงนี้มาจากเรื่องไหน?",
+  quote: "ประโยคนี้มาจากเรื่องไหน?",
+  character: "ตัวละครนี้มาจากเรื่องไหน?",
+};
+
+/** A cue's text fits on one line of a phone screen. */
+export const MAX_CUE_LENGTH = 80;
 
 const NAME_ONLY = { key: "name", label: "รู้จักแค่ชื่อ", hint: "เคยได้ยินหรือเห็นผ่านตา แต่ไม่เคยดู" } as const;
 const NOT_AT_ALL = { key: "none", label: "ไม่รู้จักเลย" } as const;
@@ -198,6 +270,11 @@ export function answerOptions(facts: Facts): readonly AnswerOption[] {
         { key: "neither", label: "ไม่ได้ดูเรื่องไหนเลย" },
         { key: "unsure", label: "จำไม่ได้" },
       ];
+    case "cue":
+      return [
+        ...facts.titles.map((key, i) => ({ key, label: facts.sources[i]!.title })),
+        { key: "unsure", label: "ไม่รู้ / นึกไม่ออก" },
+      ];
   }
 }
 
@@ -209,6 +286,8 @@ export function promptOf(facts: Facts): string {
       return `คุณเคยดูการ์ตูนเรื่อง "${facts.title}" ไหม?`;
     case "pick":
       return facts.prompt;
+    case "cue":
+      return CUE_PROMPTS[facts.type];
   }
 }
 
@@ -272,12 +351,17 @@ function factIssues(id: string, facts: Facts): string[] {
   const issues: string[] = [];
   if (facts.kind === "series") for (const run of facts.runs) issues.push(...runIssues(id, run));
   if (facts.kind === "film") for (const run of facts.later) issues.push(...runIssues(id, run));
-  if (facts.kind === "pick") {
+  if (facts.kind === "pick" || facts.kind === "cue") {
     if (new Set(facts.titles).size !== facts.titles.length) issues.push(`${id}: names one title twice`);
     const franchises = facts.sources.map((s) => s.franchise);
     if (franchises[0] !== undefined && franchises.every((f) => f === franchises[0])) {
       issues.push(`${id}: all three titles are from the ${franchises[0]} franchise, so the answer can't separate ages`);
     }
+  }
+  if (facts.kind === "cue") {
+    const length = facts.text.trim().length;
+    if (length === 0) issues.push(`${id}: cue text is empty`);
+    if (length > MAX_CUE_LENGTH) issues.push(`${id}: cue text is ${length} characters; keep it to ${MAX_CUE_LENGTH}`);
   }
   const labels = answerOptions(facts).map((o) => o.label);
   if (new Set(labels).size !== labels.length) issues.push(`${id}: two answers share a label`);

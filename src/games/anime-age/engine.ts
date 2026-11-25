@@ -10,6 +10,7 @@ import {
   type Age,
   type Question,
   type Reach,
+  type TitleQuestionFacts,
   type Year,
 } from "./schema";
 
@@ -109,7 +110,10 @@ interface Compiled {
   readonly question: Question;
   readonly card: QuestionCard;
   readonly rows: readonly Float64Array[];
+  /** Questions about one title or franchise are correlated evidence. Undefined for picks. */
   readonly franchise: string | undefined;
+  /** The title whose era a question counts toward: itself, or a cue's own title. */
+  readonly era: TitleQuestionFacts | null;
   /** Index into ERA_BANDS, or null for questions outside the strata. */
   readonly band: number | null;
   readonly familiarity: readonly number[] | null;
@@ -215,26 +219,40 @@ function compile(question: Question): Compiled {
   const card: QuestionCard = {
     id: question.id,
     prompt: promptOf(question),
-    ...(question.aside ? { subtitle: question.aside } : {}),
+    ...("aside" in question && question.aside ? { subtitle: question.aside } : {}),
     options,
   };
+  const about = aboutTitle(question);
   return {
     question,
     card,
     rows: lines.map((line) => Float64Array.from(line.p)),
-    franchise: isTitle(question) ? question.franchise : undefined,
-    band: strataBand(question),
-    familiarity: isTitle(question) ? options.map((o) => FAMILIARITY[o.key] ?? 0) : null,
+    franchise: about ? (about.facts.franchise ?? about.id) : undefined,
+    era: about?.facts ?? null,
+    band: about ? strataBand(about.facts) : null,
+    familiarity:
+      question.kind === "cue"
+        ? options.map((o) => (o.key === question.from ? 1 : 0))
+        : about
+          ? options.map((o) => FAMILIARITY[o.key] ?? 0)
+          : null,
   };
 }
 
-type TitleQuestion = Extract<Question, { kind: "series" | "film" }>;
+/** The one title a question is about: a title question itself, or a cue's own title. Picks span three. */
+function aboutTitle(question: Question): { id: string; facts: TitleQuestionFacts } | null {
+  switch (question.kind) {
+    case "series":
+    case "film":
+      return { id: question.id, facts: question };
+    case "cue":
+      return { id: question.from, facts: question.sources[question.titles.indexOf(question.from)]! };
+    case "pick":
+      return null;
+  }
+}
 
-const isTitle = (question: Question): question is TitleQuestion =>
-  question.kind === "series" || question.kind === "film";
-
-function strataBand(question: Question): number | null {
-  if (!isTitle(question)) return null;
+function strataBand(question: TitleQuestionFacts): number | null {
   const spans =
     question.kind === "series"
       ? question.runs.map((r) => [r.from, r.to === "now" ? BANK_YEAR : r.to] as const)
@@ -385,9 +403,7 @@ function decidingAnswer(
   return best;
 }
 
-function titleOf(q: Compiled): string {
-  return isTitle(q.question) ? q.question.title : q.question.prompt;
-}
+const titleOf = (q: Compiled): string => q.era!.title;
 
 function memoryStrata(
   compiled: readonly Compiled[],
@@ -402,7 +418,7 @@ function memoryStrata(
     const titles = compiled.filter((q) => q.band === b);
     if (titles.length === 0) return { band, knowledge: 0, basis: "empty", samples: [] };
     const byReach = [...titles].sort(
-      (x, y) => REACH_RANK[(y.question as { reach: Reach }).reach] - REACH_RANK[(x.question as { reach: Reach }).reach],
+      (x, y) => REACH_RANK[y.era!.reach] - REACH_RANK[x.era!.reach],
     );
     const asked = titles.filter((q) => answered.has(q.question.id));
     if (asked.length > 0) {
