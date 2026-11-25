@@ -164,7 +164,7 @@ function CueText({ cue }: { cue: Cue }) {
   );
 }
 
-function Shell({ status, children }: { status?: ReactNode; children: ReactNode }) {
+export function Shell({ status, children }: { status?: ReactNode; children: ReactNode }) {
   return (
     <main className="shell">
       <header className="topbar">
@@ -181,9 +181,9 @@ function Shell({ status, children }: { status?: ReactNode; children: ReactNode }
   );
 }
 
-export function BigButton({ children, onClick }: { children: ReactNode; onClick: () => void }) {
+export function BigButton({ children, onClick, autoFocus }: { children: ReactNode; onClick: () => void; autoFocus?: boolean }) {
   return (
-    <button type="button" onClick={onClick} className="stock stock--primary mt-10 text-lg">
+    <button type="button" onClick={onClick} autoFocus={autoFocus} className="stock stock--primary mt-10 text-lg">
       {children}
     </button>
   );
