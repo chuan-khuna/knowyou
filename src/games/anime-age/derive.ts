@@ -67,14 +67,15 @@ const ACCESS: Record<Outlet, Piecewise> = {
 /**
  * Per reach level: C is the share of a receptive cohort that ever watches, D the
  * share of watchers who watched a lot, F name recognition among non-watchers,
- * and T the years a name stays in the culture after its last run. An infinite
- * tail is a classic everyone has heard of.
+ * T the years a name stays fully in the culture after its last run, and L the
+ * name recognition that lasts after that, for anyone, from reruns, memes and
+ * talk. An infinite tail is a classic everyone has heard of.
  */
-const REACH: Record<Reach, { C: number; D: number; F: number; T: number }> = {
-  phenomenon: { C: 0.92, D: 0.65, F: 0.85, T: Infinity },
-  hit: { C: 0.65, D: 0.5, F: 0.45, T: 10 },
-  known: { C: 0.35, D: 0.4, F: 0.15, T: 5 },
-  niche: { C: 0.12, D: 0.4, F: 0.03, T: 2 },
+const REACH: Record<Reach, { C: number; D: number; F: number; T: number; L: number }> = {
+  phenomenon: { C: 0.92, D: 0.65, F: 0.85, T: Infinity, L: 0.85 },
+  hit: { C: 0.65, D: 0.5, F: 0.45, T: 10, L: 0.25 },
+  known: { C: 0.35, D: 0.4, F: 0.15, T: 5, L: 0.06 },
+  niche: { C: 0.12, D: 0.4, F: 0.03, T: 2, L: 0.01 },
 };
 
 /** Per-year chance that a fully receptive person with full access starts watching. */
@@ -203,7 +204,7 @@ function awareness(
   reach: Reach,
   born: number,
 ): { fame: number; parent: number } {
-  const { C, F, T } = REACH[reach];
+  const { C, F, T, L } = REACH[reach];
   const first = Math.min(...spans.map((s) => s.from));
   const last = Math.min(BANK_YEAR, Math.max(...spans.map((s) => s.to)) + T);
   let presence = 0;
@@ -215,7 +216,7 @@ function awareness(
     }
   }
   return {
-    fame: F * Math.min(1, presence / FAME_YEARS),
+    fame: Math.max(L, F * Math.min(1, presence / FAME_YEARS)),
     parent: C * PARENT_PULL[audience] * parentAccess,
   };
 }

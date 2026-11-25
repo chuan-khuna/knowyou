@@ -20,6 +20,7 @@ export {
   type FinishedAnimeAgePlay,
   type Stratum,
 } from "./engine";
+export { definePersona, toPersonaSource, type Persona } from "./personas";
 export { animeAgeBank, type AnswerOf, type BankAnswers, type QuestionId } from "./bank";
 export {
   AGES,
