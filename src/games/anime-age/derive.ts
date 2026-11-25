@@ -336,12 +336,31 @@ function cueAt(facts: CueFacts, x: number): number[] {
     const { fame, parent } = titleAwareness(source, born);
     return knowFrom(watchedDuring(source, born), fame, parent);
   });
-  const total = nameKnown.reduce((s, k) => s + k, 0);
+  const shares = guessShares(nameKnown);
   const guess = (1 - recognise) * (1 - CUE_DONT_KNOW);
-  const titles = facts.titles.map(
-    (id, j) => (id === facts.from ? recognise : 0) + guess * (total > 0 ? nameKnown[j]! / total : 1 / 3),
-  );
+  const titles = facts.titles.map((id, j) => (id === facts.from ? recognise : 0) + guess * shares[j]!);
   return [...titles, (1 - recognise) * CUE_DONT_KNOW];
+}
+
+/**
+ * How a guess spreads over options whose names are known with these
+ * probabilities: a guesser picks evenly among the names they know, or among
+ * all options when they know none.
+ */
+function guessShares(known: readonly number[]): number[] {
+  const shares = known.map(() => 0);
+  for (let set = 0; set < 1 << known.length; set++) {
+    let p = 1;
+    const members: number[] = [];
+    known.forEach((k, j) => {
+      const inSet = (set >> j) & 1;
+      p *= inSet ? k : 1 - k;
+      if (inSet) members.push(j);
+    });
+    if (members.length === 0) shares.forEach((_, j) => (shares[j]! += p / known.length));
+    else for (const j of members) shares[j]! += p / members.length;
+  }
+  return shares;
 }
 
 function mix(rows: readonly (readonly [number[], number])[]): number[] {
