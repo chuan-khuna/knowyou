@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useState, type ReactNode } from "react";
-import type { Engine, FinishedPlay, Play } from "@/games/engine";
+import type { Cue, Engine, FinishedPlay, Play } from "@/games/engine";
 
 interface PlayScreenProps<V, X> {
   readonly engine: Engine<V, X>;
@@ -71,6 +71,7 @@ export function PlayScreen<V, X>({ engine, title, intro, result }: PlayScreenPro
         {play.question.prompt}
       </h2>
       {play.question.subtitle ? <p className="mt-2 text-muted">{play.question.subtitle}</p> : null}
+      {play.question.cue ? <CueText cue={play.question.cue} /> : null}
 
       <ol className="mt-6 space-y-3">
         {play.question.options.map((option, i) => (
@@ -93,6 +94,14 @@ export function PlayScreen<V, X>({ engine, title, intro, result }: PlayScreenPro
       </ol>
       <p className="mt-6 hidden text-center text-sm text-muted sm:block">กดปุ่มตัวเลขบนคีย์บอร์ดเพื่อตอบได้</p>
     </Shell>
+  );
+}
+
+function CueText({ cue }: { cue: Cue }) {
+  return cue.quoted ? (
+    <blockquote className="mt-5 border-l-4 border-accent py-1 pl-4 text-xl leading-relaxed font-medium">“{cue.text}”</blockquote>
+  ) : (
+    <p className="mt-5 rounded-lg bg-line/60 px-4 py-3 text-xl leading-relaxed font-medium">{cue.text}</p>
   );
 }
 

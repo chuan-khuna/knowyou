@@ -15,16 +15,25 @@ export interface AnswerOption {
   readonly hint?: string;
 }
 
+/** What a cue question shows under its prompt. A song line or a quote is set as a quotation. */
+export interface Cue {
+  readonly text: string;
+  readonly quoted: boolean;
+}
+
 export interface QuestionCard {
   readonly id: string;
   readonly prompt: string;
   readonly subtitle?: string;
+  readonly cue?: Cue;
   readonly options: readonly AnswerOption[];
 }
 
 export interface AnsweredQuestion {
   readonly questionId: string;
   readonly prompt: string;
+  /** The cue's text, so the answer reads on its own in the answer list. */
+  readonly cue?: string;
   readonly answerKey: string;
   readonly answerLabel: string;
 }

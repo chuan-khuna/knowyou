@@ -105,6 +105,20 @@ describe("a play", () => {
     expect(play.questionsAsked).toBe(5);
   });
 
+  test("a cue question shows its cue, quoted for a song or a line, and the answer log keeps it", () => {
+    for (const [type, quoted] of [["song", true], ["quote", true], ["character", false]] as const) {
+      const question = animeAgeBank.list.find((q) => q.kind === "cue" && q.type === type);
+      if (question?.kind !== "cue") throw new Error(`the bank has a ${type} cue`);
+      const engine = createAnimeAgeEngine([question]);
+      const play = engine.start({ seed: 1 });
+      if (play.phase !== "asking") throw new Error("a fresh play asks a question");
+      expect(play.question.cue).toEqual({ text: question.text, quoted });
+      expect(play.question.options.at(-1)?.label).toBe("ไม่รู้ / นึกไม่ออก");
+      const after = engine.answer(play, play.question.options[0]!.key);
+      expect(after.answers[0]?.cue).toBe(question.text);
+    }
+  });
+
   test("an edge guess hits every age on its side", () => {
     expect(isHit({ kind: "atMost", age: 10 }, 7)).toBe(true);
     expect(isHit({ kind: "atMost", age: 10 }, 12)).toBe(false);

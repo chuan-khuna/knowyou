@@ -78,6 +78,7 @@ export function AnimeAgeResult({ play, playAgain }: { play: FinishedAnimeAgePlay
           <h2 className="text-xl font-bold">คำตอบที่ทำให้ทายได้</h2>
           <p className="mt-2 rounded-xl border border-accent bg-card p-4">
             <span className="block">{deciding.prompt}</span>
+            {deciding.cue ? <span className="mt-1 block text-muted">“{deciding.cue}”</span> : null}
             <span className="mt-1 block font-bold">{deciding.answerLabel}</span>
           </p>
         </section>
@@ -90,6 +91,7 @@ export function AnimeAgeResult({ play, playAgain }: { play: FinishedAnimeAgePlay
             <li key={answer.questionId} className={`px-4 py-3 ${i === play.decidingAnswer ? "bg-line/50" : ""}`}>
               <span className="block text-sm text-muted">
                 {i + 1}. {answer.prompt}
+                {answer.cue ? <> “{answer.cue}”</> : null}
               </span>
               <span className="block font-medium">{answer.answerLabel}</span>
             </li>

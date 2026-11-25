@@ -198,6 +198,7 @@ export function createAnimeAgeEngine(questions: readonly Question[]): AnimeAgeEn
       const entry: AnsweredQuestion = {
         questionId: play.question.id,
         prompt: play.question.prompt,
+        ...(play.question.cue ? { cue: play.question.cue.text } : {}),
         answerKey: option.key,
         answerLabel: option.label,
       };
@@ -220,6 +221,7 @@ function compile(question: Question): Compiled {
     id: question.id,
     prompt: promptOf(question),
     ...("aside" in question && question.aside ? { subtitle: question.aside } : {}),
+    ...(question.kind === "cue" ? { cue: { text: question.text, quoted: question.type !== "character" } } : {}),
     options,
   };
   const about = aboutTitle(question);
