@@ -8,11 +8,39 @@ Issues and specs live as local markdown files under `.scratch/<feature-slug>/`. 
 
 ### Triage labels
 
-The five default triage roles (`needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, `wontfix`), recorded as a `Status:` line in each issue file. See `docs/agents/triage-labels.md`.
+The five default triage roles (`needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, `wontfix`), plus `done` for shipped work, recorded as a `Status:` line in each issue file. See `docs/agents/triage-labels.md`.
 
 ### Domain docs
 
 Single-context: one `GLOSSARY.md` and `docs/adr/` at the repo root. See `docs/agents/domain.md`.
+
+### Workflow: pstack entry, Pocock requirements
+
+Start every task with `/pstack:poteto-mode`. For a task that adds or changes behaviour
+(Feature, Prototype, Multi-phase plan), run the requirements gate before you open the
+playbook todolist:
+
+1. Find the spec. Look for `.scratch/<feature-slug>/spec.md`. If it exists with
+   `Status: ready-for-agent`, read it, skip to step 4, and treat it as the source of truth.
+2. Grill lightly. Read `.agents/skills/grilling/SKILL.md` and
+   `.agents/skills/domain-modeling/SKILL.md`, and follow them with these limits:
+   - Ask only decisions that change scope, the data shape, or what the player sees.
+     Answer facts yourself from the code and docs.
+   - One question per round, overriding the skill's whole-frontier rounds: ask the frontier
+     question that matters most, with your recommended answer. At most 5 rounds in total.
+   - For anything else, take your recommendation and list it under `## Assumptions` in
+     the spec. The user vetoes there, not in chat.
+   - Stop and wait for answers. This is the one pause point in poteto-mode.
+3. Write the spec. Read `.agents/skills/to-spec/SKILL.md` and follow it. Write to
+   `.scratch/<feature-slug>/spec.md` per `docs/agents/issue-tracker.md`. Skip its seam
+   check-in when the grill already settled the seams.
+4. Run the playbook. Open the matched poteto-mode playbook with the spec as its goal and
+   success criteria. For work that spans several PRs, follow
+   `.agents/skills/to-tickets/SKILL.md` first and work the tickets blockers-first.
+5. Close the spec. When the work merges, add a `## Comments` line with the PR or commit,
+   and set `Status:` to `done`.
+
+Bug fixes, refactors and investigations skip the gate.
 
 ## Project docs
 

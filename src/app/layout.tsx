@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Mali, Noto_Sans_Thai_Looped } from "next/font/google";
-import "./globals.css";
+import "../styles/globals.css";
 
 const thai = Noto_Sans_Thai_Looped({
   subsets: ["thai", "latin"],

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { BigButton, type ResultControls } from "@/components/play-screen";
+import { PlayAgainBar, type ResultControls } from "@/components/play-screen";
 import type { RevealParser } from "@/lib/play-record";
 import { sound } from "@/lib/sound";
 import { isHit, toPersonaSource, type AgeGuessValue, type FinishedAnimeAgePlay, type Stratum } from "@/games/anime-age";
@@ -123,7 +123,7 @@ export function AnimeAgeResult({
 
       {process.env.NODE_ENV === "development" ? <PersonaRecorder play={play} reveal={reveal} /> : null}
 
-      <BigButton onClick={playAgain}>เล่นอีกครั้ง</BigButton>
+      <PlayAgainBar onClick={playAgain} />
     </div>
   );
 }

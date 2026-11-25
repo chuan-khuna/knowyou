@@ -19,14 +19,14 @@ export interface PlayRecord<TReveal> {
 /** Turns stored JSON into a game's reveal, or null when it isn't one. */
 export type RevealParser<TReveal> = (value: unknown) => TReveal | null;
 
-export interface RestoredPlay<TValue, TExtras, TReveal> {
-  readonly play: Play<TValue, TExtras>;
+export interface RestoredPlay<TValue, TExtras, TLive, TReveal> {
+  readonly play: Play<TValue, TExtras, TLive>;
   readonly reveal: TReveal | undefined;
 }
 
 export const playRecordKey = (game: GameId): string => `knowyou:play:${game}`;
 
-export function encodePlayRecord<TReveal>(play: Play<unknown, unknown>, reveal: TReveal | undefined): string {
+export function encodePlayRecord<TReveal>(play: Play<unknown, unknown, unknown>, reveal: TReveal | undefined): string {
   const record: PlayRecord<TReveal> = {
     v: 1,
     seed: play.seed,
@@ -43,11 +43,11 @@ const isRecord = (value: unknown): value is Record<string, unknown> =>
  * Rebuilds a saved play, or returns null when the record is missing, corrupt,
  * from another version, or no longer replays on the engine's bank.
  */
-export function restorePlay<TValue, TExtras, TReveal>(
-  engine: Engine<TValue, TExtras>,
+export function restorePlay<TValue, TExtras, TLive, TReveal>(
+  engine: Engine<TValue, TExtras, TLive>,
   raw: string | null,
   parseReveal: RevealParser<TReveal>,
-): RestoredPlay<TValue, TExtras, TReveal> | null {
+): RestoredPlay<TValue, TExtras, TLive, TReveal> | null {
   if (raw === null) return null;
   let value: unknown;
   try {
@@ -67,7 +67,7 @@ export function restorePlay<TValue, TExtras, TReveal>(
     reveal = parsed;
   }
 
-  let play: Play<TValue, TExtras>;
+  let play: Play<TValue, TExtras, TLive>;
   try {
     play = engine.start({ seed });
     for (const key of answerKeys) {

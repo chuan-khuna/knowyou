@@ -1,6 +1,8 @@
 # Spec: Foundation and stack
 
-Status: ready-for-agent
+Status: done
+
+Settled as a decision record. Anime Age v1 is built on it and merged on `main`. The ADR for Q7 is pending in `issues/01-adr-one-engine-per-game.md`.
 
 The settled foundation for all KnowYou games, from the grilling session on 2026-11-25. Terms follow `GLOSSARY.md`. The discussion record is `docs/records/2026-11-25-foundation-and-stack.md`. The first game built on this foundation is specified in `.scratch/anime-age/spec.md`.
 
@@ -72,9 +74,9 @@ The settled foundation for all KnowYou games, from the grilling session on 2026-
 
 ## Open questions
 
-- The engine interface the play screen calls. The architect step for Anime Age is settling this now.
+- ~~The engine interface the play screen calls.~~ Settled: `start` and `answer`, documented in `docs/documents/anime-age-engine.md`. The shared contract is gaining optional `live` data and question figures for Province; the change is additive and Anime Age is unchanged.
 - How each engine defines confidence and its stop rule. For Anime Age, the spec proposes the posterior mass within ±1 year.
 - The Anime Age question facts schema, and the size of the v1 question bank.
-- Whether a play in progress survives a page refresh. Out of scope for v1.
-- Fonts for Thai text.
-- The reason behind one engine per game (Q7), to record as an ADR.
+- ~~Whether a play in progress survives a page refresh.~~ Now in scope for both games, and in progress.
+- ~~Fonts for Thai text.~~ Settled: Mali for display, Noto Sans Thai Looped for body text.
+- The reason behind one engine per game (Q7), to record as an ADR. See `issues/01-adr-one-engine-per-game.md`.

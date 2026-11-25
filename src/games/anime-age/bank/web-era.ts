@@ -77,6 +77,14 @@ export const webEra = {
     reach: "known",
     unsure: ["runs"],
   }),
+  ueki: series({
+    title: "อุเอคิ",
+    aside: "The Law of Ueki เด็กที่เปลี่ยนขยะเป็นต้นไม้",
+    runs: [{ on: "ch9", from: 2007, to: 2008 }],
+    audience: "teens",
+    reach: "known",
+    unsure: ["runs", "reach"],
+  }),
   bleach: series({
     title: "บลีช เทพมรณะ",
     runs: [

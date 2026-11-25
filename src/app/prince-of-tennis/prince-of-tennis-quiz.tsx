@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
-import { BigButton, Shell } from "@/components/play-screen";
+import { BigButton, PlayAgainBar, Shell } from "@/components/play-screen";
 import {
   QUESTIONS_PER_PLAY,
   QUIZ_RECORD_KEY,
@@ -259,7 +259,7 @@ function Result({ play, playAgain }: { play: FinishedQuizPlay; playAgain: () => 
         </ol>
       </section>
 
-      <BigButton onClick={playAgain}>เล่นอีกครั้ง</BigButton>
+      <PlayAgainBar onClick={playAgain} />
     </div>
   );
 }

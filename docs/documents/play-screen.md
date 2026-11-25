@@ -20,3 +20,8 @@ A play survives a page refresh. The rules live in `src/lib/play-record.ts`, a pu
 - **Restoring.** On mount, in an effect, the screen calls `engine.start({ seed })` and replays each answer key through `engine.answer`.
 - **What is dropped silently.** A record that isn't JSON, has another `v`, has a malformed seed or keys, has a reveal the game's parser rejects, has a reveal on an unfinished play, or holds an answer key the engine rejects. The last case is a bank that changed since the play was saved. The player sees the intro.
 - **The reveal.** Each game types its own reveal and supplies a parser (`RevealParser<R>`) that turns stored JSON back into it. Anime Age's reveal is right, or wrong with the real age. Before the player answers ทายถูกไหม? there is no reveal. The result screen is controlled: it reads `reveal` and calls `setReveal` from the `ResultControls` the screen passes it.
+
+## Result screens
+
+- Each game draws its own result. Both end with `PlayAgainBar`, เล่นอีกครั้ง on a paper band that sticks to the bottom of the viewport (`position: sticky; bottom: 0`, plus the phone's bottom safe area) while the result scrolls under it.
+- It is the result's last element, so it is last in focus order, and once the page is scrolled to the end it rests after the answer list instead of covering it. It is the page's only sticky element.

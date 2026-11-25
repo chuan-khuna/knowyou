@@ -1,0 +1,95 @@
+/* The province map: provinces, neighbours, marks and labels, live and on the result. */
+@layer components {
+  .map-frame {
+    position: relative;
+  }
+
+  .map {
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .map-province {
+    stroke: var(--color-paper);
+    stroke-width: 0.75px;
+    vector-effect: non-scaling-stroke;
+    transition: fill var(--dur-long) var(--ease-snap);
+  }
+
+  .map-mark {
+    fill: none;
+    stroke-width: 2.5px;
+    stroke-linejoin: round;
+    vector-effect: non-scaling-stroke;
+  }
+
+  .map-mark--guess {
+    stroke: var(--color-ink);
+  }
+
+  .map-mark--real {
+    stroke: var(--color-mint-deep);
+    stroke-dasharray: 4 3;
+  }
+
+  .map-label {
+    font-family: var(--font-display);
+    font-variant-numeric: tabular-nums;
+    font-weight: 600;
+    font-size: 52px;
+    fill: var(--color-ink);
+    paint-order: stroke;
+    stroke: var(--color-paper);
+    stroke-width: 10px;
+    stroke-linejoin: round;
+  }
+
+  .map-label--real {
+    fill: var(--color-mint-deep);
+  }
+
+  .map-neighbour {
+    fill: var(--color-paper-2);
+    transition: fill var(--dur-short) var(--ease-snap);
+  }
+
+  .map-frame--labelled .map-neighbour {
+    fill: color-mix(in oklch, var(--color-paper-3) 80%, var(--color-muted));
+  }
+
+  .map-country {
+    position: absolute;
+    translate: -50% -50%;
+    font-family: var(--font-body);
+    font-size: var(--text-sm);
+    line-height: var(--text-sm--line-height);
+    white-space: nowrap;
+    color: var(--color-muted);
+    text-shadow:
+      0 0 2px var(--color-paper),
+      0 0 4px var(--color-paper);
+    pointer-events: none;
+  }
+
+  .map--result {
+    max-height: 28rem;
+  }
+
+  .result-map {
+    display: grid;
+    gap: var(--space-lg);
+    align-items: start;
+  }
+
+  .map-country--west {
+    translate: 0 -50%;
+  }
+
+  @media (min-width: 40rem) {
+    .result-map {
+      grid-template-columns: minmax(0, 15rem) 1fr;
+    }
+  }
+}

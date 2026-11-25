@@ -40,6 +40,7 @@ interface FinishedPlay<V, X> extends PlayBase {
 ```
 
 - **The answer log is the only state.** A play stores its seed and its answers. Everything else (posterior, confidence, next question, guess) is rebuilt from them, so no cached belief can drift from the log. The rebuild costs about 41 × 45 multiplications.
+- Since Province, an asking play may also carry an optional, game-typed `live` field (`AskingPlay<TLive = never>`, a third type parameter on `Play` and `Engine`) that the game's own live view reads. Anime Age leaves it out. See `province-engine.md`.
 - The play screen never needs the game's value type. It reads `guess.label`. Only each game's result screen reads `extras`.
 - The Anime Age engine adds one method beyond the contract, `answerCurves(id)`. The simulated players and the author's curve preview both read exactly the compiled tables, overrides included.
 - `src/games/anime-age/index.ts` is the only entry point. A boundaries test fails on any import of the module's internals from outside it.

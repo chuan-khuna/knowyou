@@ -13,6 +13,16 @@ import type { ProvinceId } from "./ids";
 
 export type Region = "north" | "northeast" | "central" | "east" | "west" | "south";
 
+/** The six regions in the order the province picker lists them. */
+export const REGION_NAMES: Readonly<Record<Region, string>> = {
+  north: "ภาคเหนือ",
+  northeast: "ภาคตะวันออกเฉียงเหนือ",
+  central: "ภาคกลาง",
+  east: "ภาคตะวันออก",
+  west: "ภาคตะวันตก",
+  south: "ภาคใต้",
+};
+
 /** The home dialect: กลาง, คำเมือง, อีสาน/ลาว, ใต้, เขมร/กูย, มลายู. */
 export type Dialect = "klang" | "muang" | "isan" | "tai" | "khmer" | "malay";
 export const DIALECTS: readonly Dialect[] = ["klang", "muang", "isan", "tai", "khmer", "malay"];
@@ -110,9 +120,6 @@ export const MEASURES = {
 export type Measure = keyof typeof MEASURES;
 export type MeasureKey<M extends Measure> = (typeof MEASURES)[M][number];
 
-/** A figure the play screen shows with a question. */
-export type Figure = "neighbours";
-
 /** Distributes over measures, so GeoFacts (no argument) is the union of every measure's facts. */
 export type GeoFacts<M extends Measure = Measure> = M extends Measure
   ? {
@@ -121,7 +128,6 @@ export type GeoFacts<M extends Measure = Measure> = M extends Measure
       readonly measure: M;
       readonly prompt: string;
       readonly aside?: string;
-      readonly figure?: Figure;
       readonly labels: { readonly [K in MeasureKey<M>]: string };
     }
   : never;

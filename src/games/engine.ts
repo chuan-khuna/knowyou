@@ -5,6 +5,10 @@
  * field derived from those two. `answer` returns a new play. The phase is part
  * of the type, so a guess exists only on a finished play and only an asking
  * play accepts an answer.
+ *
+ * One optional extension lets a game show more than the shared screen knows,
+ * without the screen importing the game: `AskingPlay.live`, data the game's
+ * own live view reads while asking (typed per game, `never` by default).
  */
 
 export interface AnswerOption {
@@ -51,11 +55,13 @@ interface PlayBase {
   readonly confidence: number;
 }
 
-export interface AskingPlay extends PlayBase {
+export interface AskingPlay<TLive = never> extends PlayBase {
   readonly phase: "asking";
   /** 1-based. */
   readonly questionNumber: number;
   readonly question: QuestionCard;
+  /** Data only the game's own live view reads while asking, such as Province's belief map. */
+  readonly live?: TLive;
 }
 
 export interface FinishedPlay<TValue, TExtras> extends PlayBase {
@@ -68,10 +74,10 @@ export interface FinishedPlay<TValue, TExtras> extends PlayBase {
   readonly extras: TExtras;
 }
 
-export type Play<TValue, TExtras> = AskingPlay | FinishedPlay<TValue, TExtras>;
+export type Play<TValue, TExtras, TLive = never> = AskingPlay<TLive> | FinishedPlay<TValue, TExtras>;
 
-export interface Engine<TValue, TExtras> {
-  start(options: { readonly seed: number }): Play<TValue, TExtras>;
+export interface Engine<TValue, TExtras, TLive = never> {
+  start(options: { readonly seed: number }): Play<TValue, TExtras, TLive>;
   /** Throws if `answerKey` is not one of the current question's options. */
-  answer(play: AskingPlay, answerKey: string): Play<TValue, TExtras>;
+  answer(play: AskingPlay<TLive>, answerKey: string): Play<TValue, TExtras, TLive>;
 }

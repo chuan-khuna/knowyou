@@ -1,0 +1,183 @@
+/* Controls: card-stock buttons, answer options, the province select and the icon button. */
+@layer components {
+  .stock {
+    --edge: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-md);
+    width: 100%;
+    min-height: 54px;
+    padding: var(--space-sm) var(--space-lg);
+    border: 0;
+    border-radius: var(--radius-stock);
+    background: var(--color-card);
+    color: var(--color-ink);
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 1px var(--color-rule), 0 var(--edge) 0 0 var(--color-edge);
+    transition:
+      translate var(--dur-micro) var(--ease-snap),
+      box-shadow var(--dur-micro) var(--ease-snap);
+  }
+
+  .stock:hover {
+    --edge: 3px;
+    translate: 0 -1px;
+  }
+
+  .stock:active {
+    --edge: 0px;
+    translate: 0 2px;
+  }
+
+  .stock:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+    --edge: 0px;
+    translate: 0 2px;
+  }
+
+  .stock--primary {
+    background: var(--color-accent);
+    color: var(--color-accent-ink);
+    box-shadow: 0 var(--edge) 0 0 var(--color-accent-deep);
+    transition-timing-function: var(--ease-spring);
+  }
+
+  .option {
+    justify-content: flex-start;
+    min-height: 64px;
+    padding-inline: var(--space-md);
+    text-align: left;
+    font-weight: 400;
+  }
+
+  .option-key {
+    display: none;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 10px;
+    background: var(--color-paper-2);
+    color: var(--color-muted);
+    font-size: var(--text-sm);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .select {
+    display: block;
+    width: 100%;
+    min-height: 54px;
+    padding: var(--space-sm) var(--space-md);
+    border: 0;
+    border-radius: var(--radius-input);
+    background: var(--color-card);
+    color: var(--color-ink);
+    font-size: var(--text-lg);
+    cursor: pointer;
+    box-shadow: inset 0 0 0 1px var(--color-rule), 0 2px 0 0 var(--color-edge);
+    transition: box-shadow var(--dur-micro) var(--ease-snap);
+  }
+
+  .select:hover {
+    box-shadow: inset 0 0 0 1px var(--color-muted), 0 2px 0 0 var(--color-edge);
+  }
+
+  .select:active {
+    box-shadow: inset 0 0 0 1px var(--color-muted);
+  }
+
+  .select:focus-visible {
+    outline: 2px solid var(--color-focus);
+    outline-offset: 2px;
+    transition: none;
+  }
+
+  .select:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+
+  .icon-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border: 0;
+    border-radius: var(--radius-input);
+    background: transparent;
+    color: var(--color-muted);
+    cursor: pointer;
+    transition:
+      background-color var(--dur-micro) var(--ease-snap),
+      color var(--dur-micro) var(--ease-snap),
+      translate var(--dur-micro) var(--ease-snap);
+  }
+
+  .icon-button:hover {
+    background: var(--color-paper-2);
+    color: var(--color-ink);
+  }
+
+  .icon-button:active {
+    translate: 0 1px;
+    background: var(--color-paper-3);
+  }
+
+  .icon-button:focus-visible {
+    outline: 2px solid var(--color-focus);
+    outline-offset: 2px;
+    transition: none;
+  }
+
+  .icon-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+    translate: none;
+  }
+
+  .game-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-2xs);
+    padding: var(--space-lg);
+    text-align: left;
+  }
+
+  @media (min-width: 40rem) {
+    .option-key { display: inline-flex; }
+  }
+
+  .option--locked {
+    cursor: default;
+  }
+  .option--locked:hover {
+    --edge: 2px;
+    translate: none;
+  }
+  .option--right {
+    background: color-mix(in oklch, var(--color-mint) 18%, var(--color-card));
+    box-shadow: inset 0 0 0 2px var(--color-mint-deep), 0 var(--edge) 0 0 var(--color-edge);
+  }
+  .option--wrong {
+    background: color-mix(in oklch, var(--color-accent-3) 14%, var(--color-card));
+    box-shadow: inset 0 0 0 2px var(--color-accent-3), 0 var(--edge) 0 0 var(--color-edge);
+  }
+  .option--faded {
+    opacity: 0.6;
+  }
+  .option-tag {
+    display: inline-flex;
+    flex: none;
+    align-items: center;
+    gap: var(--space-xs);
+    font-size: var(--text-sm);
+    font-weight: 600;
+  }
+}
