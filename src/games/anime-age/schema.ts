@@ -8,6 +8,8 @@
  * rules the types cannot express.
  */
 
+import type { AnswerOption } from "../engine";
+
 /** The year the bank's facts are true as of. An age is an age in this year. */
 export const BANK_YEAR = 2026;
 
@@ -111,6 +113,8 @@ export interface FilmFacts extends TitleFacts<FilmKey, "released" | "later"> {
 
 export interface ChoiceSpec {
   readonly label: string;
+  /** A short line that settles which choice to pick when more than one might seem to fit. */
+  readonly hint?: string;
   /** The years in which this was a common answer for someone at the question's life stage. */
   readonly years: readonly [from: Year, to: Year | "now"];
   /** Relative commonness among choices that overlap in time. Default 1. */
@@ -120,14 +124,40 @@ export interface ChoiceSpec {
 export interface ChoiceFacts<K extends string = string> {
   readonly kind: "choice";
   readonly prompt: string;
+  /** A small line under the prompt, such as how to pick when several choices fit. */
+  readonly aside?: string;
   readonly stage: LifeStage;
-  /** Shown in key order, followed by the automatic "unsure" answer. */
+  /**
+   * 3 or 4 choices, shown in key order and followed by the automatic "unsure"
+   * answer. Each real person at the stage has exactly one fitting choice.
+   */
   readonly choices: { readonly [C in K]: ChoiceSpec };
   readonly unsure?: readonly ("years" | "share")[];
   readonly override?: Override<K | UnsureKey>;
 }
 
-export type Facts = SeriesFacts | FilmFacts | ChoiceFacts<string>;
+export type TitleQuestionFacts = SeriesFacts | FilmFacts;
+
+export type NeitherKey = "neither";
+
+/**
+ * "Which of these three?" A prompt tied to a life stage and three title
+ * questions from the bank, referenced by id. It adds no new world facts: its
+ * probabilities come from the referenced titles' own facts.
+ */
+export interface PickFacts<K extends string = string> {
+  readonly kind: "pick";
+  readonly prompt: string;
+  readonly aside?: string;
+  readonly stage: LifeStage;
+  /** Title question ids, ideally from clearly different eras so the answer separates ages. */
+  readonly titles: readonly [K, K, K];
+  /** The referenced titles' facts, in `titles` order. Filled in by the builder. */
+  readonly sources: readonly [TitleQuestionFacts, TitleQuestionFacts, TitleQuestionFacts];
+  readonly override?: Override<K | NeitherKey | UnsureKey>;
+}
+
+export type Facts = SeriesFacts | FilmFacts | ChoiceFacts<string> | PickFacts<string>;
 
 export type Question = Facts & { readonly id: string };
 
@@ -137,7 +167,9 @@ export type AnswerKeyOf<F extends Facts> = F extends SeriesFacts
     ? FilmKey
     : F extends ChoiceFacts<infer K>
       ? K | UnsureKey
-      : never;
+      : F extends PickFacts<infer K>
+        ? K | NeitherKey | UnsureKey
+        : never;
 
 export function series(facts: Omit<SeriesFacts, "kind">): SeriesFacts {
   return { kind: "series", ...facts };
@@ -153,24 +185,42 @@ export function choice<const K extends string>(
   return { kind: "choice", ...facts };
 }
 
-export interface AnswerOption {
-  readonly key: string;
-  readonly label: string;
+type TitleIdsOf<P> = { [I in keyof P]: P[I] extends TitleQuestionFacts ? I : never }[keyof P] & string;
+
+/**
+ * Returns a `pick` builder whose titles are type-checked against the ids of
+ * title questions in `titles`, so a pick never names a question that doesn't exist.
+ */
+export function pickFrom<const P extends BankPart>(titles: P) {
+  return function pick<const K extends TitleIdsOf<P>>(
+    facts: Omit<PickFacts<K>, "kind" | "sources">,
+  ): PickFacts<K> {
+    const sources = facts.titles.map((id) => titles[id] as TitleQuestionFacts) as unknown as PickFacts<K>["sources"];
+    return { kind: "pick", ...facts, sources };
+  };
 }
 
+const NAME_ONLY = { key: "name", label: "รู้จักแค่ชื่อ", hint: "เคยได้ยินหรือเห็นผ่านตา แต่ไม่เคยดู" } as const;
+const NOT_AT_ALL = { key: "none", label: "ไม่รู้จักเลย" } as const;
+
+// For a title, "ไม่รู้จักเลย" is the don't-know answer; a separate "จำไม่ได้" would overlap it.
 const SERIES_OPTIONS = [
-  { key: "lot", label: "ดูประจำ" },
-  { key: "seen", label: "เคยดู" },
-  { key: "name", label: "รู้จักแค่ชื่อ" },
-  { key: "none", label: "ไม่รู้จัก" },
-] as const satisfies readonly { key: SeriesKey; label: string }[];
+  { key: "lot", label: "ติดตามดูประจำ", hint: "ดูหลายตอน หรือดูจนจบ" },
+  { key: "seen", label: "เคยดูบ้าง", hint: "ดูไม่กี่ตอน หรือดูผ่าน ๆ" },
+  NAME_ONLY,
+  NOT_AT_ALL,
+] as const satisfies readonly (AnswerOption & { key: SeriesKey })[];
 
 const FILM_OPTIONS = [
-  { key: "cinema", label: "ดูในโรงหนัง" },
-  { key: "screen", label: "ดูทางทีวีหรือสตรีมมิ่ง" },
-  { key: "name", label: "รู้จักแค่ชื่อ" },
-  { key: "none", label: "ไม่รู้จัก" },
-] as const satisfies readonly { key: FilmKey; label: string }[];
+  { key: "cinema", label: "ดูในโรงหนัง", hint: "ถ้าเคยดูทั้งในโรงและที่บ้าน เลือกข้อนี้" },
+  { key: "screen", label: "ดูที่บ้าน", hint: "ทางทีวี แผ่น หรือสตรีมมิ่ง" },
+  NAME_ONLY,
+  NOT_AT_ALL,
+] as const satisfies readonly (AnswerOption & { key: FilmKey })[];
+
+/** Author choices per choice question; with "unsure" the question shows 4–5 options. */
+const MIN_CHOICES = 3;
+const MAX_CHOICES = 4;
 
 const UNSURE_OPTION = { key: "unsure", label: "ไม่แน่ใจ / จำไม่ได้" } as const;
 
@@ -183,8 +233,14 @@ export function answerOptions(facts: Facts): readonly AnswerOption[] {
       return FILM_OPTIONS;
     case "choice":
       return [
-        ...Object.entries(facts.choices).map(([key, spec]) => ({ key, label: spec.label })),
+        ...Object.entries(facts.choices).map(([key, { label, hint }]) => (hint ? { key, label, hint } : { key, label })),
         UNSURE_OPTION,
+      ];
+    case "pick":
+      return [
+        ...facts.titles.map((key, i) => ({ key, label: facts.sources[i]!.title })),
+        { key: "neither", label: "ไม่ได้ดูเรื่องไหนเลย" },
+        { key: "unsure", label: "จำไม่ได้" },
       ];
   }
 }
@@ -196,6 +252,7 @@ export function promptOf(facts: Facts): string {
     case "film":
       return `คุณเคยดูการ์ตูนเรื่อง "${facts.title}" ไหม?`;
     case "choice":
+    case "pick":
       return facts.prompt;
   }
 }
@@ -265,8 +322,20 @@ function factIssues(id: string, facts: Facts): string[] {
       if (spec.years[0] > endYear(spec.years[1])) issues.push(`${id}.${key}: years run backwards`);
       if (spec.share !== undefined && !(spec.share > 0)) issues.push(`${id}.${key}: share must be above 0`);
     }
-    if (Object.keys(facts.choices).length < 2) issues.push(`${id}: a choice question needs at least 2 choices`);
+    const count = Object.keys(facts.choices).length;
+    if (count < MIN_CHOICES || count > MAX_CHOICES) {
+      issues.push(`${id}: has ${count} choices; write ${MIN_CHOICES}–${MAX_CHOICES} so the question shows 4–5 options with "unsure"`);
+    }
   }
+  if (facts.kind === "pick") {
+    if (new Set(facts.titles).size !== facts.titles.length) issues.push(`${id}: names one title twice`);
+    const franchises = facts.sources.map((s) => s.franchise);
+    if (franchises[0] !== undefined && franchises.every((f) => f === franchises[0])) {
+      issues.push(`${id}: all three titles are from the ${franchises[0]} franchise, so the answer can't separate ages`);
+    }
+  }
+  const labels = answerOptions(facts).map((o) => o.label);
+  if (new Set(labels).size !== labels.length) issues.push(`${id}: two answers share a label`);
   const override: Readonly<Record<string, Anchors | undefined>> = facts.override ?? {};
   for (const age of AGES) {
     const sum = Object.values(override).reduce((s, anchors) => s + (anchors ? anchorAt(anchors, age) : 0), 0);

@@ -46,15 +46,21 @@ interface FinishedPlay<V, X> extends PlayBase {
 
 ## Question facts schema
 
-- **Three builders**: `series(...)`, `film(...)` and `choice(...)`. The author never writes `kind`.
-  - Series answers: `lot` (ดูประจำ), `seen` (เคยดู), `name` (รู้จักแค่ชื่อ), `none` (ไม่รู้จัก).
-  - Film answers: `cinema` (ดูในโรงหนัง), `screen` (ดูทางทีวีหรือสตรีมมิ่ง), `name`, `none`.
-  - Choice questions: the author's own choices plus an automatic `unsure` (ไม่แน่ใจ / จำไม่ได้). Writing `unsure` by hand is a compile error.
+- **Four builders**: `series(...)`, `film(...)`, `choice(...)`, and `pick(...)` from `pickFrom(titleFiles)`. The author never writes `kind`.
+- **Every question shows 4–5 options.** Each option has one clear meaning that fits its question, and options are mutually exclusive. An option may carry a `hint`, a short Thai line under its label. Where several options could seem to apply, the hint or the question's aside says which one to pick. Labels are unique within a question, and the don't-know answer is always last.
+  - Series answers: `lot` (ติดตามดูประจำ, hint "ดูหลายตอน หรือดูจนจบ"), `seen` (เคยดูบ้าง, hint "ดูไม่กี่ตอน หรือดูผ่าน ๆ"), `name` (รู้จักแค่ชื่อ, hint "เคยได้ยินหรือเห็นผ่านตา แต่ไม่เคยดู"), `none` (ไม่รู้จักเลย).
+  - Film answers: `cinema` (ดูในโรงหนัง, hint "ถ้าเคยดูทั้งในโรงและที่บ้าน เลือกข้อนี้"), `screen` (ดูที่บ้าน, hint "ทางทีวี แผ่น หรือสตรีมมิ่ง"), `name`, `none`.
+  - For a title, ไม่รู้จักเลย is the don't-know answer. There is no separate "จำไม่ได้", because it would overlap with it.
+  - Choice questions: 3–4 author choices, each with an optional hint, plus an automatic `unsure` (ไม่แน่ใจ / จำไม่ได้). Writing `unsure` by hand is a compile error. The choices are written so that each real person at the asked life stage has exactly one fitting answer: a "most often" question names the single most frequent thing, and a "did not watch" choice appears where not watching is common. No catch-all "อื่น ๆ" unless it is a real, distinct answer. An optional `aside` under the prompt says how to pick.
+  - Pick questions: a prompt tied to a life stage, such as "ตอนประถม คุณดูเรื่องไหนบ่อยที่สุด?", and three title choices. Each choice references an existing title question by id, checked by the type checker against the title ids of the files passed to `pickFrom`. The answer keys are the three title ids, `neither` (ไม่ได้ดูเรื่องไหนเลย) and `unsure` (จำไม่ได้). Answers are single-select, because the engine treats every answer as one key with one likelihood row. The author picks three titles from clearly different eras.
 - **The bank is objects keyed by question id.** A duplicate id within one file is a compile error. `defineBank(...parts)` merges the files and checks, once at load, the rules types can't express:
   - duplicate ids across files
   - `from ≤ to`
   - the outlet's operating years (for example, iTV only from 1996 to 2007)
   - a choice `share` above 0
+  - a choice question with 3–4 choices (the type checker does not count union members, so this is a load check)
+  - unique answer labels within a question
+  - a pick that names three different titles, not all from one franchise
   - override sums of at most 1 at every age
 - **Closed types** for `Year` (1960–2026), `Age` (10–50), `Outlet`, `Audience` (kids, teens, general, adults) and `Reach` (phenomenon, hit, known, niche).
 - **A title question records:**
@@ -64,6 +70,7 @@ interface FinishedPlay<V, X> extends PlayBase {
   - an optional franchise, for correlated evidence
   - an optional `unsure` list of facts the author doubts, which is where to look first when a persona misses
 - **Overrides** are probabilities at a few ages, filled in linearly between them and held flat beyond the outermost ones: `{ none: { 10: 0.04, 30: 0.03, 50: 0.08 } }`. Answers without an override keep their derived shape and are rescaled to fill the rest.
+- **Overrides on pick questions** are keyed by the pick's own answer keys, the title ids plus `neither` and `unsure`.
 - **Personas** are typed against the bank, `{ [Id in QuestionId]?: AnswerOf<Id> }`, so a renamed question or a wrong answer key breaks the persona at compile time. Each persona also stores the year it was recorded.
 
 ## Derivation model
@@ -84,6 +91,7 @@ interface FinishedPlay<V, X> extends PlayBase {
   - screen = (C − cinema)·opportunity over the later runs.
   - name and none work as for a series.
 - **Choice.** The life stage (primary 6–12, secondary 13–18, university 18–22) gives a window of calendar years. Each choice's weight is its share × its mean prevalence over that window. unsure = base + memory fade + the part of the stage not yet lived. So a 10-year-old asked about university answers "unsure", and that answer is itself evidence.
+- **Pick.** The same life-stage window and `unsure` as a choice question. For each referenced title, w_c is the chance it was watched during the window, from the same viewing model as the title's own curve (series opportunity, or film cinema plus later screens) restricted to the window's years. neither = (1 − unsure)·Π(1 − w_c), and each title gets (1 − unsure)(1 − Π(1 − w_c)) in proportion to w_c. The same formula serves "most often", "first" and "what classmates talked about" prompts: it models which title the player met during the stage, not the exact wording.
 - **Then, in order:**
   1. Fold the edge bins: bin 10 is a weighted mean of ages 7–10, and bin 50 of ages 50–58. This makes the edges mean "≤10" and "≥50".
   2. Smooth across ages (σ = 1).

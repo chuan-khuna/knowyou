@@ -19,6 +19,7 @@ import {
   type FilmFacts,
   type LifeStage,
   type Outlet,
+  type PickFacts,
   type Question,
   type Reach,
   type Run,
@@ -134,6 +135,8 @@ export function curve(question: Question): AnswerCurve {
         return filmAt(question, x);
       case "choice":
         return choiceAt(question, x);
+      case "pick":
+        return pickAt(question, x);
     }
   };
   let rows = edgeBins(rawAt);
@@ -161,11 +164,25 @@ function at(curve: Piecewise, x: number): number {
 
 const endOf = (run: Run): number => (run.to === "now" ? BANK_YEAR : run.to);
 
-/** Opportunity to watch over some runs, and the strongest single year, for someone born in `born`. */
-function exposure(runs: readonly Run[], audience: Audience, born: number): { opportunity: number; peak: number } {
+/** Calendar years, inclusive. */
+type Years = readonly [from: number, to: number];
+const ALL_YEARS: Years = [-Infinity, Infinity];
+
+/**
+ * Opportunity to watch over some runs, and the strongest single year, for
+ * someone born in `born`, counting only the years inside `within`.
+ */
+function exposure(
+  runs: readonly Run[],
+  audience: Audience,
+  born: number,
+  within: Years = ALL_YEARS,
+): { opportunity: number; peak: number } {
   const byYear = new Map<number, number>();
   for (const run of runs) {
-    for (let y = Math.max(run.from, born + MEMORY_AGE); y <= Math.min(endOf(run), BANK_YEAR); y++) {
+    const from = Math.max(run.from, born + MEMORY_AGE, within[0]);
+    const to = Math.min(endOf(run), BANK_YEAR, within[1]);
+    for (let y = from; y <= to; y++) {
       const e = at(ACCESS[run.on], y) * at(RECEPTIVITY[audience], y - born);
       byYear.set(y, Math.max(byYear.get(y) ?? 0, e));
     }
@@ -205,14 +222,28 @@ function awareness(
 
 const runSpan = (run: Run) => ({ from: run.from, to: endOf(run), access: Math.max(...ACCESS[run.on].map((p) => p[1])) });
 
+/** Chance someone born in `born` watched a series during `within`, and their strongest year. */
+function seriesViewing(facts: SeriesFacts, born: number, within: Years = ALL_YEARS): { watched: number; peak: number } {
+  const { opportunity, peak } = exposure(facts.runs, facts.audience, born, within);
+  return { watched: REACH[facts.reach].C * opportunity, peak };
+}
+
+/** Chance someone born in `born` saw a film in the cinema, or later at home, during `within`. */
+function filmViewing(facts: FilmFacts, born: number, within: Years = ALL_YEARS): { cinema: number; screen: number } {
+  const { C } = REACH[facts.reach];
+  const ageAtRelease = facts.released - born;
+  const released = facts.released >= within[0] && facts.released <= within[1];
+  const cinema = released ? C * at(RECEPTIVITY[facts.audience], ageAtRelease) * at(CINEMA_GOING, ageAtRelease) : 0;
+  const screen = (C - cinema) * exposure(facts.later, facts.audience, born, within).opportunity;
+  return { cinema, screen };
+}
+
 /** Answers in order [lot, seen, name, none]. */
 function seriesAt(facts: SeriesFacts, x: number): number[] {
   const born = BANK_YEAR - x;
-  const { C, D } = REACH[facts.reach];
-  const { opportunity, peak } = exposure(facts.runs, facts.audience, born);
+  const { watched, peak } = seriesViewing(facts, born);
   const { fame, parent } = awareness(facts.runs.map(runSpan), facts.audience, facts.reach, born);
-  const watched = C * opportunity;
-  const lot = watched * D * peak;
+  const lot = watched * REACH[facts.reach].D * peak;
   const know = 1 - (1 - watched) * (1 - fame) * (1 - parent);
   const seen = watched - lot + COVIEW * parent * (1 - watched);
   return [lot, seen, know - lot - seen, 1 - know];
@@ -221,10 +252,7 @@ function seriesAt(facts: SeriesFacts, x: number): number[] {
 /** Answers in order [cinema, screen, name, none]. */
 function filmAt(facts: FilmFacts, x: number): number[] {
   const born = BANK_YEAR - x;
-  const { C } = REACH[facts.reach];
-  const ageAtRelease = facts.released - born;
-  const cinema = C * at(RECEPTIVITY[facts.audience], ageAtRelease) * at(CINEMA_GOING, ageAtRelease);
-  const screen = (C - cinema) * exposure(facts.later, facts.audience, born).opportunity;
+  const { cinema, screen } = filmViewing(facts, born);
   const spans = [
     { from: facts.released, to: facts.released, access: CINEMA_PARENT_ACCESS },
     ...facts.later.map(runSpan),
@@ -235,28 +263,56 @@ function filmAt(facts: FilmFacts, x: number): number[] {
   return [cinema, screen, know - watched, 1 - know];
 }
 
+/**
+ * The calendar years of a life stage for someone born in `born`, and the chance
+ * they answer "unsure": a base rate, memory fade with age, and the part of the
+ * stage they haven't lived yet.
+ */
+function stage(lifeStage: LifeStage, x: number): { years: Years; lived: number; unsure: number } {
+  const born = BANK_YEAR - x;
+  const [w0, w1] = STAGE_AGES[lifeStage];
+  const years: Years = [born + w0, Math.min(born + w1, BANK_YEAR)];
+  const lived = Math.max(0, years[1] - years[0] + 1) / (w1 - w0 + 1);
+  const base = UNSURE_BASE + UNSURE_FADE * Math.max(0, x - 30);
+  return { years, lived, unsure: base + (1 - base) * (1 - lived) };
+}
+
 /** Answers in order [...choices, unsure]. */
 function choiceAt(facts: ChoiceFacts, x: number): number[] {
-  const born = BANK_YEAR - x;
-  const [w0, w1] = STAGE_AGES[facts.stage];
-  const from = born + w0;
-  const to = Math.min(born + w1, BANK_YEAR);
-  const window: number[] = [];
-  for (let y = from; y <= to; y++) window.push(y);
-  const lived = window.length / (w1 - w0 + 1);
+  const { years, unsure } = stage(facts.stage, x);
+  const span = years[1] - years[0] + 1;
   const weights = Object.values(facts.choices).map((spec) => {
-    if (window.length === 0) return 0;
+    if (span <= 0) return 0;
     const start = spec.years[0];
     const end = spec.years[1] === "now" ? BANK_YEAR : spec.years[1];
     const prevalence = (y: number) =>
       y >= start && y <= end ? 1 : y === start - 1 || y === end + 1 ? CHOICE_SHOULDER : 0;
-    return ((spec.share ?? 1) * window.reduce((s, y) => s + prevalence(y), 0)) / window.length;
+    let sum = 0;
+    for (let y = years[0]; y <= years[1]; y++) sum += prevalence(y);
+    return ((spec.share ?? 1) * sum) / span;
   });
-  const base = UNSURE_BASE + UNSURE_FADE * Math.max(0, x - 30);
-  const unsure = base + (1 - base) * (1 - lived);
   const total = weights.reduce((s, w) => s + w, 0);
   const known = weights.map((w) => (total > 0 ? ((1 - unsure) * w) / total : (1 - unsure) / weights.length));
   return [...known, unsure];
+}
+
+/**
+ * Answers in order [...titles, neither, unsure]. Each title's weight is the
+ * chance it was watched during the stage, from that title's own facts;
+ * "neither" is the chance none of the three was.
+ */
+function pickAt(facts: PickFacts, x: number): number[] {
+  const born = BANK_YEAR - x;
+  const { years, unsure } = stage(facts.stage, x);
+  const watched = facts.sources.map((source) => {
+    if (source.kind === "series") return seriesViewing(source, born, years).watched;
+    const { cinema, screen } = filmViewing(source, born, years);
+    return cinema + screen;
+  });
+  const neither = watched.reduce((miss, w) => miss * (1 - w), 1);
+  const total = watched.reduce((s, w) => s + w, 0);
+  const titles = watched.map((w) => (total > 0 ? ((1 - unsure) * (1 - neither) * w) / total : 0));
+  return [...titles, (1 - unsure) * neither, unsure];
 }
 
 function mix(rows: readonly (readonly [number[], number])[]): number[] {

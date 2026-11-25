@@ -215,21 +215,26 @@ function compile(question: Question): Compiled {
   const card: QuestionCard = {
     id: question.id,
     prompt: promptOf(question),
-    ...(question.kind !== "choice" && question.aside ? { subtitle: question.aside } : {}),
+    ...(question.aside ? { subtitle: question.aside } : {}),
     options,
   };
   return {
     question,
     card,
     rows: lines.map((line) => Float64Array.from(line.p)),
-    franchise: question.kind === "choice" ? undefined : question.franchise,
+    franchise: isTitle(question) ? question.franchise : undefined,
     band: strataBand(question),
-    familiarity: question.kind === "choice" ? null : options.map((o) => FAMILIARITY[o.key] ?? 0),
+    familiarity: isTitle(question) ? options.map((o) => FAMILIARITY[o.key] ?? 0) : null,
   };
 }
 
+type TitleQuestion = Extract<Question, { kind: "series" | "film" }>;
+
+const isTitle = (question: Question): question is TitleQuestion =>
+  question.kind === "series" || question.kind === "film";
+
 function strataBand(question: Question): number | null {
-  if (question.kind === "choice") return null;
+  if (!isTitle(question)) return null;
   const spans =
     question.kind === "series"
       ? question.runs.map((r) => [r.from, r.to === "now" ? BANK_YEAR : r.to] as const)
@@ -381,7 +386,7 @@ function decidingAnswer(
 }
 
 function titleOf(q: Compiled): string {
-  return q.question.kind === "choice" ? q.question.prompt : q.question.title;
+  return isTitle(q.question) ? q.question.title : q.question.prompt;
 }
 
 function memoryStrata(

@@ -11,6 +11,8 @@ export interface AnswerOption {
   /** Stable across releases, so recorded personas survive reordering. */
   readonly key: string;
   readonly label: string;
+  /** A short line under the label that makes its meaning unambiguous. */
+  readonly hint?: string;
 }
 
 export interface QuestionCard {

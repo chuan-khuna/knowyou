@@ -3,16 +3,20 @@
  * file: each `@ts-expect-error` fails the build if its line stops being an error.
  */
 
-import { animeAge, choice, film, series, type AnswerOf, type BankAnswers, type BankPart, type QuestionId } from ".";
+import { animeAge, choice, film, pickFrom, series, type AnswerOf, type BankAnswers, type BankPart, type QuestionId } from ".";
 
 const ok = { audience: "kids", reach: "hit" } as const;
 const run = { on: "ch9", from: 1990, to: 1991 } as const;
 
 const seriesAnswer: AnswerOf<"doraemon"> = "lot";
-const choiceAnswer: AnswerOf<"primary-source"> = "free-tv";
+const choiceAnswer: AnswerOf<"primary-source"> = "tv";
 const unsureAnswer: AnswerOf<"primary-source"> = "unsure";
 const filmAnswer: AnswerOf<"your-name"> = "cinema";
 const knownId: QuestionId = "stand-by-me-doraemon";
+const pickAnswers: BankAnswers = { "pick-primary-battle": "pokemon", "pick-class-sport": "neither", "pick-first-ikkyu": "unsure" };
+
+const pick = pickFrom({ a: series({ ...ok, title: "a", runs: [run] }), b: series({ ...ok, title: "b", runs: [run] }), c: series({ ...ok, title: "c", runs: [run] }), q: choice({ prompt: "p", stage: "primary", choices: { x: { label: "x", years: [1990, 2000] } } }) });
+pick({ prompt: "p", stage: "primary", titles: ["a", "b", "c"], override: { neither: { 10: 0.2 } } });
 
 // @ts-expect-error a year outside 1960–2026
 series({ ...ok, title: "x", runs: [{ on: "ch9", from: 2062, to: "now" }] });
@@ -34,6 +38,14 @@ series({ title: "x", runs: [run], audience: "toddlers", reach: "hit" });
 choice({ prompt: "p", stage: "primary", choices: { a: { label: "a", years: [1990, 2000] } }, override: { b: { 10: 0.1 } } });
 // @ts-expect-error writing the automatic unsure choice by hand
 choice({ prompt: "p", stage: "primary", choices: { a: { label: "a", years: [1990, 2000] }, unsure: { label: "u", years: [1990, 2000] } } });
+// @ts-expect-error a pick naming a title id that isn't in the bank
+pick({ prompt: "p", stage: "primary", titles: ["a", "b", "zz"] });
+// @ts-expect-error a pick naming a choice question instead of a title
+pick({ prompt: "p", stage: "primary", titles: ["a", "b", "q"] });
+// @ts-expect-error a pick with two titles
+pick({ prompt: "p", stage: "primary", titles: ["a", "b"] });
+// @ts-expect-error a pick override for an answer the pick doesn't offer
+pick({ prompt: "p", stage: "primary", titles: ["a", "b", "c"], override: { lot: { 10: 0.2 } } });
 
 const duplicate = {
   a: series({ ...ok, title: "x", runs: [run] }),
@@ -47,6 +59,8 @@ const wrongKind: AnswerOf<"doraemon"> = "cinema";
 const typo: QuestionId = "doraemn";
 // @ts-expect-error a persona answer that is not one of the question's answers
 const persona: BankAnswers = { doraemon: "lot", "your-name": "seen" };
+// @ts-expect-error a pick answer naming a title the pick doesn't offer
+const pickPersona: BankAnswers = { "pick-primary-battle": "naruto" };
 
 export function playPhases() {
   const play = animeAge.start({ seed: 1 });
@@ -61,4 +75,4 @@ export function playPhases() {
   }
 }
 
-void [seriesAnswer, choiceAnswer, unsureAnswer, filmAnswer, knownId, duplicate, wrongKind, typo, persona];
+void [seriesAnswer, choiceAnswer, unsureAnswer, filmAnswer, knownId, duplicate, wrongKind, typo, persona, pickAnswers, pickPersona];

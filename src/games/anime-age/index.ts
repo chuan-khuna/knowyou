@@ -27,6 +27,7 @@ export {
   choice,
   defineBank,
   film,
+  pickFrom,
   series,
   type Age,
   type BankPart,

@@ -20,6 +20,10 @@ _Avoid_: Target, answer, label
 One prompt shown to the player, with a fixed set of answer options. Every answer shifts the game's belief about the hidden value.
 _Avoid_: Item, card
 
+**Pick question**:
+A question that names three titles from different eras and asks which one the player watched or met at a stage of life, such as "ตอนประถม คุณดูเรื่องไหนบ่อยที่สุด?". Its answer probabilities come from the named titles' own question facts.
+_Avoid_: Multiple choice, which-one question
+
 **Question bank**:
 All the questions a game can ask.
 _Avoid_: Pool, dataset

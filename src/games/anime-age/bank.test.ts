@@ -1,5 +1,5 @@
 import { describe, expect, test } from "bun:test";
-import { AGES, BankError, animeAge, animeAgeBank, defineBank, series, choice } from ".";
+import { AGES, BankError, animeAge, animeAgeBank, choice, defineBank, pickFrom, series } from ".";
 
 describe("question bank", () => {
   test("question ids are unique", () => {
@@ -26,11 +26,20 @@ describe("question bank", () => {
     expect(pokemon.at(30)[none]).toBeCloseTo(0.96 * 0.03 + 0.01, 9);
   });
 
-  test("every choice question offers an unsure answer last", () => {
-    for (const q of animeAgeBank.list.filter((q) => q.kind === "choice")) {
-      const keys = animeAge.answerCurves(q.id).options.map((o) => o.key);
-      expect(keys.at(-1)).toBe("unsure");
+  test("every question shows 4–5 options with unique labels and the don't-know answer last", () => {
+    const dontKnow = { series: "none", film: "none", choice: "unsure", pick: "unsure" } as const;
+    for (const q of animeAgeBank.list) {
+      const options = animeAge.answerCurves(q.id).options;
+      expect(options.length).toBeGreaterThanOrEqual(4);
+      expect(options.length).toBeLessThanOrEqual(5);
+      expect(new Set(options.map((o) => o.label)).size).toBe(options.length);
+      expect(options.at(-1)?.key).toBe(dontKnow[q.kind]);
     }
+  });
+
+  test("the bank has every kind of question", () => {
+    const kinds = new Set(animeAgeBank.list.map((q) => q.kind));
+    expect([...kinds].sort()).toEqual(["choice", "film", "pick", "series"]);
   });
 });
 
@@ -68,9 +77,42 @@ describe("defineBank rejects facts the types cannot check", () => {
     const bad = choice({
       prompt: "p",
       stage: "primary",
-      choices: { x: { label: "x", years: [1990, 2000], share: 0 }, y: { label: "y", years: [2000, 2010] } },
+      choices: { x: { label: "x", years: [1990, 2000], share: 0 }, y: { label: "y", years: [2000, 2010] }, z: { label: "z", years: [2000, 2010] } },
     });
     expect(issuesOf(() => defineBank({ bad }))).toHaveLength(1);
+  });
+
+  test("a choice question with too few or too many choices", () => {
+    const years = [1990, 2000] as const;
+    const two = choice({ prompt: "p", stage: "primary", choices: { a: { label: "a", years }, b: { label: "b", years } } });
+    const five = choice({
+      prompt: "p",
+      stage: "primary",
+      choices: { a: { label: "a", years }, b: { label: "b", years }, c: { label: "c", years }, d: { label: "d", years }, e: { label: "e", years } },
+    });
+    expect(issuesOf(() => defineBank({ two, five }))).toHaveLength(2);
+  });
+
+  test("two answers with one label", () => {
+    const years = [1990, 2000] as const;
+    const same = choice({ prompt: "p", stage: "primary", choices: { a: { label: "x", years }, b: { label: "x", years }, c: { label: "c", years } } });
+    expect(issuesOf(() => defineBank({ same }))).toHaveLength(1);
+  });
+
+  test("a pick whose titles all share one franchise, or name one title twice", () => {
+    const titles = {
+      a: series({ ...ok, title: "a", franchise: "f" }),
+      b: series({ ...ok, title: "b", franchise: "f" }),
+      c: series({ ...ok, title: "c", franchise: "f" }),
+      d: series({ ...ok, title: "d" }),
+    };
+    const pick = pickFrom(titles);
+    const oneFranchise = pick({ prompt: "p", stage: "primary", titles: ["a", "b", "c"] });
+    const twice = pick({ prompt: "p", stage: "primary", titles: ["a", "a", "d"] });
+    const fine = pick({ prompt: "p", stage: "primary", titles: ["a", "b", "d"] });
+    expect(issuesOf(() => defineBank(titles, { oneFranchise }))).toHaveLength(1);
+    expect(issuesOf(() => defineBank(titles, { twice })).length).toBeGreaterThan(0);
+    expect(issuesOf(() => defineBank(titles, { fine }))).toEqual([]);
   });
 
   test("an override summing above 1", () => {
