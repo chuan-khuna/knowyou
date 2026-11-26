@@ -12,6 +12,7 @@ One quiz module plays every title, and one screen shows it. A title is data: its
 | Title | Module | Route |
 | --- | --- | --- |
 | คุณรู้จัก Dragon Ball ดีแค่ไหน | `src/games/dragon-ball/` | `/dragon-ball` |
+| คุณรู้จัก Kuroko no Basket ดีแค่ไหน | `src/games/kuroko-no-basket/` | `/kuroko-no-basket` |
 | คุณรู้จัก Naruto ดีแค่ไหน | `src/games/naruto/` | `/naruto` |
 | คุณรู้จัก Prince of Tennis ดีแค่ไหน | `src/games/prince-of-tennis/` | `/prince-of-tennis` |
 | คุณรู้จัก Reborn ดีแค่ไหน | `src/games/reborn/` | `/reborn` |
@@ -34,7 +35,7 @@ interface QuizQuestion {
 }
 ```
 
-A title's `glossary.json` is an object keyed by the exact option label, each entry with `romaji`, `kanji` and `english`. `parseGlossary` in `glosses.ts` reads it, and throws on an entry without all three. One entry covers that label wherever it appears: as an answer, as a decoy, or named inside a prompt.
+A title's `glossary.json` is an object keyed by the exact option label, each entry with `romaji`, `kanji` and `english`, and optionally `aka`: other Thai names fans know the same thing by, such as a TV dub's name where the label follows the manga (`"เกี๊ยวซ่า": { "aka": ["…"], … }`). `parseGlossary` in `glosses.ts` reads it, and throws on an entry without all three names or with an `aka` that isn't a list of strings. One entry covers that label wherever it appears: as an answer, as a decoy, or named inside a prompt. Add an `aka` only with a page that shows the name in use; the spec is `.scratch/quiz-aka/spec.md`.
 
 ## A title's content
 
@@ -58,6 +59,7 @@ interface QuizContent {
 - A note, when present, is not empty.
 - `source` parses as an `https:` URL.
 - Every gloss names an option in the bank, or a term some prompt names (see Prompt terms).
+- An `aka` is not empty, doesn't repeat its label or another `aka` of the same entry, and within a question no option's label or `aka` names another option.
 - Every score from 0 to 20 falls in exactly one band, and every band has a non-empty title and line.
 
 ## A play
@@ -65,6 +67,10 @@ interface QuizContent {
 A play is its count, its seed and the answer keys so far. `start(seed, count?)` and `answer(play, optionKey)` both rebuild the whole play from those values, so the same count, seed and answers always give the same play.
 
 **Count.** How many questions the play asks, from 5 (`MIN_QUESTIONS_PER_PLAY`) to the bank's size; `start` throws outside that range. It defaults to 20 (`QUESTIONS_PER_PLAY`). The play's `total` is its count. Every finished play has a fan title (below).
+
+**Seed code.** A play's seed written in base 36, so a player can share it (`seed.ts`, spec `.scratch/quiz-seed-code/spec.md`). 36⁶ fits in the 32-bit seed, so the code is the seed itself and the saved play doesn't change. `seedFromCode(code)` reads up to 6 characters, case-insensitive, and returns null for an empty, longer or malformed code. `seedCode(seed)` writes it uppercase, zero-padded to 6. `randomSeed()` draws uniformly from 0 to 36⁶ − 1; every new play, เล่นอีกครั้ง and reset use it. A play saved before seed codes may hold a larger seed, which shows a 7-character code that can't be typed back in.
+
+**Share link.** `shareQuery(seed, count)` writes `?seed=B21X0L&n=20`; `readShareQuery(search)` reads it back, or null for a missing or malformed seed or count. Opening a quiz route with a good link shows the intro with ขั้นสูง picked and the count and code filled, and drops the query so a refresh restores the play; a count out of range falls back to the normal start. The link wins over a saved play.
 
 **Drawing.** One seeded generator (mulberry32) drives the whole draw, in this order:
 
@@ -110,6 +116,16 @@ Each title's `bands.ts` holds its bands for a score out of 20, lowest first. `ba
 | 13–16 | ซูเปอร์ไซย่า | ผมเปลี่ยนเป็นสีทองแล้ว ความรู้ของคุณระเบิดออกมาเต็มที่ |
 | 17–20 | นักรบผู้ปกป้องโลก | ต่อให้จอมมารบูมาก็ไม่กลัว คุณรู้จักดราก้อนบอลทุกซอกทุกมุม |
 
+**Kuroko no Basket** (`SCORE_BANDS` in `src/games/kuroko-no-basket/bands.ts`), as basketball ranks:
+
+| Score | Title | Line |
+| --- | --- | --- |
+| 0–4 | คนดูข้างสนาม | ยังแยกไม่ออกเลยว่าใครคือคุโรโกะ ลองมองดี ๆ อีกครั้งนะ |
+| 5–8 | ตัวสำรองชมรมปีหนึ่ง | ได้ใส่เสื้อทีมแล้ว แต่ต้องวิ่งรอบสนามตามเมนูของริโกะอีกเยอะ |
+| 9–12 | ตัวจริงเซย์ริน | ลงสนามได้แล้ว พร้อมส่งบอลให้แสงสว่างของทีม |
+| 13–16 | ราชันไร้มงกุฎ | ฝีมือระดับนี้ ใคร ๆ ก็ยอมรับ แม้จะยังไม่ได้มงกุฎ |
+| 17–20 | รุ่นปาฏิหาริย์ | คุณรู้จักเรื่องนี้ทุกซอกทุกมุม ราวกับเป็นผู้เล่นคนที่หกผู้เป็นเงาเอง |
+
 **Naruto** (`SCORE_BANDS` in `src/games/naruto/bands.ts`), as ninja ranks:
 
 | Score | Title | Line |
@@ -152,13 +168,15 @@ The same rules as the games' saved play (`play-screen.md`), in the quiz's own `r
 
 ## Screens and sound
 
-- **Intro.** The title, the title's intro lines, จำนวนข้อ, the เฉลยทุกข้อ checkbox, and เริ่มเลย (or Enter). จำนวนข้อ has three presets, `20 ข้อ`, `50 ข้อ` (only when the bank holds more than 50) and `ทั้งหมด (N)`, and a number field for any count. 20 is picked when the page opens. A count out of range turns the hint under the field red and disables เริ่มเลย. Enter on a focused button presses that button, so a preset picks its count. Sound `start`.
-- **Question.** ข้อ N/total in the top strip, with the running score only while the reveal switch is on and the screen is at least `sm` wide (a phone's strip has no room beside three buttons; under 24rem the strip also drops ข้อ and tightens its gaps), then the tier, the prompt, and four options. Tap or press 1 to 4. With the switch off: sound `answer` (`guess` on the last answer) and the next question shows. With it on: sound `right` or `wrong` and the reveal shows.
+- **Intro.** The title, the title's intro lines, ตั้งค่า, the เฉลยทุกข้อ switch (a card-wide row with a pill switch, `role="switch"`), and เริ่มเลย (or Enter). ตั้งค่า has three buttons: `20 ข้อ` and `30 ข้อ` (a play of that count with a random seed) and `ขั้นสูง`. 20 is picked when the page opens. ขั้นสูง shows two columns, stacked on a phone: จำนวนข้อ, a number field between − and + buttons (no native spinner; a step from an empty or out-of-range field lands back in range) for any count from 5 to the bank's size, and รหัสชุดคำถาม, the seed code. A count out of range turns the hint under the field red and disables เริ่มเลย. รหัสชุดคำถาม takes up to 6 characters, uppercases them as typed and drops anything but A–Z and 0–9; empty means a random seed (see Seed code). A dice button on its right (สุ่มรหัส) fills in a random code. The stepper and dice buttons sit 4px inside the field, so their hover fill never covers its border. Both fields keep their values if the player switches away from ขั้นสูง and back. Enter on a focused button presses that button, so it picks its setting. Sound `start`.
+- **Question.** a progress chip in the top strip (N/total over a thin grey bar in the muted ink colour, `role="progressbar"`), and beside it a mint score chip (a check and the right answers so far) only while the reveal switch is on and the screen is at least `sm` wide (a phone's strip has no room beside three buttons), then the tier as a pill badge (`.tier-badge`, tinted mint, blue, purple or red from easy to very hard), the prompt, and four options. Tap or press 1 to 4. With the switch off: sound `answer` (`guess` on the last answer) and the next question shows. With it on: sound `right` or `wrong` and the reveal shows.
 - **Reveal.** Only with the switch on. The options lock. A check and ถูกต้อง!, or a cross and the right answer, in colour, icon and text. The right option is tagged คำตอบที่ถูก, a wrong choice is tagged คุณเลือก, and the note shows when there is one. ข้อต่อไป (ดูคะแนน after the last question) or Enter moves on.
+- **Seed code in the top strip.** From `sm` up, a chip left of ข้อ N/total shows `รหัส` and the seed code, on the question and reveal screens. Double-click it, or press Enter on it, to copy the code; the chip turns mint and says คัดลอกแล้ว for 1.5 s. Seed codes everywhere (chip, result, field) use a monospace font with a slashed zero, so 0 and O never look alike.
 - **Reveal switch in the top strip.** An eye icon button, `aria-pressed`, beside the reset and sound buttons on the question and reveal screens: an open eye when on, a crossed eye when off.
-- **Glosses.** Under an option with a gloss, two lines: `Romaji, 漢字` then the English name. The same shows under the right answer in เฉลย. Under a prompt that names glossary terms, each term shows in bold with the same two lines, on the question and reveal screens.
+- **Other names.** A label whose gloss has an `aka` shows those names right after it in small muted text: `โกคู โงกุน`. This holds on options, prompt terms and the right answer in เฉลย.
+- **Glosses.** Under an option with a gloss, two lines: `Romaji, 漢字` then the English name. The same shows under the right answer in เฉลย. Under a prompt that names glossary terms, each term shows as a small card (the label in bold, then the same two lines), two cards across from `sm` up, on the question and reveal screens.
 - **Reset.** The question and reveal screens pass `playAgain` to `Shell` as `onReset`, so the top strip shows the reset button (`play-screen.md`). A confirmed reset starts a new play of the same count at question 1.
-- **Result.** The score out of `total`, the band title and line, then เฉลย: every question with a check or cross, its right answer, the player's answer on a miss, and the note when there is one. เล่นอีกครั้ง starts a new play of the same count. Sound `guess` when it opens.
+- **Result.** The score out of `total`, the band title and line, the seed code as a chip that copies the share link on double-click or Enter (it says คัดลอกลิงก์แล้ว; its tooltip says so), and the count as a chip beside it. Right under that card comes เล่นอีกครั้ง, on a paper band that sticks to the top of the viewport once the page scrolls past it, so เฉลย scrolls under it. Then เฉลย: every question with a check or cross, its right answer, the player's answer on a miss, and the note when there is one. เล่นอีกครั้ง starts a new play of the same count. Sound `guess` when it opens.
 
 ## How to add a title
 
@@ -175,8 +193,9 @@ The same rules as the games' saved play (`play-screen.md`), in the quiz's own `r
 ## How to add a question
 
 1. Find a page that confirms the answer, such as the series wiki or Wikipedia. Keep to the title's scope:
-   - Dragon Ball: the manga and the TV anime Dragon Ball and Dragon Ball Z, canon story only, up to the end of the Majin Buu arc. No filler, films, OVAs, GT, Super, Daima or games. Ask only about named moves, transformations and items, places and groups, teachers and rivals, aliases, and story events. Glosses cover techniques, transformations, fusions and named items.
-   - Naruto: Naruto and Naruto Shippuden, up to the end of the Fourth Shinobi World War. No Boruto, films or games. Glosses cover jutsu, dōjutsu, swords and elements.
+   - Dragon Ball: the manga and the TV anime Dragon Ball and Dragon Ball Z, canon story only, up to the end of the Majin Buu arc. No filler, films, OVAs, GT, Super, Daima or games. Ask only about named moves, transformations and items, places and groups, teachers and rivals, aliases, and story events. Glosses cover techniques, transformations, fusions and named items, and characters whose other Thai names (a TV dub's, an older edition's) are sourced in `.scratch/quiz-aka/spec.md`, such as โกคู (โงกุน). Keep only the best-known other name, not every spelling.
+   - Kuroko no Basket: the manga, the three TV seasons and the EXTRA GAME sequel. No *Last Game* film-only changes, novels, games or stage plays. Ask only about moves, schools, team roles, nicknames and story events; no birthdays, heights, numbers, scores or personal trivia. Source the Kuroko no Basuke wiki (`kurokonobasuke.fandom.com`). Glosses cover named moves and abilities. The spec is `.scratch/kuroko-quiz/spec.md`.
+   - Naruto: Naruto and Naruto Shippuden, up to the end of the Fourth Shinobi World War. No Boruto, films or games. Glosses cover jutsu, dōjutsu, swords, elements and lands; a land's `aka` holds the Thai Wikipedia names (แคว้นเหล็ก, เทะซึโนะคุนิ).
    - Prince of Tennis: the manga, the TV anime and the National Tournament OVAs, up to the end of the National Tournament. Ask only about moves and special moves, schools, or story events. Don't ask about birthdays, numbers, scores or personal trivia (family, pets, hobbies, food). The research brief is `prince-of-tennis-quiz-format.md`.
    - Reborn: the whole Katekyo Hitman Reborn! manga, to the end of the Curse of the Rainbow, and the TV anime where it follows the manga. No anime-only arcs, OVAs, light novels or games. Name the manga when an arc is manga-only. Glosses cover flame attributes, techniques, rings, gear and Tri-ni-sette items.
 2. Add an object to the title's `questions.json` with a new, stable `id`. Never reuse or rename an id, because a saved play names its questions by id.

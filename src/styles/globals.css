@@ -1,8 +1,8 @@
-/* Hallmark · shape: app screen · genre: playful · theme: Hum (deal 2/3, seed thai-anime-memory-guessing-game-7ce7·507bcbad·2026-11-25·r0), palette Rosé Pine Dawn and Moon (by request) · redesign: full
+/* Hallmark · shape: app screen · genre: playful · theme: Hum (deal 2/3, seed thai-anime-pop-culture-guessing-f21c·507bcbad·2026-11-26·r0), its own palette with the pear softened to butter (by request, too bright): butter primary, blue links and focus, coral, mint for right, a deep navy ink on cream (lifted from near-black by request); dark mode is Hum's ink sheet with paper type · redesign: restyle (colour only, 2026-11-26; was full on 2026-11-25)
  * nav: a top strip, wordmark left and the game's progress right · signature: the question card, answers as thin card stock that presses, confidence growing in foam · states: intro, asking, finished, reveal pending, right, wrong
- * faces: Mali display, Noto Sans Thai Looped body (by request) · texture: none, grain and torn edges left out for a minimal page (by request)
+ * faces: Mali display, Noto Sans Thai Looped body (by request, kept through the 2026-11-26 restyle) · texture: none, grain and torn edges left out for a minimal page (by request)
  * edges: 2px, not the theme's 5px, for a lighter page (by request)
- * axes: light/rounded-sans/chromatic-violet · posture: full-palette · contrast: pass · v2.0.0 */
+ * axes: light/rounded-sans/chromatic-yellow · posture: full-palette · contrast: pass · v2.0.0 */
 /* Hallmark · pre-emit critique: P4 H4 E4 S4 R5 V4 · weakest: S, a quiz card could belong to any trivia app; the cue is set as a quoted line on its own paper sheet and the guess as one gold sheet with the age in Mali, so the screen reads as this game */
 /* Hallmark · waive 39b · answer tiles at 64px, stepper and start buttons at 54 to 56px · the answer tile is the game's only input on a phone and a Thai option wraps to two lines with its hint */
 /* Hallmark · dropped "Pinpoint" · the game's name moved into the wordmark of the top strip, and the line beneath it became the h1 */

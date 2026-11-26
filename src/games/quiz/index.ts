@@ -24,3 +24,4 @@ export {
   type QuizPlay,
 } from "./quiz";
 export { encodeQuizRecord, quizRecordKey, restoreQuiz } from "./record";
+export { SEED_CODE_LENGTH, randomSeed, readShareQuery, seedCode, seedFromCode, shareQuery } from "./seed";

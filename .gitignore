@@ -44,3 +44,5 @@ node_modules/
 out/
 next-env.d.ts
 *.tsbuildinfo
+
+tmp/

@@ -5,16 +5,19 @@
     "english": "State of Selflessness"
   },
   "ฮยาคุเร็น จิโทคุ โนะ คิวามิ": {
+    "aka": ["ผลของการฝึกตนนับร้อย"],
     "romaji": "Hyakuren Jitoku no Kiwami",
     "kanji": "百錬自得の極み",
     "english": "Pinnacle of Hard Work"
   },
   "ไซกิ คัมปัตสึ โนะ คิวามิ": {
+    "aka": ["ผลของการระเบิดปัญญา"],
     "romaji": "Saiki Kanpatsu no Kiwami",
     "kanji": "才気煥発の極み",
     "english": "Pinnacle of Great Wisdom"
   },
   "เท็นอิ มุโฮ โนะ คิวามิ": {
+    "aka": ["สภาวะไร้ที่ติ", "ผลของการไร้ที่ติ"],
     "romaji": "Ten'i Muhō no Kiwami",
     "kanji": "天衣無縫の極み",
     "english": "Pinnacle of Perfection"
@@ -64,12 +67,12 @@
     "kanji": "波動球",
     "english": "Wave-Motion Ball"
   },
-  "อาบาเระดามะ": {
+  "ลูกคลุ้มคลั่ง": {
     "romaji": "Abare Dama",
     "kanji": "暴れ球",
     "english": "Wild Ball"
   },
-  "ไต่เชือก (สึนะวาตาริ)": {
+  "ไต่เชือก": {
     "romaji": "Tsunawatari",
     "kanji": "綱渡り",
     "english": "Tightrope Walking"
@@ -94,7 +97,8 @@
     "kanji": "縮地法",
     "english": "Ground-Shrinking Method"
   },
-  "ผู้เฝ้าประตูเฮคาตอนไคร์": {
+  "ทวารบาลเฮคาตอนไคร์": {
+    "aka": ["อสูรร้อยหัตถ์"],
     "romaji": "Hekatonkeiru no Monban",
     "kanji": "百腕巨人の門番",
     "english": "Gatekeeper of Hecatoncheires"
@@ -120,6 +124,7 @@
     "english": "Round Table Shot"
   },
   "เสิร์ฟหายตัว": {
+    "aka": ["ลูกเสิร์ฟล่องหน"],
     "romaji": "Kieru Sābu",
     "kanji": "消えるサーブ",
     "english": "Disappearing Serve"
@@ -139,12 +144,12 @@
     "kanji": "白龍",
     "english": "White Dragon"
   },
-  "ดอกไม้ไฟดวงดาว": {
+  "พลุดวงดาว": {
     "romaji": "Hoshi Hanabi",
     "kanji": "星花火",
     "english": "Star Fireworks"
   },
-  "ลูกถล่มปฐพีแบบพุ่งตัว": {
+  "แดชถล่มปฐพี": {
     "romaji": "Dasshu Hadōkyū",
     "kanji": "ダッシュ波動球",
     "english": "Dash Hadōkyū"
@@ -209,12 +214,12 @@
     "kanji": "菊丸印のステップ",
     "english": "Seal Step"
   },
-  "อุตสึเซมิ": {
+  "จั๊กจั่นลอกคราบ": {
     "romaji": "Utsusemi",
     "kanji": "空蝉",
     "english": "Cicada"
   },
-  "ยิงเสาเหล็ก (เท็ตจูอาเตะ)": {
+  "ลูกอัดเสาเหล็ก": {
     "romaji": "Tetchū Ate",
     "kanji": "鉄柱当て",
     "english": "Iron Pole Strike"
@@ -224,12 +229,12 @@
     "kanji": "時間差地獄",
     "english": "Temporal Difference Hell"
   },
-  "ออร่าสัตว์ร้าย": {
+  "ออร่าสัตว์ป่า": {
     "romaji": "Mōjū no Ōra",
     "kanji": "猛獣のオーラ",
     "english": "Mōjū no Aura"
   },
-  "อาบาเระจิชิ": {
+  "ราชสีห์คลั่ง": {
     "romaji": "Abare Jishi",
     "kanji": "あばれ獅子",
     "english": "Abare Jishi"

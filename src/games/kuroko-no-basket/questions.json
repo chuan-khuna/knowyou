@@ -1,0 +1,2224 @@
+[
+  {
+    "id": "kuroko-school",
+    "tier": "easy",
+    "prompt": "คุโรโกะ เท็ตสึยะ เข้าเรียนชั้นมัธยมปลายและเล่นบาสให้โรงเรียนไหน?",
+    "answer": "เซย์ริน",
+    "decoys": [
+      "ไคโจ",
+      "ชูโตคุ",
+      "โทโอ"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Tetsuya_Kuroko",
+    "evidence": "He now plays as a regular at Seirin High with the goal of bringing the team and Taiga Kagami to the top of Japan."
+  },
+  {
+    "id": "kuroko-phantom-sixth-man",
+    "tier": "easy",
+    "prompt": "สมัยอยู่เทย์โค คุโรโกะได้รับฉายาว่าอะไร?",
+    "answer": "ผู้เล่นคนที่หกผู้เป็นเงา",
+    "decoys": [
+      "ราชันไร้มงกุฎ",
+      "หัวใจเหล็ก",
+      "ปาฏิหาริย์ที่ไม่ได้เป็นหนึ่งในรุ่นปาฏิหาริย์"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Misdirection",
+    "evidence": "earning him the title of Teiko's \"Phantom Sixth Man\" due to its nature"
+  },
+  {
+    "id": "kuroko-misdirection",
+    "tier": "easy",
+    "prompt": "เทคนิคหลักของคุโรโกะที่เบี่ยงสายตาคู่แข่งจนเขาดูเหมือนหายไปจากสนาม เรียกว่าอะไร?",
+    "answer": "มิสไดเร็คชั่น",
+    "decoys": [
+      "จักษุจักรพรรดิ",
+      "เนตรเหยี่ยว",
+      "โซน"
+    ],
+    "note": "เทคนิคเดียวกับที่ใช้ในมายากล",
+    "source": "https://kurokonobasuke.fandom.com/wiki/Misdirection",
+    "evidence": "Misdirection is a technique which diverts the opponents gaze. It can be used to make its user seemingly disappear out of sight."
+  },
+  {
+    "id": "kuroko-shadow",
+    "tier": "easy",
+    "prompt": "คุโรโกะเปรียบตัวเองว่าเป็นอะไร ที่จะยิ่งเข้มขึ้นเมื่อ \"แสง\" ยิ่งสว่าง?",
+    "answer": "เงา",
+    "decoys": [
+      "กระจก",
+      "เปลวไฟ",
+      "ดวงจันทร์"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Tetsuya_Kuroko",
+    "evidence": "I am a supporting actor, a shadow. But a shadow will become darker if the light is stronger"
+  },
+  {
+    "id": "kagami-trained-america",
+    "tier": "easy",
+    "prompt": "ก่อนกลับมาญี่ปุ่นและเข้าเซย์ริน คางามิ ไทกะ ฝึกบาสอยู่ที่ประเทศไหน?",
+    "answer": "สหรัฐอเมริกา",
+    "decoys": [
+      "จีน",
+      "ออสเตรเลีย",
+      "ฝรั่งเศส"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Taiga_Kagami",
+    "evidence": "He is a naturally gifted player that trained in the States prior to coming back to Japan."
+  },
+  {
+    "id": "seirin-coach",
+    "tier": "easy",
+    "prompt": "ใครเป็นโค้ชของชมรมบาสเซย์ริน แม้จะยังเป็นนักเรียนมัธยมปลาย?",
+    "answer": "ไอดะ ริโกะ",
+    "decoys": [
+      "ไอดะ คาเงโทระ",
+      "โมโมอิ ซัทสึกิ",
+      "อเล็กซ์ (อเล็กซานดร้า การ์เซีย)"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Seirin_High",
+    "evidence": "Quite unusually, the team's coach is a high schooler, daughter of sports trainer Kagetora Aida, Riko Aida."
+  },
+  {
+    "id": "seirin-captain",
+    "tier": "easy",
+    "prompt": "ใครเป็นกัปตันทีมบาสเซย์ริน?",
+    "answer": "ฮิวงะ จุนเปย์",
+    "decoys": [
+      "คิโยชิ เท็ปเป",
+      "อิซึกิ ชุน",
+      "คางามิ ไทกะ"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Junpei_Hyūga",
+    "evidence": "is Seirin’s captain and shooting guard. He is a clutch-player and mainly excels at shooting."
+  },
+  {
+    "id": "kagami-jumping",
+    "tier": "easy",
+    "prompt": "จุดเด่นเฉพาะตัวที่สุดของคางามิ ไทกะ คืออะไร?",
+    "answer": "พลังกระโดดที่สูงเหนือคนทั่วไป",
+    "decoys": [
+      "การลอกเลียนท่าของคนอื่น",
+      "การชู้ตสามแต้มจากทุกที่ในสนาม",
+      "การมองเห็นทั้งสนามจากมุมสูง"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Taiga_Kagami",
+    "evidence": "Kagami's unique skill lies in his ability to jump to great heights"
+  },
+  {
+    "id": "izuki-eagle-eye",
+    "tier": "easy",
+    "prompt": "อิซึกิ ชุน พอยต์การ์ดของเซย์ริน มีความสามารถพิเศษอะไร?",
+    "answer": "เนตรอินทรี",
+    "decoys": [
+      "เนตรเหยี่ยว",
+      "จักษุจักรพรรดิ",
+      "มิสไดเร็คชั่น"
+    ],
+    "note": "มองสนามได้เหมือนมองจากมุมสูง",
+    "source": "https://kurokonobasuke.fandom.com/wiki/Shun_Izuki",
+    "evidence": "whose signature ability is the Eagle Eye, which helps him keep track of the court and tailor his team's plays accordingly"
+  },
+  {
+    "id": "izuki-puns",
+    "tier": "easy",
+    "prompt": "อิซึกิ ชุน ขึ้นชื่อเรื่องนิสัยแบบไหน?",
+    "answer": "ชอบเล่นมุกคำพ้องเสียง",
+    "decoys": [
+      "ไม่เคยพูดสักคำ",
+      "ชอบหลับระหว่างพัก",
+      "ขี้กลัวสุนัข"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Shun_Izuki",
+    "evidence": "recruiting members for the basketball club along with Koganei and Mitobe, making puns all along"
+  },
+  {
+    "id": "kiyoshi-founder",
+    "tier": "easy",
+    "prompt": "ใครเป็นผู้ก่อตั้งชมรมบาสเกตบอลของโรงเรียนเซย์ริน?",
+    "answer": "คิโยชิ เท็ปเป",
+    "decoys": [
+      "ฮิวงะ จุนเปย์",
+      "อิซึกิ ชุน",
+      "ไอดะ ริโกะ"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Teppei_Kiyoshi",
+    "evidence": "is the founder of Seirin High's basketball club and was its previous ace"
+  },
+  {
+    "id": "kuroko-vanishing-drive",
+    "tier": "easy",
+    "prompt": "ท่าเลี้ยงบอลที่ทำให้คุโรโกะผ่านคู่แข่งไปได้ราวกับหายตัว ชื่ออะไร?",
+    "answer": "แวนิชชิ่งไดรฟ์",
+    "decoys": [
+      "แฟนท่อมช็อต",
+      "อิกไนต์พาส",
+      "มิสไดเร็คชั่นโอเวอร์โฟลว์"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Vanishing_Drive",
+    "evidence": "Vanishing Drive is one of Kuroko’s talents. It shows him suddenly passing or ‘teleporting’ through an opponent."
+  },
+  {
+    "id": "seirin-vice-captain",
+    "tier": "medium",
+    "prompt": "ใครเป็นรองกัปตันของเซย์ริน?",
+    "answer": "อิซึกิ ชุน",
+    "decoys": [
+      "คิโยชิ เท็ปเป",
+      "โคกาเนอิ ชินจิ",
+      "มิโตเบะ รินโนะสุเกะ"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Shun_Izuki",
+    "evidence": "is a second-year regular point guard and vice-captain at Seirin High"
+  },
+  {
+    "id": "kuroko-ignite-pass",
+    "tier": "medium",
+    "prompt": "ท่าส่งของคุโรโกะที่กระแทกลูกด้วยฝ่ามือให้พุ่งเร็วจนมีแค่ไม่กี่คนรับได้ ชื่ออะไร?",
+    "answer": "อิกไนต์พาส",
+    "decoys": [
+      "ไซโคลนพาส",
+      "แวนิชชิ่งไดรฟ์",
+      "แฟนท่อมช็อต"
+    ],
+    "note": "สมัยเทย์โค มีแค่รุ่นปาฏิหาริย์ที่รับได้",
+    "source": "https://kurokonobasuke.fandom.com/wiki/Tetsuya_Kuroko",
+    "evidence": "in Junior High school only the Generation of Miracles were capable of receiving this pass"
+  },
+  {
+    "id": "kiyoshi-iron-heart",
+    "tier": "medium",
+    "prompt": "คิโยชิ เท็ปเป ได้รับฉายาว่าอะไร?",
+    "answer": "หัวใจเหล็ก",
+    "decoys": [
+      "ยักษา",
+      "อสูรสายฟ้า",
+      "เด็กเกเร"
+    ],
+    "note": "ฉายาเหล่านี้เป็นของราชันไร้มงกุฎทั้งห้า",
+    "source": "https://kurokonobasuke.fandom.com/wiki/Teppei_Kiyoshi",
+    "evidence": "He is known as the Iron Heart (鉄心 Tesshin)"
+  },
+  {
+    "id": "kiyoshi-uncrowned",
+    "tier": "medium",
+    "prompt": "คิโยชิ เท็ปเป เป็นหนึ่งในกลุ่มผู้เล่นฝีมือดีกลุ่มไหน?",
+    "answer": "ราชันไร้มงกุฎ",
+    "decoys": [
+      "รุ่นปาฏิหาริย์",
+      "ทีมแจ็บเบอร์วอค",
+      "ทีมวอร์พัล ซอร์ดส์"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Teppei_Kiyoshi",
+    "evidence": "is the founder of Seirin High's basketball club and was its previous ace. He is known as the Iron Heart (鉄心 Tesshin) and is one of the Uncrowned Kings."
+  },
+  {
+    "id": "riko-scan-gym",
+    "tier": "medium",
+    "prompt": "โค้ชของเซย์รินมองร่างกายผู้เล่นแล้วเห็นค่าความสามารถเป็นตัวเลขได้ เธอเรียนรู้ความสามารถนี้จากที่ไหน?",
+    "answer": "ยิมกีฬาของพ่อ",
+    "decoys": [
+      "ชมรมบาสของเทย์โค",
+      "โรงพยาบาลที่แม่ทำงาน",
+      "ค่ายฝึกบาสในอเมริกา"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Riko_Aida",
+    "evidence": "When Riko was little, she often hung out at her father's sports gym. It was there that she learned her Scan ability"
+  },
+  {
+    "id": "hyuga-clutch-shooter",
+    "tier": "medium",
+    "prompt": "ฮิวงะ จุนเปย์ ได้รับฉายาในทีมเซย์รินว่าอะไร?",
+    "answer": "ชู้ตเตอร์ช่วงคับขัน",
+    "decoys": [
+      "หอบังคับการของทีม",
+      "ผู้เฝ้าแป้นแห่งเซย์ริน",
+      "ผู้เล่นคนที่หก"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Junpei_Hyūga",
+    "evidence": "His importance due to his three-pointer has earned him the nickname of the \"clutch shooter\" of Seirin."
+  },
+  {
+    "id": "hyuga-neck-crack",
+    "tier": "medium",
+    "prompt": "เมื่อฮิวงะเข้าสู่ช่วงคลัตช์และมั่นใจว่าจะชู้ตลง เขามักทำอะไร?",
+    "answer": "บิดคอให้ดังกร๊อบ",
+    "decoys": [
+      "ดันแว่นขึ้น",
+      "ตบมือกับเพื่อนร่วมทีม",
+      "หลับตาก่อนชู้ต"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Junpei_Hyūga",
+    "evidence": "When entering Clutch Time, he has a habit of cracking his neck and his shots are guaranteed to go in."
+  },
+  {
+    "id": "kuroko-misdirection-limit",
+    "tier": "medium",
+    "prompt": "ทำไมคุโรโกะจึงต้องถูกเปลี่ยนตัวออกเป็นระยะ ไม่ลงเล่นต่อเนื่องนานเกินไป?",
+    "answer": "คู่แข่งจะเริ่มชินกับการเบี่ยงสายตาของเขา",
+    "decoys": [
+      "เขามีอาการบาดเจ็บที่หัวเข่า",
+      "กฎจำกัดเวลาลงสนามของผู้เล่นปีหนึ่ง",
+      "โค้ชเก็บเขาไว้เป็นตัวสำรองเสมอ"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Tetsuya_Kuroko",
+    "evidence": "If he is left in play too long, opponents grow used to his misdirection tactics; as such, he must be placed on the bench at varying points in any match to prevent this."
+  },
+  {
+    "id": "alex-teacher",
+    "tier": "medium",
+    "prompt": "อดีตนักบาส WNBA คนใดเป็นอาจารย์สอนบาสให้คางามิตอนอยู่อเมริกา?",
+    "answer": "อเล็กซ์ (อเล็กซานดร้า การ์เซีย)",
+    "decoys": [
+      "ไอดะ คาเงโทระ",
+      "แนช โกลด์ จูเนียร์",
+      "ไอดะ ริโกะ"
+    ],
+    "note": "เธอสอนฮิมุโระ ทัตสึยะ ด้วย",
+    "source": "https://kurokonobasuke.fandom.com/wiki/Alexandra_Garcia",
+    "evidence": "was the basketball teacher of Taiga Kagami and Tatsuya Himuro who is a retired WNBA player"
+  },
+  {
+    "id": "kagetora-national-team",
+    "tier": "medium",
+    "prompt": "ผู้ฝึกสอนเซย์รินในค่ายฝึกฤดูหนาว ซึ่งเป็นอดีตนักบาสทีมชาติญี่ปุ่น คือใคร?",
+    "answer": "ไอดะ คาเงโทระ",
+    "decoys": [
+      "อเล็กซ์ (อเล็กซานดร้า การ์เซีย)",
+      "นาคาทานิ มาซาอากิ",
+      "ชิโรกาเนะ เอย์จิ"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Kagetora_Aida",
+    "evidence": "He is a sports trainer and a former basketball player for the Japanese national team."
+  },
+  {
+    "id": "mitobe-hook-shot",
+    "tier": "medium",
+    "prompt": "ท่าที่มิโตเบะ รินโนะสุเกะ ฝึกมาตลอดหนึ่งปีจนเป็นท่าประจำตัวคืออะไร?",
+    "answer": "ฮุคช็อต",
+    "decoys": [
+      "ชู้ตสามแต้ม",
+      "เฟดอะเวย์",
+      "ดั้งค์จากเส้นฟรีโธรว์"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Rinnosuke_Mitobe",
+    "evidence": "Mitobe has spent the last year training on one particular technique: His hook shot."
+  },
+  {
+    "id": "koganei-reads-mitobe",
+    "tier": "medium",
+    "prompt": "ใครในเซย์รินที่เข้าใจสิ่งที่มิโตเบะอยากสื่อได้เสมอ แม้มิโตเบะจะไม่พูดเลย?",
+    "answer": "โคกาเนอิ ชินจิ",
+    "decoys": [
+      "ฮิวงะ จุนเปย์",
+      "อิซึกิ ชุน",
+      "ฟุริฮาตะ โคคิ"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Shinji_Koganei",
+    "evidence": "Koganei is the only one who can understand what Mitobe was always saying even if Mitobe never speaks"
+  },
+  {
+    "id": "kagami-miracle-nickname",
+    "tier": "medium",
+    "prompt": "คางามิ ไทกะ ถูกขนานนามว่าอะไร เพราะฝีมือทัดเทียมรุ่นปาฏิหาริย์?",
+    "answer": "ปาฏิหาริย์ที่ไม่ได้เป็นหนึ่งในรุ่นปาฏิหาริย์",
+    "decoys": [
+      "ผู้เล่นคนที่หกผู้เป็นเงา",
+      "ราชันไร้มงกุฎ",
+      "หัวใจเหล็ก"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Taiga_Kagami",
+    "evidence": "Kagami has exceptional basketball talents and has been called \"The Miracle who did not become one of the Miracles\"."
+  },
+  {
+    "id": "seirin-rooftop-goal",
+    "tier": "medium",
+    "prompt": "นักเรียนปีหนึ่งต้องทำอะไรเพื่อพิสูจน์ความตั้งใจก่อนได้เป็นสมาชิกชมรมบาสเซย์รินจริง ๆ?",
+    "answer": "ตะโกนประกาศเป้าหมายจากดาดฟ้าต่อหน้านักเรียนทั้งโรงเรียน",
+    "decoys": [
+      "เอาชนะกัปตันแบบตัวต่อตัว",
+      "ชู้ตลูกโทษให้ลงติดกันโดยไม่พลาด",
+      "วิ่งรอบสนามให้ครบตามเมนูของโค้ช"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Riko_Aida",
+    "evidence": "to yells in front of all the students their name, class and more importantly, their goal in the basketball club"
+  },
+  {
+    "id": "kiyoshi-catchphrase",
+    "tier": "medium",
+    "prompt": "ประโยคติดปากของคิโยชิ เท็ปเป ระหว่างการแข่งคืออะไร?",
+    "answer": "\"ไปสนุกกันเถอะ!\"",
+    "decoys": [
+      "\"ชัยชนะคือทุกสิ่ง\"",
+      "\"เราจะเป็นที่หนึ่งของญี่ปุ่น!\"",
+      "\"คนที่จะชนะฉันได้มีแค่ตัวฉันเอง\""
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Teppei_Kiyoshi",
+    "evidence": "His catchphrase during games is \"Let's go have fun!\"."
+  },
+  {
+    "id": "kuroko-phantom-shot",
+    "tier": "medium",
+    "prompt": "ท่าชู้ตของคุโรโกะที่ปล่อยลูกจากระดับอกด้วยฝ่ามือ จนคู่แข่งมองเห็นลูกไม่ทัน ชื่ออะไร?",
+    "answer": "แฟนท่อมช็อต",
+    "decoys": [
+      "แวนิชชิ่งไดรฟ์",
+      "อิกไนต์พาสไค",
+      "เมเทียร์แจม"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Tetsuya_Kuroko",
+    "evidence": "Instead of shooting the ball over one's head, the Phantom Shot releases from the chest."
+  },
+  {
+    "id": "kiyoshi-knee",
+    "tier": "hard",
+    "prompt": "คิโยชิ เท็ปเป บาดเจ็บรุนแรงที่ส่วนไหนตั้งแต่ปีหนึ่ง จนต้องพักรักษาตัวยาว?",
+    "answer": "หัวเข่า",
+    "decoys": [
+      "ข้อศอก",
+      "ข้อเท้า",
+      "หัวไหล่"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Teppei_Kiyoshi",
+    "evidence": "the knee injury he sustained during his freshman year was quite severe"
+  },
+  {
+    "id": "kiyoshi-injury-match",
+    "tier": "hard",
+    "prompt": "ในรอบคัดเลือกอินเตอร์ไฮปีก่อน เซย์รินเสียคิโยชิไปเพราะอาการบาดเจ็บหลังแข่งกับทีมไหน?",
+    "answer": "คิริซากิ ไดอิจิ",
+    "decoys": [
+      "ชูโตคุ",
+      "เซย์โฮ",
+      "โทโอ"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Seirin_High",
+    "evidence": "where they had to face Kirisaki Daīchi High. They won closely, but lost Kiyoshi due to an injury indirectly caused by Hanamiya."
+  },
+  {
+    "id": "kiyoshi-vice-claw",
+    "tier": "hard",
+    "prompt": "ท่ารีบาวด์ด้วยมือเดียวของคิโยชิ ที่ฝึกด้วยการบีบหินก้อนใหญ่ ชื่ออะไร?",
+    "answer": "ไวซ์คลอว์",
+    "decoys": [
+      "แบร์ริเออร์จัมเปอร์",
+      "อีเกิลสเปียร์",
+      "ค้อนธอร์"
+    ],
+    "note": "เผยครั้งแรกในเกมกับโยเซ็น",
+    "source": "https://kurokonobasuke.fandom.com/wiki/Teppei_Kiyoshi",
+    "evidence": "Instead of jumping towards the ball with both hands, he has gained the ability to rebound the ball with only one hand."
+  },
+  {
+    "id": "hyuga-barrier-jumper",
+    "tier": "hard",
+    "prompt": "ท่าชู้ตใหม่ที่ฮิวงะเรียนในค่ายฝึกฤดูหนาว โดยก้าวถอยหลังเร็ว ๆ แล้วกระโดดชู้ต ชื่ออะไร?",
+    "answer": "แบร์ริเออร์จัมเปอร์",
+    "decoys": [
+      "ไวซ์คลอว์",
+      "อีเกิลสเปียร์",
+      "เลนอัพ"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Junpei_Hyūga",
+    "evidence": "A new move Hyūga learned in the winter training camp from Kagetora Aida. He takes a quick jab step away from the goal and takes a normal jump shot."
+  },
+  {
+    "id": "kagami-zone-first",
+    "tier": "hard",
+    "prompt": "คางามิเข้าสู่โซนเป็นครั้งแรกในวินเทอร์คัพ ระหว่างแข่งกับทีมไหน?",
+    "answer": "โทโอ",
+    "decoys": [
+      "โยเซ็น",
+      "ไคโจ",
+      "ราคุซัน"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Taiga_Kagami",
+    "evidence": "Kagami first experienced 'being in the zone' during the 4th quarter of 1st round match of the Winter Cup, playing for Seirin against Tōō."
+  },
+  {
+    "id": "kagami-meteor-jam",
+    "tier": "hard",
+    "prompt": "ท่าดั้งค์ที่คางามิกระโดดจากเส้นฟรีโธรว์โดยเน้นความสูงแทนระยะ แล้วอัดลูกลงห่วงจากจุดสูงสุด ชื่ออะไร?",
+    "answer": "เมเทียร์แจม",
+    "decoys": [
+      "เลนอัพ",
+      "ค้อนธอร์",
+      "เซลฟ์อัลลีย์อูป"
+    ],
+    "note": "ทำได้เฉพาะตอนอยู่ในโซน",
+    "source": "https://kurokonobasuke.fandom.com/wiki/Taiga_Kagami",
+    "evidence": "instead of following through with a lane up, Kagami uses his jumping power to gain height rather than distance"
+  },
+  {
+    "id": "kuroko-cyclone-pass",
+    "tier": "hard",
+    "prompt": "ท่าส่งที่คุโรโกะหมุนตัวเร็ว ๆ แล้วปล่อยลูกพุ่งเป็นเส้นตรงข้ามทั้งสนาม ชื่ออะไร?",
+    "answer": "ไซโคลนพาส",
+    "decoys": [
+      "อิกไนต์พาส",
+      "แวนิชชิ่งไดรฟ์",
+      "แฟนท่อมช็อต"
+    ],
+    "note": "ใช้ครั้งแรกในเกมกับชูโตคุ",
+    "source": "https://kurokonobasuke.fandom.com/wiki/Tetsuya_Kuroko",
+    "evidence": "When the opponents score, Kuroko takes the ball, spins very fast and releases the ball to fly across the whole court."
+  },
+  {
+    "id": "kuroko-misdirection-overflow",
+    "tier": "hard",
+    "prompt": "เทคนิคที่คุโรโกะจงใจดึงสายตาทุกคนมาที่ตัวเอง เพื่อให้เพื่อนร่วมทีมหลุดจากสายตาคู่แข่งแทน ชื่ออะไร?",
+    "answer": "มิสไดเร็คชั่นโอเวอร์โฟลว์",
+    "decoys": [
+      "อิกไนต์พาสไค",
+      "ไซโคลนพาส",
+      "เลนอัพ"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Tetsuya_Kuroko",
+    "evidence": "By deliberately running out of misdirection, he is giving his teammates the ability of the Vanishing Drive."
+  },
+  {
+    "id": "kagami-lane-up",
+    "tier": "hard",
+    "prompt": "ท่าดั้งค์จากเส้นฟรีโธรว์ที่คางามิใช้ปิดเกมกับโจเซย์ในรอบคัดเลือกวินเทอร์คัพ เรียกว่าอะไร?",
+    "answer": "เลนอัพ",
+    "decoys": [
+      "เมเทียร์แจม",
+      "เซลฟ์อัลลีย์อูป",
+      "ค้อนธอร์"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Taiga_Kagami",
+    "evidence": "A lane up is a dunk from the free-throw line."
+  },
+  {
+    "id": "kagami-self-alley-oop",
+    "tier": "hard",
+    "prompt": "คางามิคิดท่าโยนลูกให้ตัวเองแล้วกระโดดรับยัดห่วง (เซลฟ์อัลลีย์อูป) ขึ้นมา เพื่อตอบโต้การชู้ตของใคร?",
+    "answer": "มิโดริมะ ชินทาโร่",
+    "decoys": [
+      "อาโอมิเนะ ไดกิ",
+      "คิเสะ เรียวตะ",
+      "ฮิมุโระ ทัตสึยะ"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Taiga_Kagami",
+    "evidence": "This was a response to Midorima's shooting spree in Seirin's match against Shūtoku High."
+  },
+  {
+    "id": "hyuga-mibuchi-form",
+    "tier": "hard",
+    "prompt": "สมัยมัธยมต้น ฮิวงะชื่นชมและเลียนแบบท่าชู้ตของผู้เล่นคนไหน?",
+    "answer": "มิบุจิ เรโอะ",
+    "decoys": [
+      "มิโดริมะ ชินทาโร่",
+      "ซากุไร เรียว",
+      "ฮิมุโระ ทัตสึยะ"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Junpei_Hyūga",
+    "evidence": "Hyūga adopted a similar shooting form of Uncrowned King Reo Mibuchi as he admired his style."
+  },
+  {
+    "id": "furihata-guards-akashi",
+    "tier": "hard",
+    "prompt": "ในนัดชิงวินเทอร์คัพ ริโกะส่งฟุริฮาตะ โคคิ ลงไปประกบผู้เล่นคนไหนของราคุซัน?",
+    "answer": "อาคาชิ เซย์จูโร่",
+    "decoys": [
+      "มายุซุมิ จิฮิโระ",
+      "ฮายามะ โคทาโร่",
+      "มิบุจิ เรโอะ"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Kōki_Furihata",
+    "evidence": "a terrified Furihata is subbed in during the second quarter and is sent to guard Seijūrō Akashi"
+  },
+  {
+    "id": "mitobe-taught-kagami",
+    "tier": "hard",
+    "prompt": "ใครในเซย์รินสอนคางามิวิธีป้องกันผู้เล่นที่ตัวสูงกว่า ด้วยการกดดันไม่ให้คู่แข่งเล่นได้อย่างที่ต้องการ?",
+    "answer": "มิโตเบะ รินโนะสุเกะ",
+    "decoys": [
+      "คิโยชิ เท็ปเป",
+      "ฮิวงะ จุนเปย์",
+      "โคกาเนอิ ชินจิ"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Rinnosuke_Mitobe",
+    "evidence": "He taught this method to Taiga Kagami, who used it against Dad  and Kenichi Okamura in their matches."
+  },
+  {
+    "id": "kuroko-shot-coach",
+    "tier": "hard",
+    "prompt": "เมื่อคุโรโกะต้องฝึกชู้ตลูก เขาไปขอให้ใครช่วยสอนจนคิดท่าชู้ตของตัวเองได้?",
+    "answer": "อาโอมิเนะ ไดกิ",
+    "decoys": [
+      "มิโดริมะ ชินทาโร่",
+      "คางามิ ไทกะ",
+      "ฮิวงะ จุนเปย์"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Tetsuya_Kuroko",
+    "evidence": "Kuroko brought Aomine in to train him"
+  },
+  {
+    "id": "kiyoshi-right-of-postponement",
+    "tier": "very-hard",
+    "prompt": "ความสามารถของคิโยชิที่ใช้มือใหญ่ถือบอลมือเดียว แล้วเปลี่ยนการเล่นได้จนวินาทีสุดท้าย เรียกว่าอะไร?",
+    "answer": "สิทธิ์เลื่อนการตัดสินใจ",
+    "decoys": [
+      "ไวซ์คลอว์",
+      "อีเกิลสเปียร์",
+      "แบร์ริเออร์จัมเปอร์"
+    ],
+    "note": "เผยครั้งแรกในเกมกับโจเซย์",
+    "source": "https://kurokonobasuke.fandom.com/wiki/Teppei_Kiyoshi",
+    "evidence": "When in possession of the ball, Kiyoshi has the unique ability to palm or hold the ball with one hand, which gives him more options and time to make decisions when making plays in comparison to other basketball players."
+  },
+  {
+    "id": "kagami-zone-trigger",
+    "tier": "very-hard",
+    "prompt": "\"ไกปืน\" ที่ทำให้คางามิเข้าสู่โซนได้คืออะไร?",
+    "answer": "ความตั้งใจจะสู้เพื่อเพื่อนร่วมทีม",
+    "decoys": [
+      "การเลิกพึ่งเพื่อนร่วมทีมแล้วคว้าชัยด้วยตัวเอง",
+      "ความโกรธจนลืมตัว",
+      "การได้แข่งกับคนที่เคยเอาชนะเขา"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Taiga_Kagami",
+    "evidence": "The main condition for Kagami to enter the zone is \"the will to fight for his teammates\"."
+  },
+  {
+    "id": "zone-gatekeeper",
+    "tier": "very-hard",
+    "prompt": "ในนัดชิงวินเทอร์คัพ ใครถูกเผยว่าเป็น \"ผู้เฝ้าประตู\" บานที่สองของโซนของคางามิ?",
+    "answer": "คุโรโกะ เท็ตสึยะ",
+    "decoys": [
+      "อาโอมิเนะ ไดกิ",
+      "คิโยชิ เท็ปเป",
+      "อาคาชิ เซย์จูโร่"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Taiga_Kagami",
+    "evidence": "The gatekeeper is revealed to be Kuroko all along, and he opened the door for Kagami."
+  },
+  {
+    "id": "kagami-direct-drive-zone",
+    "tier": "very-hard",
+    "prompt": "โซนขั้นที่สองที่คางามิเปิดได้ ซึ่งเพื่อนร่วมทีมทุกคนเล่นประสานกับเขาได้ด้วยความเร็วระดับโซน เรียกว่าอะไร?",
+    "answer": "ไดเร็คไดรฟ์โซน",
+    "decoys": [
+      "จักษุจักรพรรดิ",
+      "มิสไดเร็คชั่นโอเวอร์โฟลว์",
+      "เพอร์เฟ็กต์ก๊อปปี้"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Zone",
+    "evidence": "Behind the door is the entire Seirin team, which means if opened, the teammates of the Zone user can perfectly sync their actions with the latter through simple eye contact"
+  },
+  {
+    "id": "kuroko-ignite-pass-kai",
+    "tier": "very-hard",
+    "prompt": "อิกไนต์พาสไค ซึ่งคุโรโกะฝึกในค่ายฤดูหนาว ต่างจากอิกไนต์พาสเดิมอย่างไร?",
+    "answer": "ใส่การหมุนแรง ๆ ให้ลูกพุ่งเหมือนกระสุนปืน",
+    "decoys": [
+      "ส่งด้วยกำปั้นแทนฝ่ามือ",
+      "หมุนตัวก่อนขว้างข้ามสนาม",
+      "กระแทกลูกลงพื้นให้กระดอนหาเพื่อน"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Tetsuya_Kuroko",
+    "evidence": "Instead of simply thrusting the ball using the palm of his hand, he also puts a strong spin on it."
+  },
+  {
+    "id": "vanishing-drive-counter",
+    "tier": "very-hard",
+    "prompt": "ใครเป็นคนแรกที่หยุดท่าเลี้ยงบอลหายตัวของคุโรโกะได้ ด้วยการหลับตา?",
+    "answer": "อาโอมิเนะ ไดกิ",
+    "decoys": [
+      "มิโดริมะ ชินทาโร่",
+      "ทาคาโอะ คาซึนาริ",
+      "อิมาโยชิ โชอิจิ"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Tetsuya_Kuroko",
+    "evidence": "The only one so far to have beaten the Vanishing Drive, is Aomine. He countered it and stole the ball by closing his eyes"
+  },
+  {
+    "id": "imayoshi-reads-misdirection",
+    "tier": "very-hard",
+    "prompt": "วิธีทำลายมิสไดเร็คชั่นคือเลิกมองคุโรโกะ แล้วดูตำแหน่งเขาจากผู้ส่งบอลแทน ใครเป็นคนเดียวที่ทำแบบนี้ได้?",
+    "answer": "อิมาโยชิ โชอิจิ",
+    "decoys": [
+      "ฮานามิยะ มาโคโตะ",
+      "คาซามัตสึ ยูคิโอะ",
+      "มิโดริมะ ชินทาโร่"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Tetsuya_Kuroko",
+    "evidence": "So far, the only person capable of doing that is Imayoshi."
+  },
+  {
+    "id": "phantom-shot-counter",
+    "tier": "very-hard",
+    "prompt": "ใครเป็นคนแรกที่หาทางบล็อกแฟนท่อมช็อตได้ ด้วยการถอยห่างจากคุโรโกะก่อน?",
+    "answer": "คาซามัตสึ ยูคิโอะ",
+    "decoys": [
+      "มุราซากิบาระ อัตสึชิ",
+      "คิเสะ เรียวตะ",
+      "อาคาชิ เซย์จูโร่"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Tetsuya_Kuroko",
+    "evidence": "Kasamatsu is the first one to figure this out, after which he successfully closed in on Kuroko and blocked the shot."
+  },
+  {
+    "id": "kuroko-first-official-basket",
+    "tier": "very-hard",
+    "prompt": "คุโรโกะทำแต้มแรกในการแข่งขันอย่างเป็นทางการได้ในเกมกับทีมไหน?",
+    "answer": "โยเซ็น",
+    "decoys": [
+      "โทโอ",
+      "ไคโจ",
+      "ราคุซัน"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Tetsuya_Kuroko",
+    "evidence": "his first basket in an official match was in the Winter Cup quarter-finals, against Yōsen High"
+  },
+  {
+    "id": "kuroko-quasi-emperor-eye",
+    "tier": "very-hard",
+    "prompt": "ความสามารถของคุโรโกะที่อ่านอนาคตได้เฉพาะเพื่อนร่วมทีมที่เขาคุ้นเคย ไม่ใช่คู่แข่ง เรียกว่าอะไร?",
+    "answer": "จักษุจักรพรรดิเทียม",
+    "decoys": [
+      "เนตรอินทรี",
+      "เนตรเหยี่ยว",
+      "มิสไดเร็คชั่นโอเวอร์โฟลว์"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Emperor_Eye",
+    "evidence": "Kuroko's Emperor Eye is referred to as \"Quasi-Emperor Eye\""
+  },
+  {
+    "id": "misdirection-overflow-cost",
+    "tier": "very-hard",
+    "prompt": "หลังคุโรโกะใช้เทคนิคดึงสายตาทุกคนมาที่ตัวเอง จะเกิดผลเสียร้ายแรงอะไรตามมา?",
+    "answer": "มิสไดเร็คชั่นจะใช้กับคู่แข่งคนเดิมไม่ได้อีกเลย",
+    "decoys": [
+      "เขาจะบาดเจ็บที่ข้อมือ",
+      "ใช้ได้เฉพาะตอนคางามิอยู่ในโซน",
+      "ทีมจะโดนฟาวล์เทคนิค"
+    ],
+    "note": "จึงต้องเก็บไว้ใช้ช่วงท้ายเกมเท่านั้น",
+    "source": "https://kurokonobasuke.fandom.com/wiki/Tetsuya_Kuroko",
+    "evidence": "misdirection would never work against the same opponent thus rendering the rematch an inevitable loss in the future with this"
+  },
+  {
+    "id": "seirin-days-of-week",
+    "tier": "very-hard",
+    "prompt": "ชื่อสกุลของผู้เล่นเซย์รินหลายคน เช่น ฮิวงะ อิซึกิ และคางามิ ตั้งตามอะไร?",
+    "answer": "วันทั้งเจ็ดในภาษาญี่ปุ่น",
+    "decoys": [
+      "สิบสองนักษัตร",
+      "ชื่อย่านในโตเกียว",
+      "ชื่อดอกไม้ตามฤดูกาล"
+    ],
+    "note": "日 อาทิตย์, 月 จันทร์, 火 อังคาร, 水 พุธ, 木 พฤหัสฯ, 金 ศุกร์, 土 เสาร์",
+    "source": "https://kurokonobasuke.fandom.com/wiki/Seirin_High",
+    "evidence": "All of their players are named after the days of the week in Japanese, with exception of Kuroko, Fukuda, Furihata and Kawahara."
+  },
+  {
+    "id": "seirin-sam-defense",
+    "tier": "very-hard",
+    "prompt": "แนวรับ S.A.M. ของเซย์รินสลับตัวประกบตลอดเวลา เพื่อให้ใครไปอยู่ในเส้นทางส่งบอลของคู่แข่ง?",
+    "answer": "คุโรโกะ เท็ตสึยะ",
+    "decoys": [
+      "คางามิ ไทกะ",
+      "อิซึกิ ชุน",
+      "คิโยชิ เท็ปเป"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Seirin_High",
+    "evidence": "this formation switches their mark constantly and in a way so that Kuroko ends up in the passing line"
+  },
+  {
+    "id": "furihata-chihuahua",
+    "tier": "very-hard",
+    "prompt": "อาโอมิเนะเปรียบฟุริฮาตะที่ต้องลงประกบผู้เล่นตัวเก่งของราคุซันในนัดชิงว่าเป็นอะไร?",
+    "answer": "ชิวาวาต่อหน้าสิงโต",
+    "decoys": [
+      "กระต่ายต่อหน้าเสือ",
+      "ลูกแมวต่อหน้าหมาป่า",
+      "หนูต่อหน้างูเหลือม"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Kōki_Furihata",
+    "evidence": "Daiki Aomine metaphorically compares Furihata as a \"Chihuahua\" placed in front of a \"Lion\" (Akashi)."
+  },
+  {
+    "id": "izuki-eagle-spear",
+    "tier": "very-hard",
+    "prompt": "ท่าขโมยบอลของอิซึกิ ที่ยื่นแขนไปด้านหลังโดยไม่หันตัว เพื่อหยุดคู่แข่งที่เร็วกว่า ชื่ออะไร?",
+    "answer": "อีเกิลสเปียร์",
+    "decoys": [
+      "ไวซ์คลอว์",
+      "แบร์ริเออร์จัมเปอร์",
+      "แวนิชชิ่งไดรฟ์"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Shun_Izuki",
+    "evidence": "Izuki can steal the ball from behind his back, without looking, against a much faster opponent like Yukio Kasamatsu."
+  },
+  {
+    "id": "izuki-stops-hayama",
+    "tier": "very-hard",
+    "prompt": "ในนัดชิงวินเทอร์คัพ อิซึกิหยุดการเลี้ยงบอลแบบใช้สี่นิ้วของผู้เล่นราคุซันคนไหนได้?",
+    "answer": "ฮายามะ โคทาโร่",
+    "decoys": [
+      "มายุซุมิ จิฮิโระ",
+      "มิบุจิ เรโอะ",
+      "เนบุยะ เอย์กิจิ"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Shun_Izuki",
+    "evidence": "He succeeded in stopping Hayama's four-fingers dribbling"
+  },
+  {
+    "id": "hyuga-copies-earth",
+    "tier": "very-hard",
+    "prompt": "ช่วงท้ายนัดชิงวินเทอร์คัพ ฮิวงะลอกท่าชู้ตแบบใดของคู่ประกบจากราคุซันมาใช้ได้?",
+    "answer": "ชู้ตดิน (จิ)",
+    "decoys": [
+      "ชู้ตฟ้า (เท็น)",
+      "ชู้ตความว่างเปล่า (โคคู)",
+      "เมเทียร์แจม"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Junpei_Hyūga",
+    "evidence": "During the finals against Rakuzan, Hyūga replicated the Earth shooting form of Mibuchi near the end of the match."
+  },
+  {
+    "id": "seirin-winter-camp-fartlek",
+    "tier": "very-hard",
+    "prompt": "ในค่ายฝึกฤดูหนาว เซย์รินแบ่งเป็นสองทีมวิ่งไล่จับกันบนภูเขา การฝึกแบบนี้เรียกว่าอะไร?",
+    "answer": "ฟาร์ตเลค",
+    "decoys": [
+      "ฝึกในสระว่ายน้ำ",
+      "วิ่งเท้าเปล่าบนชายหาด",
+      "บีบหินก้อนใหญ่"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Seirin_High",
+    "evidence": "Seirin underwent this kind of training on their second camp, the winter camp."
+  },
+  {
+    "id": "kise-school",
+    "tier": "easy",
+    "prompt": "คิเสะ เรียวตะ เล่นบาสให้โรงเรียนมัธยมปลายใด?",
+    "answer": "ไคโจ",
+    "decoys": [
+      "ชูโตคุ",
+      "โทโอ",
+      "ราคุซัน"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Ryōta_Kise",
+    "evidence": "Ryōta Kise (黄瀬 涼太 Kise Ryōta) was the Generation of Miracles' small forward who now plays at Kaijō High."
+  },
+  {
+    "id": "midorima-school",
+    "tier": "easy",
+    "prompt": "มิโดริมะ ชินทาโร่ เล่นบาสให้โรงเรียนมัธยมปลายใด?",
+    "answer": "ชูโตคุ",
+    "decoys": [
+      "ไคโจ",
+      "โยเซ็น",
+      "โทโอ"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Shintarō_Midorima",
+    "evidence": "who now plays for one of the Three Kings of Tokyo, Shūtoku High."
+  },
+  {
+    "id": "aomine-school",
+    "tier": "easy",
+    "prompt": "อาโอมิเนะ ไดกิ เป็นเอซของโรงเรียนมัธยมปลายใด?",
+    "answer": "โทโอ",
+    "decoys": [
+      "ชูโตคุ",
+      "ราคุซัน",
+      "โยเซ็น"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Daiki_Aomine",
+    "evidence": "He currently plays as the power forward and ace of Tōō Academy."
+  },
+  {
+    "id": "murasakibara-school",
+    "tier": "easy",
+    "prompt": "มุราซากิบาระ อัตสึชิ เล่นบาสให้โรงเรียนมัธยมปลายใด?",
+    "answer": "โยเซ็น",
+    "decoys": [
+      "ไคโจ",
+      "ราคุซัน",
+      "ชูโตคุ"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Atsushi_Murasakibara",
+    "evidence": "was the Generation of Miracles' center who now plays for Yōsen High."
+  },
+  {
+    "id": "akashi-school",
+    "tier": "easy",
+    "prompt": "อาคาชิ เซย์จูโร่ เป็นกัปตันทีมของโรงเรียนมัธยมปลายใด?",
+    "answer": "ราคุซัน",
+    "decoys": [
+      "โทโอ",
+      "ไคโจ",
+      "ชูโตคุ"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Seijūrō_Akashi",
+    "evidence": "is the point guard and captain of Rakuzan High."
+  },
+  {
+    "id": "murasakibara-position",
+    "tier": "easy",
+    "prompt": "มุราซากิบาระ อัตสึชิ เล่นตำแหน่งอะไรในรุ่นปาฏิหาริย์?",
+    "answer": "เซ็นเตอร์",
+    "decoys": [
+      "พอยท์การ์ด",
+      "ชู้ตติ้งการ์ด",
+      "สมอลฟอร์เวิร์ด"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Atsushi_Murasakibara",
+    "evidence": "was the Generation of Miracles' center who now plays for Yōsen High."
+  },
+  {
+    "id": "kise-copying",
+    "tier": "easy",
+    "prompt": "คิเสะ เรียวตะ ขึ้นชื่อเรื่องความสามารถอะไร?",
+    "answer": "ลอกเลียนท่าที่เห็นได้ทันที",
+    "decoys": [
+      "ยิงสามแต้มได้จากทุกจุดในสนาม",
+      "อ่านความเคลื่อนไหวล่วงหน้าของคู่ต่อสู้",
+      "ทำให้คนอื่นมองไม่เห็นตัวเอง"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Ryōta_Kise",
+    "evidence": "He is well known for his copying abilities, as he can copy any technique he sees, often with more power than the original."
+  },
+  {
+    "id": "momoi-manager",
+    "tier": "easy",
+    "prompt": "โมโมอิ ซัทสึกิ มีหน้าที่อะไรในชมรมบาสของโทโอ?",
+    "answer": "ผู้จัดการทีม",
+    "decoys": [
+      "โค้ช",
+      "หัวหน้ากองเชียร์",
+      "ผู้เล่นตัวสำรอง"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Satsuki_Momoi",
+    "evidence": "is the manager of Tōō Academy and the previous manager of the Generation of Miracles at Teikō Junior High"
+  },
+  {
+    "id": "aomine-kuroko-light",
+    "tier": "easy",
+    "prompt": "สมัยเทย์โค ใครคือ \"แสง\" คู่หูของคุโรโกะ เท็ตสึยะ?",
+    "answer": "อาโอมิเนะ ไดกิ",
+    "decoys": [
+      "คิเสะ เรียวตะ",
+      "มิโดริมะ ชินทาโร่",
+      "อาคาชิ เซย์จูโร่"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Daiki_Aomine",
+    "evidence": "was the former partner/light of Tetsuya Kuroko in Teikō Junior High."
+  },
+  {
+    "id": "midorima-range",
+    "tier": "easy",
+    "prompt": "มิโดริมะ ชินทาโร่ ยิงลูกลงห่วงได้ไกลแค่ไหน?",
+    "answer": "ไกลถึงอีกฝั่งของสนาม",
+    "decoys": [
+      "เฉพาะใต้แป้น",
+      "เฉพาะเส้นฟรีโธรว์",
+      "เฉพาะมุมสนาม"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Shintarō_Midorima",
+    "evidence": "Midorima has shown that he can score from the half court line and even on the opposite side of the court."
+  },
+  {
+    "id": "momoi-tetsu-kun",
+    "tier": "easy",
+    "prompt": "โมโมอิ ซัทสึกิ เรียกคุโรโกะ เท็ตสึยะ ว่าอะไร?",
+    "answer": "เท็ตสึคุง",
+    "decoys": [
+      "เท็ตสึจัง",
+      "คุโรจิน",
+      "เท็ตสึยะซัง"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Satsuki_Momoi",
+    "evidence": "Tetsuya Kuroko - \"Tetsu-kun\""
+  },
+  {
+    "id": "kaijo-practice-rim",
+    "tier": "easy",
+    "prompt": "ในเกมกระชับมิตรระหว่างเซย์รินกับไคโจ คางามิ ไทกะ ดั้งค์แล้วเกิดอะไรขึ้น?",
+    "answer": "ห่วงหัก",
+    "decoys": [
+      "แป้นกระจกแตก",
+      "ลูกบาสแตก",
+      "ไฟในโรงยิมดับ"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Yukio_Kasamatsu",
+    "evidence": "passes to Taiga Kagami and Kagami dunks, breaking the rim."
+  },
+  {
+    "id": "akashi-emperor-eye",
+    "tier": "medium",
+    "prompt": "ดวงตาของอาคาชิที่มองเห็นแม้แต่ลมหายใจและกล้ามเนื้อของคู่ต่อสู้ จนรู้ท่าต่อไปล่วงหน้า ชื่ออะไร?",
+    "answer": "จักษุจักรพรรดิ",
+    "decoys": [
+      "เนตรเหยี่ยว",
+      "เนตรอินทรี",
+      "ก๊อปปี้สมบูรณ์แบบ"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Seijūrō_Akashi",
+    "evidence": "his Emperor Eye (天帝の眼 Enperā Ai) can see the smallest details of a person's movements, including their breathing, heartbeat, sweat, muscle contractions, etc."
+  },
+  {
+    "id": "takao-hawk-eye",
+    "tier": "medium",
+    "prompt": "ความสามารถของทาคาโอะ คาซึนาริ ที่มองเห็นทั้งสนาม จนเห็นคุโรโกะแม้ใช้มิสไดเร็คชั่น ชื่ออะไร?",
+    "answer": "เนตรเหยี่ยว",
+    "decoys": [
+      "เนตรอินทรี",
+      "จักษุจักรพรรดิ",
+      "ก๊อปปี้สมบูรณ์แบบ"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Kazunari_Takao",
+    "evidence": "With his Hawk-Eye, he can see the entire court (Eagle Eye can see just a smaller portion of the court), enabling him to make blind passes."
+  },
+  {
+    "id": "kise-perfect-copy",
+    "tier": "medium",
+    "prompt": "ท่าที่ต่อยอดการลอกเลียนของคิเสะ จนลอกท่าของรุ่นปาฏิหาริย์ได้ทุกคน ชื่ออะไร?",
+    "answer": "ก๊อปปี้สมบูรณ์แบบ",
+    "decoys": [
+      "จักษุจักรพรรดิ",
+      "มิสไดเร็คชั่น",
+      "โซน"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Ryōta_Kise",
+    "evidence": "The difference to his physical abilities and the abilities of the original user of the skill is negated and Kise is capable of copying anyone, even the Generation of Miracles."
+  },
+  {
+    "id": "aomine-motto",
+    "tier": "medium",
+    "prompt": "ช่วงที่เบื่อบาส อาโอมิเนะ ไดกิ ชอบพูดประโยคใด?",
+    "answer": "คนเดียวที่เอาชนะฉันได้ ก็คือตัวฉันเอง",
+    "decoys": [
+      "ฉันถูกเสมอ",
+      "ฉันจะไม่แพ้ใครทั้งนั้น",
+      "มนุษย์ลิขิต ฟ้าเป็นผู้กำหนด"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Daiki_Aomine",
+    "evidence": "Aomine adopted the saying of \"the only one who can beat me is me\""
+  },
+  {
+    "id": "takao-shin-chan",
+    "tier": "medium",
+    "prompt": "ทาคาโอะ คาซึนาริ ชอบเรียกมิโดริมะว่าอะไร ทั้งที่อีกฝ่ายห้ามแล้ว?",
+    "answer": "ชินจัง",
+    "decoys": [
+      "มิโดริมัจจิ",
+      "มิโดจิน",
+      "มิโดริน"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Kazunari_Takao",
+    "evidence": "Midorima tells Takao not to call him Shin-chan, but Takao ignores this."
+  },
+  {
+    "id": "kise-cchi",
+    "tier": "medium",
+    "prompt": "คิเสะ เรียวตะ เติมคำใดต่อท้ายชื่อคนที่เขายอมรับนับถือ?",
+    "answer": "-จจิ",
+    "decoys": [
+      "-จัง",
+      "-จิน",
+      "-เซมไป"
+    ],
+    "note": "เช่น คุโรโกะจจิ คางามิจจิ",
+    "source": "https://kurokonobasuke.fandom.com/wiki/Ryōta_Kise",
+    "evidence": "Kise adds -cchi exclusively to the names of people whom he respects"
+  },
+  {
+    "id": "sakurai-sorry",
+    "tier": "medium",
+    "prompt": "ซากุไร เรียว ของโทโอ มีนิสัยติดตัวอะไร?",
+    "answer": "ขอโทษตลอดเวลา แม้ตอนยิงสามแต้ม",
+    "decoys": [
+      "พูดภาษาถิ่นคันไซ",
+      "ออกเสียง L กับ R สลับกัน",
+      "พกของนำโชคตามดวงประจำวัน"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Ryō_Sakurai",
+    "evidence": "Even when he shoots his three-pointers, he whispers sorry."
+  },
+  {
+    "id": "kise-first-loss-tears",
+    "tier": "medium",
+    "prompt": "หลังเกมกระชับมิตรกับเซย์ริน คิเสะ เรียวตะ ทำอะไร?",
+    "answer": "ร้องไห้ เพราะเพิ่งเคยแพ้ครั้งแรก",
+    "decoys": [
+      "ขอย้ายไปเรียนเซย์ริน",
+      "ประกาศเลิกเล่นบาส",
+      "ท้าคางามิดวลตัวต่อตัวทันที"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Yukio_Kasamatsu",
+    "evidence": "At the end of the match, he sees Kise crying over losing for the first time"
+  },
+  {
+    "id": "kise-copies-aomine-interhigh",
+    "tier": "medium",
+    "prompt": "ในอินเตอร์ไฮ คิเสะ เรียวตะ ตั้งใจลอกสไตล์การเล่นทั้งหมดของใคร?",
+    "answer": "อาโอมิเนะ ไดกิ",
+    "decoys": [
+      "มุราซากิบาระ อัตสึชิ",
+      "อาคาชิ เซย์จูโร่",
+      "มิโดริมะ ชินทาโร่"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Satsuki_Momoi",
+    "evidence": "Momoi explains that Kise intends to copy Aomine's complete style of play not just his techniques"
+  },
+  {
+    "id": "himuro-ring",
+    "tier": "medium",
+    "prompt": "ฮิมุโระ ทัตสึยะ กับคางามิ ไทกะ มีของอะไรเป็นสัญลักษณ์ของความเป็นพี่น้อง?",
+    "answer": "แหวนห้อยคอ",
+    "decoys": [
+      "สายรัดข้อมือคู่",
+      "ผ้าคาดหัวสีเดียวกัน",
+      "เสื้อหมายเลขเดียวกัน"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Tatsuya_Himuro",
+    "evidence": "The ring on their necks is proof of their brotherhood."
+  },
+  {
+    "id": "mayuzumi-new-phantom",
+    "tier": "medium",
+    "prompt": "อาคาชิชวนเพื่อนร่วมทีมคนใดให้มาเล่นเป็นเงาแบบเดียวกับคุโรโกะ?",
+    "answer": "มายุซุมิ จิฮิโระ",
+    "decoys": [
+      "ฮายามะ โคทาโร่",
+      "มิบุจิ เรโอะ",
+      "เนบุยะ เอย์กิจิ"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Chihiro_Mayuzumi",
+    "evidence": "then proceeded to ask Mayuzumi to become the \"new\" Phantom Sixth Man."
+  },
+  {
+    "id": "akashi-scissors-bangs",
+    "tier": "medium",
+    "prompt": "ในวันพิธีเปิดวินเทอร์คัพ อาคาชิ เซย์จูโร่ ใช้กรรไกรทำอะไร?",
+    "answer": "ตัดผมหน้าม้าของตัวเอง",
+    "decoys": [
+      "ตัดตาข่ายห่วงบาส",
+      "ตัดเสื้อทีมของตัวเอง",
+      "ตัดริบบิ้นเปิดงาน"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Seijūrō_Akashi",
+    "evidence": "During the opening ceremony of the Winter Cup, he personally cut his bangs with a pair of scissors in order to keep it out of his eyes."
+  },
+  {
+    "id": "rakuzan-kyoto",
+    "tier": "medium",
+    "prompt": "โรงเรียนราคุซันตั้งอยู่ที่ใด?",
+    "answer": "เกียวโต",
+    "decoys": [
+      "โตเกียว",
+      "คานางาวะ",
+      "อาคิตะ"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Rakuzan_High",
+    "evidence": "is a prestigious school in Kyoto"
+  },
+  {
+    "id": "shutoku-tokyo-king",
+    "tier": "medium",
+    "prompt": "โรงเรียนใดเป็นหนึ่งใน \"สามราชันแห่งโตเกียว\"?",
+    "answer": "ชูโตคุ",
+    "decoys": [
+      "ไคโจ",
+      "โยเซ็น",
+      "ราคุซัน"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Shūtoku_High",
+    "evidence": "Shūtoku High (秀徳高校, Shūtoku Kōkō) is one of the Three Kings of Tokyo"
+  },
+  {
+    "id": "toou-individual",
+    "tier": "medium",
+    "prompt": "แนวคิดการเล่นของทีมโทโอเน้นอะไร?",
+    "answer": "ฝีมือเฉพาะตัวของผู้เล่นแต่ละคน",
+    "decoys": [
+      "ทีมเวิร์กและมิตรภาพ",
+      "แนวรับใต้แป้นด้วยผู้เล่นตัวสูง",
+      "ระบบที่กัปตันสั่งการทุกจังหวะ"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Tōō_Academy",
+    "evidence": "It completely focuses on each player's individual abilities and so there aren't much cohesiveness in the team."
+  },
+  {
+    "id": "murasakibara-thors-hammer",
+    "tier": "hard",
+    "prompt": "ดั้งค์สองมือที่มุราซากิบาระหมุนตัวกลางอากาศ ชื่ออะไร?",
+    "answer": "ค้อนธอร์",
+    "decoys": [
+      "เมเทียร์แจม",
+      "มิราจช็อต",
+      "ชู้ตไร้รูปแบบ"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Atsushi_Murasakibara",
+    "evidence": "Thor's Hammer and consists of a two-handed dunk combined with a mid-air spin."
+  },
+  {
+    "id": "himuro-mirage-shot",
+    "tier": "hard",
+    "prompt": "ช็อตของฮิมุโระที่ปล่อยลูกสองจังหวะในการกระโดดครั้งเดียว จนคนบล็อกกระโดดผิดจังหวะ ชื่ออะไร?",
+    "answer": "มิราจช็อต",
+    "decoys": [
+      "ชู้ตไร้รูปแบบ",
+      "ค้อนธอร์",
+      "ชู้ตสามแต้มกลางอากาศ"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Tatsuya_Himuro",
+    "evidence": "In reality, Himuro throws the ball in the air twice"
+  },
+  {
+    "id": "aomine-formless-shot",
+    "tier": "hard",
+    "prompt": "ชู้ตประจำตัวของอาโอมิเนะที่ยิงได้จากทุกท่า แม้จากหลังแป้น ชื่ออะไร?",
+    "answer": "ชู้ตไร้รูปแบบ",
+    "decoys": [
+      "มิราจช็อต",
+      "ค้อนธอร์",
+      "ชู้ตสามแต้มกลางอากาศ"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Daiki_Aomine",
+    "evidence": "The formless shot is his signature shot and it is his way of scoring."
+  },
+  {
+    "id": "midorima-takao-sky-direct",
+    "tier": "hard",
+    "prompt": "ท่าที่มิโดริมะกระโดดยิงทั้งที่ยังไม่มีบอล แล้วทาคาโอะส่งบอลเข้ามือกลางอากาศ เพื่อให้อาคาชิแย่งบอลไม่ถึง ชื่ออะไร?",
+    "answer": "ชู้ตสามแต้มกลางอากาศ",
+    "decoys": [
+      "มิราจช็อต",
+      "ชู้ตไร้รูปแบบ",
+      "ค้อนธอร์"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Kazunari_Takao",
+    "evidence": "This technique consists of Midorima shooting without the ball and Takao launching a pass towards Midorima's hands, who receives it in the shooting motion and shoots it."
+  },
+  {
+    "id": "hayama-lightning-dribble",
+    "tier": "hard",
+    "prompt": "ท่าประจำตัวของฮายามะ โคทาโร่ ที่กระแทกลูกลงพื้นแรงจนตามองไม่ทัน ชื่ออะไร?",
+    "answer": "ดริบเบิลสายฟ้า",
+    "decoys": [
+      "ก๊อปปี้สมบูรณ์แบบ",
+      "มิราจช็อต",
+      "ค้อนธอร์"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Kotarō_Hayama",
+    "evidence": "Hayama was a very strong and talented player in Junior High school and was known for his Lightning Dribble, which earned him the nickname Raijū."
+  },
+  {
+    "id": "murasakibara-zone-love",
+    "tier": "hard",
+    "prompt": "ก่อนเกมกับเซย์ริน อาโอมิเนะกับคิเสะเชื่อว่ามุราซากิบาระจะเข้าโซนไม่ได้ เพราะอะไร?",
+    "answer": "เพราะเขาไม่รักบาสเกตบอล",
+    "decoys": [
+      "เพราะเขาตัวสูงเกินไป",
+      "เพราะเขาไม่เคยแพ้ใคร",
+      "เพราะเขาไม่ใช่ผู้เล่นตัวจริง"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Atsushi_Murasakibara",
+    "evidence": "because he was assumed to not have the most basic term needed, the love for basketball."
+  },
+  {
+    "id": "akashi-gouge-eyes",
+    "tier": "hard",
+    "prompt": "เมื่อเพื่อนร่วมทีมชะล่าใจในเกมกับชูโตคุ อาคาชิ เซย์จูโร่ ประกาศว่าถ้าแพ้จะทำอะไร?",
+    "answer": "ควักลูกตาตัวเองให้เพื่อนร่วมทีม",
+    "decoys": [
+      "โกนหัวตัวเอง",
+      "ย้ายโรงเรียน",
+      "ยกตำแหน่งกัปตันให้มิบุจิ"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Seijūrō_Akashi",
+    "evidence": "he would gouge his eyes out and give them to his teammates."
+  },
+  {
+    "id": "moriyama-underhand-shot",
+    "tier": "hard",
+    "prompt": "ชู้ตสามแต้มของโมริยามะ โยชิทากะ แปลกกว่าคนอื่นอย่างไร?",
+    "answer": "โยนลูกด้วยมือล่าง ลูกโค้งสูงและแทบไม่หมุน",
+    "decoys": [
+      "เอนตัวไปข้างหลังจนเกือบขนานพื้น",
+      "ปล่อยลูกสองจังหวะในการกระโดดครั้งเดียว",
+      "ยิงจากอีกฝั่งของสนาม"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Yoshitaka_Moriyama",
+    "evidence": "He throws the ball underhanded, which gives a very high arc and almost no rotation to the shoot."
+  },
+  {
+    "id": "imayoshi-mind-reading",
+    "tier": "hard",
+    "prompt": "ฮานามิยะ มาโคโตะ บอกว่าอิมาโยชิ โชอิจิ เป็นปีศาจในเรื่องใด?",
+    "answer": "การอ่านใจคน",
+    "decoys": [
+      "การวิ่งเร็ว",
+      "การแย่งรีบาวด์",
+      "การยิงไกล"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Shoichi_Imayoshi",
+    "evidence": "According to Makoto Hanamiya, Imayoshi is a monster when it comes to reading minds."
+  },
+  {
+    "id": "midorima-no-zone",
+    "tier": "hard",
+    "prompt": "สมาชิกรุ่นปาฏิหาริย์คนใดไม่เคยเข้าโซนเลย?",
+    "answer": "มิโดริมะ ชินทาโร่",
+    "decoys": [
+      "คิเสะ เรียวตะ",
+      "อาโอมิเนะ ไดกิ",
+      "มุราซากิบาระ อัตสึชิ"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Shintarō_Midorima",
+    "evidence": "He is also the only member to have not entered the Zone."
+  },
+  {
+    "id": "akashi-heterochromia",
+    "tier": "hard",
+    "prompt": "บุคลิกที่สองของอาคาชิ เซย์จูโร่ สังเกตได้จากอะไร?",
+    "answer": "ตาสองข้างสีไม่เหมือนกัน",
+    "decoys": [
+      "ผมเปลี่ยนเป็นสีดำ",
+      "สวมแว่นตา",
+      "พันผ้าที่นิ้วมือ"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Seijūrō_Akashi",
+    "evidence": "In his alternate personality, his left eye is instead an orange color, giving him complete heterochromia."
+  },
+  {
+    "id": "aomine-panther",
+    "tier": "hard",
+    "prompt": "สัญชาตญาณสัตว์ป่าของอาโอมิเนะ ไดกิ ถูกเปรียบกับสัตว์ชนิดใด?",
+    "answer": "เสือดำ",
+    "decoys": [
+      "เสือชีตาห์",
+      "หมาป่า",
+      "อินทรี"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Daiki_Aomine",
+    "evidence": "Aomine possesses control of his animal instinct, with his instincts compared to that of a panther."
+  },
+  {
+    "id": "toou-new-captain",
+    "tier": "hard",
+    "prompt": "หลังวินเทอร์คัพ ใครได้เป็นกัปตันคนใหม่ของโทโอ?",
+    "answer": "วาคามัตสึ โคสุเกะ",
+    "decoys": [
+      "อาโอมิเนะ ไดกิ",
+      "ซากุไร เรียว",
+      "อิมาโยชิ โชอิจิ"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Tōō_Academy",
+    "evidence": "Imayoshi handed the captain position over to Wakamatsu."
+  },
+  {
+    "id": "momoi-benched-aomine",
+    "tier": "very-hard",
+    "prompt": "หลังอินเตอร์ไฮ ทำไมอาโอมิเนะโกรธโมโมอิจนเธอวิ่งมาร้องไห้กับคุโรโกะ?",
+    "answer": "เธอขอโค้ชให้พักเขาเพราะเจ็บขา",
+    "decoys": [
+      "เธอเอาข้อมูลทีมโทโอไปให้เซย์ริน",
+      "เธอทิ้งนิตยสารไอดอลของเขา",
+      "เธอลืมบอกเวลาแข่ง"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Satsuki_Momoi",
+    "evidence": "She went up to coach Katsunori Harasawa asking him to bench Aomine for the Interhigh."
+  },
+  {
+    "id": "akashi-own-hoop",
+    "tier": "very-hard",
+    "prompt": "ในเกมกับชูโตคุ อาคาชิ เซย์จูโร่ ทำอะไรจนทุกคนในสนามตกใจ?",
+    "answer": "ยิงลูกลงห่วงของทีมตัวเอง",
+    "decoys": [
+      "ขอเปลี่ยนตัวเองออก",
+      "ขอเวลานอกเองโดยไม่ถามโค้ช",
+      "ส่งบอลให้มิโดริมะ"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Kazunari_Takao",
+    "evidence": "Akashi, instead, threw the basketball into his own hoop, shocking Takao and everybody else."
+  },
+  {
+    "id": "akashi-hid-speed",
+    "tier": "very-hard",
+    "prompt": "ในเกมกับชูโตคุ ทาคาโอะเพิ่งรู้ตัวว่าอาคาชิหลอกเขาในครึ่งแรกด้วยวิธีใด?",
+    "answer": "แกล้งเล่นช้ากว่าความเร็วจริงทีละน้อย",
+    "decoys": [
+      "แกล้งทำเป็นบาดเจ็บ",
+      "สลับตำแหน่งกับมิบุจิ",
+      "ปล่อยให้ชูโตคุนำเป็นสิบแต้ม"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Kazunari_Takao",
+    "evidence": "Akashi had purposely lowered his speed subtly in the first-half"
+  },
+  {
+    "id": "hayama-cheetah",
+    "tier": "very-hard",
+    "prompt": "สัญชาตญาณสัตว์ป่าของฮายามะ โคทาโร่ ปรากฏเป็นสัตว์ชนิดใด?",
+    "answer": "เสือชีตาห์",
+    "decoys": [
+      "เสือดำ",
+      "สิงโต",
+      "เหยี่ยว"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Kotarō_Hayama",
+    "evidence": "His particular \"animal instinct\" has manifested in the appearance of a cheetah."
+  },
+  {
+    "id": "hayama-dribble-power",
+    "tier": "very-hard",
+    "prompt": "ฮายามะ โคทาโร่ เพิ่มพลังดริบเบิลสายฟ้าด้วยวิธีใด?",
+    "answer": "เพิ่มจำนวนนิ้วที่ใช้กระแทกลูก",
+    "decoys": [
+      "ดริบเบิลสองลูกพร้อมกัน",
+      "หลับตาแล้วฟังเสียงลูก",
+      "ดริบเบิลต่ำจนลูกแทบติดพื้น"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Kotarō_Hayama",
+    "evidence": "Miyaji observed that he had only dribbled with his three innermost fingers, hinting to two even greater levels of dribbling ability."
+  },
+  {
+    "id": "mibuchi-third-shot",
+    "tier": "very-hard",
+    "prompt": "ชู้ตสามแบบของมิบุจิ เรโอะ คือ ชู้ตฟ้า (เท็น) ชู้ตดิน (จิ) และแบบใด?",
+    "answer": "ชู้ตชู้ตความว่างเปล่า (โคคู)",
+    "decoys": [
+      "ชู้ตทะเล",
+      "ชู้ตสายฟ้า",
+      "ชู้ตเพลิง"
+    ],
+    "note": "แบบที่สามทำให้คนประกบตัวแข็งจนกระโดดบล็อกไม่ได้",
+    "source": "https://kurokonobasuke.fandom.com/wiki/Reo_Mibuchi",
+    "evidence": "Mibuchi has three types of shooting styles, namingly, Heaven (天), Earth (地) and Void (虚空)."
+  },
+  {
+    "id": "mayuzumi-vs-shutoku",
+    "tier": "very-hard",
+    "prompt": "ทำไมมายุซุมิ จิฮิโระ ไม่ใช้มิสไดเร็คชั่นในเกมกับชูโตคุ?",
+    "answer": "เพราะทาคาโอะมองเห็นได้ทั้งสนาม",
+    "decoys": [
+      "เพราะเขาบาดเจ็บก่อนเกม",
+      "เพราะมิโดริมะประกบเขาตลอดเกม",
+      "เพราะเขายังไม่ได้ลงสนาม"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Chihiro_Mayuzumi",
+    "evidence": "The reason why Mayuzumi didn't use his misdirection against Shūtoku High was due to Kazunari Takao's Hawk Eye ability."
+  },
+  {
+    "id": "mayuzumi-wakes-akashi",
+    "tier": "very-hard",
+    "prompt": "ในนัดชิงวินเทอร์คัพ คำพูดของใครทำให้อาคาชิตัวจริงกลับมา?",
+    "answer": "มายุซุมิ จิฮิโระ",
+    "decoys": [
+      "มิบุจิ เรโอะ",
+      "ฮายามะ โคทาโร่",
+      "มิโดริมะ ชินทาโร่"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Chihiro_Mayuzumi",
+    "evidence": "his words became the catalyst that brought back the original Akashi."
+  },
+  {
+    "id": "araki-national-team",
+    "tier": "very-hard",
+    "prompt": "ก่อนมาเป็นโค้ชโยเซ็น อารากิ มาซาโกะ เคยเป็นอะไร?",
+    "answer": "ผู้เล่นตัวจริงทีมชาติญี่ปุ่นหญิง",
+    "decoys": [
+      "ผู้จัดการทีมเทย์โค",
+      "นักวอลเลย์บอลทีมชาติ",
+      "โค้ชทีมไคโจ"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Masako_Araki",
+    "evidence": "she even made it as far as a regular on the national Japanese female basketball team."
+  },
+  {
+    "id": "sky-direct-weakness",
+    "tier": "very-hard",
+    "prompt": "ชู้ตสามแต้มกลางอากาศของมิโดริมะกับทาคาโอะมีจุดอ่อนอะไร?",
+    "answer": "บอลต้องส่งมาจากทางซ้ายเสมอ",
+    "decoys": [
+      "ใช้ได้แค่ในครึ่งสนามของคู่แข่ง",
+      "ใช้ได้เกมละครั้งเดียว",
+      "ต้องมีคนช่วยสกรีนทุกครั้ง"
+    ],
+    "note": "เพราะมิโดริมะยิงมือซ้าย จังหวะส่งจึงเดาได้",
+    "source": "https://kurokonobasuke.fandom.com/wiki/Kazunari_Takao",
+    "evidence": "The only flaw to this technique is that the ball must come from Midorima's left side since he is left-handed."
+  },
+  {
+    "id": "murasakibara-tears",
+    "tier": "very-hard",
+    "prompt": "หลังแพ้เซย์ริน มุราซากิบาระบอกว่าจะเลิกเล่นบาส แล้วเกิดอะไรขึ้นต่อ?",
+    "answer": "เขาร้องไห้ออกมา",
+    "decoys": [
+      "เขาเดินออกจากสนามทันที",
+      "เขาท้าคางามิแข่งใหม่",
+      "เขาขอย้ายไปราคุซัน"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Atsushi_Murasakibara",
+    "evidence": "After the match, Murasakibara claimed to quit basketball, but broke down in tears not soon after."
+  },
+  {
+    "id": "gom-teiko-school",
+    "tier": "easy",
+    "prompt": "รุ่นปาฏิหาริย์เคยเล่นบาสด้วยกันที่โรงเรียนมัธยมต้นใด?",
+    "answer": "เทย์โค",
+    "decoys": [
+      "เมย์โค",
+      "คามาตะ เวสต์",
+      "นัมบาระ"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Generation_of_Miracles",
+    "evidence": "a group of five exceptionally talented players that played together on the Teikō Junior High basketball team"
+  },
+  {
+    "id": "winter-cup-champion",
+    "tier": "easy",
+    "prompt": "ทีมใดเป็นแชมป์วินเทอร์คัพในเรื่อง?",
+    "answer": "เซย์ริน",
+    "decoys": [
+      "ราคุซัน",
+      "ชูโตคุ",
+      "ไคโจ"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Seirin_High",
+    "evidence": "Winter Cup Champion"
+  },
+  {
+    "id": "jabberwock-country",
+    "tier": "easy",
+    "prompt": "ทีมสตรีทบาสแจ็บเบอร์วอคมาจากประเทศใด?",
+    "answer": "สหรัฐอเมริกา",
+    "decoys": [
+      "แคนาดา",
+      "ออสเตรเลีย",
+      "ฟิลิปปินส์"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Team_Jabberwock",
+    "evidence": "is an internationally famous and highly skilled street ball team from the United States of America."
+  },
+  {
+    "id": "jabberwock-captain",
+    "tier": "easy",
+    "prompt": "ใครเป็นกัปตันและพอยต์การ์ดของทีมแจ็บเบอร์วอค?",
+    "answer": "แนช โกลด์ จูเนียร์",
+    "decoys": [
+      "เจสัน ซิลเวอร์",
+      "อัลเลน",
+      "นิค"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Nash_Gold_Jr.",
+    "evidence": "He is the team's point guard and captain."
+  },
+  {
+    "id": "vorpal-revenge-team",
+    "tier": "easy",
+    "prompt": "ทีมในฝันที่รวมรุ่นปาฏิหาริย์ คุโรโกะ และคางามิ เพื่อล้างแค้นแจ็บเบอร์วอค ชื่อทีมอะไร?",
+    "answer": "วอร์พัล ซอร์ดส์",
+    "decoys": [
+      "สตรีคกี้",
+      "เจแปน ออลสตาร์",
+      "เทย์โค ออลสตาร์"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Team_Vorpal_Swords",
+    "evidence": "Team Vorpal Swords is a street ball team composed of the Generation of Miracles, Kuroko, and Kagami."
+  },
+  {
+    "id": "vorpal-result",
+    "tier": "easy",
+    "prompt": "การแข่งขันระหว่างวอร์พัล ซอร์ดส์กับแจ็บเบอร์วอคจบลงอย่างไร?",
+    "answer": "วอร์พัล ซอร์ดส์ชนะ",
+    "decoys": [
+      "แจ็บเบอร์วอคชนะ",
+      "เสมอกัน",
+      "ยกเลิกกลางคัน"
+    ],
+    "note": "วอร์พัล ซอร์ดส์เป็นทีมแรกที่เอาชนะแจ็บเบอร์วอคได้",
+    "source": "https://kurokonobasuke.fandom.com/wiki/Team_Vorpal_Swords",
+    "evidence": "First team to have defeated Jabberwock"
+  },
+  {
+    "id": "uncrowned-kings-rival",
+    "tier": "easy",
+    "prompt": "ราชันไร้มงกุฎทั้งห้า ถูกกล่าวว่ามีฝีมือเทียบเคียงกับกลุ่มใด?",
+    "answer": "รุ่นปาฏิหาริย์",
+    "decoys": [
+      "สามราชันแห่งโตเกียว",
+      "ฝาแฝดอัจฉริยะ",
+      "ทีมชาติญี่ปุ่น"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Uncrowned_Kings",
+    "evidence": "are five talented players with strength described as rivaling the Generation of Miracles"
+  },
+  {
+    "id": "jabberwock-challenger",
+    "tier": "easy",
+    "prompt": "ใครโกรธจนท้าแจ็บเบอร์วอคให้แข่งนัดล้างแค้นภายในหนึ่งสัปดาห์?",
+    "answer": "ไอดะ คาเงโทระ",
+    "decoys": [
+      "อาคาชิ เซย์จูโร่",
+      "คางามิ ไทกะ",
+      "คาซามัตสึ ยูคิโอะ"
+    ],
+    "note": "เขาเป็นไกด์และล่ามให้แจ็บเบอร์วอคระหว่างทัวร์ญี่ปุ่น",
+    "source": "https://kurokonobasuke.fandom.com/wiki/Kuroko_no_Basuke_EXTRA_GAME",
+    "evidence": "an enraged Kagetora, who was Jabberwock's guide and interpreter for their Japan tour, steps forwards and proposes a revenge match"
+  },
+  {
+    "id": "kuroko-black-wristband",
+    "tier": "easy",
+    "prompt": "สายรัดข้อมือสีดำที่คุโรโกะใส่ เป็นสัญลักษณ์มิตรภาพกับใคร?",
+    "answer": "โอกิวาระ ชิเงฮิโระ",
+    "decoys": [
+      "อาโอมิเนะ ไดกิ",
+      "นิจิมูระ ชูโซ",
+      "โมโมอิ ซัทสึกิ"
+    ],
+    "note": "เพื่อนสมัยเด็กที่สอนคุโรโกะเล่นบาสเป็นคนแรก",
+    "source": "https://kurokonobasuke.fandom.com/wiki/Shigehiro_Ogiwara",
+    "evidence": "The black wristband that Kuroko currently wears symbolizes his faith and friendship in him."
+  },
+  {
+    "id": "interhigh-winner",
+    "tier": "medium",
+    "prompt": "ทีมใดเป็นแชมป์อินเตอร์ไฮในปีที่คุโรโกะอยู่ปีหนึ่ง?",
+    "answer": "ราคุซัน",
+    "decoys": [
+      "โทโอ",
+      "โยเซ็น",
+      "ไคโจ"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Rakuzan_High",
+    "evidence": "Interhigh winner"
+  },
+  {
+    "id": "winter-cup-seirin-first-round",
+    "tier": "medium",
+    "prompt": "ในรอบแรกของวินเทอร์คัพ เซย์รินต้องพบกับทีมใด?",
+    "answer": "โทโอ",
+    "decoys": [
+      "ชูโตคุ",
+      "ไคโจ",
+      "คิริซากิ ไดอิจิ"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Tōō_Academy",
+    "evidence": "1st round: ● Seirin High vs Tōō Academy ○ (101-100)"
+  },
+  {
+    "id": "winter-cup-seirin-quarter-final",
+    "tier": "medium",
+    "prompt": "ในรอบก่อนรองชนะเลิศวินเทอร์คัพ เซย์รินเอาชนะทีมใด?",
+    "answer": "โยเซ็น",
+    "decoys": [
+      "ชูโตคุ",
+      "ฟุคุดะ โซโก",
+      "ราคุซัน"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Yōsen_High",
+    "evidence": "Quarter-finals: ○ Yōsen High vs Seirin High ● (72–73)"
+  },
+  {
+    "id": "winter-cup-seirin-semi-final",
+    "tier": "medium",
+    "prompt": "ในรอบรองชนะเลิศวินเทอร์คัพ เซย์รินเอาชนะทีมใด?",
+    "answer": "ไคโจ",
+    "decoys": [
+      "ชูโตคุ",
+      "โทโอ",
+      "โยเซ็น"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Kaijō_High",
+    "evidence": "Semi-finals: ○ Kaijō High vs Seirin High ● (80 – 81)"
+  },
+  {
+    "id": "teiko-nijimura-captain",
+    "tier": "medium",
+    "prompt": "ตอนที่รุ่นปาฏิหาริย์เพิ่งเข้าชมรมบาสเทย์โคในปีหนึ่ง ใครเป็นกัปตันทีม?",
+    "answer": "นิจิมูระ ชูโซ",
+    "decoys": [
+      "มิโดริมะ ชินทาโร่",
+      "ไฮซากิ โชโงะ",
+      "อาโอมิเนะ ไดกิ"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Shūzō_Nijimura",
+    "evidence": "was the captain of Teikō Junior High, leading the Generation of Miracles when they were in their first year."
+  },
+  {
+    "id": "teiko-motto",
+    "tier": "medium",
+    "prompt": "คติประจำชมรมบาสเทย์โคที่สอนว่าชัยชนะคือทุกสิ่งคืออะไร?",
+    "answer": "ร้อยศึกร้อยชนะ",
+    "decoys": [
+      "แพ้เป็นครู",
+      "สามัคคีคือพลัง",
+      "สนุกกับบาสก่อนชัยชนะ"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Teikō_Junior_High",
+    "evidence": "The school has a strong winning-philosophy as exemplified in their motto, \"Ever-Victorious\" (百戦百勝 Hyakusenhyakushō)."
+  },
+  {
+    "id": "teiko-kuroko-third-string",
+    "tier": "medium",
+    "prompt": "หลังคัดตัวเข้าชมรมเทย์โคตอนปีหนึ่ง คุโรโกะได้อยู่ทีมระดับใด?",
+    "answer": "ทีมสาม",
+    "decoys": [
+      "ทีมหนึ่ง",
+      "ทีมสอง",
+      "ผู้จัดการทีม"
+    ],
+    "note": "อาโอมิเนะ มิโดริมะ มุราซากิบาระ และอาคาชิ ได้ขึ้นทีมหนึ่งทันที",
+    "source": "https://kurokonobasuke.fandom.com/wiki/Generation_of_Miracles",
+    "evidence": "with Kuroko only making it to the third string while the others were immediately accepted into the first."
+  },
+  {
+    "id": "teiko-akashi-advice",
+    "tier": "medium",
+    "prompt": "ใครให้คำแนะนำคุโรโกะที่เทย์โค จนคุโรโกะใช้เวลาสามเดือนสร้างสไตล์การเล่นของตัวเอง?",
+    "answer": "อาคาชิ เซย์จูโร่",
+    "decoys": [
+      "อาโอมิเนะ ไดกิ",
+      "นิจิมูระ ชูโซ",
+      "โมโมอิ ซัทสึกิ"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Generation_of_Miracles",
+    "evidence": "Following Akashi's advice, Kuroko spent three months developing his skills"
+  },
+  {
+    "id": "uncrowned-kings-rakuzan",
+    "tier": "medium",
+    "prompt": "ราชันไร้มงกุฎสามคนเลือกเข้าเรียนโรงเรียนมัธยมปลายเดียวกัน คือโรงเรียนใด?",
+    "answer": "ราคุซัน",
+    "decoys": [
+      "ชูโตคุ",
+      "ไคโจ",
+      "คิริซากิ ไดอิจิ"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Uncrowned_Kings",
+    "evidence": "three of the five Kings chose to attend Rakuzan High and currently play together."
+  },
+  {
+    "id": "gom-name-colours",
+    "tier": "medium",
+    "prompt": "ชื่อของสมาชิกรุ่นปาฏิหาริย์แต่ละคน แฝงอะไรไว้?",
+    "answer": "สีประจำตัว",
+    "decoys": [
+      "ชื่อสัตว์",
+      "ชื่อดอกไม้",
+      "ชื่อฤดูกาล"
+    ],
+    "note": "คิเสะ เหลือง มิโดริมะ เขียว อาโอมิเนะ น้ำเงิน มุราซากิบาระ ม่วง อาคาชิ แดง",
+    "source": "https://kurokonobasuke.fandom.com/wiki/Generation_of_Miracles",
+    "evidence": "each have a representative color expressed in their names"
+  },
+  {
+    "id": "kirisaki-coach-captain",
+    "tier": "medium",
+    "prompt": "ใครเป็นทั้งกัปตันและโค้ชของคิริซากิ ไดอิจิ?",
+    "answer": "ฮานามิยะ มาโคโตะ",
+    "decoys": [
+      "เซโตะ เคนทาโร่",
+      "ฮาระ คาซึยะ",
+      "ฟุรุฮาชิ โคจิโร่"
+    ],
+    "note": "โค้ชคนเดิมลาออก เขาจึงคุมทีมเอง",
+    "source": "https://kurokonobasuke.fandom.com/wiki/Makoto_Hanamiya",
+    "evidence": "is the coach and captain of Kirisaki Daiichi High"
+  },
+  {
+    "id": "seiho-strongest-defense",
+    "tier": "medium",
+    "prompt": "หนึ่งในสามราชันแห่งโตเกียวทีมใด ขึ้นชื่อว่ามีเกมรับแข็งแกร่งที่สุดในโตเกียว?",
+    "answer": "เซย์โฮ",
+    "decoys": [
+      "ชูโตคุ",
+      "คิริซากิ ไดอิจิ",
+      "โทโอ"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Seihō_High",
+    "evidence": "is one of the Three Kings of Tokyo and are known for having the strongest defense in Tokyo."
+  },
+  {
+    "id": "jabberwock-monkeys",
+    "tier": "medium",
+    "prompt": "หลังถล่มทีมสตรีคกี้ แนช โกลด์ จูเนียร์ ดูถูกคนญี่ปุ่นว่าเหมือนอะไร?",
+    "answer": "ลิง",
+    "decoys": [
+      "มด",
+      "หมู",
+      "ไก่"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Nash_Gold_Jr.",
+    "evidence": "even compared the Japanese people to monkeys"
+  },
+  {
+    "id": "vorpal-captain",
+    "tier": "medium",
+    "prompt": "ใครเป็นกัปตันทีมวอร์พัล ซอร์ดส์?",
+    "answer": "อาคาชิ เซย์จูโร่",
+    "decoys": [
+      "คางามิ ไทกะ",
+      "คุโรโกะ เท็ตสึยะ",
+      "ฮิวงะ จุนเปย์"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Team_Vorpal_Swords",
+    "evidence": "|captain = Seijūrō Akashi"
+  },
+  {
+    "id": "hanamiya-bad-boy",
+    "tier": "medium",
+    "prompt": "ฮานามิยะ มาโคโตะ ได้ฉายาในหมู่ราชันไร้มงกุฎว่าอะไร?",
+    "answer": "เด็กเกเร",
+    "decoys": [
+      "ยักษา",
+      "อสูรสายฟ้า",
+      "หัวใจเหล็ก"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Uncrowned_Kings",
+    "evidence": "Makoto Hanamiya as the \"Bad Boy\""
+  },
+  {
+    "id": "teiko-kuroko-meets-aomine",
+    "tier": "hard",
+    "prompt": "ตอนคุโรโกะซ้อมคนเดียวที่โรงยิมของทีมสามในเทย์โค เขาได้รู้จักกับใครเป็นครั้งแรก?",
+    "answer": "อาโอมิเนะ ไดกิ",
+    "decoys": [
+      "คิเสะ เรียวตะ",
+      "ไฮซากิ โชโงะ",
+      "นิจิมูระ ชูโซ"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Generation_of_Miracles",
+    "evidence": "which led to his first meeting with Aomine when the latter was searching for somewhere less crowded than the first string's gym."
+  },
+  {
+    "id": "teiko-akashi-first-year-captain",
+    "tier": "hard",
+    "prompt": "สมาชิกรุ่นปาฏิหาริย์คนใดได้เป็นกัปตันเทย์โคตั้งแต่ยังอยู่ปีหนึ่ง?",
+    "answer": "อาคาชิ เซย์จูโร่",
+    "decoys": [
+      "มิโดริมะ ชินทาโร่",
+      "อาโอมิเนะ ไดกิ",
+      "มุราซากิบาระ อัตสึชิ"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Generation_of_Miracles",
+    "evidence": "Akashi was promoted to captain in his first year following a direct request from Nijimura."
+  },
+  {
+    "id": "haizaki-winter-cup-school",
+    "tier": "hard",
+    "prompt": "ในวินเทอร์คัพ ไฮซากิ โชโงะ อดีตตัวจริงของเทย์โค เล่นให้ทีมใด?",
+    "answer": "ฟุคุดะ โซโก",
+    "decoys": [
+      "เซ็นชินคัง",
+      "โอนิตะ",
+      "เซย์โฮ"
+    ],
+    "note": "ไคโจเอาชนะทีมนี้ในรอบก่อนรองชนะเลิศ",
+    "source": "https://kurokonobasuke.fandom.com/wiki/Yukio_Kasamatsu",
+    "evidence": "Kaijō High faces Fukuda Sōgō Academy in the Winter Cup quarter-finals. Because Ryōta Kise had to face his former teammate, Shōgo Haizaki"
+  },
+  {
+    "id": "haizaki-told-to-quit",
+    "tier": "hard",
+    "prompt": "ใครสั่งให้ไฮซากิ โชโงะ ออกจากชมรมบาสเทย์โค?",
+    "answer": "อาคาชิ เซย์จูโร่",
+    "decoys": [
+      "นิจิมูระ ชูโซ",
+      "ซานาดะ นาโอโตะ",
+      "ชิโรกาเนะ โคโซ"
+    ],
+    "note": "เพราะเห็นว่าคิเสะกำลังจะแซงตำแหน่งตัวจริงของไฮซากิ",
+    "source": "https://kurokonobasuke.fandom.com/wiki/Generation_of_Miracles",
+    "evidence": "Akashi, recognizing Kise's potential and talent as a player, saw that he would soon surpass Shōgo Haizaki as a starter and instructed the latter to quit the team in order to preserve his pride."
+  },
+  {
+    "id": "teiko-akashi-murasakibara-duel",
+    "tier": "hard",
+    "prompt": "ตอนปีสามที่เทย์โค อาคาชิท้ามุราซากิบาระดวลตัวต่อตัว เพราะเรื่องอะไร?",
+    "answer": "มุราซากิบาระจะไม่มาซ้อม",
+    "decoys": [
+      "มุราซากิบาระอยากเป็นกัปตัน",
+      "แย่งตำแหน่งตัวจริง",
+      "มุราซากิบาระจะย้ายโรงเรียน"
+    ],
+    "note": "ถ้ามุราซากิบาระชนะ ก็ไม่ต้องมาซ้อม บุคลิกที่สองของอาคาชิตื่นขึ้นในการดวลครั้งนี้",
+    "source": "https://kurokonobasuke.fandom.com/wiki/Generation_of_Miracles",
+    "evidence": "challenged him to a 1-on-1 match with the conditions that Murasakibara would only be allowed to miss practice if he won."
+  },
+  {
+    "id": "teiko-kuroko-quits",
+    "tier": "hard",
+    "prompt": "คุโรโกะลาออกจากชมรมบาสเทย์โคเมื่อใด?",
+    "answer": "ทันทีหลังการแข่งขันระดับประเทศตอนปีสาม",
+    "decoys": [
+      "ก่อนการแข่งขันระดับประเทศตอนปีสาม",
+      "ตอนปีสอง หลังนิจิมูระลงจากกัปตัน",
+      "ตอนปีหนึ่ง ก่อนได้ขึ้นทีมหนึ่ง"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Generation_of_Miracles",
+    "evidence": "Kuroko shared these doubts and quit the team immediately following that year's national tournament."
+  },
+  {
+    "id": "gom-the-oath",
+    "tier": "hard",
+    "prompt": "ในวันจบการศึกษาจากเทย์โค สมาชิกรุ่นปาฏิหาริย์ทั้งห้าให้สัญญาอะไรกัน?",
+    "answer": "จะเจอกันในการแข่งขันระดับมัธยมปลายเพื่อพิสูจน์ฝีมือของตัวเอง",
+    "decoys": [
+      "จะเข้าโรงเรียนมัธยมปลายเดียวกัน",
+      "จะเลิกเล่นบาสหลังจบมัธยมต้น",
+      "จะตามหาคุโรโกะให้กลับมาเล่นด้วยกัน"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Generation_of_Miracles",
+    "evidence": "vowed to face each other in high school competitions in order to prove their individual talents."
+  },
+  {
+    "id": "kirisaki-spider-web",
+    "tier": "hard",
+    "prompt": "เทคนิคของฮานามิยะที่อ่านรูปแบบการส่งบอลของคู่แข่งแล้วดักขโมยบอล ชื่ออะไร?",
+    "answer": "ใยแมงมุม",
+    "decoys": [
+      "จักษุจักรพรรดิ",
+      "มิสไดเร็คชั่น",
+      "เนตรเหยี่ยว"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Makoto_Hanamiya",
+    "evidence": "This is referred to as Hanamiya's spiderweb."
+  },
+  {
+    "id": "kirisaki-seto-role",
+    "tier": "hard",
+    "prompt": "เซโตะ เคนทาโร่ ช่วยกลยุทธ์ขโมยบอลของฮานามิยะอย่างไร?",
+    "answer": "ยืนปิดเส้นทางส่งบอลหลัก ให้คู่แข่งเหลือทางส่งน้อยลง",
+    "decoys": [
+      "ทำแต้มใต้แป้นแทนฮานามิยะ",
+      "ประกบเอซของคู่แข่งแบบตัวต่อตัว",
+      "รีบาวด์ทุกลูกที่ชู้ตพลาด"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Kentarō_Seto",
+    "evidence": "Seto limits those patterns by positioning himself in the main passing lanes."
+  },
+  {
+    "id": "seiho-lost-to",
+    "tier": "hard",
+    "prompt": "เซย์โฮพลาดทั้งอินเตอร์ไฮและวินเทอร์คัพ เพราะแพ้ทีมใดในรอบรองชนะเลิศรอบคัดเลือกอินเตอร์ไฮ?",
+    "answer": "เซย์ริน",
+    "decoys": [
+      "ชูโตคุ",
+      "โทโอ",
+      "คิริซากิ ไดอิจิ"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Seihō_High",
+    "evidence": "couldn't advance this year since Seirin defeated them in the semi-finals of the preliminaries"
+  },
+  {
+    "id": "seiho-namba-run",
+    "tier": "hard",
+    "prompt": "เทคนิคการวิ่งจากศิลปะการต่อสู้โบราณที่เซย์โฮใช้ฝึกร่างกาย ชื่ออะไร?",
+    "answer": "การวิ่งแบบนัมบะ",
+    "decoys": [
+      "การวิ่งฟาร์ตเลค",
+      "การวิ่งบนทรายชายหาด",
+      "การวิ่งในสระน้ำ"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Seihō_High",
+    "evidence": "Seihō is using old martial arts movements to train their bodies. The specifique technique they are using is called the Namba run."
+  },
+  {
+    "id": "mibuchi-yasha",
+    "tier": "hard",
+    "prompt": "ราชันไร้มงกุฎคนใดได้ฉายาว่า ยักษา?",
+    "answer": "มิบุจิ เรโอะ",
+    "decoys": [
+      "ฮายามะ โคทาโร่",
+      "เนบุยะ เอย์กิจิ",
+      "ฮานามิยะ มาโคโตะ"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Uncrowned_Kings",
+    "evidence": "Reo Mibuchi as the \"Night Demon\""
+  },
+  {
+    "id": "winter-cup-rakuzan-semi-final",
+    "tier": "hard",
+    "prompt": "ในรอบรองชนะเลิศวินเทอร์คัพ ราคุซันเอาชนะทีมใด?",
+    "answer": "ชูโตคุ",
+    "decoys": [
+      "ไคโจ",
+      "โยเซ็น",
+      "โทโอ"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Rakuzan_High",
+    "evidence": "Semi-finals: ● Rakuzan High vs Shūtoku High ○ (86 - 70)"
+  },
+  {
+    "id": "winter-cup-third-place",
+    "tier": "hard",
+    "prompt": "ทีมใดได้อันดับสามของวินเทอร์คัพ?",
+    "answer": "ชูโตคุ",
+    "decoys": [
+      "ไคโจ",
+      "โยเซ็น",
+      "โทโอ"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Shūtoku_High",
+    "evidence": "Winter Cup 3rd place"
+  },
+  {
+    "id": "nash-spits-kasamatsu",
+    "tier": "hard",
+    "prompt": "หลังเกมกับทีมสตรีคกี้ แนช โกลด์ จูเนียร์ ถ่มน้ำลายใส่มือของใครที่ยื่นมาขอจับมือ?",
+    "answer": "คาซามัตสึ ยูคิโอะ",
+    "decoys": [
+      "คิเสะ เรียวตะ",
+      "ฮิวงะ จุนเปย์",
+      "อิมาโยชิ โชอิจิ"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Nash_Gold_Jr.",
+    "evidence": "he spat on Kasamatsu's hand instead of giving him a handshake"
+  },
+  {
+    "id": "vorpal-not-member",
+    "tier": "hard",
+    "prompt": "ใครไม่ได้อยู่ในทีมวอร์พัล ซอร์ดส์?",
+    "answer": "อิมาโยชิ โชอิจิ",
+    "decoys": [
+      "ฮิวงะ จุนเปย์",
+      "ทาคาโอะ คาซึนาริ",
+      "วาคามัตสึ โคสุเกะ"
+    ],
+    "note": "ฮิวงะ ทาคาโอะ และวาคามัตสึ ถูกเรียกมาเป็นตัวสำรอง",
+    "source": "https://kurokonobasuke.fandom.com/wiki/Kuroko_no_Basuke_EXTRA_GAME",
+    "evidence": "along with bench players Hyūga Junpei, Takao Kazunari, and Wakamatsu Kōsuke, forming Team Vorpal Swords"
+  },
+  {
+    "id": "nash-magician",
+    "tier": "hard",
+    "prompt": "แนช โกลด์ จูเนียร์ ได้ฉายาว่าอะไร จากการเลี้ยงบอลที่ทำให้บอลเหมือนหายไป?",
+    "answer": "นักมายากล",
+    "decoys": [
+      "จักรพรรดิ",
+      "ราชาแห่งสตรีท",
+      "ปีศาจ"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Nash_Gold_Jr.",
+    "evidence": "He is nicknamed as the \"Magician\""
+  },
+  {
+    "id": "nash-belial-eye",
+    "tier": "hard",
+    "prompt": "ความสามารถด้านการมองของแนช ที่คล้ายจักษุจักรพรรดิแต่กลไกต่างกัน ชื่ออะไร?",
+    "answer": "จักษุเบเลียล",
+    "decoys": [
+      "เนตรเหยี่ยว",
+      "เนตรอินทรี",
+      "จักษุจักรพรรดิเทียม"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Nash_Gold_Jr.",
+    "evidence": "Though similar to Akashi's Emperor Eye, according to Gold, its mechanics are different and is known as the Belial Eye."
+  },
+  {
+    "id": "vorpal-first-lineup",
+    "tier": "hard",
+    "prompt": "ในครึ่งแรกของเกมกับแจ็บเบอร์วอค วอร์พัล ซอร์ดส์ส่งตัวจริงชุดใดลงสนาม?",
+    "answer": "รุ่นปาฏิหาริย์ทั้งห้า แบบตัวจริงสมัยเทย์โค",
+    "decoys": [
+      "คุโรโกะกับคางามิ และรุ่นปาฏิหาริย์อีกสามคน",
+      "ตัวจริงของเซย์รินทั้งชุด",
+      "รุ่นปาฏิหาริย์สี่คนกับคางามิ"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Team_Vorpal_Swords",
+    "evidence": "Team Vorpal Swords started with the starting players of Teiko Junior High: Kise, Midorima, Aomine, Murasakibara and Akashi."
+  },
+  {
+    "id": "extra-game-when",
+    "tier": "hard",
+    "prompt": "เรื่องราวใน EXTRA GAME เกิดขึ้นช่วงใด?",
+    "answer": "หนึ่งปีหลังวินเทอร์คัพ หลังอินเตอร์ไฮปีสองของคุโรโกะ",
+    "decoys": [
+      "ระหว่างวินเทอร์คัพ",
+      "ก่อนคุโรโกะเข้าเซย์ริน",
+      "หลังคุโรโกะเรียนจบมัธยมปลาย"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Kuroko_no_Basuke_EXTRA_GAME",
+    "evidence": "It focuses on the events that happen a year after the Winter Cup, shortly after Kagami and Kuroko's second Inter-High."
+  },
+  {
+    "id": "teiko-broken-plate",
+    "tier": "very-hard",
+    "prompt": "อาคาชิเปรียบสภาพทีมเทย์โคในปีสาม ที่ยังใช้งานได้แม้ไม่สมบูรณ์อีกแล้ว ว่าเหมือนอะไร?",
+    "answer": "จานที่แตก",
+    "decoys": [
+      "แก้วที่ร้าว",
+      "เชือกที่ขาด",
+      "กระจกที่แตก"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Generation_of_Miracles",
+    "evidence": "Akashi compared the team's state to a broken plate"
+  },
+  {
+    "id": "teiko-sanada-coach",
+    "tier": "very-hard",
+    "prompt": "เมื่อโค้ชใหญ่ของเทย์โคล้มป่วยตอนรุ่นปาฏิหาริย์อยู่ปีสาม ใครมาคุมทีมแทน?",
+    "answer": "ซานาดะ นาโอโตะ",
+    "decoys": [
+      "ชิโรกาเนะ เอย์จิ",
+      "ฮาราซาวะ คัตสึโนริ",
+      "ไอดะ คาเงโทระ"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Generation_of_Miracles",
+    "evidence": "The team's head coach, Kōzō Shirogane, also fell ill around this time and was replaced by Naoto Sanada."
+  },
+  {
+    "id": "teiko-third-final-opponent",
+    "tier": "very-hard",
+    "prompt": "ในนัดชิงการแข่งขันระดับประเทศ ปีสามของรุ่นปาฏิหาริย์ เทย์โคพบกับโรงเรียนใด?",
+    "answer": "เมย์โค",
+    "decoys": [
+      "คามาตะ เวสต์",
+      "นัมบาระ",
+      "ฮารานิชิ"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Teikō_Junior_High",
+    "evidence": "Finals: ● Teikō Junior High vs Meikō Junior High ○ (111 – 11)"
+  },
+  {
+    "id": "teiko-final-points-given",
+    "tier": "very-hard",
+    "prompt": "ในนัดชิงระดับประเทศปีสามของเทย์โค แต้มทั้งหมดที่ทีมคู่แข่งทำได้มาจากอะไร?",
+    "answer": "รุ่นปาฏิหาริย์จงใจปล่อยให้ทำ",
+    "decoys": [
+      "ลูกโทษทั้งหมด",
+      "ช่วงที่เทย์โคส่งตัวสำรองลง",
+      "ชู้ตสามแต้มของเอซคู่แข่ง"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Shigehiro_Ogiwara",
+    "evidence": "Ogiwara and his team finally comes to a realization that the 11 points made in the game were all intentionally given to them."
+  },
+  {
+    "id": "teiko-kuroko-misses-final",
+    "tier": "very-hard",
+    "prompt": "ทำไมคุโรโกะไม่ได้ลงเล่นนัดชิงระดับประเทศตอนปีสามที่เทย์โค?",
+    "answer": "โดนศอกจากฝาแฝดคามาตะ เวสต์ในรอบรองชนะเลิศ",
+    "decoys": [
+      "ข้อเท้าแพลงตอนซ้อม",
+      "อาคาชิสั่งพักไว้เป็นตัวสำรอง",
+      "ป่วยเป็นไข้ในวันแข่ง"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Shigehiro_Ogiwara",
+    "evidence": "When Kuroko was sent to the medical office because he was hit by the elbow of one of the twins"
+  },
+  {
+    "id": "ogiwara-winter-cup-final",
+    "tier": "very-hard",
+    "prompt": "ในนัดชิงวินเทอร์คัพ เพื่อนเก่าคนใดตะโกนจากอัฒจันทร์จนคุโรโกะกลับมามีกำลังใจ?",
+    "answer": "โอกิวาระ ชิเงฮิโระ",
+    "decoys": [
+      "นิจิมูระ ชูโซ",
+      "ไฮซากิ โชโงะ",
+      "โมโมอิ ซัทสึกิ"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Shigehiro_Ogiwara",
+    "evidence": "Ogiwara shouts and reaches out to him which re-fueled the latter's spirit"
+  },
+  {
+    "id": "uncrowned-kings-plant-kanji",
+    "tier": "very-hard",
+    "prompt": "นามสกุลของราชันไร้มงกุฎทุกคน มีคันจิที่เกี่ยวกับอะไร?",
+    "answer": "พืช",
+    "decoys": [
+      "สัตว์",
+      "ธาตุทั้งห้า",
+      "ดวงดาว"
+    ],
+    "note": "เช่น ฮานามิยะ (花 ดอกไม้) ฮายามะ (葉 ใบไม้) เนบุยะ (根 ราก)",
+    "source": "https://kurokonobasuke.fandom.com/wiki/Uncrowned_Kings",
+    "evidence": "Each of the Uncrowned Kings have a plant related kanji in their surname."
+  },
+  {
+    "id": "kirisaki-intentional-loss",
+    "tier": "very-hard",
+    "prompt": "ในลีกสุดท้ายรอบคัดเลือกวินเทอร์คัพ คิริซากิ ไดอิจิจงใจแพ้ทีมใด?",
+    "answer": "ชูโตคุ",
+    "decoys": [
+      "เซ็นชินคัง",
+      "เซย์โฮ",
+      "โทโอ"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Makoto_Hanamiya",
+    "evidence": "Kiyoshi says to Hanamiya that he doesn't like their intentional loss against Shūtoku."
+  },
+  {
+    "id": "hanamiya-imayoshi-school",
+    "tier": "very-hard",
+    "prompt": "ฮานามิยะ มาโคโตะ เคยเรียนมัธยมต้นที่เดียวกับใคร?",
+    "answer": "อิมาโยชิ โชอิจิ",
+    "decoys": [
+      "เซโตะ เคนทาโร่",
+      "คิโยชิ เท็ปเป",
+      "ฮิวงะ จุนเปย์"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Makoto_Hanamiya",
+    "evidence": "Hanamiya attended the same middle school as Shoichi Imayoshi."
+  },
+  {
+    "id": "tsugawa-shut-down-kise",
+    "tier": "very-hard",
+    "prompt": "สมัยมัธยมต้น สึกาวะ โทโมกิ ของเซย์โฮ เคยประกบใครในรุ่นปาฏิหาริย์จนเล่นไม่ออก?",
+    "answer": "คิเสะ เรียวตะ",
+    "decoys": [
+      "อาโอมิเนะ ไดกิ",
+      "มิโดริมะ ชินทาโร่",
+      "อาคาชิ เซย์จูโร่"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Tomoki_Tsugawa",
+    "evidence": "According to Tetsuya Kuroko, Tsugawa shut down Ryōta Kise with his defense back in their middle school days."
+  },
+  {
+    "id": "seiho-street-tournament",
+    "tier": "very-hard",
+    "prompt": "ในการแข่งบาสสตรีท 5 ต่อ 5 ก่อนวินเทอร์คัพ เซย์โฮแพ้ใครก่อนจะได้เจอเซย์ริน?",
+    "answer": "ฮิมุโระ ทัตสึยะ",
+    "decoys": [
+      "อาโอมิเนะ ไดกิ",
+      "คิเสะ เรียวตะ",
+      "ฮานามิยะ มาโคโตะ"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Seihō_High",
+    "evidence": "because they were defeated by Himuro before they could face Seirin."
+  },
+  {
+    "id": "meisei-winter-cup-qualifier",
+    "tier": "very-hard",
+    "prompt": "ในรอบคัดเลือกวินเทอร์คัพ เมย์เซย์ตกรอบทันทีเพราะแพ้ทีมใด?",
+    "answer": "คิริซากิ ไดอิจิ",
+    "decoys": [
+      "เซย์ริน",
+      "ชูโตคุ",
+      "เซ็นชินคัง"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Meisei_High",
+    "evidence": "were immediately defeated by Kirisaki Daīchi High in the qualifiers."
+  },
+  {
+    "id": "jabberwock-name-origin",
+    "tier": "very-hard",
+    "prompt": "ชื่อทีมแจ็บเบอร์วอคและวอร์พัล ซอร์ดส์ มาจากวรรณกรรมเรื่องใด?",
+    "answer": "อลิซผ่านกระจก",
+    "decoys": [
+      "ปีเตอร์แพน",
+      "พ่อมดแห่งออซ",
+      "เจ้าชายน้อย"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Team_Jabberwock",
+    "evidence": "The name Jabberwock comes from Lewis Caroll's Through the Looking-Glass, and What Alice Found There."
+  },
+  {
+    "id": "akashi-other-self-vanishes",
+    "tier": "very-hard",
+    "prompt": "ในเกมกับแจ็บเบอร์วอค อาคาชิอีกคนทำอะไรเพื่อให้ทีมหยุดแนชได้?",
+    "answer": "ยอมหายไป แล้วส่งพลังทั้งหมดคืนให้อาคาชิตัวจริง",
+    "decoys": [
+      "สลับขึ้นมาคุมเกมแทนจนจบเกม",
+      "พาเพื่อนทั้งทีมเข้าโซนพร้อมกัน",
+      "ขอให้คาเงโทระเปลี่ยนตัวเองออก"
+    ],
+    "source": "https://kurokonobasuke.fandom.com/wiki/Seijūrō_Akashi",
+    "evidence": "the other Akashi decides to vanish and transfer his full skill to the real Akashi"
+  }
+]

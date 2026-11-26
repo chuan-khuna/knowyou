@@ -2,12 +2,18 @@ import { describe, expect, test } from "bun:test";
 import {
   MIN_QUESTIONS_PER_PLAY,
   QUESTIONS_PER_PLAY,
+  SEED_CODE_LENGTH,
   TIERS,
   bandFor,
   createQuiz,
   encodeQuizRecord,
   quizRecordKey,
+  randomSeed,
+  readShareQuery,
   restoreQuiz,
+  seedCode,
+  seedFromCode,
+  shareQuery,
   termsIn,
   type AskingQuizPlay,
   type Gloss,
@@ -156,6 +162,52 @@ describe("terms named in a prompt", () => {
     }
     expect(terms["easy-0"]).toEqual([{ label: "right easy-1", gloss }]);
     expect(terms["easy-1"]).toEqual([]);
+  });
+});
+
+describe("seed codes", () => {
+  test("a code and its seed round-trip, padded to 6 and uppercase", () => {
+    expect(seedFromCode("ABC123")).toBe(Number.parseInt("abc123", 36));
+    expect(seedCode(seedFromCode("abc123")!)).toBe("ABC123");
+    expect(seedCode(seedFromCode("7")!)).toBe("000007");
+    expect(seedFromCode("0")).toBe(seedFromCode("000000"));
+    expect(seedFromCode("ZZZZZZ")).toBe(36 ** 6 - 1);
+  });
+
+  test("lowercase names the same seed as uppercase", () => {
+    expect(seedFromCode("knowyu")).toBe(seedFromCode("KNOWYU"));
+  });
+
+  test("an empty, too long or malformed code names no seed", () => {
+    for (const code of ["", "   ", "ABC1234", "AB-12", "รหัส", "1.5"]) expect(seedFromCode(code)).toBeNull();
+    expect(SEED_CODE_LENGTH).toBe(6);
+  });
+
+  test("a random seed has a code of 6 that names it again", () => {
+    for (let i = 0; i < 200; i++) {
+      const seed = randomSeed();
+      expect(seed).toBeGreaterThanOrEqual(0);
+      expect(seed).toBeLessThan(36 ** 6);
+      expect(seedFromCode(seedCode(seed))).toBe(seed);
+    }
+  });
+
+  test("a share link names its seed and count, and reads back", () => {
+    const seed = seedFromCode("B21X0L")!;
+    expect(shareQuery(seed, 20)).toBe("?seed=B21X0L&n=20");
+    expect(readShareQuery(shareQuery(seed, 20))).toEqual({ seed, count: 20 });
+    expect(readShareQuery("?seed=b21x0l&n=30")).toEqual({ seed, count: 30 });
+  });
+
+  test("a share link without a good seed or count names nothing", () => {
+    for (const search of ["", "?seed=B21X0L", "?n=20", "?seed=TOOLONG1&n=20", "?seed=B21X0L&n=abc", "?seed=B21X0L&n=-5", "?seed=B21X0L&n=2.5"]) {
+      expect(readShareQuery(search)).toBeNull();
+    }
+  });
+
+  test("the same code and count give the same play", () => {
+    const seed = seedFromCode("pot123")!;
+    expect(quiz.start(seedFromCode("POT123")!, 12)).toEqual(quiz.start(seed, 12));
   });
 });
 

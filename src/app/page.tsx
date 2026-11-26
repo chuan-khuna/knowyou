@@ -1,4 +1,5 @@
 import { GameLink } from "@/components/game-link";
+import { SiteFooter } from "@/components/site-footer";
 import { SoundToggle } from "@/components/sound-toggle";
 
 interface Card {
@@ -18,6 +19,7 @@ const GAMES: readonly Card[] = [
 /** Quizzes ask about one title and end in a score. In href order. */
 const QUIZZES: readonly Card[] = [
   { href: "/dragon-ball", title: "คุณรู้จัก Dragon Ball ดีแค่ไหน", blurb: "ตอบคำถามแล้วดูว่าคุณเป็นนักสู้ระดับไหน", ready: true },
+  { href: "/kuroko-no-basket", title: "คุณรู้จัก Kuroko no Basket ดีแค่ไหน", blurb: "ตอบคำถามแล้วดูว่าคุณเป็นผู้เล่นระดับไหน", ready: true },
   { href: "/naruto", title: "คุณรู้จัก Naruto ดีแค่ไหน", blurb: "ตอบคำถามแล้วดูว่าคุณเป็นนินจาระดับไหน", ready: true },
   { href: "/prince-of-tennis", title: "คุณรู้จัก Prince of Tennis ดีแค่ไหน", blurb: "ตอบคำถามแล้วดูว่าคุณเป็นแฟนระดับไหน", ready: true },
   { href: "/reborn", title: "คุณรู้จัก Reborn ดีแค่ไหน", blurb: "ตอบคำถามแล้วดูว่าคุณอยู่ระดับไหนในแฟมิลี่", ready: true },
@@ -31,10 +33,13 @@ export default function Home() {
         <SoundToggle />
       </header>
 
-      <h1 className="mt-10 text-3xl sm:text-[2.75rem]">ถามจนกว่าจะมั่นใจ แล้วทายครั้งเดียว</h1>
+      {/* The page still needs a top heading for screen readers; it just isn't shown. */}
+      <h1 className="sr-only">KnowYou</h1>
 
       <CardSection heading="ทายตัวคุณ" line="เกมจะถามไปเรื่อย ๆ จนมั่นใจ แล้วทายเรื่องของคุณครั้งเดียว" cards={GAMES} />
       <CardSection heading="ควิซ" line="ตอบคำถามเรื่องที่คุณชอบ แล้วดูว่าคุณรู้จักดีแค่ไหน" cards={QUIZZES} />
+
+      <SiteFooter />
     </main>
   );
 }

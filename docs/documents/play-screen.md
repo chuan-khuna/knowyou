@@ -33,5 +33,6 @@ A play survives a page refresh. The rules live in `src/lib/play-record.ts`, a pu
 
 ## Result screens
 
-- Each game draws its own result. Both end with `PlayAgainBar`, เล่นอีกครั้ง on a paper band that sticks to the bottom of the viewport (`position: sticky; bottom: 0`, plus the phone's bottom safe area) while the result scrolls under it.
+- Each game draws its own result. The guessing games end with `PlayAgainBar`, เล่นอีกครั้ง on a paper band that sticks to the bottom of the viewport (`position: sticky; bottom: 0`, plus the phone's bottom safe area) while the result scrolls under it.
 - It is the result's last element, so it is last in focus order, and once the page is scrolled to the end it rests after the answer list instead of covering it. It is the page's only sticky element.
+- The quizzes (`quiz-screen.tsx`) use `PlayAgainBar` with `pin="top"` (`.play-again--top`). It sits right under the score card, before เฉลย, and sticks to the top of the viewport (plus the top safe area) once the page scrolls past it (`quiz.md`). Its band is frosted paper (82% paper with a backdrop blur) with a short paper-to-clear fade under it, so the เฉลย rows blur and fade out as they scroll under the button instead of showing a hard cut.

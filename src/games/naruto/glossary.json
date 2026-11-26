@@ -208,5 +208,35 @@
     "romaji": "Kusanagi no Tsurugi",
     "kanji": "草薙の剣",
     "english": "Sword of Kusanagi"
+  },
+  "แคว้นแห่งเหล็ก": {
+    "aka": ["แคว้นเหล็ก", "เทะซึโนะคุนิ"],
+    "romaji": "Tetsu no Kuni",
+    "kanji": "鉄の国",
+    "english": "Land of Iron"
+  },
+  "แคว้นแห่งไฟ": {
+    "aka": ["แคว้นไฟ", "ฮิโนะคุนิ"],
+    "romaji": "Hi no Kuni",
+    "kanji": "火の国",
+    "english": "Land of Fire"
+  },
+  "แคว้นแห่งน้ำ": {
+    "aka": ["แคว้นน้ำ", "มิซึโนะคุนิ"],
+    "romaji": "Mizu no Kuni",
+    "kanji": "水の国",
+    "english": "Land of Water"
+  },
+  "แคว้นแห่งลม": {
+    "aka": ["แคว้นลม", "คาเซะโนะคุนิ"],
+    "romaji": "Kaze no Kuni",
+    "kanji": "風の国",
+    "english": "Land of Wind"
+  },
+  "แคว้นแห่งสายฟ้า": {
+    "aka": ["แคว้นสายฟ้า", "คามินาริโนะคุนิ"],
+    "romaji": "Kaminari no Kuni",
+    "kanji": "雷の国",
+    "english": "Land of Lightning"
   }
 }
