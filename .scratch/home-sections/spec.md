@@ -1,6 +1,6 @@
 # Spec: Split the home page into games and quizzes
 
-Status: ready-for-agent
+Status: done
 
 Terms follow `GLOSSARY.md`: a **Game** guesses a hidden value about the player, and a **Quiz** asks about one title and ends in a score.
 
@@ -41,3 +41,7 @@ Taken without asking, per `CLAUDE.md`. Veto any of these by editing this list.
 - The games come first, because KnowYou is named for them.
 - The headings are Thai, like the rest of the page: ทายตัวคุณ and ควิซ.
 - The headline stays as it is.
+
+## Comments
+
+- 2026-11-26: Committed to main as 80aad17.
