@@ -105,7 +105,7 @@ Write names the way the bank already writes them: family name first, then given 
 
 **Terms.** สเน็ค (บูมเมอแรงสเน็ค), ทันฮอยเซอร์เสิร์ฟ, นัคเคิลเสิร์ฟ, เสิร์ฟล่องหน, เทนนิสข้อมูล (not ดาต้าเทนนิส), อินไซต์.
 
-**Technique names.** Use the Thai translation fans know (นางแอ่นหวนกลับ, อาณาจักรน้ำแข็ง, ลูกถล่มปฐพี) or a Thai transliteration (ชุคุจิโฮ). English-named moves keep their English sound in Thai script (ทวิสต์เสิร์ฟ, ดั้งค์สแมช, เลเซอร์บีม). Add the glossary entry either way when the move has a Japanese name.
+**Technique names.** Use the Thai translation fans know (นางแอ่นหวนกลับ, อาณาจักรน้ำแข็ง, ลูกถล่มปฐพี, ท่าย่นระยะทาง, เทพบังตา) or a Thai transliteration (อุตสึเซมิ, คามาอิทาจิ). English-named moves keep their English sound in Thai script (ทวิสต์เสิร์ฟ, ดั้งค์สแมช, เลเซอร์บีม). Add the glossary entry either way when the move has a Japanese name.
 
 ## Existing ids
 
@@ -206,13 +206,13 @@ A snapshot of `src/games/prince-of-tennis/glossary.json` on 2026-11-26 (52 entri
   "ดรอปศูนย์สัมบูรณ์": {"romaji": "Zero-Shiki Drop Shot", "kanji": "零式ドロップショット", "english": "Zero-Style Drop Shot"},
   "ซูเปอร์อุลตร้าเกรทดีลิเชียส ไดชาริน ยามะอาราชิ": {"romaji": "Chō Urutora Gurēto Derishasu Daisharin Yama Arashi", "kanji": "超ウルトラグレートデリシャス大車輪山嵐", "english": "Super Ultra Great Delicious Mountain Storm"},
   "เอ็นบุเทนนิส": {"romaji": "Enbu Tenisu", "kanji": "演武テニス", "english": "Enbu (Martial Demonstration) Tennis"},
-  "ชุคุจิโฮ": {"romaji": "Shukuchihō", "kanji": "縮地法", "english": "Ground-Shrinking Method"},
+  "ท่าย่นระยะทาง": {"romaji": "Shukuchihō", "kanji": "縮地法", "english": "Ground-Shrinking Method"},
   "ผู้เฝ้าประตูเฮคาตอนไคร์": {"romaji": "Hekatonkeiru no Monban", "kanji": "百腕巨人の門番", "english": "Gatekeeper of Hecatoncheires"},
   "เงา (อิน) กับ สายฟ้า (ไร)": {"romaji": "In, Rai", "kanji": "陰・雷", "english": "Shadow, Lightning"},
   "คามาอิทาจิ": {"romaji": "Kamaitachi", "kanji": "かまいたち", "english": "Wind Blade"},
   "ฮาบุ": {"romaji": "Habu", "kanji": "飯匙倩", "english": "Habu (Pit Viper)"},
   "เอ็นทาคุช็อต": {"romaji": "Entaku Shotto", "kanji": "円卓ショット", "english": "Round Table Shot"},
-  "เสิร์ฟล่องหน": {"romaji": "Kieru Sābu", "kanji": "消えるサーブ", "english": "Disappearing Serve"},
+  "เสิร์ฟหายตัว": {"romaji": "Kieru Sābu", "kanji": "消えるサーブ", "english": "Disappearing Serve"},
   "นกฟีนิกซ์หวนกลับ": {"romaji": "Hōō Gaeshi", "kanji": "鳳凰返し", "english": "Phoenix Return"},
   "พิฆาตกิเลน": {"romaji": "Kirin Otoshi", "kanji": "麒麟落とし", "english": "Qilin Drop"},
   "มังกรขาว": {"romaji": "Hakuryū", "kanji": "白龍", "english": "White Dragon"},
@@ -235,7 +235,7 @@ A snapshot of `src/games/prince-of-tennis/glossary.json` on 2026-11-26 (52 entri
   "นรกเหลื่อมเวลา (จิซะจิโงคุ)": {"romaji": "Jisa Jigoku", "kanji": "時間差地獄", "english": "Temporal Difference Hell"},
   "ออร่าสัตว์ร้าย": {"romaji": "Mōjū no Ōra", "kanji": "猛獣のオーラ", "english": "Mōjū no Aura"},
   "อาบาเระจิชิ": {"romaji": "Abare Jishi", "kanji": "あばれ獅子", "english": "Abare Jishi"},
-  "คามิคาคุชิ": {"romaji": "Kamikakushi", "kanji": "神隠し", "english": "Kamikakushi"},
+  "เทพบังตา": {"romaji": "Kamikakushi", "kanji": "神隠し", "english": "Kamikakushi"},
   "ซูเปอร์ไรซิ่ง": {"romaji": "Chō Raijingu", "kanji": "超ライジング", "english": "Super Rising"},
   "ลูกสั่น (บุเรดามะ)": {"romaji": "Bure Dama", "kanji": "ブレ球", "english": "Blur Ball"},
   "นิโทริว": {"romaji": "Nitōryū", "kanji": "二刀流", "english": "Nitōryū"},

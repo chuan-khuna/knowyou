@@ -792,7 +792,7 @@
     "id": "higa-shukuchiho",
     "tier": "hard",
     "prompt": "เทคนิคก้าวเท้าจากศิลปะการต่อสู้ ที่ผู้เล่นฮิงะใช้พุ่งถึงเน็ตได้ในก้าวเดียว ชื่ออะไร?",
-    "answer": "ชุคุจิโฮ",
+    "answer": "ท่าย่นระยะทาง",
     "decoys": [
       "สปลิตสเต็ป",
       "อาณาเขตของโออิชิ",
@@ -2915,7 +2915,7 @@
     "decoys": [
       "คิคุมารุบาซูก้า",
       "วันฟุตสปลิตสเต็ป",
-      "ชุคุจิโฮ"
+      "ท่าย่นระยะทาง"
     ],
     "source": "https://princeoftennis.fandom.com/wiki/Seal_Step",
     "evidence": "This gives the opponent the impression that there are two of him for a doppleganger type effect."
@@ -3041,13 +3041,13 @@
     "id": "chitose-kamikakushi",
     "tier": "hard",
     "prompt": "ลูกท็อปสปินของจิโทเสะที่พุ่งขึ้นทันทีหลังเด้งจนเหมือนหายไป ชื่ออะไร?",
-    "answer": "คามิคาคุชิ",
+    "answer": "เทพบังตา",
     "decoys": [
       "เสิร์ฟหายตัว",
       "ฮาบุ",
       "อุตสึเซมิ"
     ],
-    "note": "แปลว่า \"ถูกเทพซ่อน\"",
+    "note": "ชื่อญี่ปุ่น คามิคาคุชิ แปลว่า \"ถูกเทพซ่อน\"",
     "source": "https://princeoftennis.fandom.com/wiki/Kamikakushi",
     "evidence": "Chitose hits a ball with a high-level topspin, which allows the ball to suddenly rise upward after it bounces, which gives the illusion that the ball suddenly \"disappears,\""
   },
@@ -3085,7 +3085,7 @@
     "answer": "ริธึม",
     "decoys": [
       "สปอต",
-      "ชุคุจิโฮ",
+      "ท่าย่นระยะทาง",
       "วันฟุตสปลิตสเต็ป"
     ],
     "source": "https://princeoftennis.fandom.com/wiki/Rhythm",
@@ -3172,7 +3172,7 @@
   {
     "id": "kite-shukuchiho-all",
     "tier": "hard",
-    "prompt": "ใครใช้ชุคุจิโฮได้ทุกทิศทาง ไม่ใช่แค่หน้าหลัง เพราะทรงตัวได้ดีเยี่ยม?",
+    "prompt": "ใครใช้ท่าย่นระยะทางได้ทุกทิศทาง ไม่ใช่แค่หน้าหลัง เพราะทรงตัวได้ดีเยี่ยม?",
     "answer": "คิเทะ เอชิโร่",
     "decoys": [
       "คาอิ ยูจิโร่",
@@ -3185,7 +3185,7 @@
   {
     "id": "shukuchiho-counter",
     "tier": "very-hard",
-    "prompt": "วิธีรับมือชุคุจิโฮคืออะไร?",
+    "prompt": "วิธีรับมือท่าย่นระยะทางคืออะไร?",
     "answer": "ตีลูกไปทางด้านข้างของคอร์ต",
     "decoys": [
       "ตีลูกลอบสูง",
@@ -4051,7 +4051,7 @@
     "prompt": "สเต็ปของทานิชิ เคย์ ที่ทำให้ขยับไปด้านข้างด้วยความเร็วคงที่ ชื่ออะไร?",
     "answer": "คาริโอก้าสเต็ป",
     "decoys": [
-      "ชุคุจิโฮ",
+      "ท่าย่นระยะทาง",
       "สเต็ปตราคิคุมารุ",
       "วันฟุตสปลิตสเต็ป"
     ],
