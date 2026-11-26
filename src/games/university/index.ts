@@ -24,6 +24,7 @@ export { universityBank, type AnswerOf, type BankAnswers, type QuestionId } from
 export { UNIVERSITY_COUNT, UNIVERSITY_IDS, isUniversityId, type UniversityId } from "./ids";
 export { UNIVERSITIES } from "./universities";
 export { AREA_NAMES, type Area, type UniversityFacts } from "./schema";
+export { definePersona, toPersonaSource, type Persona } from "./personas";
 
 /** The engine over the shipped bank, compiled once at module load. */
 export const university = createUniversityEngine(universityBank.list);
