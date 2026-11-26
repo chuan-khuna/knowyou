@@ -1,6 +1,6 @@
 # Spec: University game v1
 
-Status: ready-for-agent
+Status: done
 
 Terms follow `GLOSSARY.md`. The foundation is `.scratch/foundation/spec.md`. Province is the precedent for every shape not stated here: `.scratch/province/spec.md`, `docs/documents/province-engine.md` and `src/games/province/`.
 
@@ -31,7 +31,7 @@ A playable game at `/university`, on the shared play screen. It asks about campu
 15. As a player, I want to see my answers list and play again, so that I can review and retry.
 16. As a player who studied at more than one university, I want the game to ask about the one where I did my bachelor's, so that each question has one answer.
 17. As a player whose university has several campuses, I want questions that fit the campus I studied at, so that a branch campus doesn't mislead the game.
-18. As a question author, I want to write questions as facts about universities (area, public or private, field mix, campus setting, tags), not as 38-row tables, so that the bank is reviewable.
+18. As a question author, I want to write questions as facts about universities (area, public or private, field mix, campus setting, tags), not as 36-row tables, so that the bank is reviewable.
 19. As a maintainer, I want simulated-player and persona suites like Province's, so that I know the engine and the bank work.
 20. As a maintainer, I want the university engine to implement the shared engine contract with no live data, so that the play screen and back button work unchanged.
 21. As a player, I want a play in progress to survive a page refresh, so that a reload doesn't throw away my answers. This uses the shared restore that Province gets.
@@ -40,7 +40,7 @@ A playable game at `/university`, on the shared play screen. It asks about campu
 ## Implementation Decisions
 
 - **Engine per game.** `src/games/university/` owns its engine, facts, bank and tests behind one `index.ts`, with a boundaries test like Province's. It implements the shared `Engine<V, X>` contract unchanged and with no live type. Its play is an immutable value whose only state is the seed and the answer log. It copies Province's belief, question choice, pick and pointer logic, as Province copied Anime Age's (foundation Q7).
-- **Hidden value.** One of 38 universities (see Assumptions). The prior is uniform. The guess is the top university, confidence is its belief, and a hit is the exact university.
+- **Hidden value.** One of 36 universities (see Assumptions). The prior is uniform. The guess is the top university, confidence is its belief, and a hit is the exact university.
 - **University facts.** One typed table keyed by a stable id. Each university records:
   - its full Thai name and the short name players use (จุฬาฯ, มธ., มช.)
   - its area: กรุงเทพและปริมณฑล, ภาคเหนือ, ภาคอีสาน, ภาคใต้ or ภาคตะวันออก
@@ -71,7 +71,7 @@ A playable game at `/university`, on the shared play screen. It asks about campu
 
 - **One seam.** The university engine's public interface, exactly as the play screen uses it.
 - **Bank validity.**
-  - 38 universities with unique ids, unique names and unique short names.
+  - 36 universities with unique ids, unique names and unique short names.
   - Field mixes and setting mixes sum to 1.
   - Every derived row is a valid distribution with every entry above 0.
   - 4–6 options per question, with "ไม่แน่ใจ" last and unique labels.
@@ -94,7 +94,7 @@ A playable game at `/university`, on the shared play screen. It asks about campu
 
 Taken without asking, per the requirements gate. Veto any of them here.
 
-- **The 38 universities.**
+- **The 36 universities.**
   - กรุงเทพและปริมณฑล (22): จุฬาลงกรณ์, ธรรมศาสตร์, มหิดล, เกษตรศาสตร์, ศรีนครินทรวิโรฒ, ศิลปากร, สจล. ลาดกระบัง, มจธ. บางมด, มจพ. พระนครเหนือ, รามคำแหง, กรุงเทพ, อัสสัมชัญ, รังสิต, ศรีปทุม, หอการค้าไทย, ธุรกิจบัณฑิตย์, สยาม, หัวเฉียวเฉลิมพระเกียรติ, เกษมบัณฑิต, เทคโนโลยีมหานคร, สถาบันเทคโนโลยีไทย-ญี่ปุ่น, สถาบันการจัดการปัญญาภิวัฒน์.
   - ภาคเหนือ (6): เชียงใหม่, แม่โจ้, แม่ฟ้าหลวง, นเรศวร, พะเยา, พายัพ.
   - ภาคอีสาน (4): ขอนแก่น, มหาสารคาม, อุบลราชธานี, เทคโนโลยีสุรนารี.
@@ -105,3 +105,7 @@ Taken without asking, per the requirements gate. Veto any of them here.
 - **The guess sentence** is "คุณเรียนที่<full name>", such as "คุณเรียนที่จุฬาลงกรณ์มหาวิทยาลัย" and "คุณเรียนที่มหาวิทยาลัยเชียงใหม่".
 - **Signatures may be campus places**, unlike Province's, because a campus landmark or canteen is insider knowledge rather than "what are you near".
 - **The facts are written from general knowledge**, as Province's were, and every doubtful fact is marked `unsure`.
+
+## Comments
+
+- 2026-11-26: Shipped to `main` from `feat/university-game`, commits `b31585a` to the one that closes this spec. Built with 36 universities; the Assumptions heading first said 38 by mistake.

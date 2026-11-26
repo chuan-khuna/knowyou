@@ -21,7 +21,7 @@ The design of the University game: its university facts, question facts schema, 
 
 Each university records its full Thai name, the short name players use (จุฬาฯ, มธ., มช.), its area, public or private, a field mix, a setting mix, tags and at least two signatures.
 
-- **The universities.** 36, as the spec's Assumptions list them: 22 in Bangkok and its surroundings, 6 in the north, 4 in the northeast, 3 in the south and 1 in the east. The spec's heading says 38, but its list sums to 36.
+- **The universities.** 36, as the spec's Assumptions list them: 22 in Bangkok and its surroundings, 6 in the north, 4 in the northeast, 3 in the south and 1 in the east.
 - **Area.** `bangkok`, `north`, `northeast`, `south` or `east`. The result's picker lists them in that order, as กรุงเทพและปริมณฑล, ภาคเหนือ, ภาคอีสาน, ภาคใต้, ภาคตะวันออก.
 - **The field mix** is the share of undergraduates in each field group. It sums to 1.
   - `health`: medicine, nursing, pharmacy and other health programmes.
