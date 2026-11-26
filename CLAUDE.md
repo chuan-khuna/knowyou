@@ -77,6 +77,14 @@ Discussion records live at docs/records/yyyy-mm-dd-<slug>.md, dated the day the 
 took place. Each record captures one discussion: what was discussed, what was decided, and
 any open questions.
 
+## Code conventions
+
+### Imports
+
+Import with the `@/` alias (`@/games/quiz`, `@/components/quiz-screen`), which maps to
+`src/`. Do not write relative imports (`./bands`, `../quiz`), even inside a module's own
+folder. Some older files still use relative imports; convert one when you edit it.
+
 ## Tools
 
 ### Python
