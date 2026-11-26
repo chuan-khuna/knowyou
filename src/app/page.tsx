@@ -1,4 +1,5 @@
 import { GameLink } from "@/components/game-link";
+import { SiteFooter } from "@/components/site-footer";
 import { SoundToggle } from "@/components/sound-toggle";
 
 interface Card {
@@ -31,10 +32,13 @@ export default function Home() {
         <SoundToggle />
       </header>
 
-      <h1 className="mt-10 text-3xl sm:text-[2.75rem]">ถามจนกว่าจะมั่นใจ แล้วทายครั้งเดียว</h1>
+      {/* The page still needs a top heading for screen readers; it just isn't shown. */}
+      <h1 className="sr-only">KnowYou</h1>
 
       <CardSection heading="ทายตัวคุณ" line="เกมจะถามไปเรื่อย ๆ จนมั่นใจ แล้วทายเรื่องของคุณครั้งเดียว" cards={GAMES} />
       <CardSection heading="ควิซ" line="ตอบคำถามเรื่องที่คุณชอบ แล้วดูว่าคุณรู้จักดีแค่ไหน" cards={QUIZZES} />
+
+      <SiteFooter />
     </main>
   );
 }

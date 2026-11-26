@@ -416,13 +416,23 @@ function SeedChip({ code, className = "" }: { code: string; className?: string }
 
 function Progress({ number, total, score }: { number: number; total: number; score: number | null }) {
   return (
-    <span className="num flex gap-3 whitespace-nowrap">
-      <span>
-        <span className="max-[24rem]:hidden">ข้อ </span>
-        {number}/{total}
+    <span className="flex items-center gap-2 whitespace-nowrap">
+      <span className="progress-chip" role="progressbar" aria-valuemin={1} aria-valuemax={total} aria-valuenow={number} aria-label={`ข้อ ${number} จาก ${total}`}>
+        <span className="num" aria-hidden="true">
+          <span className="progress-now">{number}</span>
+          <span className="progress-total">/{total}</span>
+        </span>
+        <span className="progress-track" aria-hidden="true">
+          <span className="progress-fill" style={{ transform: `scaleX(${number / total})` }} />
+        </span>
       </span>
       {/* A phone's strip has no room beside three buttons; the reveal itself says right or wrong. */}
-      {score === null ? null : <span className="hidden sm:inline">ได้ {score} คะแนน</span>}
+      {score === null ? null : (
+        <span className="score-chip num hidden sm:inline-flex" aria-label={`ได้ ${score} คะแนน`}>
+          <Mark correct />
+          <span aria-hidden="true">{score}</span>
+        </span>
+      )}
     </span>
   );
 }
@@ -430,7 +440,11 @@ function Progress({ number, total, score }: { number: number; total: number; sco
 function QuestionHeading({ card }: { card: QuizCard }) {
   return (
     <>
-      <p className="mt-6 text-sm text-muted">ระดับ{TIER_LABELS[card.tier]}</p>
+      <p className="mt-6">
+        <span className="tier-badge" data-tier={card.tier}>
+          ระดับ{TIER_LABELS[card.tier]}
+        </span>
+      </p>
       <h2 key={card.id} className="mt-2 max-w-none text-2xl">
         {card.prompt}
       </h2>
@@ -502,13 +516,13 @@ function OptionLabel({ option, className = "" }: { option: QuizOption; className
   );
 }
 
-/** A label and, when its gloss has other Thai names, those names in brackets: เกี๊ยวซ่า (เจาซือ). */
+/** A label and, when its gloss has other Thai names, those names in small muted text after it: โกคู โงกุน. */
 function NameWithAka({ label, gloss }: { label: string; gloss?: Gloss | undefined }) {
   const aka = gloss?.aka ?? [];
   return (
     <>
       {label}
-      {aka.length > 0 ? <span className="text-sm font-normal text-muted"> ({aka.join(", ")})</span> : null}
+      {aka.length > 0 ? <span className="aka">{aka.join(", ")}</span> : null}
     </>
   );
 }
