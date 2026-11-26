@@ -352,10 +352,12 @@
     height: 14px;
   }
 
-  /* A seed code: monospace with a slashed zero, so 0 and O never look alike. */
-  .seed-code {
-    font-family: ui-monospace, "Cascadia Mono", "SF Mono", Menlo, Consolas, monospace;
-    font-variant-numeric: slashed-zero;
+  /* A seed code: monospace with a slashed zero, so 0 and O never look alike.
+     Doubled for the field, where `.stepper input` would otherwise win. */
+  .seed-code,
+  .stepper input.seed-code {
+    font-family: ui-monospace, "Cascadia Mono", "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+    font-variant-numeric: tabular-nums slashed-zero;
     letter-spacing: 0.12em;
   }
 
