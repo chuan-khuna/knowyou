@@ -25,11 +25,11 @@ One prompt shown to the player, with a fixed set of answer options. Every answer
 _Avoid_: Item, card
 
 **Pick question**:
-A question that names a few things and asks which one the player knows. In Anime Age it names three titles from different eras and asks which one the player watched or met at a stage of life, such as "ตอนประถม คุณดูเรื่องไหนบ่อยที่สุด?". In Province it names the front-runners' signatures, is built during the play, and is identified by those signatures. Its answer probabilities come from the named titles' or provinces' own facts.
+A question that names a few things and asks which one the player knows. In Anime Age it names three titles from different eras and asks which one the player watched or met at a stage of life, such as "ตอนประถม คุณดูเรื่องไหนบ่อยที่สุด?". In Province and University it names the front-runners' signatures, is built during the play, and is identified by those signatures. Its answer probabilities come from the named titles', provinces' or universities' own facts.
 _Avoid_: Multiple choice, which-one question
 
 **Signature**:
-A food, tradition or souvenir a local recognises as their province's own, such as ข้าวสังข์หยด for Phatthalung. Province's pick questions name signatures, never landmarks.
+Something a local recognises as their own. For a province it is a food, tradition or souvenir, such as ข้าวสังข์หยด for Phatthalung, never a landmark. For a university it is a tradition, campus place, food or song a student there would know, such as รับน้องขึ้นดอย for Chiang Mai University. Pick questions name signatures.
 _Avoid_: Landmark, specialty, OTOP
 
 **Question bank**:
