@@ -136,7 +136,7 @@ The same rules as the games' saved play (`play-screen.md`), in the quiz's own `r
 4. Add `index.ts`, exporting `createQuiz({ id, bank: parseQuestions(questions), glosses: parseGlossary(glossary), bands })` from `../quiz`.
 5. Add `bank.test.ts`, requiring `quizIssues` of the quiz to be empty, and copy `boundaries.test.ts` with the module's folder.
 6. Add `src/app/<id>/page.tsx` with the metadata, and a client component beside it that renders `QuizScreen` with the quiz, the title and the intro lines.
-7. Add the title to `GAMES` in `src/app/page.tsx`, in href order.
+7. Add the title to `QUIZZES` in `src/app/page.tsx`, in href order.
 8. Add the title to the table at the top of this document, and its bands under Score bands.
 9. Run `bun test`, `bun run typecheck` and `bun run build`.
 
