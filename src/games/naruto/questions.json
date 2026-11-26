@@ -1,0 +1,891 @@
+[
+  {
+    "id": "naruto-village",
+    "tier": "easy",
+    "prompt": "อุซึมากิ นารูโตะเป็นนินจาของหมู่บ้านไหน?",
+    "answer": "โคโนฮะ",
+    "decoys": [
+      "ซึนะ",
+      "คิริ",
+      "คุโมะ"
+    ],
+    "note": "โคโนฮะงาคุเระ หรือหมู่บ้านใบไม้",
+    "source": "https://naruto.fandom.com/wiki/Naruto_Uzumaki",
+    "evidence": "Naruto Uzumaki (うずまきナルト, Uzumaki Naruto) is a shinobi of Konohagakure's Uzumaki clan"
+  },
+  {
+    "id": "naruto-dream",
+    "tier": "easy",
+    "prompt": "ความฝันของนารูโตะคือการได้เป็นอะไร?",
+    "answer": "โฮคาเงะ",
+    "decoys": [
+      "คาเซคาเงะ",
+      "มิซึคาเงะ",
+      "ไรคาเงะ"
+    ],
+    "source": "https://naruto.fandom.com/wiki/Naruto_Uzumaki",
+    "evidence": "Naruto worked hard to gain the village's acknowledgement all the while chasing his dream to become Hokage."
+  },
+  {
+    "id": "naruto-tailed-beast",
+    "tier": "easy",
+    "prompt": "สัตว์หางตัวไหนถูกผนึกไว้ในตัวนารูโตะตั้งแต่วันที่เขาเกิด?",
+    "answer": "เก้าหาง",
+    "decoys": [
+      "หนึ่งหาง",
+      "สองหาง",
+      "แปดหาง"
+    ],
+    "source": "https://naruto.fandom.com/wiki/Naruto_Uzumaki",
+    "evidence": "He became the jinchūriki of the Nine-Tails on the day of his birth"
+  },
+  {
+    "id": "team7-leader",
+    "tier": "easy",
+    "prompt": "ใครเป็นอาจารย์คุมทีม 7 ของนารูโตะ ซาสึเกะ และซากุระ?",
+    "answer": "ฮาตาเกะ คาคาชิ",
+    "decoys": [
+      "ไมท์ ไก",
+      "ซารุโทบิ อาสึมะ",
+      "ยูฮิ คุเรไน"
+    ],
+    "source": "https://naruto.fandom.com/wiki/Team_7_(Kakashi)",
+    "evidence": "Team 7 was a Konohagakure team formed under the leadership of Kakashi Hatake."
+  },
+  {
+    "id": "kakashi-copy-ninja",
+    "tier": "easy",
+    "prompt": "คาคาชิมีฉายาที่รู้จักกันทั่วไปว่าอะไร?",
+    "answer": "นินจาก๊อปปี้",
+    "decoys": [
+      "แสงสีเหลืองแห่งโคโนฮะ",
+      "ปีศาจแห่งหมู่บ้านหมอก",
+      "อสูรเขียวแห่งโคโนฮะ"
+    ],
+    "source": "https://naruto.fandom.com/wiki/Kakashi_Hatake",
+    "evidence": "Famed as Kakashi of the Sharingan (写輪眼のカカシ, Sharingan no Kakashi) and the Copy Ninja (コピー忍者, Kopī Ninja)"
+  },
+  {
+    "id": "hyuga-byakugan",
+    "tier": "easy",
+    "prompt": "ดวงตาพิเศษประจำตระกูลฮิวงะชื่ออะไร?",
+    "answer": "เบียคุกัง",
+    "decoys": [
+      "ชาริงัน",
+      "รินเนกัง",
+      "มังเงะเคียวชาริงัน"
+    ],
+    "source": "https://naruto.fandom.com/wiki/Byakugan",
+    "evidence": "the Byakugan became more commonly associated with the Hyūga clan"
+  },
+  {
+    "id": "rock-lee-taijutsu",
+    "tier": "easy",
+    "prompt": "ร็อค ลีเป็นผู้เชี่ยวชาญวิชาประเภทไหน แม้จะใช้วิชาประเภทอื่นแทบไม่ได้?",
+    "answer": "ไทจุตสึ",
+    "decoys": [
+      "นินจุตสึ",
+      "เก็นจุตสึ",
+      "ฟูอินจุตสึ"
+    ],
+    "note": "ลีไม่มีพรสวรรค์ด้านนินจุตสึและเก็นจุตสึ",
+    "source": "https://naruto.fandom.com/wiki/Rock_Lee",
+    "evidence": "Lee proved to have no talent for ninjutsu and genjutsu. When he was mocked by his peers because of this, Lee persevered, focusing on taijutsu."
+  },
+  {
+    "id": "naruto-rasengan-teacher",
+    "tier": "easy",
+    "prompt": "ใครสอนราเซ็นกันให้นารูโตะ?",
+    "answer": "จิไรยะ",
+    "decoys": [
+      "สึนาเดะ",
+      "ซารุโทบิ ฮิรุเซ็น",
+      "ไมท์ ไก"
+    ],
+    "source": "https://naruto.fandom.com/wiki/Rasengan",
+    "evidence": "Jiraiya breaks up the process into three steps when he teaches it to Naruto Uzumaki."
+  },
+  {
+    "id": "sasuke-chidori",
+    "tier": "easy",
+    "prompt": "ในเดือนก่อนรอบสุดท้ายของการสอบจูนิน ซาสึเกะฝึกคาถาอะไร?",
+    "answer": "จิโดริ",
+    "decoys": [
+      "ราเซ็นกัน",
+      "โกคาคิว",
+      "คาเงะมาเนะ"
+    ],
+    "source": "https://naruto.fandom.com/wiki/Kakashi_Hatake",
+    "evidence": "In order to give Sasuke an alternative to the cursed seal's power, Kakashi spends a month teaching him the Chidori."
+  },
+  {
+    "id": "naruto-shadow-clone",
+    "tier": "easy",
+    "prompt": "คาถาประจำตัวคาถาแรกของนารูโตะ ที่เขาเรียนจากคัมภีร์ผนึก ชื่ออะไร?",
+    "answer": "คาเงะบุนชิน",
+    "decoys": [
+      "ราเซ็นกัน",
+      "คาเงะมาเนะ",
+      "จิโดริ"
+    ],
+    "source": "https://naruto.fandom.com/wiki/Naruto_Uzumaki",
+    "evidence": "Naruto's first trademark technique was the Shadow Clone Technique. While originally failing constantly with a basic illusionary clone, after briefly studying the Scroll of Seals, he learned to create shadow clones on a mass scale."
+  },
+  {
+    "id": "shikamaru-shadow",
+    "tier": "easy",
+    "prompt": "คาถาประจำตระกูลนาราที่ชิกามารุใช้ตรึงศัตรูด้วยเงา ชื่ออะไร?",
+    "answer": "คาเงะมาเนะ",
+    "decoys": [
+      "คาเงะบุนชิน",
+      "โกคาคิว",
+      "จิโดริ"
+    ],
+    "source": "https://naruto.fandom.com/wiki/Shadow_Imitation_Technique",
+    "evidence": "The Shadow Imitation Technique is the signature technique of the Nara clan."
+  },
+  {
+    "id": "gaara-village",
+    "tier": "easy",
+    "prompt": "กาอาระเป็นนินจาของหมู่บ้านไหน?",
+    "answer": "ซึนะ",
+    "decoys": [
+      "โคโนฮะ",
+      "คิริ",
+      "อิวะ"
+    ],
+    "note": "ซึนะงาคุเระ หรือหมู่บ้านทราย",
+    "source": "https://naruto.fandom.com/wiki/Gaara",
+    "evidence": "Gaara (我愛羅) is a shinobi of Sunagakure"
+  },
+  {
+    "id": "team7-land-of-waves",
+    "tier": "easy",
+    "prompt": "ภารกิจคุ้มกันช่างสร้างสะพานของทีม 7 พาพวกเขาไปที่แคว้นไหน?",
+    "answer": "แคว้นแห่งคลื่น",
+    "decoys": [
+      "แคว้นแห่งลม",
+      "แคว้นแห่งน้ำ",
+      "แคว้นแห่งสายฟ้า"
+    ],
+    "source": "https://naruto.fandom.com/wiki/Prologue_—_Land_of_Waves",
+    "evidence": "send them on a C-rank mission to escort Tazuna, a master bridge-builder, back to the Land of Waves."
+  },
+  {
+    "id": "sakura-teacher",
+    "tier": "easy",
+    "prompt": "ซากุระฝึกจนเป็นนินจาแพทย์ฝีมือดีกับใคร?",
+    "answer": "สึนาเดะ",
+    "decoys": [
+      "จิไรยะ",
+      "ยูฮิ คุเรไน",
+      "ไมท์ ไก"
+    ],
+    "source": "https://naruto.fandom.com/wiki/Sakura_Haruno",
+    "evidence": "after training under the legendary Sannin Tsunade, Sakura overcomes her weaknesses and becomes recognised as one of the greatest medical-nin in the world."
+  },
+  {
+    "id": "sasuke-joins-orochimaru",
+    "tier": "easy",
+    "prompt": "ซาสึเกะทิ้งหมู่บ้านไปหาใครเพื่อแลกกับพลัง?",
+    "answer": "โอโรจิมารุ",
+    "decoys": [
+      "จิไรยะ",
+      "โมโมจิ ซาบุสะ",
+      "โฮชิงากิ คิซาเมะ"
+    ],
+    "source": "https://naruto.fandom.com/wiki/Sasuke_Uchiha",
+    "evidence": "he willingly accepted Orochimaru's offer of power"
+  },
+  {
+    "id": "tsunade-fifth-hokage",
+    "tier": "easy",
+    "prompt": "ใครได้เป็นโฮคาเงะรุ่นที่ห้า?",
+    "answer": "สึนาเดะ",
+    "decoys": [
+      "จิไรยะ",
+      "ชิมูระ ดันโซ",
+      "นามิคาเสะ มินาโตะ"
+    ],
+    "source": "https://naruto.fandom.com/wiki/Tsunade",
+    "evidence": "She is eventually persuaded to return to Konoha and take on the mantle of Fifth Hokage"
+  },
+  {
+    "id": "naruto-toads",
+    "tier": "easy",
+    "prompt": "สัตว์อัญเชิญคู่ใจของนารูโตะคือสัตว์ชนิดไหน?",
+    "answer": "คางคก",
+    "decoys": [
+      "งู",
+      "ทาก",
+      "สุนัขนินจา"
+    ],
+    "source": "https://naruto.fandom.com/wiki/Toad",
+    "evidence": "Toads (蝦蟇, Gama) are the most recurring summons to be seen in the series due to some of the main characters: Naruto Uzumaki, Jiraiya, and Minato Namikaze being able to summon them."
+  },
+  {
+    "id": "rasengan-creator",
+    "tier": "medium",
+    "prompt": "ใครเป็นผู้คิดค้นราเซ็นกัน?",
+    "answer": "นามิคาเสะ มินาโตะ",
+    "decoys": [
+      "จิไรยะ",
+      "ซารุโทบิ ฮิรุเซ็น",
+      "เซนจู โทบิรามะ"
+    ],
+    "source": "https://naruto.fandom.com/wiki/Rasengan",
+    "evidence": "The Rasengan is a jutsu that takes form as a spinning ball of chakra, invented by Minato Namikaze."
+  },
+  {
+    "id": "gaara-shukaku",
+    "tier": "medium",
+    "prompt": "สัตว์หางที่ถูกผนึกในตัวกาอาระชื่ออะไร?",
+    "answer": "ชุคาคุ",
+    "decoys": [
+      "คุรามะ",
+      "กิวกิ",
+      "มาตาทาบิ"
+    ],
+    "source": "https://naruto.fandom.com/wiki/Gaara",
+    "evidence": "He was made the jinchūriki of the One-Tailed Shukaku before he was born"
+  },
+  {
+    "id": "killer-b-gyuki",
+    "tier": "medium",
+    "prompt": "คิลเลอร์บีเป็นจินจูริกิ (ร่างสถิต) ของสัตว์หางตัวไหน?",
+    "answer": "กิวกิ",
+    "decoys": [
+      "ชุคาคุ",
+      "ซงโกคุ",
+      "อิโซบุ"
+    ],
+    "source": "https://naruto.fandom.com/wiki/Killer_B",
+    "evidence": "He is the most recent jinchūriki of the Eight-Tails, Gyūki"
+  },
+  {
+    "id": "chunin-finals-naruto",
+    "tier": "medium",
+    "prompt": "ในรอบสุดท้ายของการสอบจูนินครั้งแรก นารูโตะสู้กับใคร?",
+    "answer": "ฮิวงะ เนจิ",
+    "decoys": [
+      "อินุซึกะ คิบะ",
+      "อาบุราเมะ ชิโนะ",
+      "เท็มาริ"
+    ],
+    "note": "คิบะเป็นคู่ของนารูโตะในรอบคัดเลือก ไม่ใช่รอบสุดท้าย",
+    "source": "https://naruto.fandom.com/wiki/Chūnin_Exams",
+    "evidence": "First Round … Naruto Uzumaki vs. Neji Hyūga"
+  },
+  {
+    "id": "lee-prelim-loss",
+    "tier": "medium",
+    "prompt": "ในรอบคัดเลือกของการสอบจูนิน ร็อค ลีแพ้ใคร?",
+    "answer": "กาอาระ",
+    "decoys": [
+      "ฮิวงะ เนจิ",
+      "คังคุโร่",
+      "ยาคุชิ คาบุโตะ"
+    ],
+    "note": "ลีบาดเจ็บที่แขนและขาจนเกือบเลิกเป็นนินจา",
+    "source": "https://naruto.fandom.com/wiki/Chūnin_Exams",
+    "evidence": "Gaara vs. Rock Lee … Gaara wins"
+  },
+  {
+    "id": "shikamaru-chunin",
+    "tier": "medium",
+    "prompt": "หลังการสอบจูนินครั้งแรก ใครเป็นผู้เข้าสอบคนเดียวที่ได้เลื่อนเป็นจูนิน?",
+    "answer": "นารา ชิกามารุ",
+    "decoys": [
+      "ฮิวงะ เนจิ",
+      "อุจิวะ ซาสึเกะ",
+      "อาบุราเมะ ชิโนะ"
+    ],
+    "note": "ทั้งที่เขายอมแพ้ในแมตช์ของตัวเอง",
+    "source": "https://naruto.fandom.com/wiki/Chūnin_Exams",
+    "evidence": "Shikamaru, though he forfeits his match, is ultimately the only participant to be promoted to chūnin by default."
+  },
+  {
+    "id": "third-hokage-death",
+    "tier": "medium",
+    "prompt": "โฮคาเงะรุ่นที่สามเสียชีวิตระหว่างสู้กับใครตอนโคโนฮะถูกบุก?",
+    "answer": "โอโรจิมารุ",
+    "decoys": [
+      "อุจิวะ อิทาจิ",
+      "ยาคุชิ คาบุโตะ",
+      "โฮชิงากิ คิซาเมะ"
+    ],
+    "source": "https://naruto.fandom.com/wiki/Hiruzen_Sarutobi",
+    "evidence": "Orochimaru encourages him to die, but Hiruzen, doomed to die anyway for invoking the Shinigami, ignores him, instead trying to muster up the strength to finish sealing Orochimaru."
+  },
+  {
+    "id": "itachi-uchiha-massacre",
+    "tier": "medium",
+    "prompt": "ใครสังหารคนในตระกูลอุจิวะในคืนเดียว?",
+    "answer": "อุจิวะ อิทาจิ",
+    "decoys": [
+      "อุจิวะ ชิซุย",
+      "โอโรจิมารุ",
+      "โฮชิงากิ คิซาเมะ"
+    ],
+    "note": "เขาลงมือโดยมีโทบิช่วย",
+    "source": "https://naruto.fandom.com/wiki/Itachi_Uchiha",
+    "evidence": "In one night Itachi and Tobi slaughtered the entire clan."
+  },
+  {
+    "id": "sasori-last-battle",
+    "tier": "medium",
+    "prompt": "ซาโซริแห่งแสงอุษาเสียชีวิตจากการต่อสู้กับใคร?",
+    "answer": "ฮารุโนะ ซากุระ กับ ยายจิโยะ",
+    "decoys": [
+      "อุซึมากิ นารูโตะ กับ ฮาตาเกะ คาคาชิ",
+      "ไมท์ ไก กับ ร็อค ลี",
+      "ฮิวงะ เนจิ กับ เท็นเท็น"
+    ],
+    "source": "https://naruto.fandom.com/wiki/Sasori",
+    "evidence": "At the time of his final battle with Sakura and Chiyo, Sasori had 298 human puppets in his collection."
+  },
+  {
+    "id": "deidara-last-battle",
+    "tier": "medium",
+    "prompt": "เดดาระระเบิดตัวเองตายระหว่างการต่อสู้กับใคร?",
+    "answer": "อุจิวะ ซาสึเกะ",
+    "decoys": [
+      "อุซึมากิ นารูโตะ",
+      "กาอาระ",
+      "ฮาตาเกะ คาคาชิ"
+    ],
+    "source": "https://naruto.fandom.com/wiki/Deidara",
+    "evidence": "(Last words to Sasuke) \"This will be my ultimate piece of art. I'll explode! I shall die and become art itself!"
+  },
+  {
+    "id": "asuma-killer",
+    "tier": "medium",
+    "prompt": "ใครสังหารซารุโทบิ อาสึมะ?",
+    "answer": "ฮิดัน",
+    "decoys": [
+      "เดดาระ",
+      "ซาโซริ",
+      "โฮชิงากิ คิซาเมะ"
+    ],
+    "note": "ฮิดันใช้พิธีกรรมที่ทำให้บาดแผลของตัวเองไปเกิดกับคู่ต่อสู้",
+    "source": "https://naruto.fandom.com/wiki/Asuma_Sarutobi",
+    "evidence": "With Hidan's body restored, Hidan resumed the ritual, and impaled himself in the heart. Though the blow did not instantly kill Asuma, it was still quite fatal."
+  },
+  {
+    "id": "itachi-last-battle",
+    "tier": "medium",
+    "prompt": "อิทาจิสิ้นใจครั้งแรกระหว่างการต่อสู้กับใคร?",
+    "answer": "อุจิวะ ซาสึเกะ",
+    "decoys": [
+      "อุซึมากิ นารูโตะ",
+      "ฮาตาเกะ คาคาชิ",
+      "จิไรยะ"
+    ],
+    "note": "ต่อมาเขาถูกปลุกขึ้นมาอีกครั้งในสงครามนินจาครั้งที่สี่",
+    "source": "https://naruto.fandom.com/wiki/Itachi_Uchiha",
+    "evidence": "Itachi died unable to maintain his disguise of wanting Sasuke's eyes, he genuinely smiles to Sasuke and apologises to Sasuke"
+  },
+  {
+    "id": "kakashi-sixth-hokage",
+    "tier": "medium",
+    "prompt": "หลังสงครามนินจาครั้งที่สี่ ใครได้เป็นโฮคาเงะรุ่นที่หก?",
+    "answer": "ฮาตาเกะ คาคาชิ",
+    "decoys": [
+      "นารา ชิกามารุ",
+      "ไมท์ ไก",
+      "ยามาโตะ"
+    ],
+    "source": "https://naruto.fandom.com/wiki/Kakashi_Hatake",
+    "evidence": "After the Fourth Shinobi World War, Kakashi becomes Konoha's Sixth Hokage"
+  },
+  {
+    "id": "valley-of-the-end",
+    "tier": "medium",
+    "prompt": "ตอนท้ายภาคแรก นารูโตะไล่ตามซาสึเกะไปปะทะกันที่ไหน?",
+    "answer": "หุบเขาแห่งจุดจบ",
+    "decoys": [
+      "ป่ามรณะ",
+      "เกาะเต่า",
+      "ถ้ำริวจิ"
+    ],
+    "source": "https://naruto.fandom.com/wiki/Valley_of_the_End",
+    "evidence": "at the end of Part I, Naruto Uzumaki chased the now missing-nin and also teammate, Sasuke Uchiha to the valley in order to bring him back to the village"
+  },
+  {
+    "id": "not-sannin",
+    "tier": "medium",
+    "prompt": "ใครไม่ใช่หนึ่งในสามนินจาในตำนาน (ซันนิน)?",
+    "answer": "ฮาตาเกะ คาคาชิ",
+    "decoys": [
+      "จิไรยะ",
+      "สึนาเดะ",
+      "โอโรจิมารุ"
+    ],
+    "note": "ซันนินทั้งสามเคยเป็นลูกศิษย์ทีมเดียวกันของโฮคาเงะรุ่นที่สาม",
+    "source": "https://naruto.fandom.com/wiki/Sannin",
+    "evidence": "Each of the Sannin has trained one member of Team Kakashi: Jiraiya trained Naruto, Tsunade trained Sakura, and Orochimaru trained Sasuke"
+  },
+  {
+    "id": "haku-ice-release",
+    "tier": "medium",
+    "prompt": "ฮาคุ ลูกน้องของซาบุสะ ใช้คาถาสายเลือดธาตุไหน?",
+    "answer": "เฮียวตง",
+    "decoys": [
+      "โมคุตง",
+      "โยตง",
+      "ฟุตตง"
+    ],
+    "note": "เฮียวตงคือธาตุน้ำแข็ง",
+    "source": "https://naruto.fandom.com/wiki/Haku",
+    "evidence": "Haku of the Ice Release (氷遁の白, Hyōton no Haku)"
+  },
+  {
+    "id": "kakashi-sharingan-gift",
+    "tier": "medium",
+    "prompt": "คาคาชิได้ตาชาริงันมาจากใคร?",
+    "answer": "อุจิวะ โอบิโตะ",
+    "decoys": [
+      "อุจิวะ อิทาจิ",
+      "อุจิวะ ชิซุย",
+      "อุจิวะ มาดาระ"
+    ],
+    "source": "https://naruto.fandom.com/wiki/Kakashi_Hatake",
+    "evidence": "Obito decided to make his last act giving Kakashi the present he forgot to give him earlier: his Sharingan to replace the eye Kakashi lost."
+  },
+  {
+    "id": "hinata-faces-pain",
+    "tier": "medium",
+    "prompt": "ตอนเพนบุกโคโนฮะ ใครออกไปสู้กับเพนเพื่อปกป้องนารูโตะ ทั้งที่รู้ว่าไม่มีทางชนะ?",
+    "answer": "ฮิวงะ ฮินาตะ",
+    "decoys": [
+      "ฮารุโนะ ซากุระ",
+      "ยามานากะ อิโนะ",
+      "เท็นเท็น"
+    ],
+    "source": "https://naruto.fandom.com/wiki/Hinata_Hyūga",
+    "evidence": "she willingly faced Pain to protect Naruto, despite knowing she has no chance of winning."
+  },
+  {
+    "id": "tobi-identity",
+    "tier": "hard",
+    "prompt": "ตัวจริงของโทบิแห่งแสงอุษาคือใคร?",
+    "answer": "อุจิวะ โอบิโตะ",
+    "decoys": [
+      "อุจิวะ มาดาระ",
+      "อุจิวะ ชิซุย",
+      "ยาคุชิ คาบุโตะ"
+    ],
+    "note": "โทบิเคยแอบอ้างว่าตัวเองคือมาดาระ",
+    "source": "https://naruto.fandom.com/wiki/Obito_Uchiha",
+    "evidence": "Resurfacing under the names of Tobi (トビ, Tobi) and Madara Uchiha himself, Obito subtly took control of the Akatsuki"
+  },
+  {
+    "id": "itachi-tsukuyomi",
+    "tier": "hard",
+    "prompt": "ในภาคแรก อิทาจิใช้เก็นจุตสึอะไรทำให้คาคาชิหมดสภาพ?",
+    "answer": "สึคุโยมิ",
+    "decoys": [
+      "อามาเทราสึ",
+      "คามุอิ",
+      "โคโตอามัตสึคามิ"
+    ],
+    "source": "https://naruto.fandom.com/wiki/Itachi_Uchiha",
+    "evidence": "Itachi quickly proves to be the superior and uses Tsukuyomi to render Kakashi helpless"
+  },
+  {
+    "id": "kakashi-kamui",
+    "tier": "hard",
+    "prompt": "พลังมังเงะเคียวชาริงันของคาคาชิที่ส่งสิ่งต่าง ๆ ไปอีกมิติ ชื่ออะไร?",
+    "answer": "คามุอิ",
+    "decoys": [
+      "อามาเทราสึ",
+      "สึคุโยมิ",
+      "อิซานางิ"
+    ],
+    "source": "https://naruto.fandom.com/wiki/Kamui",
+    "evidence": "because Kamui is used with a Mangekyō Sharingan, repeated use damages Kakashi's vision"
+  },
+  {
+    "id": "naruto-beats-kakuzu",
+    "tier": "hard",
+    "prompt": "นารูโตะใช้คาถาใหม่อะไรเอาชนะคาคุสึ?",
+    "answer": "ฟูตง ราเซ็นชูริเคน",
+    "decoys": [
+      "โอดามะ ราเซ็นกัน",
+      "จิโดริ",
+      "คาเงะมาเนะ"
+    ],
+    "source": "https://naruto.fandom.com/wiki/Kakuzu",
+    "evidence": "Naruto unveiled his newly developed technique, Wind Release: Rasenshuriken, which Kakuzu recognised to be dangerous if it ever connected with him."
+  },
+  {
+    "id": "naruto-sage-training",
+    "tier": "hard",
+    "prompt": "นารูโตะฝึกเซ็นจุตสึจนเข้าโหมดเซียนได้ที่ไหน?",
+    "answer": "ภูเขาเมียวโบคุ",
+    "decoys": [
+      "ถ้ำริวจิ",
+      "ป่าชิคโคทสึ",
+      "เกาะเต่า"
+    ],
+    "source": "https://naruto.fandom.com/wiki/Naruto_Uzumaki",
+    "evidence": "Naruto later trained in senjutsu at Mount Myōboku"
+  },
+  {
+    "id": "pain-shinra-tensei",
+    "tier": "hard",
+    "prompt": "คาถาที่เพนใช้ทำลายหมู่บ้านโคโนฮะจนเป็นหลุมยักษ์ ชื่ออะไร?",
+    "answer": "ชินระเทนเซย์",
+    "decoys": [
+      "บันโชเทนอิน",
+      "ชิบาคุเทนเซย์",
+      "เอโดะเทนเซย์"
+    ],
+    "source": "https://naruto.fandom.com/wiki/Shinra_Tensei",
+    "evidence": "performs a Shinra Tensei that is large enough and powerful enough to reduce Konohagakure to a deep crater"
+  },
+  {
+    "id": "nagato-teacher",
+    "tier": "hard",
+    "prompt": "นางาโตะ ผู้ควบคุมเพน เคยเป็นลูกศิษย์ของใครตอนเด็ก?",
+    "answer": "จิไรยะ",
+    "decoys": [
+      "โอโรจิมารุ",
+      "สึนาเดะ",
+      "ฮันโซ"
+    ],
+    "source": "https://naruto.fandom.com/wiki/Nagato",
+    "evidence": "Because of this, Jiraiya changed his mind and began teaching them ninjutsu."
+  },
+  {
+    "id": "guy-eight-gates-opponent",
+    "tier": "hard",
+    "prompt": "ในสงครามนินจาครั้งที่สี่ ไมท์ ไกเปิดประตูครบทั้งแปดเพื่อสู้กับใคร?",
+    "answer": "อุจิวะ มาดาระ",
+    "decoys": [
+      "โอสึสึกิ คางุยะ",
+      "โฮชิงากิ คิซาเมะ",
+      "ยาคุชิ คาบุโตะ"
+    ],
+    "source": "https://naruto.fandom.com/wiki/Might_Guy",
+    "evidence": "His ultimate technique with all eight gates is Night Guy … Night Guy, though it almost kills Madara Uchiha as the Ten-Tails' jinchūriki"
+  },
+  {
+    "id": "kabuto-edo-tensei",
+    "tier": "hard",
+    "prompt": "ใครใช้เอโดะเทนเซย์ปลุกนินจาที่ตายไปแล้วหลายสิบคนมาเป็นกองทัพในสงครามนินจาครั้งที่สี่?",
+    "answer": "ยาคุชิ คาบุโตะ",
+    "decoys": [
+      "ซาโซริ",
+      "คาคุสึ",
+      "ฮิดัน"
+    ],
+    "source": "https://naruto.fandom.com/wiki/Kabuto_Yakushi",
+    "evidence": "Kabuto claims to have perfected the Impure World Reincarnation: he is able to reincarnate dozens of individuals at a time"
+  },
+  {
+    "id": "danzo-last-battle",
+    "tier": "hard",
+    "prompt": "ดันโซสู้ครั้งสุดท้ายก่อนตายกับใคร?",
+    "answer": "อุจิวะ ซาสึเกะ",
+    "decoys": [
+      "อุซึมากิ นารูโตะ",
+      "ฮาตาเกะ คาคาชิ",
+      "กาอาระ"
+    ],
+    "source": "https://naruto.fandom.com/wiki/Danzō_Shimura",
+    "evidence": "boldly attempting to kill Sasuke and Tobi for the sake of his village and the entire shinobi world with his suicide"
+  },
+  {
+    "id": "kaguya-sealed",
+    "tier": "hard",
+    "prompt": "ศัตรูที่ทีม 7 ร่วมกันผนึกจนสงครามนินจาครั้งที่สี่จบลงคือใคร?",
+    "answer": "โอสึสึกิ คางุยะ",
+    "decoys": [
+      "อุจิวะ มาดาระ",
+      "อุจิวะ โอบิโตะ",
+      "ยาคุชิ คาบุโตะ"
+    ],
+    "note": "เซ็ตสึดำถูกผนึกไปพร้อมกัน",
+    "source": "https://naruto.fandom.com/wiki/Kaguya_Ōtsutsuki",
+    "evidence": "only for both Kaguya and Black Zetsu to end up being defeated by Team 7 and sealed away."
+  },
+  {
+    "id": "infinite-tsukuyomi",
+    "tier": "hard",
+    "prompt": "เก็นจุตสึที่ต้องสะท้อนดวงตากับดวงจันทร์เพื่อขังคนทั้งโลกไว้ในภาพลวง ชื่ออะไร?",
+    "answer": "มุเก็นสึคุโยมิ",
+    "decoys": [
+      "ชิบาคุเทนเซย์",
+      "อิซานามิ",
+      "โคโตอามัตสึคามิ"
+    ],
+    "source": "https://naruto.fandom.com/wiki/Infinite_Tsukuyomi",
+    "evidence": "To cast a genjutsu of this scale, the user's Rinne Sharingan must be reflected off of the moon."
+  },
+  {
+    "id": "haku-death",
+    "tier": "hard",
+    "prompt": "ฮาคุเสียชีวิตเพราะเอาตัวรับคาถาของใครแทนซาบุสะ?",
+    "answer": "ฮาตาเกะ คาคาชิ",
+    "decoys": [
+      "อุจิวะ ซาสึเกะ",
+      "อุซึมากิ นารูโตะ",
+      "ไมท์ ไก"
+    ],
+    "source": "https://naruto.fandom.com/wiki/Haku",
+    "evidence": "he parried Naruto's attack and went to Zabuza, using himself as a human shield against Kakashi's Lightning Cutter."
+  },
+  {
+    "id": "hashirama-wood-release",
+    "tier": "hard",
+    "prompt": "คาถาสายเลือดที่เซนจู ฮาชิรามะใช้จนเป็นตำนาน ชื่ออะไร?",
+    "answer": "โมคุตง",
+    "decoys": [
+      "เฮียวตง",
+      "โยตง",
+      "ชาคุตง"
+    ],
+    "note": "โมคุตงคือธาตุไม้",
+    "source": "https://naruto.fandom.com/wiki/Wood_Release",
+    "evidence": "It was famously used by Hashirama Senju"
+  },
+  {
+    "id": "minato-hiraishin",
+    "tier": "hard",
+    "prompt": "คาถาที่วาร์ปไปยังเครื่องหมายที่ทำไว้ล่วงหน้า ซึ่งนามิคาเสะ มินาโตะใช้ทีละหลายสิบจุด ชื่ออะไร?",
+    "answer": "ฮิไรชิน",
+    "decoys": [
+      "ชุนชิน",
+      "คามุอิ",
+      "คุจิโยเสะ"
+    ],
+    "source": "https://naruto.fandom.com/wiki/Flying_Thunder_God_Technique",
+    "evidence": "There is no limit to how many targets can be marked with technique formulas, as Minato Namikaze routinely uses dozens at a time."
+  },
+  {
+    "id": "not-akatsuki",
+    "tier": "hard",
+    "prompt": "ใครไม่เคยเป็นสมาชิกแสงอุษา?",
+    "answer": "โมโมจิ ซาบุสะ",
+    "decoys": [
+      "โฮชิงากิ คิซาเมะ",
+      "ซาโซริ",
+      "โอโรจิมารุ"
+    ],
+    "note": "ซาบุสะเป็นนินจาแยกตัวจากคิริ ส่วนโอโรจิมารุเคยอยู่แสงอุษาก่อนหนีออกมา",
+    "source": "https://naruto.fandom.com/wiki/Akatsuki",
+    "evidence": "Orochimaru attempted to steal Itachi Uchiha's body after the latter joined the organisation, and when that failed he was forced to defect."
+  },
+  {
+    "id": "chiyo-revives-gaara",
+    "tier": "hard",
+    "prompt": "ใครสละชีวิตตัวเองเพื่อชุบชีวิตกาอาระ?",
+    "answer": "ยายจิโยะ",
+    "decoys": [
+      "ฮารุโนะ ซากุระ",
+      "สึนาเดะ",
+      "คังคุโร่"
+    ],
+    "source": "https://naruto.fandom.com/wiki/Gaara",
+    "evidence": "Chiyo trades her life for Gaara's"
+  },
+  {
+    "id": "shisui-kotoamatsukami",
+    "tier": "very-hard",
+    "prompt": "เก็นจุตสึจากมังเงะเคียวชาริงันของอุจิวะ ชิซุย ที่ควบคุมความคิดเป้าหมายโดยไม่รู้ตัว ชื่ออะไร?",
+    "answer": "โคโตอามัตสึคามิ",
+    "decoys": [
+      "สึคุโยมิ",
+      "อิซานามิ",
+      "คามุอิ"
+    ],
+    "source": "https://naruto.fandom.com/wiki/Kotoamatsukami",
+    "evidence": "Kotoamatsukami is the signature dōjutsu of Shisui Uchiha's two Mangekyō Sharingan, which casts a powerful yet subtle mind-controlling genjutsu on a target."
+  },
+  {
+    "id": "guy-night-guy",
+    "tier": "very-hard",
+    "prompt": "ท่าเตะสุดท้ายของไมท์ ไกที่ใช้ได้หลังเปิดประตูครบทั้งแปด ชื่ออะไร?",
+    "answer": "ยางาอิ",
+    "decoys": [
+      "อาซาคุจาคุ",
+      "ฮิรุโทระ",
+      "โคโนฮะเซ็มปู"
+    ],
+    "note": "อาซาคุจาคุใช้ที่ประตูที่หก ฮิรุโทระที่ประตูที่เจ็ด",
+    "source": "https://naruto.fandom.com/wiki/Night_Guy",
+    "evidence": "The Night Guy is a forbidden taijutsu of the highest level and can only be performed after opening all Eight Gates."
+  },
+  {
+    "id": "nagato-rinnegan-origin",
+    "tier": "very-hard",
+    "prompt": "รินเนกังในตาของนางาโตะเดิมเป็นของใคร?",
+    "answer": "อุจิวะ มาดาระ",
+    "decoys": [
+      "อุจิวะ โอบิโตะ",
+      "เซนจู ฮาชิรามะ",
+      "อุจิวะ อิทาจิ"
+    ],
+    "source": "https://naruto.fandom.com/wiki/Nagato",
+    "evidence": "When he was very young, Madara Uchiha secretly transplanted his Rinnegan into Nagato without his or his parents' knowledge"
+  },
+  {
+    "id": "itachi-izanami",
+    "tier": "very-hard",
+    "prompt": "คาถาที่อิทาจิใช้ขังคาบุโตะไว้ในวงจรการต่อสู้ไม่รู้จบ ชื่ออะไร?",
+    "answer": "อิซานามิ",
+    "decoys": [
+      "อิซานางิ",
+      "สึคุโยมิ",
+      "โคโตอามัตสึคามิ"
+    ],
+    "source": "https://naruto.fandom.com/wiki/Itachi_Uchiha",
+    "evidence": "This creates a sensory loop independent of vision that traps Kabuto in eternal battle; that is Izanami."
+  },
+  {
+    "id": "danzo-izanagi",
+    "tier": "very-hard",
+    "prompt": "คาถาต้องห้ามของตระกูลอุจิวะที่ดันโซใช้ด้วยชาริงันที่ฝังไว้ที่แขน ชื่ออะไร?",
+    "answer": "อิซานางิ",
+    "decoys": [
+      "อิซานามิ",
+      "คามุอิ",
+      "สึคุโยมิ"
+    ],
+    "source": "https://naruto.fandom.com/wiki/Danzō_Shimura",
+    "evidence": "allowing himself to be experimented on with Hashirama's cells by Orochimaru in order to gain the power to control a tailed beast and extend his use of Izanagi."
+  },
+  {
+    "id": "sasuke-kirin",
+    "tier": "very-hard",
+    "prompt": "คาถาที่ซาสึเกะดึงสายฟ้าจริงจากเมฆฝนลงมาโจมตี ชื่ออะไร?",
+    "answer": "คิริน",
+    "decoys": [
+      "จิโดริ",
+      "โกคาคิว",
+      "อามาเทราสึ"
+    ],
+    "source": "https://naruto.fandom.com/wiki/Kirin",
+    "evidence": "Sasuke draws natural lightning directly from thunder clouds to supplement the power of his strike and controls it with chakra."
+  },
+  {
+    "id": "tenchi-bridge",
+    "tier": "very-hard",
+    "prompt": "ทีมคาคาชิที่นำโดยยามาโตะไปพบสายลับของซาโซริที่ไหน?",
+    "answer": "สะพานเท็นจิ",
+    "decoys": [
+      "สะพานนารูโตะ",
+      "สะพานคันนาบิ",
+      "หุบเขาแห่งจุดจบ"
+    ],
+    "source": "https://naruto.fandom.com/wiki/Tenchi_Bridge",
+    "evidence": "It was here that Team Kakashi, led by Yamato, was to meet up with one of Akatsuki-member Sasori's spies"
+  },
+  {
+    "id": "edo-tensei-creator",
+    "tier": "very-hard",
+    "prompt": "ใครเป็นผู้คิดค้นคาถาเอโดะเทนเซย์?",
+    "answer": "เซนจู โทบิรามะ",
+    "decoys": [
+      "โอโรจิมารุ",
+      "เซนจู ฮาชิรามะ",
+      "อุจิวะ มาดาระ"
+    ],
+    "note": "โอโรจิมารุเป็นเพียงผู้นำคาถานี้มาใช้ในภายหลัง",
+    "source": "https://naruto.fandom.com/wiki/Summoning:_Impure_World_Reincarnation",
+    "evidence": "It was originally created by Tobirama Senju, some time after which he declared it a kinjutsu."
+  },
+  {
+    "id": "kisame-samehada",
+    "tier": "very-hard",
+    "prompt": "ดาบของคิซาเมะที่ดูดกินจักระได้ ชื่ออะไร?",
+    "answer": "ซาเมฮาดะ",
+    "decoys": [
+      "คุบิคิริโบโจ",
+      "ฮิราเมคาเรย์",
+      "ชิบุกิ"
+    ],
+    "source": "https://naruto.fandom.com/wiki/Samehada",
+    "evidence": "the real Kisame was hiding within Samehada to infiltrate Kumogakure as a spy before using it to absorb B's chakra"
+  },
+  {
+    "id": "zabuza-sword",
+    "tier": "very-hard",
+    "prompt": "ดาบยักษ์ประจำตัวของโมโมจิ ซาบุสะ ชื่ออะไร?",
+    "answer": "คุบิคิริโบโจ",
+    "decoys": [
+      "ซาเมฮาดะ",
+      "ฮิราเมคาเรย์",
+      "ชิบุกิ"
+    ],
+    "source": "https://naruto.fandom.com/wiki/Kubikiribōchō",
+    "evidence": "it became the trademark weapon of Zabuza Momochi during his time as one of the Seven Ninja Swordsmen."
+  },
+  {
+    "id": "akatsuki-founder",
+    "tier": "very-hard",
+    "prompt": "ใครก่อตั้งแสงอุษาในยุคแรกร่วมกับนางาโตะและโคนัน?",
+    "answer": "ยาฮิโกะ",
+    "decoys": [
+      "โอโรจิมารุ",
+      "ฮันโซ",
+      "ซาโซริ"
+    ],
+    "source": "https://naruto.fandom.com/wiki/Akatsuki",
+    "evidence": "Akatsuki was originally founded by Yahiko during the Third Shinobi World War alongside his childhood friends, Nagato and Konan."
+  },
+  {
+    "id": "itachi-totsuka",
+    "tier": "very-hard",
+    "prompt": "ดาบในซูซาโนโอะของอิทาจิที่ใช้ผนึกโอโรจิมารุ ชื่ออะไร?",
+    "answer": "ดาบโทสึกะ",
+    "decoys": [
+      "ดาบคุซานางิ",
+      "ซาเมฮาดะ",
+      "คุบิคิริโบโจ"
+    ],
+    "source": "https://naruto.fandom.com/wiki/Sword_of_Totsuka",
+    "evidence": "when he extracted Orochimaru from Sasuke's body and sealed him in the jar"
+  },
+  {
+    "id": "fukasaku-sage-teacher",
+    "tier": "very-hard",
+    "prompt": "เซียนผู้อาวุโสที่ฝึกโหมดเซียนให้นารูโตะ ชื่ออะไร?",
+    "answer": "ฟุคาซาคุ",
+    "decoys": [
+      "กามาบุนตะ",
+      "กามาคิจิ",
+      "กามาทัตสึ"
+    ],
+    "source": "https://naruto.fandom.com/wiki/Fukasaku",
+    "evidence": "Naruto rapidly progressed through the training stages, earning praise from Fukasaku for so quickly catching up to Jiraiya."
+  },
+  {
+    "id": "kage-summit-land",
+    "tier": "very-hard",
+    "prompt": "การประชุมห้าคาเงะในภาคสองจัดขึ้นที่แคว้นไหน?",
+    "answer": "แคว้นแห่งเหล็ก",
+    "decoys": [
+      "แคว้นแห่งคลื่น",
+      "แคว้นแห่งไฟ",
+      "แคว้นแห่งน้ำ"
+    ],
+    "source": "https://naruto.fandom.com/wiki/Five_Kage_Summit",
+    "evidence": "Many decades after the first Kage Summit, another is convened in the Land of Iron by the Fourth Raikage."
+  },
+  {
+    "id": "not-team-minato",
+    "tier": "very-hard",
+    "prompt": "ใครไม่ได้อยู่ในทีมมินาโตะ?",
+    "answer": "ไมท์ ไก",
+    "decoys": [
+      "ฮาตาเกะ คาคาชิ",
+      "อุจิวะ โอบิโตะ",
+      "โนฮาระ ริน"
+    ],
+    "note": "ไกเป็นคู่แข่งตลอดกาลของคาคาชิ",
+    "source": "https://naruto.fandom.com/wiki/Team_Minato",
+    "evidence": "Team Minato was a team led by Minato Namikaze and composed of Kakashi Hatake, Obito Uchiha, and Rin Nohara."
+  }
+]

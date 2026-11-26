@@ -1,0 +1,227 @@
+{
+  "ราเซ็นกัน": {
+    "romaji": "Rasengan",
+    "kanji": "螺旋丸",
+    "english": "Rasengan"
+  },
+  "จิโดริ": {
+    "romaji": "Chidori",
+    "kanji": "千鳥",
+    "english": "Chidori"
+  },
+  "คาเงะบุนชิน": {
+    "romaji": "Kage Bunshin no Jutsu",
+    "kanji": "影分身の術",
+    "english": "Shadow Clone Technique"
+  },
+  "คาเงะมาเนะ": {
+    "romaji": "Kagemane no Jutsu",
+    "kanji": "影真似の術",
+    "english": "Shadow Imitation Technique"
+  },
+  "โกคาคิว": {
+    "romaji": "Katon: Gōkakyū no Jutsu",
+    "kanji": "火遁・豪火球の術",
+    "english": "Fire Release: Great Fireball Technique"
+  },
+  "ไทจุตสึ": {
+    "romaji": "Taijutsu",
+    "kanji": "体術",
+    "english": "Taijutsu"
+  },
+  "นินจุตสึ": {
+    "romaji": "Ninjutsu",
+    "kanji": "忍術",
+    "english": "Ninjutsu"
+  },
+  "เก็นจุตสึ": {
+    "romaji": "Genjutsu",
+    "kanji": "幻術",
+    "english": "Genjutsu"
+  },
+  "ฟูอินจุตสึ": {
+    "romaji": "Fūinjutsu",
+    "kanji": "封印術",
+    "english": "Fūinjutsu"
+  },
+  "เบียคุกัง": {
+    "romaji": "Byakugan",
+    "kanji": "白眼",
+    "english": "Byakugan"
+  },
+  "ชาริงัน": {
+    "romaji": "Sharingan",
+    "kanji": "写輪眼",
+    "english": "Sharingan"
+  },
+  "รินเนกัง": {
+    "romaji": "Rinnegan",
+    "kanji": "輪廻眼",
+    "english": "Rinnegan"
+  },
+  "มังเงะเคียวชาริงัน": {
+    "romaji": "Mangekyō Sharingan",
+    "kanji": "万華鏡写輪眼",
+    "english": "Mangekyō Sharingan"
+  },
+  "สึคุโยมิ": {
+    "romaji": "Tsukuyomi",
+    "kanji": "月読",
+    "english": "Tsukuyomi"
+  },
+  "อามาเทราสึ": {
+    "romaji": "Amaterasu",
+    "kanji": "天照",
+    "english": "Amaterasu"
+  },
+  "คามุอิ": {
+    "romaji": "Kamui",
+    "kanji": "神威",
+    "english": "Kamui"
+  },
+  "โคโตอามัตสึคามิ": {
+    "romaji": "Kotoamatsukami",
+    "kanji": "別天神",
+    "english": "Kotoamatsukami"
+  },
+  "อิซานามิ": {
+    "romaji": "Izanami",
+    "kanji": "イザナミ",
+    "english": "Izanami"
+  },
+  "อิซานางิ": {
+    "romaji": "Izanagi",
+    "kanji": "イザナギ",
+    "english": "Izanagi"
+  },
+  "มุเก็นสึคุโยมิ": {
+    "romaji": "Mugen Tsukuyomi",
+    "kanji": "無限月読",
+    "english": "Infinite Tsukuyomi"
+  },
+  "ชินระเทนเซย์": {
+    "romaji": "Shinra Tensei",
+    "kanji": "神羅天征",
+    "english": "Shinra Tensei"
+  },
+  "บันโชเทนอิน": {
+    "romaji": "Banshō Ten'in",
+    "kanji": "万象天引",
+    "english": "Banshō Ten'in"
+  },
+  "ชิบาคุเทนเซย์": {
+    "romaji": "Chibaku Tensei",
+    "kanji": "地爆天星",
+    "english": "Chibaku Tensei"
+  },
+  "เอโดะเทนเซย์": {
+    "romaji": "Kuchiyose: Edo Tensei",
+    "kanji": "口寄せ・穢土転生",
+    "english": "Summoning: Impure World Reincarnation"
+  },
+  "ฟูตง ราเซ็นชูริเคน": {
+    "romaji": "Fūton: Rasenshuriken",
+    "kanji": "風遁・螺旋手裏剣",
+    "english": "Wind Release: Rasenshuriken"
+  },
+  "โอดามะ ราเซ็นกัน": {
+    "romaji": "Ōdama Rasengan",
+    "kanji": "大玉螺旋丸",
+    "english": "Big Ball Rasengan"
+  },
+  "ยางาอิ": {
+    "romaji": "Yagai",
+    "kanji": "夜ガイ",
+    "english": "Night Guy"
+  },
+  "อาซาคุจาคุ": {
+    "romaji": "Asakujaku",
+    "kanji": "朝孔雀",
+    "english": "Morning Peacock"
+  },
+  "ฮิรุโทระ": {
+    "romaji": "Hirudora",
+    "kanji": "昼虎",
+    "english": "Daytime Tiger"
+  },
+  "โคโนฮะเซ็มปู": {
+    "romaji": "Konoha Senpū",
+    "kanji": "木ノ葉旋風",
+    "english": "Leaf Whirlwind"
+  },
+  "โมคุตง": {
+    "romaji": "Mokuton",
+    "kanji": "木遁",
+    "english": "Wood Release"
+  },
+  "เฮียวตง": {
+    "romaji": "Hyōton",
+    "kanji": "氷遁",
+    "english": "Ice Release"
+  },
+  "โยตง": {
+    "romaji": "Yōton",
+    "kanji": "溶遁",
+    "english": "Lava Release"
+  },
+  "ฟุตตง": {
+    "romaji": "Futton",
+    "kanji": "沸遁",
+    "english": "Boil Release"
+  },
+  "ชาคุตง": {
+    "romaji": "Shakuton",
+    "kanji": "灼遁",
+    "english": "Scorch Release"
+  },
+  "ฮิไรชิน": {
+    "romaji": "Hiraishin no Jutsu",
+    "kanji": "飛雷神の術",
+    "english": "Flying Thunder God Technique"
+  },
+  "ชุนชิน": {
+    "romaji": "Shunshin no Jutsu",
+    "kanji": "瞬身の術",
+    "english": "Body Flicker Technique"
+  },
+  "คุจิโยเสะ": {
+    "romaji": "Kuchiyose no Jutsu",
+    "kanji": "口寄せの術",
+    "english": "Summoning Technique"
+  },
+  "คิริน": {
+    "romaji": "Kirin",
+    "kanji": "麒麟",
+    "english": "Kirin"
+  },
+  "ซาเมฮาดะ": {
+    "romaji": "Samehada",
+    "kanji": "鮫肌",
+    "english": "Samehada"
+  },
+  "คุบิคิริโบโจ": {
+    "romaji": "Kubikiribōchō",
+    "kanji": "首斬り包丁",
+    "english": "Kubikiribōchō"
+  },
+  "ฮิราเมคาเรย์": {
+    "romaji": "Hiramekarei",
+    "kanji": "ヒラメカレイ",
+    "english": "Hiramekarei"
+  },
+  "ชิบุกิ": {
+    "romaji": "Shibuki",
+    "kanji": "シブキ",
+    "english": "Shibuki"
+  },
+  "ดาบโทสึกะ": {
+    "romaji": "Totsuka no Tsurugi",
+    "kanji": "十拳剣",
+    "english": "Sword of Totsuka"
+  },
+  "ดาบคุซานางิ": {
+    "romaji": "Kusanagi no Tsurugi",
+    "kanji": "草薙の剣",
+    "english": "Sword of Kusanagi"
+  }
+}

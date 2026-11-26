@@ -1,6 +1,6 @@
 # Quiz
 
-How the quizzes are built: the shared quiz module and screen, the question shape, how a play is drawn, the score bands, the saved play, how to add a title and how to add a question. Terms follow `GLOSSARY.md`; a quiz is a **Quiz**, not a **Game**. The specs are `.scratch/how-well-do-you-know/spec.md` (the first title) and `.scratch/naruto-quiz/spec.md` (the shared module).
+How the quizzes are built: the shared quiz module and screen, the question shape, how a play is drawn, the score bands, the saved play, how to add a title and how to add a question. Terms follow `GLOSSARY.md`; a quiz is a **Quiz**, not a **Game**. The specs are `.scratch/how-well-do-you-know/spec.md` (the first title) and `.scratch/naruto-quiz/spec.md` (Naruto and the shared module).
 
 One quiz module plays every title, and one screen shows it. A title is data: its questions, its glossary and its score bands.
 
@@ -11,6 +11,7 @@ One quiz module plays every title, and one screen shows it. A title is data: its
 
 | Title | Module | Route |
 | --- | --- | --- |
+| คุณรู้จัก Naruto ดีแค่ไหน | `src/games/naruto/` | `/naruto` |
 | คุณรู้จัก Prince of Tennis ดีแค่ไหน | `src/games/prince-of-tennis/` | `/prince-of-tennis` |
 
 ## Question shape
@@ -90,6 +91,16 @@ A play is its mode, its seed and the answer keys so far. `start(seed, mode?)` an
 
 Each title's `bands.ts` holds its bands, lowest first. `bandFor(bands, score)` returns the one band that holds the score.
 
+**Naruto** (`SCORE_BANDS` in `src/games/naruto/bands.ts`), as ninja ranks:
+
+| Score | Title | Line |
+| --- | --- | --- |
+| 0–4 | นักเรียนโรงเรียนนินจา | ยังสอบคาถาแยกร่างไม่ผ่านเลย กลับไปทบทวนกับอิรุกะเซนเซก่อนนะ |
+| 5–8 | เกะนินหน้าใหม่ | ได้ผ้าคาดหัวมาแล้ว แต่ภารกิจที่ได้ยังเป็นแค่ตามหาแมวหาย |
+| 9–12 | จูนิน | ผ่านการสอบจูนินมาได้ พร้อมนำทีมออกภารกิจของตัวเองแล้ว |
+| 13–16 | โจนินฝีมือฉกาจ | ฝีมือระดับนี้ พร้อมรับเกะนินมาปั้นเป็นทีมของตัวเองแบบคาคาชิแล้ว |
+| 17–20 | โฮคาเงะ | ทั้งหมู่บ้านยอมรับคุณแล้ว ใบหน้าของคุณควรไปอยู่บนผาโฮคาเงะ |
+
 **Prince of Tennis** (`SCORE_BANDS` in `src/games/prince-of-tennis/bands.ts`):
 
 | Score | Title | Line |
@@ -104,7 +115,7 @@ Each title's `bands.ts` holds its bands, lowest first. `bandFor(bands, score)` r
 
 The same rules as the games' saved play (`play-screen.md`), in the quiz's own `record.ts`, because `src/lib/play-record.ts` is typed to the game `Engine`.
 
-- **The record.** `{ v: 1, mode?, seed, answerKeys }`, with `mode` left out for a standard play so older records still restore, in localStorage under `quizRecordKey(quiz)`: `knowyou:play:<id>`, such as `knowyou:play:prince-of-tennis`. Each title keeps its own saved play.
+- **The record.** `{ v: 1, mode?, seed, answerKeys }`, with `mode` left out for a standard play so older records still restore, in localStorage under `quizRecordKey(quiz)`: `knowyou:play:<id>`, such as `knowyou:play:prince-of-tennis` or `knowyou:play:naruto`. Each title keeps its own saved play.
 - **When it is saved.** After every answer. A play with no answers is not saved.
 - **When it is cleared.** On เริ่มเลย, on เล่นอีกครั้ง, on a confirmed reset, and when a record fails to restore.
 - **Restoring.** `restoreQuiz` starts the play from the seed and replays each key. A record that isn't JSON, has another `v`, an unknown mode, a malformed seed or keys, holds a key the play rejects, or holds more answers than the play asks is dropped silently, and the intro shows. A restored play opens at the next question, past the last reveal.
@@ -133,6 +144,7 @@ The same rules as the games' saved play (`play-screen.md`), in the quiz's own `r
 ## How to add a question
 
 1. Find a page that confirms the answer, such as the series wiki or Wikipedia. Keep to the title's scope:
+   - Naruto: Naruto and Naruto Shippuden, up to the end of the Fourth Shinobi World War. No Boruto, films or games. Glosses cover jutsu, dōjutsu, swords and elements.
    - Prince of Tennis: the manga, the TV anime and the National Tournament OVAs, up to the end of the National Tournament. Ask only about moves and special moves, schools, or story events. Don't ask about birthdays, numbers, scores or personal trivia (family, pets, hobbies, food). The research brief is `prince-of-tennis-quiz-format.md`.
 2. Add an object to the title's `questions.json` with a new, stable `id`. Never reuse or rename an id, because a saved play names its questions by id.
 3. Write the prompt, the answer and three plausible decoys in the spellings Thai fans use.

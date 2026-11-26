@@ -3,6 +3,7 @@ import { SoundToggle } from "@/components/sound-toggle";
 
 const GAMES = [
   { href: "/anime-age", title: "ทายอายุจากการ์ตูน", blurb: "ตอบว่าคุณรู้จักการ์ตูนเรื่องไหนบ้าง แล้วเกมจะทายอายุคุณ", ready: true },
+  { href: "/naruto", title: "คุณรู้จัก Naruto ดีแค่ไหน", blurb: "ตอบคำถาม 20 ข้อ แล้วดูว่าคุณเป็นนินจาระดับไหน", ready: true },
   { href: "/prince-of-tennis", title: "คุณรู้จัก Prince of Tennis ดีแค่ไหน", blurb: "ตอบคำถาม 20 ข้อ แล้วดูว่าคุณเป็นแฟนระดับไหน", ready: true },
   { href: "/province", title: "ทายจังหวัด", blurb: "ตอบเรื่องภาษา อาหาร และประเพณีแถวบ้าน แล้วเกมจะทายจังหวัดคุณ", ready: true },
   { href: "/university", title: "ทายมหาวิทยาลัย", blurb: "ตอบเรื่องรับน้อง การเดินทาง ที่กิน และงานในมหาวิทยาลัย แล้วเกมจะทายว่าคุณเรียนที่ไหน", ready: true },
