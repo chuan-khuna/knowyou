@@ -97,7 +97,8 @@
     "kanji": "縮地法",
     "english": "Ground-Shrinking Method"
   },
-  "ผู้เฝ้าประตูเฮคาตอนไคร์": {
+  "ทวารบาลเฮคาตอนไคร์": {
+    "aka": ["อสูรร้อยหัตถ์"],
     "romaji": "Hekatonkeiru no Monban",
     "kanji": "百腕巨人の門番",
     "english": "Gatekeeper of Hecatoncheires"
@@ -143,12 +144,12 @@
     "kanji": "白龍",
     "english": "White Dragon"
   },
-  "ดอกไม้ไฟดวงดาว": {
+  "พลุดวงดาว": {
     "romaji": "Hoshi Hanabi",
     "kanji": "星花火",
     "english": "Star Fireworks"
   },
-  "ลูกถล่มปฐพีแบบพุ่งตัว": {
+  "แดชถล่มปฐพี": {
     "romaji": "Dasshu Hadōkyū",
     "kanji": "ダッシュ波動球",
     "english": "Dash Hadōkyū"
@@ -218,7 +219,7 @@
     "kanji": "空蝉",
     "english": "Cicada"
   },
-  "ยิงเสาเหล็ก (เท็ตจูอาเตะ)": {
+  "ลูกอัดเสาเหล็ก": {
     "romaji": "Tetchū Ate",
     "kanji": "鉄柱当て",
     "english": "Iron Pole Strike"
