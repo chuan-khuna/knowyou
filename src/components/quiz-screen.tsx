@@ -247,7 +247,7 @@ export function QuizScreen({ quiz, title, intro }: QuizScreenProps) {
   return (
     <Shell status={status(current.question.number)} onReset={playAgain}>
       <QuestionHeading card={current.question} />
-      <ol className="mt-8 grid gap-4">
+      <ol className="mt-6 grid gap-4">
         {current.question.options.map((option, i) => (
           <li key={option.key}>
             <button type="button" onClick={() => choose(option.key)} className="stock option">
@@ -429,7 +429,10 @@ function SeedChip({
   }, [copied]);
   const copy = () => {
     navigator.clipboard?.writeText(link ?? code).then(
-      () => setCopied(true),
+      () => {
+        setCopied(true);
+        sound.copy();
+      },
       () => {}, // Clipboard can be blocked; the code is still on screen to copy by hand.
     );
   };
@@ -488,7 +491,7 @@ function QuestionHeading({ card }: { card: QuizCard }) {
           ระดับ{TIER_LABELS[card.tier]}
         </span>
       </p>
-      <h2 key={card.id} className="mt-2 max-w-none text-2xl">
+      <h2 key={card.id} className="mt-3 max-w-none text-xl text-pretty">
         {card.prompt}
       </h2>
       {card.terms.length > 0 ? (

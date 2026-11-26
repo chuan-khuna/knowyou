@@ -33,6 +33,7 @@ Sound reinforces visible feedback, never replaces it. Every sound below has a vi
 | The real-age stepper | `sound.step` | `progress-step` |
 | A game card on the home page | `sound.openGame` | `open` |
 | Picking a real province | `sound.pickProvince` | `select` |
+| Copying a quiz seed code or share link, once the clipboard takes it | `sound.copy` | `copy` |
 
 ## Mute and the first gesture
 
