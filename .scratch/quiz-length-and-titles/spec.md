@@ -1,6 +1,6 @@
 # Spec: Dragon Ball and Reborn quizzes, any play length, and a reveal switch
 
-Status: ready-for-agent
+Status: done
 
 Terms follow `GLOSSARY.md`. The quiz module and screen are described in `docs/documents/quiz.md`. `.scratch/naruto-quiz/spec.md` set the precedent for adding a title, and `.scratch/quiz-no-reveal/spec.md` held the answers until the result.
 
@@ -91,3 +91,7 @@ Taken without asking, per `CLAUDE.md`. Veto any of these by editing this list.
 - The fan titles and lines in the tables above. Change the wording freely.
 - Home blurbs drop the fixed 20: "ตอบคำถามแล้วดูว่าคุณเป็นนักสู้ระดับไหน" and "ตอบคำถามแล้วดูว่าคุณอยู่ระดับไหนในแฟมิลี่", and the existing two lose "20 ข้อ" the same way.
 - The banks ship as they are. The Thai-name sources and hand-over notes stay in the user's folders and are not copied into the repo.
+
+## Comments
+
+- 2026-11-26: Committed to main as c37b3e1.
