@@ -118,5 +118,145 @@
     "romaji": "Entaku Shotto",
     "kanji": "円卓ショット",
     "english": "Round Table Shot"
+  },
+  "เสิร์ฟหายตัว": {
+    "romaji": "Kieru Sābu",
+    "kanji": "消えるサーブ",
+    "english": "Disappearing Serve"
+  },
+  "นกฟีนิกซ์หวนกลับ": {
+    "romaji": "Hōō Gaeshi",
+    "kanji": "鳳凰返し",
+    "english": "Phoenix Return"
+  },
+  "พิฆาตกิเลน": {
+    "romaji": "Kirin Otoshi",
+    "kanji": "麒麟落とし",
+    "english": "Qilin Drop"
+  },
+  "มังกรขาว": {
+    "romaji": "Hakuryū",
+    "kanji": "白龍",
+    "english": "White Dragon"
+  },
+  "ดอกไม้ไฟดวงดาว": {
+    "romaji": "Hoshi Hanabi",
+    "kanji": "星花火",
+    "english": "Star Fireworks"
+  },
+  "แดชฮาโดคิว": {
+    "romaji": "Dasshu Hadōkyū",
+    "kanji": "ダッシュ波動球",
+    "english": "Dash Hadōkyū"
+  },
+  "ฮาโดคิวสองมือ": {
+    "romaji": "Ryōte Hadōkyū",
+    "kanji": "両手波動球",
+    "english": "Two-Handed Hadōkyū"
+  },
+  "จัมพ์ฮาโดคิว": {
+    "romaji": "Janpu Hadōkyū",
+    "kanji": "ジャンプ波動球",
+    "english": "Jump Hadōkyū"
+  },
+  "ไฟ (คา)": {
+    "romaji": "Ka",
+    "kanji": "火",
+    "english": "Fire"
+  },
+  "ลม (ฟู)": {
+    "romaji": "Fū",
+    "kanji": "風",
+    "english": "Wind"
+  },
+  "ป่า (ริน)": {
+    "romaji": "Rin",
+    "kanji": "林",
+    "english": "Forest"
+  },
+  "ภูเขา (ซัน)": {
+    "romaji": "Zan",
+    "kanji": "山",
+    "english": "Mountain"
+  },
+  "สายฟ้า (ไร)": {
+    "romaji": "Rai",
+    "kanji": "雷",
+    "english": "Lightning"
+  },
+  "เงา (อิน)": {
+    "romaji": "In",
+    "kanji": "陰",
+    "english": "Shadow"
+  },
+  "เสิร์ฟล่องหน": {
+    "romaji": "Mienai Sābu",
+    "kanji": "見えないサーブ",
+    "english": "Invisible Serve"
+  },
+  "อินไซต์": {
+    "romaji": "Insaito",
+    "kanji": "眼力",
+    "english": "Insight"
+  },
+  "ปืนใหญ่พยัคฆ์ (โคโฮ)": {
+    "romaji": "Kohō",
+    "kanji": "虎砲",
+    "english": "Tiger Cannon"
+  },
+  "สเต็ปตราคิคุมารุ": {
+    "romaji": "Kikumaru-jirushi no Suteppu",
+    "kanji": "菊丸印のステップ",
+    "english": "Seal Step"
+  },
+  "อุตสึเซมิ": {
+    "romaji": "Utsusemi",
+    "kanji": "空蝉",
+    "english": "Cicada"
+  },
+  "ยิงเสาเหล็ก (เท็ตจูอาเตะ)": {
+    "romaji": "Tetchū Ate",
+    "kanji": "鉄柱当て",
+    "english": "Iron Pole Strike"
+  },
+  "นรกเหลื่อมเวลา (จิซะจิโงคุ)": {
+    "romaji": "Jisa Jigoku",
+    "kanji": "時間差地獄",
+    "english": "Temporal Difference Hell"
+  },
+  "ออร่าสัตว์ร้าย": {
+    "romaji": "Mōjū no Ōra",
+    "kanji": "猛獣のオーラ",
+    "english": "Mōjū no Aura"
+  },
+  "อาบาเระจิชิ": {
+    "romaji": "Abare Jishi",
+    "kanji": "あばれ獅子",
+    "english": "Abare Jishi"
+  },
+  "คามิคาคุชิ": {
+    "romaji": "Kamikakushi",
+    "kanji": "神隠し",
+    "english": "Kamikakushi"
+  },
+  "ซูเปอร์ไรซิ่ง": {
+    "romaji": "Chō Raijingu",
+    "kanji": "超ライジング",
+    "english": "Super Rising"
+  },
+  "ลูกสั่น (บุเรดามะ)": {
+    "romaji": "Bure Dama",
+    "kanji": "ブレ球",
+    "english": "Blur Ball"
+  },
+  "นิโทริว": {
+    "romaji": "Nitōryū",
+    "kanji": "二刀流",
+    "english": "Nitōryū"
+  },
+  "โหมดปีศาจ": {
+    "romaji": "Akuma-ka",
+    "kanji": "悪魔化",
+    "english": "Devil Mode"
   }
 }
