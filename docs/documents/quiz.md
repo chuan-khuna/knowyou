@@ -1,12 +1,12 @@
 # Quiz
 
-How the quizzes are built: the shared quiz module and screen, the question shape, how a play is drawn, the score bands, the saved play, how to add a title and how to add a question. Terms follow `GLOSSARY.md`; a quiz is a **Quiz**, not a **Game**. The specs are `.scratch/how-well-do-you-know/spec.md` (the first title) and `.scratch/naruto-quiz/spec.md` (Naruto and the shared module).
+How the quizzes are built: the shared quiz module and screen, the question shape, how a play is drawn, the score bands, the saved play, how to add a title and how to add a question. Terms follow `GLOSSARY.md`; a quiz is a **Quiz**, not a **Game**. The specs are `.scratch/how-well-do-you-know/spec.md` (the first title), `.scratch/naruto-quiz/spec.md` (Naruto and the shared module) and `.scratch/quiz-no-reveal/spec.md` (answers held until the result).
 
 One quiz module plays every title, and one screen shows it. A title is data: its questions, its glossary and its score bands.
 
 - **Shared module.** `src/games/quiz/`, pure TypeScript with no React: the question shape, the JSON parsers, the rules, the play, the score-band lookup and the saved play. Code outside it imports only from its `index.ts`; `boundaries.test.ts` fails on a deeper import.
 - **Title modules.** One folder per title under `src/games/`, holding `questions.json`, `glossary.json`, `bands.ts` and an `index.ts` that exports the title's quiz. Each has its own `boundaries.test.ts`.
-- **Shared screen.** `src/components/quiz-screen.tsx`, the intro, question, reveal and result screens. `QuizScreen` takes `{ quiz, title, intro }`. It reuses the shared look (`Shell`, `BigButton`, the `stock` and `option` classes, the sound toggle) but not the shared play screen, which is built around a confidence meter and one guess.
+- **Shared screen.** `src/components/quiz-screen.tsx`, the intro, question and result screens. `QuizScreen` takes `{ quiz, title, intro }`. It reuses the shared look (`Shell`, `BigButton`, the `stock` and `option` classes, the sound toggle) but not the shared play screen, which is built around a confidence meter and one guess.
 - **Routes.** One static route per title. `page.tsx` holds the metadata and renders a small client component that passes the title's quiz, title and intro to `QuizScreen`. The quiz holds functions, which a server page can't pass to a client component.
 
 | Title | Module | Route |
@@ -26,7 +26,7 @@ interface QuizQuestion {
   readonly prompt: string;   // Thai
   readonly answer: string;   // the right option's label
   readonly decoys: readonly [string, string, string];
-  readonly note?: string;    // one line shown after the answer
+  readonly note?: string;    // one line shown with the answer in the result
   readonly source: string;   // https page that confirms the answer
   readonly evidence?: string; // a short quote from source, for review only
 }
@@ -85,7 +85,7 @@ A play is its mode, its seed and the answer keys so far. `start(seed, mode?)` an
 
 `answer` throws on a key that isn't one of the current question's options, and on a finished play.
 
-**The reveal.** After an answer the screen shows right or wrong before the next question. The screen keeps one number, `seen`: how many answers the player has moved past. While `seen` is less than `play.answered.length`, the last answer is on show; ข้อต่อไป or Enter sets `seen` to the log's length. Nothing else marks the reveal, so it can't disagree with the play.
+**No answer mid-play.** An answer goes straight to the next question. Nothing on screen or in the sound says whether it was right until the result, which shows every answer at once.
 
 ## Score bands
 
@@ -118,16 +118,15 @@ The same rules as the games' saved play (`play-screen.md`), in the quiz's own `r
 - **The record.** `{ v: 1, mode?, seed, answerKeys }`, with `mode` left out for a standard play so older records still restore, in localStorage under `quizRecordKey(quiz)`: `knowyou:play:<id>`, such as `knowyou:play:prince-of-tennis` or `knowyou:play:naruto`. Each title keeps its own saved play.
 - **When it is saved.** After every answer. A play with no answers is not saved.
 - **When it is cleared.** On เริ่มเลย, on เล่นอีกครั้ง, on a confirmed reset, and when a record fails to restore.
-- **Restoring.** `restoreQuiz` starts the play from the seed and replays each key. A record that isn't JSON, has another `v`, an unknown mode, a malformed seed or keys, holds a key the play rejects, or holds more answers than the play asks is dropped silently, and the intro shows. A restored play opens at the next question, past the last reveal.
+- **Restoring.** `restoreQuiz` starts the play from the seed and replays each key. A record that isn't JSON, has another `v`, an unknown mode, a malformed seed or keys, holds a key the play rejects, or holds more answers than the play asks is dropped silently, and the intro shows. A restored play opens at the next question.
 
 ## Screens and sound
 
 - **Intro.** The title, the title's intro lines, เริ่มเลย (or Enter) for a standard play, and ตอบทุกข้อ (N ข้อ) for an `all` play. Sound `start`.
-- **Question.** ข้อ N/total and the running score in the top strip, the tier, the prompt, and four options. Tap or press 1 to 4. Sound `right` or `wrong` on the answer.
-- **Reveal.** The options lock. A check and ถูกต้อง!, or a cross and the right answer, in colour, icon and text. The right option is tagged คำตอบที่ถูก, a wrong choice is tagged คุณเลือก, and the note shows when there is one. ข้อต่อไป (ดูคะแนน after the last question) or Enter moves on.
+- **Question.** ข้อ N/total in the top strip, with no running score, then the tier, the prompt, and four options. Tap or press 1 to 4. Sound `answer`, which doesn't say right or wrong, and the next question shows. After the last answer the result opens.
 - **Glosses.** Under an option with a gloss, two lines: `Romaji, 漢字` then the English name. The same shows under the right answer in เฉลย.
-- **Reset.** The question and reveal screens pass `playAgain` to `Shell` as `onReset`, so the top strip shows the reset button (`play-screen.md`). A confirmed reset starts a new play in the same mode at question 1.
-- **Result.** The score out of `total`, the band title and line (standard only), every question with its right answer and, on a miss, the player's answer, and เล่นอีกครั้ง, which starts a new play in the same mode. Sound `guess` when it opens.
+- **Reset.** The question screen passes `playAgain` to `Shell` as `onReset`, so the top strip shows the reset button (`play-screen.md`). A confirmed reset starts a new play in the same mode at question 1.
+- **Result.** The score out of `total`, the band title and line (standard only), then เฉลย: every question with a check or cross, its right answer, the player's answer on a miss, and the note when there is one. เล่นอีกครั้ง starts a new play in the same mode. Sound `guess` when it opens.
 
 ## How to add a title
 
@@ -149,5 +148,5 @@ The same rules as the games' saved play (`play-screen.md`), in the quiz's own `r
 2. Add an object to the title's `questions.json` with a new, stable `id`. Never reuse or rename an id, because a saved play names its questions by id.
 3. Write the prompt, the answer and three plausible decoys in the spellings Thai fans use.
 4. If an option is a Japanese name, or a Thai translation of one, add its `romaji`, `kanji` and `english` names to the title's `glossary.json`, keyed by the exact label.
-5. Set the tier, the page's URL as `source`, and a short quote from that page as `evidence`. Add a one-line `note` if it makes the reveal better.
+5. Set the tier, the page's URL as `source`, and a short quote from that page as `evidence`. Add a one-line `note` if it makes the เฉลย better.
 6. Run `bun test src/games/<id>`.

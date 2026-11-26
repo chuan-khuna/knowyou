@@ -32,14 +32,10 @@ const TIER_LABELS: Record<Tier, string> = {
   "very-hard": "ยากมาก",
 };
 
-/**
- * `seen` counts the answers the player has moved past. While it trails the
- * play's answer log, the last answer is on show with its right or wrong.
- */
 type Screen =
   | { readonly kind: "checking" }
   | { readonly kind: "intro" }
-  | { readonly kind: "playing"; readonly play: QuizPlay; readonly seen: number };
+  | { readonly kind: "playing"; readonly play: QuizPlay };
 
 const randomSeed = () => crypto.getRandomValues(new Uint32Array(1))[0]!;
 
@@ -61,8 +57,9 @@ function writeStored(key: string, value: string | null): void {
 }
 
 /**
- * The screen every quiz title shares: intro, one question at a time with its
- * right or wrong, then the score and fan title. A play with at least one
+ * The screen every quiz title shares: intro, one question at a time, then the
+ * score, the fan title and every answer. Nothing says whether an answer was
+ * right until the result, so the result is the reveal. A play with at least one
  * answer is kept in localStorage under the title's key until the player
  * starts again, so a refresh doesn't lose it.
  */
@@ -73,7 +70,7 @@ export function QuizScreen({ quiz, title, intro }: QuizScreenProps) {
   useEffect(() => {
     const play = restoreQuiz(quiz, readStored(storageKey));
     if (play === null) writeStored(storageKey, null);
-    setScreen(play === null ? { kind: "intro" } : { kind: "playing", play, seen: play.answered.length });
+    setScreen(play === null ? { kind: "intro" } : { kind: "playing", play });
   }, [quiz, storageKey]);
 
   useEffect(() => {
@@ -86,7 +83,7 @@ export function QuizScreen({ quiz, title, intro }: QuizScreenProps) {
     (mode: QuizMode) => {
       sound.start();
       writeStored(storageKey, null);
-      setScreen({ kind: "playing", play: quiz.start(randomSeed(), mode), seen: 0 });
+      setScreen({ kind: "playing", play: quiz.start(randomSeed(), mode) });
     },
     [quiz, storageKey],
   );
@@ -95,39 +92,32 @@ export function QuizScreen({ quiz, title, intro }: QuizScreenProps) {
   const playAgain = useCallback(() => startIn(screen.kind === "playing" ? screen.play.mode : "standard"), [startIn, screen]);
 
   const play = screen.kind === "playing" ? screen.play : null;
-  const revealing = screen.kind === "playing" && screen.seen < screen.play.answered.length;
 
   const choose = useCallback(
     (key: string) => {
-      if (play?.phase !== "asking" || revealing) return;
+      if (play?.phase !== "asking") return;
       const next = quiz.answer(play, key);
-      if (next.answered.at(-1)!.correct) sound.right();
-      else sound.wrong();
-      setScreen({ kind: "playing", play: next, seen: play.answered.length });
+      if (next.phase === "finished") sound.guess();
+      else sound.answer();
+      setScreen({ kind: "playing", play: next });
     },
-    [quiz, play, revealing],
+    [quiz, play],
   );
-
-  const advance = useCallback(() => {
-    if (!play || !revealing) return;
-    if (play.phase === "finished") sound.guess();
-    setScreen({ kind: "playing", play, seen: play.answered.length });
-  }, [play, revealing]);
 
   useEffect(() => {
     const onKey = (event: KeyboardEvent) => {
       if (event.altKey || event.ctrlKey || event.metaKey) return;
-      if (event.key === "Enter" && (screen.kind === "intro" || revealing)) {
+      if (event.key === "Enter" && screen.kind === "intro") {
         event.preventDefault();
-        return screen.kind === "intro" ? start() : advance();
+        return start();
       }
-      if (play?.phase !== "asking" || revealing) return;
+      if (play?.phase !== "asking") return;
       const option = play.question.options[Number(event.key) - 1];
       if (option) choose(option.key);
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [screen.kind, play, revealing, start, choose, advance]);
+  }, [screen.kind, play, start, choose]);
 
   if (screen.kind === "checking") return <Shell>{null}</Shell>;
 
@@ -147,20 +137,6 @@ export function QuizScreen({ quiz, title, intro }: QuizScreenProps) {
 
   const current = screen.play;
 
-  if (revealing) {
-    const last = current.answered.at(-1)!;
-    return (
-      <Shell status={<Progress number={last.question.number} total={current.total} score={current.score} />} onReset={playAgain}>
-        <QuestionHeading card={last.question} />
-        <Reveal answer={last} />
-        <BigButton onClick={advance} autoFocus>
-          {current.phase === "finished" ? "ดูคะแนน" : "ข้อต่อไป"}
-        </BigButton>
-        <p className="mt-4 hidden text-center text-sm text-muted sm:block">กด Enter เพื่อไปต่อ</p>
-      </Shell>
-    );
-  }
-
   if (current.phase === "finished") {
     return (
       <Shell>
@@ -170,7 +146,7 @@ export function QuizScreen({ quiz, title, intro }: QuizScreenProps) {
   }
 
   return (
-    <Shell status={<Progress number={current.question.number} total={current.total} score={current.score} />} onReset={playAgain}>
+    <Shell status={<Progress number={current.question.number} total={current.total} />} onReset={playAgain}>
       <QuestionHeading card={current.question} />
       <ol className="mt-8 grid gap-4">
         {current.question.options.map((option, i) => (
@@ -187,13 +163,10 @@ export function QuizScreen({ quiz, title, intro }: QuizScreenProps) {
   );
 }
 
-function Progress({ number, total, score }: { number: number; total: number; score: number }) {
+function Progress({ number, total }: { number: number; total: number }) {
   return (
-    <span className="num flex gap-3">
-      <span>
-        ข้อ {number}/{total}
-      </span>
-      <span>ได้ {score} คะแนน</span>
+    <span className="num">
+      ข้อ {number}/{total}
     </span>
   );
 }
@@ -205,45 +178,6 @@ function QuestionHeading({ card }: { card: QuizCard }) {
       <h2 key={card.id} className="mt-2 max-w-none text-2xl">
         {card.prompt}
       </h2>
-    </>
-  );
-}
-
-function Reveal({ answer }: { answer: AnsweredQuizQuestion }) {
-  const rightLabel = answer.question.options.find((o) => o.key === answer.rightKey)!.label;
-  return (
-    <>
-      <p className={`verdict mt-6 ${answer.correct ? "verdict--right" : "verdict--wrong"}`} role="status">
-        <Mark correct={answer.correct} />
-        {answer.correct ? "ถูกต้อง!" : `ยังไม่ถูก คำตอบคือ ${rightLabel}`}
-      </p>
-      <ol className="mt-6 grid gap-4">
-        {answer.question.options.map((option, i) => {
-          const right = option.key === answer.rightKey;
-          const chosen = option.key === answer.chosenKey;
-          const tone = right ? "option--right" : chosen ? "option--wrong" : "option--faded";
-          return (
-            <li key={option.key}>
-              <div className={`stock option option--locked ${tone}`}>
-                <kbd className="option-key">{i + 1}</kbd>
-                <OptionLabel option={option} className="flex-1" />
-                {right ? (
-                  <span className="option-tag">
-                    <Mark correct />
-                    คำตอบที่ถูก
-                  </span>
-                ) : chosen ? (
-                  <span className="option-tag">
-                    <Mark correct={false} />
-                    คุณเลือก
-                  </span>
-                ) : null}
-              </div>
-            </li>
-          );
-        })}
-      </ol>
-      {answer.note ? <p className="cue mt-6 text-lg">{answer.note}</p> : null}
     </>
   );
 }
@@ -324,6 +258,7 @@ function ReviewItem({ answer }: { answer: AnsweredQuizQuestion }) {
         <span className="block font-semibold">{right.label}</span>
         {right.gloss ? <GlossLines gloss={right.gloss} /> : null}
         {answer.correct ? null : <span className="block text-sm">คุณตอบ: {option(answer.chosenKey).label}</span>}
+        {answer.note ? <span className="mt-1 block text-sm text-muted">{answer.note}</span> : null}
       </span>
     </li>
   );

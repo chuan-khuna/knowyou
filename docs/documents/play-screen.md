@@ -27,7 +27,7 @@ A play survives a page refresh. The rules live in `src/lib/play-record.ts`, a pu
 
 - **Where it shows.** The asking screen passes `start`, the same start as เริ่มเลย and เล่นอีกครั้ง. The intro and result screens pass nothing, so they have no reset.
 - **Two taps.** Idle, it is an icon button named เริ่มใหม่ with a counter-clockwise arrow. The first tap arms it into เริ่มใหม่? in the accent, at the same 44px height. A second tap within 3 seconds calls `onReset`. The timer, or Escape, disarms it. Answering a question does not disarm it.
-- **Keyboard.** Both states are one `<button>`, so focus stays on it and a second Enter or Space confirms. The button keeps Enter from reaching the window, where a quiz reveal reads it as ข้อต่อไป.
+- **Keyboard.** Both states are one `<button>`, so focus stays on it and a second Enter or Space confirms.
 - **Narrow phones.** While armed, the status beside it (ข้อ N) is hidden, so the wider button never pushes the sound toggle off a 320px screen.
 - **What a reset does.** `start` plays the start sound, clears the saved play, and starts a new play at question 1 with a new seed. The new play has no answers, so a refresh straight after it shows the intro.
 

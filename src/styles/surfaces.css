@@ -58,14 +58,6 @@
     font-size: clamp(2rem, 8vw, 3rem);
   }
 
-  .verdict {
-    display: flex;
-    align-items: center;
-    gap: var(--space-sm);
-    font-family: var(--font-display);
-    font-size: var(--text-xl);
-    font-weight: 600;
-  }
   .verdict--right {
     color: var(--color-mint-deep);
   }

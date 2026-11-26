@@ -39,10 +39,6 @@ export function ResetButton({ onReset }: { onReset: () => void }) {
       aria-label={state === "armed" ? undefined : "เริ่มใหม่"}
       title="เริ่มใหม่"
       onClick={onClick}
-      // The quiz's reveal screen takes Enter as ข้อต่อไป on the window; keep it on this button.
-      onKeyDown={(event) => {
-        if (event.key === "Enter") event.stopPropagation();
-      }}
     >
       {state === "armed" ? (
         "เริ่มใหม่?"
