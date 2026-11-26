@@ -1,21 +1,31 @@
 /**
- * The original names shown under an option whose label is a Japanese technique
- * name, or a Thai translation of one. Keyed by the exact option label, so one
- * entry covers that label wherever it appears, as an answer or a decoy.
+ * The original names shown under an option whose label is a Japanese name, or
+ * a Thai translation of one. Keyed by the exact option label, so one entry
+ * covers that label wherever it appears, as an answer or a decoy.
  */
 export interface Gloss {
+  /**
+   * Other Thai names fans know the same thing by, such as a TV dub's name
+   * where the label follows the manga. Shown in brackets after the label.
+   */
+  readonly aka?: readonly string[];
   /** Hepburn romanisation. */
   readonly romaji: string;
   readonly kanji: string;
   readonly english: string;
 }
 
-/** Reads a title's glossary.json. Throws on an entry without all three names, listing every one. */
+/** Reads a title's glossary.json. Throws on an entry without all three names, or with an aka that isn't a list of strings, listing every one. */
 export function parseGlossary(raw: unknown): Readonly<Record<string, Gloss>> {
   if (typeof raw !== "object" || raw === null || Array.isArray(raw)) throw new Error("glossary.json: expected an object keyed by option label");
-  const issues = Object.entries(raw)
-    .filter(([, g]) => !["romaji", "kanji", "english"].every((field) => typeof (g as Record<string, unknown>)?.[field] === "string"))
-    .map(([label]) => `${label}: needs romaji, kanji and english`);
+  const issues = Object.entries(raw).flatMap(([label, g]) => {
+    const entry = g as Record<string, unknown> | null;
+    const found: string[] = [];
+    if (!["romaji", "kanji", "english"].every((field) => typeof entry?.[field] === "string")) found.push(`${label}: needs romaji, kanji and english`);
+    const aka = entry?.aka;
+    if (aka !== undefined && !(Array.isArray(aka) && aka.every((name) => typeof name === "string"))) found.push(`${label}: aka must be a list of names`);
+    return found;
+  });
   if (issues.length > 0) throw new Error(`glossary.json:\n  ${issues.join("\n  ")}`);
   return raw as Readonly<Record<string, Gloss>>;
 }

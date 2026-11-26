@@ -1,12 +1,16 @@
 "use client";
 
-import { useCallback, useEffect, useState, type ReactNode } from "react";
+import { useCallback, useEffect, useState, type Dispatch, type ReactNode, type SetStateAction } from "react";
 import {
   MIN_QUESTIONS_PER_PLAY,
   QUESTIONS_PER_PLAY,
+  SEED_CODE_LENGTH,
   encodeQuizRecord,
   quizRecordKey,
+  randomSeed,
   restoreQuiz,
+  seedCode,
+  seedFromCode,
   type AnsweredQuizQuestion,
   type FinishedQuizPlay,
   type Gloss,
@@ -44,7 +48,9 @@ type Screen =
   | { readonly kind: "intro" }
   | { readonly kind: "playing"; readonly play: QuizPlay; readonly seen: number };
 
-const randomSeed = () => crypto.getRandomValues(new Uint32Array(1))[0]!;
+/** The intro's choice: one of the preset counts, or ขั้นสูง with its own count and seed code. */
+const PRESET_COUNTS = [QUESTIONS_PER_PLAY, 30] as const;
+type Setting = (typeof PRESET_COUNTS)[number] | "advanced";
 
 function readStored(key: string): string | null {
   try {
@@ -73,12 +79,16 @@ function writeStored(key: string, value: string | null): void {
  */
 export function QuizScreen({ quiz, title, intro }: QuizScreenProps) {
   const [screen, setScreen] = useState<Screen>({ kind: "checking" });
+  const [setting, setSetting] = useState<Setting>(QUESTIONS_PER_PLAY);
   const [countText, setCountText] = useState(String(QUESTIONS_PER_PLAY));
+  const [codeText, setCodeText] = useState("");
   const revealOn = useRevealOn();
   const storageKey = quizRecordKey(quiz);
 
-  const count = Number(countText);
-  const countValid = countText !== "" && Number.isInteger(count) && count >= MIN_QUESTIONS_PER_PLAY && count <= quiz.size;
+  // A preset is a count with a random seed; ขั้นสูง takes both from its fields.
+  const advanced = setting === "advanced";
+  const count = advanced ? Number(countText) : setting;
+  const countValid = !advanced || (countText !== "" && Number.isInteger(count) && count >= MIN_QUESTIONS_PER_PLAY && count <= quiz.size);
 
   useEffect(() => {
     const play = restoreQuiz(quiz, readStored(storageKey));
@@ -101,16 +111,17 @@ export function QuizScreen({ quiz, title, intro }: QuizScreenProps) {
   }, [revealOn, screen]);
 
   const startWith = useCallback(
-    (n: number) => {
+    (n: number, seed: number = randomSeed()) => {
       sound.start();
       writeStored(storageKey, null);
-      setScreen({ kind: "playing", play: quiz.start(randomSeed(), n), seen: 0 });
+      setScreen({ kind: "playing", play: quiz.start(seed, n), seen: 0 });
     },
     [quiz, storageKey],
   );
+  // An empty seed code field means a random play; the field only ever holds a valid code or nothing.
   const start = useCallback(() => {
-    if (countValid) startWith(count);
-  }, [countValid, count, startWith]);
+    if (countValid) startWith(count, (advanced ? seedFromCode(codeText) : null) ?? undefined);
+  }, [countValid, count, advanced, codeText, startWith]);
   const playAgain = useCallback(
     () => startWith(screen.kind === "playing" ? screen.play.total : QUESTIONS_PER_PLAY),
     [startWith, screen],
@@ -166,13 +177,19 @@ export function QuizScreen({ quiz, title, intro }: QuizScreenProps) {
       <Shell>
         <h1 className="mt-10 text-3xl sm:text-[2.75rem]">{title}</h1>
         <div className="mt-5 space-y-3 text-lg">{intro}</div>
-        <CountPicker size={quiz.size} text={countText} valid={countValid} onChange={setCountText} />
-        <label className="mt-6 flex cursor-pointer items-center gap-3 text-lg">
-          <input type="checkbox" className="check" checked={revealOn} onChange={(event) => setRevealOn(event.target.checked)} />
-          <span>
-            เฉลยทุกข้อ
+        <SettingPicker setting={setting} onChange={setSetting} />
+        {advanced ? (
+          <div className="mt-6 grid gap-8 sm:grid-cols-2">
+            <CountField size={quiz.size} text={countText} valid={countValid} onChange={setCountText} />
+            <SeedCodeField text={codeText} onChange={setCodeText} />
+          </div>
+        ) : null}
+        <label className="toggle-row mt-8">
+          <span className="flex-1">
+            <span className="block text-lg font-semibold">เฉลยทุกข้อ</span>
             <span className="block text-sm text-muted">ดูว่าถูกหรือผิดทันทีหลังตอบแต่ละข้อ เปิดปิดระหว่างเล่นได้</span>
           </span>
+          <input type="checkbox" role="switch" className="switch" checked={revealOn} onChange={(event) => setRevealOn(event.target.checked)} />
         </label>
         <BigButton onClick={start} disabled={!countValid}>
           เริ่มเลย
@@ -184,6 +201,8 @@ export function QuizScreen({ quiz, title, intro }: QuizScreenProps) {
   const current = screen.play;
   const status = (number: number) => (
     <>
+      {/* A phone's strip has no room for it; the result shows the code on every width. */}
+      <SeedChip code={seedCode(current.seed)} className="hidden sm:inline-flex" />
       <Progress number={number} total={current.total} score={revealOn ? current.score : null} />
       <RevealToggle on={revealOn} />
     </>
@@ -229,32 +248,60 @@ export function QuizScreen({ quiz, title, intro }: QuizScreenProps) {
   );
 }
 
-/** The intro's count: presets for 20, 50 and the whole bank, and a field for any count in range. */
-function CountPicker({ size, text, valid, onChange }: { size: number; text: string; valid: boolean; onChange: (text: string) => void }) {
-  const presets = [
-    { count: QUESTIONS_PER_PLAY, label: `${QUESTIONS_PER_PLAY} ข้อ` },
-    ...(size > 50 ? [{ count: 50, label: "50 ข้อ" }] : []),
-    { count: size, label: `ทั้งหมด (${size})` },
+/** The intro's setting: 20 ข้อ, 30 ข้อ, or ขั้นสูง for any count and a seed code. */
+function SettingPicker({ setting, onChange }: { setting: Setting; onChange: (setting: Setting) => void }) {
+  const choices: { setting: Setting; label: string }[] = [
+    ...PRESET_COUNTS.map((count) => ({ setting: count, label: `${count} ข้อ` })),
+    { setting: "advanced", label: "ขั้นสูง" },
   ];
   return (
     <fieldset className="mt-8">
-      <legend className="font-semibold">จำนวนข้อ</legend>
+      <legend className="font-semibold">ตั้งค่า</legend>
       <div className="mt-3 grid grid-cols-3 gap-3">
-        {presets.map((preset) => (
+        {choices.map((choice) => (
           <button
-            key={preset.count}
+            key={choice.setting}
             type="button"
             className="stock num"
-            aria-pressed={text === String(preset.count)}
-            onClick={() => onChange(String(preset.count))}
+            aria-pressed={setting === choice.setting}
+            onClick={() => onChange(choice.setting)}
           >
-            {preset.label}
+            {choice.label}
           </button>
         ))}
       </div>
-      <label className="mt-4 flex items-center gap-3">
-        <span>หรือกำหนดเอง</span>
+    </fieldset>
+  );
+}
+
+function StepIcon({ plus }: { plus: boolean }) {
+  return (
+    <svg aria-hidden="true" viewBox="0 0 20 20" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
+      <path d="M4 10h12" />
+      {plus ? <path d="M10 4v12" /> : null}
+    </svg>
+  );
+}
+
+/** ขั้นสูง's count: any whole number from the minimum to the bank's size. */
+function CountField({ size, text, valid, onChange }: { size: number; text: string; valid: boolean; onChange: Dispatch<SetStateAction<string>> }) {
+  // A step from an empty or out-of-range field lands back in range.
+  const step = (current: string, by: number) => {
+    const n = Number(current);
+    const from = current === "" || !Number.isFinite(n) ? QUESTIONS_PER_PLAY : Math.round(n);
+    return Math.min(size, Math.max(MIN_QUESTIONS_PER_PLAY, from + by));
+  };
+  return (
+    <div className="min-w-0">
+      <label htmlFor="count-field" className="block font-semibold">
+        จำนวนข้อ
+      </label>
+      <div className="stepper mt-3">
+        <button type="button" aria-label="ลดจำนวนข้อ" onClick={() => onChange((current) => String(step(current, -1)))} disabled={Number(text) <= MIN_QUESTIONS_PER_PLAY}>
+          <StepIcon plus={false} />
+        </button>
         <input
+          id="count-field"
           type="number"
           inputMode="numeric"
           min={MIN_QUESTIONS_PER_PLAY}
@@ -264,14 +311,45 @@ function CountPicker({ size, text, valid, onChange }: { size: number; text: stri
           onChange={(event) => onChange(event.target.value)}
           aria-invalid={!valid}
           aria-describedby="count-range"
-          className="select num w-28"
         />
-        <span>ข้อ</span>
-      </label>
+        <button type="button" aria-label="เพิ่มจำนวนข้อ" onClick={() => onChange((current) => String(step(current, 1)))} disabled={Number(text) >= size}>
+          <StepIcon plus />
+        </button>
+      </div>
       <p id="count-range" className={`mt-2 text-sm ${valid ? "text-muted" : "verdict--wrong"}`}>
-        ใส่ได้ {MIN_QUESTIONS_PER_PLAY} ถึง {size} ข้อ
+        ใส่ได้ {MIN_QUESTIONS_PER_PLAY} ถึง {size} ข้อ (ทั้งหมด {size})
       </p>
-    </fieldset>
+    </div>
+  );
+}
+
+/**
+ * The intro's seed code: up to 6 letters or digits, uppercased as typed, with
+ * any other character dropped. Empty means a random play.
+ */
+function SeedCodeField({ text, onChange }: { text: string; onChange: (text: string) => void }) {
+  return (
+    <div className="min-w-0">
+      <label className="block">
+        <span className="block font-semibold">รหัสชุดคำถาม</span>
+        <input
+          type="text"
+          inputMode="text"
+          autoCapitalize="characters"
+          autoComplete="off"
+          spellCheck={false}
+          maxLength={SEED_CODE_LENGTH}
+          placeholder="สุ่ม"
+          value={text}
+          onChange={(event) => onChange(event.target.value.toUpperCase().replace(/[^0-9A-Z]/g, "").slice(0, SEED_CODE_LENGTH))}
+          aria-describedby="seed-code-hint"
+          className="select seed-code mt-3 w-full text-center uppercase"
+        />
+      </label>
+      <p id="seed-code-hint" className="mt-2 text-sm text-muted">
+        A–Z หรือ 0–9 ไม่เกิน {SEED_CODE_LENGTH} ตัว เว้นว่างเพื่อสุ่ม ใส่รหัสและจำนวนข้อเดียวกับเพื่อนเพื่อเล่นชุดเดียวกัน
+      </p>
+    </div>
   );
 }
 
@@ -291,6 +369,47 @@ function RevealToggle({ on }: { on: boolean }) {
         <circle cx="12" cy="12" r="3" />
         {on ? null : <line x1="3" x2="21" y1="3" y2="21" />}
       </svg>
+    </button>
+  );
+}
+
+/**
+ * The play's seed code as a chip. Double-click, or Enter when focused, copies
+ * it, and the chip says คัดลอกแล้ว for a moment.
+ */
+function SeedChip({ code, className = "" }: { code: string; className?: string }) {
+  const [copied, setCopied] = useState(false);
+  useEffect(() => {
+    if (!copied) return;
+    const timer = setTimeout(() => setCopied(false), 1500);
+    return () => clearTimeout(timer);
+  }, [copied]);
+  const copy = () => {
+    navigator.clipboard?.writeText(code).then(
+      () => setCopied(true),
+      () => {}, // Clipboard can be blocked; the code is still on screen to copy by hand.
+    );
+  };
+  return (
+    <button
+      type="button"
+      className={`seed-chip ${className}`}
+      title="ดับเบิลคลิกเพื่อคัดลอกรหัส ใส่รหัสนี้และจำนวนข้อเท่ากันเพื่อเล่นชุดเดียวกัน"
+      aria-label={`รหัสชุดคำถาม ${code} กด Enter เพื่อคัดลอก`}
+      data-copied={copied || undefined}
+      onDoubleClick={copy}
+      onKeyDown={(event) => {
+        if (event.key === "Enter") {
+          event.preventDefault();
+          copy();
+        }
+      }}
+    >
+      <span className="seed-chip-label">{copied ? "คัดลอกแล้ว" : "รหัส"}</span>
+      <span className="seed-code">{code}</span>
+      <span className="sr-only" aria-live="polite">
+        {copied ? "คัดลอกแล้ว" : ""}
+      </span>
     </button>
   );
 }
@@ -319,7 +438,9 @@ function QuestionHeading({ card }: { card: QuizCard }) {
         <dl className="term-notes mt-3">
           {card.terms.map((term) => (
             <div key={term.label}>
-              <dt>{term.label}</dt>
+              <dt>
+                <NameWithAka label={term.label} gloss={term.gloss} />
+              </dt>
               <dd>
                 <GlossLines gloss={term.gloss} />
               </dd>
@@ -373,9 +494,22 @@ function Reveal({ answer }: { answer: AnsweredQuizQuestion }) {
 function OptionLabel({ option, className = "" }: { option: QuizOption; className?: string }) {
   return (
     <span className={`text-left ${className}`}>
-      <span className="block text-lg">{option.label}</span>
+      <span className="block text-lg">
+        <NameWithAka label={option.label} gloss={option.gloss} />
+      </span>
       {option.gloss ? <GlossLines gloss={option.gloss} /> : null}
     </span>
+  );
+}
+
+/** A label and, when its gloss has other Thai names, those names in brackets: เกี๊ยวซ่า (เจาซือ). */
+function NameWithAka({ label, gloss }: { label: string; gloss?: Gloss | undefined }) {
+  const aka = gloss?.aka ?? [];
+  return (
+    <>
+      {label}
+      {aka.length > 0 ? <span className="text-sm font-normal text-muted"> ({aka.join(", ")})</span> : null}
+    </>
   );
 }
 
@@ -410,6 +544,9 @@ function Result({ play, playAgain }: { play: FinishedQuizPlay; playAgain: () => 
         </p>
         <h1 className="mt-4 max-w-none text-3xl">{play.band.title}</h1>
         <p className="mt-2 text-lg">{play.band.line}</p>
+        <p className="mt-4 text-sm">
+          รหัสชุดคำถาม <span className="seed-code font-semibold">{seedCode(play.seed)}</span> · {play.total} ข้อ
+        </p>
       </section>
 
       <section className="mt-12">
@@ -439,7 +576,9 @@ function ReviewItem({ answer }: { answer: AnsweredQuizQuestion }) {
         <span className="block text-sm text-muted">
           {answer.question.number}. {answer.question.prompt}
         </span>
-        <span className="block font-semibold">{right.label}</span>
+        <span className="block font-semibold">
+          <NameWithAka label={right.label} gloss={right.gloss} />
+        </span>
         {right.gloss ? <GlossLines gloss={right.gloss} /> : null}
         {answer.correct ? null : <span className="block text-sm">คุณตอบ: {option(answer.chosenKey).label}</span>}
         {answer.note ? <span className="mt-1 block text-sm text-muted">{answer.note}</span> : null}

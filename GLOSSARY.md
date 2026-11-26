@@ -74,6 +74,10 @@ _Avoid_: Eliminated, excluded
 A play kept in the browser so a refresh doesn't lose it: its seed, its answer keys and the reveal. It is kept until the player starts again.
 _Avoid_: Session, save game
 
+**Seed code**:
+A quiz play's seed written as up to 6 letters or digits, shown on the result as รหัสชุดคำถาม. The same seed code and count give the same quiz play.
+_Avoid_: Room code, game ID, PIN
+
 **Memory strata**:
 The Anime Age result view: era bands showing how much of each era's anime the player knew.
 _Avoid_: Timeline, history chart

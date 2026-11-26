@@ -158,5 +158,53 @@
     "romaji": "Sūpā Gōsuto Kamikaze Atakku",
     "kanji": "スーパーゴーストカミカゼアタック",
     "english": "Super Ghost Kamikaze Attack"
+  },
+  "เกี๊ยวซ่า": {
+    "aka": ["เจาสึ"],
+    "romaji": "Chaozu",
+    "kanji": "餃子",
+    "english": "Chiaotzu"
+  },
+  "หยำฉา": {
+    "aka": ["ยามุชา"],
+    "romaji": "Yamucha",
+    "kanji": "ヤムチャ",
+    "english": "Yamcha"
+  },
+  "พิคโกโร่": {
+    "aka": ["พิคโคโล่"],
+    "romaji": "Pikkoro",
+    "kanji": "ピッコロ",
+    "english": "Piccolo"
+  },
+  "ท่านไคโอ": {
+    "aka": ["ท่านจ้าวพิภพ"],
+    "romaji": "Kaiō",
+    "kanji": "界王",
+    "english": "King Kai"
+  },
+  "โกฮัง": {
+    "aka": ["โงฮัง"],
+    "romaji": "Son Gohan",
+    "kanji": "孫悟飯",
+    "english": "Gohan"
+  },
+  "ปู่โกฮัง": {
+    "aka": ["ปู่โงฮัง"],
+    "romaji": "Son Gohan",
+    "kanji": "孫悟飯",
+    "english": "Grandpa Gohan"
+  },
+  "โกคู": {
+    "aka": ["โงกุน"],
+    "romaji": "Son Gokū",
+    "kanji": "孫悟空",
+    "english": "Goku"
+  },
+  "ฟรีเซอร์": {
+    "aka": ["ฟรีซ่า"],
+    "romaji": "Furīza",
+    "kanji": "フリーザ",
+    "english": "Frieza"
   }
 }
