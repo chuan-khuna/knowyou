@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useCallback, useEffect, useState, type ReactNode } from "react";
 import type { Cue, Engine, FinishedPlay, Play } from "@/games/engine";
 import { sound } from "@/lib/sound";
+import { ResetButton } from "./reset-button";
 import { SoundToggle } from "./sound-toggle";
 import { encodePlayRecord, playRecordKey, restorePlay, type GameId, type RevealParser } from "@/lib/play-record";
 
@@ -126,7 +127,7 @@ export function PlayScreen<V, X, L, R>({ game, engine, title, intro, parseReveal
 
   const confidence = Math.round(current.confidence * 100);
   return (
-    <Shell status={<span className="num">ข้อ {current.questionNumber}</span>}>
+    <Shell status={<span className="num">ข้อ {current.questionNumber}</span>} onReset={start}>
       <div className="mt-4 flex items-center gap-3">
         <div className="meter flex-1" role="meter" aria-label="ความมั่นใจ" aria-valuemin={0} aria-valuemax={100} aria-valuenow={confidence}>
           <div className="meter-fill" style={{ transform: `scaleX(${current.confidence})` }} />
@@ -171,7 +172,8 @@ function CueText({ cue }: { cue: Cue }) {
   );
 }
 
-export function Shell({ status, children }: { status?: ReactNode; children: ReactNode }) {
+/** `onReset` is given only while a play is in progress; it shows the reset button. */
+export function Shell({ status, onReset, children }: { status?: ReactNode; onReset?: () => void; children: ReactNode }) {
   return (
     <main className="shell">
       <header className="topbar">
@@ -180,6 +182,7 @@ export function Shell({ status, children }: { status?: ReactNode; children: Reac
         </Link>
         <div className="topbar-end">
           {status}
+          {onReset ? <ResetButton onReset={onReset} /> : null}
           <SoundToggle />
         </div>
       </header>

@@ -74,7 +74,7 @@ The same rules as the games' saved play (`play-screen.md`), in the quiz's own `r
 
 - **The record.** `{ v: 1, mode?, seed, answerKeys }`, with `mode` left out for a standard play so older records still restore, in localStorage under `knowyou:play:prince-of-tennis`.
 - **When it is saved.** After every answer. A play with no answers is not saved.
-- **When it is cleared.** On เริ่มเลย, on เล่นอีกครั้ง, and when a record fails to restore.
+- **When it is cleared.** On เริ่มเลย, on เล่นอีกครั้ง, on a confirmed reset, and when a record fails to restore.
 - **Restoring.** `restoreQuiz` starts the play from the seed and replays each key. A record that isn't JSON, has another `v`, an unknown mode, a malformed seed or keys, holds a key the play rejects, or holds more answers than the play asks is dropped silently, and the intro shows. A restored play opens at the next question, past the last reveal.
 
 ## Screens and sound
@@ -82,6 +82,7 @@ The same rules as the games' saved play (`play-screen.md`), in the quiz's own `r
 - **Intro.** The title, two lines about the quiz, เริ่มเลย (or Enter) for a standard play, and ตอบทุกข้อ (N ข้อ) for an `all` play. Sound `start`.
 - **Question.** ข้อ N/total and the running score in the top strip, the tier, the prompt, and four options. Tap or press 1 to 4. Sound `right` or `wrong` on the answer.
 - **Reveal.** The options lock. A check and ถูกต้อง!, or a cross and the right answer, in colour, icon and text. The right option is tagged คำตอบที่ถูก, a wrong choice is tagged คุณเลือก, and the note shows when there is one. ข้อต่อไป (ดูคะแนน after the last question) or Enter moves on.
+- **Reset.** The question and reveal screens pass `playAgain` to `Shell` as `onReset`, so the top strip shows the reset button (`play-screen.md`). A confirmed reset starts a new play in the same mode at question 1.
 - **Result.** The score out of `total`, the band title and line (standard only), every question with its right answer and, on a miss, the player's answer, and เล่นอีกครั้ง, which starts a new play in the same mode. Sound `guess` when it opens.
 
 ## How to add a question

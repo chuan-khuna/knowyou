@@ -104,6 +104,7 @@
 
   .icon-button {
     display: inline-flex;
+    flex: none;
     align-items: center;
     justify-content: center;
     width: 44px;
@@ -140,6 +141,17 @@
     cursor: not-allowed;
     opacity: 0.5;
     translate: none;
+  }
+
+  .icon-button--armed,
+  .icon-button--armed:hover,
+  .icon-button--armed:active {
+    width: auto;
+    padding-inline: var(--space-sm);
+    background: var(--color-accent);
+    color: var(--color-accent-ink);
+    font-weight: 600;
+    white-space: nowrap;
   }
 
   .game-card {

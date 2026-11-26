@@ -56,4 +56,10 @@
     align-items: center;
     gap: var(--space-sm);
   }
+
+  /* While the reset asks เริ่มใหม่?, the status gives up its room, so a narrow phone keeps the sound icon on screen.
+     Important because a status may carry a display utility, and utilities outrank this layer. */
+  .topbar-end:has(> .icon-button--armed) > :not(button) {
+    display: none !important;
+  }
 }

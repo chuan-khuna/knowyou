@@ -144,7 +144,7 @@ export function PrinceOfTennisQuiz() {
   if (revealing) {
     const last = current.answered.at(-1)!;
     return (
-      <Shell status={<Progress number={last.question.number} total={current.total} score={current.score} />}>
+      <Shell status={<Progress number={last.question.number} total={current.total} score={current.score} />} onReset={playAgain}>
         <QuestionHeading card={last.question} />
         <Reveal answer={last} />
         <BigButton onClick={advance} autoFocus>
@@ -164,7 +164,7 @@ export function PrinceOfTennisQuiz() {
   }
 
   return (
-    <Shell status={<Progress number={current.question.number} total={current.total} score={current.score} />}>
+    <Shell status={<Progress number={current.question.number} total={current.total} score={current.score} />} onReset={playAgain}>
       <QuestionHeading card={current.question} />
       <ol className="mt-8 grid gap-4">
         {current.question.options.map((option, i) => (
