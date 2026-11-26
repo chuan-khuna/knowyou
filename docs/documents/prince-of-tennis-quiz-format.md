@@ -105,7 +105,7 @@ Write names the way the bank already writes them: family name first, then given 
 
 **Terms.** สเน็ค (บูมเมอแรงสเน็ค), ทันฮอยเซอร์เสิร์ฟ, นัคเคิลเสิร์ฟ, เสิร์ฟล่องหน, เทนนิสข้อมูล (not ดาต้าเทนนิส), อินไซต์.
 
-**Technique names.** Use the Thai translation fans know (นางแอ่นหวนกลับ, อาณาจักรน้ำแข็ง) or a Thai transliteration (ฮาโดคิว, ชุคุจิโฮ). English-named moves keep their English sound in Thai script (ทวิสต์เสิร์ฟ, ดั้งค์สแมช, เลเซอร์บีม). Add the glossary entry either way when the move has a Japanese name.
+**Technique names.** Use the Thai translation fans know (นางแอ่นหวนกลับ, อาณาจักรน้ำแข็ง, ลูกถล่มปฐพี) or a Thai transliteration (ชุคุจิโฮ). English-named moves keep their English sound in Thai script (ทวิสต์เสิร์ฟ, ดั้งค์สแมช, เลเซอร์บีม). Add the glossary entry either way when the move has a Japanese name.
 
 ## Existing ids
 
@@ -200,10 +200,10 @@ A snapshot of `src/games/prince-of-tennis/glossary.json` on 2026-11-26 (52 entri
   "บทเพลงแห่งหายนะ": {"romaji": "Hametsu e no Rondo", "kanji": "破滅への輪舞曲", "english": "Rondo Towards Destruction"},
   "อาณาจักรน้ำแข็ง": {"romaji": "Kōri no Sekai", "kanji": "氷の世界", "english": "Ice World"},
   "อาณาเขตของโออิชิ": {"romaji": "Ōishi no Ryōiki", "kanji": "大石の領域", "english": "Ōishi's Territory"},
-  "ฮาโดคิว": {"romaji": "Hadōkyū", "kanji": "波動球", "english": "Wave-Motion Ball"},
+  "ลูกถล่มปฐพี": {"romaji": "Hadōkyū", "kanji": "波動球", "english": "Wave-Motion Ball"},
   "อาบาเระดามะ": {"romaji": "Abare Dama", "kanji": "暴れ球", "english": "Wild Ball"},
   "ไต่เชือก (สึนะวาตาริ)": {"romaji": "Tsunawatari", "kanji": "綱渡り", "english": "Tightrope Walking"},
-  "ซีโร่ชิกิ ดร็อปช็อต": {"romaji": "Zero-Shiki Drop Shot", "kanji": "零式ドロップショット", "english": "Zero-Style Drop Shot"},
+  "ดรอปศูนย์สัมบูรณ์": {"romaji": "Zero-Shiki Drop Shot", "kanji": "零式ドロップショット", "english": "Zero-Style Drop Shot"},
   "ซูเปอร์อุลตร้าเกรทดีลิเชียส ไดชาริน ยามะอาราชิ": {"romaji": "Chō Urutora Gurēto Derishasu Daisharin Yama Arashi", "kanji": "超ウルトラグレートデリシャス大車輪山嵐", "english": "Super Ultra Great Delicious Mountain Storm"},
   "เอ็นบุเทนนิส": {"romaji": "Enbu Tenisu", "kanji": "演武テニス", "english": "Enbu (Martial Demonstration) Tennis"},
   "ชุคุจิโฮ": {"romaji": "Shukuchihō", "kanji": "縮地法", "english": "Ground-Shrinking Method"},
@@ -212,14 +212,14 @@ A snapshot of `src/games/prince-of-tennis/glossary.json` on 2026-11-26 (52 entri
   "คามาอิทาจิ": {"romaji": "Kamaitachi", "kanji": "かまいたち", "english": "Wind Blade"},
   "ฮาบุ": {"romaji": "Habu", "kanji": "飯匙倩", "english": "Habu (Pit Viper)"},
   "เอ็นทาคุช็อต": {"romaji": "Entaku Shotto", "kanji": "円卓ショット", "english": "Round Table Shot"},
-  "เสิร์ฟหายตัว": {"romaji": "Kieru Sābu", "kanji": "消えるサーブ", "english": "Disappearing Serve"},
+  "เสิร์ฟล่องหน": {"romaji": "Kieru Sābu", "kanji": "消えるサーブ", "english": "Disappearing Serve"},
   "นกฟีนิกซ์หวนกลับ": {"romaji": "Hōō Gaeshi", "kanji": "鳳凰返し", "english": "Phoenix Return"},
   "พิฆาตกิเลน": {"romaji": "Kirin Otoshi", "kanji": "麒麟落とし", "english": "Qilin Drop"},
   "มังกรขาว": {"romaji": "Hakuryū", "kanji": "白龍", "english": "White Dragon"},
-  "ดอกไม้ไฟดวงดาว": {"romaji": "Hoshi Hanabi", "kanji": "星花火", "english": "Star Fireworks"},
-  "แดชฮาโดคิว": {"romaji": "Dasshu Hadōkyū", "kanji": "ダッシュ波動球", "english": "Dash Hadōkyū"},
-  "ฮาโดคิวสองมือ": {"romaji": "Ryōte Hadōkyū", "kanji": "両手波動球", "english": "Two-Handed Hadōkyū"},
-  "จัมพ์ฮาโดคิว": {"romaji": "Janpu Hadōkyū", "kanji": "ジャンプ波動球", "english": "Jump Hadōkyū"},
+  "พลุดวงดาว": {"romaji": "Hoshi Hanabi", "kanji": "星花火", "english": "Star Fireworks"},
+  "ลูกถล่มปฐพีแบบพุ่งตัว": {"romaji": "Dasshu Hadōkyū", "kanji": "ダッシュ波動球", "english": "Dash Hadōkyū"},
+  "ลูกถล่มปฐพีสองมือ": {"romaji": "Ryōte Hadōkyū", "kanji": "両手波動球", "english": "Two-Handed Hadōkyū"},
+  "ลูกถล่มปฐพีแบบกระโดด": {"romaji": "Janpu Hadōkyū", "kanji": "ジャンプ波動球", "english": "Jump Hadōkyū"},
   "ไฟ (คา)": {"romaji": "Ka", "kanji": "火", "english": "Fire"},
   "ลม (ฟู)": {"romaji": "Fū", "kanji": "風", "english": "Wind"},
   "ป่า (ริน)": {"romaji": "Rin", "kanji": "林", "english": "Forest"},
