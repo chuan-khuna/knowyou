@@ -12,6 +12,7 @@ One quiz module plays every title, and one screen shows it. A title is data: its
 | Title | Module | Route |
 | --- | --- | --- |
 | คุณรู้จัก Dragon Ball ดีแค่ไหน | `src/games/dragon-ball/` | `/dragon-ball` |
+| คุณรู้จัก Kuroko no Basket ดีแค่ไหน | `src/games/kuroko-no-basket/` | `/kuroko-no-basket` |
 | คุณรู้จัก Naruto ดีแค่ไหน | `src/games/naruto/` | `/naruto` |
 | คุณรู้จัก Prince of Tennis ดีแค่ไหน | `src/games/prince-of-tennis/` | `/prince-of-tennis` |
 | คุณรู้จัก Reborn ดีแค่ไหน | `src/games/reborn/` | `/reborn` |
@@ -115,6 +116,16 @@ Each title's `bands.ts` holds its bands for a score out of 20, lowest first. `ba
 | 13–16 | ซูเปอร์ไซย่า | ผมเปลี่ยนเป็นสีทองแล้ว ความรู้ของคุณระเบิดออกมาเต็มที่ |
 | 17–20 | นักรบผู้ปกป้องโลก | ต่อให้จอมมารบูมาก็ไม่กลัว คุณรู้จักดราก้อนบอลทุกซอกทุกมุม |
 
+**Kuroko no Basket** (`SCORE_BANDS` in `src/games/kuroko-no-basket/bands.ts`), as basketball ranks:
+
+| Score | Title | Line |
+| --- | --- | --- |
+| 0–4 | คนดูข้างสนาม | ยังแยกไม่ออกเลยว่าใครคือคุโรโกะ ลองมองดี ๆ อีกครั้งนะ |
+| 5–8 | ตัวสำรองชมรมปีหนึ่ง | ได้ใส่เสื้อทีมแล้ว แต่ต้องวิ่งรอบสนามตามเมนูของริโกะอีกเยอะ |
+| 9–12 | ตัวจริงเซย์ริน | ลงสนามได้แล้ว พร้อมส่งบอลให้แสงสว่างของทีม |
+| 13–16 | ราชันไร้มงกุฎ | ฝีมือระดับนี้ ใคร ๆ ก็ยอมรับ แม้จะยังไม่ได้มงกุฎ |
+| 17–20 | รุ่นปาฏิหาริย์ | คุณรู้จักเรื่องนี้ทุกซอกทุกมุม ราวกับเป็นผู้เล่นคนที่หกผู้เป็นเงาเอง |
+
 **Naruto** (`SCORE_BANDS` in `src/games/naruto/bands.ts`), as ninja ranks:
 
 | Score | Title | Line |
@@ -165,7 +176,7 @@ The same rules as the games' saved play (`play-screen.md`), in the quiz's own `r
 - **Other names.** A label whose gloss has an `aka` shows those names right after it in small muted text: `โกคู โงกุน`. This holds on options, prompt terms and the right answer in เฉลย.
 - **Glosses.** Under an option with a gloss, two lines: `Romaji, 漢字` then the English name. The same shows under the right answer in เฉลย. Under a prompt that names glossary terms, each term shows as a small card (the label in bold, then the same two lines), two cards across from `sm` up, on the question and reveal screens.
 - **Reset.** The question and reveal screens pass `playAgain` to `Shell` as `onReset`, so the top strip shows the reset button (`play-screen.md`). A confirmed reset starts a new play of the same count at question 1.
-- **Result.** The score out of `total`, the band title and line, the seed code as a chip that copies the share link on double-click or Enter (it says คัดลอกลิงก์แล้ว; its tooltip says so), and the count as a chip beside it, then เฉลย: every question with a check or cross, its right answer, the player's answer on a miss, and the note when there is one. เล่นอีกครั้ง starts a new play of the same count. Sound `guess` when it opens.
+- **Result.** The score out of `total`, the band title and line, the seed code as a chip that copies the share link on double-click or Enter (it says คัดลอกลิงก์แล้ว; its tooltip says so), and the count as a chip beside it. Right under that card comes เล่นอีกครั้ง, on a paper band that sticks to the top of the viewport once the page scrolls past it, so เฉลย scrolls under it. Then เฉลย: every question with a check or cross, its right answer, the player's answer on a miss, and the note when there is one. เล่นอีกครั้ง starts a new play of the same count. Sound `guess` when it opens.
 
 ## How to add a title
 
@@ -183,6 +194,7 @@ The same rules as the games' saved play (`play-screen.md`), in the quiz's own `r
 
 1. Find a page that confirms the answer, such as the series wiki or Wikipedia. Keep to the title's scope:
    - Dragon Ball: the manga and the TV anime Dragon Ball and Dragon Ball Z, canon story only, up to the end of the Majin Buu arc. No filler, films, OVAs, GT, Super, Daima or games. Ask only about named moves, transformations and items, places and groups, teachers and rivals, aliases, and story events. Glosses cover techniques, transformations, fusions and named items, and characters whose other Thai names (a TV dub's, an older edition's) are sourced in `.scratch/quiz-aka/spec.md`, such as โกคู (โงกุน). Keep only the best-known other name, not every spelling.
+   - Kuroko no Basket: the manga, the three TV seasons and the EXTRA GAME sequel. No *Last Game* film-only changes, novels, games or stage plays. Ask only about moves, schools, team roles, nicknames and story events; no birthdays, heights, numbers, scores or personal trivia. Source the Kuroko no Basuke wiki (`kurokonobasuke.fandom.com`). Glosses cover named moves and abilities. The spec is `.scratch/kuroko-quiz/spec.md`.
    - Naruto: Naruto and Naruto Shippuden, up to the end of the Fourth Shinobi World War. No Boruto, films or games. Glosses cover jutsu, dōjutsu, swords, elements and lands; a land's `aka` holds the Thai Wikipedia names (แคว้นเหล็ก, เทะซึโนะคุนิ).
    - Prince of Tennis: the manga, the TV anime and the National Tournament OVAs, up to the end of the National Tournament. Ask only about moves and special moves, schools, or story events. Don't ask about birthdays, numbers, scores or personal trivia (family, pets, hobbies, food). The research brief is `prince-of-tennis-quiz-format.md`.
    - Reborn: the whole Katekyo Hitman Reborn! manga, to the end of the Curse of the Rainbow, and the TV anime where it follows the manga. No anime-only arcs, OVAs, light novels or games. Name the manga when an arc is manga-only. Glosses cover flame attributes, techniques, rings, gear and Tri-ni-sette items.
