@@ -29,4 +29,16 @@ export const GLOSSES: Readonly<Record<string, Gloss>> = {
   "อาบาเระดามะ": g("Abare Dama", "暴れ球", "Wild Ball"),
   "ไต่เชือก (สึนะวาตาริ)": g("Tsunawatari", "綱渡り", "Tightrope Walking"),
   "ซีโร่ชิกิ ดร็อปช็อต": g("Zero-Shiki Drop Shot", "零式ドロップショット", "Zero-Style Drop Shot"),
+  "ซูเปอร์อุลตร้าเกรทดีลิเชียส ไดชาริน ยามะอาราชิ": g(
+    "Chō Urutora Gurēto Derishasu Daisharin Yama Arashi",
+    "超ウルトラグレートデリシャス大車輪山嵐",
+    "Super Ultra Great Delicious Mountain Storm",
+  ),
+  "เอ็นบุเทนนิส": g("Enbu Tenisu", "演武テニス", "Enbu (Martial Demonstration) Tennis"),
+  "ชุคุจิโฮ": g("Shukuchihō", "縮地法", "Ground-Shrinking Method"),
+  "ผู้เฝ้าประตูเฮคาตอนไคร์": g("Hekatonkeiru no Monban", "百腕巨人の門番", "Gatekeeper of Hecatoncheires"),
+  "เงา (อิน) กับ สายฟ้า (ไร)": g("In, Rai", "陰・雷", "Shadow, Lightning"),
+  "คามาอิทาจิ": g("Kamaitachi", "かまいたち", "Wind Blade"),
+  "ฮาบุ": g("Habu", "飯匙倩", "Habu (Pit Viper)"),
+  "เอ็นทาคุช็อต": g("Entaku Shotto", "円卓ショット", "Round Table Shot"),
 };
