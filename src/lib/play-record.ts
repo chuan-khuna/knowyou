@@ -7,7 +7,7 @@
 
 import type { Engine, Play } from "@/games/engine";
 
-export type GameId = "anime-age" | "province";
+export type GameId = "anime-age" | "province" | "university";
 
 export interface PlayRecord<TReveal> {
   readonly v: 1;

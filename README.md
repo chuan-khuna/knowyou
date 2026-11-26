@@ -6,7 +6,7 @@ A family of guessing games for Thai players. Each game asks questions until it i
 |---|---|---|
 | ทายอายุจากการ์ตูน (Anime Age) | your age, from the anime you watched growing up | playable |
 | ทายจังหวัด (Province) | the Thai province you live in | planned |
-| ทายมหาวิทยาลัย (University) | your university | planned |
+| ทายมหาวิทยาลัย (University) | your university, from campus life | playable |
 
 ## How it works
 

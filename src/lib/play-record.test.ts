@@ -30,6 +30,7 @@ describe("a saved play", () => {
   test("is stored under a key per game", () => {
     expect(playRecordKey("anime-age")).toBe("knowyou:play:anime-age");
     expect(playRecordKey("province")).toBe("knowyou:play:province");
+    expect(playRecordKey("university")).toBe("knowyou:play:university");
   });
 
   test("an unfinished play comes back at the same question", () => {

@@ -20,6 +20,7 @@ const MOMENT_CUES = {
   step: "progress-step",
   openGame: "open",
   pickProvince: "select",
+  pickUniversity: "select",
 } as const satisfies Record<string, CueName>;
 
 export type SoundMoment = keyof typeof MOMENT_CUES;
