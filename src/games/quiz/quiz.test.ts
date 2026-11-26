@@ -9,9 +9,11 @@ import {
   encodeQuizRecord,
   quizRecordKey,
   randomSeed,
+  readShareQuery,
   restoreQuiz,
   seedCode,
   seedFromCode,
+  shareQuery,
   termsIn,
   type AskingQuizPlay,
   type Gloss,
@@ -187,6 +189,19 @@ describe("seed codes", () => {
       expect(seed).toBeGreaterThanOrEqual(0);
       expect(seed).toBeLessThan(36 ** 6);
       expect(seedFromCode(seedCode(seed))).toBe(seed);
+    }
+  });
+
+  test("a share link names its seed and count, and reads back", () => {
+    const seed = seedFromCode("B21X0L")!;
+    expect(shareQuery(seed, 20)).toBe("?seed=B21X0L&n=20");
+    expect(readShareQuery(shareQuery(seed, 20))).toEqual({ seed, count: 20 });
+    expect(readShareQuery("?seed=b21x0l&n=30")).toEqual({ seed, count: 30 });
+  });
+
+  test("a share link without a good seed or count names nothing", () => {
+    for (const search of ["", "?seed=B21X0L", "?n=20", "?seed=TOOLONG1&n=20", "?seed=B21X0L&n=abc", "?seed=B21X0L&n=-5", "?seed=B21X0L&n=2.5"]) {
+      expect(readShareQuery(search)).toBeNull();
     }
   });
 

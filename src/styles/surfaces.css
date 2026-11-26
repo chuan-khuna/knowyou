@@ -101,7 +101,7 @@
     color: var(--color-mint-deep);
   }
   .verdict--wrong {
-    color: var(--color-accent-3);
+    color: color-mix(in oklch, var(--color-accent-3) 65%, var(--color-ink));
   }
   .mark {
     flex: none;

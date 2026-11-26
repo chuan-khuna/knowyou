@@ -8,9 +8,11 @@ import {
   encodeQuizRecord,
   quizRecordKey,
   randomSeed,
+  readShareQuery,
   restoreQuiz,
   seedCode,
   seedFromCode,
+  shareQuery,
   type AnsweredQuizQuestion,
   type FinishedQuizPlay,
   type Gloss,
@@ -91,6 +93,18 @@ export function QuizScreen({ quiz, title, intro }: QuizScreenProps) {
   const countValid = !advanced || (countText !== "" && Number.isInteger(count) && count >= MIN_QUESTIONS_PER_PLAY && count <= quiz.size);
 
   useEffect(() => {
+    const shared = readShareQuery(window.location.search);
+    if (shared !== null) {
+      // Drop the query, so a refresh mid-play restores the play instead of reopening the link.
+      window.history.replaceState(null, "", window.location.pathname);
+      if (shared.count >= MIN_QUESTIONS_PER_PLAY && shared.count <= quiz.size) {
+        setSetting("advanced");
+        setCountText(String(shared.count));
+        setCodeText(seedCode(shared.seed));
+        setScreen({ kind: "intro" });
+        return;
+      }
+    }
     const play = restoreQuiz(quiz, readStored(storageKey));
     if (play === null) writeStored(storageKey, null);
     setScreen(play === null ? { kind: "intro" } : { kind: "playing", play, seen: play.answered.length });
@@ -274,6 +288,20 @@ function SettingPicker({ setting, onChange }: { setting: Setting; onChange: (set
   );
 }
 
+/** A die showing five, for the seed code field's random button. */
+function DiceIcon() {
+  return (
+    <svg aria-hidden="true" viewBox="0 0 20 20" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinejoin="round">
+      <rect x="3" y="3" width="14" height="14" rx="3.5" />
+      <circle cx="7.25" cy="7.25" r="1" fill="currentColor" stroke="none" />
+      <circle cx="12.75" cy="7.25" r="1" fill="currentColor" stroke="none" />
+      <circle cx="10" cy="10" r="1" fill="currentColor" stroke="none" />
+      <circle cx="7.25" cy="12.75" r="1" fill="currentColor" stroke="none" />
+      <circle cx="12.75" cy="12.75" r="1" fill="currentColor" stroke="none" />
+    </svg>
+  );
+}
+
 function StepIcon({ plus }: { plus: boolean }) {
   return (
     <svg aria-hidden="true" viewBox="0 0 20 20" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
@@ -330,9 +358,12 @@ function CountField({ size, text, valid, onChange }: { size: number; text: strin
 function SeedCodeField({ text, onChange }: { text: string; onChange: (text: string) => void }) {
   return (
     <div className="min-w-0">
-      <label className="block">
-        <span className="block font-semibold">รหัสชุดคำถาม</span>
+      <label htmlFor="seed-code-field" className="block font-semibold">
+        รหัสชุดคำถาม
+      </label>
+      <div className="stepper seed-input mt-3">
         <input
+          id="seed-code-field"
           type="text"
           inputMode="text"
           autoCapitalize="characters"
@@ -343,11 +374,14 @@ function SeedCodeField({ text, onChange }: { text: string; onChange: (text: stri
           value={text}
           onChange={(event) => onChange(event.target.value.toUpperCase().replace(/[^0-9A-Z]/g, "").slice(0, SEED_CODE_LENGTH))}
           aria-describedby="seed-code-hint"
-          className="select seed-code mt-3 w-full text-center uppercase"
+          className="seed-code uppercase"
         />
-      </label>
+        <button type="button" aria-label="สุ่มรหัส" title="สุ่มรหัส" onClick={() => onChange(seedCode(randomSeed()))}>
+          <DiceIcon />
+        </button>
+      </div>
       <p id="seed-code-hint" className="mt-2 text-sm text-muted">
-        A–Z หรือ 0–9 ไม่เกิน {SEED_CODE_LENGTH} ตัว เว้นว่างเพื่อสุ่ม ใส่รหัสและจำนวนข้อเดียวกับเพื่อนเพื่อเล่นชุดเดียวกัน
+        A ถึง Z หรือ 0 ถึง 9 ไม่เกิน {SEED_CODE_LENGTH} ตัว เว้นว่างเพื่อสุ่ม ใส่รหัสและจำนวนข้อเดียวกับเพื่อนเพื่อเล่นชุดเดียวกัน
       </p>
     </div>
   );
@@ -377,7 +411,16 @@ function RevealToggle({ on }: { on: boolean }) {
  * The play's seed code as a chip. Double-click, or Enter when focused, copies
  * it, and the chip says คัดลอกแล้ว for a moment.
  */
-function SeedChip({ code, className = "" }: { code: string; className?: string }) {
+function SeedChip({
+  code,
+  link,
+  className = "",
+}: {
+  code: string;
+  /** A share link to copy in place of the bare code, as on the result. */
+  link?: string;
+  className?: string;
+}) {
   const [copied, setCopied] = useState(false);
   useEffect(() => {
     if (!copied) return;
@@ -385,7 +428,7 @@ function SeedChip({ code, className = "" }: { code: string; className?: string }
     return () => clearTimeout(timer);
   }, [copied]);
   const copy = () => {
-    navigator.clipboard?.writeText(code).then(
+    navigator.clipboard?.writeText(link ?? code).then(
       () => setCopied(true),
       () => {}, // Clipboard can be blocked; the code is still on screen to copy by hand.
     );
@@ -394,8 +437,8 @@ function SeedChip({ code, className = "" }: { code: string; className?: string }
     <button
       type="button"
       className={`seed-chip ${className}`}
-      title="ดับเบิลคลิกเพื่อคัดลอกรหัส ใส่รหัสนี้และจำนวนข้อเท่ากันเพื่อเล่นชุดเดียวกัน"
-      aria-label={`รหัสชุดคำถาม ${code} กด Enter เพื่อคัดลอก`}
+      title={link ? "ดับเบิลคลิกเพื่อคัดลอกลิงก์ ส่งให้เพื่อนเล่นชุดเดียวกัน" : "ดับเบิลคลิกเพื่อคัดลอกรหัส ใส่รหัสนี้และจำนวนข้อเท่ากันเพื่อเล่นชุดเดียวกัน"}
+      aria-label={`รหัสชุดคำถาม ${code} กด Enter เพื่อคัดลอก${link ? "ลิงก์" : ""}`}
       data-copied={copied || undefined}
       onDoubleClick={copy}
       onKeyDown={(event) => {
@@ -405,10 +448,10 @@ function SeedChip({ code, className = "" }: { code: string; className?: string }
         }
       }}
     >
-      <span className="seed-chip-label">{copied ? "คัดลอกแล้ว" : "รหัส"}</span>
+      <span className="seed-chip-label">{copied ? (link ? "คัดลอกลิงก์แล้ว" : "คัดลอกแล้ว") : "รหัส"}</span>
       <span className="seed-code">{code}</span>
       <span className="sr-only" aria-live="polite">
-        {copied ? "คัดลอกแล้ว" : ""}
+        {copied ? (link ? "คัดลอกลิงก์แล้ว" : "คัดลอกแล้ว") : ""}
       </span>
     </button>
   );
@@ -548,6 +591,11 @@ function Mark({ correct }: { correct: boolean }) {
   );
 }
 
+/** The page's own address with the play's seed code and count, so a friend opens the same set. */
+function shareLink(play: FinishedQuizPlay): string {
+  return `${window.location.origin}${window.location.pathname}${shareQuery(play.seed, play.total)}`;
+}
+
 function Result({ play, playAgain }: { play: FinishedQuizPlay; playAgain: () => void }) {
   return (
     <div>
@@ -558,9 +606,10 @@ function Result({ play, playAgain }: { play: FinishedQuizPlay; playAgain: () => 
         </p>
         <h1 className="mt-4 max-w-none text-3xl">{play.band.title}</h1>
         <p className="mt-2 text-lg">{play.band.line}</p>
-        <p className="mt-4 text-sm">
-          รหัสชุดคำถาม <span className="seed-code font-semibold">{seedCode(play.seed)}</span> · {play.total} ข้อ
-        </p>
+        <div className="mt-5 flex flex-wrap items-center gap-2">
+          <SeedChip code={seedCode(play.seed)} link={shareLink(play)} className="inline-flex" />
+          <span className="count-chip num">{play.total} ข้อ</span>
+        </div>
       </section>
 
       <section className="mt-12">

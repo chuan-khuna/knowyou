@@ -48,8 +48,12 @@ Each quiz play has a seed code of up to 6 letters and digits. On the intro, the 
 ## Out of Scope
 
 - Seed codes for the guessing games (Anime Age, Province, University).
-- Encoding the count into the seed code, or a share link.
+- Encoding the count into the seed code.
 
 ## Further Notes
 
 The quiz screen and module are described in `docs/documents/quiz.md`.
+
+## Comments
+
+- Share link (asked for in chat after the first build): the result's seed code is a chip, like the top strip's, and double-click or Enter copies `<page>?seed=CODE&n=COUNT`. Opening that link shows the intro with ขั้นสูง picked and its count and code filled, then drops the query so a refresh restores the play. The link wins over a saved play, which is cleared as the intro shows. `shareQuery` and `readShareQuery` live in the quiz module, tested through its interface.

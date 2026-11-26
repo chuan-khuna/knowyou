@@ -21,6 +21,24 @@ export function seedCode(seed: number): string {
   return seed.toString(36).toUpperCase().padStart(SEED_CODE_LENGTH, "0");
 }
 
+/** The query string a share link carries: `?seed=B21X0L&n=20`. */
+export function shareQuery(seed: number, count: number): string {
+  return `?${new URLSearchParams({ seed: seedCode(seed), n: String(count) })}`;
+}
+
+/**
+ * The seed and count a share link names, or null when either is missing or
+ * malformed. The count is only checked to be a whole number; the quiz checks
+ * its range against the bank.
+ */
+export function readShareQuery(search: string): { seed: number; count: number } | null {
+  const params = new URLSearchParams(search);
+  const seed = seedFromCode(params.get("seed") ?? "");
+  const n = params.get("n");
+  const count = n !== null && /^\d+$/.test(n) ? Number(n) : null;
+  return seed === null || count === null ? null : { seed, count };
+}
+
 /** A uniform random seed that a code of 6 characters can name. */
 export function randomSeed(): number {
   // Rejection sampling: the largest multiple of 36⁶ below 2³² keeps every seed equally likely.

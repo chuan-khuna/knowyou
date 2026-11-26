@@ -39,10 +39,11 @@
     translate: 0 2px;
   }
 
-  /* A picked choice among several, such as the quiz's count presets. */
+  /* A picked choice among several, such as the quiz's count presets: ink with paper type, as Hum picks a pill. */
   .stock[aria-pressed="true"] {
-    background: color-mix(in oklch, var(--color-accent) 14%, var(--color-card));
-    box-shadow: inset 0 0 0 2px var(--color-accent-deep), 0 var(--edge) 0 0 var(--color-edge);
+    background: var(--color-ink);
+    color: var(--color-paper);
+    box-shadow: 0 var(--edge) 0 0 var(--color-edge);
   }
 
   /* A whole-row setting on card stock: the text on the left, a .switch on the right. */
@@ -89,8 +90,8 @@
     height: 22px;
     border-radius: 50%;
     background: var(--color-card);
-    box-shadow: 0 1px 2px oklch(40% 0.065 290 / 0.25);
-    transition: translate var(--dur-micro) var(--ease-spring);
+    box-shadow: 0 1px 2px color-mix(in oklch, var(--color-ink) 25%, transparent);
+    transition: translate var(--dur-micro) var(--ease-snap);
   }
 
   .switch:checked {
@@ -150,13 +151,16 @@
     margin: 0;
   }
 
+  /* Inset 4px from the edge, so a hover fill never paints over the field's inset border. */
   .stepper button {
     display: inline-flex;
     flex: none;
     align-items: center;
     justify-content: center;
-    width: 52px;
+    width: 44px;
+    margin: var(--space-2xs);
     border: 0;
+    border-radius: calc(var(--radius-input) - var(--space-2xs));
     background: transparent;
     color: var(--color-muted);
     cursor: pointer;
@@ -165,12 +169,9 @@
       color var(--dur-micro) var(--ease-snap);
   }
 
-  .stepper button:first-child {
-    border-radius: var(--radius-input) 0 0 var(--radius-input);
-  }
-
-  .stepper button:last-child {
-    border-radius: 0 var(--radius-input) var(--radius-input) 0;
+  /* The seed code field has one button, on the right: keep the code centred by padding the left to match. */
+  .seed-input input {
+    padding-left: 52px;
   }
 
   .stepper button:hover:not(:disabled) {
@@ -255,7 +256,7 @@
     opacity: 0.5;
   }
 
-  /* A question's tier as a pill, tinted by tier: easy mint, medium blue, hard purple, very hard red. */
+  /* A question's tier as a pill, tinted by tier: easy mint, medium blue, hard coral, very hard ink. */
   .tier-badge {
     --tier: var(--color-mint-deep);
     display: inline-flex;
@@ -264,7 +265,7 @@
     padding: 0 var(--space-sm);
     border-radius: var(--radius-pill);
     background: color-mix(in oklch, var(--tier) 12%, var(--color-card));
-    color: var(--tier);
+    color: color-mix(in oklch, var(--tier) 72%, var(--color-ink));
     font-size: var(--text-xs);
     font-weight: 600;
     white-space: nowrap;
@@ -272,19 +273,15 @@
   }
 
   .tier-badge[data-tier="medium"] { --tier: var(--color-accent-2); }
-  .tier-badge[data-tier="hard"] { --tier: var(--color-accent-deep); }
-  .tier-badge[data-tier="very-hard"] {
-    --tier: var(--color-accent-3);
-    /* accent-3 is light for small text; darken the text only, keep the tint. */
-    color: color-mix(in oklch, var(--color-accent-3) 75%, black);
-  }
+  .tier-badge[data-tier="hard"] { --tier: var(--color-accent-3); }
+  .tier-badge[data-tier="very-hard"] { --tier: var(--color-ink); }
 
   /* The top strip's progress: the question number over a thin bar, on a pill. */
   .progress-chip {
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
-    gap: 3px;
+    gap: var(--space-2xs);
     height: 32px;
     padding: 0 var(--space-sm);
     border-radius: var(--radius-pill);
@@ -318,6 +315,21 @@
     background: var(--color-accent);
     transform-origin: left;
     transition: transform var(--dur-micro) var(--ease-snap);
+  }
+
+  /* The result's question count, beside the seed chip and on the same pill. */
+  .count-chip {
+    display: inline-flex;
+    align-items: center;
+    height: 32px;
+    padding: 0 var(--space-sm);
+    border-radius: var(--radius-pill);
+    background: var(--color-paper-2);
+    color: var(--color-ink);
+    font-size: var(--text-xs);
+    font-weight: 600;
+    white-space: nowrap;
+    box-shadow: inset 0 0 0 1px var(--color-rule);
   }
 
   /* The running score while the reveal switch is on: a check and the count. */
