@@ -612,6 +612,8 @@ function Result({ play, playAgain }: { play: FinishedQuizPlay; playAgain: () => 
         </div>
       </section>
 
+      <PlayAgainBar onClick={playAgain} pin="top" />
+
       <section className="mt-12">
         <h2 className="text-2xl">เฉลย</h2>
         <ol className="sheet mt-4 divide-y divide-rule overflow-hidden">
@@ -620,8 +622,6 @@ function Result({ play, playAgain }: { play: FinishedQuizPlay; playAgain: () => 
           ))}
         </ol>
       </section>
-
-      <PlayAgainBar onClick={playAgain} />
     </div>
   );
 }
