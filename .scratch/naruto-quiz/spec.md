@@ -1,6 +1,6 @@
 # Spec: คุณรู้จัก Naruto ดีแค่ไหน
 
-Status: ready-for-agent
+Status: done
 
 A second **Quiz** in the KnowYou app, beside the Prince of Tennis quiz. Terms follow `GLOSSARY.md`. The Prince of Tennis spec (`.scratch/how-well-do-you-know/spec.md`) is the precedent for every rule this spec doesn't restate. Its Out of Scope said "Generalising waits for a second title". This is the second title, so the quiz engine and screen become shared, and each title becomes its data plus its copy.
 
@@ -96,3 +96,4 @@ Taken without asking, per `CLAUDE.md`. Veto any of these by editing this list.
 ## Comments
 
 - 2026-11-26: The user sent a revised bank that uses Thai names for jutsu, eyes, swords and elements, such as กระสุนวงจักร, พันปักษา, เนตรวงแหวน and ดาบหนังฉลาม. It keeps the same 67 ids, changes 30 questions, and has 42 glosses. It replaced the first bank as it is.
+- 2026-11-26: Merged to main by fast-forward to 1420a18.
