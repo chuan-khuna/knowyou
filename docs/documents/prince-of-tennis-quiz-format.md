@@ -202,7 +202,7 @@ A snapshot of `src/games/prince-of-tennis/glossary.json` on 2026-11-26 (52 entri
   "อาณาเขตของโออิชิ": {"romaji": "Ōishi no Ryōiki", "kanji": "大石の領域", "english": "Ōishi's Territory"},
   "ลูกถล่มปฐพี": {"romaji": "Hadōkyū", "kanji": "波動球", "english": "Wave-Motion Ball"},
   "ลูกคลุ้มคลั่ง": {"romaji": "Abare Dama", "kanji": "暴れ球", "english": "Wild Ball"},
-  "ไต่เชือก (สึนะวาตาริ)": {"romaji": "Tsunawatari", "kanji": "綱渡り", "english": "Tightrope Walking"},
+  "ไต่เชือก": {"romaji": "Tsunawatari", "kanji": "綱渡り", "english": "Tightrope Walking"},
   "ดรอปศูนย์สัมบูรณ์": {"romaji": "Zero-Shiki Drop Shot", "kanji": "零式ドロップショット", "english": "Zero-Style Drop Shot"},
   "ซูเปอร์อุลตร้าเกรทดีลิเชียส ไดชาริน ยามะอาราชิ": {"romaji": "Chō Urutora Gurēto Derishasu Daisharin Yama Arashi", "kanji": "超ウルトラグレートデリシャス大車輪山嵐", "english": "Super Ultra Great Delicious Mountain Storm"},
   "เอ็นบุเทนนิส": {"romaji": "Enbu Tenisu", "kanji": "演武テニス", "english": "Enbu (Martial Demonstration) Tennis"},
