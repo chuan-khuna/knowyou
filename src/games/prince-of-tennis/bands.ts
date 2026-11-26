@@ -1,11 +1,4 @@
-export interface ScoreBand {
-  /** Inclusive. */
-  readonly min: number;
-  /** Inclusive. */
-  readonly max: number;
-  readonly title: string;
-  readonly line: string;
-}
+import type { ScoreBand } from "../quiz";
 
 /** Lowest first, covering 0 to 20 with no gap or overlap. */
 export const SCORE_BANDS: readonly ScoreBand[] = [
@@ -15,9 +8,3 @@ export const SCORE_BANDS: readonly ScoreBand[] = [
   { min: 13, max: 16, title: "ตัวแทนระดับคันโต", line: "ฝีมือขนาดนี้ อย่าประมาท แล้วไปให้ถึงระดับประเทศ" },
   { min: 17, max: 20, title: "เจ้าชายแห่งเทนนิส", line: "คุณรู้จักเรื่องนี้ดีราวกับยืนอยู่ในสนามเอง" },
 ];
-
-export function bandFor(score: number): ScoreBand {
-  const band = SCORE_BANDS.find((b) => score >= b.min && score <= b.max);
-  if (!band) throw new Error(`no band for score ${score}`);
-  return band;
-}

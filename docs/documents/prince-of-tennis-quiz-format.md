@@ -1,6 +1,6 @@
 # Prince of Tennis quiz: question format for research
 
-A brief for an agent that researches new questions for คุณรู้จัก Prince of Tennis ดีแค่ไหน. Return the questions as one JSON file in the shape below. A maintainer checks them and appends them to `src/games/prince-of-tennis/questions.json` and `glossary.json`. How the quiz runs is in [prince-of-tennis-quiz.md](prince-of-tennis-quiz.md).
+A brief for an agent that researches new questions for คุณรู้จัก Prince of Tennis ดีแค่ไหน. Return the questions as one JSON file in the shape below. A maintainer checks them and appends them to `src/games/prince-of-tennis/questions.json` and `glossary.json`. How the quiz runs is in [quiz.md](quiz.md).
 
 ## How the quiz uses a question
 

@@ -1,11 +1,11 @@
 /**
- * A play of the quiz is an immutable value: its mode, its seed and the answer
+ * A play of a quiz is an immutable value: its mode, its seed and the answer
  * keys so far. Every other field is derived from those by `advance`, so a play
  * replays exactly and a saved record needs nothing else.
  */
 
 import { bandFor, type ScoreBand } from "./bands";
-import { GLOSSES, type Gloss } from "./glosses";
+import type { Gloss } from "./glosses";
 import { TIERS, type QuestionBank, type Tier } from "./question";
 
 export const QUESTIONS_PER_TIER = 5;
@@ -67,7 +67,18 @@ export interface FinishedQuizPlay extends QuizPlayBase {
 
 export type QuizPlay = AskingQuizPlay | FinishedQuizPlay;
 
-export interface Quiz {
+/** One title's quiz as data. A title module builds it from its JSON files and its score bands. */
+export interface QuizContent {
+  /** The title's route slug, such as "prince-of-tennis". It also names the saved play. */
+  readonly id: string;
+  readonly bank: QuestionBank;
+  /** Keyed by the exact option label. */
+  readonly glosses: Readonly<Record<string, Gloss>>;
+  /** Lowest first, covering 0 to QUESTIONS_PER_PLAY with no gap or overlap. */
+  readonly bands: readonly ScoreBand[];
+}
+
+export interface Quiz extends QuizContent {
   start(seed: number, mode?: QuizMode): AskingQuizPlay;
   /** Throws if `optionKey` is not one of the current question's options. */
   answer(play: AskingQuizPlay, optionKey: string): QuizPlay;
@@ -80,7 +91,8 @@ interface DrawnQuestion {
   readonly source: string;
 }
 
-export function createQuiz(bank: QuestionBank): Quiz {
+export function createQuiz(content: QuizContent): Quiz {
+  const { bank, glosses, bands } = content;
   // Sorted by id, so a seed draws the same play however the bank file is ordered.
   const byTier = TIERS.map((tier) =>
     Object.keys(bank)
@@ -101,7 +113,7 @@ export function createQuiz(bank: QuestionBank): Quiz {
       const q = bank[id]!;
       const labels = shuffle([q.answer, ...q.decoys], random);
       const options = labels.map((label, slot) => {
-        const gloss = GLOSSES[label];
+        const gloss = glosses[label];
         return { key: `${id}:${SLOTS[slot]}`, label, ...(gloss === undefined ? {} : { gloss }) };
       });
       return {
@@ -130,10 +142,14 @@ export function createQuiz(bank: QuestionBank): Quiz {
     const base = { mode, seed, total: drawn.length, answerKeys, answered, score };
     const next = drawn[answerKeys.length];
     if (next) return { ...base, phase: "asking", question: next.card };
-    return { ...base, phase: "finished", band: mode === "standard" ? bandFor(score) : null };
+    return { ...base, phase: "finished", band: mode === "standard" ? bandFor(bands, score) : null };
   };
 
   return {
+    id: content.id,
+    bank,
+    glosses,
+    bands,
     start: (seed, mode = "standard") => advance(mode, seed, []) as AskingQuizPlay,
     answer: (play, optionKey) => {
       if (play.phase !== "asking") throw new Error("the quiz is finished");

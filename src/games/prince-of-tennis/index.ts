@@ -1,32 +1,20 @@
 /**
  * The Prince of Tennis quiz: the module's only entry point. Code outside
  * src/games/prince-of-tennis imports from here; boundaries.test.ts fails on
- * any deeper import.
+ * any deeper import. The quiz itself is the shared one in src/games/quiz.
+ *
+ * Questions ask about moves, schools and story events only: no birthdays,
+ * numbers, scores or personal trivia.
  */
 
-import { bank } from "./bank";
-import { createQuiz } from "./quiz";
+import { createQuiz, parseGlossary, parseQuestions } from "../quiz";
+import { SCORE_BANDS } from "./bands";
+import glossary from "./glossary.json";
+import questions from "./questions.json";
 
-export { bank } from "./bank";
-export { SCORE_BANDS, bandFor, type ScoreBand } from "./bands";
-export { MIN_QUESTIONS_PER_TIER, bankIssues } from "./check";
-export { GLOSSES, type Gloss } from "./glosses";
-export { TIERS, type QuestionBank, type QuizQuestion, type Tier } from "./question";
-export {
-  QUESTIONS_PER_PLAY,
-  QUESTIONS_PER_TIER,
-  QUIZ_MODES,
-  createQuiz,
-  type AnsweredQuizQuestion,
-  type AskingQuizPlay,
-  type FinishedQuizPlay,
-  type Quiz,
-  type QuizCard,
-  type QuizMode,
-  type QuizOption,
-  type QuizPlay,
-} from "./quiz";
-export { QUIZ_RECORD_KEY, encodeQuizRecord, restoreQuiz } from "./record";
-
-/** The quiz over the shipped bank. */
-export const princeOfTennisQuiz = createQuiz(bank);
+export const princeOfTennisQuiz = createQuiz({
+  id: "prince-of-tennis",
+  bank: parseQuestions(questions),
+  glosses: parseGlossary(glossary),
+  bands: SCORE_BANDS,
+});

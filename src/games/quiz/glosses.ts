@@ -1,5 +1,3 @@
-import glossary from "./glossary.json";
-
 /**
  * The original names shown under an option whose label is a Japanese technique
  * name, or a Thai translation of one. Keyed by the exact option label, so one
@@ -12,7 +10,7 @@ export interface Gloss {
   readonly english: string;
 }
 
-/** Reads glossary.json. Throws on an entry without all three names, listing every one. */
+/** Reads a title's glossary.json. Throws on an entry without all three names, listing every one. */
 export function parseGlossary(raw: unknown): Readonly<Record<string, Gloss>> {
   if (typeof raw !== "object" || raw === null || Array.isArray(raw)) throw new Error("glossary.json: expected an object keyed by option label");
   const issues = Object.entries(raw)
@@ -21,5 +19,3 @@ export function parseGlossary(raw: unknown): Readonly<Record<string, Gloss>> {
   if (issues.length > 0) throw new Error(`glossary.json:\n  ${issues.join("\n  ")}`);
   return raw as Readonly<Record<string, Gloss>>;
 }
-
-export const GLOSSES = parseGlossary(glossary);

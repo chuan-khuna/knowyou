@@ -1,8 +1,7 @@
-import questions from "./questions.json";
 import { TIERS, type QuestionBank, type QuizQuestion, type Tier } from "./question";
 
 /**
- * Reads the question list from questions.json into a bank keyed by id.
+ * Reads a title's questions.json, the question list, into a bank keyed by id.
  * Throws on a question of the wrong shape or a repeated id, listing every one,
  * so a bad edit fails the tests and the build rather than a play.
  */
@@ -28,6 +27,3 @@ export function parseQuestions(raw: unknown): QuestionBank {
   if (issues.length > 0) throw new Error(`questions.json:\n  ${issues.join("\n  ")}`);
   return bank;
 }
-
-/** The shipped bank. Questions ask about moves, schools and story events only: no birthdays, numbers, scores or personal trivia. */
-export const bank: QuestionBank = parseQuestions(questions);

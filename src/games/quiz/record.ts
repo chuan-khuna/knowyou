@@ -6,7 +6,10 @@
 
 import { QUIZ_MODES, type Quiz, type QuizMode, type QuizPlay } from "./quiz";
 
-export const QUIZ_RECORD_KEY = "knowyou:play:prince-of-tennis";
+/** The localStorage key for a title's saved play, such as `knowyou:play:prince-of-tennis`. */
+export function quizRecordKey(quiz: Pick<Quiz, "id">): string {
+  return `knowyou:play:${quiz.id}`;
+}
 
 /** `mode` is left out for a standard play, so records saved before modes existed still restore. */
 interface QuizRecord {

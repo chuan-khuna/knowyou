@@ -1,20 +1,20 @@
 import { describe, expect, test } from "bun:test";
 import {
   QUESTIONS_PER_PLAY,
-  QUIZ_RECORD_KEY,
-  SCORE_BANDS,
   TIERS,
   bandFor,
   createQuiz,
   encodeQuizRecord,
+  quizRecordKey,
   restoreQuiz,
   type AskingQuizPlay,
+  type Gloss,
   type Quiz,
   type QuizPlay,
 } from ".";
-import { fixtureBank } from "./testing/fixture-bank";
+import { fixtureContent } from "./testing/fixture-bank";
 
-const quiz = createQuiz(fixtureBank(8));
+const quiz = createQuiz(fixtureContent(8));
 
 const rightKey = (play: AskingQuizPlay) => play.question.options.find((o) => o.label.startsWith("right "))!.key;
 const wrongKey = (play: AskingQuizPlay) => play.question.options.find((o) => o.label.startsWith("wrong "))!.key;
@@ -89,7 +89,7 @@ describe("a play", () => {
 
   test("a finished play carries its band", () => {
     const play = playThrough(quiz, 8, 20, (i) => i < 14);
-    expect(play.phase === "finished" && play.band).toEqual(bandFor(14));
+    expect(play.phase === "finished" && play.band).toEqual({ min: 13, max: 16, title: "band 13-16", line: "line 13-16" });
   });
 
   test("rejects an answer key that isn't one of the current options", () => {
@@ -106,7 +106,23 @@ describe("a play", () => {
   });
 
   test("a bank with fewer than 5 questions in a tier can't make a play", () => {
-    expect(() => createQuiz(fixtureBank(4))).toThrow();
+    expect(() => createQuiz(fixtureContent(4))).toThrow();
+  });
+
+  test("an option with a gloss carries it, wherever the label appears", () => {
+    const gloss: Gloss = { romaji: "Waza", kanji: "技", english: "Technique" };
+    const glossed = createQuiz(fixtureContent(5, { glosses: { "right easy-0": gloss, "wrong easy-1 2": gloss } }));
+    let seen = 0;
+    let play: QuizPlay = glossed.start(0, "all");
+    while (play.phase === "asking") {
+      for (const option of play.question.options) {
+        const expected = option.label === "right easy-0" || option.label === "wrong easy-1 2" ? gloss : undefined;
+        expect(option.gloss).toEqual(expected);
+        if (expected) seen++;
+      }
+      play = glossed.answer(play, play.question.options[0]!.key);
+    }
+    expect(seen).toBe(2);
   });
 });
 
@@ -152,25 +168,19 @@ describe("an all-questions play", () => {
 });
 
 describe("score bands", () => {
-  test("every score from 0 to 20 maps to exactly one band", () => {
-    for (let score = 0; score <= 20; score++) {
-      expect(SCORE_BANDS.filter((b) => score >= b.min && score <= b.max)).toHaveLength(1);
-      expect(bandFor(score).title.length).toBeGreaterThan(0);
-    }
-  });
-
-  test("there are 5 bands with a title and a line each", () => {
-    expect(SCORE_BANDS.map((b) => [b.min, b.max])).toEqual([[0, 4], [5, 8], [9, 12], [13, 16], [17, 20]]);
-    for (const band of SCORE_BANDS) {
-      expect(band.title.trim()).not.toBe("");
-      expect(band.line.trim()).not.toBe("");
-    }
+  test("bandFor finds the band that holds the score, ends included", () => {
+    expect(bandFor(quiz.bands, 0).title).toBe("band 0-4");
+    expect(bandFor(quiz.bands, 4).title).toBe("band 0-4");
+    expect(bandFor(quiz.bands, 5).title).toBe("band 5-8");
+    expect(bandFor(quiz.bands, 20).title).toBe("band 17-20");
+    expect(() => bandFor(quiz.bands, 21)).toThrow();
   });
 });
 
 describe("a saved play", () => {
-  test("is stored under the quiz's own key", () => {
-    expect(QUIZ_RECORD_KEY).toBe("knowyou:play:prince-of-tennis");
+  test("is stored under a key named for the title", () => {
+    expect(quizRecordKey(quiz)).toBe("knowyou:play:fixture");
+    expect(quizRecordKey(createQuiz(fixtureContent(5, { id: "naruto" })))).toBe("knowyou:play:naruto");
   });
 
   test("an unfinished play comes back at the same question", () => {
@@ -203,6 +213,6 @@ describe("a saved play", () => {
 
   test("is dropped when the bank changed and the saved answers belong to other questions", () => {
     const raw = encodeQuizRecord(playThrough(quiz, 6, 10));
-    expect(restoreQuiz(createQuiz(fixtureBank(9)), raw)).toBeNull();
+    expect(restoreQuiz(createQuiz(fixtureContent(9)), raw)).toBeNull();
   });
 });
