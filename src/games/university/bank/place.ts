@@ -51,13 +51,16 @@ export const place = {
     ],
   }),
 
-  cold: lean({
+  side: lean({
     topic: "place",
-    prompt: "หน้าหนาว ต้องใส่เสื้อกันหนาวไปเรียนไหม?",
+    prompt: "มหาวิทยาลัยของคุณอยู่ฝั่งไหนของกรุงเทพฯ?",
+    aside: "ตามวิทยาเขตที่คุณเรียนนานที่สุด",
     options: [
-      { key: "cold", label: "ต้องใส่ทุกเช้า หนาวจริง", area: { bangkok: 0.1, north: 6, northeast: 3, south: 0.02, east: 0.1 }, tags: { hill: 1 } },
-      { key: "cool", label: "บางวันเย็นสบาย", area: { bangkok: 2, north: 2, northeast: 3, south: 0.5, east: 1.5 } },
-      { key: "warm", label: "ไม่ต้องเลย ร้อนทั้งปี", area: { bangkok: 3, north: 0.2, northeast: 0.8, south: 4, east: 3 } },
+      { key: "central", label: "ใจกลางเมือง เช่น สยาม อโศก ดินแดง ท่าพระจันทร์", base: 0.05, area: { bangkok: 1 }, tags: { "bkk-central": 100 } },
+      { key: "north", label: "ฝั่งเหนือ เช่น บางซื่อ บางเขน หลักสี่ แจ้งวัฒนะ รังสิต", base: 0.05, area: { bangkok: 1 }, tags: { "bkk-north": 100 } },
+      { key: "east", label: "ฝั่งตะวันออก เช่น รามคำแหง บางนา ลาดกระบัง หนองจอก", base: 0.05, area: { bangkok: 1 }, tags: { "bkk-east": 100 } },
+      { key: "west", label: "ฝั่งธนฯ และตะวันตก เช่น บางมด เพชรเกษม ศาลายา นครปฐม", base: 0.05, area: { bangkok: 1 }, tags: { "bkk-west": 100 } },
+      { key: "outside", label: "ไม่ได้อยู่กรุงเทพฯ หรือปริมณฑล", area: { north: 1, northeast: 1, south: 1, east: 1 } },
     ],
   }),
 } as const;

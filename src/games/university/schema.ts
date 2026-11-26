@@ -73,7 +73,17 @@ export type Tag =
   /** The uniform is checked every day. */
   | "uniform"
   /** The Rangsit cluster, by Future Park Rangsit. */
-  | "rangsit";
+  | "rangsit"
+  /** A university hospital on campus that students use. */
+  | "hospital"
+  /** Bangkok's centre: Siam, Asok, Din Daeng, Tha Phra Chan. */
+  | "bkk-central"
+  /** Bangkok's north: Bang Sue, Bang Khen, Lak Si, Chaeng Watthana, Rangsit. */
+  | "bkk-north"
+  /** Bangkok's east: Ramkhamhaeng, Bang Na, Lat Krabang, Nong Chok. */
+  | "bkk-east"
+  /** Thonburi and the west: Bang Mot, Phetkasem, Salaya, Nakhon Pathom. */
+  | "bkk-west";
 
 export type Topic = "life" | "study" | "place";
 

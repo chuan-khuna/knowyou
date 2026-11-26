@@ -161,6 +161,16 @@ export const life = {
     ],
   }),
 
+  doctor: lean({
+    topic: "life",
+    prompt: "ตอนเรียน ถ้าไม่สบาย คุณไปหาหมอที่ไหน?",
+    options: [
+      { key: "hospital", label: "โรงพยาบาลของมหาวิทยาลัยในวิทยาเขต", base: 0.2, tags: { hospital: 20 } },
+      { key: "clinic", label: "ห้องพยาบาลหรือคลินิกในมหาวิทยาลัย", base: 3, tags: { hospital: -0.3 } },
+      { key: "outside", label: "โรงพยาบาลหรือคลินิกนอกมหาวิทยาลัย", base: 3, tags: { hospital: -0.6 } },
+    ],
+  }),
+
   weekend: lean({
     topic: "life",
     prompt: "เสาร์อาทิตย์ เพื่อนส่วนใหญ่ทำอะไร?",

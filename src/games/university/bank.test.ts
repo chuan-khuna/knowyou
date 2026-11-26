@@ -90,6 +90,9 @@ describe("question bank", () => {
     expect(p("mall", "future", "rangsit")).toBeGreaterThan(p("mall", "future", "kmitl") * 5);
     expect(p("mall", "siam", "chula")).toBeGreaterThan(0.6);
     expect(p("area", "north", "mfu")).toBeGreaterThan(0.8);
+    expect(p("side", "west", "kmutt")).toBeGreaterThan(0.8);
+    expect(p("side", "outside", "kku")).toBeGreaterThan(0.8);
+    expect(p("doctor", "hospital", "psu")).toBeGreaterThan(p("doctor", "hospital", "utcc") * 5);
   });
 
   test("a pick question favours each signature's own university, then others in its area", () => {
