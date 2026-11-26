@@ -19,3 +19,32 @@ export function parseGlossary(raw: unknown): Readonly<Record<string, Gloss>> {
   if (issues.length > 0) throw new Error(`glossary.json:\n  ${issues.join("\n  ")}`);
   return raw as Readonly<Record<string, Gloss>>;
 }
+
+/** A glossary term named inside a prompt, with its gloss. */
+export interface PromptTerm {
+  readonly label: string;
+  readonly gloss: Gloss;
+}
+
+const thaiWords = new Intl.Segmenter("th", { granularity: "word" });
+
+/**
+ * The glossary terms a prompt names, in the order they appear, each once.
+ * Thai has no spaces, so a term counts only where it starts and ends on a
+ * word boundary: นภา is found in แหวนแห่งนภา but not inside ในภาคอนาคต. Where
+ * terms overlap the longest wins, so ลูกถล่มปฐพีสองมือ is not also ลูกถล่มปฐพี.
+ */
+export function termsIn(text: string, glosses: Readonly<Record<string, Gloss>>): readonly PromptTerm[] {
+  const bounds = new Set([text.length, ...Array.from(thaiWords.segment(text), (s) => s.index)]);
+  const taken: { start: number; end: number; label: string }[] = [];
+  for (const label of Object.keys(glosses).sort((a, b) => b.length - a.length)) {
+    for (let start = text.indexOf(label); start !== -1; start = text.indexOf(label, start + 1)) {
+      const end = start + label.length;
+      if (!bounds.has(start) || !bounds.has(end)) continue;
+      if (taken.some((t) => t.start < end && start < t.end)) continue;
+      taken.push({ start, end, label });
+    }
+  }
+  const labels = [...new Set(taken.sort((a, b) => a.start - b.start).map((t) => t.label))];
+  return labels.map((label) => ({ label, gloss: glosses[label]! }));
+}

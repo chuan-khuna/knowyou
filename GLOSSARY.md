@@ -11,7 +11,7 @@ One guessing game, defined by the hidden fact it guesses and its question bank. 
 _Avoid_: Mode, quiz
 
 **Quiz**:
-A set of questions about one title that each have one right answer, ending in a score and the right answers. It guesses nothing about the player, so it is not a game. The titles are Prince of Tennis and Naruto.
+A set of questions about one title that each have one right answer, ending in a score and the right answers. It guesses nothing about the player, so it is not a game. The titles are Dragon Ball, Naruto, Prince of Tennis and Reborn.
 _Avoid_: Game, test, trivia game
 
 **Hidden value**:

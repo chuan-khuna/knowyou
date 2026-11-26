@@ -1,5 +1,6 @@
 import { describe, expect, test } from "bun:test";
 import {
+  MIN_QUESTIONS_PER_PLAY,
   QUESTIONS_PER_PLAY,
   TIERS,
   bandFor,
@@ -7,12 +8,13 @@ import {
   encodeQuizRecord,
   quizRecordKey,
   restoreQuiz,
+  termsIn,
   type AskingQuizPlay,
   type Gloss,
   type Quiz,
   type QuizPlay,
 } from ".";
-import { fixtureContent } from "./testing/fixture-bank";
+import { fixtureBank, fixtureContent } from "./testing/fixture-bank";
 
 const quiz = createQuiz(fixtureContent(8));
 
@@ -113,7 +115,7 @@ describe("a play", () => {
     const gloss: Gloss = { romaji: "Waza", kanji: "技", english: "Technique" };
     const glossed = createQuiz(fixtureContent(5, { glosses: { "right easy-0": gloss, "wrong easy-1 2": gloss } }));
     let seen = 0;
-    let play: QuizPlay = glossed.start(0, "all");
+    let play: QuizPlay = glossed.start(0, glossed.size);
     while (play.phase === "asking") {
       for (const option of play.question.options) {
         const expected = option.label === "right easy-0" || option.label === "wrong easy-1 2" ? gloss : undefined;
@@ -126,44 +128,111 @@ describe("a play", () => {
   });
 });
 
-describe("an all-questions play", () => {
-  const all = (seed: number, count = Infinity, isRight?: (i: number) => boolean) => {
-    let play: QuizPlay = quiz.start(seed, "all");
-    for (let i = 0; i < count && play.phase === "asking"; i++) {
+describe("terms named in a prompt", () => {
+  const sky: Gloss = { romaji: "Ōzora", kanji: "大空", english: "Sky Flame" };
+  const big: Gloss = { romaji: "Ōzora no Hono", kanji: "大空の炎", english: "Flame of the Sky" };
+
+  test("a term counts only on Thai word boundaries, longest first, each once", () => {
+    const glosses = { นภา: sky, ไฟแห่งนภา: big };
+    expect(termsIn("ทำไมแหวนแห่งนภาจึงปฏิเสธซันซัส?", glosses)).toEqual([{ label: "นภา", gloss: sky }]);
+    expect(termsIn("ในภาคอนาคต ใครคือผู้นำ?", glosses)).toEqual([]);
+    expect(termsIn("ไฟแห่งนภา กับนภา และนภา?", glosses)).toEqual([
+      { label: "ไฟแห่งนภา", gloss: big },
+      { label: "นภา", gloss: sky },
+    ]);
+  });
+
+  test("each question card carries the terms its prompt names", () => {
+    const gloss: Gloss = { romaji: "Waza", kanji: "技", english: "Technique" };
+    const bank = Object.fromEntries(
+      Object.entries(fixtureBank(5)).map(([id, q]) => [id, id === "easy-0" ? { ...q, prompt: "who uses right easy-1?" } : q]),
+    );
+    const titled = createQuiz(fixtureContent(5, { bank, glosses: { "right easy-1": gloss } }));
+    let play: QuizPlay = titled.start(0, titled.size);
+    const terms: Record<string, unknown> = {};
+    while (play.phase === "asking") {
+      terms[play.question.id] = play.question.terms;
+      play = titled.answer(play, play.question.options[0]!.key);
+    }
+    expect(terms["easy-0"]).toEqual([{ label: "right easy-1", gloss }]);
+    expect(terms["easy-1"]).toEqual([]);
+  });
+});
+
+describe("a play of any count", () => {
+  const playCount = (seed: number, count: number, answers = Infinity, isRight?: (i: number) => boolean) => {
+    let play: QuizPlay = quiz.start(seed, count);
+    for (let i = 0; i < answers && play.phase === "asking"; i++) {
       play = quiz.answer(play, (isRight?.(i) ?? true) ? rightKey(play) : wrongKey(play));
     }
     return play;
   };
+  const tiersOf = (play: QuizPlay) => play.answered.map((a) => a.question.tier);
 
-  test("asks every question in the bank once, easiest tier first", () => {
-    const play = all(11);
+  test("defaults to 20", () => {
+    expect(quiz.start(1).total).toBe(QUESTIONS_PER_PLAY);
+    expect(quiz.start(1)).toEqual(quiz.start(1, 20));
+  });
+
+  test("the bank's size asks every question once, easiest tier first", () => {
+    const play = playCount(11, quiz.size);
     expect(play.phase).toBe("finished");
     expect(play.total).toBe(32);
-    const questions = play.answered.map((a) => a.question);
-    expect(questions.map((q) => q.number)).toEqual(Array.from({ length: 32 }, (_, i) => i + 1));
-    expect(new Set(questions.map((q) => q.id)).size).toBe(32);
-    expect(questions.map((q) => q.tier)).toEqual(TIERS.flatMap((tier) => Array(8).fill(tier)));
+    expect(new Set(play.answered.map((a) => a.question.id)).size).toBe(32);
+    expect(tiersOf(play)).toEqual(TIERS.flatMap((tier) => Array(8).fill(tier)));
   });
 
-  test("ends with the score out of the whole bank and no fan title", () => {
-    const play = all(12, Infinity, (i) => i % 2 === 0);
-    expect(play.phase === "finished" && play.band).toBeNull();
-    expect(play.score).toBe(16);
+  test("deals the count round-robin over the tiers, easiest first", () => {
+    const tiers = (counts: number[]) => TIERS.flatMap((tier, i) => Array(counts[i]).fill(tier));
+    expect(tiersOf(playCount(3, 5))).toEqual(tiers([2, 1, 1, 1]));
+    expect(tiersOf(playCount(3, 23))).toEqual(tiers([6, 6, 6, 5]));
   });
 
-  test("a standard play still asks 20 and carries its mode", () => {
-    expect(quiz.start(1).mode).toBe("standard");
-    expect(quiz.start(1).total).toBe(QUESTIONS_PER_PLAY);
+  test("a tier that runs out is skipped and the rest take its share", () => {
+    const big = createQuiz(fixtureContent(15));
+    let play: QuizPlay = big.start(4, 50);
+    while (play.phase === "asking") play = big.answer(play, play.question.options[0]!.key);
+    expect(tiersOf(play)).toEqual(TIERS.flatMap((tier, i) => Array([13, 13, 12, 12][i]).fill(tier)));
+    const tenEasy = Object.entries(fixtureBank(10)).filter(([id]) => id.startsWith("easy-"));
+    const lopsided = createQuiz(fixtureContent(5, { bank: { ...fixtureBank(5), ...Object.fromEntries(tenEasy) } }));
+    let all: QuizPlay = lopsided.start(4, 25);
+    while (all.phase === "asking") all = lopsided.answer(all, all.question.options[0]!.key);
+    expect(tiersOf(all)).toEqual(TIERS.flatMap((tier, i) => Array([10, 5, 5, 5][i]).fill(tier)));
   });
 
-  test("a saved all-questions play comes back in the same mode", () => {
-    const play = all(13, 25);
-    expect(JSON.parse(encodeQuizRecord(play)).mode).toBe("all");
+  test.each([MIN_QUESTIONS_PER_PLAY - 1, 33, 7.5, Number.NaN])("refuses a count of %p", (count) => {
+    expect(() => quiz.start(1, count)).toThrow();
+  });
+
+  test("every finished play has a fan title, for the score scaled to 20", () => {
+    // 16 of 32 scales to 10 of 20.
+    expect(playCount(12, 32, Infinity, (i) => i % 2 === 0)).toMatchObject({ phase: "finished", score: 16, band: { title: "band 9-12" } });
+    // 4 of 5 scales to 16 of 20.
+    expect(playCount(12, 5, Infinity, (i) => i > 0)).toMatchObject({ score: 4, band: { title: "band 13-16" } });
+    expect(playCount(12, 5, Infinity, () => false)).toMatchObject({ score: 0, band: { title: "band 0-4" } });
+    expect(playCount(12, 32)).toMatchObject({ score: 32, band: { title: "band 17-20" } });
+  });
+
+  test("a saved play of another count comes back with its count", () => {
+    const play = playCount(13, 25, 9);
+    expect(JSON.parse(encodeQuizRecord(play)).count).toBe(25);
     expect(restoreQuiz(quiz, encodeQuizRecord(play))).toEqual(play);
+    expect(JSON.parse(encodeQuizRecord(quiz.start(13))).count).toBeUndefined();
   });
 
-  test("a saved record with an unknown mode is dropped", () => {
-    expect(restoreQuiz(quiz, JSON.stringify({ v: 1, mode: "blitz", seed: 1, answerKeys: [] }))).toBeNull();
+  test("a record saved before counts, in the old all-questions mode, restores as the whole bank", () => {
+    const play = playCount(13, quiz.size, 25);
+    const old = JSON.stringify({ v: 1, mode: "all", seed: 13, answerKeys: play.answerKeys });
+    expect(restoreQuiz(quiz, old)).toEqual(play);
+  });
+
+  test.each([
+    ["an unknown mode", { mode: "blitz" }],
+    ["a count that isn't a number", { count: "50" }],
+    ["a count the bank can't fill", { count: 33 }],
+    ["a count under the least", { count: 4 }],
+  ])("a saved record with %s is dropped", (_, extra) => {
+    expect(restoreQuiz(quiz, JSON.stringify({ v: 1, seed: 1, answerKeys: [], ...extra }))).toBeNull();
   });
 });
 

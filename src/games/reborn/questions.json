@@ -1,0 +1,1964 @@
+[
+  {
+    "id": "reborn-vongola-tutor",
+    "tier": "easy",
+    "prompt": "รีบอร์นถูกส่งมาฝึกสึนะให้เป็นบอสคนต่อไปของแฟมิลี่ไหน?",
+    "answer": "วองโกเล่",
+    "decoys": [
+      "คาบัคโรเน่",
+      "โบวีโน่",
+      "มิลฟีโอเล่"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Reborn",
+    "evidence": "who showed up one day to train Tsunayoshi Sawada to be the next boss of the Vongola Famiglia"
+  },
+  {
+    "id": "reborn-strongest-hitman",
+    "tier": "easy",
+    "prompt": "แม้จะอยู่ในร่างทารก รีบอร์นก็ได้รับฉายาว่าอะไร?",
+    "answer": "นักฆ่าที่แข็งแกร่งที่สุดในโลก",
+    "decoys": [
+      "นักมายาที่แข็งแกร่งที่สุด",
+      "นักดาบที่แข็งแกร่งที่สุด",
+      "นักวิทยาศาสตร์ที่ฉลาดที่สุด"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Reborn",
+    "evidence": "Though in the form of a baby, Reborn holds the title of The World's Strongest Hitman."
+  },
+  {
+    "id": "reborn-leon-chameleon",
+    "tier": "easy",
+    "prompt": "สัตว์คู่ใจที่มักเกาะอยู่บนปีกหมวกของรีบอร์นและแปลงร่างได้ เป็นสัตว์ชนิดใด?",
+    "answer": "กิ้งก่าคาเมเลียน",
+    "decoys": [
+      "เต่า",
+      "นกอินทรี",
+      "ปลาหมึกยักษ์"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Reborn",
+    "evidence": "Reborn with Leon the shape-changing chameleon … Leon, his animal partner, is usually seen resting on the brim of his hat."
+  },
+  {
+    "id": "dying-will-bullet-effect",
+    "tier": "easy",
+    "prompt": "คนที่ถูกยิงด้วยกระสุนดับเครื่องชนขณะมีเรื่องค้างคาใจ จะเกิดอะไรขึ้น?",
+    "answer": "ฟื้นขึ้นมาพร้อมไฟบนหน้าผาก",
+    "decoys": [
+      "สลับตัวกับตัวเองในอีก 10 ปีข้างหน้า",
+      "ถูกคนยิงสิงร่าง",
+      "เสียความทรงจำทั้งหมด"
+    ],
+    "note": "ในมังงะใช้กระสุนจริง ส่วนในอนิเมะเป็นลำพลังงาน แต่ผลเหมือนกัน",
+    "source": "https://reborn.fandom.com/wiki/Dying_Will_Bullet",
+    "evidence": "If they feel regret when they were shot (with an actual bullet, as in the manga, or with a form of energy, as in the anime), they are resurrected with a flame on their forehead."
+  },
+  {
+    "id": "gokudera-right-hand",
+    "tier": "easy",
+    "prompt": "หลังจากสึนะช่วยชีวิตโกคุเดระจากระเบิดของตัวเอง โกคุเดระตั้งเป้าจะเป็นอะไรของสึนะ?",
+    "answer": "มือขวา",
+    "decoys": [
+      "คู่ปรับ",
+      "ครูพิเศษ",
+      "บอดี้การ์ดของรีบอร์น"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Daily_Life_Arc",
+    "evidence": "However, with Reborn's help, Tsuna is able to stop him and also save his life from his backfiring Triple Bombs causing Gokudera to follow him and aim to be his right hand man."
+  },
+  {
+    "id": "mochida-kendo",
+    "tier": "easy",
+    "prompt": "ในตอนต้นเรื่อง สึนะถูกบังคับให้แข่งกีฬาอะไรกับรุ่นพี่โมจิดะ?",
+    "answer": "เคนโด้",
+    "decoys": [
+      "ยูโด",
+      "มวย",
+      "ซูโม่"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Daily_Life_Arc",
+    "evidence": "is forced into a match with the school's Kendo Club Captain, Kensuke Mochida."
+  },
+  {
+    "id": "hibari-disciplinary",
+    "tier": "easy",
+    "prompt": "ฮิบาริเป็นหัวหน้าของกลุ่มไหนในโรงเรียนมัธยมต้นนามิโมริ?",
+    "answer": "กรรมการรักษาระเบียบ",
+    "decoys": [
+      "ชมรมมวย",
+      "ชมรมเคนโด้",
+      "สภานักเรียน"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Kyoya_Hibari",
+    "evidence": "Kyoya Hibari, commonly referred to as Hibari, is the leader of the Namimori Middle Disciplinary Committee, a group of delinquents who are all loyal to him."
+  },
+  {
+    "id": "ryohei-boxing-club",
+    "tier": "easy",
+    "prompt": "เรียวเฮเป็นหัวหน้าชมรมอะไรของโรงเรียนนามิโมริ?",
+    "answer": "ชมรมมวย",
+    "decoys": [
+      "ชมรมเคนโด้",
+      "ชมรมเบสบอล",
+      "ชมรมคาราเต้"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Ryohei_Sasagawa",
+    "evidence": "A third year student at Namimori Middle School, he is also the captain of the boxing club."
+  },
+  {
+    "id": "hibari-tonfa",
+    "tier": "easy",
+    "prompt": "อาวุธหลักของฮิบาริคืออะไร?",
+    "answer": "ทอนฟาคู่",
+    "decoys": [
+      "แส้",
+      "ระเบิดไดนาไมต์",
+      "หอกสามง่าม"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Kyoya_Hibari",
+    "evidence": "Tonfas: Hibari's main weapon for combat is a pair of tonfas."
+  },
+  {
+    "id": "gokudera-dynamite",
+    "tier": "easy",
+    "prompt": "โกคุเดระใช้อะไรเป็นอาวุธหลักมาตั้งแต่ต้นเรื่อง?",
+    "answer": "ระเบิดไดนาไมต์",
+    "decoys": [
+      "ทอนฟาคู่",
+      "มีดขว้างกับลวด",
+      "แส้"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Hayato_Gokudera",
+    "evidence": "Skilled with using dynamite, Gokudera is sure to make use of this tremendously beneficial asset in combat."
+  },
+  {
+    "id": "lambo-bovino",
+    "tier": "easy",
+    "prompt": "แรมโบ้ นักฆ่าตัวจิ๋วที่มาญี่ปุ่นเพื่อลอบฆ่ารีบอร์น เป็นสมาชิกแฟมิลี่ไหน?",
+    "answer": "โบวีโน่",
+    "decoys": [
+      "วองโกเล่",
+      "คาบัคโรเน่",
+      "โทมาโซ"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Lambo",
+    "evidence": "Lambo is a 5-year-old hitman and member of the Bovino Famiglia mafioso who originally came to Japan with the goal of killing Reborn."
+  },
+  {
+    "id": "ten-year-bazooka-effect",
+    "tier": "easy",
+    "prompt": "คนที่ถูกบาซูก้าทศวรรษยิงจะเกิดอะไรขึ้น?",
+    "answer": "สลับตัวกับตัวเองในอีก 10 ปีข้างหน้า",
+    "decoys": [
+      "เข้าสู่โหมดดับเครื่องชน",
+      "ถูกส่งไปยังโลกคู่ขนาน",
+      "กลายเป็นร่างทารก"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Ten_Year_Bazooka",
+    "evidence": "When shot by the Ten Year Bazooka, the target will switch places with their ten years later form."
+  },
+  {
+    "id": "bianchi-poison-cooking",
+    "tier": "easy",
+    "prompt": "อาวุธหลักของเบียงกี้คืออะไร?",
+    "answer": "อาหารพิษ",
+    "decoys": [
+      "ยุงพิษ",
+      "โยโย่เข็มพิษ",
+      "คลาริเน็ต"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Bianchi",
+    "evidence": "Poison Cooking: Her first and primary weapons are various types of cooking that can poison and incapitate her opponent."
+  },
+  {
+    "id": "bianchi-nickname",
+    "tier": "easy",
+    "prompt": "เบียงกี้มีฉายาในวงการมาเฟียว่าอะไร?",
+    "answer": "แมงป่องพิษ",
+    "decoys": [
+      "ม้าพยศ",
+      "ราชสีห์หนุ่มของวองโกเล่",
+      "นักฆ่าที่แข็งแกร่งที่สุดในโลก"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Bianchi",
+    "evidence": "Poison Scorpion Bianchi (毒サソリ・ビアンキ, Doku Sasori Bianki?)"
+  },
+  {
+    "id": "futa-ranking",
+    "tier": "easy",
+    "prompt": "ฟูตะเป็นที่ต้องการตัวของมาเฟียเพราะความสามารถด้านใด?",
+    "answer": "การจัดอันดับ",
+    "decoys": [
+      "การมองเห็นอนาคต",
+      "การสร้างภาพลวงตา",
+      "การประดิษฐ์อาวุธ"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Futa",
+    "evidence": "is a young boy who ranks people by their abilities in his Ranking Book."
+  },
+  {
+    "id": "dino-reborn-pupil",
+    "tier": "easy",
+    "prompt": "ก่อนจะมาสอนสึนะ รีบอร์นเคยเป็นครูพิเศษของบอสคนไหน?",
+    "answer": "ดีโน่",
+    "decoys": [
+      "ซันซัส",
+      "โคซาโตะ เอ็นมะ",
+      "เบียคุรัน"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Dino",
+    "evidence": "He is also Reborn's former pupil."
+  },
+  {
+    "id": "dino-cavallone",
+    "tier": "easy",
+    "prompt": "ดีโน่เป็นบอสรุ่นที่ 10 ของแฟมิลี่ไหน?",
+    "answer": "คาบัคโรเน่",
+    "decoys": [
+      "วองโกเล่",
+      "โบวีโน่",
+      "โทมาโซ"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Dino",
+    "evidence": "Dino is the tenth generation boss of the Cavallone Famiglia which is the number three Famiglia in its Mafia alliance with the Vongola Famiglia."
+  },
+  {
+    "id": "dino-whip",
+    "tier": "easy",
+    "prompt": "อาวุธหลักของดีโน่คืออะไร?",
+    "answer": "แส้",
+    "decoys": [
+      "ทอนฟาคู่",
+      "อีเต้อ",
+      "บูมเมอแรงใบมีด"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Dino",
+    "evidence": "His main weapons are a bullwhip and his pet turtle, Enzo."
+  },
+  {
+    "id": "mukuro-first-hyper",
+    "tier": "easy",
+    "prompt": "สึนะเข้าสู่ไฮเปอร์โหมดเป็นครั้งแรกระหว่างการต่อสู้กับใคร?",
+    "answer": "โรคุโด มุคุโร่",
+    "decoys": [
+      "ซันซัส",
+      "สเปลบี สควอโล่",
+      "เบียคุรัน"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Kokuyo_Arc",
+    "evidence": "The mittens transform and form X-Gloves and Tsuna enters Hyper Dying Will Mode for the first time as he says that he cannot die in peace until he defeats Mukuro."
+  },
+  {
+    "id": "hibari-sakura-weakness",
+    "tier": "easy",
+    "prompt": "ตอนบุกโกคุโยแลนด์ครั้งแรก ฮิบาริทรุดลงจนสู้ไม่ได้เพราะอะไร?",
+    "answer": "ดอกซากุระ",
+    "decoys": [
+      "เข็มพิษของจิกุสะ",
+      "ลูกตุ้มเหล็ก",
+      "เสียงคลาริเน็ต"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Kokuyo_Arc",
+    "evidence": "The leader commented that he had prepared several Sakura flowers as he knew of Hibari's weakness."
+  },
+  {
+    "id": "chikusa-yoyo",
+    "tier": "easy",
+    "prompt": "ในแก๊งโกคุโย ใครใช้โยโย่ยิงเข็มพิษใส่ศัตรู?",
+    "answer": "คาคิโมโตะ จิกุสะ",
+    "decoys": [
+      "โจชิมะ เคน",
+      "M.M",
+      "เบิร์ด"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Chikusa_Kakimoto",
+    "evidence": "He is a professional assassin, using his deadly \"Hedgehog\" yo-yo to spray his opponents with poisoned needles."
+  },
+  {
+    "id": "mm-clarinet",
+    "tier": "easy",
+    "prompt": "M.M จากแก๊งโกคุโยใช้อะไรเป็นอาวุธตอนสู้กับเบียงกี้?",
+    "answer": "คลาริเน็ต",
+    "decoys": [
+      "โยโย่",
+      "ลูกตุ้มเหล็ก",
+      "แส้"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Kokuyo_Arc",
+    "evidence": "However a girl in Kokuyo uniform with a Clarinet, emerged from the explosion unharmed introducing herself as M.M"
+  },
+  {
+    "id": "ken-animal-fangs",
+    "tier": "easy",
+    "prompt": "โจชิมะ เคน เปลี่ยนตัวเองให้มีพลังของสัตว์ต่าง ๆ ด้วยวิธีใด?",
+    "answer": "ใส่เขี้ยวสัตว์เข้าไปในปาก",
+    "decoys": [
+      "ยิงกระสุนใส่ตัวเอง",
+      "กินยาเม็ดพิเศษ",
+      "สวมหน้ากากรูปสัตว์"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Kokuyo_Arc",
+    "evidence": "Ken then revealed that he was able to change his abilities to those of many animals by putting their fangs into his mouth."
+  },
+  {
+    "id": "hibari-cloud-ring",
+    "tier": "easy",
+    "prompt": "ในศึกชิงแหวน ฮิบาริเป็นผู้ชิงตำแหน่งผู้พิทักษ์ธาตุใด?",
+    "answer": "เมฆา",
+    "decoys": [
+      "สายหมอก",
+      "วายุ",
+      "อัสนี"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Cloud_Ring_Battle",
+    "evidence": "It is the battle between the candidates for the title of Tenth Generation Vongola Cloud Guardian, Kyoya Hibari and Gola Moska."
+  },
+  {
+    "id": "yamamoto-vs-squalo",
+    "tier": "easy",
+    "prompt": "ในศึกชิงแหวนพิรุณ ยามาโมโตะต้องสู้กับใคร?",
+    "answer": "สเปลบี สควอโล่",
+    "decoys": [
+      "เบลเฟกอล",
+      "เลวี่ อาแทน",
+      "ลุสซูเรีย"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Vongola_Ring_Conflict",
+    "evidence": "Rain Ring Battle (Takeshi Yamamoto vs. Superbia Squalo)"
+  },
+  {
+    "id": "xanxus-varia-leader",
+    "tier": "easy",
+    "prompt": "ใครคือหัวหน้าของวาเรีย ที่มาแย่งตำแหน่งบอสรุ่นที่ 10 กับสึนะ?",
+    "answer": "ซันซัส",
+    "decoys": [
+      "สเปลบี สควอโล่",
+      "เบลเฟกอล",
+      "เลวี่ อาแทน"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Xanxus",
+    "evidence": "Xanxus is the current leader of the Varia, the independent assassination squad of the Vongola Famiglia."
+  },
+  {
+    "id": "ryohei-maximum-cannon",
+    "tier": "easy",
+    "prompt": "ท่าหมัดที่แรงที่สุดที่เรียวเฮฝึกสำเร็จเป็นคนแรกก่อนศึกชิงแหวน ชื่อว่าอะไร?",
+    "answer": "แม็กซิมั่มแคนน่อน",
+    "decoys": [
+      "ร็อกเก็ต บอมบ์",
+      "อิเล็คทริคโก้ คอร์นนาต้า",
+      "บิ๊กแบง แอ็กเซล"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Varia_Arc",
+    "evidence": "Ryohei is the first to complete his training, quickly mastering his strongest attack, the Maximum Cannon."
+  },
+  {
+    "id": "tsuna-box-lion",
+    "tier": "easy",
+    "prompt": "สัตว์กล่องวองโกเล่ของสึนะที่ชื่อนัตสึ เป็นสัตว์ชนิดใด?",
+    "answer": "สิงโต",
+    "decoys": [
+      "เสือ",
+      "แมว",
+      "สุนัข"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Leone_di_Cieli_ver._Vongola",
+    "evidence": "Its figure is that of a small lion cub that acts like its master in and out of battle, going from a serious, powerful animal to a timid, easily frightened cub."
+  },
+  {
+    "id": "lussuria-muay-thai",
+    "tier": "easy",
+    "prompt": "ลุสซูเรียแห่งวาเรียถนัดศิลปะการต่อสู้แบบใด?",
+    "answer": "มวยไทย",
+    "decoys": [
+      "คาราเต้",
+      "มวยปล้ำ",
+      "ยูโด"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Lussuria",
+    "evidence": "He has a tall and muscular build, and his favored fighting style is Muay Thai."
+  },
+  {
+    "id": "iemitsu-cedef",
+    "tier": "easy",
+    "prompt": "ซาวาดะ อิเอมิสึ พ่อของสึนะ เป็นหัวหน้าขององค์กรใด?",
+    "answer": "ผู้ดูแลนอกแก๊ง (CEDEF)",
+    "decoys": [
+      "วาเรีย",
+      "วินดีเช่",
+      "เชลเบคโล"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Iemitsu_Sawada",
+    "evidence": "He is the leader of the CEDEF, the External Advisor to the Vongola Famiglia, and Basil's master."
+  },
+  {
+    "id": "byakuran-millefiore",
+    "tier": "easy",
+    "prompt": "ในภาคอนาคต ใครคือผู้นำของมิลฟีโอเล่แฟมิลี่?",
+    "answer": "เบียคุรัน",
+    "decoys": [
+      "อิริเอะ โชอิจิ",
+      "คิเคียว",
+      "แกมม่า"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Byakuran",
+    "evidence": "Byakuran is the former Boss of the Gesso Famiglia and the current leader of the Millefiore Famiglia."
+  },
+  {
+    "id": "ryohei-vs-lussuria",
+    "tier": "medium",
+    "prompt": "ในศึกชิงแหวนอรุณ เรียวเฮต้องสู้กับใคร?",
+    "answer": "ลุสซูเรีย",
+    "decoys": [
+      "เลวี่ อาแทน",
+      "เบลเฟกอล",
+      "โกร่า มอสก้า"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Vongola_Ring_Conflict",
+    "evidence": "Sun Ring Battle (Ryohei Sasagawa vs. Lussuria)"
+  },
+  {
+    "id": "gokudera-vs-belphegor",
+    "tier": "medium",
+    "prompt": "ในศึกชิงแหวนวายุ โกคุเดระต้องสู้กับใคร?",
+    "answer": "เบลเฟกอล",
+    "decoys": [
+      "สเปลบี สควอโล่",
+      "ลุสซูเรีย",
+      "มาม่อน"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Vongola_Ring_Conflict",
+    "evidence": "Storm Ring Battle (Hayato Gokudera vs. Belphegor)"
+  },
+  {
+    "id": "mist-ring-mammon",
+    "tier": "medium",
+    "prompt": "ในศึกชิงแหวนสายหมอก ฝั่งวาเรียส่งใครลงสู้กับโครม?",
+    "answer": "มาม่อน",
+    "decoys": [
+      "เลวี่ อาแทน",
+      "ลุสซูเรีย",
+      "เบลเฟกอล"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Vongola_Ring_Conflict",
+    "evidence": "Mist Ring Battle (Chrome Dokuro/Mukuro Rokudo vs. Mammon)"
+  },
+  {
+    "id": "ryohei-trainer-colonnello",
+    "tier": "medium",
+    "prompt": "ระหว่างเตรียมตัวสู่ศึกชิงแหวน ใครเป็นครูฝึกของเรียวเฮ?",
+    "answer": "โคโรเนโร่",
+    "decoys": [
+      "ดีโน่",
+      "ดร.ชามาล",
+      "บาจิล"
+    ],
+    "note": "ดีโน่ฝึกฮิบาริ ส่วนดร.ชามาลมาฝึกโกคุเดระ",
+    "source": "https://reborn.fandom.com/wiki/Varia_Arc",
+    "evidence": "Dino is tutoring Hibari and Colonnello is tutoring Ryohei."
+  },
+  {
+    "id": "nono-freezes-xanxus",
+    "tier": "medium",
+    "prompt": "ในเหตุการณ์คดีเปลเด็ก ใครแช่แข็งซันซัสจนหลับใหลไปหลายปี?",
+    "answer": "วองโกเล่รุ่นที่ 9",
+    "decoys": [
+      "ซาวาดะ อิเอมิสึ",
+      "รีบอร์น",
+      "สเปลบี สควอโล่"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Cradle_Affair",
+    "evidence": "Though the Varia managed to almost completely destroy the base, they were stopped when the Ninth froze Xanxus with the Zero Point Breakthrough."
+  },
+  {
+    "id": "xanxus-ring-rejected",
+    "tier": "medium",
+    "prompt": "ทำไมแหวนแห่งนภาจึงปฏิเสธซันซัสในตอนท้ายศึกชิงแหวน?",
+    "answer": "เขาไม่ใช่สายเลือดของจีอ็อตโต้",
+    "decoys": [
+      "เขาแพ้สึนะในศึกนภา",
+      "แหวนเป็นของปลอม",
+      "เขาไม่มีไฟธาตุนภา"
+    ],
+    "note": "ซันซัสเป็นเพียงลูกบุญธรรมของวองโกเล่รุ่นที่ 9",
+    "source": "https://reborn.fandom.com/wiki/Vongola_Ring",
+    "evidence": "The Ring of Sky only recognizes relatives of Giotto as the Boss of the Vongola and anyone else will be rejected, as happened to Xanxus."
+  },
+  {
+    "id": "zero-point-first-edition",
+    "tier": "medium",
+    "prompt": "ท่าที่วองโกเล่รุ่นที่ 1 คิดค้น ใช้แช่แข็งไฟดับเครื่องชนให้กลายเป็นน้ำแข็ง ชื่อว่าอะไร?",
+    "answer": "เดือดทะลุจุดศูนย์ ฉบับต้นตำรับ",
+    "decoys": [
+      "เดือดทะลุจุดศูนย์ ดัดแปลง",
+      "ฝนสะท้อนเงา",
+      "ดวงตาวัฏสงสาร"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Tsunayoshi_Sawada",
+    "evidence": "Zero Point Breakthrough: First Edition: The technique created by the Vongola Primo, and later used by the Vongola Nono."
+  },
+  {
+    "id": "x-burner-soft-hard",
+    "tier": "medium",
+    "prompt": "ท่าที่สึนะใช้ไฟอ่อนจากมือข้างหนึ่งพยุงตัว แล้วยิงไฟแข็งจากอีกข้าง ชื่อว่าอะไร?",
+    "answer": "เอ็กซ์เบอร์เนอร์",
+    "decoys": [
+      "บิ๊กแบง แอ็กเซล",
+      "เบิร์นนิ่ง แอ็กเซล",
+      "แม็กซิมั่มแคนน่อน"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Tsunayoshi_Sawada",
+    "evidence": "Tsuna formed the X-Burner ability simply from Haru stating how she, Kyoko, and the others would always support him, which made Tsuna think of using the Soft Flames to support him with one hand, while he uses the other hand to fire the Hard Flames."
+  },
+  {
+    "id": "x-gloves-leon",
+    "tier": "medium",
+    "prompt": "ถุงมือ X ของสึนะ ซึ่งตอนแรกดูเหมือนถุงมือไหมพรมสีขาว ใครเป็นผู้สร้างขึ้นมา?",
+    "answer": "เลออน",
+    "decoys": [
+      "สปาน่า",
+      "ทัลโบ",
+      "เวลเด้"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Tsunayoshi_Sawada",
+    "evidence": "X-Gloves: Created by Reborn's pet, Leon, they initially appear as white, wool mittens that were produced by Leon."
+  },
+  {
+    "id": "kokuyo-vindice-arrest",
+    "tier": "medium",
+    "prompt": "หลังสึนะชนะมุคุโร่ในภาคโกคุโย ใครมาจับตัวมุคุโร่กับพรรคพวกไป?",
+    "answer": "วินดีเช่",
+    "decoys": [
+      "วาเรีย",
+      "เชลเบคโล",
+      "ผู้ดูแลนอกแก๊ง (CEDEF)"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Kokuyo_Arc",
+    "evidence": "The Vindice appear to arrest the Kokuyo Gang."
+  },
+  {
+    "id": "possession-bullet-condition",
+    "tier": "medium",
+    "prompt": "มุคุโร่ใช้กระสุนสิงสู่ควบคุมร่างได้เฉพาะคนแบบใด?",
+    "answer": "คนที่ถูกหอกสามง่ามของเขาทำร้าย",
+    "decoys": [
+      "คนที่สบตากับเขา",
+      "คนที่หลับอยู่",
+      "คนที่มีไฟธาตุสายหมอก"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Bullets",
+    "evidence": "However, Mukuro can only possess those that he has injured with his trident."
+  },
+  {
+    "id": "mukuro-double-lancia",
+    "tier": "medium",
+    "prompt": "ในภาคโกคุโย ชายถือลูกตุ้มเหล็กที่อ้างว่าเป็น \"มุคุโร่\" ที่จริงแล้วคือใคร?",
+    "answer": "ลันเชีย",
+    "decoys": [
+      "โจชิมะ เคน",
+      "คาคิโมโตะ จิกุสะ",
+      "เบิร์ด"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Kokuyo_Arc",
+    "evidence": "the man with the ball and chain revealed himself to be the Mukuro from the photo … He then revealed the shocking truth, that he was Mukuro's double who had been manipulated behind the scenes. … After left Lancia who was poisoned by Chikusa to not reveal anymore information"
+  },
+  {
+    "id": "yamamoto-box-animals",
+    "tier": "medium",
+    "prompt": "สัตว์กล่องวองโกเล่ของยามาโมโตะเป็นสัตว์สองชนิดคู่กัน คือสัตว์อะไร?",
+    "answer": "สุนัขกับนกนางแอ่น",
+    "decoys": [
+      "สิงโตกับนกฮูก",
+      "แมวกับเม่น",
+      "จิงโจ้กับกระทิง"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Takeshi_Yamamoto",
+    "evidence": "One is Ziro the Cane di Pioggia ver. Vongola, and the other Koziro the Rondine di Pioggia ver. Vongola."
+  },
+  {
+    "id": "ryohei-box-kangaroo",
+    "tier": "medium",
+    "prompt": "สัตว์กล่องวองโกเล่ของเรียวเฮที่ชื่อกังการิว เป็นสัตว์ชนิดใด?",
+    "answer": "จิงโจ้",
+    "decoys": [
+      "กระทิง",
+      "เม่น",
+      "นกยูง"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Ryohei_Sasagawa",
+    "evidence": "Ryohei's Box Weapon is a battle-scarred kangaroo, Garyu"
+  },
+  {
+    "id": "lambo-box-bull",
+    "tier": "medium",
+    "prompt": "สัตว์กล่องวองโกเล่ของแรมโบ้ที่ชื่อกิวด้ง เป็นสัตว์ชนิดใด?",
+    "answer": "กระทิง",
+    "decoys": [
+      "จิงโจ้",
+      "ม้ามีปีก",
+      "กระเบนไฟฟ้า"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Lambo",
+    "evidence": "A box weapon in the form of a large Lightning Bull named Gyudon, that Lambo can ride."
+  },
+  {
+    "id": "hibari-roll-hedgehog",
+    "tier": "medium",
+    "prompt": "สัตว์กล่องของฮิบาริที่ชื่อโรล เป็นสัตว์ชนิดใด?",
+    "answer": "เม่น",
+    "decoys": [
+      "นกฮูก",
+      "แมว",
+      "ตะขาบ"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Kyoya_Hibari",
+    "evidence": "Porcospino Nuvola: Hibari's Box Weapon, nicknamed as Roll."
+  },
+  {
+    "id": "byakuran-parallel-worlds",
+    "tier": "medium",
+    "prompt": "พลังพิเศษที่ทำให้เบียคุรันได้เปรียบในภาคอนาคตคืออะไร?",
+    "answer": "เชื่อมจิตกับตัวเองในโลกคู่ขนานทุกโลก",
+    "decoys": [
+      "มองเห็นอนาคตของคนที่สัมผัส",
+      "ย้อนเวลากลับไปได้ 10 ปี",
+      "ควบคุมแรงโน้มถ่วง"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Byakuran",
+    "evidence": "Byakuran is mentally connected to every other Byakuran living in the separate parallel universes."
+  },
+  {
+    "id": "spanner-contact-lenses",
+    "tier": "medium",
+    "prompt": "ช่างเครื่องคนใดของมิลฟีโอเล่ที่ยอมหักหลังแฟมิลี่ตัวเอง เพื่อช่วยสึนะทำท่าไม้ตายให้สมบูรณ์?",
+    "answer": "สปาน่า",
+    "decoys": [
+      "อิริเอะ โชอิจิ",
+      "เวลเด้",
+      "ทัลโบ"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Spanner",
+    "evidence": "He's also interested in the power of the Vongola, to the point where he doesn't mind betraying his own Famiglia to help Tsuna complete the X-Burner."
+  },
+  {
+    "id": "funeral-wreaths-group",
+    "tier": "medium",
+    "prompt": "กลุ่มผู้พิทักษ์ตัวจริงของมิลฟีโอเล่แฟมิลี่ในภาคอนาคต เรียกว่าอะไร?",
+    "answer": "6 บุปผาอาลัย",
+    "decoys": [
+      "วาเรีย",
+      "เชลเบคโล",
+      "แบล็กสเปล"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Six_Funeral_Wreaths",
+    "evidence": "The Six Funeral Wreaths, also known as the Guardians of the Millefiore Famiglia, is a powerful group created by Byakuran."
+  },
+  {
+    "id": "uni-joins-tsuna",
+    "tier": "medium",
+    "prompt": "หลังเกมชอยส์ ใครประกาศออกจากมิลฟีโอเล่มาอยู่ฝ่ายสึนะ พร้อมนำจุกนมอัลโกบาเลโน่มาด้วย?",
+    "answer": "ยูนิ",
+    "decoys": [
+      "คิเคียว",
+      "เกนคิชิ",
+      "โทริคาบูโตะ"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Choice_Arc",
+    "evidence": "After Byakuran refuses again, Uni leaves the Millefiore and joins Tsuna, bringing with her the Arcobaleno Pacifiers that Byakuran gave to her for safekeeping."
+  },
+  {
+    "id": "lal-mirch-future",
+    "tier": "medium",
+    "prompt": "เมื่อสึนะกับโกคุเดระเพิ่งมาถึงโลกอนาคต ใครเอาชนะทั้งสองได้อย่างง่ายดาย?",
+    "answer": "รัล มิลจิ",
+    "decoys": [
+      "แกมม่า",
+      "เบียคุรัน",
+      "สเปลบี สควอโล่"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Lal_Mirch",
+    "evidence": "When they first arrived to the future, Lal Mirch easily defeated Tsuna and Hayato"
+  },
+  {
+    "id": "uni-sees-future",
+    "tier": "medium",
+    "prompt": "ยูนิมีความสามารถพิเศษอะไร ซึ่งค่อย ๆ อ่อนลงเพราะคำสาป?",
+    "answer": "มองเห็นอนาคต",
+    "decoys": [
+      "จัดอันดับผู้คน",
+      "สร้างภาพลวงตา",
+      "ควบคุมแรงโน้มถ่วง"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Uni",
+    "evidence": "This Ability seems to have expanded to the Ability to see the Future, although that Ability has been growing weaker due to the curse she's bearing."
+  },
+  {
+    "id": "kawahira-checker-face",
+    "tier": "medium",
+    "prompt": "ชายสวมหน้ากากเหล็ก \"เช็กเกอร์เฟซ\" ผู้อยู่เบื้องหลังคำสาปอัลโกบาเลโน่ แท้จริงคือใคร?",
+    "answer": "คาวาฮิระ",
+    "decoys": [
+      "ทัลโบ",
+      "เบอร์มิวด้า",
+      "เวลเด้"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Kawahira",
+    "evidence": "Kawahira's alter ego, Checker Face, (チェッカーフェイス, Chekkā Feisū?), is the one responsible for bringing all Arcobaleno generations together and is the one behind the curse on their bodies."
+  },
+  {
+    "id": "enma-simon-boss",
+    "tier": "medium",
+    "prompt": "ใครคือบอสรุ่นที่ 10 ของชิม่อนแฟมิลี่?",
+    "answer": "โคซาโตะ เอ็นมะ",
+    "decoys": [
+      "อาโอบะ โคโย",
+      "ซูซูกิ อเดลไฮด์",
+      "คาโต้ จูลี่"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Enma_Kozato",
+    "evidence": "Enma Kozato is a gloomy and introverted transfer student at Namimori Middle School and the tenth generation boss of the Simon Famiglia."
+  },
+  {
+    "id": "demon-spade-antagonist",
+    "tier": "medium",
+    "prompt": "ใครคือตัวร้ายหลักของภาคพิธีสืบทอดตำแหน่ง (มีเฉพาะในมังงะ)?",
+    "answer": "เดม่อน สเปโด",
+    "decoys": [
+      "โคซาโตะ เอ็นมะ",
+      "ชิม่อน โคซาร์ต",
+      "คาวาฮิระ"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Demon_Spade",
+    "evidence": "He served as the main antagonist in the Inheritance Ceremony Arc."
+  },
+  {
+    "id": "rainbow-boss-watch",
+    "tier": "medium",
+    "prompt": "ในศึกตัวแทนแห่งสายรุ้ง ทีมจะแพ้เมื่อสิ่งใดถูกทำลาย?",
+    "answer": "นาฬิกาของบอสทีม",
+    "decoys": [
+      "จุกนมของอัลโกบาเลโน่",
+      "แหวนของบอสทีม",
+      "อาวุธกล่องของบอสทีม"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Representative_Battle_of_the_Rainbow",
+    "evidence": "The battle taking place would be a battle royale; the team whose boss's watch is destroyed loses."
+  },
+  {
+    "id": "shitt-p-uma",
+    "tier": "medium",
+    "prompt": "ในภาคพิธีสืบทอดตำแหน่ง โกคุเดระคอยตามชิทท์ พี เพราะเชื่อว่าเธอเป็นอะไร?",
+    "answer": "สิ่งมีชีวิตลึกลับ (U.M.A.)",
+    "decoys": [
+      "สายลับของมิลฟีโอเล่",
+      "ผีที่สิงในโรงเรียน",
+      "หุ่นยนต์ของสปาน่า"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Inheritance_Ceremony_Arc",
+    "evidence": "Gokudera begins stalking Shitt P! (who he believed was a U.M.A)."
+  },
+  {
+    "id": "futa-gravity",
+    "tier": "medium",
+    "prompt": "เวลาฟูตะเริ่มจัดอันดับ จะเกิดอะไรขึ้นรอบตัวเขา?",
+    "answer": "แรงโน้มถ่วงผิดเพี้ยนจนของลอยขึ้น",
+    "decoys": [
+      "ทุกคนรอบตัวหลับไป",
+      "ไฟดับเครื่องชนลุกขึ้นที่หน้าผาก",
+      "เวลาหยุดนิ่ง"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Futa",
+    "evidence": "When Futa starts ranking people, gravity around him becomes distorted, making objects around him float and images of stars and galaxies appear in his eyes."
+  },
+  {
+    "id": "i-pin-fon-student",
+    "tier": "medium",
+    "prompt": "อี้ผิงเป็นศิษย์ของอัลโกบาเลโน่คนไหน?",
+    "answer": "ฟง",
+    "decoys": [
+      "โคโรเนโร่",
+      "สกัล",
+      "เวลเด้"
+    ],
+    "source": "https://reborn.fandom.com/wiki/I-Pin",
+    "evidence": "Regarding her background, she is Fon's apprentice and I-Pin is fond of this Arcobaleno."
+  },
+  {
+    "id": "mukuro-hibari-illusion-hate",
+    "tier": "medium",
+    "prompt": "เพราะเคยแพ้ใคร ฮิบาริจึงเกลียดนักมายาทุกคน?",
+    "answer": "โรคุโด มุคุโร่",
+    "decoys": [
+      "มาม่อน",
+      "เกนคิชิ",
+      "เดม่อน สเปโด"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Kyoya_Hibari",
+    "evidence": "Learning from his defeat against Mukuro along with his hatred against all illusionist from it, Hibari has learned various ways to fight against enemies who uses illusions."
+  },
+  {
+    "id": "lussuria-peacock-heal",
+    "tier": "medium",
+    "prompt": "ในภาคอนาคต ลุสซูเรียใช้สัตว์กล่องรูปนกยูงทำอะไร?",
+    "answer": "เร่งการรักษาบาดแผล",
+    "decoys": [
+      "สร้างภาพลวงตา",
+      "ปล่อยไฟฟ้าโจมตี",
+      "ตรวจจับศัตรูจากระยะไกล"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Lussuria",
+    "evidence": "Pavone del Sereno - In the Future, Lussuria uses this Peacock of Serenity Box Weapon to speed up the natural healing cycle using the Sun's Activation."
+  },
+  {
+    "id": "levi-parabolas",
+    "tier": "medium",
+    "prompt": "อาวุธ \"พาราโบล่า\" ของเลวี่ อาแทน มีลักษณะเป็นอะไร?",
+    "answer": "ร่มที่ปล่อยไฟฟ้าได้",
+    "decoys": [
+      "มีดขว้างที่ผูกลวด",
+      "เข่าเหล็ก",
+      "ดาบที่ต่อกับแขนกล"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Levi_A_Than",
+    "evidence": "Parabolas: Levi A Than, carries eight sword-like umbrellas, each of which are capable of discharging electricity."
+  },
+  {
+    "id": "iemitsu-pickaxe",
+    "tier": "medium",
+    "prompt": "อาวุธเดียวที่เคยเห็นซาวาดะ อิเอมิสึใช้คืออะไร?",
+    "answer": "อีเต้อ",
+    "decoys": [
+      "แส้",
+      "บูมเมอแรงใบมีด",
+      "ปืนไรเฟิล"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Iemitsu_Sawada",
+    "evidence": "Pickaxe: Iemitsu's only seen weapon is a pickaxe."
+  },
+  {
+    "id": "basil-metal-edge",
+    "tier": "medium",
+    "prompt": "อาวุธ \"เมทัลเอดจ์\" ของบาจิล ทำงานคล้ายอะไร?",
+    "answer": "บูมเมอแรง",
+    "decoys": [
+      "แส้",
+      "โยโย่",
+      "ทอนฟา"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Basil",
+    "evidence": "Metal Edge: A blade that resembles and acts like a boomerang."
+  },
+  {
+    "id": "lambo-vs-levi",
+    "tier": "hard",
+    "prompt": "ในศึกชิงแหวนอัสนี แรมโบ้ต้องสู้กับใคร?",
+    "answer": "เลวี่ อาแทน",
+    "decoys": [
+      "ลุสซูเรีย",
+      "มาม่อน",
+      "โกร่า มอสก้า"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Lightning_Ring_Battle",
+    "evidence": "It is the battle between the candidates for the title of Tenth Generation Vongola Lightning Guardian, namely Lambo and Levi A Than."
+  },
+  {
+    "id": "mosca-ninth-inside",
+    "tier": "hard",
+    "prompt": "เมื่อสึนะผ่าโกร่า มอสก้าออกหลังศึกชิงแหวนเมฆา พบใครถูกขังอยู่ข้างใน?",
+    "answer": "วองโกเล่รุ่นที่ 9",
+    "decoys": [
+      "ซาวาดะ อิเอมิสึ",
+      "บาจิล",
+      "ลันเชีย"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Moska",
+    "evidence": "When Tsuna arrived, he was able to overpower the weapon and sliced it in half, revealing the restrained and bloody body of the 9th Vongola Boss."
+  },
+  {
+    "id": "chrome-illusion-organs",
+    "tier": "hard",
+    "prompt": "ระหว่างศึกชิงแหวนสายหมอก ทำไมร่างของโครมจึงทรุดลงอย่างหนัก?",
+    "answer": "อวัยวะบางส่วนของเธอเป็นภาพลวงตา",
+    "decoys": [
+      "เธอถูกพิษจากยาที่ฉีด",
+      "แหวนปฏิเสธเธอ",
+      "เธอถูกมาม่อนสิงร่าง"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Mist_Ring_Battle",
+    "evidence": "Mammon deduces that it is because she was relying on illusions to replace some of her internal organs."
+  },
+  {
+    "id": "yamamoto-utsushi-ame",
+    "tier": "hard",
+    "prompt": "กระบวนท่าที่ 9 ของชิงุเระโซเอ็น ซึ่งยามาโมโตะคิดค้นขึ้นเอง ชื่อว่าอะไร?",
+    "answer": "อุตสึชิ อาเมะ",
+    "decoys": [
+      "ชิโนสึคุ อาเมะ",
+      "ชาจิคุ โนะ อาเมะ",
+      "ซากามากุ อาเมะ"
+    ],
+    "note": "ชื่อภาษาไทยของท่านี้คือ \"ฝนสะท้อนเงา\"",
+    "source": "https://reborn.fandom.com/wiki/Shigure_Soen_Ryu",
+    "evidence": "Utsushi Ame (うつし雨, Utsushi Ame?, lit. Duplicate Rain) is the offensive ninth form of the Shigure Soen Ryu. It was created by Takeshi Yamamoto."
+  },
+  {
+    "id": "gokudera-rocket-bombs",
+    "tier": "hard",
+    "prompt": "ระเบิดแบบใหม่ที่โกคุเดระเติมดินขับเพื่อให้เร็วและแม่นขึ้น ใช้ครั้งแรกในศึกชิงแหวนวายุ ชื่อว่าอะไร?",
+    "answer": "ร็อกเก็ต บอมบ์",
+    "decoys": [
+      "แม็กซิมั่มแคนน่อน",
+      "อิเล็คทริคโก้ คอร์นนาต้า",
+      "เอ็กซ์เบอร์เนอร์"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Dynamite",
+    "evidence": "are special bombs used by Gokudera. The bombs are enhanced and upgraded with propulsion powder to make up for their lack of speed and accuracy."
+  },
+  {
+    "id": "lambo-elettrico-cornata",
+    "tier": "hard",
+    "prompt": "ท่าที่แรมโบ้ในอนาคตเก็บสายฟ้าไว้ในเขาแล้วพุ่งชนศัตรู ชื่อว่าอะไร?",
+    "answer": "อิเล็คทริคโก้ คอร์นนาต้า",
+    "decoys": [
+      "แม็กซิมั่มแคนน่อน",
+      "ร็อกเก็ต บอมบ์",
+      "บิ๊กแบง แอ็กเซล"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Lambo",
+    "evidence": "Elettrico Cornata: After using Thunder Set, Adult Lambo advances towards the enemy in a frontal attack."
+  },
+  {
+    "id": "lambo-lightning-skin",
+    "tier": "hard",
+    "prompt": "เหตุใดรีบอร์นจึงบอกว่าแรมโบ้เหมาะเป็นผู้พิทักษ์แห่งอัสนีที่สุด?",
+    "answer": "ไฟฟ้าที่ผ่านผิวเขาจะไหลลงดินไป",
+    "decoys": [
+      "เขาเกิดในคืนที่ฟ้าผ่า",
+      "เขามีบาซูก้าทศวรรษ",
+      "เขาเป็นทายาทของแลมโป"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Lambo",
+    "evidence": "Elettrico Cuoio: As a result of being struck by lightning several times as a child, Lambo's physiology has changed; any kind of electricity that passes through his skin heads down to the ground."
+  },
+  {
+    "id": "choice-target-shoichi",
+    "tier": "hard",
+    "prompt": "ในเกมชอยส์ ใครถูกจีโร่รูเล็ตต์เลือกให้เป็นเป้าหมายของฝ่ายวองโกเล่?",
+    "answer": "อิริเอะ โชอิจิ",
+    "decoys": [
+      "สปาน่า",
+      "ยามาโมโตะ ทาเคชิ",
+      "โกคุเดระ ฮายาโตะ"
+    ],
+    "note": "เป้าหมายฝั่งมิลฟีโอเล่คือเดซี่",
+    "source": "https://reborn.fandom.com/wiki/Choice_Arc",
+    "evidence": "The Gyro Roulette then selects Shoichi and Deisy by putting a mark on both of their hearts."
+  },
+  {
+    "id": "ghost-identity",
+    "tier": "hard",
+    "prompt": "โกสต์ ผู้ดูดไฟดับเครื่องชนของทุกคนรอบตัว แท้จริงคือใคร?",
+    "answer": "เบียคุรันจากโลกคู่ขนาน",
+    "decoys": [
+      "ร่างโคลนของจีอ็อตโต้",
+      "อัลโกบาเลโน่คนที่ 8",
+      "หุ่นยนต์ของสปาน่า"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Ghost",
+    "evidence": "Ghost is, in fact, a Byakuran who was brought over from one of the Parallel Worlds, destroying that world in the process."
+  },
+  {
+    "id": "tri-ni-sette-parts",
+    "tier": "hard",
+    "prompt": "ทรีนีเซตเต้ประกอบด้วยแหวนวองโกเล่ แหวนมาเล่ และอะไรอีก?",
+    "answer": "จุกนมอัลโกบาเลโน่",
+    "decoys": [
+      "เฮลริง",
+      "อาวุธกล่อง",
+      "วองโกเล่เกียร์"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Tri-ni-sette",
+    "evidence": "They are made up of the Mare Rings, the Vongola Rings, and the Arcobaleno Pacifiers."
+  },
+  {
+    "id": "gokudera-vs-shitt-p",
+    "tier": "hard",
+    "prompt": "บนเกาะชิม่อน โกคุเดระสู้ชนะสมาชิกชิม่อนคนใด?",
+    "answer": "ชิทท์ พี",
+    "decoys": [
+      "อาโอบะ โคโย",
+      "ซูซูกิ อเดลไฮด์",
+      "โอยามะ ราวจิ"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Inheritance_Ceremony_Arc",
+    "evidence": "Hayato Gokudera vs Shitt P! … Winner: Gokudera"
+  },
+  {
+    "id": "talbot-vongola-gear",
+    "tier": "hard",
+    "prompt": "หลังแหวนวองโกเล่ถูกชิม่อนทำลาย ใครเป็นผู้ปรับปรุงแหวนจนกลายเป็นวองโกเล่เกียร์?",
+    "answer": "ทัลโบ",
+    "decoys": [
+      "สปาน่า",
+      "เวลเด้",
+      "อิริเอะ โชอิจิ"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Vongola_Gear",
+    "evidence": "The set is made by Talbot and is composed of the upgraded forms of the Original Vongola Rings."
+  },
+  {
+    "id": "hibari-team-fon",
+    "tier": "hard",
+    "prompt": "ในศึกตัวแทนแห่งสายรุ้ง ฮิบาริเป็นตัวแทนเพียงคนเดียวของอัลโกบาเลโน่คนใด?",
+    "answer": "ฟง",
+    "decoys": [
+      "สกัล",
+      "โคโรเนโร่",
+      "เวลเด้"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Representative_Battle_of_the_Rainbow",
+    "evidence": "Fon's sole representative is revealed to be Hibari."
+  },
+  {
+    "id": "iemitsu-beats-tsuna",
+    "tier": "hard",
+    "prompt": "ในวันแรกของศึกตัวแทนแห่งสายรุ้ง ใครสู้ชนะสึนะ?",
+    "answer": "ซาวาดะ อิเอมิสึ",
+    "decoys": [
+      "ฮิบาริ เคียวยะ",
+      "ซันซัส",
+      "เบอร์มิวด้า ฟอน วิคเค่นสไตน์"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Representative_Battle_of_the_Rainbow",
+    "evidence": "Tsuna and his dad Iemitsu fight. Iemitsu defeats Tsuna."
+  },
+  {
+    "id": "cervello-judges",
+    "tier": "hard",
+    "prompt": "กลุ่มหญิงสวมหน้ากากที่ทำหน้าที่กรรมการตัดสินศึกชิงแหวนวองโกเล่คือกลุ่มใด?",
+    "answer": "เชลเบคโล",
+    "decoys": [
+      "วินดีเช่",
+      "6 บุปผาอาลัย",
+      "ผู้ดูแลนอกแก๊ง (CEDEF)"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Cervello",
+    "evidence": "The Cervello is a mysterious, all-female organization that serves as judges in Mafia battles."
+  },
+  {
+    "id": "demon-spade-mist",
+    "tier": "hard",
+    "prompt": "เดม่อน สเปโด เคยเป็นผู้พิทักษ์ธาตุใดของวองโกเล่รุ่นที่ 1?",
+    "answer": "สายหมอก",
+    "decoys": [
+      "เมฆา",
+      "วายุ",
+      "อัสนี"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Demon_Spade",
+    "evidence": "was the first generation Mist Guardian of the Vongola Famiglia."
+  },
+  {
+    "id": "simon-earth-flames",
+    "tier": "hard",
+    "prompt": "ไฟดับเครื่องชนที่ชิม่อนแฟมิลี่ใช้ ซึ่งว่ากันว่าทัดเทียมไฟแห่งนภา จัดอยู่ในกลุ่มใด?",
+    "answer": "ปฐพี",
+    "decoys": [
+      "นภา",
+      "สายหมอก",
+      "อรุณ"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Simon_Famiglia",
+    "evidence": "They are the first and only known Famiglia to use the Dying Will Flames of the Earth, a power said to be able to rival the Dying Will Flames of the Sky."
+  },
+  {
+    "id": "enma-gravity",
+    "tier": "hard",
+    "prompt": "ไฟดับเครื่องชนของโคซาโตะ เอ็นมะ ทำให้เขาควบคุมอะไรได้?",
+    "answer": "แรงโน้มถ่วง",
+    "decoys": [
+      "น้ำแข็ง",
+      "ต้นไม้",
+      "ภาพลวงตา"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Enma_Kozato",
+    "evidence": "Enma possesses the Earth Flame, one of the Dying Will Flames of the Earth, allowing him to manipulate gravity."
+  },
+  {
+    "id": "adelheid-metal-fans",
+    "tier": "hard",
+    "prompt": "ซูซูกิ อเดลไฮด์แห่งชิม่อนใช้อะไรเป็นอาวุธ?",
+    "answer": "พัดเหล็ก",
+    "decoys": [
+      "หอกเหล็ก",
+      "ทอนฟาคู่",
+      "กรงเล็บ"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Adelheid_Suzuki",
+    "evidence": "Metal Fans: Adelheid uses these as her weapons of choice."
+  },
+  {
+    "id": "tsuna-absorbs-ghost",
+    "tier": "hard",
+    "prompt": "สึนะใช้ท่าใดดูดไฟของโกสต์จนโกสต์ถูกดูดหายไปทั้งตัว?",
+    "answer": "เดือดทะลุจุดศูนย์ ดัดแปลง",
+    "decoys": [
+      "เดือดทะลุจุดศูนย์ ฉบับต้นตำรับ",
+      "ฝนสะท้อนเงา",
+      "ดวงตาวัฏสงสาร"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Future_Final_Battle_Arc",
+    "evidence": "Tsuna decides to counter using a Flame Absorption technique of his own, Zero Point Breakthrough: Revised."
+  },
+  {
+    "id": "burning-axle-white-applause",
+    "tier": "hard",
+    "prompt": "ท่าใดของสึนะที่ทำให้ฝ่ามือของเบียคุรันบาดเจ็บ เมื่อเขาพยายามใช้ท่าตบมือลบล้างการโจมตี?",
+    "answer": "เบิร์นนิ่ง แอ็กเซล",
+    "decoys": [
+      "บิ๊กแบง แอ็กเซล",
+      "แม็กซิมั่มแคนน่อน",
+      "อิเล็คทริคโก้ คอร์นนาต้า"
+    ],
+    "note": "บิ๊กแบง แอ็กเซลถูกเบียคุรันลบล้างได้ง่าย ๆ",
+    "source": "https://reborn.fandom.com/wiki/Byakuran",
+    "evidence": "Byakuran's palms were injured when he tried to negate Tsuna's more powerful Burning Axel."
+  },
+  {
+    "id": "hibari-vs-deisy",
+    "tier": "hard",
+    "prompt": "ในศึกสุดท้ายของภาคอนาคต ฮิบาริกับดีโน่ต้องรับมือกับสมาชิกมิลฟีโอเล่คนใดที่โรงเรียนนามิโมริ?",
+    "answer": "เดซี่",
+    "decoys": [
+      "ซาคุโร่",
+      "บลูเบล",
+      "คิเคียว"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Future_Final_Battle_Arc",
+    "evidence": "Deisy ends up at Namimori Middle High School, where he is up against Hibari and Dino."
+  },
+  {
+    "id": "torikabuto-moth",
+    "tier": "hard",
+    "prompt": "เมื่อเปิดกล่องสังหาร โทริคาบูโตะกลายร่างเป็นลูกผสมระหว่างมนุษย์กับสัตว์ชนิดใด?",
+    "answer": "ผีเสื้อกลางคืน",
+    "decoys": [
+      "กิ้งก่า",
+      "สไปโนซอรัส",
+      "งูทะเล"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Torikabuto",
+    "evidence": "When activated, it transforms the user into a Moth/human hybrid with eye patterns on the wings."
+  },
+  {
+    "id": "chrome-vs-glo-xinia",
+    "tier": "hard",
+    "prompt": "ในภาคอนาคต โครมจากอดีตสู้ชนะสมาชิกมิลฟีโอเล่คนใดที่ฐานโกคุโยแลนด์เก่า?",
+    "answer": "โกร คิชิเนีย",
+    "decoys": [
+      "ไบชาน่า",
+      "จินเจอร์ เบรด",
+      "แกมม่า"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Glo_Xinia",
+    "evidence": "Glo travels to the old Kokuyo Land Base of Mukuro Rokudo's gang and finds that Chrome Dokuro from ten years ago is there. … Glo loses the battle, badly beaten, and is nearly killed."
+  },
+  {
+    "id": "rasiel-vs-xanxus",
+    "tier": "hard",
+    "prompt": "ที่ฐานในอิตาลี ราซิเอล พี่ชายของเบลเฟกอล พ่ายแพ้ให้กับใคร?",
+    "answer": "ซันซัส",
+    "decoys": [
+      "เบลเฟกอล",
+      "สเปลบี สควอโล่",
+      "ฟราน"
+    ],
+    "note": "เบลเฟกอลกับฟรานแกล้งตายในการต่อสู้กับราซิเอล",
+    "source": "https://reborn.fandom.com/wiki/Rasiel",
+    "evidence": "After the battle, Rasiel confronts Xanxus, but is overwhelmed by his Box Weapon, Ligre Tempesta di Cielo."
+  },
+  {
+    "id": "fran-frees-mukuro",
+    "tier": "hard",
+    "prompt": "ในภาคอนาคต ใครปลอมตัวเป็นไอริส เฮปเบิร์น เพื่อช่วยให้มุคุโร่ได้ออกจากคุก?",
+    "answer": "ฟราน",
+    "decoys": [
+      "โครม โดคุโร",
+      "มาม่อน",
+      "โจชิมะ เคน"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Vindice",
+    "evidence": "Fran appears at the Vindice Prison in Europe, disguised as Iris Hepburn, and successfully convinces the Vindice to release Mukuro Rokudo from his cell."
+  },
+  {
+    "id": "vindice-former-arcobaleno",
+    "tier": "hard",
+    "prompt": "สมาชิกทุกคนของวินดีเช่เคยเป็นอะไรมาก่อน?",
+    "answer": "อัลโกบาเลโน่",
+    "decoys": [
+      "ผู้พิทักษ์วองโกเล่รุ่นแรก",
+      "หน่วยวาเรีย",
+      "สมาชิกเอสตราเนโอ"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Vindice",
+    "evidence": "All members of the Vindice are former Arcobaleno that have survived the removal of their Arcobaleno Pacifiers"
+  },
+  {
+    "id": "sky-pacifier-short-life",
+    "tier": "hard",
+    "prompt": "นอกจากร่างทารกแล้ว ผู้ถือจุกนมสีส้มแห่งนภาต้องรับคำสาปอะไรเพิ่ม?",
+    "answer": "อายุขัยสั้น",
+    "decoys": [
+      "สูญเสียความทรงจำ",
+      "ใช้ไฟดับเครื่องชนไม่ได้",
+      "ห้ามออกจากอิตาลี"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Arcobaleno",
+    "evidence": "In addition to being cursed with the body of an infant, the holder is also cursed with a short lifespan."
+  },
+  {
+    "id": "future-tsuna-rings",
+    "tier": "hard",
+    "prompt": "ในโลกอนาคต ใครเป็นคนทำลายแหวนวองโกเล่ทิ้งเพราะกลัวว่าแหวนจะก่อความขัดแย้ง?",
+    "answer": "สึนะในอนาคต",
+    "decoys": [
+      "เบียคุรัน",
+      "อิริเอะ โชอิจิ",
+      "ซันซัส"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Vongola_Ring",
+    "evidence": "In the future, Tsuna of that time thought that the Vongola Rings would cause conflicts and in order to ensure the well-being of the Vongola Famiglia, destroyed them."
+  },
+  {
+    "id": "verde-box-weapons",
+    "tier": "hard",
+    "prompt": "อัลโกบาเลโน่คนใดเป็นหนึ่งในนักวิทยาศาสตร์สามคนที่ทำให้อาวุธกล่องสร้างได้จริง?",
+    "answer": "เวลเด้",
+    "decoys": [
+      "สกัล",
+      "ไวเปอร์",
+      "ฟง"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Box_Weapon",
+    "evidence": "Koenig, Innocenti, and Verde discovered that the rings passed down by the Mafia as heirlooms could serve as an optimal power source for the Box Weapons."
+  },
+  {
+    "id": "xanxus-flame-of-wrath",
+    "tier": "hard",
+    "prompt": "\"ไฟพิโรธ\" ของซันซัส เป็นพลังเดียวกับวองโกเล่รุ่นใด?",
+    "answer": "รุ่นที่ 2",
+    "decoys": [
+      "รุ่นที่ 1",
+      "รุ่นที่ 7",
+      "รุ่นที่ 9"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Xanxus",
+    "evidence": "Flame of Wrath: Xanxus possesses Vongola Secondo's Ability, Flame of Wrath."
+  },
+  {
+    "id": "xanxus-bester-liger",
+    "tier": "hard",
+    "prompt": "เบสเตอร์ สัตว์กล่องของซันซัส เป็นสัตว์ลูกผสมชนิดใด?",
+    "answer": "ไลเกอร์",
+    "decoys": [
+      "ฉลาม",
+      "มิงค์",
+      "นกยูง"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Xanxus",
+    "evidence": "Bester is actually a mix-breed between a Leone di Cieli and a Tigre Tempesta."
+  },
+  {
+    "id": "belphegor-own-blood",
+    "tier": "hard",
+    "prompt": "อะไรทำให้เบลเฟกอลแสดงพลังที่แท้จริงออกมา?",
+    "answer": "การได้เห็นเลือดของตัวเอง",
+    "decoys": [
+      "การได้ยินเสียงระเบิด",
+      "การสวมมงกุฎ",
+      "คำสั่งของซันซัส"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Belphegor",
+    "evidence": "He is known as a battle genius, but his abilities only truly present themselves when he sees his own \"royal\" blood, which reminds him of the time he stabbed his brother."
+  },
+  {
+    "id": "mukuro-realm-hell",
+    "tier": "hard",
+    "prompt": "ภพใดในดวงตาวัฏสงสารที่ทำให้มุคุโร่สร้างภาพลวงตาที่กลายเป็นจริงได้?",
+    "answer": "พิภพนรก",
+    "decoys": [
+      "พิภพเปรต",
+      "พิภพเดรัจฉาน",
+      "พิภพสวรรค์"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Six_Paths_of_Reincarnation",
+    "evidence": "grants Mukuro the power to create Real Illusions capable of manifesting in the physical world."
+  },
+  {
+    "id": "hibari-alaudi-handcuffs",
+    "tier": "hard",
+    "prompt": "เมื่อใช้คัมบิโอ ฟอร์มา สัตว์กล่องของฮิบาริจะกลายเป็นอาวุธชนิดใด?",
+    "answer": "กุญแจมือ",
+    "decoys": [
+      "ธนู",
+      "เลนส์",
+      "โล่"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Kyoya_Hibari",
+    "evidence": "Alaudi's Handcuffs: Roll's Cambio Forma takes the form of a pair of spiked black handcuffs."
+  },
+  {
+    "id": "chrome-devil-lens",
+    "tier": "hard",
+    "prompt": "เมื่อใช้คัมบิโอ ฟอร์มา นกฮูกของโครมจะกลายเป็นอุปกรณ์ชนิดใด?",
+    "answer": "เลนส์",
+    "decoys": [
+      "กุญแจมือ",
+      "ธนู",
+      "ผ้าคลุม"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Chrome_Dokuro",
+    "evidence": "In Cambio Forma, the owl turns into Demon Spade's Devil Lens."
+  },
+  {
+    "id": "gokudera-missing-flames",
+    "tier": "very-hard",
+    "prompt": "โกคุเดระมีไฟดับเครื่องชนแห่งนภาโดยกำเนิดเกือบทุกธาตุ ธาตุใดต่อไปนี้ที่เขาไม่มี?",
+    "answer": "สายหมอก",
+    "decoys": [
+      "พิรุณ",
+      "อัสนี",
+      "เมฆา"
+    ],
+    "note": "ธาตุที่โกคุเดระไม่มีคือสายหมอกกับนภา",
+    "source": "https://reborn.fandom.com/wiki/Hayato_Gokudera",
+    "evidence": "Gokudera is the only character that naturally possesses most of the Dying Will Flames of the Sky, with the only missing ones being mist and sky flames."
+  },
+  {
+    "id": "squalo-tyr-left-hand",
+    "tier": "very-hard",
+    "prompt": "สควอโล่ตัดมือซ้ายของตัวเองทิ้ง เพื่อให้เข้าใจนักดาบที่สู้โดยไม่มีมือซ้ายคนใด?",
+    "answer": "ทูล",
+    "decoys": [
+      "ซันซัส",
+      "ยามาโมโตะ ทาเคชิ",
+      "ดีโน่"
+    ],
+    "note": "ทูลเป็นหัวหน้าวาเรียคนก่อนและเป็นเทพกระบี่คนแรก",
+    "source": "https://reborn.fandom.com/wiki/Superbia_Squalo",
+    "evidence": "he cut off his left hand and replaced it with a mechanized sword, which was done so he could better relate to the Sword Emperor, Tyr, who also happened to be the previous Boss of the Varia and fought without his left hand."
+  },
+  {
+    "id": "possession-bullet-estraneo",
+    "tier": "very-hard",
+    "prompt": "กระสุนสิงสู่ที่มุคุโร่ใช้ ถูกสร้างขึ้นโดยแฟมิลี่ใด?",
+    "answer": "เอสตราเนโอ",
+    "decoys": [
+      "วองโกเล่",
+      "โทมาโซ",
+      "โบวีโน่"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Bullets",
+    "evidence": "The Possession Bullet is a special bullet created by Estraneo Famiglia."
+  },
+  {
+    "id": "desolation-bullet-tomaso",
+    "tier": "very-hard",
+    "prompt": "\"กระสุนสุดระทม\" ซึ่งมีเฉพาะในฉบับมังงะ เป็นอาวุธของแฟมิลี่ใด?",
+    "answer": "โทมาโซ",
+    "decoys": [
+      "วองโกเล่",
+      "เอสตราเนโอ",
+      "คาบัคโรเน่"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Desolation_Bullet",
+    "evidence": "The Desolation Bullet (Nageki Dan) is a manga-exclusive weapon developed by the Tomaso Famiglia."
+  },
+  {
+    "id": "rebuke-bullet-origin",
+    "tier": "very-hard",
+    "prompt": "กระสุนเสียงบ่นที่ทำให้สึนะเข้าไฮเปอร์โหมดครั้งแรก ได้มาจากที่ใด?",
+    "answer": "จากเลออนตอนที่อยู่ในสภาพดักแด้",
+    "decoys": [
+      "จากคลังของวองโกเล่รุ่นที่ 9",
+      "จากแฟมิลี่เอสตราเนโอ",
+      "จากดร.ชามาล"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Bullets",
+    "evidence": "This bullet came from Leon's cocoon stage after he lost his tail at the same time that the X-Gloves emerged."
+  },
+  {
+    "id": "viper-thoughtography",
+    "tier": "very-hard",
+    "prompt": "มาม่อนแห่งวาเรียใช้วิธีใดหาตำแหน่งของคนที่ต้องการ?",
+    "answer": "จามลงบนกระดาษให้เกิดแผนที่",
+    "decoys": [
+      "ส่งนกออกไปสอดแนม",
+      "ใช้ดวงตาสีแดงมองทะลุ",
+      "ดมกลิ่นด้วยเขี้ยวหมาป่า"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Viper",
+    "evidence": "As the Varia's best spell-caster, Viper can construct powerful illusions as well as being able to locate any person by sneezing into a piece of paper."
+  },
+  {
+    "id": "box-weapon-lorenzini",
+    "tier": "very-hard",
+    "prompt": "ใครคือนักชีววิทยาที่ออกแบบอาวุธกล่องรูปสัตว์ไว้เมื่อกว่าสี่ศตวรรษก่อน?",
+    "answer": "เจเพตโต้ โลเรนซินี",
+    "decoys": [
+      "โคนิก",
+      "อินโนเซนติ",
+      "เวลเด้"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Box_Weapon",
+    "evidence": "The concept behind the Box Weapons was imagined more than four centuries before the series starts by a biologist named Geppetto Lorenzini."
+  },
+  {
+    "id": "cozzato-vigilante",
+    "tier": "very-hard",
+    "prompt": "จากความทรงจำของรุ่นแรก ใครเป็นคนเสนอให้ตั้งกลุ่มศาลเตี้ยที่ต่อมากลายเป็นวองโกเล่?",
+    "answer": "ชิม่อน โคซาร์ต",
+    "decoys": [
+      "เดม่อน สเปโด",
+      "จีอ็อตโต้",
+      "อาซาริ อุเกทสึ"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Inheritance_Ceremony_Arc",
+    "evidence": "Cozzato then suggested forming a Vigilante group because if nobody can help them, they have to protect the town themselves with a powerful leadership with no one else beside Giotto who would be suited for that role."
+  },
+  {
+    "id": "ryohei-vs-kouyou",
+    "tier": "very-hard",
+    "prompt": "การต่อสู้ระหว่างเรียวเฮกับอาโอบะ โคโย บนเกาะชิม่อน จบลงอย่างไร?",
+    "answer": "เสมอ จนวินดีเช่พาตัวไปทั้งคู่",
+    "decoys": [
+      "เรียวเฮชนะ",
+      "โคโยชนะ",
+      "รีบอร์นสั่งยุติการต่อสู้"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Inheritance_Ceremony_Arc",
+    "evidence": "Battle Result: Draw … However, the Vindice intervene, declaring that since both combatants lost, they were both to be imprisoned in the Vindice Prison."
+  },
+  {
+    "id": "lambo-vs-large",
+    "tier": "very-hard",
+    "prompt": "บนเกาะชิม่อน แรมโบ้สู้ชนะสมาชิกชิม่อนคนใด?",
+    "answer": "โอยามะ ราวจิ",
+    "decoys": [
+      "ชิทท์ พี",
+      "มิซูโนะ คาโอรุ",
+      "อาโอบะ โคโย"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Inheritance_Ceremony_Arc",
+    "evidence": "Lambo vs Large Ooyama … Winner: Lambo"
+  },
+  {
+    "id": "mukuro-realm-heavens",
+    "tier": "very-hard",
+    "prompt": "ภพใดในดวงตาวัฏสงสารที่ทำให้มุคุโร่ควบคุมจิตใจผู้อื่นได้?",
+    "answer": "พิภพสวรรค์",
+    "decoys": [
+      "พิภพนรก",
+      "พิภพอสูร",
+      "พิภพมนุษย์"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Six_Paths_of_Reincarnation",
+    "evidence": "is represented by the numeral kanji for \"six\" (六, roku?) and grants Mukuro the power to control the minds of others."
+  },
+  {
+    "id": "kokuyo-teeth-countdown",
+    "tier": "very-hard",
+    "prompt": "ในฉบับมังงะ แก๊งโกคุโยถอนฟันเหยื่อชาวนามิโมริ จำนวนฟันที่หายไปเป็นการนับถอยหลังตามอะไร?",
+    "answer": "อันดับนักเรียนที่แข็งแกร่งที่สุดของฟูตะ",
+    "decoys": [
+      "รายชื่อผู้พิทักษ์แหวนวองโกเล่",
+      "ลำดับเลขที่ในห้องของสึนะ",
+      "จำนวนวันก่อนวินดีเช่มาถึง"
+    ],
+    "note": "ในอนิเมะ แก๊งโกคุโยทิ้งนาฬิกาพกไว้แทนการถอนฟัน",
+    "source": "https://reborn.fandom.com/wiki/Kokuyo_Arc",
+    "evidence": "He explained that the number of teeth lost was a countdown of the strongest students at Namimori according to Futa's ranking."
+  },
+  {
+    "id": "chrome-nagi",
+    "tier": "very-hard",
+    "prompt": "ก่อนจะได้ชื่อโครม โดคุโร เธอมีชื่อเดิมว่าอะไร?",
+    "answer": "นางิ",
+    "decoys": [
+      "ฮานะ",
+      "อาเรีย",
+      "ไอริส"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Chrome_Dokuro",
+    "evidence": "With her original name being Nagi, her background is influenced by Mukuro Rokudo, who helped her live by providing her with organs made from his illusion."
+  },
+  {
+    "id": "deisy-cannot-die",
+    "tier": "very-hard",
+    "prompt": "เมื่อเกมชอยส์ดูเหมือนจะจบแบบเสมอ ทำไมฝ่ายมิลฟีโอเล่จึงชนะ?",
+    "answer": "เดซี่ตายไม่ได้",
+    "decoys": [
+      "ยูนิยอมแพ้แทนสึนะ",
+      "สปาน่าออกนอกเขตสนาม",
+      "ไฟของโชอิจิดับก่อน"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Choice_Arc",
+    "evidence": "Kikyo then explains that Deisy cannot die, resulting in the Millefiore's victory."
+  },
+  {
+    "id": "enma-team-skull",
+    "tier": "very-hard",
+    "prompt": "ในศึกตัวแทนแห่งสายรุ้ง เอ็นมะกับพวกพ้องเป็นตัวแทนของอัลโกบาเลโน่คนใด?",
+    "answer": "สกัล",
+    "decoys": [
+      "ฟง",
+      "โคโรเนโร่",
+      "มาม่อน"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Representative_Battle_of_the_Rainbow",
+    "evidence": "Team Skull vs. Team Mammon: Enma and some Varia members fight"
+  },
+  {
+    "id": "bermuda-takes-skull-watches",
+    "tier": "very-hard",
+    "prompt": "ทีมเบอร์มิวด้าได้สิทธิ์เข้าร่วมศึกตัวแทนแห่งสายรุ้งด้วยการยึดนาฬิกาของทีมใด?",
+    "answer": "ทีมสกัล",
+    "decoys": [
+      "ทีมฟง",
+      "ทีมโคโรเนโร่",
+      "ทีมมาม่อน"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Vindice",
+    "evidence": "Six Vindice, including Jaeger, take Team Skull's watches and become Representatives for Team Bermuda."
+  },
+  {
+    "id": "dying-will-gun-settimo",
+    "tier": "very-hard",
+    "prompt": "ปืนเก็บไฟดับเครื่องชนแบบที่ซันซัสใช้ ถูกคิดค้นโดยวองโกเล่รุ่นใดที่มีไฟอ่อนที่สุด?",
+    "answer": "รุ่นที่ 7",
+    "decoys": [
+      "รุ่นที่ 2",
+      "รุ่นที่ 8",
+      "รุ่นที่ 9"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Xanxus",
+    "evidence": "Vongola VII was said to have the weakest Flame of all the Vongola Leaders, so he designed a Weapon that he could store his Flame in and release it as a strong Flame attack."
+  },
+  {
+    "id": "giotto-ieyasu",
+    "tier": "very-hard",
+    "prompt": "จีอ็อตโต้ ผู้ก่อตั้งวองโกเล่ ภายหลังเปลี่ยนชื่อเป็นอะไร?",
+    "answer": "ซาวาดะ อิเอยาสึ",
+    "decoys": [
+      "ซาวาดะ โยชิมุเนะ",
+      "ซาวาดะ อิเอสึนะ",
+      "ซาวาดะ โยชิโนบุ"
+    ],
+    "note": "ชื่ออื่น ๆ เป็นชื่อลูกหลานของเขา ซึ่งตั้งตามโชกุนตระกูลโทกุงาวะ",
+    "source": "https://reborn.fandom.com/wiki/Giotto",
+    "evidence": "Giotto, later voluntarily renamed Ieyasu Sawada, is the founder and first boss of the Vongola Famiglia, giving him the title of Vongola Primo."
+  },
+  {
+    "id": "talbot-penalty",
+    "tier": "very-hard",
+    "prompt": "\"เพนัลตี้\" ที่ใช้ปรับปรุงแหวนวองโกเล่ร่วมกับแหวนสัตว์ คืออะไร?",
+    "answer": "เลือดของวองโกเล่รุ่นที่ 1",
+    "decoys": [
+      "เศษหินจากดวงจันทร์",
+      "ชิ้นส่วนแหวนมาเล่",
+      "ไฟแห่งรัตติกาลของเบอร์มิวด้า"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Vongola_Ring",
+    "evidence": "Talbot upgraded them using the power of the Animal Rings and Vongola Primo's blood, Penalty."
+  },
+  {
+    "id": "kawahira-species",
+    "tier": "very-hard",
+    "prompt": "คาวาฮิระมีไฟธาตุสายหมอกที่ทรงพลังมาก เพราะแท้จริงเขาเป็นใคร?",
+    "answer": "เผ่าพันธุ์ที่อยู่บนโลกก่อนมนุษย์",
+    "decoys": [
+      "อัลโกบาเลโน่รุ่นแรก",
+      "ผู้พิทักษ์สายหมอกรุ่นแรกของวองโกเล่",
+      "ผู้ก่อตั้งวินดีเช่"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Kawahira",
+    "evidence": "Kawahira has an ostentatiously powerful Mist Flame presence due to the fact that he was of the species that lived on Earth before the humans."
+  },
+  {
+    "id": "lal-corrupted-pacifier",
+    "tier": "very-hard",
+    "prompt": "ทำไมจุกนมอัลโกบาเลโน่ของรัล มิลจิจึงไม่สมบูรณ์?",
+    "answer": "เพราะโคโรเนโร่เข้ามาแทรกแทนเธอ",
+    "decoys": [
+      "เพราะเธอขโมยจุกนมมา",
+      "เพราะเบียคุรันทำลายจุกนม",
+      "เพราะเธอปฏิเสธคำสาป"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Lal_Mirch",
+    "evidence": "Lal Mirch is an Arcobaleno who holds a corrupted Arcobaleno Pacifier, due to Colonnello's intervention."
+  },
+  {
+    "id": "verde-optical-camouflage",
+    "tier": "very-hard",
+    "prompt": "ชุดพรางตัวที่เวลเด้ประดิษฐ์ ถูกออกแบบให้ใครมองเห็นผู้สวมได้?",
+    "answer": "คนที่อายุต่ำกว่าเกณฑ์",
+    "decoys": [
+      "คนที่มีไฟธาตุสายหมอก",
+      "ผู้ถือจุกนมอัลโกบาเลโน่",
+      "คนที่สวมแว่นพิเศษ"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Verde",
+    "evidence": "Since Verde was afraid his subordinates would eventually try and betray him, he made it so that only people under a certain age could see people camouflaged by it."
+  },
+  {
+    "id": "arcobaleno-fated-day",
+    "tier": "very-hard",
+    "prompt": "เหตุการณ์ที่สมาชิกอัลโกบาเลโน่ถูกสาปจากผู้ใหญ่ให้กลายเป็นทารก เรียกว่าอะไร?",
+    "answer": "วันแห่งโชคชะตา",
+    "decoys": [
+      "คดีเปลเด็ก",
+      "พิธีสืบทอดตำแหน่ง",
+      "ศึกตัวแทนแห่งสายรุ้ง"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Arcobaleno",
+    "evidence": "The Arcobaleno members were formerly adults who were \"cursed,\" becoming infants in an event known as \"The Fated Day.\""
+  },
+  {
+    "id": "pacifier-jar-bermuda",
+    "tier": "very-hard",
+    "prompt": "ในตอนจบศึกตัวแทนแห่งสายรุ้ง ใครตกลงเป็นผู้ส่งพลังให้ \"โถจุกนม\" ของทัลโบแทนอัลโกบาเลโน่?",
+    "answer": "เบอร์มิวด้า ฟอน วิคเค่นสไตน์",
+    "decoys": [
+      "คาวาฮิระ",
+      "ยูนิ",
+      "รีบอร์น"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Representative_Battle_of_the_Rainbow",
+    "evidence": "Kawahira hesitantly agrees and Bermuda also agrees to power the Pacifier Jar, thus replacing the Arcobaleno and ending the Representative Battle of the Rainbow."
+  },
+  {
+    "id": "squalo-fake-half-rings",
+    "tier": "very-hard",
+    "prompt": "ในตอนต้นภาควาเรีย ครึ่งแหวนวองโกเล่ที่สควอโล่ชิงไปจากบาจิลเป็นของแบบใด?",
+    "answer": "ของปลอม",
+    "decoys": [
+      "ของจริงทั้งชุด",
+      "เฉพาะแหวนแห่งนภา",
+      "แหวนมาเล่"
+    ],
+    "note": "ของจริงอยู่กับดีโน่",
+    "source": "https://reborn.fandom.com/wiki/Varia_Arc",
+    "evidence": "At the hospital, where Basil is resting, Tsuna learns that Squalo took the fake Half Vongola Rings, and that Dino has the genuine ones."
+  },
+  {
+    "id": "lancia-varia-squad",
+    "tier": "very-hard",
+    "prompt": "ในตอนจบศึกชิงแหวน ใครโผล่มาจัดการหน่วยวาเรียกลุ่มสุดท้ายได้อย่างง่ายดาย?",
+    "answer": "ลันเชีย",
+    "decoys": [
+      "บาจิล",
+      "ดีโน่",
+      "โคโรเนโร่"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Varia_Arc",
+    "evidence": "As the last remaining squad appears, Lancia, who had wiped out the rest before, beats them easily."
+  },
+  {
+    "id": "tsuna-dino-whip",
+    "tier": "very-hard",
+    "prompt": "ในการต่อสู้กับมุคุโร่ สึนะนำอาวุธของใครมาลองใช้ แต่ใช้ไม่เป็น?",
+    "answer": "แส้ของดีโน่",
+    "decoys": [
+      "ระเบิดของโกคุเดระ",
+      "ดาบของยามาโมโตะ",
+      "ทอนฟาของฮิบาริ"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Kokuyo_Arc",
+    "evidence": "Tsuna brought out Dino's whip and rushed to Mukuro to stop his mind control but unable to do it due to his lack of using the whip"
+  },
+  {
+    "id": "byakuran-shoichi-cause",
+    "tier": "very-hard",
+    "prompt": "อะไรทำให้เบียคุรันเชื่อมจิตกับตัวเองในโลกคู่ขนานได้?",
+    "answer": "อิริเอะ โชอิจิเดินทางไปอนาคตแล้วพบเบียคุรันสองคน",
+    "decoys": [
+      "เขาได้แหวนมาเล่แห่งนภาจากเชลเบคโล",
+      "ยูนิถ่ายพลังให้",
+      "เขาถูกยิงด้วยบาซูก้าทศวรรษ"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Byakuran",
+    "evidence": "Due to Shoichi traveling to the future and meeting two versions of Byakuran, Byakuran is mentally connected to every other Byakuran living in the separate parallel universes."
+  },
+  {
+    "id": "ryohei-maximum-ingram",
+    "tier": "very-hard",
+    "prompt": "ท่าแม็กซิมั่มอินแกรมของเรียวเฮ เพิ่มจำนวนหมัดด้วยการใช้ฟุตเวิร์กของใคร?",
+    "answer": "ลุสซูเรีย",
+    "decoys": [
+      "โคโรเนโร่",
+      "อาโอบะ โคโย",
+      "รีบอร์น"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Ryohei_Sasagawa",
+    "evidence": "Maximum Ingram: While using Lussuria's footwork the number of blows dealt with a regular Maximum Cannon are multiplied."
+  },
+  {
+    "id": "viper-mammon-chain",
+    "tier": "very-hard",
+    "prompt": "\"โซ่มาม่อน\" ที่ไวเปอร์ประดิษฐ์ขึ้น มีไว้ทำอะไร?",
+    "answer": "ป้องกันไม่ให้ถูกตรวจจับไฟดับเครื่องชน",
+    "decoys": [
+      "ผนึกพลังของแหวนวองโกเล่",
+      "มัดนักโทษในคุกวินดีเช่",
+      "เพิ่มพลังภาพลวงตา"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Viper",
+    "evidence": "Mammon Chain: Created by Viper, it prevents the detection any object that can emit Dying Will Flames."
+  },
+  {
+    "id": "shamal-mosquito",
+    "tier": "very-hard",
+    "prompt": "ดร.ชามาล หรือ \"ไทรเด๊นท์ ชามาล\" ใช้อะไรทำให้เป้าหมายติดโรคร้าย?",
+    "answer": "ยุง",
+    "decoys": [
+      "เข็มพิษ",
+      "อาหารพิษ",
+      "ผงแบคทีเรีย"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Doctor_Shamal",
+    "evidence": "He uses Trident Mosquitoes, to infect his targets with deadly illnesses."
+  },
+  {
+    "id": "verde-cayman",
+    "tier": "very-hard",
+    "prompt": "สัตว์คู่หูของเวลเด้ อัลโกบาเลโน่แห่งอัสนี คือสัตว์ชนิดใด?",
+    "answer": "จระเข้",
+    "decoys": [
+      "ปลาหมึกยักษ์",
+      "นก",
+      "กบ"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Verde",
+    "evidence": "Verde is the holder of the Lightning Arcobaleno Pacifier, and his animal partner appears to be a crocodile or alligator named Cayman."
+  },
+  {
+    "id": "haru-first-meeting",
+    "tier": "easy",
+    "prompt": "ตอนที่มิอุระ ฮารุพบสึนะครั้งแรก เธอพยายามทำอะไร?",
+    "answer": "พาตัวรีบอร์นไปจากสึนะ",
+    "decoys": [
+      "ท้าสึนะประลองเคนโด้",
+      "ลอบฆ่าสึนะด้วยอาหารพิษ",
+      "สมัครเข้าชมรมมวย"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Daily_Life_Arc",
+    "evidence": "a neighborhood girl who attempted to take Reborn away but ends up loving Tsuna when he saves her from drowning, Haru Miura"
+  },
+  {
+    "id": "yamamoto-bat-reborn",
+    "tier": "easy",
+    "prompt": "ใครให้ไม้เบสบอลที่แปลงเป็นดาบได้แก่ยามาโมโตะ ก่อนภาคโกคุโย?",
+    "answer": "รีบอร์น",
+    "decoys": [
+      "ดีโน่",
+      "ดร.ชามาล",
+      "ซาวาดะ อิเอมิสึ"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Takeshi_Yamamoto",
+    "evidence": "Yamamoto's Bat: It was given to him by Reborn shortly before the Kokuyo Arc."
+  },
+  {
+    "id": "i-pin-human-bomb",
+    "tier": "easy",
+    "prompt": "เมื่อตัวเลขนับถอยหลังบนหน้าผากของอี้ผิงลดลงถึง 1 จะเกิดอะไรขึ้น?",
+    "answer": "เธอกลายเป็นระเบิดมนุษย์",
+    "decoys": [
+      "เธอเข้าโหมดดับเครื่องชน",
+      "เธอสลับตัวกับตัวเองในอนาคต",
+      "เธอหลับไป"
+    ],
+    "source": "https://reborn.fandom.com/wiki/I-Pin",
+    "evidence": "When the countdown gets to 1, she becomes a human bomb and an explosion follows."
+  },
+  {
+    "id": "lambo-afro-grenades",
+    "tier": "easy",
+    "prompt": "แรมโบ้เก็บระเบิดมือไว้ที่ไหน?",
+    "answer": "ในผมทรงแอฟโฟร",
+    "decoys": [
+      "ในเขาวัว",
+      "ในบาซูก้าทศวรรษ",
+      "ในกระเป๋าเสื้อลายวัว"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Lambo",
+    "evidence": "Hand Grenades: Lambo stores hand grenades in his afro, which are very handy large area attacks and effective at destroying machinery."
+  },
+  {
+    "id": "mukuro-trident",
+    "tier": "easy",
+    "prompt": "อาวุธประจำตัวที่มุคุโร่ใช้ต่อสู้ระยะประชิดคืออะไร?",
+    "answer": "หอกสามง่าม",
+    "decoys": [
+      "ทอนฟาคู่",
+      "แส้",
+      "ลูกตุ้มเหล็ก"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Mukuro_Rokudo",
+    "evidence": "Hardly a slouch in physical combat, Mukuro is also skilled in melee weapons notably with his Trident."
+  },
+  {
+    "id": "belphegor-knives-wires",
+    "tier": "easy",
+    "prompt": "เบลเฟกอลแห่งวาเรียใช้อาวุธอะไร?",
+    "answer": "มีดขว้างกับลวด",
+    "decoys": [
+      "ร่มไฟฟ้า",
+      "ดาบที่แขนกล",
+      "เข่าเหล็ก"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Belphegor",
+    "evidence": "Knives: Belphegor uses throwing Knives and nearly invisible Wires to confuse and cut his enemies."
+  },
+  {
+    "id": "reborn-yellow-pacifier",
+    "tier": "easy",
+    "prompt": "จุกนมอัลโกบาเลโน่ที่รีบอร์นห้อยคออยู่เป็นสีอะไร?",
+    "answer": "สีเหลือง",
+    "decoys": [
+      "สีฟ้า",
+      "สีม่วง",
+      "สีคราม"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Reborn",
+    "evidence": "An Arcobaleno, he is the holder of the Yellow Arcobaleno Pacifier."
+  },
+  {
+    "id": "mafia-land-carcassa",
+    "tier": "medium",
+    "prompt": "ระหว่างเที่ยวมาเฟียแลนด์ สึนะถูกบังคับให้นำพันธมิตรสู้กับแฟมิลี่ใด?",
+    "answer": "คัลคัสซ่า",
+    "decoys": [
+      "โทมาโซ",
+      "เอสตราเนโอ",
+      "คาบัคโรเน่"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Daily_Life_Arc",
+    "evidence": "With Gokudera's \"help\", Tsuna ends up as the leader of the families' alliance and is forced to fight the Carcassa Famiglia."
+  },
+  {
+    "id": "skull-carcassa",
+    "tier": "medium",
+    "prompt": "อัลโกบาเลโน่คนใดเป็นหัวหน้ากองกำลังรบของคัลคัสซ่าแฟมิลี่?",
+    "answer": "สกัล",
+    "decoys": [
+      "โคโรเนโร่",
+      "เวลเด้",
+      "ไวเปอร์"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Skull",
+    "evidence": "As head of the combat forces of the Carcassa Famiglia, he wears a full leather outfit and a white motorcycle helmet; a similar uniform is worn by his subordinates."
+  },
+  {
+    "id": "squalo-shark-box",
+    "tier": "medium",
+    "prompt": "สัตว์กล่องของสควอโล่ที่ชื่ออาโร เป็นสัตว์ชนิดใด?",
+    "answer": "ฉลามขาว",
+    "decoys": [
+      "ไลเกอร์",
+      "มิงค์",
+      "กระเบนไฟฟ้า"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Superbia_Squalo",
+    "evidence": "Squalo Grande Pioggia: Squalo's Box Weapon, which resembles a great white Shark and is powerful enough to defeat enemies on its own."
+  },
+  {
+    "id": "uni-revive-arcobaleno",
+    "tier": "medium",
+    "prompt": "ในตอนจบภาคอนาคต ยูนิยอมสละชีวิตตัวเองเพื่ออะไร?",
+    "answer": "ชุบชีวิตอัลโกบาเลโน่ที่ตายไป",
+    "decoys": [
+      "ผนึกเบียคุรันไว้ในแหวน",
+      "ปลดผนึกแหวนวองโกเล่",
+      "ส่งเบียคุรันกลับไปโลกคู่ขนาน"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Uni",
+    "evidence": "Uni is also unselfish, willing to sacrifice her own life in the future to revive the dead Arcobaleno to restore balance to the Tri-ni-sette."
+  },
+  {
+    "id": "demon-possesses-julie",
+    "tier": "hard",
+    "prompt": "ในภาคพิธีสืบทอดตำแหน่ง สมาชิกชิม่อนคนใดที่ถูกตัวร้ายตัวจริงของภาคนี้สิงร่างอยู่?",
+    "answer": "คาโต้ จูลี่",
+    "decoys": [
+      "มิซูโนะ คาโอรุ",
+      "อาโอบะ โคโย",
+      "โอยามะ ราวจิ"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Demon_Spade",
+    "evidence": "Later, in the Inheritance Ceremony Arc, when he possessed Julie's body"
+  },
+  {
+    "id": "sepira-giglio-nero",
+    "tier": "very-hard",
+    "prompt": "ใครเป็นผู้นำแหวนมาเล่ไปก่อตั้งจิลโยเนโรแฟมิลี่?",
+    "answer": "เซปิร่า",
+    "decoys": [
+      "ลูเช่",
+      "อาเรีย",
+      "คาวาฮิระ"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Mare_Ring",
+    "evidence": "While the Vongola Rings were given to Vongola Primo, Sepira took the Mare Rings and established her own famiglia, the Giglio Nero."
+  },
+  {
+    "id": "lambo-thunder-helm",
+    "tier": "very-hard",
+    "prompt": "วองโกเล่เกียร์ธาตุอัสนีของแรมโบ้อยู่ในรูปของอะไร?",
+    "answer": "หมวกเกราะ",
+    "decoys": [
+      "หัวเข็มขัด",
+      "สร้อยคอ",
+      "ต่างหู"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Lambo",
+    "evidence": "Thunder Helm Version X: Upgraded version of the Vongola Lightning Ring combined with Gyudon's Box Ring."
+  },
+  {
+    "id": "shigure-kintoki-shinai",
+    "tier": "very-hard",
+    "prompt": "ดาบชิงุเระ คินโทคิ ที่ยามาโมโตะได้รับสืบทอด มีรูปร่างปกติเป็นอะไรก่อนแปลงเป็นดาบญี่ปุ่น?",
+    "answer": "ดาบไม้ไผ่ที่ทำจากเหล็ก",
+    "decoys": [
+      "ไม้เบสบอล",
+      "ร่มคันยาว",
+      "ไม้เท้า"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Shigure_Kintoki",
+    "evidence": "is a steel-made bamboo sword (竹刀, shinai) that transforms into a Japanese sword (日本刀, nihontō) when the Shigure Soen Ryu is used by the wielder."
+  },
+  {
+    "id": "basil-dolphin-box",
+    "tier": "very-hard",
+    "prompt": "สัตว์กล่องของบาจิลที่ชื่ออัลฟิน เป็นสัตว์ชนิดใด?",
+    "answer": "โลมา",
+    "decoys": [
+      "ฉลามขาว",
+      "กระเบนไฟฟ้า",
+      "นกนางแอ่น"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Basil",
+    "evidence": "Delfino di Pioggia: Basil's Box Weapon (nicknamed, Alfin)"
+  },
+  {
+    "id": "bluebell-rain-wreath",
+    "tier": "very-hard",
+    "prompt": "ในภาคอนาคต บลูเบลถือแหวนมาเล่ธาตุใด?",
+    "answer": "พิรุณ",
+    "decoys": [
+      "วายุ",
+      "อรุณ",
+      "สายหมอก"
+    ],
+    "source": "https://reborn.fandom.com/wiki/Bluebell",
+    "evidence": "Millefiore Rain Funeral Wreath"
+  }
+]

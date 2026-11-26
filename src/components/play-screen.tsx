@@ -206,9 +206,19 @@ export function PlayAgainBar({ onClick }: { onClick: () => void }) {
   );
 }
 
-export function BigButton({ children, onClick, autoFocus }: { children: ReactNode; onClick: () => void; autoFocus?: boolean }) {
+export function BigButton({
+  children,
+  onClick,
+  autoFocus,
+  disabled,
+}: {
+  children: ReactNode;
+  onClick: () => void;
+  autoFocus?: boolean;
+  disabled?: boolean;
+}) {
   return (
-    <button type="button" onClick={onClick} autoFocus={autoFocus} className="stock stock--primary mt-10 text-lg">
+    <button type="button" onClick={onClick} autoFocus={autoFocus} disabled={disabled} className="stock stock--primary mt-10 text-lg">
       {children}
     </button>
   );

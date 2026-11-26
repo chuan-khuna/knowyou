@@ -17,8 +17,10 @@ const GAMES: readonly Card[] = [
 
 /** Quizzes ask about one title and end in a score. In href order. */
 const QUIZZES: readonly Card[] = [
-  { href: "/naruto", title: "คุณรู้จัก Naruto ดีแค่ไหน", blurb: "ตอบคำถาม 20 ข้อ แล้วดูว่าคุณเป็นนินจาระดับไหน", ready: true },
-  { href: "/prince-of-tennis", title: "คุณรู้จัก Prince of Tennis ดีแค่ไหน", blurb: "ตอบคำถาม 20 ข้อ แล้วดูว่าคุณเป็นแฟนระดับไหน", ready: true },
+  { href: "/dragon-ball", title: "คุณรู้จัก Dragon Ball ดีแค่ไหน", blurb: "ตอบคำถามแล้วดูว่าคุณเป็นนักสู้ระดับไหน", ready: true },
+  { href: "/naruto", title: "คุณรู้จัก Naruto ดีแค่ไหน", blurb: "ตอบคำถามแล้วดูว่าคุณเป็นนินจาระดับไหน", ready: true },
+  { href: "/prince-of-tennis", title: "คุณรู้จัก Prince of Tennis ดีแค่ไหน", blurb: "ตอบคำถามแล้วดูว่าคุณเป็นแฟนระดับไหน", ready: true },
+  { href: "/reborn", title: "คุณรู้จัก Reborn ดีแค่ไหน", blurb: "ตอบคำถามแล้วดูว่าคุณอยู่ระดับไหนในแฟมิลี่", ready: true },
 ];
 
 export default function Home() {

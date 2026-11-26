@@ -36,6 +36,8 @@ describe("quizIssues rejects what the types can't check", () => {
   test("a good title has no issues", () => {
     expect(quizIssues(good)).toEqual([]);
     expect(quizIssues({ ...good, glosses: { "wrong easy-3 1": gloss } })).toEqual([]);
+    // A gloss may name a term that only a prompt mentions.
+    expect(quizIssues({ ...withQuestion({ prompt: "ใครใช้ท่าไม้ตาย นี้?" }), glosses: { ท่าไม้ตาย: gloss } })).toEqual([]);
   });
 
   test.each([
@@ -47,7 +49,7 @@ describe("quizIssues rejects what the types can't check", () => {
     ["an empty note", withQuestion({ note: " " }), "easy-0: empty note"],
     ["an http source", withQuestion({ source: "http://example.org" }), "easy-0: source is not an https URL"],
     ["a source that isn't a URL", withQuestion({ source: "wiki" }), "easy-0: source is not an https URL"],
-    ["a gloss no option uses", { ...good, glosses: { "ท่า": gloss } }, "gloss ท่า: names no option"],
+    ["a gloss no option or prompt uses", { ...good, glosses: { "ท่า": gloss } }, "gloss ท่า: names no option or prompt term"],
     ["a score no band holds", { ...good, bands: FIXTURE_BANDS.slice(0, 4) }, "score 17: in 0 bands, needs 1"],
     ["a score two bands hold", { ...good, bands: [...FIXTURE_BANDS, { min: 20, max: 20, title: "t", line: "l" }] }, "score 20: in 2 bands, needs 1"],
     ["a band without a title", { ...good, bands: FIXTURE_BANDS.map((b) => (b.min === 0 ? { ...b, title: " " } : b)) }, "band 0-4: empty title"],

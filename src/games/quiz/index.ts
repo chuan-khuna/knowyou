@@ -8,12 +8,11 @@
 export { bandFor, type ScoreBand } from "./bands";
 export { parseQuestions } from "./bank";
 export { MIN_QUESTIONS_PER_TIER, quizIssues } from "./check";
-export { parseGlossary, type Gloss } from "./glosses";
+export { parseGlossary, termsIn, type Gloss, type PromptTerm } from "./glosses";
 export { TIERS, type QuestionBank, type QuizQuestion, type Tier } from "./question";
 export {
+  MIN_QUESTIONS_PER_PLAY,
   QUESTIONS_PER_PLAY,
-  QUESTIONS_PER_TIER,
-  QUIZ_MODES,
   createQuiz,
   type AnsweredQuizQuestion,
   type AskingQuizPlay,
@@ -21,7 +20,6 @@ export {
   type Quiz,
   type QuizCard,
   type QuizContent,
-  type QuizMode,
   type QuizOption,
   type QuizPlay,
 } from "./quiz";

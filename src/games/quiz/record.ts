@@ -1,20 +1,24 @@
 /**
  * A play saved in the browser, so a refresh doesn't lose it. The same rules as
  * the games' `src/lib/play-record.ts`, without its Engine type: the record is
- * the mode, seed and answer keys, and anything that doesn't replay is dropped.
+ * the count, seed and answer keys, and anything that doesn't replay is dropped.
  */
 
-import { QUIZ_MODES, type Quiz, type QuizMode, type QuizPlay } from "./quiz";
+import { QUESTIONS_PER_PLAY, type Quiz, type QuizPlay } from "./quiz";
 
 /** The localStorage key for a title's saved play, such as `knowyou:play:prince-of-tennis`. */
 export function quizRecordKey(quiz: Pick<Quiz, "id">): string {
   return `knowyou:play:${quiz.id}`;
 }
 
-/** `mode` is left out for a standard play, so records saved before modes existed still restore. */
+/**
+ * `count` is left out for a play of QUESTIONS_PER_PLAY, so a record saved
+ * before counts existed still restores. Such a record may instead hold
+ * `mode: "all"`, which meant the whole bank.
+ */
 interface QuizRecord {
   readonly v: 1;
-  readonly mode?: Exclude<QuizMode, "standard">;
+  readonly count?: number;
   readonly seed: number;
   readonly answerKeys: readonly string[];
 }
@@ -22,7 +26,7 @@ interface QuizRecord {
 export function encodeQuizRecord(play: QuizPlay): string {
   const record: QuizRecord = {
     v: 1,
-    ...(play.mode === "standard" ? {} : { mode: play.mode }),
+    ...(play.total === QUESTIONS_PER_PLAY ? {} : { count: play.total }),
     seed: play.seed,
     answerKeys: play.answerKeys,
   };
@@ -39,14 +43,16 @@ export function restoreQuiz(quiz: Quiz, raw: string | null): QuizPlay | null {
     return null;
   }
   if (typeof value !== "object" || value === null || Array.isArray(value)) return null;
-  const { v, mode = "standard", seed, answerKeys } = value as Record<string, unknown>;
+  const { v, mode = "standard", count = mode === "all" ? quiz.size : QUESTIONS_PER_PLAY, seed, answerKeys } = value as Record<string, unknown>;
   if (v !== 1) return null;
-  if (!QUIZ_MODES.includes(mode as QuizMode)) return null;
+  if (mode !== "standard" && mode !== "all") return null;
+  if (typeof count !== "number") return null;
   if (typeof seed !== "number" || !Number.isInteger(seed) || seed < 0 || seed > 0xffffffff) return null;
   if (!Array.isArray(answerKeys) || !answerKeys.every((k): k is string => typeof k === "string")) return null;
 
-  let play: QuizPlay = quiz.start(seed, mode as QuizMode);
+  let play: QuizPlay;
   try {
+    play = quiz.start(seed, count);
     for (const key of answerKeys) {
       if (play.phase !== "asking") return null;
       play = quiz.answer(play, key);

@@ -4,9 +4,9 @@ A brief for an agent that researches new questions for คุณรู้จั�
 
 ## How the quiz uses a question
 
-- A standard play asks 20 questions: 5 from each tier, easy first. The `all` mode asks every question in the bank.
+- The player picks how many questions to play, from 5 to the whole bank; 20 is the default. The count is dealt evenly over the tiers, easy first.
 - Each question shows a Thai prompt and four options: the answer and three decoys, shuffled.
-- The screen does not say whether an answer is right until the end. The result then lists every question with its right answer, the player's answer, and the `note` if there is one.
+- With the เฉลยทุกข้อ switch on, each answer shows right or wrong, the right answer and the `note` at once. With it off, nothing shows until the end. Either way the result lists every question with its right answer, the player's answer, and the `note` if there is one.
 - If an option is a Japanese technique name, or a Thai translation of one, the screen shows its romaji, kanji and English name under it. That data comes from the glossary.
 
 ## Output file
@@ -42,7 +42,7 @@ Return one JSON object with two keys: `questions` and `glossary`.
 | `prompt` | yes | Thai. One question, ending with `?`. |
 | `answer` | yes | Thai. The right option's exact label. |
 | `decoys` | yes | Exactly 3 Thai labels. All four options must be different after trimming spaces. |
-| `note` | no | Thai. One line shown with the answer in the result. Leave the field out instead of writing an empty string. |
+| `note` | no | Thai. One line shown with the answer. Leave the field out instead of writing an empty string. |
 | `source` | yes | An `https://` page that confirms the answer. Prefer the Prince of Tennis wiki (`https://princeoftennis.fandom.com/wiki/...`), then Wikipedia. |
 | `evidence` | yes | A short quote from `source`, in its own language, that confirms the answer. It stays in the bank for review; the quiz never shows it. |
 

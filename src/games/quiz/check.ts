@@ -1,3 +1,4 @@
+import { termsIn } from "./glosses";
 import { TIERS } from "./question";
 import { QUESTIONS_PER_PLAY, type QuizContent } from "./quiz";
 
@@ -19,9 +20,11 @@ export function quizIssues({ bank, glosses, bands }: QuizContent): string[] {
     if (!isHttpsUrl(q.source)) issues.push(`${id}: source is not an https URL`);
   }
 
-  const labels = new Set(Object.values(bank).flatMap((q) => [q.answer, ...q.decoys]));
+  const named = new Set(
+    Object.values(bank).flatMap((q) => [q.answer, ...q.decoys, ...termsIn(q.prompt, glosses).map((t) => t.label)]),
+  );
   for (const label of Object.keys(glosses)) {
-    if (!labels.has(label)) issues.push(`gloss ${label}: names no option`);
+    if (!named.has(label)) issues.push(`gloss ${label}: names no option or prompt term`);
   }
 
   for (let score = 0; score <= QUESTIONS_PER_PLAY; score++) {

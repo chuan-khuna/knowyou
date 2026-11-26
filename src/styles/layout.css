@@ -57,6 +57,13 @@
     gap: var(--space-sm);
   }
 
+  /* The smallest phones, 320px wide, need the room for a quiz's three buttons. */
+  @media (max-width: 24rem) {
+    .topbar-end {
+      gap: var(--space-2xs);
+    }
+  }
+
   /* While the reset asks เริ่มใหม่?, the status gives up its room, so a narrow phone keeps the sound icon on screen.
      Important because a status may carry a display utility, and utilities outrank this layer. */
   .topbar-end:has(> .icon-button--armed) > :not(button) {

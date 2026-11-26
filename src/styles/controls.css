@@ -39,6 +39,20 @@
     translate: 0 2px;
   }
 
+  /* A picked choice among several, such as the quiz's count presets. */
+  .stock[aria-pressed="true"] {
+    background: color-mix(in oklch, var(--color-accent) 14%, var(--color-card));
+    box-shadow: inset 0 0 0 2px var(--color-accent-deep), 0 var(--edge) 0 0 var(--color-edge);
+  }
+
+  .check {
+    flex: none;
+    width: 1.375rem;
+    height: 1.375rem;
+    accent-color: var(--color-accent-deep);
+    cursor: pointer;
+  }
+
   .stock--primary {
     background: var(--color-accent);
     color: var(--color-accent-ink);
@@ -164,5 +178,32 @@
 
   @media (min-width: 40rem) {
     .option-key { display: inline-flex; }
+  }
+
+  .option--locked {
+    cursor: default;
+  }
+  .option--locked:hover {
+    --edge: 2px;
+    translate: none;
+  }
+  .option--right {
+    background: color-mix(in oklch, var(--color-mint) 18%, var(--color-card));
+    box-shadow: inset 0 0 0 2px var(--color-mint-deep), 0 var(--edge) 0 0 var(--color-edge);
+  }
+  .option--wrong {
+    background: color-mix(in oklch, var(--color-accent-3) 14%, var(--color-card));
+    box-shadow: inset 0 0 0 2px var(--color-accent-3), 0 var(--edge) 0 0 var(--color-edge);
+  }
+  .option--faded {
+    opacity: 0.6;
+  }
+  .option-tag {
+    display: inline-flex;
+    flex: none;
+    align-items: center;
+    gap: var(--space-xs);
+    font-size: var(--text-sm);
+    font-weight: 600;
   }
 }

@@ -1,19 +1,17 @@
 /**
- * A play of a quiz is an immutable value: its mode, its seed and the answer
+ * A play of a quiz is an immutable value: its count, its seed and the answer
  * keys so far. Every other field is derived from those by `advance`, so a play
  * replays exactly and a saved record needs nothing else.
  */
 
 import { bandFor, type ScoreBand } from "./bands";
-import type { Gloss } from "./glosses";
+import { termsIn, type Gloss, type PromptTerm } from "./glosses";
 import { TIERS, type QuestionBank, type Tier } from "./question";
 
-export const QUESTIONS_PER_TIER = 5;
-export const QUESTIONS_PER_PLAY = QUESTIONS_PER_TIER * TIERS.length;
-
-/** `standard` draws 5 questions per tier; `all` asks the whole bank. Both go easiest tier first. */
-export const QUIZ_MODES = ["standard", "all"] as const;
-export type QuizMode = (typeof QUIZ_MODES)[number];
+/** The count a play asks when none is given, and the scale the score bands are written for. */
+export const QUESTIONS_PER_PLAY = 20;
+/** The fewest questions a play may ask. The most is the bank's size. */
+export const MIN_QUESTIONS_PER_PLAY = 5;
 
 const SLOTS = ["a", "b", "c", "d"] as const;
 
@@ -31,6 +29,8 @@ export interface QuizCard {
   /** 1-based. */
   readonly number: number;
   readonly prompt: string;
+  /** The glossary terms the prompt names, such as a move, shown with their original names under it. */
+  readonly terms: readonly PromptTerm[];
   readonly options: readonly QuizOption[];
 }
 
@@ -44,10 +44,9 @@ export interface AnsweredQuizQuestion {
 }
 
 interface QuizPlayBase {
-  readonly mode: QuizMode;
-  readonly seed: number;
-  /** How many questions this play asks. */
+  /** How many questions this play asks, from MIN_QUESTIONS_PER_PLAY to the bank's size. */
   readonly total: number;
+  readonly seed: number;
   readonly answerKeys: readonly string[];
   /** One entry per answer, in order. The last one is the answer just given. */
   readonly answered: readonly AnsweredQuizQuestion[];
@@ -61,8 +60,8 @@ export interface AskingQuizPlay extends QuizPlayBase {
 
 export interface FinishedQuizPlay extends QuizPlayBase {
   readonly phase: "finished";
-  /** The fan title; only a standard play has one. */
-  readonly band: ScoreBand | null;
+  /** The fan title, for the score scaled to a score out of QUESTIONS_PER_PLAY. */
+  readonly band: ScoreBand;
 }
 
 export type QuizPlay = AskingQuizPlay | FinishedQuizPlay;
@@ -79,7 +78,10 @@ export interface QuizContent {
 }
 
 export interface Quiz extends QuizContent {
-  start(seed: number, mode?: QuizMode): AskingQuizPlay;
+  /** How many questions the bank holds: the longest play. */
+  readonly size: number;
+  /** Throws if `count` is not a whole number from MIN_QUESTIONS_PER_PLAY to `size`. Defaults to QUESTIONS_PER_PLAY. */
+  start(seed: number, count?: number): AskingQuizPlay;
   /** Throws if `optionKey` is not one of the current question's options. */
   answer(play: AskingQuizPlay, optionKey: string): QuizPlay;
 }
@@ -99,16 +101,28 @@ export function createQuiz(content: QuizContent): Quiz {
       .filter((id) => bank[id]!.tier === tier)
       .sort(),
   );
+  const size = byTier.reduce((sum, ids) => sum + ids.length, 0);
+  // A default play deals 5 per tier, so every tier needs at least that many.
+  const perTier = QUESTIONS_PER_PLAY / TIERS.length;
   for (const [i, ids] of byTier.entries()) {
-    if (ids.length < QUESTIONS_PER_TIER) {
-      throw new Error(`tier ${TIERS[i]} has ${ids.length} questions, a play needs ${QUESTIONS_PER_TIER}`);
+    if (ids.length < perTier) {
+      throw new Error(`tier ${TIERS[i]} has ${ids.length} questions, a play needs ${perTier}`);
     }
   }
 
-  const draw = (seed: number, mode: QuizMode): readonly DrawnQuestion[] => {
+  // Segmenting Thai is slow next to a draw, so each prompt is read once.
+  const promptTerms = new Map<string, readonly PromptTerm[]>();
+  const termsOf = (id: string) => {
+    let terms = promptTerms.get(id);
+    if (!terms) promptTerms.set(id, (terms = termsIn(bank[id]!.prompt, glosses)));
+    return terms;
+  };
+
+  const draw = (seed: number, count: number): readonly DrawnQuestion[] => {
     const random = rng(seed);
-    const take = mode === "all" ? Infinity : QUESTIONS_PER_TIER;
-    const ids = byTier.flatMap((tierIds) => shuffle(tierIds, random).slice(0, take));
+    const takes = deal(count, byTier.map((ids) => ids.length));
+    // Every tier is shuffled whole, so the generator moves on the same way whatever the count.
+    const ids = byTier.flatMap((tierIds, i) => shuffle(tierIds, random).slice(0, takes[i]));
     return ids.map((id, i) => {
       const q = bank[id]!;
       const labels = shuffle([q.answer, ...q.decoys], random);
@@ -117,7 +131,7 @@ export function createQuiz(content: QuizContent): Quiz {
         return { key: `${id}:${SLOTS[slot]}`, label, ...(gloss === undefined ? {} : { gloss }) };
       });
       return {
-        card: { id, tier: q.tier, number: i + 1, prompt: q.prompt, options },
+        card: { id, tier: q.tier, number: i + 1, prompt: q.prompt, terms: termsOf(id), options },
         rightKey: options[labels.indexOf(q.answer)]!.key,
         ...(q.note === undefined ? {} : { note: q.note }),
         source: q.source,
@@ -125,8 +139,8 @@ export function createQuiz(content: QuizContent): Quiz {
     });
   };
 
-  const advance = (mode: QuizMode, seed: number, answerKeys: readonly string[]): QuizPlay => {
-    const drawn = draw(seed, mode);
+  const advance = (count: number, seed: number, answerKeys: readonly string[]): QuizPlay => {
+    const drawn = draw(seed, count);
     const answered = answerKeys.map((chosenKey, i): AnsweredQuizQuestion => {
       const { card, rightKey, note, source } = drawn[i]!;
       return {
@@ -139,10 +153,10 @@ export function createQuiz(content: QuizContent): Quiz {
       };
     });
     const score = answered.filter((a) => a.correct).length;
-    const base = { mode, seed, total: drawn.length, answerKeys, answered, score };
+    const base = { total: drawn.length, seed, answerKeys, answered, score };
     const next = drawn[answerKeys.length];
     if (next) return { ...base, phase: "asking", question: next.card };
-    return { ...base, phase: "finished", band: mode === "standard" ? bandFor(bands, score) : null };
+    return { ...base, phase: "finished", band: bandFor(bands, Math.round((score * QUESTIONS_PER_PLAY) / drawn.length)) };
   };
 
   return {
@@ -150,15 +164,38 @@ export function createQuiz(content: QuizContent): Quiz {
     bank,
     glosses,
     bands,
-    start: (seed, mode = "standard") => advance(mode, seed, []) as AskingQuizPlay,
+    size,
+    start: (seed, count = QUESTIONS_PER_PLAY) => {
+      if (!Number.isInteger(count) || count < MIN_QUESTIONS_PER_PLAY || count > size) {
+        throw new Error(`a play asks ${MIN_QUESTIONS_PER_PLAY} to ${size} questions, not ${count}`);
+      }
+      return advance(count, seed, []) as AskingQuizPlay;
+    },
     answer: (play, optionKey) => {
       if (play.phase !== "asking") throw new Error("the quiz is finished");
       if (!play.question.options.some((o) => o.key === optionKey)) {
         throw new Error(`"${optionKey}" is not an option of question ${play.question.number}`);
       }
-      return advance(play.mode, play.seed, [...play.answerKeys, optionKey]);
+      return advance(play.total, play.seed, [...play.answerKeys, optionKey]);
     },
   };
+}
+
+/**
+ * Deals `count` round-robin over the tiers, easiest first, skipping a tier
+ * that has run out: 20 gives 5 each, 50 gives 13, 13, 12, 12.
+ */
+function deal(count: number, sizes: readonly number[]): number[] {
+  const takes = sizes.map(() => 0);
+  for (let left = count; left > 0; ) {
+    for (let i = 0; i < sizes.length && left > 0; i++) {
+      if (takes[i]! < sizes[i]!) {
+        takes[i]!++;
+        left--;
+      }
+    }
+  }
+  return takes;
 }
 
 function shuffle<T>(items: readonly T[], random: () => number): T[] {

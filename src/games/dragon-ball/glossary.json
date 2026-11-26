@@ -1,0 +1,162 @@
+{
+  "พลังคลื่นเต่า": {
+    "romaji": "Kamehameha",
+    "kanji": "かめはめ波",
+    "english": "Kamehameha"
+  },
+  "บอลเก็งกิ": {
+    "romaji": "Genki-dama",
+    "kanji": "元気玉",
+    "english": "Spirit Bomb"
+  },
+  "หมัดเจ้าพิภพ": {
+    "romaji": "Kaiōken",
+    "kanji": "界王拳",
+    "english": "Kaio-ken"
+  },
+  "หมัดตะวัน": {
+    "romaji": "Taiyōken",
+    "kanji": "太陽拳",
+    "english": "Solar Flare"
+  },
+  "เคลื่อนย้ายพริบตา": {
+    "romaji": "Shunkan Idō",
+    "kanji": "瞬間移動",
+    "english": "Instant Transmission"
+  },
+  "ท่าแยกร่างภาพลวงตา": {
+    "romaji": "Zanzōken",
+    "kanji": "残像拳",
+    "english": "Afterimage Technique"
+  },
+  "ลำแสงปีศาจ": {
+    "romaji": "Makankōsappō",
+    "kanji": "魔貫光殺砲",
+    "english": "Special Beam Cannon"
+  },
+  "คลื่นสะกดมาร": {
+    "romaji": "Mafūba",
+    "kanji": "魔封波",
+    "english": "Evil Containment Wave"
+  },
+  "พลังคลื่นบรึ้มพิฆาต": {
+    "romaji": "Dodonpa",
+    "kanji": "どどん波",
+    "english": "Dodon Ray"
+  },
+  "กระบองวิเศษ": {
+    "romaji": "Nyoibō",
+    "kanji": "如意棒",
+    "english": "Power Pole"
+  },
+  "เมฆสีทอง": {
+    "romaji": "Kinto'un",
+    "kanji": "筋斗雲",
+    "english": "Flying Nimbus"
+  },
+  "ดราก้อนเรดาร์": {
+    "romaji": "Doragon Rēdā",
+    "kanji": "ドラゴンレーダー",
+    "english": "Dragon Radar"
+  },
+  "ถั่ววิเศษ": {
+    "romaji": "Senzu",
+    "kanji": "仙豆",
+    "english": "Senzu Bean"
+  },
+  "ลิงยักษ์": {
+    "romaji": "Ōzaru",
+    "kanji": "大猿",
+    "english": "Great Ape"
+  },
+  "ซูเปอร์ไซย่า": {
+    "romaji": "Sūpā Saiya-jin",
+    "kanji": "超サイヤ人",
+    "english": "Super Saiyan"
+  },
+  "ซูเปอร์ไซย่าขั้นที่ 2": {
+    "romaji": "Sūpā Saiya-jin Tsū",
+    "kanji": "超サイヤ人２",
+    "english": "Super Saiyan 2"
+  },
+  "ซูเปอร์ไซย่าขั้นที่ 3": {
+    "romaji": "Sūpā Saiya-jin Surī",
+    "kanji": "超サイヤ人３",
+    "english": "Super Saiyan 3"
+  },
+  "โกเท็นคูส": {
+    "romaji": "Gotenkusu",
+    "kanji": "ゴテンクス",
+    "english": "Gotenks"
+  },
+  "เบจิโต้": {
+    "romaji": "Bejitto",
+    "kanji": "ベジット",
+    "english": "Vegito"
+  },
+  "คิบิโต้ะชิน": {
+    "romaji": "Kibitoshin",
+    "kanji": "キビト神",
+    "english": "Kibito Kai"
+  },
+  "กงจักรสังหาร": {
+    "romaji": "Kienzan",
+    "kanji": "気円斬",
+    "english": "Destructo Disc"
+  },
+  "ปืนใหญ่พลังจิต": {
+    "romaji": "Kikōhō",
+    "kanji": "気功砲",
+    "english": "Tri-Beam"
+  },
+  "มาเซนโก": {
+    "romaji": "Masenkō",
+    "kanji": "魔閃光",
+    "english": "Masenko"
+  },
+  "มาโกเซน": {
+    "romaji": "Makōsen",
+    "kanji": "魔光閃",
+    "english": "Makosen"
+  },
+  "การ์ลิคกัน": {
+    "romaji": "Gyarikku Hō",
+    "kanji": "ギャリック砲",
+    "english": "Galick Gun"
+  },
+  "ไฟนอลแฟลช": {
+    "romaji": "Fainaru Furasshu",
+    "kanji": "ファイナルフラッシュ",
+    "english": "Final Flash"
+  },
+  "บิ๊กแบงค์แอ็ทแท็ก": {
+    "romaji": "Biggu Ban Atakku",
+    "kanji": "ビッグバンアタック",
+    "english": "Big Bang Attack"
+  },
+  "ไฟนอลเอ็กโพลชั่น": {
+    "romaji": "Fainaru Ekusupurōjon",
+    "kanji": "ファイナルエクスプロージョン",
+    "english": "Final Explosion"
+  },
+  "เดธบีม": {
+    "romaji": "Desubīmu",
+    "kanji": "デスビーム",
+    "english": "Death Beam"
+  },
+  "เดธซอสเซอร์": {
+    "romaji": "Tsuiseki Kienzan",
+    "kanji": "追跡気円斬",
+    "english": "Death Saucer"
+  },
+  "เบิร์นนิ่งแอ็คแทค": {
+    "romaji": "Bāningu Atakku",
+    "kanji": "バーニングアタック",
+    "english": "Burning Attack"
+  },
+  "ซูเปอร์โกสต์คามิกาเซ่แอ็ทแท็ก": {
+    "romaji": "Sūpā Gōsuto Kamikaze Atakku",
+    "kanji": "スーパーゴーストカミカゼアタック",
+    "english": "Super Ghost Kamikaze Attack"
+  }
+}

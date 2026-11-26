@@ -1,0 +1,2011 @@
+[
+  {
+    "id": "fire-mountain-blast",
+    "tier": "easy",
+    "prompt": "ท่าที่ใช้ดับไฟบนภูเขาไฟซึ่งเป็นบ้านของราชาปีศาจวัว จนโกคูได้เห็นและเลียนแบบ ชื่ออะไร?",
+    "answer": "พลังคลื่นเต่า",
+    "decoys": [
+      "บอลเก็งกิ",
+      "หมัดตะวัน",
+      "ลำแสงปีศาจ"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Kamehameha",
+    "evidence": "Goku learns it after witnessing Master Roshi unleashing the blast to extinguish the flames at Ox-King's home on Fire Mountain."
+  },
+  {
+    "id": "nimbus-turtle-reward",
+    "tier": "easy",
+    "prompt": "ในภาคแรก โกคูได้รับสิ่งใดเป็นรางวัลจากการช่วยพาเต่ากลับบ้าน?",
+    "answer": "เมฆสีทอง",
+    "decoys": [
+      "กระบองวิเศษ",
+      "ดราก้อนเรดาร์",
+      "ถั่ววิเศษ"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Flying_Nimbus",
+    "evidence": "Master Roshi gave Nimbus to Goku as a replacement reward for rescuing Master Roshi's Turtle"
+  },
+  {
+    "id": "dragon-radar-inventor",
+    "tier": "easy",
+    "prompt": "ดราก้อนเรดาร์ที่ใช้ตามหาดราก้อนบอลตั้งแต่การผจญภัยครั้งแรกของโกคู เป็นสิ่งประดิษฐ์ของใคร?",
+    "answer": "บูลม่า",
+    "decoys": [
+      "ด็อกเตอร์บรีฟ",
+      "ผู้เฒ่าเต่า",
+      "อูลอน"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Dragon_Radar",
+    "evidence": "The portable Dragon Radar was designed and built by Bulma to help locate Dragon Balls."
+  },
+  {
+    "id": "jackie-chun-identity",
+    "tier": "easy",
+    "prompt": "แจ็คกี้ ชุน ผู้เข้าแข่งขันในศึกชิงเจ้ายุทธภพครั้งที่ 21 แท้จริงแล้วคือใครปลอมตัวมา?",
+    "answer": "ผู้เฒ่าเต่า",
+    "decoys": [
+      "ปู่โกฮัง",
+      "เซียนกระเรียน",
+      "ท่านคาริน"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Goku/Biography",
+    "evidence": "In the final round Goku battles with defending Champion Jackie Chun (really Master Roshi in disguise)."
+  },
+  {
+    "id": "krillin-fellow-student",
+    "tier": "easy",
+    "prompt": "ใครมาขอเป็นศิษย์ผู้เฒ่าเต่าในช่วงเดียวกับโกคู และฝึกด้วยกันก่อนศึกชิงเจ้ายุทธภพครั้งที่ 21?",
+    "answer": "คุริริน",
+    "decoys": [
+      "เท็นชินฮัง",
+      "ยาจิโรเบ",
+      "อูลอน"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Tournament_Saga",
+    "evidence": "It was a small boy named Krillin, who also wanted to train with Master Roshi."
+  },
+  {
+    "id": "red-ribbon-destroyer",
+    "tier": "easy",
+    "prompt": "ใครบุกเอาชนะกองทัพโบว์แดงได้ทั้งกองทัพเพียงลำพัง?",
+    "answer": "โกคู",
+    "decoys": [
+      "หยำฉา",
+      "ผู้เฒ่าเต่า",
+      "เถาไปไป"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Red_Ribbon_Army",
+    "evidence": "Goku single-handedly defeating the entire army"
+  },
+  {
+    "id": "oolong-shenron-wish",
+    "tier": "medium",
+    "prompt": "ตอนที่จักรพรรดิพิลาฟกำลังจะขอพรกับเทพเจ้ามังกร ใครแทรกขอพรตัดหน้าไปก่อน?",
+    "answer": "อูลอน",
+    "decoys": [
+      "บูลม่า",
+      "หยำฉา",
+      "ปูอัล"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Oolong",
+    "evidence": "Oolong ends up preventing the wish by quickly jumping in and telling Shenron that he wants a girl's pair of panties"
+  },
+  {
+    "id": "puar-cuts-tail",
+    "tier": "medium",
+    "prompt": "ที่ปราสาทของจักรพรรดิพิลาฟ ใครตัดหางของโกคูตอนเป็นลิงยักษ์ จนเขากลับคืนร่างเดิม?",
+    "answer": "ปูอัล",
+    "decoys": [
+      "หยำฉา",
+      "อูลอน",
+      "บูลม่า"
+    ],
+    "note": "หยำฉาเป็นคนตรึงลิงยักษ์ไว้ ส่วนปูอัลแปลงร่างเป็นกรรไกร",
+    "source": "https://dragonball.fandom.com/wiki/Puar",
+    "evidence": "Puar cuts off the Great Ape Goku's tail while it was paralyzed by Yamcha"
+  },
+  {
+    "id": "roshi-destroys-moon",
+    "tier": "medium",
+    "prompt": "ในศึกชิงเจ้ายุทธภพครั้งที่ 21 เมื่อโกคูกลายเป็นลิงยักษ์กลางการแข่งขัน คู่ต่อสู้ของเขาทำลายอะไรเพื่อให้โกคูกลับคืนร่างเดิม?",
+    "answer": "ดวงจันทร์",
+    "decoys": [
+      "หางของโกคู",
+      "เวทีประลอง",
+      "ดราก้อนบอล"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Master_Roshi/Biography",
+    "evidence": "When Goku looks at the full moon, he turns into a Great Ape, and Roshi is forced to destroy the moon with a Kamehameha to restore Goku back to his original form."
+  },
+  {
+    "id": "tournament-21-winner",
+    "tier": "medium",
+    "prompt": "ใครเป็นผู้ชนะเลิศศึกชิงเจ้ายุทธภพครั้งที่ 21?",
+    "answer": "แจ็คกี้ ชุน",
+    "decoys": [
+      "โกคู",
+      "คุริริน",
+      "หยำฉา"
+    ],
+    "note": "ทั้งสองล้มลงพร้อมกัน แจ็คกี้ ชุนลุกขึ้นได้ก่อน",
+    "source": "https://dragonball.fandom.com/wiki/Tournament_Saga",
+    "evidence": "Jackie Chun then lifts himself up slowly and remains that way a bit before he finally spouts the phrase, thus he is declared world champion."
+  },
+  {
+    "id": "tao-kills-blue",
+    "tier": "medium",
+    "prompt": "ใครสังหารนายพลบลู หลังเขากลับมาที่กองบัญชาการกองทัพโบว์แดงมือเปล่า?",
+    "answer": "เถาไปไป",
+    "decoys": [
+      "ผู้บัญชาการเรด",
+      "เสนาธิการแบล็ค",
+      "โกคู"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Mercenary_Tao",
+    "evidence": "Mercenary Tao kills General Blue with his tongue"
+  },
+  {
+    "id": "baba-masked-fighter",
+    "tier": "medium",
+    "prompt": "นักสู้สวมหน้ากากคนสุดท้ายของแม่เฒ่าหมอดู ที่โกคูต้องสู้ด้วย แท้จริงแล้วคือใคร?",
+    "answer": "ปู่โกฮัง",
+    "decoys": [
+      "ผู้เฒ่าเต่า",
+      "มุไทโตะ",
+      "เซียนกระเรียน"
+    ],
+    "note": "แม่เฒ่าหมอดูพาคนตายกลับมาโลกนี้ได้หนึ่งวัน",
+    "source": "https://dragonball.fandom.com/wiki/Fortuneteller_Baba_Saga",
+    "evidence": "At this point, Master Roshi, who had noticed something familiar about the man from the start, reveals that he is Goku's deceased grandfather, Gohan."
+  },
+  {
+    "id": "launch-roshi-condition",
+    "tier": "medium",
+    "prompt": "ก่อนเริ่มฝึกกับผู้เฒ่าเต่า โกคูพาหญิงสาวคนไหนกลับมาตามเงื่อนไขของอาจารย์?",
+    "answer": "รันจิ",
+    "decoys": [
+      "บูลม่า",
+      "จีจี้",
+      "ไม"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Launch",
+    "evidence": "Launch is saved by the young martial artists Goku and Krillin, while they are on Master Roshi's order to find him a woman."
+  },
+  {
+    "id": "silver-shoots-nimbus",
+    "tier": "hard",
+    "prompt": "ในภาคกองทัพโบว์แดง ใครใช้เครื่องยิงจรวดยิงพาหนะลอยฟ้าของโกคูจนแหลกไป?",
+    "answer": "พันเอกซิลเวอร์",
+    "decoys": [
+      "นายพลไวท์",
+      "นายพลบลู",
+      "เถาไปไป"
+    ],
+    "note": "ภายหลังมันกลับมาได้อีก",
+    "source": "https://dragonball.fandom.com/wiki/Colonel_Silver",
+    "evidence": "Colonel Silver used a Rocket Launcher to temporarily destroy Goku's Flying Nimbus while Goku did not notice him."
+  },
+  {
+    "id": "tao-knocks-out-goku",
+    "tier": "hard",
+    "prompt": "ในการสู้ครั้งแรกที่ดินแดนคาริน เถาไปไปใช้ท่าอะไรยิงโกคูจนสลบ?",
+    "answer": "พลังคลื่นบรึ้มพิฆาต",
+    "decoys": [
+      "หมัดตะวัน",
+      "ลำแสงปีศาจ",
+      "กงจักรสังหาร"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Commander_Red_Saga",
+    "evidence": "Mercenary Tao retaliates with his Dodon Ray, which knocks Goku out, yet Mercenary Tao thinks he killed him"
+  },
+  {
+    "id": "black-kills-red",
+    "tier": "hard",
+    "prompt": "ใครสังหารผู้บัญชาการเรดที่กองบัญชาการกองทัพโบว์แดง?",
+    "answer": "เสนาธิการแบล็ค",
+    "decoys": [
+      "โกคู",
+      "เถาไปไป",
+      "ด็อกเตอร์เกโร่"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Staff_Officer_Black",
+    "evidence": "Angered, Black shoots Commander Red between his eyes with his pistol, killing him instantly."
+  },
+  {
+    "id": "arale-headbutts-blue",
+    "tier": "hard",
+    "prompt": "ที่หมู่บ้านเพนกวิน ใครช่วยโกคูไว้ด้วยการโขกหัวนายพลบลูจนกระเด็นลอยไป?",
+    "answer": "อาราเล่",
+    "decoys": [
+      "บูลม่า",
+      "คุริริน",
+      "รันจิ"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Arale_Norimaki",
+    "evidence": "After Goku was disabled by Blue's special ability, Arale saves Goku by launching Blue into the air with a headbutt, knocking him away to an Egypt-like country."
+  },
+  {
+    "id": "goku-semifinal-nam",
+    "tier": "hard",
+    "prompt": "ในรอบรองชนะเลิศของศึกชิงเจ้ายุทธภพครั้งที่ 21 โกคูเอาชนะใคร?",
+    "answer": "นัม",
+    "decoys": [
+      "หยำฉา",
+      "คุริริน",
+      "แจ็คกี้ ชุน"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Tournament_Saga",
+    "evidence": "The second semi-finals match is Nam vs. Goku, with Nam still striving for money for the water for his village. … But as Nam nears the ground, Goku jumps up and kicks Nam, who cannot maneuver in the air, and sends Nam out of bounds."
+  },
+  {
+    "id": "bora-revived",
+    "tier": "hard",
+    "prompt": "หลังได้ดราก้อนบอลลูกสุดท้ายในภาคแม่เฒ่าหมอดู เทพเจ้ามังกรชุบชีวิตใคร?",
+    "answer": "โบร่า",
+    "decoys": [
+      "ปู่โกฮัง",
+      "ราชาปีศาจวัว",
+      "นัม"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Bora",
+    "evidence": "Bora was wished back to life by Shenron after Goku located the final Dragon Ball by defeating Fortuneteller Baba's warriors"
+  },
+  {
+    "id": "blue-mouse",
+    "tier": "very-hard",
+    "prompt": "ในถ้ำใต้ทะเล ขณะนายพลบลูใช้พลังจิตตรึงโกคูไว้ อะไรทำให้เขาเสียสมาธิจนพลังจิตหลุด?",
+    "answer": "หนู",
+    "decoys": [
+      "ค้างคาว",
+      "แมลงสาบ",
+      "งู"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/General_Blue",
+    "evidence": "Luckily for Goku, just before Blue can pull the trigger, he spots a mouse and loses his concentration, startled and running around the cave in a frightened frenzy."
+  },
+  {
+    "id": "korin-water-before-goku",
+    "tier": "very-hard",
+    "prompt": "ก่อนโกคู ใครคือคนเดียวที่เคยแย่งน้ำบนยอดหอคอยคารินมาจากท่านคารินได้สำเร็จ?",
+    "answer": "ผู้เฒ่าเต่า",
+    "decoys": [
+      "ปู่โกฮัง",
+      "เซียนกระเรียน",
+      "ราชาปีศาจวัว"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Korin",
+    "evidence": "An exhausted yet curious Goku asks if anyone has managed to reach the water; Korin responds that the only one who did was Goku's old teacher, Master Roshi, which shocks him."
+  },
+  {
+    "id": "power-pole-first-owner",
+    "tier": "very-hard",
+    "prompt": "กระบองวิเศษของโกคู ก่อนจะถูกส่งต่อกันมาจนถึงมือเขา เดิมเป็นของใคร?",
+    "answer": "ท่านคาริน",
+    "decoys": [
+      "พระเจ้า",
+      "แม่เฒ่าหมอดู",
+      "ราชาปีศาจวัว"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Power_Pole",
+    "evidence": "Before Master Roshi gave the Power Pole to Grandpa Gohan (who later gave it to Goku prior to the start of Dragon Ball), it was owned by Korin."
+  },
+  {
+    "id": "krillin-vs-stench",
+    "tier": "very-hard",
+    "prompt": "ในศึกชิงเจ้ายุทธภพครั้งที่ 21 ทำไมกลิ่นเหม็นของแบคทีเรียนจึงไม่ได้ผลกับคุริรินในที่สุด?",
+    "answer": "คุริรินไม่มีจมูก",
+    "decoys": [
+      "คุริรินกลั้นหายใจตลอดการต่อสู้",
+      "คุริรินสวมหน้ากากกันแก๊ส",
+      "ผู้เฒ่าเต่าใช้ลมพัดกลิ่นออกไป"
+    ],
+    "note": "โกคูเป็นคนเตือนให้คุริรินนึกขึ้นได้",
+    "source": "https://dragonball.fandom.com/wiki/Krillin/Biography",
+    "evidence": "as without a nose, Bacterian's stink has no effect on him"
+  },
+  {
+    "id": "eighter-punches-white",
+    "tier": "very-hard",
+    "prompt": "ที่หอคอยมัสเซิล หลังนายพลไวท์ยิงโกคู ใครชกนายพลไวท์กระเด็นออกนอกหอคอย?",
+    "answer": "หมายเลข 8",
+    "decoys": [
+      "โกคู",
+      "พันเอกซิลเวอร์",
+      "เสนาธิการแบล็ค"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Android_8",
+    "evidence": "After witnessing his first friend get hurt, an enraged Android 8 punches White clean out of Muscle Tower's uppermost window."
+  },
+  {
+    "id": "baba-vampire-loss",
+    "tier": "very-hard",
+    "prompt": "นักสู้ผีดูดเลือดคนแรกของแม่เฒ่าหมอดู พ่ายแพ้ให้ใคร?",
+    "answer": "อูปา กับ ปูอัล",
+    "decoys": [
+      "คุริริน กับ หยำฉา",
+      "โกคู กับ อูปา",
+      "หยำฉา กับ ปูอัล"
+    ],
+    "note": "คุริรินลงสู้ก่อนแต่แพ้",
+    "source": "https://dragonball.fandom.com/wiki/Fortuneteller_Baba_Saga",
+    "evidence": "The first fighter is Fangs the Vampire who defeats Krillin easily by sucking his blood, but Upa and Puar team up and defeat him with garlic breath and an imitation of the crucifix."
+  },
+  {
+    "id": "tournament22-winner",
+    "tier": "easy",
+    "prompt": "ใครเป็นผู้ชนะศึกชิงเจ้ายุทธภพครั้งที่ 22?",
+    "answer": "เท็นชินฮัง",
+    "decoys": [
+      "โกคู",
+      "แจ็คกี้ ชุน",
+      "คุริริน"
+    ],
+    "note": "โกคูชนรถที่ขับผ่านมาระหว่างร่วงลงพื้น จึงแตะพื้นก่อน",
+    "source": "https://dragonball.fandom.com/wiki/Goku/Biography",
+    "evidence": "Falling at the same rate, Goku hits the ground first after crashing into a van, leaving Tien as the Tournament winner."
+  },
+  {
+    "id": "krillin-first-killer",
+    "tier": "easy",
+    "prompt": "หลังศึกชิงเจ้ายุทธภพครั้งที่ 22 จบลง ใครสังหารคุริริน?",
+    "answer": "ทัมบูรีน",
+    "decoys": [
+      "ซิมบัล",
+      "ดรัม",
+      "เปียโน"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Krillin/Biography",
+    "evidence": "Krillin is then killed by getting his neck snapped by a kick from Tambourine"
+  },
+  {
+    "id": "king-piccolo-slayer",
+    "tier": "easy",
+    "prompt": "ใครเป็นผู้สังหารราชาปีศาจพิคโกโร่?",
+    "answer": "โกคู",
+    "decoys": [
+      "เท็นชินฮัง",
+      "ผู้เฒ่าเต่า",
+      "ยาจิโรเบ"
+    ],
+    "note": "โกคูพุ่งตัวต่อยทะลุหน้าอกของราชาปีศาจพิคโกโร่",
+    "source": "https://dragonball.fandom.com/wiki/Goku/Biography",
+    "evidence": "launches himself at King Piccolo with the one arm he had left, punching a hole through his chest and killing him."
+  },
+  {
+    "id": "tournament23-winner",
+    "tier": "easy",
+    "prompt": "ใครเป็นผู้ชนะศึกชิงเจ้ายุทธภพครั้งที่ 23?",
+    "answer": "โกคู",
+    "decoys": [
+      "พิคโกโร่",
+      "เท็นชินฮัง",
+      "คุริริน"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Piccolo_Jr._Saga",
+    "evidence": "knocking him out of the ring and causing him to lose the tournament and Goku would be declared the winner."
+  },
+  {
+    "id": "tien-master-22nd",
+    "tier": "easy",
+    "prompt": "ในศึกชิงเจ้ายุทธภพครั้งที่ 22 เท็นชินฮังกับเกี๊ยวซ่าลงแข่งในฐานะศิษย์ของใคร?",
+    "answer": "เซียนกระเรียน",
+    "decoys": [
+      "ผู้เฒ่าเต่า",
+      "มุไทโตะ",
+      "ท่านคาริน"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Tien_Shinhan_Saga",
+    "evidence": "Master Shen is entering his two students, Tien Shinhan and Chiaotzu"
+  },
+  {
+    "id": "king-piccolo-released",
+    "tier": "easy",
+    "prompt": "ใครเป็นผู้ปล่อยราชาปีศาจพิคโกโร่ออกมาจากหม้อหุงข้าวไฟฟ้า?",
+    "answer": "จักรพรรดิพิลาฟ",
+    "decoys": [
+      "เถาไปไป",
+      "ผู้บัญชาการเรด",
+      "ด็อกเตอร์เกโร่"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/King_Piccolo",
+    "evidence": "King Piccolo's Electric Rice Cooker is retrieved from Isuri's Lake by Emperor Pilaf, who releases him from his confinement."
+  },
+  {
+    "id": "roshi-sealing-attempt",
+    "tier": "medium",
+    "prompt": "ผู้เฒ่าเต่ายอมเสี่ยงชีวิตใช้ท่าใด หมายจะผนึกราชาปีศาจพิคโกโร่ลงในหม้อหุงข้าวไฟฟ้า?",
+    "answer": "คลื่นสะกดมาร",
+    "decoys": [
+      "บอลเก็งกิ",
+      "หมัดเจ้าพิภพ",
+      "เคลื่อนย้ายพริบตา"
+    ],
+    "note": "ผู้เฒ่าเต่าพลาดปากหม้อไปนิดเดียว และเสียชีวิตเพราะใช้ท่านี้",
+    "source": "https://dragonball.fandom.com/wiki/Master_Roshi/Biography",
+    "evidence": "Roshi attempts to use the Evil Containment Wave on King Piccolo but misses the Electric Rice Cooker by an inch and the technique drains his life force."
+  },
+  {
+    "id": "mutaito-sealed-piccolo",
+    "tier": "medium",
+    "prompt": "ในอดีต ใครเป็นผู้ผนึกราชาปีศาจพิคโกโร่ไว้ในหม้อหุงข้าวไฟฟ้า?",
+    "answer": "มุไทโตะ",
+    "decoys": [
+      "เซียนกระเรียน",
+      "พระเจ้า",
+      "ท่านคาริน"
+    ],
+    "note": "มุไทโตะเป็นอาจารย์ของผู้เฒ่าเต่า",
+    "source": "https://dragonball.fandom.com/wiki/Master_Roshi/Biography",
+    "evidence": "Mutaito used the Evil Containment Wave technique on King Piccolo to seal him in an Electric Rice Cooker."
+  },
+  {
+    "id": "cymbal-killer",
+    "tier": "medium",
+    "prompt": "ใครเป็นผู้สังหารซิมบัล ลูกของราชาปีศาจพิคโกโร่?",
+    "answer": "ยาจิโรเบ",
+    "decoys": [
+      "โกคู",
+      "เท็นชินฮัง",
+      "หยำฉา"
+    ],
+    "note": "ยาจิโรเบฟันซิมบัลขาดเป็นสองท่อน",
+    "source": "https://dragonball.fandom.com/wiki/Cymbal",
+    "evidence": "Cymbal demands a Dragon Ball from Yajirobe, leading to a fight where Yajirobe slices him in two."
+  },
+  {
+    "id": "king-piccolo-wish",
+    "tier": "medium",
+    "prompt": "ราชาปีศาจพิคโกโร่ขอพรอะไรจากเทพเจ้ามังกร?",
+    "answer": "ขอให้ตัวเองกลับมาหนุ่มอีกครั้ง",
+    "decoys": [
+      "ขอให้ตัวเองเป็นอมตะ",
+      "ขอให้ตัวเองได้ครองโลก",
+      "ขอให้ลูกที่ตายไปฟื้นคืนชีพ"
+    ],
+    "note": "ความหนุ่มทำให้พลังของเขากลับมาเต็มที่",
+    "source": "https://dragonball.fandom.com/wiki/King_Piccolo",
+    "evidence": "allowing King Piccolo to wish for his youth to be restored"
+  },
+  {
+    "id": "kami-revives-shenron",
+    "tier": "medium",
+    "prompt": "หลังเทพเจ้ามังกรถูกราชาปีศาจพิคโกโร่ฆ่า ใครเป็นผู้ทำให้เทพเจ้ามังกรกลับมาอีกครั้ง?",
+    "answer": "พระเจ้า",
+    "decoys": [
+      "ท่านคาริน",
+      "มิสเตอร์โปโป้",
+      "แม่เฒ่าหมอดู"
+    ],
+    "note": "พระเจ้าเป็นผู้สร้างลูกแก้ววิเศษของโลก",
+    "source": "https://dragonball.fandom.com/wiki/Kami",
+    "evidence": "Kami, as a reward to Goku for defeating Piccolo, revives Shenron"
+  },
+  {
+    "id": "tien-breaks-leg",
+    "tier": "medium",
+    "prompt": "ในศึกชิงเจ้ายุทธภพครั้งที่ 22 เท็นชินฮังกระแทกเข่าซ้ำจนนักสู้คนใดขาหัก?",
+    "answer": "หยำฉา",
+    "decoys": [
+      "คุริริน",
+      "โกคู",
+      "เกี๊ยวซ่า"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Tien_Shinhan/Biography",
+    "evidence": "ended the match by needlessly breaking Yamcha's leg while he was unconscious."
+  },
+  {
+    "id": "tien-arena-destroyer",
+    "tier": "hard",
+    "prompt": "ในศึกชิงเจ้ายุทธภพครั้งที่ 22 เท็นชินฮังใช้ท่าใดทำลายลานประลองจนพังทั้งสนาม?",
+    "answer": "ปืนใหญ่พลังจิต",
+    "decoys": [
+      "กงจักรสังหาร",
+      "ลำแสงปีศาจ",
+      "บอลเก็งกิ"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Tien_Shinhan/Biography",
+    "evidence": "Tien then decides to put an end to the match and use his ultimate attack, the Tri-Beam. … Tien proceeds to use the attack and destroys the entire arena."
+  },
+  {
+    "id": "chiaotzu-vs-krillin-beam",
+    "tier": "hard",
+    "prompt": "ในศึกชิงเจ้ายุทธภพครั้งที่ 22 เกี๊ยวซ่าลอยตัวกลางอากาศแล้วยิงท่าใดใส่คุริรินหลายครั้ง?",
+    "answer": "พลังคลื่นบรึ้มพิฆาต",
+    "decoys": [
+      "ลำแสงปีศาจ",
+      "หมัดเจ้าพิภพ",
+      "หมัดตะวัน"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Tien_Shinhan_Saga",
+    "evidence": "While safe in the air, Chiaotzu then starts firing off multiple Dodon Rays at Krillin, which he avoids. Goku recognizes the technique as that of Mercenary Tao"
+  },
+  {
+    "id": "chiaotzu-last-wish",
+    "tier": "hard",
+    "prompt": "เกี๊ยวซ่าถูกราชาปีศาจพิคโกโร่สังหารขณะกำลังพยายามทำอะไร?",
+    "answer": "ขอพรให้ราชาปีศาจพิคโกโร่ถูกทำลาย",
+    "decoys": [
+      "ใช้พลังจิตตรึงราชาปีศาจพิคโกโร่",
+      "ขอพรให้คุริรินฟื้นคืนชีพ",
+      "ชิงดราก้อนบอลหนีไป"
+    ],
+    "note": "เขาถูกสังหารก่อนพูดคำขอพรจบ",
+    "source": "https://dragonball.fandom.com/wiki/King_Piccolo_Saga",
+    "evidence": "Chiaotzu tries to stop him by wishing for his destruction, but is killed by King Piccolo's Makosen attack before he can finish making the wish."
+  },
+  {
+    "id": "drum-killer",
+    "tier": "hard",
+    "prompt": "เมื่อโกคูกลับมาสู้ราชาปีศาจพิคโกโร่อีกครั้ง เขาเตะลูกของราชาปีศาจตนใดตาย ขณะที่มันกำลังจะฆ่าเท็นชินฮัง?",
+    "answer": "ดรัม",
+    "decoys": [
+      "ทัมบูรีน",
+      "ซิมบัล",
+      "เปียโน"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Drum",
+    "evidence": "When Drum is just about to kill Tien, Goku arrives … kills him with another single kick to the head"
+  },
+  {
+    "id": "goku-beats-four-tiens",
+    "tier": "hard",
+    "prompt": "ในศึกชิงเจ้ายุทธภพครั้งที่ 23 โกคูใช้ท่าใดเอาชนะท่าแยกร่างเป็นสี่ร่างของเท็นชินฮัง?",
+    "answer": "หมัดตะวัน",
+    "decoys": [
+      "ท่าแยกร่างภาพลวงตา",
+      "พลังคลื่นเต่า",
+      "เคลื่อนย้ายพริบตา"
+    ],
+    "note": "เท็นชินฮังพึ่งดวงตามากเกินไป จึงแทบไร้ทางสู้เมื่อตาพร่า",
+    "source": "https://dragonball.fandom.com/wiki/Tien_Shinhan/Biography",
+    "evidence": "Goku dodges the beams this time though, and uses the Solar Flare against them, blinding the Tiens."
+  },
+  {
+    "id": "goku-senzu-mercy",
+    "tier": "hard",
+    "prompt": "หลังจบศึกชิงเจ้ายุทธภพครั้งที่ 23 โกคูขอถั่ววิเศษอีกเม็ดจากยาจิโรเบไปให้ใคร จนทุกคนประหลาดใจ?",
+    "answer": "พิคโกโร่",
+    "decoys": [
+      "เท็นชินฮัง",
+      "คุริริน",
+      "หยำฉา"
+    ],
+    "note": "ถ้าพิคโกโร่ตาย พระเจ้าก็จะตายตามไปด้วย",
+    "source": "https://dragonball.fandom.com/wiki/Piccolo_Jr._Saga",
+    "evidence": "Goku asks Yajirobe for a second Senzu Bean. To everyone's surprise, he gives the Senzu Bean to Piccolo Jr., instantly putting the demon back on his feet."
+  },
+  {
+    "id": "goku-climbs-to-lookout",
+    "tier": "hard",
+    "prompt": "โกคูขึ้นไปจากยอดหอคอยคารินถึงวังของพระเจ้าด้วยวิธีใด?",
+    "answer": "ยืดกระบองวิเศษขึ้นไป",
+    "decoys": [
+      "ขี่เมฆสีทองขึ้นไป",
+      "ให้มิสเตอร์โปโป้พาเหาะขึ้นไป",
+      "ปีนเชือกที่ท่านคารินหย่อนลงมา"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Piccolo_Jr._Saga",
+    "evidence": "Korin replies that Goku's Power Pole, which has been missing since his battle with the Demon King, is designed to extend from the top of Korin Tower up to the Lookout."
+  },
+  {
+    "id": "krillin-beats-chiaotzu",
+    "tier": "very-hard",
+    "prompt": "ในศึกชิงเจ้ายุทธภพครั้งที่ 22 คุริรินแก้ทางพลังจิตตรึงร่างของเกี๊ยวซ่าด้วยวิธีใด?",
+    "answer": "ถามโจทย์เลขให้เกี๊ยวซ่าต้องนับนิ้ว",
+    "decoys": [
+      "ใช้แสงสะท้อนจากศีรษะทำให้ตาพร่า",
+      "แกล้งชี้ให้มองไปทางอื่นแล้วจู่โจม",
+      "พองตัวเหมือนลูกโป่งเพื่อหลบ"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Chiaotzu",
+    "evidence": "When Krillin asks Chiaotzu a basic math question, Chiaotzu needs to use his fingers to come up with the answer, which stops his Telekinesis technique from working each time he counts."
+  },
+  {
+    "id": "tien-copies-kamehameha",
+    "tier": "very-hard",
+    "prompt": "ในศึกชิงเจ้ายุทธภพครั้งที่ 22 เท็นชินฮังยิงพลังคลื่นเต่าใส่แจ็คกี้ ชุนได้ เพราะเรียนรู้ท่านี้จากการดูใครใช้?",
+    "answer": "หยำฉา",
+    "decoys": [
+      "โกคู",
+      "คุริริน",
+      "เกี๊ยวซ่า"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Tien_Shinhan_Saga",
+    "evidence": "Tien decides to surprise the Turtle Hermit and launches a Kamehameha at him, having learned the attack by observing Yamcha perform it."
+  },
+  {
+    "id": "man-wolf-fake-moon",
+    "tier": "very-hard",
+    "prompt": "ในศึกชิงเจ้ายุทธภพครั้งที่ 22 แจ็คกี้ ชุนสะกดจิตให้มนุษย์หมาป่ามองอะไรเป็นดวงจันทร์ จนกลับเป็นมนุษย์ได้?",
+    "answer": "ศีรษะของคุริริน",
+    "decoys": [
+      "ดราก้อนบอลสี่ดาว",
+      "ลูกบอลพลังที่แจ็คกี้ ชุนสร้างขึ้น",
+      "โคมไฟกลมบนหลังคาสนาม"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Tien_Shinhan_Saga",
+    "evidence": "Jackie Chun then hypnotizes Man-Wolf into thinking that Krillin's head is actually the moon."
+  },
+  {
+    "id": "goku-eight-arms-source",
+    "tier": "very-hard",
+    "prompt": "ในศึกชิงเจ้ายุทธภพครั้งที่ 22 โกคูนำท่าแปดแขนมาใช้ตอบโต้แขนที่งอกเพิ่ม โดยเลียนแบบมาจากนักสู้คนใด?",
+    "answer": "คิงจัปปะ",
+    "decoys": [
+      "ปัมพุต",
+      "มนุษย์หมาป่า",
+      "นัม"
+    ],
+    "note": "โกคูเจอคิงจัปปะในรอบคัดเลือก",
+    "source": "https://dragonball.fandom.com/wiki/Tien_Shinhan_Saga",
+    "evidence": "Goku counters by using a pseudo-eight arms technique he learned from his battle with King Chappa"
+  },
+  {
+    "id": "popo-lookout-test",
+    "tier": "very-hard",
+    "prompt": "เมื่อโกคูขึ้นถึงวังของพระเจ้าครั้งแรก เขาต้องสู้กับใครเพื่อเข้ารับการทดสอบ?",
+    "answer": "มิสเตอร์โปโป้",
+    "decoys": [
+      "ท่านคาริน",
+      "ยาจิโรเบ",
+      "ผู้เฒ่าเต่า"
+    ],
+    "note": "โกคูโจมตีโดนตัวมิสเตอร์โปโป้ไม่ได้เลย",
+    "source": "https://dragonball.fandom.com/wiki/Piccolo_Jr._Saga",
+    "evidence": "Mr. Popo tells Goku that he is eligible to be tested and must defeat Mr. Popo in a fight."
+  },
+  {
+    "id": "kami-borrowed-body",
+    "tier": "very-hard",
+    "prompt": "ในศึกชิงเจ้ายุทธภพครั้งที่ 23 ใครลงแข่งขันโดยเข้าสิงร่างของมนุษย์คนหนึ่ง?",
+    "answer": "พระเจ้า",
+    "decoys": [
+      "มิสเตอร์โปโป้",
+      "ท่านคาริน",
+      "ท่านไคโอ"
+    ],
+    "note": "เขาลงแข่งเพื่อหยุดพิคโกโร่",
+    "source": "https://dragonball.fandom.com/wiki/Kami",
+    "evidence": "Kami enters as well, but inside the body of Hero"
+  },
+  {
+    "id": "west-city-lottery",
+    "tier": "very-hard",
+    "prompt": "หลังยึดอำนาจ ราชาปีศาจพิคโกโร่จับสลากเลือกเมืองแรกที่จะทำลาย เมืองนั้นคือเมืองใด?",
+    "answer": "เวสต์ซิตี้",
+    "decoys": [
+      "อีสต์ซิตี้",
+      "เซาท์ซิตี้",
+      "นอร์ทซิตี้"
+    ],
+    "note": "เวสต์ซิตี้เป็นบ้านเกิดของบูลม่า",
+    "source": "https://dragonball.fandom.com/wiki/King_Piccolo",
+    "evidence": "The first number he randomly picks is 29, which is West City."
+  },
+  {
+    "id": "raditz-kidnaps-gohan",
+    "tier": "easy",
+    "prompt": "ราดิชลักพาตัวใครไปเพื่อกดดันโกคู?",
+    "answer": "โกฮัง",
+    "decoys": [
+      "คุริริน",
+      "บูลม่า",
+      "ผู้เฒ่าเต่า"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Raditz",
+    "evidence": "Raditz then sends Goku plummeting to the ground with a powerful knee strike to the stomach and kidnaps Gohan (who still has a Saiyan tail), holding his nephew for ransom."
+  },
+  {
+    "id": "goku-race",
+    "tier": "easy",
+    "prompt": "ตามที่ราดิชเปิดเผย โกคูเป็นคนเผ่าพันธุ์ใด?",
+    "answer": "ชาวไซย่า",
+    "decoys": [
+      "ชาวนาเม็ก",
+      "ชาวดาวยาโดแรต",
+      "ชาวดาวเมตามอร์"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Raditz_Saga",
+    "evidence": "Raditz also claims that Goku is from the same Saiyan race as he is"
+  },
+  {
+    "id": "vegeta-prince",
+    "tier": "easy",
+    "prompt": "เบจิต้ามีฐานะอะไรในเผ่าพันธุ์ของตน?",
+    "answer": "เจ้าชาย",
+    "decoys": [
+      "ราชา",
+      "แม่ทัพ",
+      "นักรบชั้นต่ำ"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Vegeta",
+    "evidence": "Vegeta is the prince of the fallen Saiyan race and one of the main characters in the Dragon Ball series."
+  },
+  {
+    "id": "planet-vegeta-destroyer",
+    "tier": "easy",
+    "prompt": "ใครคือผู้ทำลายดาวเบจิต้า?",
+    "answer": "ฟรีเซอร์",
+    "decoys": [
+      "ซาร์บอน",
+      "กัปตันกินิว",
+      "ราชาโคลด์"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Namek_Saga",
+    "evidence": "He tells that the Saiyans were getting stronger and Frieza thought it was only a matter of time before they could stand up to him, so he decided to destroy planet Vegeta and the Saiyan race."
+  },
+  {
+    "id": "raditz-beam-cannon",
+    "tier": "easy",
+    "prompt": "พิคโกโร่ใช้ท่าใดสังหารราดิช ขณะที่โกคูล็อกตัวราดิชไว้?",
+    "answer": "ลำแสงปีศาจ",
+    "decoys": [
+      "พลังคลื่นเต่า",
+      "บอลเก็งกิ",
+      "หมัดตะวัน"
+    ],
+    "note": "ลำแสงทะลุทั้งราดิชและโกคู ทำให้โกคูเสียชีวิตไปด้วย",
+    "source": "https://dragonball.fandom.com/wiki/Raditz_Saga",
+    "evidence": "He fires off another Special Beam Cannon, and Raditz, held by Goku, is unable to dodge it again, and the beam penetrates through both Raditz and Goku, mortally wounding both of them."
+  },
+  {
+    "id": "piccolo-trains-gohan",
+    "tier": "easy",
+    "prompt": "หลังการต่อสู้กับราดิช ใครพาโกฮังไปฝึกในป่าเพื่อเตรียมรับมือศัตรูที่จะมาถึงในอีกหนึ่งปี?",
+    "answer": "พิคโกโร่",
+    "decoys": [
+      "ผู้เฒ่าเต่า",
+      "พระเจ้า",
+      "คุริริน"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Gohan/Biography",
+    "evidence": "After the battle with Raditz, Piccolo, having seen Gohan's power firsthand, decides to take Gohan out training in the wilderness."
+  },
+  {
+    "id": "spirit-bomb-teacher",
+    "tier": "easy",
+    "prompt": "ใครสอนบอลเก็งกิให้โกคู?",
+    "answer": "ท่านไคโอ",
+    "decoys": [
+      "ผู้เฒ่าเต่า",
+      "พระเจ้า",
+      "ท่านคาริน"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Spirit_Bomb",
+    "evidence": "In Other World, Goku is taught this move from King Kai."
+  },
+  {
+    "id": "goku-first-transformation-trigger",
+    "tier": "easy",
+    "prompt": "บนดาวนาเม็ก โกคูโกรธจนผมกลายเป็นสีทองเป็นครั้งแรก หลังฟรีเซอร์สังหารใคร?",
+    "answer": "คุริริน",
+    "decoys": [
+      "โกฮัง",
+      "พิคโกโร่",
+      "บูลม่า"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Super_Saiyan",
+    "evidence": "Goku achieves the form out of anger over the murder of his best friend Krillin"
+  },
+  {
+    "id": "ginyu-frog",
+    "tier": "easy",
+    "prompt": "ท้ายที่สุดบนดาวนาเม็ก จิตของกัปตันกินิวไปติดอยู่ในร่างของสัตว์ชนิดใด?",
+    "answer": "กบ",
+    "decoys": [
+      "ปลา",
+      "ไดโนเสาร์",
+      "นก"
+    ],
+    "note": "โกคูโยนกบเข้าไปขวางลำแสงก่อนที่ลำแสงจะถึงเบจิต้า",
+    "source": "https://dragonball.fandom.com/wiki/Body_Change",
+    "evidence": "However, before the beam could hit Vegeta, Goku threw a Namekian frog in front of the Body Change beam, trapping Ginyu's mind in the frog's body and vice versa, and the frog hopped away in Ginyu's body."
+  },
+  {
+    "id": "goku-snake-way",
+    "tier": "medium",
+    "prompt": "หลังเสียชีวิตครั้งแรก โกคูต้องเดินทางผ่านเส้นทางใดในปรโลกเพื่อไปหาอาจารย์คนใหม่?",
+    "answer": "ทางงู",
+    "decoys": [
+      "หอคอยคาริน",
+      "วังของพระเจ้า",
+      "ห้องแห่งกาลเวลา"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Goku/Biography",
+    "evidence": "With Krillin by his side, Goku dies, and Kami takes him to Other World where King Yemma tells Goku to take Snake Way to the planet of King Kai for additional training to defeat the Saiyans."
+  },
+  {
+    "id": "yamcha-first-death",
+    "tier": "medium",
+    "prompt": "หยำฉาเสียชีวิตครั้งแรกด้วยฝีมือของใคร?",
+    "answer": "ไซบาแมน",
+    "decoys": [
+      "นัปปะ",
+      "เบจิต้า",
+      "ราดิช"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Yamcha/Biography",
+    "evidence": "His first death was caused by a Saibaman during the Saiyan Saga, and his second death was at the hands of Frieza."
+  },
+  {
+    "id": "chiaotzu-nappa",
+    "tier": "medium",
+    "prompt": "ใครพุ่งเข้าเกาะหลังนัปปะแล้วระเบิดตัวเอง แต่นัปปะไม่เป็นอะไรเลย?",
+    "answer": "เกี๊ยวซ่า",
+    "decoys": [
+      "เท็นชินฮัง",
+      "หยำฉา",
+      "คุริริน"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Vegeta_Saga",
+    "evidence": "Chiaotzu attaches onto Nappa and self-destructs, much to Tien's dismay."
+  },
+  {
+    "id": "piccolo-shields-gohan",
+    "tier": "medium",
+    "prompt": "พิคโกโร่เสียชีวิตเพราะกระโดดรับการโจมตีของนัปปะแทนใคร?",
+    "answer": "โกฮัง",
+    "decoys": [
+      "คุริริน",
+      "เท็นชินฮัง",
+      "เกี๊ยวซ่า"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Vegeta_Saga",
+    "evidence": "The enraged Nappa launches his powerful Bomber DX at Gohan, but before it hits, Piccolo jumps in the way and takes the blast full force, killing him."
+  },
+  {
+    "id": "nappa-killer",
+    "tier": "medium",
+    "prompt": "ใครเป็นผู้สังหารนัปปะ?",
+    "answer": "เบจิต้า",
+    "decoys": [
+      "โกคู",
+      "พิคโกโร่",
+      "โกฮัง"
+    ],
+    "note": "โกคูเพียงทำให้นัปปะบาดเจ็บจนสู้ต่อไม่ได้",
+    "source": "https://dragonball.fandom.com/wiki/Nappa",
+    "evidence": "Despite their initial camaraderie, Vegeta killed Nappa when he showed weakness after a battle with Goku."
+  },
+  {
+    "id": "vegeta-wish-goal",
+    "tier": "medium",
+    "prompt": "เบจิต้ากับนัปปะเดินทางมายังโลกเพื่อใช้ดราก้อนบอลขอพรเรื่องใด?",
+    "answer": "ความเป็นอมตะ",
+    "decoys": [
+      "ชุบชีวิตราดิช",
+      "สร้างดาวเบจิต้าขึ้นใหม่",
+      "พลังที่แข็งแกร่งที่สุดในจักรวาล"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Vegeta/Biography",
+    "evidence": "After hearing this report, and of Raditz's death, Vegeta and his companion, Nappa, decide to head to the planet and use the Dragon Balls to wish for immortality"
+  },
+  {
+    "id": "guru-unlocks-potential",
+    "tier": "medium",
+    "prompt": "บนดาวนาเม็ก ใครปลุกพลังแฝงให้คุริรินกับโกฮัง?",
+    "answer": "ผู้เฒ่าสูงสุด",
+    "decoys": [
+      "เนล",
+      "เดนเด้",
+      "ท่านไคโอ"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Krillin/Biography",
+    "evidence": "Afterwards, Dende takes the two warriors to Grand Elder Guru, guardian of Namek, who is able to release the hidden ki potential inside them, causing their power levels to raise, once again, exponentially."
+  },
+  {
+    "id": "piccolo-nail-fusion",
+    "tier": "medium",
+    "prompt": "บนดาวนาเม็ก พิคโกโร่รวมร่างกับชาวนาเม็กคนใด?",
+    "answer": "เนล",
+    "decoys": [
+      "เดนเด้",
+      "ผู้เฒ่าสูงสุด",
+      "มูริ"
+    ],
+    "note": "เนลบาดเจ็บสาหัสจากการสู้กับฟรีเซอร์",
+    "source": "https://dragonball.fandom.com/wiki/Piccolo/Biography",
+    "evidence": "Meanwhile, Gohan, Krillin, and Dende use the Dragon Balls to revive Piccolo and transport him to Namek, where he fuses with the injured Nail."
+  },
+  {
+    "id": "ginyu-force-not-member",
+    "tier": "medium",
+    "prompt": "ใครไม่ใช่สมาชิกของหน่วยรบกินิว?",
+    "answer": "ซาร์บอน",
+    "decoys": [
+      "รีคูม",
+      "เบอร์เตอร์",
+      "กุลโด้"
+    ],
+    "note": "ซาร์บอนเป็นผู้ติดตามคนสนิทของฟรีเซอร์ คู่กับโดโดเรีย",
+    "source": "https://dragonball.fandom.com/wiki/Ginyu_Force",
+    "evidence": "Within the Frieza Force, the Ginyu Force are of \"High Level Executive-Class\", with positions higher in rank than even Zarbon and Dodoria who serve as Frieza's aides."
+  },
+  {
+    "id": "kaioken-first-opponent",
+    "tier": "hard",
+    "prompt": "ครั้งแรกที่โกคูใช้หมัดเจ้าพิภพในการต่อสู้จริง เขาใช้กับใคร?",
+    "answer": "นัปปะ",
+    "decoys": [
+      "เบจิต้า",
+      "ราดิช",
+      "กัปตันกินิว"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Kaio-ken",
+    "evidence": "Upon returning to Earth, he first displayed the technique when he used it to catch up with and cripple Nappa before he could kill Gohan and Krillin with his Break Cannon."
+  },
+  {
+    "id": "gohan-masenko-nappa",
+    "tier": "hard",
+    "prompt": "ท่าใดที่โกฮังใช้เป็นครั้งแรกในการต่อสู้กับนัปปะ?",
+    "answer": "มาเซนโก",
+    "decoys": [
+      "การ์ลิคกัน",
+      "มาโกเซน",
+      "เดธบีม"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Masenko",
+    "evidence": "Gohan uses this attack for the first time in response to Nappa killing Piccolo, to no avail."
+  },
+  {
+    "id": "vegeta-galick-gun",
+    "tier": "hard",
+    "prompt": "ในการต่อสู้กับโกคูบนโลก เบจิต้าใช้ท่าใดปะทะกับพลังคลื่นเต่าของโกคู?",
+    "answer": "การ์ลิคกัน",
+    "decoys": [
+      "ไฟนอลแฟลช",
+      "บิ๊กแบงค์แอ็ทแท็ก",
+      "มาเซนโก"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Galick_Gun",
+    "evidence": "Realizing the new extent of danger, Goku counters it by launching a x3 Kaio-ken Kamehameha."
+  },
+  {
+    "id": "yajirobe-cuts-tail",
+    "tier": "hard",
+    "prompt": "ใครตัดหางของเบจิต้าในร่างลิงยักษ์ จนเขากลับคืนร่างเดิม?",
+    "answer": "ยาจิโรเบ",
+    "decoys": [
+      "คุริริน",
+      "โกฮัง",
+      "โกคู"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Yajirobe",
+    "evidence": "He eventually assists in the fight by first slicing through Vegeta's tail to protect Goku, which reverts Vegeta back to his humanoid form."
+  },
+  {
+    "id": "frieza-tail-cut",
+    "tier": "hard",
+    "prompt": "บนดาวนาเม็ก ใครตัดหางของฟรีเซอร์ในร่างที่สองได้?",
+    "answer": "คุริริน",
+    "decoys": [
+      "โกฮัง",
+      "พิคโกโร่",
+      "เบจิต้า"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Destructo_Disc",
+    "evidence": "Later, on Namek, Krillin is able to slice off Frieza's tail while he is in his second form, as well as let loose several Destructo Discs at once."
+  },
+  {
+    "id": "goku-recoome-one-blow",
+    "tier": "hard",
+    "prompt": "เมื่อมาถึงดาวนาเม็ก โกคูล้มสมาชิกหน่วยรบกินิวคนใดได้ด้วยการโจมตีเพียงครั้งเดียว?",
+    "answer": "รีคูม",
+    "decoys": [
+      "กุลโด้",
+      "จีซ",
+      "กัปตันกินิว"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Namek_Saga",
+    "evidence": "Goku then effortlessly defeats the powerful Recoome in one blow to the midsection, thanks to his training in the ship."
+  },
+  {
+    "id": "guldo-time-freeze",
+    "tier": "hard",
+    "prompt": "สมาชิกหน่วยรบกินิวคนใดหยุดเวลาได้ด้วยการกลั้นหายใจ?",
+    "answer": "กุลโด้",
+    "decoys": [
+      "รีคูม",
+      "เบอร์เตอร์",
+      "จีซ"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Namek_Saga",
+    "evidence": "First up is Guldo who has the ability to freeze time by holding his breath."
+  },
+  {
+    "id": "dende-summons-porunga",
+    "tier": "hard",
+    "prompt": "ใครเป็นผู้เรียกโพลุงก้าออกมาเป็นครั้งแรกบนดาวนาเม็ก ด้วยภาษานาเม็ก?",
+    "answer": "เดนเด้",
+    "decoys": [
+      "เนล",
+      "ผู้เฒ่าสูงสุด",
+      "คุริริน"
+    ],
+    "note": "คุริรินกับโกฮังพูดภาษานาเม็กไม่ได้",
+    "source": "https://dragonball.fandom.com/wiki/Frieza_Saga",
+    "evidence": "Dende summons Porunga by speaking the Namekian language."
+  },
+  {
+    "id": "tien-last-attack-nappa",
+    "tier": "very-hard",
+    "prompt": "ก่อนสิ้นใจ เท็นชินฮังใช้ท่าใดยิงใส่นัปปะด้วยมือข้างเดียว?",
+    "answer": "ปืนใหญ่พลังจิต",
+    "decoys": [
+      "กงจักรสังหาร",
+      "ลำแสงปีศาจ",
+      "พลังคลื่นบรึ้มพิฆาต"
+    ],
+    "note": "เท็นชินฮังเสียแขนไปข้างหนึ่งจากการโจมตีของนัปปะ",
+    "source": "https://dragonball.fandom.com/wiki/Tri-Beam",
+    "evidence": "Tien also has the ability to fire it with one hand as seen when he fires the Spirit Tri-Beam at Nappa after he loses his arm."
+  },
+  {
+    "id": "vegeta-cuts-gohan-tail",
+    "tier": "very-hard",
+    "prompt": "เบจิต้าใช้ท่าใดตัดหางของโกฮังในร่างลิงยักษ์?",
+    "answer": "กงจักรสังหาร",
+    "decoys": [
+      "ปืนใหญ่พลังจิต",
+      "ลำแสงปีศาจ",
+      "หมัดตะวัน"
+    ],
+    "note": "เบจิต้าหลบไม่ทันและถูกร่างโกฮังที่หดกลับทับ",
+    "source": "https://dragonball.fandom.com/wiki/Vegeta_Saga",
+    "evidence": "After a beating from Great Ape Gohan, Vegeta manages to cut off Gohan's tail with a Destructo Disc, however he has no energy left to move out of the way of the de-transforming ape and is crushed by Gohan."
+  },
+  {
+    "id": "spirit-bomb-thrower",
+    "tier": "very-hard",
+    "prompt": "ในการต่อสู้กับเบจิต้าบนโลก โกคูส่งพลังบอลเก็งกิที่เหลือให้ใครเป็นคนขว้าง?",
+    "answer": "คุริริน",
+    "decoys": [
+      "โกฮัง",
+      "ยาจิโรเบ",
+      "พิคโกโร่"
+    ],
+    "note": "เบจิต้าหลบได้ แล้วโกฮังสะท้อนลูกพลังกลับไปโดนเบจิต้า",
+    "source": "https://dragonball.fandom.com/wiki/Vegeta_Saga",
+    "evidence": "Goku hands off the remaining energy he gathered in forming the Spirit Bomb to Krillin, and King Kai tells him telepathically to throw the Spirit Bomb at Vegeta when the moment is right."
+  },
+  {
+    "id": "kami-spaceship",
+    "tier": "very-hard",
+    "prompt": "ยานอวกาศที่พาบูลม่า โกฮัง และคุริรินไปดาวนาเม็ก เดิมเป็นยานของใคร?",
+    "answer": "พระเจ้า",
+    "decoys": [
+      "ด็อกเตอร์บรีฟ",
+      "ราดิช",
+      "ฟรีเซอร์"
+    ],
+    "note": "มิสเตอร์โปโป้เป็นผู้บอกเรื่องยานลำนี้",
+    "source": "https://dragonball.fandom.com/wiki/Namek_Saga",
+    "evidence": "It seemed as if all hope was lost, until Mr. Popo appeared and said Kami had told him of a ship that might be able to take them to Namek"
+  },
+  {
+    "id": "dodoria-reveals-secret",
+    "tier": "very-hard",
+    "prompt": "บนดาวนาเม็ก ใครขอชีวิตเบจิต้าแลกกับการเล่าความจริงเรื่องดาวบ้านเกิดของเบจิต้า ก่อนถูกสังหาร?",
+    "answer": "โดโดเรีย",
+    "decoys": [
+      "ซาร์บอน",
+      "จีซ",
+      "กุลโด้"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Vegeta/Biography",
+    "evidence": "Once Dodoria is alone, Vegeta learns from him the true circumstances of Planet Vegeta's destruction by Frieza himself."
+  },
+  {
+    "id": "krillin-pierces-vegeta",
+    "tier": "very-hard",
+    "prompt": "บนดาวนาเม็ก ใครยิงทะลุท้องเบจิต้าตามคำขอของเบจิต้าเอง เพื่อให้เขาแข็งแกร่งขึ้นหลังได้รับการรักษา?",
+    "answer": "คุริริน",
+    "decoys": [
+      "โกฮัง",
+      "พิคโกโร่",
+      "เดนเด้"
+    ],
+    "note": "เดนเด้เป็นผู้รักษาเบจิต้าหลังจากนั้น",
+    "source": "https://dragonball.fandom.com/wiki/Frieza_Saga",
+    "evidence": "Although Krillin is highly reluctant at first, he blasts Vegeta in the stomach, piercing him through."
+  },
+  {
+    "id": "guru-death-stone",
+    "tier": "very-hard",
+    "prompt": "ก่อนพรข้อที่สามจะเป็นจริง ดราก้อนบอลของดาวนาเม็กกลายเป็นหินเพราะใครสิ้นใจ?",
+    "answer": "ผู้เฒ่าสูงสุด",
+    "decoys": [
+      "เนล",
+      "เดนเด้",
+      "พระเจ้า"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Frieza_Saga",
+    "evidence": "Just as Dende asks the Dragon, Guru dies, and the Dragon Balls turn to stone."
+  },
+  {
+    "id": "frieza-own-disc",
+    "tier": "very-hard",
+    "prompt": "ในการต่อสู้ครั้งสุดท้ายบนดาวนาเม็ก ท่าใดย้อนกลับมาตัดร่างของฟรีเซอร์ขาด?",
+    "answer": "เดธซอสเซอร์",
+    "decoys": [
+      "เดธบีม",
+      "การ์ลิคกัน",
+      "มาเซนโก"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Goku/Biography",
+    "evidence": "In desperation and frustration, Frieza uses his Death Saucer, creating two pink Destructo Discs and throwing them at Goku. … Goku yells a warning to Frieza, but Frieza is too slow and is cut in half, losing an arm in addition to his legs."
+  },
+  {
+    "id": "trunks-kills-frieza",
+    "tier": "easy",
+    "prompt": "เมื่อฟรีเซอร์กับราชาโคลด์บุกมายังโลก ใครเป็นผู้สังหารฟรีเซอร์?",
+    "answer": "ทรังคซ์จากอนาคต",
+    "decoys": [
+      "โกคู",
+      "เบจิต้า",
+      "พิคโกโร่"
+    ],
+    "note": "โกคูเดินทางกลับมาถึงโลกหลังจากนั้น",
+    "source": "https://dragonball.fandom.com/wiki/Trunks_Saga",
+    "evidence": "It features Frieza's arrival on Earth, his death by the hands of Future Trunks, and Future Trunks' warning about the Androids."
+  },
+  {
+    "id": "goku-heart-virus",
+    "tier": "easy",
+    "prompt": "ทรังคซ์จากอนาคตเตือนว่า ในประวัติศาสตร์เดิม โกคูเสียชีวิตก่อนศึกกับมนุษย์ดัดแปลงเพราะอะไร?",
+    "answer": "โรคไวรัสหัวใจ",
+    "decoys": [
+      "ถูกหมายเลข 17 สังหาร",
+      "ถูกฟรีเซอร์สังหาร",
+      "ถูกเซลล์สังหาร"
+    ],
+    "note": "ทรังคซ์จากอนาคตจึงนำยารักษาจากอนาคตมาให้โกคู",
+    "source": "https://dragonball.fandom.com/wiki/Trunks_Saga",
+    "evidence": "He tells Goku that he will die from a heart virus that has no cure in the present before the battle"
+  },
+  {
+    "id": "gohan-defeats-cell",
+    "tier": "easy",
+    "prompt": "ในเกมเซลล์ ใครเป็นผู้กำจัดเซลล์ได้ในที่สุด?",
+    "answer": "โกฮัง",
+    "decoys": [
+      "โกคู",
+      "เบจิต้า",
+      "ทรังคซ์จากอนาคต"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Cell_Games_Saga",
+    "evidence": "Everyone was exhausted, especially Gohan, who had used up nearly all his energy to defeat Super Perfect Cell."
+  },
+  {
+    "id": "satan-cell-credit",
+    "tier": "easy",
+    "prompt": "หลังเกมเซลล์จบลง ใครอ้างต่อคนทั้งโลกว่าตนเป็นผู้ปราบเซลล์?",
+    "answer": "มิสเตอร์ซาตาน",
+    "decoys": [
+      "หยำฉา",
+      "เท็นชินฮัง",
+      "คุริริน"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Cell_Games_Saga",
+    "evidence": "Meanwhile, Hercule lies to the whole world by claiming credit for Super Perfect Cell's defeat."
+  },
+  {
+    "id": "piccolo-fuses-kami",
+    "tier": "easy",
+    "prompt": "ในภาคมนุษย์ดัดแปลง พิคโกโร่รวมร่างกับใครเพื่อให้แข็งแกร่งพอจะสู้ศัตรูได้?",
+    "answer": "พระเจ้า",
+    "decoys": [
+      "เดนเด้",
+      "มิสเตอร์โปโป้",
+      "ผู้เฒ่าสูงสุด"
+    ],
+    "note": "ผลคือดราก้อนบอลบนโลกหายไปชั่วคราว",
+    "source": "https://dragonball.fandom.com/wiki/Piccolo/Biography",
+    "evidence": "Though the pair are able to ward off the Androids, the altercation leaves Piccolo with a need for more power, so he fuses with Kami to help even the odds."
+  },
+  {
+    "id": "gohan-ssj2-cell-games",
+    "tier": "easy",
+    "prompt": "ในเกมเซลล์ หลังเห็นหมายเลข 16 ถูกเซลล์ทำลาย โกฮังโกรธจนแปลงร่างเป็นร่างใด?",
+    "answer": "ซูเปอร์ไซย่าขั้นที่ 2",
+    "decoys": [
+      "ซูเปอร์ไซย่า",
+      "ซูเปอร์ไซย่าขั้นที่ 3",
+      "ลิงยักษ์"
+    ],
+    "note": "โกฮังเป็นซูเปอร์ไซย่าได้ตั้งแต่ก่อนเกมเซลล์แล้ว",
+    "source": "https://dragonball.fandom.com/wiki/Super_Saiyan_2",
+    "evidence": "The first time the Super Saiyan 2 form was fully achieved and maintained by Gohan occurred after he witnessed the Cell Juniors' attack on the Z Fighters and Android 16's death at the hands of Cell."
+  },
+  {
+    "id": "goku-gohan-time-chamber",
+    "tier": "easy",
+    "prompt": "ก่อนสู้กับเซลล์ โกคูกับโกฮังเข้าไปฝึกที่ไหน ซึ่งฝึกได้หนึ่งปีภายในเวลาหนึ่งวันของโลกภายนอก?",
+    "answer": "ห้องแห่งกาลเวลา",
+    "decoys": [
+      "ดาวของท่านไคโอ",
+      "หอคอยคาริน",
+      "ทางงู"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Imperfect_Cell_Saga",
+    "evidence": "he plans to enter the Hyperbolic Time Chamber with Gohan, where they can spend a whole year training in the span of one day in real time"
+  },
+  {
+    "id": "gohan-final-kamehameha",
+    "tier": "easy",
+    "prompt": "ในตอนจบของเกมเซลล์ เซลล์ถูกทำลายจากการปะทะกันของท่าใด ที่ทั้งสองฝ่ายใช้ท่าเดียวกัน?",
+    "answer": "พลังคลื่นเต่า",
+    "decoys": [
+      "บอลเก็งกิ",
+      "ลำแสงปีศาจ",
+      "หมัดเจ้าพิภพ"
+    ],
+    "note": "ท่านี้รู้จักกันในชื่อพลังคลื่นเต่าพ่อลูก (Father-Son Kamehameha)",
+    "source": "https://dragonball.fandom.com/wiki/Cell_Games_Saga",
+    "evidence": "Gohan seizes the opportunity, encouraged by Goku, and unleashes all the rest of his strength into the Kamehameha wave, which overwhelms Super Perfect Cell's Kamehameha and envelops him in the enormous energy."
+  },
+  {
+    "id": "vegeta-19-big-bang",
+    "tier": "medium",
+    "prompt": "หลังดึงมือของหมายเลข 19 ขาด เบจิต้าปิดฉากหมายเลข 19 ด้วยท่าใด?",
+    "answer": "บิ๊กแบงค์แอ็ทแท็ก",
+    "decoys": [
+      "ไฟนอลแฟลช",
+      "การ์ลิคกัน",
+      "มาเซนโก"
+    ],
+    "note": "เป็นครั้งแรกที่เบจิต้าเผยร่างซูเปอร์ไซย่าให้ทุกคนเห็น",
+    "source": "https://dragonball.fandom.com/wiki/Vegeta/Biography",
+    "evidence": "Vegeta then begins to effortlessly demolish Android 19 with his increased power and after ripping the Android's hands off, he finishes it off with his Big Bang Attack."
+  },
+  {
+    "id": "gero-killed-by-17",
+    "tier": "medium",
+    "prompt": "ในภาคมนุษย์ดัดแปลง ใครเป็นผู้สังหารด็อกเตอร์เกโร่ในห้องแล็บของเขาเอง?",
+    "answer": "หมายเลข 17",
+    "decoys": [
+      "หมายเลข 18",
+      "หมายเลข 16",
+      "ทรังคซ์จากอนาคต"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Androids_Saga",
+    "evidence": "Android 17 and Android 18 do not listen to him, and Android 17 betrays and effortlessly kills Dr. Gero."
+  },
+  {
+    "id": "android-20-identity",
+    "tier": "medium",
+    "prompt": "มนุษย์ดัดแปลงหมายเลข 20 แท้จริงแล้วคือใคร?",
+    "answer": "ด็อกเตอร์เกโร่",
+    "decoys": [
+      "ผู้บัญชาการเรด",
+      "ด็อกเตอร์บรีฟ",
+      "เสนาธิการแบล็ค"
+    ],
+    "note": "เขาเปลี่ยนร่างตัวเองเป็นมนุษย์ดัดแปลงเพราะร่างมนุษย์แก่ชราลง",
+    "source": "https://dragonball.fandom.com/wiki/Androids_Saga",
+    "evidence": "revealing that Android 20 is actually Dr. Gero and that he rebuilt himself into an Android as his human body became older and weaker"
+  },
+  {
+    "id": "android-18-beats-vegeta",
+    "tier": "medium",
+    "prompt": "บนถนนบนภูเขา มนุษย์ดัดแปลงตัวใดสู้กับเบจิต้าตัวต่อตัวจนหักแขนของเขาได้?",
+    "answer": "หมายเลข 18",
+    "decoys": [
+      "หมายเลข 17",
+      "หมายเลข 16",
+      "หมายเลข 20"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Androids_Saga",
+    "evidence": "Eventually, Android 18 ends the battle by breaking Vegeta's arm with a kick."
+  },
+  {
+    "id": "cell-absorbs-17-first",
+    "tier": "medium",
+    "prompt": "ในเส้นเวลาหลักของเรื่อง มนุษย์ดัดแปลงตัวแรกที่เซลล์ดูดซับเข้าร่างได้คือตัวใด?",
+    "answer": "หมายเลข 17",
+    "decoys": [
+      "หมายเลข 18",
+      "หมายเลข 16",
+      "หมายเลข 19"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Imperfect_Cell_Saga",
+    "evidence": "Android 17 gets caught off guard and is finally absorbed by Imperfect Cell, who was hiding underground behind him."
+  },
+  {
+    "id": "goku-cell-king-kai-planet",
+    "tier": "medium",
+    "prompt": "ในเกมเซลล์ เมื่อเซลล์ขู่จะระเบิดตัวเองทำลายโลก โกคูพาเซลล์ไปที่ใด?",
+    "answer": "ดาวของท่านไคโอ",
+    "decoys": [
+      "วังของพระเจ้า",
+      "ดาวนาเม็ก",
+      "ทางงู"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Cell/Biography",
+    "evidence": "With no other way to save the planet, Goku uses Instant Transmission at the last second to teleport Cell to King Kai's Planet, sacrificing himself alongside King Kai, Gregory, and Bubbles to minimize casualties."
+  },
+  {
+    "id": "dende-new-guardian",
+    "tier": "medium",
+    "prompt": "ก่อนเกมเซลล์ โกคูไปขอให้ใครมารับตำแหน่งผู้พิทักษ์โลกคนใหม่?",
+    "answer": "เดนเด้",
+    "decoys": [
+      "มิสเตอร์โปโป้",
+      "พิคโกโร่",
+      "ท่านคาริน"
+    ],
+    "note": "เดนเด้สร้างเทพเจ้ามังกรขึ้นมาใหม่ด้วย",
+    "source": "https://dragonball.fandom.com/wiki/Cell_Games_Saga",
+    "evidence": "Goku also pays a visit to New Namek and asks Dende to become the new Guardian of Earth."
+  },
+  {
+    "id": "goku-yardrat",
+    "tier": "medium",
+    "prompt": "หลังหนีออกจากดาวนาเม็กที่กำลังระเบิด โกคูไปพักฟื้นและเรียนท่าใหม่จากใคร?",
+    "answer": "ชาวดาวยาโดแรต",
+    "decoys": [
+      "ท่านไคโอ",
+      "ชาวนาเม็ก",
+      "ชาวดาวเมตามอร์"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Trunks_Saga",
+    "evidence": "He ended up landing on the Planet Yardrat, and the Yardrats nursed him back to health … Goku also says that he learned a new technique from them, the Instant Transmission"
+  },
+  {
+    "id": "tien-tri-beam-cell",
+    "tier": "hard",
+    "prompt": "หลังเซลล์ดูดซับมนุษย์ดัดแปลงตัวแรกแล้ว เท็นชินฮังใช้ท่าใดยิงถ่วงเวลาเซลล์ไว้ให้มนุษย์ดัดแปลงที่เหลือหนีไปซ่อน?",
+    "answer": "ปืนใหญ่พลังจิต",
+    "decoys": [
+      "กงจักรสังหาร",
+      "พลังคลื่นบรึ้มพิฆาต",
+      "คลื่นสะกดมาร"
+    ],
+    "note": "เท็นชินฮังยิงซ้ำหลายครั้งจนหมดแรง",
+    "source": "https://dragonball.fandom.com/wiki/Tri-Beam",
+    "evidence": "This upgraded attack is powerful enough to hold even Semi-Perfect Cell at bay."
+  },
+  {
+    "id": "cell-solar-flare-perfect",
+    "tier": "hard",
+    "prompt": "ก่อนเปลี่ยนเป็นร่างสมบูรณ์ เซลล์ใช้ท่าใดทำให้ทุกคนมองไม่เห็นชั่วขณะ จนดูดซับเป้าหมายได้สำเร็จ?",
+    "answer": "หมัดตะวัน",
+    "decoys": [
+      "เคลื่อนย้ายพริบตา",
+      "ท่าแยกร่างภาพลวงตา",
+      "คลื่นสะกดมาร"
+    ],
+    "note": "ท่านี้เดิมเป็นท่าของเท็นชินฮัง",
+    "source": "https://dragonball.fandom.com/wiki/Cell/Biography",
+    "evidence": "With his opponents temporarily blinded, Cell absorbs Android 18 and deploys an impenetrable energy barrier to shield himself during his final evolution into Perfect Cell."
+  },
+  {
+    "id": "vegeta-final-flash-cell",
+    "tier": "hard",
+    "prompt": "เบจิต้าใช้ท่าใดยิงใส่เซลล์ร่างสมบูรณ์จนแขนขวาของเซลล์หายไป?",
+    "answer": "ไฟนอลแฟลช",
+    "decoys": [
+      "บิ๊กแบงค์แอ็ทแท็ก",
+      "การ์ลิคกัน",
+      "เบิร์นนิ่งแอ็คแทค"
+    ],
+    "note": "เซลล์งอกแขนกลับคืนได้ในทันที",
+    "source": "https://dragonball.fandom.com/wiki/Perfect_Cell_Saga",
+    "evidence": "Perfect Cell senses the massive energy Vegeta put into his Final Flash, attempting to dodge it at the last second but it destroys his right arm."
+  },
+  {
+    "id": "cell-kills-future-trunks",
+    "tier": "hard",
+    "prompt": "หลังโกคูเสียสละตัวเอง เซลล์กลับมาที่สนามเกมเซลล์และสังหารใครทันทีด้วยลำแสงเพียงนัดเดียว?",
+    "answer": "ทรังคซ์จากอนาคต",
+    "decoys": [
+      "เบจิต้า",
+      "พิคโกโร่",
+      "คุริริน"
+    ],
+    "note": "เขาถูกชุบชีวิตด้วยดราก้อนบอลหลังเกมเซลล์",
+    "source": "https://dragonball.fandom.com/wiki/Cell_Games_Saga",
+    "evidence": "A single Death Beam from Cell impaled Future Trunks and killed him."
+  },
+  {
+    "id": "gohan-shields-vegeta",
+    "tier": "hard",
+    "prompt": "ในเกมเซลล์ โกฮังเอาแขนรับลำแสงของเซลล์จนแขนบาดเจ็บ เพื่อปกป้องใคร?",
+    "answer": "เบจิต้า",
+    "decoys": [
+      "คุริริน",
+      "พิคโกโร่",
+      "เท็นชินฮัง"
+    ],
+    "note": "ทำให้โกฮังต้องสู้ช่วงสุดท้ายด้วยแขนข้างเดียว",
+    "source": "https://dragonball.fandom.com/wiki/Cell_Games_Saga",
+    "evidence": "He was about to kill Vegeta off with a ki blast, but Gohan intercepted the blast with his own arm."
+  },
+  {
+    "id": "goku-instant-kamehameha",
+    "tier": "hard",
+    "prompt": "ในเกมเซลล์ โกคูทำทีจะยิงพลังคลื่นเต่าจากกลางอากาศ แต่แล้วใช้ท่าใดไปโผล่ตรงหน้าเซลล์เพื่อยิงใส่ระยะประชิด?",
+    "answer": "เคลื่อนย้ายพริบตา",
+    "decoys": [
+      "ท่าแยกร่างภาพลวงตา",
+      "หมัดตะวัน",
+      "หมัดเจ้าพิภพ"
+    ],
+    "note": "การโจมตีทำลายร่างท่อนบนของเซลล์ แต่เซลล์งอกร่างกลับมาได้",
+    "source": "https://dragonball.fandom.com/wiki/Cell_Games_Saga",
+    "evidence": "Goku tricked him by performing Instant Transmission to teleport directly in front of Perfect Cell and unleashed the blast on him."
+  },
+  {
+    "id": "piccolo-rips-20-arm",
+    "tier": "hard",
+    "prompt": "ในภาคมนุษย์ดัดแปลง ใครฉีกแขนของหมายเลข 20 ขาดเพื่อไม่ให้ดูดพลังได้อีก?",
+    "answer": "พิคโกโร่",
+    "decoys": [
+      "เบจิต้า",
+      "โกฮัง",
+      "ทรังคซ์จากอนาคต"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Androids_Saga",
+    "evidence": "He gains the upper hand in the fight, beating Android 20 with several powerful blows and ripping the Android's arm off so that he cannot absorb any more energy."
+  },
+  {
+    "id": "cell-reverts-semi-perfect",
+    "tier": "hard",
+    "prompt": "ในเกมเซลล์ หลังโกฮังโจมตีท้องจนเซลล์สำรอกมนุษย์ดัดแปลงออกมา เซลล์กลับไปอยู่ในร่างใด?",
+    "answer": "ร่างกึ่งสมบูรณ์",
+    "decoys": [
+      "ร่างไม่สมบูรณ์",
+      "ร่างตัวอ่อน",
+      "ร่างสมบูรณ์สูงสุด"
+    ],
+    "note": "จากนั้นเซลล์จึงขู่จะระเบิดตัวเอง",
+    "source": "https://dragonball.fandom.com/wiki/Cell/Biography",
+    "evidence": "The impact forces Cell to regurgitate Android 18, reverting him back to his Semi-Perfect form."
+  },
+  {
+    "id": "goku-visits-korin",
+    "tier": "very-hard",
+    "prompt": "ก่อนเกมเซลล์ โกคูกับโกฮังไปหาใครเพื่อให้ช่วยประเมินว่าพลังของโกคูเทียบกับเซลล์ได้แค่ไหน?",
+    "answer": "ท่านคาริน",
+    "decoys": [
+      "ผู้เฒ่าเต่า",
+      "ท่านไคโอ",
+      "แม่เฒ่าหมอดู"
+    ],
+    "note": "ท่านคารินตอบว่าเซลล์แข็งแกร่งกว่า",
+    "source": "https://dragonball.fandom.com/wiki/Cell_Games_Saga",
+    "evidence": "Goku and Gohan then pay a visit to Korin and ask if he can determine how Goku's power measures up against Cell. Korin deduces that Cell is stronger"
+  },
+  {
+    "id": "saiyan-armor-refused",
+    "tier": "very-hard",
+    "prompt": "เมื่อบูลม่านำชุดเกราะแบบเดียวกับที่เบจิต้าสวมมาแจกที่วังของพระเจ้า นอกจากเท็นชินฮังแล้ว ใครอีกคนที่ไม่ยอมใส่?",
+    "answer": "พิคโกโร่",
+    "decoys": [
+      "โกคู",
+      "โกฮัง",
+      "ทรังคซ์จากอนาคต"
+    ],
+    "note": "เขาภูมิใจในความเป็นชาวนาเม็ก",
+    "source": "https://dragonball.fandom.com/wiki/Perfect_Cell_Saga",
+    "evidence": "All of them accept the armor, except for Piccolo, who is proud of his Namekian heritage, and Tien, who refuses to dress like Vegeta."
+  },
+  {
+    "id": "cell-gingertown",
+    "tier": "very-hard",
+    "prompt": "พิคโกโร่เผชิญหน้าเซลล์ครั้งแรกที่เมืองใด หลังผู้คนทั้งเมืองหายไปเหลือแต่เสื้อผ้า?",
+    "answer": "จินเจอร์ทาวน์",
+    "decoys": [
+      "เซาท์ซิตี้",
+      "นอร์ทซิตี้",
+      "อีสต์ซิตี้"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Cell/Biography",
+    "evidence": "After completing his feeding on the population of Gingertown, Cell is confronted by Piccolo."
+  },
+  {
+    "id": "baby-cell-lab",
+    "tier": "very-hard",
+    "prompt": "ในห้องแล็บลับใต้ดินของด็อกเตอร์เกโร่ ทรังคซ์จากอนาคตกับคุริรินพบและทำลายอะไร?",
+    "answer": "เซลล์ในร่างตัวอ่อน",
+    "decoys": [
+      "หมายเลข 19 ตัวสำรอง",
+      "ไทม์แมชชีนเครื่องที่สอง",
+      "ร่างสำรองของด็อกเตอร์เกโร่"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Imperfect_Cell_Saga",
+    "evidence": "Here, they find the Cell of the present in his larval/baby form, infantile and weak, his growth and development maintained only by the master computer."
+  },
+  {
+    "id": "trunks-bulky-form-flaw",
+    "tier": "very-hard",
+    "prompt": "ในการสู้กับเซลล์ร่างสมบูรณ์ ทำไมทรังคซ์จากอนาคตในร่างที่กล้ามเนื้อพองใหญ่จึงโจมตีเซลล์ไม่โดน?",
+    "answer": "ร่างนั้นทำให้ความเร็วลดลงมาก",
+    "decoys": [
+      "เซลล์ดูดพลังของเขาไปด้วยหาง",
+      "เขาใช้พลังจนหมดกับเซลล์ร่างกึ่งสมบูรณ์แล้ว",
+      "เขาไม่เคยฝึกในห้องแห่งกาลเวลา"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Perfect_Cell_Saga",
+    "evidence": "explaining that although the form grants him superior strength, it heavily incapacitates him in terms of speed"
+  },
+  {
+    "id": "goku-full-power-plan",
+    "tier": "very-hard",
+    "prompt": "ก่อนเกมเซลล์ แผนการฝึกที่โกคูคิดขึ้นสำหรับตัวเขาและโกฮังคืออะไร?",
+    "answer": "อยู่ในร่างซูเปอร์ไซย่าตลอดเวลาจนเป็นเรื่องปกติ",
+    "decoys": [
+      "ฝึกหมัดเจ้าพิภพควบคู่กับร่างซูเปอร์ไซย่า",
+      "ฝึกฟิวชั่นเพื่อรวมร่างกัน",
+      "ฝึกบอลเก็งกิร่วมกัน"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Perfect_Cell_Saga",
+    "evidence": "Goku then comes up with a plan to stay in Super Saiyan form for so long that it feels natural so they will not have to waste the energy of transforming and sustaining the transformation during battle."
+  },
+  {
+    "id": "yajirobe-senzu-androids",
+    "tier": "very-hard",
+    "prompt": "ก่อนมนุษย์ดัดแปลงปรากฏตัว ใครนำถั่ววิเศษมาให้เหล่านักสู้แล้วจากไปโดยไม่ยอมร่วมสู้?",
+    "answer": "ยาจิโรเบ",
+    "decoys": [
+      "ท่านคาริน",
+      "มิสเตอร์โปโป้",
+      "อูลอน"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Androids_Saga",
+    "evidence": "Yajirobe arrives with Senzu Beans from Korin and leaves after refusing to fight."
+  },
+  {
+    "id": "cell-genes-not-trunks",
+    "tier": "very-hard",
+    "prompt": "เซลล์ถูกสร้างจากเซลล์ของนักสู้หลายคน ใครไม่ได้อยู่ในนั้น?",
+    "answer": "ทรังคซ์จากอนาคต",
+    "decoys": [
+      "ฟรีเซอร์",
+      "ราชาโคลด์",
+      "พิคโกโร่"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Imperfect_Cell_Saga",
+    "evidence": "A special robot was created to capture the gene samples of Goku, Vegeta and Piccolo when they were fighting on Earth; Frieza and King Cold's genes were captured … Future Trunks' genes were not collected though, as enough Saiyan samples were collected."
+  },
+  {
+    "id": "gohan-frees-piccolo-20",
+    "tier": "very-hard",
+    "prompt": "เมื่อหมายเลข 20 ลอบเข้ามาดูดพลังของพิคโกโร่จากด้านหลัง ใครเข้ามาโจมตีจนหมายเลข 20 หลุดออกไป?",
+    "answer": "โกฮัง",
+    "decoys": [
+      "เบจิต้า",
+      "คุริริน",
+      "เท็นชินฮัง"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Androids_Saga",
+    "evidence": "Piccolo alerts Gohan telepathically, and Gohan hits Android 20 with a Double Axe Handle, removing him from Piccolo's back."
+  },
+  {
+    "id": "gohan-great-saiyaman",
+    "tier": "easy",
+    "prompt": "ในภาคจอมมารบู โกฮังที่เป็นนักเรียนมัธยมปลายสวมชุดปลอมตัวเป็นฮีโร่ผู้พิทักษ์ความยุติธรรมในชื่ออะไร?",
+    "answer": "เกรท ไซย่า แมน",
+    "decoys": [
+      "ไมตี้มาสค์",
+      "มาร์จูเนียร์",
+      "แจ็คกี้ ชุน"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Great_Saiyaman_Saga",
+    "evidence": "Gohan, now a teenager in high school, takes on his superhero alter-ego, the Great Saiyaman, and becomes Satan City's primary defender of justice."
+  },
+  {
+    "id": "videl-flying-teacher",
+    "tier": "easy",
+    "prompt": "บีเดลขอให้ใครสอนวิชาเหาะเหินเดินอากาศ แลกกับการเก็บความลับของเขา?",
+    "answer": "โกฮัง",
+    "decoys": [
+      "พิคโกโร่",
+      "โกคู",
+      "คุริริน"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Gohan/Biography",
+    "evidence": "Holding all the cards, Videl blackmails Gohan, promising her silence on the condition that he enter the upcoming, newly revived World Martial Arts Tournament and teach her how to fly."
+  },
+  {
+    "id": "vegeta-majin-controller",
+    "tier": "easy",
+    "prompt": "ในภาคจอมมารบู เบจิต้ายอมให้ใครใช้เวทมนตร์ควบคุมจิตใจจนกลับไปเป็นฝ่ายร้าย?",
+    "answer": "บาบิดี้",
+    "decoys": [
+      "ดาบูร่า",
+      "บิบิดี้",
+      "จอมมารบู"
+    ],
+    "note": "เขาต้องการกลับไปเป็นคนเลือดเย็นเหมือนเดิมเพื่อสู้กับโกคูอีกครั้ง",
+    "source": "https://dragonball.fandom.com/wiki/Vegeta/Biography",
+    "evidence": "Majin Vegeta reveals to Goku that he deliberately let Babidi control him in order to allow his evilness to resurface"
+  },
+  {
+    "id": "gotenks-components",
+    "tier": "easy",
+    "prompt": "โกเท็นคูสเกิดจากการฟิวชั่นของใคร?",
+    "answer": "โกเท็น กับ ทรังคซ์",
+    "decoys": [
+      "โกคู กับ เบจิต้า",
+      "โกฮัง กับ โกเท็น",
+      "ทรังคซ์ กับ โกฮัง"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Gotenks",
+    "evidence": "Gotenks (ゴテンクス, Gotenkusu) is the Metamoran fusion of Goten and Trunks"
+  },
+  {
+    "id": "goku-ssj3-stall",
+    "tier": "easy",
+    "prompt": "เพื่อถ่วงเวลาจอมมารบูกับบาบิดี้ โกคูเปิดเผยร่างใหม่ที่ไม่มีใครเคยเห็นมาก่อน ร่างนั้นคืออะไร?",
+    "answer": "ซูเปอร์ไซย่าขั้นที่ 3",
+    "decoys": [
+      "ซูเปอร์ไซย่าขั้นที่ 2",
+      "ซูเปอร์ไซย่า",
+      "ลิงยักษ์"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Goku/Biography",
+    "evidence": "Goku teleports to Majin Buu's location and stalls him by unveiling his Super Saiyan 3 transformation, rocking the world with his astounding power"
+  },
+  {
+    "id": "kid-buu-final-attack",
+    "tier": "easy",
+    "prompt": "โกคูใช้ท่าอะไรปิดฉากจอมมารบูร่างเด็ก?",
+    "answer": "บอลเก็งกิ",
+    "decoys": [
+      "พลังคลื่นเต่า",
+      "ลำแสงปีศาจ",
+      "หมัดเจ้าพิภพ"
+    ],
+    "note": "เป็นบอลเก็งกิขนาดใหญ่ที่ใช้พลังของชาวโลกทั้งใบ",
+    "source": "https://dragonball.fandom.com/wiki/Kid_Buu",
+    "evidence": "Goku then turns Super Saiyan and overpowers Kid Buu with the Spirit Bomb, causing Majin Buu to be obliterated and thus vanquished forever."
+  },
+  {
+    "id": "vegito-name",
+    "tier": "easy",
+    "prompt": "นักสู้ที่เกิดจากโกคูกับเบจิต้ารวมร่างกันด้วยตุ้มหูโปตาร่ามีชื่อว่าอะไร?",
+    "answer": "เบจิโต้",
+    "decoys": [
+      "โกเท็นคูส",
+      "คิบิโต้ะชิน",
+      "ซูเปอร์บู"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Vegito",
+    "evidence": "Vegito (ベジット, Bejitto), also known as Vegerot in the Viz English manga, is the resulting fusion between Goku and Vegeta by the use of the Potara earrings."
+  },
+  {
+    "id": "uub-reincarnation",
+    "tier": "easy",
+    "prompt": "อูบุคือร่างที่กลับชาติมาเกิดเป็นมนุษย์ของใคร?",
+    "answer": "จอมมารบูร่างเด็ก",
+    "decoys": [
+      "ซูเปอร์บู",
+      "จอมมารบูอ้วน",
+      "ดาบูร่า"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Uub",
+    "evidence": "Uub (ウーブ, Ūbu) is the human reincarnation of Kid Buu."
+  },
+  {
+    "id": "satan-befriends-buu",
+    "tier": "easy",
+    "prompt": "ใครผูกมิตรกับจอมมารบูอ้วนจนโน้มน้าวให้เลิกฆ่าคนได้?",
+    "answer": "มิสเตอร์ซาตาน",
+    "decoys": [
+      "บีเดล",
+      "โกคู",
+      "ไคโอชิน"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Innocent_Buu",
+    "evidence": "Mr. Satan manages to convince him to stop killing."
+  },
+  {
+    "id": "vegeta-final-explosion",
+    "tier": "medium",
+    "prompt": "เบจิต้ายอมสละชีวิตเพื่อกำจัดจอมมารบูด้วยท่าอะไร?",
+    "answer": "ไฟนอลเอ็กโพลชั่น",
+    "decoys": [
+      "ไฟนอลแฟลช",
+      "บิ๊กแบงค์แอ็ทแท็ก",
+      "การ์ลิคกัน"
+    ],
+    "note": "จอมมารบูฟื้นคืนร่างได้ทำให้การเสียสละครั้งนี้ไม่สำเร็จ",
+    "source": "https://dragonball.fandom.com/wiki/Vegeta/Biography",
+    "evidence": "He leaves them in Piccolo's care and then uses Final Explosion in an attempt to kill Majin Buu in a spherical explosion"
+  },
+  {
+    "id": "fusion-dance-origin",
+    "tier": "medium",
+    "prompt": "โกคูเรียนท่าฟิวชั่นมาจากใครขณะอยู่ในปรโลก?",
+    "answer": "ชาวดาวเมตามอร์",
+    "decoys": [
+      "ชาวนาเม็ก",
+      "ชาวดาวยาโดแรต",
+      "ชาวไซย่า"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Fusion_Dance",
+    "evidence": "The technique is introduced by Goku, who learned it from the Metamorans while in the Other World."
+  },
+  {
+    "id": "babidi-killer",
+    "tier": "medium",
+    "prompt": "ใครเป็นผู้สังหารพ่อมดบาบิดี้?",
+    "answer": "จอมมารบู",
+    "decoys": [
+      "พิคโกโร่",
+      "ดาบูร่า",
+      "โกคู"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Innocent_Buu",
+    "evidence": "leading him to strangle Babidi to prevent him from saying the sealing incantation before killing him with a punch."
+  },
+  {
+    "id": "dabura-killer",
+    "tier": "medium",
+    "prompt": "ราชาปีศาจดาบูร่าถูกใครสังหาร?",
+    "answer": "จอมมารบู",
+    "decoys": [
+      "โกฮัง",
+      "เบจิต้า",
+      "ไคโอชิน"
+    ],
+    "note": "จอมมารบูเปลี่ยนดาบูร่าเป็นคุกกี้แล้วกินเข้าไป",
+    "source": "https://dragonball.fandom.com/wiki/Dabura",
+    "evidence": "Majin Buu then retaliates against Dabura under Babidi's orders, turning him into a large cookie and eating him."
+  },
+  {
+    "id": "mighty-mask-identity",
+    "tier": "medium",
+    "prompt": "ในศึกชิงเจ้ายุทธภพครั้งที่ 25 ผู้เข้าแข่งขัน \"ไมตี้มาสค์\" ที่ขึ้นสู้ในรุ่นผู้ใหญ่ แท้จริงคือใคร?",
+    "answer": "โกเท็น กับ ทรังคซ์",
+    "decoys": [
+      "โกฮัง กับ บีเดล",
+      "คุริริน กับ หมายเลข 18",
+      "ยามู กับ สป็อปโปวิช"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Mighty_Mask",
+    "evidence": "Trunks and Goten steal his costume and fight in the tournament as Mighty Mask"
+  },
+  {
+    "id": "videl-beaten-by",
+    "tier": "medium",
+    "prompt": "ในศึกชิงเจ้ายุทธภพครั้งที่ 25 ใครทำร้ายบีเดลจนเกือบเสียชีวิตบนเวที?",
+    "answer": "สป็อปโปวิช",
+    "decoys": [
+      "ยามู",
+      "คิบิโตะ",
+      "หมายเลข 18"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/World_Tournament_Saga",
+    "evidence": "Videl steps up to fight the muscle bound Spopovich next who brutally beats her, nearly to death"
+  },
+  {
+    "id": "z-sword-puller",
+    "tier": "medium",
+    "prompt": "บนดาวของไคโอชิน ใครเป็นคนดึงดาบ Z ออกจากหินได้?",
+    "answer": "โกฮัง",
+    "decoys": [
+      "โกคู",
+      "ทรังคซ์",
+      "ไคโอชิน"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Majin_Buu_Saga",
+    "evidence": "The first mortal to actually step foot on the Sacred World of the Kai, Gohan begins training with the Z Sword after pulling it from the stone."
+  },
+  {
+    "id": "uub-first-opponent",
+    "tier": "medium",
+    "prompt": "ในศึกชิงเจ้ายุทธภพครั้งที่ 28 อูบุได้ประลองกับใครในรอบแรก?",
+    "answer": "โกคู",
+    "decoys": [
+      "เบจิต้า",
+      "มิสเตอร์ซาตาน",
+      "โกเท็น"
+    ],
+    "note": "หลังจบการประลอง โกคูพาอูบุไปฝึกที่หมู่บ้าน ซึ่งเป็นฉากสุดท้ายของเรื่อง",
+    "source": "https://dragonball.fandom.com/wiki/Uub",
+    "evidence": "Uub is set to challenge Goku in the first round but is nervous and even flinches when Goku takes a step toward him."
+  },
+  {
+    "id": "dabura-petrify",
+    "tier": "hard",
+    "prompt": "ดาบูร่าถ่มน้ำลายใส่ใครจนกลายเป็นหิน ใกล้ยานของบาบิดี้?",
+    "answer": "พิคโกโร่ กับ คุริริน",
+    "decoys": [
+      "โกคู กับ เบจิต้า",
+      "โกฮัง กับ ไคโอชิน",
+      "คิบิโตะ กับ ไคโอชิน"
+    ],
+    "note": "ทั้งสองจะกลับเป็นปกติก็ต่อเมื่อดาบูร่าตาย",
+    "source": "https://dragonball.fandom.com/wiki/Dabura",
+    "evidence": "He then quickly leaps into the air and spits on Piccolo and Krillin, quickly turning them into stone"
+  },
+  {
+    "id": "pui-pui-killer",
+    "tier": "hard",
+    "prompt": "บนยานของบาบิดี้ ใครเป็นคนสู้และสังหารปุยปุย?",
+    "answer": "เบจิต้า",
+    "decoys": [
+      "โกคู",
+      "โกฮัง",
+      "ไคโอชิน"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Pui_Pui",
+    "evidence": "Pui Pui is also a determined fighter as, despite being clearly outmatched and beaten, he keeps on fighting Vegeta until he is killed by him."
+  },
+  {
+    "id": "kibito-killer",
+    "tier": "hard",
+    "prompt": "ใครสังหารคิบิโตะเมื่อกลุ่มของโกคูไปถึงยานของบาบิดี้?",
+    "answer": "ดาบูร่า",
+    "decoys": [
+      "ปุยปุย",
+      "ยาค่อน",
+      "บาบิดี้"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Kibito",
+    "evidence": "Near Babidi's Spaceship, Kibito is killed by Dabura after he ambushes the group"
+  },
+  {
+    "id": "piccolo-withdraws",
+    "tier": "hard",
+    "prompt": "ในศึกชิงเจ้ายุทธภพครั้งที่ 25 พิคโกโร่ยอมถอนตัวจากการแข่งกับใคร?",
+    "answer": "ไคโอชิน",
+    "decoys": [
+      "คิบิโตะ",
+      "คุริริน",
+      "สป็อปโปวิช"
+    ],
+    "note": "พิคโกโร่ลงแข่งในชื่อมาร์จูเนียร์",
+    "source": "https://dragonball.fandom.com/wiki/World_Tournament_Saga",
+    "evidence": "Piccolo is matched against the mysterious Shin who reveals his true identity. Seemingly terrified, Piccolo withdraws from the match"
+  },
+  {
+    "id": "chi-chi-egg",
+    "tier": "hard",
+    "prompt": "ซูเปอร์บูเปลี่ยนใครเป็นไข่แล้วเหยียบจนแตก หลังถูกตบหน้าบนวังของพระเจ้า?",
+    "answer": "จีจี้",
+    "decoys": [
+      "บูลม่า",
+      "บีเดล",
+      "หมายเลข 18"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Super_Buu",
+    "evidence": "While Buu is waiting, Chi-Chi slaps him and scolds him for killing Gohan, and he responds by turning her into an egg and crushing her."
+  },
+  {
+    "id": "gotenks-kamikaze",
+    "tier": "hard",
+    "prompt": "ในห้องแห่งกาลเวลา โกเท็นคูสใช้ท่าอะไรระเบิดร่างซูเปอร์บูจนแหลกเป็นชิ้น?",
+    "answer": "ซูเปอร์โกสต์คามิกาเซ่แอ็ทแท็ก",
+    "decoys": [
+      "มาเซนโก",
+      "การ์ลิคกัน",
+      "ไฟนอลแฟลช"
+    ],
+    "note": "ท่านี้สร้างผีหน้าตาเหมือนโกเท็นคูสออกมาโจมตี",
+    "source": "https://dragonball.fandom.com/wiki/Fusion_Saga",
+    "evidence": "Gotenks proceeds to use more effective attacks, such as the Galactic Donut and Super Ghost Kamikaze Attack, which cause significant damage to Buu, the latter blowing him to pieces."
+  },
+  {
+    "id": "super-buu-first-absorb",
+    "tier": "hard",
+    "prompt": "ซูเปอร์บูดูดซับใครเข้าไปในร่างเป็นกลุ่มแรก จนฉลาดและแข็งแกร่งขึ้น?",
+    "answer": "โกเท็นคูส กับ พิคโกโร่",
+    "decoys": [
+      "โกฮัง กับ พิคโกโร่",
+      "โกเท็นคูส กับ โกฮัง",
+      "เท็นชินฮัง กับ โกฮัง"
+    ],
+    "note": "โกฮังถูกดูดซับตามไปทีหลัง",
+    "source": "https://dragonball.fandom.com/wiki/Super_Buu",
+    "evidence": "Recognized as the most potent form of Buu, he absorbs Gotenks and Piccolo, enhancing his power and intelligence."
+  },
+  {
+    "id": "satan-rallies-earth",
+    "tier": "hard",
+    "prompt": "ในศึกกับจอมมารบูร่างเด็ก ใครโน้มน้าวชาวโลกที่ยังลังเลให้ยอมช่วยโกคูได้สำเร็จในที่สุด?",
+    "answer": "มิสเตอร์ซาตาน",
+    "decoys": [
+      "เบจิต้า",
+      "ท่านไคโอ",
+      "เดนเด้"
+    ],
+    "note": "เบจิต้าขอผ่านโทรจิตของท่านไคโอก่อน แต่มีแค่เพื่อนและครอบครัวที่ยอมช่วย",
+    "source": "https://dragonball.fandom.com/wiki/Kid_Buu",
+    "evidence": "Ultimately, Mr. Satan manages to convince the people of Earth to give up their energy and the Super Spirit Bomb reaches completion"
+  },
+  {
+    "id": "spopovich-killer",
+    "tier": "very-hard",
+    "prompt": "หลังส่งพลังที่ขโมยมาแล้ว ใครทำให้ร่างของสป็อปโปวิชพองจนระเบิดตาย?",
+    "answer": "บาบิดี้",
+    "decoys": [
+      "ดาบูร่า",
+      "ปุยปุย",
+      "ยามู"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Babidi",
+    "evidence": "Babidi, with gleeful sadism, tortures Spopovich to death by slowly expanding his inner energies, causing him to painfully swell like a balloon until he explodes."
+  },
+  {
+    "id": "old-kai-potara-plan",
+    "tier": "very-hard",
+    "prompt": "ตามแผนแรก มหาเทพรุ่นที่ 15 มอบตุ้มหูโปตาร่าให้โกคูเพื่อใช้รวมร่างกับใคร?",
+    "answer": "โกฮัง",
+    "decoys": [
+      "เบจิต้า",
+      "มิสเตอร์ซาตาน",
+      "โกเท็น"
+    ],
+    "note": "แผนล้มเพราะซูเปอร์บูดูดซับโกฮังไปก่อน",
+    "source": "https://dragonball.fandom.com/wiki/Old_Kai",
+    "evidence": "He then gives up his life to Goku so he can return to Earth to fuse with Gohan and defeat Buu."
+  },
+  {
+    "id": "kibito-kai-escape",
+    "tier": "very-hard",
+    "prompt": "เมื่อจอมมารบูร่างเด็กระเบิดโลกทิ้ง ใครพาโกคู เบจิต้า และมิสเตอร์ซาตานหนีไปดาวของไคโอชินได้ทัน?",
+    "answer": "คิบิโต้ะชิน",
+    "decoys": [
+      "มหาเทพรุ่นที่ 15",
+      "เดนเด้",
+      "ท่านไคโอ"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Kid_Buu_Saga",
+    "evidence": "Satan, Dende and Bee barely managing to escape thanks to Kibito Kai using his Kai Kai technique to transport them to the Sacred World of the Kai"
+  },
+  {
+    "id": "dende-thrown-off",
+    "tier": "very-hard",
+    "prompt": "ก่อนซูเปอร์บูจะฆ่าทุกคนบนวังของพระเจ้า ใครโยนเดนเด้ลงจากวังเพื่อให้ดราก้อนบอลยังอยู่?",
+    "answer": "มิสเตอร์โปโป้",
+    "decoys": [
+      "พิคโกโร่",
+      "คุริริน",
+      "หมายเลข 18"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Fusion_Saga",
+    "evidence": "except for Dende, who is thrown off the lookout by Mr. Popo in order to prevent the Dragon Balls' destruction"
+  },
+  {
+    "id": "vegeta-pulls-pod",
+    "tier": "very-hard",
+    "prompt": "ภายในร่างของซูเปอร์บู ใครดึงจอมมารบูอ้วนออกจากฝักจนซูเปอร์บูเริ่มแปรสภาพ?",
+    "answer": "เบจิต้า",
+    "decoys": [
+      "โกคู",
+      "โกฮัง",
+      "พิคโกโร่"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Fusion_Saga",
+    "evidence": "Unfortunately, Vegeta thinks that Super Buu is merely bluffing, and he proceeds to cut Good Buu loose."
+  },
+  {
+    "id": "kid-buu-spits-out",
+    "tier": "very-hard",
+    "prompt": "ขณะเล่นงานมิสเตอร์ซาตาน จอมมารบูร่างเด็กคายใครออกมาจากร่าง?",
+    "answer": "จอมมารบูอ้วน",
+    "decoys": [
+      "โกฮัง",
+      "พิคโกโร่",
+      "โกเท็นคูส"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Kid_Buu",
+    "evidence": "His frustration ultimately leads him to spit out a small stone which explodes into an unconscious Good Buu."
+  },
+  {
+    "id": "wmat28-rigged-draw",
+    "tier": "very-hard",
+    "prompt": "ในศึกชิงเจ้ายุทธภพครั้งที่ 28 ใครแอบเปลี่ยนผลการจับฉลากคู่ชก?",
+    "answer": "จอมมารบูอ้วน",
+    "decoys": [
+      "มิสเตอร์ซาตาน",
+      "เบจิต้า",
+      "ทรังคซ์"
+    ],
+    "source": "https://dragonball.fandom.com/wiki/Uub",
+    "evidence": "After the draw, which was changed by Good Buu at Goku's request"
+  }
+]
