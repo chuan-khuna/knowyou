@@ -1,6 +1,31 @@
 import { describe, expect, test } from "bun:test";
 import { GLOSSES, MIN_QUESTIONS_PER_TIER, TIERS, bank, bankIssues, createQuiz, type QuestionBank, type QuizPlay } from ".";
+import { parseQuestions } from "./bank";
+import { parseGlossary } from "./glosses";
 import { fixtureBank } from "./testing/fixture-bank";
+
+describe("reading the JSON files", () => {
+  const question = { id: "a-b", tier: "easy", prompt: "p?", answer: "a", decoys: ["b", "c", "d"], source: "https://example.org" };
+
+  test("keys the bank by id and drops the id from the question", () => {
+    expect(parseQuestions([question])).toEqual({ "a-b": { tier: "easy", prompt: "p?", answer: "a", decoys: ["b", "c", "d"], source: "https://example.org" } });
+  });
+
+  test.each([
+    ["a repeated id", [question, question], "a-b: duplicate id"],
+    ["an id that isn't kebab-case", [{ ...question, id: "A_b" }], "A_b: id must be lowercase kebab-case"],
+    ["an unknown tier", [{ ...question, tier: "expert" }], "a-b: tier must be one of"],
+    ["two decoys", [{ ...question, decoys: ["b", "c"] }], "a-b: decoys must be 3 texts"],
+    ["a missing answer", [{ ...question, answer: undefined }], "a-b: answer must be text"],
+    ["a note that isn't text", [{ ...question, note: 1 }], "a-b: note must be text"],
+  ])("rejects %s", (_, raw, issue) => {
+    expect(() => parseQuestions(raw)).toThrow(issue);
+  });
+
+  test("rejects a glossary entry without all three names", () => {
+    expect(() => parseGlossary({ "ท่า": { romaji: "Waza", kanji: "技" } })).toThrow("ท่า: needs romaji, kanji and english");
+  });
+});
 
 describe("the question bank", () => {
   test("passes every bank rule", () => {

@@ -1,3 +1,5 @@
+import glossary from "./glossary.json";
+
 /**
  * The original names shown under an option whose label is a Japanese technique
  * name, or a Thai translation of one. Keyed by the exact option label, so one
@@ -10,35 +12,14 @@ export interface Gloss {
   readonly english: string;
 }
 
-const g = (romaji: string, kanji: string, english: string): Gloss => ({ romaji, kanji, english });
+/** Reads glossary.json. Throws on an entry without all three names, listing every one. */
+export function parseGlossary(raw: unknown): Readonly<Record<string, Gloss>> {
+  if (typeof raw !== "object" || raw === null || Array.isArray(raw)) throw new Error("glossary.json: expected an object keyed by option label");
+  const issues = Object.entries(raw)
+    .filter(([, g]) => !["romaji", "kanji", "english"].every((field) => typeof (g as Record<string, unknown>)?.[field] === "string"))
+    .map(([label]) => `${label}: needs romaji, kanji and english`);
+  if (issues.length > 0) throw new Error(`glossary.json:\n  ${issues.join("\n  ")}`);
+  return raw as Readonly<Record<string, Gloss>>;
+}
 
-export const GLOSSES: Readonly<Record<string, Gloss>> = {
-  "สภาวะไร้ตัวตน": g("Muga no Kyōchi", "無我の境地", "State of Selflessness"),
-  "ฮยาคุเร็น จิโทคุ โนะ คิวามิ": g("Hyakuren Jitoku no Kiwami", "百錬自得の極み", "Pinnacle of Hard Work"),
-  "ไซกิ คัมปัตสึ โนะ คิวามิ": g("Saiki Kanpatsu no Kiwami", "才気煥発の極み", "Pinnacle of Great Wisdom"),
-  "เท็นอิ มุโฮ โนะ คิวามิ": g("Ten'i Muhō no Kiwami", "天衣無縫の極み", "Pinnacle of Perfection"),
-  "ฟู ริน คา ซัน": g("Fūrinkazan", "風林火山", "Wind, Forest, Fire, Mountain"),
-  "นางแอ่นหวนกลับ": g("Tsubame Gaeshi", "燕返し", "Swallow Return"),
-  "พิฆาตหมีสีน้ำตาล": g("Higuma Otoshi", "羆落とし", "Brown Bear Drop"),
-  "ปลาวาฬเผือก": g("Hakugei", "白鯨", "White Whale"),
-  "ตบแมลงเม่า": g("Kagerō Tsutsumi", "蜉蝣包み", "Mayfly Envelopment"),
-  "บทเพลงแห่งหายนะ": g("Hametsu e no Rondo", "破滅への輪舞曲", "Rondo Towards Destruction"),
-  "อาณาจักรน้ำแข็ง": g("Kōri no Sekai", "氷の世界", "Ice World"),
-  "อาณาเขตของโออิชิ": g("Ōishi no Ryōiki", "大石の領域", "Ōishi's Territory"),
-  "ฮาโดคิว": g("Hadōkyū", "波動球", "Wave-Motion Ball"),
-  "อาบาเระดามะ": g("Abare Dama", "暴れ球", "Wild Ball"),
-  "ไต่เชือก (สึนะวาตาริ)": g("Tsunawatari", "綱渡り", "Tightrope Walking"),
-  "ซีโร่ชิกิ ดร็อปช็อต": g("Zero-Shiki Drop Shot", "零式ドロップショット", "Zero-Style Drop Shot"),
-  "ซูเปอร์อุลตร้าเกรทดีลิเชียส ไดชาริน ยามะอาราชิ": g(
-    "Chō Urutora Gurēto Derishasu Daisharin Yama Arashi",
-    "超ウルトラグレートデリシャス大車輪山嵐",
-    "Super Ultra Great Delicious Mountain Storm",
-  ),
-  "เอ็นบุเทนนิส": g("Enbu Tenisu", "演武テニス", "Enbu (Martial Demonstration) Tennis"),
-  "ชุคุจิโฮ": g("Shukuchihō", "縮地法", "Ground-Shrinking Method"),
-  "ผู้เฝ้าประตูเฮคาตอนไคร์": g("Hekatonkeiru no Monban", "百腕巨人の門番", "Gatekeeper of Hecatoncheires"),
-  "เงา (อิน) กับ สายฟ้า (ไร)": g("In, Rai", "陰・雷", "Shadow, Lightning"),
-  "คามาอิทาจิ": g("Kamaitachi", "かまいたち", "Wind Blade"),
-  "ฮาบุ": g("Habu", "飯匙倩", "Habu (Pit Viper)"),
-  "เอ็นทาคุช็อต": g("Entaku Shotto", "円卓ショット", "Round Table Shot"),
-};
+export const GLOSSES = parseGlossary(glossary);

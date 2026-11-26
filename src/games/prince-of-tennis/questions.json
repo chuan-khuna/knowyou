@@ -1,0 +1,1492 @@
+[
+  {
+    "id": "ryoma-school",
+    "tier": "easy",
+    "prompt": "เอจิเซ็น เรียวมะ เรียนอยู่โรงเรียนอะไร?",
+    "answer": "เซชุน (เซงาคุ)",
+    "decoys": [
+      "เฮียวเท",
+      "ริคไค",
+      "ฟุโดมิเนะ"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Ryoma_Echizen"
+  },
+  {
+    "id": "ryoma-left-handed",
+    "tier": "easy",
+    "prompt": "นักเทนนิสเซชุนคนใดถนัดมือซ้าย?",
+    "answer": "เอจิเซ็น เรียวมะ",
+    "decoys": [
+      "โมโมชิโระ ทาเคชิ",
+      "คิคุมารุ เอจิ",
+      "โออิชิ ชูอิจิโร่"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Ryoma_Echizen"
+  },
+  {
+    "id": "ryoma-goal-father",
+    "tier": "easy",
+    "prompt": "ตอนต้นเรื่อง เรียวมะตั้งเป้าจะเอาชนะใคร?",
+    "answer": "พ่อของตัวเอง",
+    "decoys": [
+      "อาจารย์ริวซากิ",
+      "อาโตเบะ เคย์โกะ",
+      "โมโมชิโระ ทาเคชิ"
+    ],
+    "note": "ท่าเทนนิสช่วงแรกของเรียวมะลอกมาจากพ่อทั้งหมด",
+    "source": "https://princeoftennis.fandom.com/wiki/Ryoma_Echizen"
+  },
+  {
+    "id": "ryoma-twist-serve",
+    "tier": "easy",
+    "prompt": "ลูกเสิร์ฟประจำตัวของเรียวมะที่เด้งพุ่งเข้าหน้าคู่แข่งชื่ออะไร?",
+    "answer": "ทวิสต์เสิร์ฟ",
+    "decoys": [
+      "ลูกเสิร์ฟล่องหน",
+      "ลูกเสิร์ฟศูนย์องศา",
+      "สกั๊ดเสิร์ฟ"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Twist_Serve"
+  },
+  {
+    "id": "seigaku-coach",
+    "tier": "easy",
+    "prompt": "ใครเป็นโค้ชชมรมเทนนิสเซชุน?",
+    "answer": "ริวซากิ ซูมิเระ",
+    "decoys": [
+      "ซาคากิ ทาโร่",
+      "วาตานาเบะ โอซามุ",
+      "ฮานามูระ อาโออิ"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Sumire_Ry%C5%ABzaki"
+  },
+  {
+    "id": "seigaku-captain",
+    "tier": "easy",
+    "prompt": "ใครเป็นกัปตันชมรมเทนนิสเซชุน?",
+    "answer": "เทะสึกะ คุนิมิสึ",
+    "decoys": [
+      "โออิชิ ชูอิจิโร่",
+      "ฟูจิ ชูสึเกะ",
+      "อินูอิ ซาดาฮารุ"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Kunimitsu_Tezuka"
+  },
+  {
+    "id": "hyotei-captain",
+    "tier": "easy",
+    "prompt": "ใครเป็นกัปตันโรงเรียนเฮียวเท?",
+    "answer": "อาโตเบะ เคย์โกะ",
+    "decoys": [
+      "คาบาจิ มุเนฮิโระ",
+      "โอชิทาริ ยูชิ",
+      "ชิชิโดะ เรียว"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Hyotei_Academy"
+  },
+  {
+    "id": "rikkai-defending-champion",
+    "tier": "easy",
+    "prompt": "โรงเรียนไหนเป็นแชมป์ระดับประเทศสองสมัยติดก่อนเรื่องเริ่ม?",
+    "answer": "ริคไค",
+    "decoys": [
+      "เฮียวเท",
+      "ชิเทนโฮจิ",
+      "ฟุโดมิเนะ"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Rikkai_Dai_Fuzoku_Chuu"
+  },
+  {
+    "id": "golden-pair",
+    "tier": "easy",
+    "prompt": "“คู่ทองคำ” ของเซชุนคือคิคุมารุคู่กับใคร?",
+    "answer": "โออิชิ ชูอิจิโร่",
+    "decoys": [
+      "ฟูจิ ชูสึเกะ",
+      "โมโมชิโระ ทาเคชิ",
+      "อินูอิ ซาดาฮารุ"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Golden_Pair"
+  },
+  {
+    "id": "momo-dunk-smash",
+    "tier": "easy",
+    "prompt": "ท่าตบลูกกลางอากาศของโมโมชิโระที่ปิดท้ายด้วยคำว่า “ตูม” ชื่ออะไร?",
+    "answer": "ดั้งค์สแมช",
+    "decoys": [
+      "มูนวอลเลย์",
+      "คิคุมารุบีม",
+      "ซามูไรไดรฟ์"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Takeshi_Momoshiro/Playing_Style_%26_Techniques"
+  },
+  {
+    "id": "kaido-snake",
+    "tier": "easy",
+    "prompt": "ท่าไม้ตายลูกโค้งของไคโดชื่ออะไร?",
+    "answer": "สเน็ค",
+    "decoys": [
+      "ทวิสต์เสิร์ฟ",
+      "มูนวอลเลย์",
+      "ดั้งค์สแมช"
+    ],
+    "note": "เรียวมะชี้ว่ามันคือลูกบักกี้วิปช็อต",
+    "source": "https://princeoftennis.fandom.com/wiki/Snake"
+  },
+  {
+    "id": "kawamura-burning",
+    "tier": "easy",
+    "prompt": "ใครนิสัยเปลี่ยนไปเป็นคนละคนและตะโกน “เบิร์นนิ่ง!” เมื่อจับแร็กเกต?",
+    "answer": "คาวามูระ ทาคาชิ",
+    "decoys": [
+      "ไคโด คาโอรุ",
+      "อินูอิ ซาดาฮารุ",
+      "โออิชิ ชูอิจิโร่"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Takashi_Kawamura/Playing_Style_%26_Techniques"
+  },
+  {
+    "id": "inui-data-tennis",
+    "tier": "easy",
+    "prompt": "สไตล์การเล่นของอินูอิเรียกว่าอะไร?",
+    "answer": "เทนนิสข้อมูล",
+    "decoys": [
+      "เทนนิสกายกรรม",
+      "เทนนิสพลัง",
+      "เทนนิสลวงตา"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Sadaharu_Inui/Playing_Style_%26_Techniques"
+  },
+  {
+    "id": "eiji-acrobatic",
+    "tier": "easy",
+    "prompt": "คิคุมารุ เอจิ เล่นเทนนิสสไตล์ไหน?",
+    "answer": "เทนนิสกายกรรม",
+    "decoys": [
+      "เทนนิสข้อมูล",
+      "เทนนิสพลัง",
+      "เทนนิสลวงตา"
+    ],
+    "note": "คิคุมารุกระโดดตีลังการับลูกที่หน้าเน็ตได้",
+    "source": "https://princeoftennis.fandom.com/wiki/Eiji_Kikumaru"
+  },
+  {
+    "id": "fuji-triple-counter",
+    "tier": "easy",
+    "prompt": "ชุดท่าเคาน์เตอร์สามท่าของฟูจิ ชูสึเกะ เรียกว่าอะไร?",
+    "answer": "ทริปเปิลเคาน์เตอร์",
+    "decoys": [
+      "ฟู ริน คา ซัน",
+      "เทะสึกะโซน",
+      "สภาวะไร้ตัวตน"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Triple_Counters"
+  },
+  {
+    "id": "ryoma-drive-series",
+    "tier": "easy",
+    "prompt": "ท่าชุดไดรฟ์ A ถึง D เป็นท่าของใคร?",
+    "answer": "เอจิเซ็น เรียวมะ",
+    "decoys": [
+      "โมโมชิโระ ทาเคชิ",
+      "อาคุสึ จิน",
+      "คิริฮาระ อาคายะ"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Ryoma_Echizen/Playing_Style_%26_Techniques"
+  },
+  {
+    "id": "tezuka-left-handed",
+    "tier": "easy",
+    "prompt": "เทะสึกะ คุนิมิสึ ตีเทนนิสด้วยมือข้างไหน?",
+    "answer": "มือซ้าย",
+    "decoys": [
+      "มือขวา",
+      "ใช้ได้ทั้งสองมือ",
+      "เปลี่ยนมือตามลูก"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Kunimitsu_Tezuka"
+  },
+  {
+    "id": "sanada-school",
+    "tier": "easy",
+    "prompt": "ซานาดะ เก็นอิจิโร่ เป็นนักเทนนิสของโรงเรียนอะไร?",
+    "answer": "ริคไค",
+    "decoys": [
+      "เฮียวเท",
+      "ชิเทนโฮจิ",
+      "ยามาบุกิ"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Genichir%C5%8D_Sanada"
+  },
+  {
+    "id": "seigaku-vice-captain",
+    "tier": "easy",
+    "prompt": "ใครเป็นรองกัปตันชมรมเทนนิสเซชุน?",
+    "answer": "โออิชิ ชูอิจิโร่",
+    "decoys": [
+      "ฟูจิ ชูสึเกะ",
+      "อินูอิ ซาดาฮารุ",
+      "คาวามูระ ทาคาชิ"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Sh%C5%ABichir%C5%8D_%C5%8Cishi"
+  },
+  {
+    "id": "niou-partner",
+    "tier": "easy",
+    "prompt": "คู่ดับเบิ้ลของนิโอ มาซาฮารุ แห่งริคไค คือใคร?",
+    "answer": "ยางิว ฮิโรชิ",
+    "decoys": [
+      "แจ็คคัล คุวาฮาระ",
+      "คิริฮาระ อาคายะ",
+      "มุคาฮิ งาคุโตะ"
+    ],
+    "note": "นิโอกับยางิวสลับตัวปลอมเป็นกันและกันได้แนบเนียน",
+    "source": "https://princeoftennis.fandom.com/wiki/Hiroshi_Yagy%C5%AB"
+  },
+  {
+    "id": "shishido-partner",
+    "tier": "easy",
+    "prompt": "คู่ดับเบิ้ลของชิชิโดะ เรียว แห่งเฮียวเท คือใคร?",
+    "answer": "โอโทริ โชทาโร่",
+    "decoys": [
+      "โอชิทาริ ยูชิ",
+      "ฮิโยชิ วาคาชิ",
+      "คาบาจิ มุเนฮิโระ"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Ry%C5%8D_Shishido"
+  },
+  {
+    "id": "momo-kaido-rivals",
+    "tier": "easy",
+    "prompt": "ใครคือคู่ปรับตลอดกาลของโมโมชิโระในเซชุน?",
+    "answer": "ไคโด คาโอรุ",
+    "decoys": [
+      "คาวามูระ ทาคาชิ",
+      "อินูอิ ซาดาฮารุ",
+      "คิคุมารุ เอจิ"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Takeshi_Momoshiro"
+  },
+  {
+    "id": "ryoma-from-america",
+    "tier": "easy",
+    "prompt": "ก่อนเข้าเซชุน เรียวมะคว้าแชมป์เยาวชนติดต่อกันสี่รายการที่ประเทศไหน?",
+    "answer": "สหรัฐอเมริกา",
+    "decoys": [
+      "อังกฤษ",
+      "ออสเตรเลีย",
+      "ฝรั่งเศส"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Ryoma_Echizen"
+  },
+  {
+    "id": "ryoma-first-year",
+    "tier": "easy",
+    "prompt": "เรียวมะได้เป็นตัวจริงของเซชุนตอนเรียนชั้นไหน?",
+    "answer": "ม.1",
+    "decoys": [
+      "ม.2",
+      "ม.3",
+      "ม.4"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Ryoma_Echizen"
+  },
+  {
+    "id": "seigaku-tensai",
+    "tier": "easy",
+    "prompt": "ใครถูกเรียกว่า “อัจฉริยะ” แห่งเซชุน?",
+    "answer": "ฟูจิ ชูสึเกะ",
+    "decoys": [
+      "เทะสึกะ คุนิมิสึ",
+      "อินูอิ ซาดาฮารุ",
+      "เอจิเซ็น เรียวมะ"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Sh%C5%ABsuke_Fuji"
+  },
+  {
+    "id": "not-rikkai",
+    "tier": "easy",
+    "prompt": "ใครไม่ได้อยู่โรงเรียนริคไค?",
+    "answer": "ชิชิโดะ เรียว",
+    "decoys": [
+      "คิริฮาระ อาคายะ",
+      "นิโอ มาซาฮารุ",
+      "ยานางิ เร็นจิ"
+    ],
+    "note": "ชิชิโดะอยู่เฮียวเท",
+    "source": "https://princeoftennis.fandom.com/wiki/Ry%C5%8D_Shishido"
+  },
+  {
+    "id": "not-seigaku",
+    "tier": "easy",
+    "prompt": "ใครไม่ใช่นักเทนนิสเซชุน?",
+    "answer": "ฟูจิ ยูตะ",
+    "decoys": [
+      "ฟูจิ ชูสึเกะ",
+      "ไคโด คาโอรุ",
+      "คาวามูระ ทาคาชิ"
+    ],
+    "note": "ยูตะ น้องชายของฟูจิ อยู่เซนต์รูดอล์ฟ",
+    "source": "https://princeoftennis.fandom.com/wiki/Y%C5%ABta_Fuji"
+  },
+  {
+    "id": "not-fuji-counter",
+    "tier": "easy",
+    "prompt": "ท่าไหนไม่ใช่ท่าเคาน์เตอร์ของฟูจิ ชูสึเกะ?",
+    "answer": "ทวิสต์เสิร์ฟ",
+    "decoys": [
+      "นางแอ่นหวนกลับ",
+      "พิฆาตหมีสีน้ำตาล",
+      "ปลาวาฬเผือก"
+    ],
+    "note": "ทวิสต์เสิร์ฟเป็นลูกเสิร์ฟของเรียวมะ",
+    "source": "https://princeoftennis.fandom.com/wiki/Triple_Counters"
+  },
+  {
+    "id": "kabaji-usu",
+    "tier": "easy",
+    "prompt": "คาบาจิ มุเนฮิโระ คอยอยู่ข้างกายและตอบ “อุสุ” ให้ใครเสมอ?",
+    "answer": "อาโตเบะ เคย์โกะ",
+    "decoys": [
+      "โอชิทาริ ยูชิ",
+      "ชิชิโดะ เรียว",
+      "ฮิโยชิ วาคาชิ"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Munehiro_Kabaji"
+  },
+  {
+    "id": "kikumaru-beam",
+    "tier": "easy",
+    "prompt": "“คิคุมารุบีม” คือลูกแบบไหน?",
+    "answer": "วอลเลย์กลางอากาศที่ส่งลูกไปจุดที่คู่แข่งไม่ได้ยืน",
+    "decoys": [
+      "สแมชกระโดดฟาดลงสุดแรง",
+      "ลูกโค้งที่ทำให้คู่แข่งวิ่งไม่หยุด",
+      "ลูกเสิร์ฟความเร็วสูง"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Kikumaru_Beam"
+  },
+  {
+    "id": "rikkai-vice-captain",
+    "tier": "medium",
+    "prompt": "ใครเป็นรองกัปตันโรงเรียนริคไค?",
+    "answer": "ซานาดะ เก็นอิจิโร่",
+    "decoys": [
+      "ยานางิ เร็นจิ",
+      "นิโอ มาซาฮารุ",
+      "ยางิว ฮิโรชิ"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Seiichi_Yukimura"
+  },
+  {
+    "id": "yukimura-child-of-god",
+    "tier": "medium",
+    "prompt": "ยูคิมูระ เซอิจิ ถูกขนานนามว่าอะไร?",
+    "answer": "บุตรแห่งพระเจ้า",
+    "decoys": [
+      "จักรพรรดิ",
+      "ปรมาจารย์",
+      "สุภาพบุรุษ"
+    ],
+    "note": "จักรพรรดิคือซานาดะ ปรมาจารย์คือยานางิ สุภาพบุรุษคือยางิว",
+    "source": "https://princeoftennis.fandom.com/wiki/Seiichi_Yukimura"
+  },
+  {
+    "id": "rikkai-big-three",
+    "tier": "medium",
+    "prompt": "ใครไม่ได้อยู่ใน “สามปีศาจ” แห่งริคไค?",
+    "answer": "คิริฮาระ อาคายะ",
+    "decoys": [
+      "ยูคิมูระ เซอิจิ",
+      "ซานาดะ เก็นอิจิโร่",
+      "ยานางิ เร็นจิ"
+    ],
+    "note": "คิริฮาระเป็นเอซปีสองของริคไค",
+    "source": "https://princeoftennis.fandom.com/wiki/Seiichi_Yukimura"
+  },
+  {
+    "id": "hyotei-tensai",
+    "tier": "medium",
+    "prompt": "ใครถูกเรียกว่า “อัจฉริยะ” แห่งเฮียวเท?",
+    "answer": "โอชิทาริ ยูชิ",
+    "decoys": [
+      "อาโตเบะ เคย์โกะ",
+      "ชิชิโดะ เรียว",
+      "อาคุตางาวะ จิโร่"
+    ],
+    "note": "โอชิทาริยังได้ฉายาว่า “ชายพันท่า”",
+    "source": "https://princeoftennis.fandom.com/wiki/Y%C5%ABshi_Oshitari"
+  },
+  {
+    "id": "never-lost-to-ryoma",
+    "tier": "medium",
+    "prompt": "ใครไม่เคยแพ้เรียวมะเลยจนจบระดับประเทศ?",
+    "answer": "ฟูจิ ชูสึเกะ",
+    "decoys": [
+      "อาโตเบะ เคย์โกะ",
+      "ยูคิมูระ เซอิจิ",
+      "อิบุ ชินจิ"
+    ],
+    "note": "แมตช์เดียวของทั้งคู่ถูกหยุดกลางคันเพราะฝนตก",
+    "source": "https://princeoftennis.fandom.com/wiki/Ryoma_Echizen/Tennis_Record"
+  },
+  {
+    "id": "never-played-ryoma",
+    "tier": "medium",
+    "prompt": "ใครไม่เคยแข่งกับเรียวมะเลยจนจบระดับประเทศ?",
+    "answer": "ชิราอิชิ คุราโนะสุเกะ",
+    "decoys": [
+      "ซานาดะ เก็นอิจิโร่",
+      "อาโตเบะ เคย์โกะ",
+      "ไคโด คาโอรุ"
+    ],
+    "note": "ในรอบรองฯ ระดับประเทศ เรียวมะได้เจอแค่คินทาโร่ในแมตช์หนึ่งแต้ม",
+    "source": "https://princeoftennis.fandom.com/wiki/Ryoma_Echizen/Tennis_Record"
+  },
+  {
+    "id": "akutsu-quits",
+    "tier": "medium",
+    "prompt": "ใครเอาชนะอาคุสึ จิน จนอาคุสึลาออกจากชมรมเทนนิส?",
+    "answer": "เอจิเซ็น เรียวมะ",
+    "decoys": [
+      "คาวามูระ ทาคาชิ",
+      "โมโมชิโระ ทาเคชิ",
+      "ฟูจิ ชูสึเกะ"
+    ],
+    "note": "เกิดขึ้นในนัดชิงระดับโตเกียว",
+    "source": "https://princeoftennis.fandom.com/wiki/Jin_Akutsu"
+  },
+  {
+    "id": "kanto-ryoma-hiyoshi",
+    "tier": "medium",
+    "prompt": "ในรอบแรกระดับคันโต เรียวมะลงแข่งนัดตัดสินกับใคร?",
+    "answer": "ฮิโยชิ วาคาชิ",
+    "decoys": [
+      "อาโตเบะ เคย์โกะ",
+      "คาบาจิ มุเนฮิโระ",
+      "โอชิทาริ ยูชิ"
+    ],
+    "note": "ซิงเกิ้ล 3 เป็นโมฆะเพราะคาวามูระกับคาบาจิบาดเจ็บทั้งคู่ จึงต้องส่งตัวสำรองลงแข่ง",
+    "source": "https://princeoftennis.fandom.com/wiki/Hyotei_vs_Seigaku"
+  },
+  {
+    "id": "rikkai-captain",
+    "tier": "medium",
+    "prompt": "ใครเป็นกัปตันโรงเรียนริคไค?",
+    "answer": "ยูคิมูระ เซอิจิ",
+    "decoys": [
+      "ซานาดะ เก็นอิจิโร่",
+      "ยานางิ เร็นจิ",
+      "นิโอ มาซาฮารุ"
+    ],
+    "note": "ซานาดะเป็นรองกัปตัน",
+    "source": "https://princeoftennis.fandom.com/wiki/Rikkai_Dai_Fuzoku_Chuu"
+  },
+  {
+    "id": "fudomine-captain",
+    "tier": "medium",
+    "prompt": "ใครเป็นกัปตันโรงเรียนฟุโดมิเนะ?",
+    "answer": "ทาจิบานะ คิปเป",
+    "decoys": [
+      "คามิโอะ อากิระ",
+      "อิบุ ชินจิ",
+      "อิชิดะ เท็ตสึ"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Fudomine_Junior_High"
+  },
+  {
+    "id": "yuta-school",
+    "tier": "medium",
+    "prompt": "ฟูจิ ยูตะ น้องชายของฟูจิ เรียนโรงเรียนอะไร?",
+    "answer": "เซนต์รูดอล์ฟ",
+    "decoys": [
+      "เซชุน",
+      "ยามาบุกิ",
+      "เฮียวเท"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Y%C5%ABta_Fuji"
+  },
+  {
+    "id": "akutsu-school",
+    "tier": "medium",
+    "prompt": "อาคุสึ จิน เป็นนักเทนนิสของโรงเรียนอะไร?",
+    "answer": "ยามาบุกิ",
+    "decoys": [
+      "ฟุโดมิเนะ",
+      "เซนต์รูดอล์ฟ",
+      "รคคาคุ"
+    ],
+    "note": "อาคุสึเลิกเล่นในชมรมหลังแพ้เรียวมะ",
+    "source": "https://princeoftennis.fandom.com/wiki/Jin_Akutsu"
+  },
+  {
+    "id": "kintaro-school",
+    "tier": "medium",
+    "prompt": "โทยามะ คินทาโร่ เป็นนักเทนนิสของโรงเรียนอะไร?",
+    "answer": "ชิเทนโฮจิ",
+    "decoys": [
+      "ริคไค",
+      "ฮิงะ",
+      "เฮียวเท"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Kintar%C5%8D_T%C5%8Dyama"
+  },
+  {
+    "id": "oishi-moon-volley",
+    "tier": "medium",
+    "prompt": "ท่าวอลเลย์โยนลูกโด่งไปตกเส้นหลังของโออิชิชื่ออะไร?",
+    "answer": "มูนวอลเลย์",
+    "decoys": [
+      "คิคุมารุบีม",
+      "สเน็ค",
+      "แจ็คไนฟ์"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Moon_Volley"
+  },
+  {
+    "id": "momo-jack-knife",
+    "tier": "medium",
+    "prompt": "นอกจากดั้งค์สแมช ลูกแบ็คแฮนด์ตีพุ่งลงสนามแรง ๆ ของโมโมชิโระชื่ออะไร?",
+    "answer": "แจ็คไนฟ์",
+    "decoys": [
+      "สเน็ค",
+      "มูนวอลเลย์",
+      "ทวิสต์เสิร์ฟ"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Takeshi_Momoshiro/Playing_Style_%26_Techniques"
+  },
+  {
+    "id": "kawamura-hadokyu",
+    "tier": "medium",
+    "prompt": "ลูกตีสุดแรงที่คาวามูระได้มาจากอิชิดะ เท็ตสึ แห่งฟุโดมิเนะ ชื่ออะไร?",
+    "answer": "ฮาโดคิว",
+    "decoys": [
+      "แจ็คไนฟ์",
+      "ดั้งค์สแมช",
+      "ทวิสต์เสิร์ฟ"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Had%C5%8Dky%C5%AB"
+  },
+  {
+    "id": "tezuka-zone",
+    "tier": "medium",
+    "prompt": "ท่าที่ทำให้ลูกทุกลูกวิ่งกลับมาหาเทะสึกะโดยเขาไม่ต้องขยับ ชื่ออะไร?",
+    "answer": "เทะสึกะโซน",
+    "decoys": [
+      "เทะสึกะแฟนท่อม",
+      "อาณาเขตของโออิชิ",
+      "สภาวะไร้ตัวตน"
+    ],
+    "note": "เทะสึกะใส่การหมุนให้ลูกไหลเข้ามาหาตัวเขาเอง",
+    "source": "https://princeoftennis.fandom.com/wiki/Tezuka_Zone"
+  },
+  {
+    "id": "ibu-spot",
+    "tier": "medium",
+    "prompt": "ท่าของอิบุ ชินจิ ที่ทำให้แขนคู่แข่งชาไปชั่วขณะ ชื่ออะไร?",
+    "answer": "สปอต",
+    "decoys": [
+      "ฮาโดคิว",
+      "สเน็ค",
+      "คิคุมารุบีม"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Shinji_Ibu"
+  },
+  {
+    "id": "kamio-speed",
+    "tier": "medium",
+    "prompt": "คามิโอะ อากิระ แห่งฟุโดมิเนะ โดดเด่นเรื่องอะไรที่สุด?",
+    "answer": "ความเร็ว",
+    "decoys": [
+      "พลังตี",
+      "การเก็บข้อมูล",
+      "ลูกหยอดหน้าเน็ต"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Akira_Kamio"
+  },
+  {
+    "id": "ryoma-ibu-eye",
+    "tier": "medium",
+    "prompt": "ในแมตช์กับอิบุ ชินจิ เกิดอะไรขึ้นกับเรียวมะ?",
+    "answer": "เศษแร็กเกตกระเด็นบาดเหนือตา",
+    "decoys": [
+      "ข้อเท้าแพลง",
+      "เป็นลมเพราะแดด",
+      "ไหล่บาดเจ็บ"
+    ],
+    "note": "เรียวมะเล่นต่อทั้งที่ตาข้างหนึ่งยังมีเลือดไหล",
+    "source": "https://princeoftennis.fandom.com/wiki/Ryoma_Echizen/Tennis_Record"
+  },
+  {
+    "id": "tezuka-kyushu",
+    "tier": "medium",
+    "prompt": "หลังบาดเจ็บที่ไหล่ เทะสึกะไปรักษาตัวที่ไหน?",
+    "answer": "คิวชู",
+    "decoys": [
+      "เยอรมนี",
+      "สหรัฐอเมริกา",
+      "โอกินาว่า"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Kunimitsu_Tezuka"
+  },
+  {
+    "id": "kanto-first-round",
+    "tier": "medium",
+    "prompt": "ในรอบแรกระดับคันโต เซชุนเจอโรงเรียนไหน?",
+    "answer": "เฮียวเท",
+    "decoys": [
+      "ริคไค",
+      "ฟุโดมิเนะ",
+      "ยามาบุกิ"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Hyotei_Academy"
+  },
+  {
+    "id": "kanto-final-opponent",
+    "tier": "medium",
+    "prompt": "ในนัดชิงชนะเลิศระดับคันโต เซชุนเจอโรงเรียนไหน?",
+    "answer": "ริคไค",
+    "decoys": [
+      "เฮียวเท",
+      "ฟุโดมิเนะ",
+      "รคคาคุ"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Rikkai_Dai_Fuzoku_Chuu"
+  },
+  {
+    "id": "oishi-territory",
+    "tier": "medium",
+    "prompt": "ท่าที่โออิชิยืนคุมเส้นหลังให้คิคุมารุบุกหน้าเน็ตได้เต็มที่ ชื่ออะไร?",
+    "answer": "อาณาเขตของโออิชิ",
+    "decoys": [
+      "มูนวอลเลย์",
+      "ออสเตรเลียนฟอร์เมชัน",
+      "คิคุมารุบีม"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Sh%C5%ABichir%C5%8D_%C5%8Cishi"
+  },
+  {
+    "id": "ryoma-split-step",
+    "tier": "medium",
+    "prompt": "เทคนิคกระโดดเบา ๆ ตอนคู่แข่งตีลูก เพื่อให้เรียวมะออกตัวได้เร็ว เรียกว่าอะไร?",
+    "answer": "สปลิตสเต็ป",
+    "decoys": [
+      "ซามูไรไดรฟ์",
+      "มูนวอลเลย์",
+      "ทวิสต์เสิร์ฟ"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Split_Step"
+  },
+  {
+    "id": "tezuka-zero-shiki",
+    "tier": "medium",
+    "prompt": "ลูกหยอดของเทะสึกะที่ตกแล้วกลิ้งกลับเข้าหาเน็ตโดยไม่เด้ง ชื่ออะไร?",
+    "answer": "ซีโร่ชิกิ ดร็อปช็อต",
+    "decoys": [
+      "นางแอ่นหวนกลับ",
+      "มูนวอลเลย์",
+      "สเน็ค"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Zero-Shiki_Drop_Shot"
+  },
+  {
+    "id": "yanagi-data-tennis",
+    "tier": "medium",
+    "prompt": "ยานางิ เร็นจิ แห่งริคไค เล่นเทนนิสสไตล์ไหน?",
+    "answer": "เทนนิสข้อมูล",
+    "decoys": [
+      "เทนนิสกายกรรม",
+      "เทนนิสพลัง",
+      "เทนนิสลวงตา"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Renji_Yanagi"
+  },
+  {
+    "id": "sengoku-school",
+    "tier": "medium",
+    "prompt": "เซนโงคุ คิโยสุมิ เป็นนักเทนนิสของโรงเรียนอะไร?",
+    "answer": "ยามาบุกิ",
+    "decoys": [
+      "ฟุโดมิเนะ",
+      "เซนต์รูดอล์ฟ",
+      "เฮียวเท"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Kiyosumi_Sengoku"
+  },
+  {
+    "id": "mizuki-school",
+    "tier": "medium",
+    "prompt": "มิซึกิ ฮาจิเมะ ผู้วางแผนให้ทีม เป็นนักเทนนิสของโรงเรียนอะไร?",
+    "answer": "เซนต์รูดอล์ฟ",
+    "decoys": [
+      "ยามาบุกิ",
+      "ริคไค",
+      "ฟุโดมิเนะ"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Hajime_Mizuki"
+  },
+  {
+    "id": "shitenhoji-captain",
+    "tier": "medium",
+    "prompt": "ใครเป็นกัปตันโรงเรียนชิเทนโฮจิ?",
+    "answer": "ชิราอิชิ คุราโนะสุเกะ",
+    "decoys": [
+      "โทยามะ คินทาโร่",
+      "จิโทเสะ เซ็นริ",
+      "โอชิทาริ เคนยะ"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Shitenh%C5%8Dji_Junior_High"
+  },
+  {
+    "id": "atobe-tannhauser",
+    "tier": "hard",
+    "prompt": "ลูกเสิร์ฟของอาโตเบะที่ตกแล้วไม่เด้งขึ้นจากพื้นเลย ชื่ออะไร?",
+    "answer": "ทันฮอยเซอร์เสิร์ฟ",
+    "decoys": [
+      "สกั๊ดเสิร์ฟ",
+      "บิ๊กแบง",
+      "ทวิสต์เสิร์ฟ"
+    ],
+    "note": "อาโตเบะใช้ครั้งแรกกับเรียวมะในรอบก่อนรองฯ ระดับประเทศ",
+    "source": "https://princeoftennis.fandom.com/wiki/Tannhauser_Serve"
+  },
+  {
+    "id": "inui-waterfall",
+    "tier": "hard",
+    "prompt": "ลูกเสิร์ฟความเร็วสูงของอินูอิที่ตีจากจุดสูงแล้วพุ่งลงเหมือนน้ำตก ชื่ออะไร?",
+    "answer": "วอเตอร์ฟอล",
+    "decoys": [
+      "สกั๊ดเสิร์ฟ",
+      "บิ๊กแบง",
+      "เลเซอร์บีม"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Sadaharu_Inui/Playing_Style_%26_Techniques"
+  },
+  {
+    "id": "kintaro-mountain-storm",
+    "tier": "hard",
+    "prompt": "ท่าที่คินทาโร่ใช้ในแมตช์หนึ่งแต้มกับเรียวมะ ชื่ออะไร?",
+    "answer": "ซูเปอร์อุลตร้าเกรทดีลิเชียส ไดชาริน ยามะอาราชิ",
+    "decoys": [
+      "บิ๊กแบง",
+      "ฮาโดคิว",
+      "ดั้งค์สแมช"
+    ],
+    "note": "คินทาโร่หมุนตัวเหมือนพายุทอร์นาโดแล้วตบลูกแรงกว่าฮาโดคิวขั้น 108 ของอิชิดะ งิน",
+    "source": "https://princeoftennis.fandom.com/wiki/Super_Ultra_Great_Delicious_Mountain_Storm"
+  },
+  {
+    "id": "hiyoshi-enbu",
+    "tier": "hard",
+    "prompt": "ฮิโยชิ วาคาชิ แห่งเฮียวเท เล่นเทนนิสสไตล์ไหน?",
+    "answer": "เอ็นบุเทนนิส",
+    "decoys": [
+      "เทนนิสข้อมูล",
+      "เทนนิสกายกรรม",
+      "เพอร์เฟกต์เทนนิส"
+    ],
+    "note": "มาจากวิชาศิลปะการต่อสู้โบราณของโดโจที่บ้านฮิโยชิ",
+    "source": "https://princeoftennis.fandom.com/wiki/Enbu_Tennis"
+  },
+  {
+    "id": "higa-shukuchiho",
+    "tier": "hard",
+    "prompt": "เทคนิคก้าวเท้าจากศิลปะการต่อสู้ ที่ผู้เล่นฮิงะใช้พุ่งถึงเน็ตได้ในก้าวเดียว ชื่ออะไร?",
+    "answer": "ชุคุจิโฮ",
+    "decoys": [
+      "สปลิตสเต็ป",
+      "อาณาเขตของโออิชิ",
+      "สภาวะไร้ตัวตน"
+    ],
+    "note": "ปกติใช้ได้แค่เดินหน้าถอยหลัง จึงแพ้ลูกที่ตีไปด้านข้าง",
+    "source": "https://princeoftennis.fandom.com/wiki/Shukuchih%C5%8D"
+  },
+  {
+    "id": "tezuka-beats-ryoma",
+    "tier": "hard",
+    "prompt": "ใครเอาชนะเรียวมะในแมตช์ลับที่สนามใต้ทางรถไฟ แล้วบอกให้เขาสร้างเทนนิสของตัวเอง?",
+    "answer": "เทะสึกะ คุนิมิสึ",
+    "decoys": [
+      "ฟูจิ ชูสึเกะ",
+      "ซานาดะ เก็นอิจิโร่",
+      "อาโตเบะ เคย์โกะ"
+    ],
+    "note": "เทะสึกะขอให้เรียวมะเป็นเสาหลักของเซชุน",
+    "source": "https://princeoftennis.fandom.com/wiki/Ryoma_Echizen/History"
+  },
+  {
+    "id": "kai-oji",
+    "tier": "hard",
+    "prompt": "ในระดับประเทศ ผู้เล่นฮิงะคนไหนจงใจตีลูกใส่โค้ชโอจีของร็อกคาคุ จนต้องหามออกจากสนาม?",
+    "answer": "คาอิ ยูจิโร่",
+    "decoys": [
+      "คิเทะ เอชิโร่",
+      "ฮิราโคบะ ริน",
+      "ทานิชิ เคย์"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Oj%C4%AB"
+  },
+  {
+    "id": "nationals-unbeaten",
+    "tier": "hard",
+    "prompt": "ในระดับประเทศ ผู้เล่นเซชุนคนไหนไม่แพ้ใครเลย?",
+    "answer": "เอจิเซ็น เรียวมะ",
+    "decoys": [
+      "เทะสึกะ คุนิมิสึ",
+      "ฟูจิ ชูสึเกะ",
+      "โมโมชิโระ ทาเคชิ"
+    ],
+    "note": "เรียวมะชนะทั้งสามแมตช์ทางการ และเสมอคินทาโร่ในแมตช์หนึ่งแต้ม",
+    "source": "https://princeoftennis.fandom.com/wiki/Ryoma_Echizen/Tennis_Record"
+  },
+  {
+    "id": "fuji-tsubame-gaeshi",
+    "tier": "hard",
+    "prompt": "เคาน์เตอร์ของฟูจิที่ทำให้ลูกกลิ้งไปกับพื้นโดยไม่เด้ง ชื่ออะไร?",
+    "answer": "นางแอ่นหวนกลับ",
+    "decoys": [
+      "พิฆาตหมีสีน้ำตาล",
+      "ปลาวาฬเผือก",
+      "ตบแมลงเม่า"
+    ],
+    "note": "สึบาเมะ กาเอชิ เคาน์เตอร์แรกของทริปเปิลเคาน์เตอร์",
+    "source": "https://princeoftennis.fandom.com/wiki/Triple_Counters"
+  },
+  {
+    "id": "fuji-higuma-otoshi",
+    "tier": "hard",
+    "prompt": "เคาน์เตอร์ของฟูจิที่ใช้รับลูกสแมชของคู่แข่ง ชื่ออะไร?",
+    "answer": "พิฆาตหมีสีน้ำตาล",
+    "decoys": [
+      "นางแอ่นหวนกลับ",
+      "ปลาวาฬเผือก",
+      "ตบแมลงเม่า"
+    ],
+    "note": "ฮิกุมะ โอโตชิ",
+    "source": "https://princeoftennis.fandom.com/wiki/Triple_Counters"
+  },
+  {
+    "id": "fuji-hakugei-wind",
+    "tier": "hard",
+    "prompt": "เคาน์เตอร์ใดของฟูจิที่ต้องอาศัยลมจึงจะใช้ได้?",
+    "answer": "ปลาวาฬเผือก",
+    "decoys": [
+      "นางแอ่นหวนกลับ",
+      "พิฆาตหมีสีน้ำตาล",
+      "ตบแมลงเม่า"
+    ],
+    "note": "ฮาคุเงย์ ใช้ครั้งแรกตอนเจออาคุตางาว่า จิโร่ แห่งเฮียวเท",
+    "source": "https://princeoftennis.fandom.com/wiki/Hakugei"
+  },
+  {
+    "id": "samurai-drive",
+    "tier": "hard",
+    "prompt": "ท่าที่เรียวมะตีลูกกระแทกเชือกตาข่ายจนลูกแตกเป็นสองซีก ชื่ออะไร?",
+    "answer": "ซามูไรไดรฟ์",
+    "decoys": [
+      "ไดรฟ์บี",
+      "ทวิสต์เสิร์ฟ",
+      "แจ็คไนฟ์"
+    ],
+    "note": "เผยชื่อท่าครั้งแรกในแมตช์กับยูคิมูระ",
+    "source": "https://princeoftennis.fandom.com/wiki/Samurai_Drive"
+  },
+  {
+    "id": "muga-no-kyochi",
+    "tier": "hard",
+    "prompt": "สภาวะที่ทำให้เรียวมะใช้ท่าของคนที่เคยเห็นได้โดยไม่รู้ตัว เรียกว่าอะไร?",
+    "answer": "สภาวะไร้ตัวตน",
+    "decoys": [
+      "เทะสึกะโซน",
+      "โหมดปีศาจ",
+      "เทนนิสข้อมูล"
+    ],
+    "note": "มุกะ โนะ เคียวจิ",
+    "source": "https://princeoftennis.fandom.com/wiki/Muga_no_Ky%C5%8Dchi"
+  },
+  {
+    "id": "sanada-furinkazan",
+    "tier": "hard",
+    "prompt": "ชุดท่าไม้ตายของซานาดะที่ตั้งชื่อตามสายลม ป่าไม้ เปลวไฟ ภูผา เรียกว่าอะไร?",
+    "answer": "ฟู ริน คา ซัน",
+    "decoys": [
+      "ทริปเปิลเคาน์เตอร์",
+      "บทเพลงแห่งหายนะ",
+      "เทนนิสข้อมูล"
+    ],
+    "note": "ภายหลังเพิ่มเงา (อิน) และสายฟ้า (ไร)",
+    "source": "https://princeoftennis.fandom.com/wiki/Genichir%C5%8D_Sanada/Playing_Styles_%26_Techniques"
+  },
+  {
+    "id": "yukimura-senses",
+    "tier": "hard",
+    "prompt": "เทนนิสของยูคิมูระ เซอิจิ ทำให้คู่แข่งค่อย ๆ สูญเสียอะไร?",
+    "answer": "ประสาทสัมผัสทั้งห้า",
+    "decoys": [
+      "ความจำ",
+      "แรงตี",
+      "เสียง"
+    ],
+    "note": "คู่แข่งจะตีลูกไม่ได้เพราะรู้สึกเหมือนลูกหายไป",
+    "source": "https://princeoftennis.fandom.com/wiki/Seiichi_Yukimura"
+  },
+  {
+    "id": "niou-illusion",
+    "tier": "hard",
+    "prompt": "ใครในริคไคเลียนแบบท่าและรูปลักษณ์ของผู้เล่นคนอื่นได้อย่างแนบเนียน?",
+    "answer": "นิโอ มาซาฮารุ",
+    "decoys": [
+      "ยางิว ฮิโรชิ",
+      "มารุอิ บุนตะ",
+      "แจ็คกัล คุวาฮาระ"
+    ],
+    "note": "ท่านี้เรียกว่าอิลลูชัน",
+    "source": "https://princeoftennis.fandom.com/wiki/Masaharu_Ni%C5%8D"
+  },
+  {
+    "id": "kirihara-devil",
+    "tier": "hard",
+    "prompt": "ใครในริคไคตาแดงก่ำเมื่อโกรธแล้วเล่นทำร้ายคู่แข่ง?",
+    "answer": "คิริฮาระ อาคายะ",
+    "decoys": [
+      "นิโอ มาซาฮารุ",
+      "มารุอิ บุนตะ",
+      "ยางิว ฮิโรชิ"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Akaya_Kirihara"
+  },
+  {
+    "id": "kabaji-copy",
+    "tier": "hard",
+    "prompt": "คาบาจิ มุเนฮิโระ แห่งเฮียวเท มีความสามารถพิเศษอะไร?",
+    "answer": "ลอกเลียนท่าของคู่แข่งได้",
+    "decoys": [
+      "มองเห็นจุดอ่อนของคู่แข่ง",
+      "เสิร์ฟเร็วที่สุดในทีม",
+      "ใช้ได้ทั้งสองมือเท่ากัน"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Munehiro_Kabaji"
+  },
+  {
+    "id": "ootori-scud-serve",
+    "tier": "hard",
+    "prompt": "ลูกเสิร์ฟความเร็วสูงของโอโทริ โชทาโร่ แห่งเฮียวเท ชื่ออะไร?",
+    "answer": "สกั๊ดเสิร์ฟ",
+    "decoys": [
+      "ทวิสต์เสิร์ฟ",
+      "ลูกเสิร์ฟศูนย์องศา",
+      "ลูกเสิร์ฟล่องหน"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Ch%C5%8Dtar%C5%8D_%C5%8Ctori"
+  },
+  {
+    "id": "kanto-final-ryoma-sanada",
+    "tier": "hard",
+    "prompt": "ในนัดชิงชนะเลิศระดับคันโต เรียวมะเอาชนะใครในซิงเกิ้ล 1?",
+    "answer": "ซานาดะ เก็นอิจิโร่",
+    "decoys": [
+      "ยูคิมูระ เซอิจิ",
+      "ยานางิ เร็นจิ",
+      "คิริฮาระ อาคายะ"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Ryoma_Echizen/Tennis_Record"
+  },
+  {
+    "id": "tezuka-atobe-kanto",
+    "tier": "hard",
+    "prompt": "เทะสึกะแพ้ใครในรอบแรกระดับคันโตจนบาดเจ็บที่ไหล่?",
+    "answer": "อาโตเบะ เคย์โกะ",
+    "decoys": [
+      "ซานาดะ เก็นอิจิโร่",
+      "ทาจิบานะ คิปเป",
+      "เซนโงคุ คิโยสุมิ"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Kunimitsu_Tezuka/Tennis_Record"
+  },
+  {
+    "id": "yukimura-hospital",
+    "tier": "hard",
+    "prompt": "ทำไมยูคิมูระต้องห่างจากทีมไปเกือบทั้งฤดูกาล?",
+    "answer": "ป่วยหนักต้องอยู่โรงพยาบาล",
+    "decoys": [
+      "ถูกพักการแข่งขัน",
+      "ไปเรียนต่อต่างประเทศ",
+      "ข้อเท้าแพลง"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Seiichi_Yukimura"
+  },
+  {
+    "id": "atobe-shaved",
+    "tier": "hard",
+    "prompt": "ตามเดิมพัน อาโตเบะต้องทำอะไรหลังแพ้เรียวมะในรอบก่อนรองฯ ระดับประเทศ?",
+    "answer": "โกนผม",
+    "decoys": [
+      "ลาออกจากกัปตัน",
+      "เลี้ยงข้าวเซชุนทั้งทีม",
+      "วิ่งรอบสนามจนหมดแรง"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Keigo_Atobe"
+  },
+  {
+    "id": "higa-okinawa",
+    "tier": "hard",
+    "prompt": "โรงเรียนฮิงะมาจากจังหวัดไหน?",
+    "answer": "โอกินาว่า",
+    "decoys": [
+      "โอซาก้า",
+      "ชิบะ",
+      "คานางาวะ"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Higa_Junior_High"
+  },
+  {
+    "id": "nationals-semi-opponent",
+    "tier": "hard",
+    "prompt": "เซชุนเจอโรงเรียนไหนในรอบรองชนะเลิศระดับประเทศ?",
+    "answer": "ชิเทนโฮจิ",
+    "decoys": [
+      "ริคไค",
+      "เฮียวเท",
+      "ฮิงะ"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Shitenh%C5%8Dji_Junior_High"
+  },
+  {
+    "id": "nationals-winner",
+    "tier": "hard",
+    "prompt": "โรงเรียนไหนได้แชมป์การแข่งขันระดับประเทศ?",
+    "answer": "เซชุน",
+    "decoys": [
+      "ริคไค",
+      "ชิเทนโฮจิ",
+      "เฮียวเท"
+    ],
+    "note": "ริคไคพลาดแชมป์สมัยที่สามติดต่อกัน",
+    "source": "https://princeoftennis.fandom.com/wiki/Rikkai_Dai_Fuzoku_Chuu"
+  },
+  {
+    "id": "ryoma-beats-yukimura",
+    "tier": "hard",
+    "prompt": "เรียวมะเอาชนะใครในซิงเกิ้ล 1 นัดชิงชนะเลิศระดับประเทศ?",
+    "answer": "ยูคิมูระ เซอิจิ",
+    "decoys": [
+      "ซานาดะ เก็นอิจิโร่",
+      "อาโตเบะ เคย์โกะ",
+      "โทยามะ คินทาโร่"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Ryoma_Echizen/Tennis_Record"
+  },
+  {
+    "id": "kaido-boomerang-snake",
+    "tier": "hard",
+    "prompt": "สเน็คของไคโดที่ลูกโค้งอ้อมเสาเน็ตเข้าสนาม ชื่ออะไร?",
+    "answer": "บูมเมอแรงสเน็ค",
+    "decoys": [
+      "สเน็ค",
+      "ทวิสต์เสิร์ฟ",
+      "แจ็คไนฟ์"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Kaoru_Kaid%C5%8D"
+  },
+  {
+    "id": "marui-tightrope",
+    "tier": "hard",
+    "prompt": "ลูกหยอดของมารุอิ บุนตะ ที่ลูกกลิ้งไปตามสายเน็ตก่อนตกฝั่งคู่แข่ง ชื่ออะไร?",
+    "answer": "ไต่เชือก (สึนะวาตาริ)",
+    "decoys": [
+      "ซามูไรไดรฟ์",
+      "ฮาโดคิว",
+      "นางแอ่นหวนกลับ"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Bunta_Marui"
+  },
+  {
+    "id": "yagyu-laser-beam",
+    "tier": "hard",
+    "prompt": "ลูกตีพุ่งตรงความเร็วสูงของยางิว ฮิโรชิ ชื่ออะไร?",
+    "answer": "เลเซอร์บีม",
+    "decoys": [
+      "สกั๊ดเสิร์ฟ",
+      "คิคุมารุบีม",
+      "ฮาโดคิว"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Hiroshi_Yagy%C5%AB"
+  },
+  {
+    "id": "nationals-before-hyotei",
+    "tier": "hard",
+    "prompt": "ระดับประเทศ ก่อนเจอเฮียวเท เซชุนเอาชนะโรงเรียนไหน?",
+    "answer": "ฮิงะ",
+    "decoys": [
+      "ริคไค",
+      "ชิเทนโฮจิ",
+      "ยามาบุกิ"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Higa_Junior_High"
+  },
+  {
+    "id": "fuji-kagero",
+    "tier": "very-hard",
+    "prompt": "เคาน์เตอร์ท่าที่ 4 ของฟูจิ ที่ดูดสปินทั้งหมดของลูก ใช้ครั้งแรกกับฮิงะ ชื่ออะไร?",
+    "answer": "ตบแมลงเม่า",
+    "decoys": [
+      "ปลาวาฬเผือก",
+      "นางแอ่นหวนกลับ",
+      "พิฆาตหมีสีน้ำตาล"
+    ],
+    "note": "ฟูจิใช้รับลูกยักษ์ฮาบุของฮิราโคบะ ริน",
+    "source": "https://princeoftennis.fandom.com/wiki/Kager%C5%8D_Zutsumi"
+  },
+  {
+    "id": "fuji-hecatoncheires",
+    "tier": "very-hard",
+    "prompt": "เคาน์เตอร์ท่าที่ 5 ของฟูจิ ที่ทำให้ลูกของคู่แข่งจมลงก่อนข้ามเน็ต ใช้ครั้งแรกในรอบรองฯ ระดับประเทศ ชื่ออะไร?",
+    "answer": "ผู้เฝ้าประตูเฮคาตอนไคร์",
+    "decoys": [
+      "ตบแมลงเม่า",
+      "ปลาวาฬเผือก",
+      "นางแอ่นหวนกลับ"
+    ],
+    "note": "คู่แข่งทำลายได้ด้วยลูกกระทบเน็ตที่หมุนสวนทาง",
+    "source": "https://princeoftennis.fandom.com/wiki/Hecatoncheires_no_Monban"
+  },
+  {
+    "id": "sanada-in-rai",
+    "tier": "very-hard",
+    "prompt": "นอกจากลม ป่า ไฟ ภูผา ซานาดะเพิ่มท่าอีกสองท่าในนัดชิงระดับประเทศ คือท่าอะไร?",
+    "answer": "เงา (อิน) กับ สายฟ้า (ไร)",
+    "decoys": [
+      "ฟ้า กับ ดิน",
+      "น้ำ กับ น้ำแข็ง",
+      "ดาบ กับ โล่"
+    ],
+    "note": "รวมเป็น ฟู ริน คา อิน ซัน ไร",
+    "source": "https://princeoftennis.fandom.com/wiki/Lightning_(Rai)"
+  },
+  {
+    "id": "yanagi-kamaitachi",
+    "tier": "very-hard",
+    "prompt": "ลูกสไลซ์ความเร็วสูงของยานางิ เร็นจิ ที่จมลงกะทันหันตรงเส้นหลัง ชื่ออะไร?",
+    "answer": "คามาอิทาจิ",
+    "decoys": [
+      "เลเซอร์บีม",
+      "ไต่เชือก (สึนะวาตาริ)",
+      "ฮาบุ"
+    ],
+    "note": "เรียวมะลอกท่านี้ได้ในภายหลัง",
+    "source": "https://princeoftennis.fandom.com/wiki/Renji_Yanagi"
+  },
+  {
+    "id": "golden-pair-synchro",
+    "tier": "very-hard",
+    "prompt": "คู่ทองคำเข้าสู่ “ซิงโคร” ครั้งแรกในแมตช์กับคู่ไหน?",
+    "answer": "ชิชิโดะ เรียว กับ โอโทริ โชทาโร่",
+    "decoys": [
+      "มารุอิ บุนตะ กับ แจ็คคัล คุวาฮาระ",
+      "นิโอ มาซาฮารุ กับ ยางิว ฮิโรชิ",
+      "โอชิทาริ ยูชิ กับ มุคาฮิ งาคุโตะ"
+    ],
+    "note": "เกิดในรอบก่อนรองฯ ระดับประเทศ ตอนเฮียวเทนำอยู่และมีแมตช์พอยต์",
+    "source": "https://princeoftennis.fandom.com/wiki/Synchronization"
+  },
+  {
+    "id": "kaido-lost-both-finals",
+    "tier": "very-hard",
+    "prompt": "ผู้เล่นเซชุนคนไหนแพ้ริคไคทั้งในนัดชิงระดับคันโตและนัดชิงระดับประเทศ?",
+    "answer": "ไคโด คาโอรุ",
+    "decoys": [
+      "อินูอิ ซาดาฮารุ",
+      "คิคุมารุ เอจิ",
+      "โมโมชิโระ ทาเคชิ"
+    ],
+    "note": "ระดับคันโตคู่กับโมโมชิโระ ระดับประเทศคู่กับอินูอิ",
+    "source": "https://princeoftennis.fandom.com/wiki/Rikkaidai_vs_Seigaku"
+  },
+  {
+    "id": "oishi-no-singles",
+    "tier": "very-hard",
+    "prompt": "ตัวจริงเซชุนคนไหนไม่เคยลงแข่งประเภทเดี่ยวในการแข่งขันทางการเลย?",
+    "answer": "โออิชิ ชูอิจิโร่",
+    "decoys": [
+      "คิคุมารุ เอจิ",
+      "อินูอิ ซาดาฮารุ",
+      "คาวามูระ ทาคาชิ"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Sh%C5%ABichir%C5%8D_%C5%8Cishi"
+  },
+  {
+    "id": "shiraishi-entaku",
+    "tier": "very-hard",
+    "prompt": "สแมชของชิราอิชิที่ตีด้วยขอบแร็กเกตจนลูกหมุนวนเป็นวงโดยไม่เด้ง ชื่ออะไร?",
+    "answer": "เอ็นทาคุช็อต",
+    "decoys": [
+      "บทเพลงแห่งหายนะ",
+      "ซีโร่ชิกิ ดร็อปช็อต",
+      "คูลไดรฟ์"
+    ],
+    "note": "ใช้ครั้งแรกในรอบรองฯ ระดับประเทศ",
+    "source": "https://princeoftennis.fandom.com/wiki/Entaku_Shot"
+  },
+  {
+    "id": "tezuka-phantom",
+    "tier": "very-hard",
+    "prompt": "ท่าที่กลับด้านกับเทะสึกะโซน ทำให้ลูกของคู่แข่งออกนอกสนามทุกลูก ชื่ออะไร?",
+    "answer": "เทะสึกะแฟนท่อม",
+    "decoys": [
+      "เทะสึกะโซน",
+      "ซามูไรไดรฟ์",
+      "อาณาจักรน้ำแข็ง"
+    ],
+    "note": "เทะสึกะใช้ท่านี้กับซานาดะในนัดชิงระดับประเทศ แม้จะทำร้ายแขนตัวเอง",
+    "source": "https://princeoftennis.fandom.com/wiki/Kunimitsu_Tezuka/Playing_Style_%26_Techniques"
+  },
+  {
+    "id": "tezuka-hyakuren",
+    "tier": "very-hard",
+    "prompt": "ประตูขั้นสูงสุดของสภาวะไร้ตัวตนที่เทะสึกะเปิดได้ ชื่ออะไร?",
+    "answer": "ฮยาคุเร็น จิโทคุ โนะ คิวามิ",
+    "decoys": [
+      "ไซกิ คัมปัตสึ โนะ คิวามิ",
+      "เท็นอิ มุโฮ โนะ คิวามิ",
+      "ฟู ริน คา ซัน"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Muga_no_Ky%C5%8Dchi"
+  },
+  {
+    "id": "chitose-saiki-kanpatsu",
+    "tier": "very-hard",
+    "prompt": "ผู้เล่นชิเทนโฮจิคนใดเปิดประตูไซกิ คัมปัตสึ โนะ คิวามิ ได้?",
+    "answer": "จิโทเสะ เซ็นริ",
+    "decoys": [
+      "ชิราอิชิ คุราโนะสุเกะ",
+      "โทยามะ คินทาโร่",
+      "โอชิทาริ เคนยะ"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Senri_Chitose"
+  },
+  {
+    "id": "kyushu-shishigaku",
+    "tier": "very-hard",
+    "prompt": "ก่อนย้ายโรงเรียน ทาจิบานะ คิปเป กับจิโทเสะ เซ็นริ เคยเล่นให้โรงเรียนไหน?",
+    "answer": "ชิชิงาคุ",
+    "decoys": [
+      "ชิเทนโฮจิ",
+      "ฮิงะ",
+      "ยามาบุกิ"
+    ],
+    "note": "ทั้งคู่ได้ฉายาว่า “สองปีกแห่งคิวชู”",
+    "source": "https://princeoftennis.fandom.com/wiki/Kippei_Tachibana"
+  },
+  {
+    "id": "tachibana-abare-dama",
+    "tier": "very-hard",
+    "prompt": "ลูกตีของทาจิบานะ คิปเป ที่วิถีลูกส่ายจนดูเหมือนแยกเป็นหลายลูก ชื่ออะไร?",
+    "answer": "อาบาเระดามะ",
+    "decoys": [
+      "ฮาโดคิว",
+      "สปอต",
+      "สเน็ค"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Kippei_Tachibana"
+  },
+  {
+    "id": "yuta-twist-spin-shot",
+    "tier": "very-hard",
+    "prompt": "ท่าที่มิซึกิ ฮาจิเมะ สอนฟูจิ ยูตะ จนเสี่ยงไหล่พัง ชื่ออะไร?",
+    "answer": "ทวิสต์สปินช็อต",
+    "decoys": [
+      "ทวิสต์เสิร์ฟ",
+      "แจ็คไนฟ์",
+      "สกั๊ดเสิร์ฟ"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Y%C5%ABta_Fuji"
+  },
+  {
+    "id": "atobe-rondo",
+    "tier": "very-hard",
+    "prompt": "สแมชของอาโตเบะที่ตีโดนด้ามแร็กเกตคู่แข่งให้หลุดมือก่อนปิดแต้ม ชื่ออะไร?",
+    "answer": "บทเพลงแห่งหายนะ",
+    "decoys": [
+      "อาณาจักรน้ำแข็ง",
+      "ดั้งค์สแมช",
+      "พิฆาตหมีสีน้ำตาล"
+    ],
+    "note": "ฮาเมตสึ เอะ โนะ รอนโด",
+    "source": "https://princeoftennis.fandom.com/wiki/Keigo_Atobe"
+  },
+  {
+    "id": "atobe-ice-world",
+    "tier": "very-hard",
+    "prompt": "ท่าที่อาโตเบะมองเห็นจุดบอดของคู่แข่งเหมือนแช่แข็งร่างคู่แข่งไว้ ชื่ออะไร?",
+    "answer": "อาณาจักรน้ำแข็ง",
+    "decoys": [
+      "บทเพลงแห่งหายนะ",
+      "เทะสึกะโซน",
+      "สภาวะไร้ตัวตน"
+    ],
+    "note": "พัฒนาต่อจากอินไซท์ ท่ามองจุดอ่อนของร่างกายคู่แข่ง",
+    "source": "https://princeoftennis.fandom.com/wiki/Keigo_Atobe"
+  },
+  {
+    "id": "oshitari-higuma",
+    "tier": "very-hard",
+    "prompt": "ผู้เล่นเฮียวเทคนใดใช้พิฆาตหมีสีน้ำตาลเหมือนฟูจิได้?",
+    "answer": "โอชิทาริ ยูชิ",
+    "decoys": [
+      "มุคาฮิ งาคุโตะ",
+      "ชิชิโดะ เรียว",
+      "ฮิโยชิ วาคาชิ"
+    ],
+    "note": "อาโตเบะก็ลอกท่านี้มาใช้กับเรียวมะในระดับประเทศ",
+    "source": "https://princeoftennis.fandom.com/wiki/Y%C5%ABshi_Oshitari"
+  },
+  {
+    "id": "mukahi-acrobatic",
+    "tier": "very-hard",
+    "prompt": "มุคาฮิ งาคุโตะ แห่งเฮียวเท เล่นเทนนิสสไตล์ไหน?",
+    "answer": "เทนนิสกายกรรม",
+    "decoys": [
+      "เทนนิสข้อมูล",
+      "เทนนิสพลัง",
+      "เทนนิสลวงตา"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Gakuto_Mukahi"
+  },
+  {
+    "id": "shishido-haircut",
+    "tier": "very-hard",
+    "prompt": "หลังแพ้ทาจิบานะจนหลุดจากตัวจริง ชิชิโดะ เรียว ทำอะไรเพื่อขอกลับมาเป็นตัวจริง?",
+    "answer": "ตัดผมยาวของตัวเองทิ้ง",
+    "decoys": [
+      "ท้าดวลกับอาโตเบะ",
+      "ย้ายไปเล่นคู่กับคาบาจิ",
+      "ขอลาออกจากชมรม"
+    ],
+    "note": "เขาฝึกรับลูกเสิร์ฟของโอโทริจนตัวเต็มไปด้วยแผล",
+    "source": "https://princeoftennis.fandom.com/wiki/Ry%C5%8D_Shishido"
+  },
+  {
+    "id": "kanto-final-fuji-kirihara",
+    "tier": "very-hard",
+    "prompt": "ในนัดชิงชนะเลิศระดับคันโต ฟูจิเอาชนะผู้เล่นริคไคคนไหน?",
+    "answer": "คิริฮาระ อาคายะ",
+    "decoys": [
+      "ยานางิ เร็นจิ",
+      "นิโอ มาซาฮารุ",
+      "มารุอิ บุนตะ"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Sh%C5%ABsuke_Fuji/Tennis_Record"
+  },
+  {
+    "id": "tezuka-sanada-final",
+    "tier": "very-hard",
+    "prompt": "ในนัดชิงชนะเลิศระดับประเทศ เทะสึกะแพ้ให้ใคร?",
+    "answer": "ซานาดะ เก็นอิจิโร่",
+    "decoys": [
+      "ยูคิมูระ เซอิจิ",
+      "ยานางิ เร็นจิ",
+      "นิโอ มาซาฮารุ"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Kunimitsu_Tezuka/Tennis_Record"
+  },
+  {
+    "id": "fuji-shiraishi",
+    "tier": "very-hard",
+    "prompt": "ฟูจิแพ้ให้ใครในรอบรองชนะเลิศระดับประเทศ?",
+    "answer": "ชิราอิชิ คุราโนะสุเกะ",
+    "decoys": [
+      "โทยามะ คินทาโร่",
+      "จิโทเสะ เซ็นริ",
+      "นิโอ มาซาฮารุ"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Sh%C5%ABsuke_Fuji/Tennis_Record"
+  },
+  {
+    "id": "kawamura-gin",
+    "tier": "very-hard",
+    "prompt": "ในรอบรองฯ ระดับประเทศ คาวามูระดวลฮาโดคิวกับใคร?",
+    "answer": "อิชิดะ งิน",
+    "decoys": [
+      "อิชิดะ เท็ตสึ",
+      "จิโทเสะ เซ็นริ",
+      "โอชิทาริ เคนยะ"
+    ],
+    "note": "งินเป็นพี่ชายของอิชิดะ เท็ตสึ แห่งฟุโดมิเนะ",
+    "source": "https://princeoftennis.fandom.com/wiki/Takashi_Kawamura"
+  },
+  {
+    "id": "ryoma-kintaro-draw",
+    "tier": "very-hard",
+    "prompt": "แมตช์หนึ่งแต้มระหว่างเรียวมะกับคินทาโร่จบอย่างไร?",
+    "answer": "เสมอกัน",
+    "decoys": [
+      "เรียวมะชนะ",
+      "คินทาโร่ชนะ",
+      "ยกเลิกเพราะฝนตก"
+    ],
+    "note": "ลูกแตกครึ่ง ตกฝั่งละซีก",
+    "source": "https://princeoftennis.fandom.com/wiki/Ryoma_Echizen/Tennis_Record"
+  },
+  {
+    "id": "ryoma-ranking-inui",
+    "tier": "very-hard",
+    "prompt": "ในการคัดตัวจริงครั้งแรก นอกจากไคโดแล้ว เรียวมะเอาชนะตัวจริงคนไหน?",
+    "answer": "อินูอิ ซาดาฮารุ",
+    "decoys": [
+      "เทะสึกะ คุนิมิสึ",
+      "ฟูจิ ชูสึเกะ",
+      "คิคุมารุ เอจิ"
+    ],
+    "note": "อินูอิเสียตำแหน่งตัวจริงให้เรียวมะ",
+    "source": "https://princeoftennis.fandom.com/wiki/Ryoma_Echizen/Tennis_Record"
+  },
+  {
+    "id": "inui-yanagi-childhood",
+    "tier": "very-hard",
+    "prompt": "สมัยประถม อินูอิเคยเล่นคู่กับใคร?",
+    "answer": "ยานางิ เร็นจิ",
+    "decoys": [
+      "ไคโด คาโอรุ",
+      "เทะสึกะ คุนิมิสึ",
+      "มิสึกิ ฮาจิเมะ"
+    ],
+    "note": "ทั้งคู่เป็นนักเทนนิสข้อมูล",
+    "source": "https://princeoftennis.fandom.com/wiki/Sadaharu_Inui"
+  },
+  {
+    "id": "higa-captain",
+    "tier": "very-hard",
+    "prompt": "ใครเป็นกัปตันโรงเรียนฮิงะ?",
+    "answer": "คิเทะ เอชิโร่",
+    "decoys": [
+      "คาอิ ยูจิโร่",
+      "ทานิชิ เคอิ",
+      "ฮิราโคบะ ริน"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Higa_Junior_High"
+  },
+  {
+    "id": "kirihara-knuckle-serve",
+    "tier": "very-hard",
+    "prompt": "ลูกเสิร์ฟของคิริฮาระที่เด้งพุ่งเข้าหาตัวคู่แข่ง ชื่ออะไร?",
+    "answer": "ลูกเสิร์ฟนัคเคิล",
+    "decoys": [
+      "ทวิสต์เสิร์ฟ",
+      "สกั๊ดเสิร์ฟ",
+      "ลูกเสิร์ฟล่องหน"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Akaya_Kirihara"
+  },
+  {
+    "id": "hyotei-host-wildcard",
+    "tier": "very-hard",
+    "prompt": "แม้จะตกรอบระดับคันโต เฮียวเทได้ไปแข่งระดับประเทศเพราะอะไร?",
+    "answer": "ได้สิทธิ์พิเศษจากการเป็นเจ้าภาพ",
+    "decoys": [
+      "ชนะรอบแก้ตัว",
+      "ทีมอื่นถอนตัว",
+      "ได้คะแนนสะสมสูงสุด"
+    ],
+    "source": "https://princeoftennis.fandom.com/wiki/Hyotei_Academy"
+  }
+]

@@ -9,6 +9,8 @@ export interface QuizQuestion {
   readonly note?: string;
   /** An https page that confirms the answer. */
   readonly source: string;
+  /** A short quote from `source` that confirms the answer, for review only. */
+  readonly evidence?: string;
 }
 
 /** Keyed by id, so a duplicate id is a compile error. Ids stay stable so a saved play survives a reordered bank. */

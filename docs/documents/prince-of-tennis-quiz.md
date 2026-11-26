@@ -7,7 +7,7 @@ How the quiz คุณรู้จัก Prince of Tennis ดีแค่ไห�
 
 ## Question shape
 
-The bank is `src/games/prince-of-tennis/bank.ts`, an object keyed by question id, so a duplicate id is a compile error. The type is in `question.ts`:
+The bank is `src/games/prince-of-tennis/questions.json`, an array with one object per question: its `id` plus the fields below. `bank.ts` reads it with `parseQuestions` into a bank keyed by id, and throws on a question of the wrong shape or a repeated id, so a bad edit fails the tests and the build. The type is in `question.ts`:
 
 ```ts
 type Tier = "easy" | "medium" | "hard" | "very-hard";
@@ -19,6 +19,7 @@ interface QuizQuestion {
   readonly decoys: readonly [string, string, string];
   readonly note?: string;    // one line shown after the answer
   readonly source: string;   // https page that confirms the answer
+  readonly evidence?: string; // a short quote from source, for review only
 }
 ```
 
@@ -88,9 +89,9 @@ The same rules as the games' saved play (`play-screen.md`), in the quiz's own `r
 ## How to add a question
 
 1. Find a page that confirms the answer, such as the Prince of Tennis wiki or Wikipedia. Keep to the manga, the TV anime and the National Tournament OVAs, up to the end of the National Tournament.
-2. Add an entry to `bank.ts` under a new, stable id. Never reuse or rename an id.
+2. Add an object to `questions.json` with a new, stable `id`. Never reuse or rename an id.
 3. Ask only about moves and special moves, schools, or story events. Don't ask about birthdays, numbers, scores or personal trivia (family, pets, hobbies, food).
 4. Write the prompt, the answer and three plausible decoys in the spellings Thai fans use.
-5. If an option is a Japanese technique name, or a Thai translation of one, add its romaji, kanji and English name to `GLOSSES` in `glosses.ts`, keyed by the exact label. Under the option they show as two lines, `Romaji, 漢字` then the English name, and the same under the right answer in เฉลย.
-6. Set the tier, and the page's URL as `source`. Add a one-line `note` if it makes the reveal better.
+5. If an option is a Japanese technique name, or a Thai translation of one, add its `romaji`, `kanji` and `english` names to `glossary.json`, keyed by the exact label. `glosses.ts` reads it as `GLOSSES`. Under the option they show as two lines, `Romaji, 漢字` then the English name, and the same under the right answer in เฉลย.
+6. Set the tier, the page's URL as `source`, and a short quote from that page as `evidence`. Add a one-line `note` if it makes the reveal better.
 7. Run `bun test src/games/prince-of-tennis`.
