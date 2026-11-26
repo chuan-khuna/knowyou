@@ -1,6 +1,6 @@
 # Spec: Hold the answers until the end of a quiz
 
-Status: ready-for-agent
+Status: done
 
 A change to every **Quiz** title (Prince of Tennis and Naruto). Terms follow `GLOSSARY.md`. The quiz screen is described in `docs/documents/quiz.md`.
 
@@ -46,3 +46,7 @@ Taken without asking, per `CLAUDE.md`. Veto any of these by editing this list.
 - The running score is hidden too, because it would show whether each answer was right.
 - The answer sound is the neutral `answer` cue, because `right` and `wrong` would give the answer away.
 - The result screen keeps its current shape: score, fan title, then เฉลย.
+
+## Comments
+
+- 2026-11-26: Committed to main as 4257496.
