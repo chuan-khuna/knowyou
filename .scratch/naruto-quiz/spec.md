@@ -92,3 +92,7 @@ Taken without asking, per `CLAUDE.md`. Veto any of these by editing this list.
 - The fan titles are the ninja ranks in the table above. Change the wording freely.
 - The supplied bank ships as it is, with no review gate: the user researched it, and every question carries a source and evidence.
 - The Prince of Tennis quiz moves onto the shared module in the same change, with no change a player can see.
+
+## Comments
+
+- 2026-11-26: The user sent a revised bank that uses Thai names for jutsu, eyes, swords and elements, such as กระสุนวงจักร, พันปักษา, เนตรวงแหวน and ดาบหนังฉลาม. It keeps the same 67 ids, changes 30 questions, and has 42 glosses. It replaced the first bank as it is.

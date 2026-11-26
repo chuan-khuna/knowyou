@@ -58,9 +58,9 @@
     "prompt": "คาคาชิมีฉายาที่รู้จักกันทั่วไปว่าอะไร?",
     "answer": "นินจาก๊อปปี้",
     "decoys": [
-      "แสงสีเหลืองแห่งโคโนฮะ",
-      "ปีศาจแห่งหมู่บ้านหมอก",
-      "อสูรเขียวแห่งโคโนฮะ"
+      "ประกายแสงสีเหลืองแห่งโคโนฮะ",
+      "อสูรกายที่ซ่อนอยู่ในหมอก",
+      "สัตว์ร้ายสีเขียวผู้ทรนงแห่งโคโนฮะ"
     ],
     "source": "https://naruto.fandom.com/wiki/Kakashi_Hatake",
     "evidence": "Famed as Kakashi of the Sharingan (写輪眼のカカシ, Sharingan no Kakashi) and the Copy Ninja (コピー忍者, Kopī Ninja)"
@@ -69,11 +69,11 @@
     "id": "hyuga-byakugan",
     "tier": "easy",
     "prompt": "ดวงตาพิเศษประจำตระกูลฮิวงะชื่ออะไร?",
-    "answer": "เบียคุกัง",
+    "answer": "เนตรสีขาว",
     "decoys": [
-      "ชาริงัน",
-      "รินเนกัง",
-      "มังเงะเคียวชาริงัน"
+      "เนตรวงแหวน",
+      "เนตรสังสาระ",
+      "เนตรวงแหวนกระจกเงาหมื่นบุปผา"
     ],
     "source": "https://naruto.fandom.com/wiki/Byakugan",
     "evidence": "the Byakugan became more commonly associated with the Hyūga clan"
@@ -95,7 +95,7 @@
   {
     "id": "naruto-rasengan-teacher",
     "tier": "easy",
-    "prompt": "ใครสอนราเซ็นกันให้นารูโตะ?",
+    "prompt": "ใครสอนกระสุนวงจักรให้นารูโตะ?",
     "answer": "จิไรยะ",
     "decoys": [
       "สึนาเดะ",
@@ -109,11 +109,11 @@
     "id": "sasuke-chidori",
     "tier": "easy",
     "prompt": "ในเดือนก่อนรอบสุดท้ายของการสอบจูนิน ซาสึเกะฝึกคาถาอะไร?",
-    "answer": "จิโดริ",
+    "answer": "พันปักษา",
     "decoys": [
-      "ราเซ็นกัน",
-      "โกคาคิว",
-      "คาเงะมาเนะ"
+      "กระสุนวงจักร",
+      "คาถาเพลิงลูกไฟยักษ์",
+      "คาถาเงาเลียนแบบ"
     ],
     "source": "https://naruto.fandom.com/wiki/Kakashi_Hatake",
     "evidence": "In order to give Sasuke an alternative to the cursed seal's power, Kakashi spends a month teaching him the Chidori."
@@ -122,11 +122,11 @@
     "id": "naruto-shadow-clone",
     "tier": "easy",
     "prompt": "คาถาประจำตัวคาถาแรกของนารูโตะ ที่เขาเรียนจากคัมภีร์ผนึก ชื่ออะไร?",
-    "answer": "คาเงะบุนชิน",
+    "answer": "คาถาแยกเงาพันร่าง",
     "decoys": [
-      "ราเซ็นกัน",
-      "คาเงะมาเนะ",
-      "จิโดริ"
+      "กระสุนวงจักร",
+      "คาถาเงาเลียนแบบ",
+      "พันปักษา"
     ],
     "source": "https://naruto.fandom.com/wiki/Naruto_Uzumaki",
     "evidence": "Naruto's first trademark technique was the Shadow Clone Technique. While originally failing constantly with a basic illusionary clone, after briefly studying the Scroll of Seals, he learned to create shadow clones on a mass scale."
@@ -135,11 +135,11 @@
     "id": "shikamaru-shadow",
     "tier": "easy",
     "prompt": "คาถาประจำตระกูลนาราที่ชิกามารุใช้ตรึงศัตรูด้วยเงา ชื่ออะไร?",
-    "answer": "คาเงะมาเนะ",
+    "answer": "คาถาเงาเลียนแบบ",
     "decoys": [
-      "คาเงะบุนชิน",
-      "โกคาคิว",
-      "จิโดริ"
+      "คาถาแยกเงาพันร่าง",
+      "คาถาเพลิงลูกไฟยักษ์",
+      "พันปักษา"
     ],
     "source": "https://naruto.fandom.com/wiki/Shadow_Imitation_Technique",
     "evidence": "The Shadow Imitation Technique is the signature technique of the Nara clan."
@@ -214,7 +214,7 @@
     "id": "naruto-toads",
     "tier": "easy",
     "prompt": "สัตว์อัญเชิญคู่ใจของนารูโตะคือสัตว์ชนิดไหน?",
-    "answer": "คางคก",
+    "answer": "กบ",
     "decoys": [
       "งู",
       "ทาก",
@@ -226,7 +226,7 @@
   {
     "id": "rasengan-creator",
     "tier": "medium",
-    "prompt": "ใครเป็นผู้คิดค้นราเซ็นกัน?",
+    "prompt": "ใครเป็นผู้คิดค้นกระสุนวงจักร?",
     "answer": "นามิคาเสะ มินาโตะ",
     "decoys": [
       "จิไรยะ",
@@ -252,7 +252,7 @@
   {
     "id": "killer-b-gyuki",
     "tier": "medium",
-    "prompt": "คิลเลอร์บีเป็นจินจูริกิ (ร่างสถิต) ของสัตว์หางตัวไหน?",
+    "prompt": "คิลเลอร์บีเป็นพลังสถิตร่างของสัตว์หางตัวไหน?",
     "answer": "กิวกิ",
     "decoys": [
       "ชุคาคุ",
@@ -429,20 +429,19 @@
     "id": "haku-ice-release",
     "tier": "medium",
     "prompt": "ฮาคุ ลูกน้องของซาบุสะ ใช้คาถาสายเลือดธาตุไหน?",
-    "answer": "เฮียวตง",
+    "answer": "คาถาน้ำแข็ง",
     "decoys": [
-      "โมคุตง",
-      "โยตง",
-      "ฟุตตง"
+      "คาถาไม้",
+      "คาถาหลอมละลาย",
+      "คาถาเดือดพล่าน"
     ],
-    "note": "เฮียวตงคือธาตุน้ำแข็ง",
     "source": "https://naruto.fandom.com/wiki/Haku",
     "evidence": "Haku of the Ice Release (氷遁の白, Hyōton no Haku)"
   },
   {
     "id": "kakashi-sharingan-gift",
     "tier": "medium",
-    "prompt": "คาคาชิได้ตาชาริงันมาจากใคร?",
+    "prompt": "คาคาชิได้เนตรวงแหวนมาจากใคร?",
     "answer": "อุจิวะ โอบิโตะ",
     "decoys": [
       "อุจิวะ อิทาจิ",
@@ -482,12 +481,12 @@
   {
     "id": "itachi-tsukuyomi",
     "tier": "hard",
-    "prompt": "ในภาคแรก อิทาจิใช้เก็นจุตสึอะไรทำให้คาคาชิหมดสภาพ?",
-    "answer": "สึคุโยมิ",
+    "prompt": "ในภาคแรก อิทาจิใช้คาถาลวงตาอะไรทำให้คาคาชิหมดสภาพ?",
+    "answer": "อ่านจันทรา",
     "decoys": [
-      "อามาเทราสึ",
-      "คามุอิ",
-      "โคโตอามัตสึคามิ"
+      "เทวีสุริยา",
+      "คามุย",
+      "เทพต่างสวรรค์"
     ],
     "source": "https://naruto.fandom.com/wiki/Itachi_Uchiha",
     "evidence": "Itachi quickly proves to be the superior and uses Tsukuyomi to render Kakashi helpless"
@@ -495,11 +494,11 @@
   {
     "id": "kakashi-kamui",
     "tier": "hard",
-    "prompt": "พลังมังเงะเคียวชาริงันของคาคาชิที่ส่งสิ่งต่าง ๆ ไปอีกมิติ ชื่ออะไร?",
-    "answer": "คามุอิ",
+    "prompt": "พลังเนตรวงแหวนกระจกเงาหมื่นบุปผาของคาคาชิที่ส่งสิ่งต่าง ๆ ไปอีกมิติ ชื่ออะไร?",
+    "answer": "คามุย",
     "decoys": [
-      "อามาเทราสึ",
-      "สึคุโยมิ",
+      "เทวีสุริยา",
+      "อ่านจันทรา",
       "อิซานางิ"
     ],
     "source": "https://naruto.fandom.com/wiki/Kamui",
@@ -509,11 +508,11 @@
     "id": "naruto-beats-kakuzu",
     "tier": "hard",
     "prompt": "นารูโตะใช้คาถาใหม่อะไรเอาชนะคาคุสึ?",
-    "answer": "ฟูตง ราเซ็นชูริเคน",
+    "answer": "ดาวกระจายวงจักร",
     "decoys": [
-      "โอดามะ ราเซ็นกัน",
-      "จิโดริ",
-      "คาเงะมาเนะ"
+      "กระสุนวงจักรมหายักษ์",
+      "พันปักษา",
+      "คาถาเงาเลียนแบบ"
     ],
     "source": "https://naruto.fandom.com/wiki/Kakuzu",
     "evidence": "Naruto unveiled his newly developed technique, Wind Release: Rasenshuriken, which Kakuzu recognised to be dangerous if it ever connected with him."
@@ -535,11 +534,11 @@
     "id": "pain-shinra-tensei",
     "tier": "hard",
     "prompt": "คาถาที่เพนใช้ทำลายหมู่บ้านโคโนฮะจนเป็นหลุมยักษ์ ชื่ออะไร?",
-    "answer": "ชินระเทนเซย์",
+    "answer": "ชินระเทนเซ",
     "decoys": [
       "บันโชเทนอิน",
-      "ชิบาคุเทนเซย์",
-      "เอโดะเทนเซย์"
+      "ชิบาคุเท็นเซย์",
+      "คามุย"
     ],
     "source": "https://naruto.fandom.com/wiki/Shinra_Tensei",
     "evidence": "performs a Shinra Tensei that is large enough and powerful enough to reduce Konohagakure to a deep crater"
@@ -573,7 +572,7 @@
   {
     "id": "kabuto-edo-tensei",
     "tier": "hard",
-    "prompt": "ใครใช้เอโดะเทนเซย์ปลุกนินจาที่ตายไปแล้วหลายสิบคนมาเป็นกองทัพในสงครามนินจาครั้งที่สี่?",
+    "prompt": "ใครใช้คาถาสัมภเวสีคืนชีพปลุกนินจาที่ตายไปแล้วหลายสิบคนมาเป็นกองทัพในสงครามนินจาครั้งที่สี่?",
     "answer": "ยาคุชิ คาบุโตะ",
     "decoys": [
       "ซาโซริ",
@@ -613,15 +612,15 @@
   {
     "id": "infinite-tsukuyomi",
     "tier": "hard",
-    "prompt": "เก็นจุตสึที่ต้องสะท้อนดวงตากับดวงจันทร์เพื่อขังคนทั้งโลกไว้ในภาพลวง ชื่ออะไร?",
-    "answer": "มุเก็นสึคุโยมิ",
+    "prompt": "คาถาลวงตาที่ขังคนทั้งโลกไว้ในภาพลวงพร้อมกัน ชื่ออะไร?",
+    "answer": "อ่านจันทรานิรันดร์",
     "decoys": [
-      "ชิบาคุเทนเซย์",
+      "ชิบาคุเท็นเซย์",
       "อิซานามิ",
-      "โคโตอามัตสึคามิ"
+      "เทพต่างสวรรค์"
     ],
     "source": "https://naruto.fandom.com/wiki/Infinite_Tsukuyomi",
-    "evidence": "To cast a genjutsu of this scale, the user's Rinne Sharingan must be reflected off of the moon."
+    "evidence": "…and traps all its inhabitants in a genjutsu."
   },
   {
     "id": "haku-death",
@@ -640,13 +639,12 @@
     "id": "hashirama-wood-release",
     "tier": "hard",
     "prompt": "คาถาสายเลือดที่เซนจู ฮาชิรามะใช้จนเป็นตำนาน ชื่ออะไร?",
-    "answer": "โมคุตง",
+    "answer": "คาถาไม้",
     "decoys": [
-      "เฮียวตง",
-      "โยตง",
-      "ชาคุตง"
+      "คาถาน้ำแข็ง",
+      "คาถาหลอมละลาย",
+      "คาถาเดือดพล่าน"
     ],
-    "note": "โมคุตงคือธาตุไม้",
     "source": "https://naruto.fandom.com/wiki/Wood_Release",
     "evidence": "It was famously used by Hashirama Senju"
   },
@@ -654,11 +652,11 @@
     "id": "minato-hiraishin",
     "tier": "hard",
     "prompt": "คาถาที่วาร์ปไปยังเครื่องหมายที่ทำไว้ล่วงหน้า ซึ่งนามิคาเสะ มินาโตะใช้ทีละหลายสิบจุด ชื่ออะไร?",
-    "answer": "ฮิไรชิน",
+    "answer": "เทพสายฟ้าเหิน",
     "decoys": [
-      "ชุนชิน",
-      "คามุอิ",
-      "คุจิโยเสะ"
+      "คามุย",
+      "คาถาอัญเชิญ",
+      "คาถาแยกเงาพันร่าง"
     ],
     "source": "https://naruto.fandom.com/wiki/Flying_Thunder_God_Technique",
     "evidence": "There is no limit to how many targets can be marked with technique formulas, as Minato Namikaze routinely uses dozens at a time."
@@ -693,12 +691,12 @@
   {
     "id": "shisui-kotoamatsukami",
     "tier": "very-hard",
-    "prompt": "เก็นจุตสึจากมังเงะเคียวชาริงันของอุจิวะ ชิซุย ที่ควบคุมความคิดเป้าหมายโดยไม่รู้ตัว ชื่ออะไร?",
-    "answer": "โคโตอามัตสึคามิ",
+    "prompt": "คาถาลวงตาจากเนตรวงแหวนกระจกเงาหมื่นบุปผาของอุจิวะ ชิซุย ที่ควบคุมความคิดเป้าหมายโดยไม่รู้ตัว ชื่ออะไร?",
+    "answer": "เทพต่างสวรรค์",
     "decoys": [
-      "สึคุโยมิ",
+      "อ่านจันทรา",
       "อิซานามิ",
-      "คามุอิ"
+      "คามุย"
     ],
     "source": "https://naruto.fandom.com/wiki/Kotoamatsukami",
     "evidence": "Kotoamatsukami is the signature dōjutsu of Shisui Uchiha's two Mangekyō Sharingan, which casts a powerful yet subtle mind-controlling genjutsu on a target."
@@ -707,20 +705,20 @@
     "id": "guy-night-guy",
     "tier": "very-hard",
     "prompt": "ท่าเตะสุดท้ายของไมท์ ไกที่ใช้ได้หลังเปิดประตูครบทั้งแปด ชื่ออะไร?",
-    "answer": "ยางาอิ",
+    "answer": "ผีเสื้อราตรี",
     "decoys": [
-      "อาซาคุจาคุ",
-      "ฮิรุโทระ",
-      "โคโนฮะเซ็มปู"
+      "นกยูงยามเช้า",
+      "พยัคฆ์กลางวัน",
+      "ลมหมุนใบไม้"
     ],
-    "note": "อาซาคุจาคุใช้ที่ประตูที่หก ฮิรุโทระที่ประตูที่เจ็ด",
+    "note": "นกยูงยามเช้าใช้ที่ประตูที่หก พยัคฆ์กลางวันที่ประตูที่เจ็ด",
     "source": "https://naruto.fandom.com/wiki/Night_Guy",
     "evidence": "The Night Guy is a forbidden taijutsu of the highest level and can only be performed after opening all Eight Gates."
   },
   {
     "id": "nagato-rinnegan-origin",
     "tier": "very-hard",
-    "prompt": "รินเนกังในตาของนางาโตะเดิมเป็นของใคร?",
+    "prompt": "เนตรสังสาระในตาของนางาโตะเดิมเป็นของใคร?",
     "answer": "อุจิวะ มาดาระ",
     "decoys": [
       "อุจิวะ โอบิโตะ",
@@ -737,8 +735,8 @@
     "answer": "อิซานามิ",
     "decoys": [
       "อิซานางิ",
-      "สึคุโยมิ",
-      "โคโตอามัตสึคามิ"
+      "อ่านจันทรา",
+      "เทพต่างสวรรค์"
     ],
     "source": "https://naruto.fandom.com/wiki/Itachi_Uchiha",
     "evidence": "This creates a sensory loop independent of vision that traps Kabuto in eternal battle; that is Izanami."
@@ -746,12 +744,12 @@
   {
     "id": "danzo-izanagi",
     "tier": "very-hard",
-    "prompt": "คาถาต้องห้ามของตระกูลอุจิวะที่ดันโซใช้ด้วยชาริงันที่ฝังไว้ที่แขน ชื่ออะไร?",
+    "prompt": "คาถาต้องห้ามของตระกูลอุจิวะที่ดันโซใช้ด้วยเนตรวงแหวนที่ฝังไว้ที่แขน ชื่ออะไร?",
     "answer": "อิซานางิ",
     "decoys": [
       "อิซานามิ",
-      "คามุอิ",
-      "สึคุโยมิ"
+      "คามุย",
+      "อ่านจันทรา"
     ],
     "source": "https://naruto.fandom.com/wiki/Danzō_Shimura",
     "evidence": "allowing himself to be experimented on with Hashirama's cells by Orochimaru in order to gain the power to control a tailed beast and extend his use of Izanagi."
@@ -760,11 +758,11 @@
     "id": "sasuke-kirin",
     "tier": "very-hard",
     "prompt": "คาถาที่ซาสึเกะดึงสายฟ้าจริงจากเมฆฝนลงมาโจมตี ชื่ออะไร?",
-    "answer": "คิริน",
+    "answer": "กิเลน",
     "decoys": [
-      "จิโดริ",
-      "โกคาคิว",
-      "อามาเทราสึ"
+      "พันปักษา",
+      "คาถาเพลิงลูกไฟยักษ์",
+      "เทวีสุริยา"
     ],
     "source": "https://naruto.fandom.com/wiki/Kirin",
     "evidence": "Sasuke draws natural lightning directly from thunder clouds to supplement the power of his strike and controls it with chakra."
@@ -785,7 +783,7 @@
   {
     "id": "edo-tensei-creator",
     "tier": "very-hard",
-    "prompt": "ใครเป็นผู้คิดค้นคาถาเอโดะเทนเซย์?",
+    "prompt": "ใครเป็นผู้คิดค้นคาถาสัมภเวสีคืนชีพ?",
     "answer": "เซนจู โทบิรามะ",
     "decoys": [
       "โอโรจิมารุ",
@@ -800,11 +798,11 @@
     "id": "kisame-samehada",
     "tier": "very-hard",
     "prompt": "ดาบของคิซาเมะที่ดูดกินจักระได้ ชื่ออะไร?",
-    "answer": "ซาเมฮาดะ",
+    "answer": "ดาบหนังฉลาม",
     "decoys": [
-      "คุบิคิริโบโจ",
-      "ฮิราเมคาเรย์",
-      "ชิบุกิ"
+      "ดาบสะบั่นหัว",
+      "ดาบคู่ปลาลิ้นหมา",
+      "ดาบระเบิดละอองน้ำ"
     ],
     "source": "https://naruto.fandom.com/wiki/Samehada",
     "evidence": "the real Kisame was hiding within Samehada to infiltrate Kumogakure as a spy before using it to absorb B's chakra"
@@ -813,11 +811,11 @@
     "id": "zabuza-sword",
     "tier": "very-hard",
     "prompt": "ดาบยักษ์ประจำตัวของโมโมจิ ซาบุสะ ชื่ออะไร?",
-    "answer": "คุบิคิริโบโจ",
+    "answer": "ดาบสะบั่นหัว",
     "decoys": [
-      "ซาเมฮาดะ",
-      "ฮิราเมคาเรย์",
-      "ชิบุกิ"
+      "ดาบหนังฉลาม",
+      "ดาบคู่ปลาลิ้นหมา",
+      "ดาบระเบิดละอองน้ำ"
     ],
     "source": "https://naruto.fandom.com/wiki/Kubikiribōchō",
     "evidence": "it became the trademark weapon of Zabuza Momochi during his time as one of the Seven Ninja Swordsmen."
@@ -838,12 +836,12 @@
   {
     "id": "itachi-totsuka",
     "tier": "very-hard",
-    "prompt": "ดาบในซูซาโนโอะของอิทาจิที่ใช้ผนึกโอโรจิมารุ ชื่ออะไร?",
-    "answer": "ดาบโทสึกะ",
+    "prompt": "ดาบในเทพวายุ (ซูซาโนโอะ) ของอิทาจิที่ใช้ผนึกโอโรจิมารุ ชื่ออะไร?",
+    "answer": "ดาบโทซึกะ",
     "decoys": [
       "ดาบคุซานางิ",
-      "ซาเมฮาดะ",
-      "คุบิคิริโบโจ"
+      "ดาบหนังฉลาม",
+      "ดาบสะบั่นหัว"
     ],
     "source": "https://naruto.fandom.com/wiki/Sword_of_Totsuka",
     "evidence": "when he extracted Orochimaru from Sasuke's body and sealed him in the jar"
@@ -854,9 +852,9 @@
     "prompt": "เซียนผู้อาวุโสที่ฝึกโหมดเซียนให้นารูโตะ ชื่ออะไร?",
     "answer": "ฟุคาซาคุ",
     "decoys": [
-      "กามาบุนตะ",
-      "กามาคิจิ",
-      "กามาทัตสึ"
+      "กามะบุนตะ",
+      "กามะคิจิ",
+      "กามะทัตสึ"
     ],
     "source": "https://naruto.fandom.com/wiki/Fukasaku",
     "evidence": "Naruto rapidly progressed through the training stages, earning praise from Fukasaku for so quickly catching up to Jiraiya."

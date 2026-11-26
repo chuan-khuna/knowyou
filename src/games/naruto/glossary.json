@@ -1,25 +1,25 @@
 {
-  "ราเซ็นกัน": {
+  "กระสุนวงจักร": {
     "romaji": "Rasengan",
     "kanji": "螺旋丸",
     "english": "Rasengan"
   },
-  "จิโดริ": {
+  "พันปักษา": {
     "romaji": "Chidori",
     "kanji": "千鳥",
     "english": "Chidori"
   },
-  "คาเงะบุนชิน": {
+  "คาถาแยกเงาพันร่าง": {
     "romaji": "Kage Bunshin no Jutsu",
     "kanji": "影分身の術",
     "english": "Shadow Clone Technique"
   },
-  "คาเงะมาเนะ": {
+  "คาถาเงาเลียนแบบ": {
     "romaji": "Kagemane no Jutsu",
     "kanji": "影真似の術",
     "english": "Shadow Imitation Technique"
   },
-  "โกคาคิว": {
+  "คาถาเพลิงลูกไฟยักษ์": {
     "romaji": "Katon: Gōkakyū no Jutsu",
     "kanji": "火遁・豪火球の術",
     "english": "Fire Release: Great Fireball Technique"
@@ -44,42 +44,42 @@
     "kanji": "封印術",
     "english": "Fūinjutsu"
   },
-  "เบียคุกัง": {
+  "เนตรสีขาว": {
     "romaji": "Byakugan",
     "kanji": "白眼",
     "english": "Byakugan"
   },
-  "ชาริงัน": {
+  "เนตรวงแหวน": {
     "romaji": "Sharingan",
     "kanji": "写輪眼",
     "english": "Sharingan"
   },
-  "รินเนกัง": {
+  "เนตรสังสาระ": {
     "romaji": "Rinnegan",
     "kanji": "輪廻眼",
     "english": "Rinnegan"
   },
-  "มังเงะเคียวชาริงัน": {
+  "เนตรวงแหวนกระจกเงาหมื่นบุปผา": {
     "romaji": "Mangekyō Sharingan",
     "kanji": "万華鏡写輪眼",
     "english": "Mangekyō Sharingan"
   },
-  "สึคุโยมิ": {
+  "อ่านจันทรา": {
     "romaji": "Tsukuyomi",
     "kanji": "月読",
     "english": "Tsukuyomi"
   },
-  "อามาเทราสึ": {
+  "เทวีสุริยา": {
     "romaji": "Amaterasu",
     "kanji": "天照",
     "english": "Amaterasu"
   },
-  "คามุอิ": {
+  "คามุย": {
     "romaji": "Kamui",
     "kanji": "神威",
     "english": "Kamui"
   },
-  "โคโตอามัตสึคามิ": {
+  "เทพต่างสวรรค์": {
     "romaji": "Kotoamatsukami",
     "kanji": "別天神",
     "english": "Kotoamatsukami"
@@ -94,12 +94,12 @@
     "kanji": "イザナギ",
     "english": "Izanagi"
   },
-  "มุเก็นสึคุโยมิ": {
+  "อ่านจันทรานิรันดร์": {
     "romaji": "Mugen Tsukuyomi",
     "kanji": "無限月読",
     "english": "Infinite Tsukuyomi"
   },
-  "ชินระเทนเซย์": {
+  "ชินระเทนเซ": {
     "romaji": "Shinra Tensei",
     "kanji": "神羅天征",
     "english": "Shinra Tensei"
@@ -109,112 +109,97 @@
     "kanji": "万象天引",
     "english": "Banshō Ten'in"
   },
-  "ชิบาคุเทนเซย์": {
+  "ชิบาคุเท็นเซย์": {
     "romaji": "Chibaku Tensei",
     "kanji": "地爆天星",
     "english": "Chibaku Tensei"
   },
-  "เอโดะเทนเซย์": {
-    "romaji": "Kuchiyose: Edo Tensei",
-    "kanji": "口寄せ・穢土転生",
-    "english": "Summoning: Impure World Reincarnation"
-  },
-  "ฟูตง ราเซ็นชูริเคน": {
+  "ดาวกระจายวงจักร": {
     "romaji": "Fūton: Rasenshuriken",
     "kanji": "風遁・螺旋手裏剣",
     "english": "Wind Release: Rasenshuriken"
   },
-  "โอดามะ ราเซ็นกัน": {
+  "กระสุนวงจักรมหายักษ์": {
     "romaji": "Ōdama Rasengan",
     "kanji": "大玉螺旋丸",
     "english": "Big Ball Rasengan"
   },
-  "ยางาอิ": {
+  "ผีเสื้อราตรี": {
     "romaji": "Yagai",
     "kanji": "夜ガイ",
     "english": "Night Guy"
   },
-  "อาซาคุจาคุ": {
+  "นกยูงยามเช้า": {
     "romaji": "Asakujaku",
     "kanji": "朝孔雀",
     "english": "Morning Peacock"
   },
-  "ฮิรุโทระ": {
+  "พยัคฆ์กลางวัน": {
     "romaji": "Hirudora",
     "kanji": "昼虎",
     "english": "Daytime Tiger"
   },
-  "โคโนฮะเซ็มปู": {
+  "ลมหมุนใบไม้": {
     "romaji": "Konoha Senpū",
     "kanji": "木ノ葉旋風",
     "english": "Leaf Whirlwind"
   },
-  "โมคุตง": {
-    "romaji": "Mokuton",
-    "kanji": "木遁",
-    "english": "Wood Release"
-  },
-  "เฮียวตง": {
-    "romaji": "Hyōton",
-    "kanji": "氷遁",
-    "english": "Ice Release"
-  },
-  "โยตง": {
-    "romaji": "Yōton",
-    "kanji": "溶遁",
-    "english": "Lava Release"
-  },
-  "ฟุตตง": {
-    "romaji": "Futton",
-    "kanji": "沸遁",
-    "english": "Boil Release"
-  },
-  "ชาคุตง": {
-    "romaji": "Shakuton",
-    "kanji": "灼遁",
-    "english": "Scorch Release"
-  },
-  "ฮิไรชิน": {
-    "romaji": "Hiraishin no Jutsu",
-    "kanji": "飛雷神の術",
-    "english": "Flying Thunder God Technique"
-  },
-  "ชุนชิน": {
-    "romaji": "Shunshin no Jutsu",
-    "kanji": "瞬身の術",
-    "english": "Body Flicker Technique"
-  },
-  "คุจิโยเสะ": {
+  "คาถาอัญเชิญ": {
     "romaji": "Kuchiyose no Jutsu",
     "kanji": "口寄せの術",
     "english": "Summoning Technique"
   },
-  "คิริน": {
+  "คาถาไม้": {
+    "romaji": "Mokuton",
+    "kanji": "木遁",
+    "english": "Wood Release"
+  },
+  "คาถาน้ำแข็ง": {
+    "romaji": "Hyōton",
+    "kanji": "氷遁",
+    "english": "Ice Release"
+  },
+  "คาถาหลอมละลาย": {
+    "romaji": "Yōton",
+    "kanji": "溶遁",
+    "english": "Lava Release"
+  },
+  "คาถาเดือดพล่าน": {
+    "romaji": "Futton",
+    "kanji": "沸遁",
+    "english": "Boil Release"
+  },
+  "เทพสายฟ้าเหิน": {
+    "romaji": "Hiraishin no Jutsu",
+    "kanji": "飛雷神の術",
+    "english": "Flying Thunder God Technique"
+  },
+  "กิเลน": {
     "romaji": "Kirin",
     "kanji": "麒麟",
     "english": "Kirin"
   },
-  "ซาเมฮาดะ": {
+  "ดาบหนังฉลาม": {
     "romaji": "Samehada",
     "kanji": "鮫肌",
     "english": "Samehada"
   },
-  "คุบิคิริโบโจ": {
+  "ดาบสะบั่นหัว": {
     "romaji": "Kubikiribōchō",
     "kanji": "首斬り包丁",
     "english": "Kubikiribōchō"
   },
-  "ฮิราเมคาเรย์": {
+  "ดาบคู่ปลาลิ้นหมา": {
     "romaji": "Hiramekarei",
     "kanji": "ヒラメカレイ",
     "english": "Hiramekarei"
   },
-  "ชิบุกิ": {
+  "ดาบระเบิดละอองน้ำ": {
     "romaji": "Shibuki",
     "kanji": "シブキ",
     "english": "Shibuki"
   },
-  "ดาบโทสึกะ": {
+  "ดาบโทซึกะ": {
     "romaji": "Totsuka no Tsurugi",
     "kanji": "十拳剣",
     "english": "Sword of Totsuka"
