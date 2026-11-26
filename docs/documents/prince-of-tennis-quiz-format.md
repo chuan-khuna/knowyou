@@ -105,7 +105,7 @@ Write names the way the bank already writes them: family name first, then given 
 
 **Terms.** สเน็ค (บูมเมอแรงสเน็ค), ทันฮอยเซอร์เสิร์ฟ, นัคเคิลเสิร์ฟ, เสิร์ฟล่องหน, เทนนิสข้อมูล (not ดาต้าเทนนิส), อินไซต์.
 
-**Technique names.** Use the Thai translation fans know (นางแอ่นหวนกลับ, อาณาจักรน้ำแข็ง, ลูกถล่มปฐพี, ท่าย่นระยะทาง, เทพบังตา) or a Thai transliteration (อุตสึเซมิ, คามาอิทาจิ). English-named moves keep their English sound in Thai script (ทวิสต์เสิร์ฟ, ดั้งค์สแมช, เลเซอร์บีม). Add the glossary entry either way when the move has a Japanese name.
+**Technique names.** Use the Thai translation fans know (นางแอ่นหวนกลับ, อาณาจักรน้ำแข็ง, ลูกถล่มปฐพี, ท่าย่นระยะทาง, เทพบังตา, จั๊กจั่นลอกคราบ) or a Thai transliteration (คามาอิทาจิ). English-named moves keep their English sound in Thai script (ทวิสต์เสิร์ฟ, ดั้งค์สแมช, เลเซอร์บีม). Add the glossary entry either way when the move has a Japanese name.
 
 ## Existing ids
 
@@ -201,7 +201,7 @@ A snapshot of `src/games/prince-of-tennis/glossary.json` on 2026-11-26 (52 entri
   "อาณาจักรน้ำแข็ง": {"romaji": "Kōri no Sekai", "kanji": "氷の世界", "english": "Ice World"},
   "อาณาเขตของโออิชิ": {"romaji": "Ōishi no Ryōiki", "kanji": "大石の領域", "english": "Ōishi's Territory"},
   "ลูกถล่มปฐพี": {"romaji": "Hadōkyū", "kanji": "波動球", "english": "Wave-Motion Ball"},
-  "อาบาเระดามะ": {"romaji": "Abare Dama", "kanji": "暴れ球", "english": "Wild Ball"},
+  "ลูกคลุ้มคลั่ง": {"romaji": "Abare Dama", "kanji": "暴れ球", "english": "Wild Ball"},
   "ไต่เชือก (สึนะวาตาริ)": {"romaji": "Tsunawatari", "kanji": "綱渡り", "english": "Tightrope Walking"},
   "ดรอปศูนย์สัมบูรณ์": {"romaji": "Zero-Shiki Drop Shot", "kanji": "零式ドロップショット", "english": "Zero-Style Drop Shot"},
   "ซูเปอร์อุลตร้าเกรทดีลิเชียส ไดชาริน ยามะอาราชิ": {"romaji": "Chō Urutora Gurēto Derishasu Daisharin Yama Arashi", "kanji": "超ウルトラグレートデリシャス大車輪山嵐", "english": "Super Ultra Great Delicious Mountain Storm"},
@@ -230,11 +230,11 @@ A snapshot of `src/games/prince-of-tennis/glossary.json` on 2026-11-26 (52 entri
   "อินไซต์": {"romaji": "Insaito", "kanji": "眼力", "english": "Insight"},
   "ปืนใหญ่พยัคฆ์ (โคโฮ)": {"romaji": "Kohō", "kanji": "虎砲", "english": "Tiger Cannon"},
   "สเต็ปตราคิคุมารุ": {"romaji": "Kikumaru-jirushi no Suteppu", "kanji": "菊丸印のステップ", "english": "Seal Step"},
-  "อุตสึเซมิ": {"romaji": "Utsusemi", "kanji": "空蝉", "english": "Cicada"},
+  "จั๊กจั่นลอกคราบ": {"romaji": "Utsusemi", "kanji": "空蝉", "english": "Cicada"},
   "ยิงเสาเหล็ก (เท็ตจูอาเตะ)": {"romaji": "Tetchū Ate", "kanji": "鉄柱当て", "english": "Iron Pole Strike"},
   "นรกเหลื่อมเวลา (จิซะจิโงคุ)": {"romaji": "Jisa Jigoku", "kanji": "時間差地獄", "english": "Temporal Difference Hell"},
-  "ออร่าสัตว์ร้าย": {"romaji": "Mōjū no Ōra", "kanji": "猛獣のオーラ", "english": "Mōjū no Aura"},
-  "อาบาเระจิชิ": {"romaji": "Abare Jishi", "kanji": "あばれ獅子", "english": "Abare Jishi"},
+  "ออร่าสัตว์ป่า": {"romaji": "Mōjū no Ōra", "kanji": "猛獣のオーラ", "english": "Mōjū no Aura"},
+  "ราชสีห์คลั่ง": {"romaji": "Abare Jishi", "kanji": "あばれ獅子", "english": "Abare Jishi"},
   "เทพบังตา": {"romaji": "Kamikakushi", "kanji": "神隠し", "english": "Kamikakushi"},
   "ซูเปอร์ไรซิ่ง": {"romaji": "Chō Raijingu", "kanji": "超ライジング", "english": "Super Rising"},
   "ลูกสั่น (บุเรดามะ)": {"romaji": "Bure Dama", "kanji": "ブレ球", "english": "Blur Ball"},
