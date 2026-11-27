@@ -4,8 +4,9 @@ import Link from "next/link";
 import { useCallback, useEffect, useState, type ReactNode } from "react";
 import type { Cue, Engine, FinishedPlay, Play } from "@/games/engine";
 import { sound } from "@/lib/sound";
-import { ResetButton } from "./reset-button";
-import { SoundToggle } from "./sound-toggle";
+import { ResetButton } from "@/components/reset-button";
+import { SoundToggle } from "@/components/sound-toggle";
+import { ThemeToggle } from "@/components/theme-toggle";
 import { encodePlayRecord, playRecordKey, restorePlay, type GameId, type RevealParser } from "@/lib/play-record";
 
 export interface ResultControls<R> {
@@ -172,8 +173,11 @@ function CueText({ cue }: { cue: Cue }) {
   );
 }
 
-/** `onReset` is given only while a play is in progress; it shows the reset button. */
-export function Shell({ status, onReset, children }: { status?: ReactNode; onReset?: () => void; children: ReactNode }) {
+/**
+ * `onReset` is given only while a play is in progress; it shows the reset button.
+ * `crowded` hides the theme button on a phone, for a status too wide to leave it room.
+ */
+export function Shell({ status, onReset, crowded = false, children }: { status?: ReactNode; onReset?: () => void; crowded?: boolean; children: ReactNode }) {
   return (
     <main className="shell">
       <header className="topbar">
@@ -183,6 +187,7 @@ export function Shell({ status, onReset, children }: { status?: ReactNode; onRes
         <div className="topbar-end">
           {status}
           {onReset ? <ResetButton onReset={onReset} /> : null}
+          <ThemeToggle className={crowded ? "hidden sm:inline-flex" : undefined} />
           <SoundToggle />
         </div>
       </header>

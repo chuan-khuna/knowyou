@@ -7,6 +7,7 @@ One bullet per document: `- Title — one-line summary`.
 - [Province engine design](province-engine.md) — the Province game's facts, question schema, engine, pick questions, maps from Natural Earth, and measured results
 - [Quiz](quiz.md) — the shared quiz module and screen, the question shape, play length and the reveal switch, how a play is drawn, prompt terms, each title's score bands, the saved play, and how to add a title or a question
 - [Shared play screen](play-screen.md) — how the shared play screen runs a play, how a play is saved and restored across a refresh, and the reset button
+- [Theme switch](theme.md) — light and dark through `light-dark()` tokens, the stored choice, the no-flash head script, and where the switch shows
 - [UI sound](sound.md) — the uisfx sounds, the pack, which moment plays which cue, the mute switch, and the licence
 - [University engine design](university-engine.md) — the University game's facts, lean question schema, engine, pick questions, and measured results
 - [Styles](styles.md) — where the CSS lives in src/styles, the load order, and why an override sits after its base rule

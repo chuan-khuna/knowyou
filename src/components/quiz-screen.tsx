@@ -24,7 +24,7 @@ import {
 } from "@/games/quiz";
 import { setRevealOn, useRevealOn } from "@/lib/quiz-reveal";
 import { sound } from "@/lib/sound";
-import { BigButton, PlayAgainBar, Shell } from "./play-screen";
+import { BigButton, PlayAgainBar, Shell } from "@/components/play-screen";
 
 interface QuizScreenProps {
   readonly quiz: Quiz;
@@ -225,7 +225,7 @@ export function QuizScreen({ quiz, title, intro }: QuizScreenProps) {
   if (revealing) {
     const last = current.answered.at(-1)!;
     return (
-      <Shell status={status(last.question.number)} onReset={playAgain}>
+      <Shell status={status(last.question.number)} onReset={playAgain} crowded>
         <QuestionHeading card={last.question} />
         <Reveal answer={last} />
         <BigButton onClick={advance} autoFocus>
@@ -245,7 +245,7 @@ export function QuizScreen({ quiz, title, intro }: QuizScreenProps) {
   }
 
   return (
-    <Shell status={status(current.question.number)} onReset={playAgain}>
+    <Shell status={status(current.question.number)} onReset={playAgain} crowded>
       <QuestionHeading card={current.question} />
       <ol className="mt-6 grid gap-4">
         {current.question.options.map((option, i) => (

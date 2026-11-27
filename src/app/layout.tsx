@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Mali, Noto_Sans_Thai_Looped } from "next/font/google";
-import "../styles/globals.css";
+import { THEME_INIT_SCRIPT } from "@/lib/theme-script";
+import "@/styles/globals.css";
 
 const thai = Noto_Sans_Thai_Looped({
   subsets: ["thai", "latin"],
@@ -27,7 +28,11 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="th" className={`${thai.variable} ${mali.variable}`}>
+    // The head script sets data-theme before hydration, so <html> may differ from the server render.
+    <html lang="th" className={`${thai.variable} ${mali.variable}`} suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
+      </head>
       <body>{children}</body>
     </html>
   );

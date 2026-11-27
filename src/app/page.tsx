@@ -1,6 +1,7 @@
 import { GameLink } from "@/components/game-link";
 import { SiteFooter } from "@/components/site-footer";
 import { SoundToggle } from "@/components/sound-toggle";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 interface Card {
   readonly href: string;
@@ -30,7 +31,10 @@ export default function Home() {
     <main className="shell">
       <header className="topbar">
         <span className="wordmark">KnowYou</span>
-        <SoundToggle />
+        <div className="topbar-end">
+          <ThemeToggle />
+          <SoundToggle />
+        </div>
       </header>
 
       {/* The page still needs a top heading for screen readers; it just isn't shown. */}

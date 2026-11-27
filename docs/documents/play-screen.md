@@ -23,7 +23,7 @@ A play survives a page refresh. The rules live in `src/lib/play-record.ts`, a pu
 
 ## Reset
 
-`src/components/reset-button.tsx` lets a player start over in the middle of a play. `Shell` takes an optional `onReset` and, when it is given, puts the button in the top strip before the sound toggle.
+`src/components/reset-button.tsx` lets a player start over in the middle of a play. `Shell` takes an optional `onReset` and, when it is given, puts the button in the top strip before the theme and sound toggles (`theme.md`).
 
 - **Where it shows.** The asking screen passes `start`, the same start as เริ่มเลย and เล่นอีกครั้ง. The intro and result screens pass nothing, so they have no reset.
 - **Two taps.** Idle, it is an icon button named เริ่มใหม่ with a counter-clockwise arrow. The first tap arms it into เริ่มใหม่? in the accent, at the same 44px height. A second tap within 3 seconds calls `onReset`. The timer, or Escape, disarms it. Answering a question does not disarm it.
