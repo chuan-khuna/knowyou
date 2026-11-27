@@ -1,6 +1,6 @@
 # Spec: Ad slot placeholder
 
-Status: ready-for-agent
+Status: done
 
 Terms follow `GLOSSARY.md`. The quiz screens are in `docs/documents/quiz.md` ("Screens and sound"); the shared look is in `docs/documents/styles.md`.
 
@@ -42,3 +42,6 @@ Verify in the real app: the slot shows below the options on a question and on a 
 ## Out of Scope
 
 Real ads, consent banners, other pages.
+
+## Comments
+- 2026-11-27: the slots shipped in PR #4 (merge 8088ed9), showing the mock ads.

@@ -1,6 +1,6 @@
 # Spec: Quiz reset returns to the settings
 
-Status: ready-for-agent
+Status: done
 
 Terms follow `GLOSSARY.md`. The quiz screen is in `docs/documents/quiz.md` ("Screens and sound", Reset bullet); the reset button is `src/components/reset-button.tsx`.
 
@@ -38,3 +38,6 @@ Verify in the real app: start a quiz with ขั้นสูง and a code, answ
 ## Out of Scope
 
 The games' reset; เล่นอีกครั้ง; the reset button's look.
+
+## Comments
+- 2026-11-27: shipped in PR #3 (merge 7af9c1f).

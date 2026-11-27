@@ -1,6 +1,6 @@
 # Bleach quiz
 
-Status: ready-for-agent
+Status: done
 
 Title: คุณรู้จัก Bleach ดีแค่ไหน (บลีช)
 
@@ -15,3 +15,6 @@ Decide whether the Thousand-Year Blood War anime and novels count.
 ## Next step
 
 Run the requirements gate in `CLAUDE.md`: grill, then write `.scratch/bleach-quiz/spec.md` modelled on `.scratch/kuroko-quiz/spec.md`.
+
+## Comments
+- 2026-11-27: shipped in PR #3 (merge 7af9c1f).

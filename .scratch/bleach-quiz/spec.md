@@ -1,6 +1,6 @@
 # Spec: Bleach quiz
 
-Status: ready-for-agent
+Status: done
 
 Terms follow `GLOSSARY.md`. The quiz module and screen are in `docs/documents/quiz.md`, and the data method in `docs/documents/how-to-create-quiz.md`. The Kuroko no Basket title (`.scratch/kuroko-quiz/spec.md`, `src/games/kuroko-no-basket/`) is the model. The backlog ticket is `.scratch/anime-quizzes/issues/04-bleach.md`.
 
@@ -70,3 +70,6 @@ Taken without a grilling round; veto here.
 ## Out of Scope
 
 New quiz features; any change to other titles' banks.
+
+## Comments
+- 2026-11-27: shipped in PR #3 (merge 7af9c1f).

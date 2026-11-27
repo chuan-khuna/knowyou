@@ -48,3 +48,7 @@ Verify in the real app: every spot shows a mock that fills its slot without movi
 ## Out of Scope
 
 A real ad network, rotation, tracking, consent.
+
+## Comments
+
+- 2026-11-27: the mock ads shipped in PR #4 (merge 8088ed9) from a WIP commit; the finished drawn effects follow on branch quiz-ad-slot (1687f68). Set to done when that merges.
