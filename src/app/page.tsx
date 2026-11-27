@@ -13,20 +13,20 @@ interface Card {
 
 /** Games guess a hidden value about the player. In href order. */
 const GAMES: readonly Card[] = [
-  { href: "/anime-age", title: "ทายอายุจากการ์ตูน", blurb: "ตอบว่าคุณรู้จักการ์ตูนเรื่องไหนบ้าง แล้วเกมจะทายอายุคุณ", ready: true },
-  { href: "/province", title: "ทายจังหวัด", blurb: "ตอบเรื่องภาษา อาหาร และประเพณีแถวบ้าน แล้วเกมจะทายจังหวัดคุณ", ready: true },
-  { href: "/university", title: "ทายมหาวิทยาลัย", blurb: "ตอบเรื่องรับน้อง การเดินทาง ที่กิน และงานในมหาวิทยาลัย แล้วเกมจะทายว่าคุณเรียนที่ไหน", ready: true },
+  { href: "/anime-age", title: "ทายอายุจากการ์ตูน", blurb: "การ์ตูนที่เจ้าเคยดูคือรอยจารึกแห่งกาลเวลา ข้าจะอ่านมันแล้วทายอายุของเจ้า", ready: true },
+  { href: "/province", title: "ทายจังหวัด", blurb: "ภาษา อาหาร และประเพณีแถวบ้านจะทรยศเจ้า ข้าจะรู้ว่าเจ้ามาจากจังหวัดใด", ready: true },
+  { href: "/university", title: "ทายมหาวิทยาลัย", blurb: "รับน้อง การเดินทาง ที่กิน และงานในรั้วมหาวิทยาลัยจะทิ้งร่องรอย ข้าจะรู้ว่าเจ้าเคยร่ำเรียนที่ใด", ready: true },
 ];
 
 /** Quizzes ask about one title and end in a score. In href order. */
 const QUIZZES: readonly Card[] = [
-  { href: "/bleach", title: "คุณรู้จัก Bleach ดีแค่ไหน", blurb: "ตอบคำถามแล้วดูว่าคุณเป็นยมทูตระดับไหน", ready: true },
-  { href: "/dragon-ball", title: "คุณรู้จัก Dragon Ball ดีแค่ไหน", blurb: "ตอบคำถามแล้วดูว่าคุณเป็นนักสู้ระดับไหน", ready: true },
-  { href: "/kuroko-no-basket", title: "คุณรู้จัก Kuroko no Basket ดีแค่ไหน", blurb: "ตอบคำถามแล้วดูว่าคุณเป็นผู้เล่นระดับไหน", ready: true },
-  { href: "/naruto", title: "คุณรู้จัก Naruto ดีแค่ไหน", blurb: "ตอบคำถามแล้วดูว่าคุณเป็นนินจาระดับไหน", ready: true },
-  { href: "/prince-of-tennis", title: "คุณรู้จัก Prince of Tennis ดีแค่ไหน", blurb: "ตอบคำถามแล้วดูว่าคุณเป็นแฟนระดับไหน", ready: true },
-  { href: "/reborn", title: "คุณรู้จัก Reborn ดีแค่ไหน", blurb: "ตอบคำถามแล้วดูว่าคุณอยู่ระดับไหนในแฟมิลี่", ready: true },
-  { href: "/solo-leveling", title: "คุณรู้จัก Solo Leveling ดีแค่ไหน", blurb: "ตอบคำถามแล้วดูว่าคุณเป็นฮันเตอร์แรงก์ไหน", ready: true },
+  { href: "/bleach", title: "คุณรู้จัก Bleach ดีแค่ไหน", blurb: "จงปลดปล่อยความรู้ของเจ้า แล้วดูว่าเจ้าคือยมทูตระดับใด", ready: true },
+  { href: "/dragon-ball", title: "คุณรู้จัก Dragon Ball ดีแค่ไหน", blurb: "รวบรวมพลังให้ถึงขีดสุด แล้วดูว่าเจ้าคือนักสู้ระดับใด", ready: true },
+  { href: "/kuroko-no-basket", title: "คุณรู้จัก Kuroko no Basket ดีแค่ไหน", blurb: "ก้าวลงสนามแห่งปาฏิหาริย์ แล้วดูว่าเจ้าคือผู้เล่นระดับใด", ready: true },
+  { href: "/naruto", title: "คุณรู้จัก Naruto ดีแค่ไหน", blurb: "ประสานอินให้มั่น แล้วดูว่าเจ้าคือนินจาระดับใด", ready: true },
+  { href: "/prince-of-tennis", title: "คุณรู้จัก Prince of Tennis ดีแค่ไหน", blurb: "จงลงสนามด้วยความหยิ่งทะนง แล้วดูว่าเจ้าคือแฟนระดับใด", ready: true },
+  { href: "/reborn", title: "คุณรู้จัก Reborn ดีแค่ไหน", blurb: "จุดไฟดับเครื่องชนในตัวเจ้า แล้วดูว่าเจ้ายืนอยู่ตรงไหนในแฟมิลี่", ready: true },
+  { href: "/solo-leveling", title: "คุณรู้จัก Solo Leveling ดีแค่ไหน", blurb: "จงลุกขึ้นจากเงามืด แล้วดูว่าเจ้าคือฮันเตอร์แรงก์ใด", ready: true },
 ];
 
 export default function Home() {
@@ -43,9 +43,9 @@ export default function Home() {
       {/* The page still needs a top heading for screen readers; it just isn't shown. */}
       <h1 className="sr-only">byou</h1>
 
-      <CardSection heading="ทายตัวคุณ" line="เกมจะถามไปเรื่อย ๆ จนมั่นใจ แล้วทายเรื่องของคุณครั้งเดียว" cards={GAMES} />
+      <CardSection heading="ทายตัวคุณ" line="ข้าจะถามจนกว่าม่านแห่งความลับจะเปิดออก แล้วเผยตัวตนของเจ้าเพียงครั้งเดียว" cards={GAMES} />
       <AdsRamen />
-      <CardSection heading="ควิซ" line="ตอบคำถามเรื่องที่คุณชอบ แล้วดูว่าคุณรู้จักดีแค่ไหน" cards={QUIZZES} />
+      <CardSection heading="ควิซ" line="พิสูจน์ความภักดีต่อเรื่องที่เจ้ารัก แล้วรับฉายาที่สมควรแก่เจ้า" cards={QUIZZES} />
       <AdsNightMarket />
 
       <SiteFooter />
