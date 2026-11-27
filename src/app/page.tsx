@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { AdsNightMarket, AdsRamen } from "@/components/ads";
 import { GameLink } from "@/components/game-link";
 import { SiteFooter } from "@/components/site-footer";
@@ -34,7 +35,9 @@ export default function Home() {
   return (
     <main className="shell">
       <header className="topbar">
-        <span className="wordmark">byou</span>
+        <Link href="/" className="wordmark" aria-current="page">
+          byou
+        </Link>
         <div className="topbar-end">
           <ThemeToggle />
           <SoundToggle />
