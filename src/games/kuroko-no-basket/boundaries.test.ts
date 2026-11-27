@@ -13,7 +13,7 @@ test("nothing outside the kuroko-no-basket module imports its internals", async 
       if (path.startsWith(moduleDir)) continue;
       const source = await Bun.file(join(root, file)).text();
       for (const [, spec] of source.matchAll(/from\s+["']([^"']+)["']/g)) {
-        if (/games\/reborn\/./.test(spec!) || /^\.\.?\/.*reborn\/./.test(spec!)) offenders.push(`${path} -> ${spec}`);
+        if (/games\/kuroko-no-basket\/./.test(spec!) || /^\.\.?\/.*kuroko-no-basket\/./.test(spec!)) offenders.push(`${path} -> ${spec}`);
       }
     }
   }
