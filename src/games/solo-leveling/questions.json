@@ -1,0 +1,2557 @@
+[
+  {
+    "id": "jinwoo-weakest-epithet",
+    "tier": "easy",
+    "prompt": "ก่อนจะได้เป็นผู้เล่นของระบบ จินอูถูกขนานนามว่าอะไร?",
+    "answer": "ฮันเตอร์ที่อ่อนแอที่สุดของมวลมนุษยชาติ",
+    "decoys": [
+      "แรงก์ S ในหมู่แรงก์ S",
+      "ฟ้าเหนือฟ้า",
+      "ผู้อัปเกรด"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Sung_Jinwoo",
+    "evidence": "The Weakest Hunter of All Mankind"
+  },
+  {
+    "id": "jinwoo-starting-rank",
+    "tier": "easy",
+    "prompt": "ตอนต้นเรื่อง จินอูเป็นฮันเตอร์แรงก์ใด?",
+    "answer": "แรงก์ E",
+    "decoys": [
+      "แรงก์ D",
+      "แรงก์ C",
+      "แรงก์ B"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Sung_Jinwoo",
+    "evidence": "Originally an infamously weak E-Rank Hunter"
+  },
+  {
+    "id": "jinwoo-sister-name",
+    "tier": "easy",
+    "prompt": "น้องสาวของจินอูชื่ออะไร?",
+    "answer": "ซองจินอา",
+    "decoys": [
+      "ฮันซองอี",
+      "อีจูฮี",
+      "ยูซูฮยอน"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Sung_Jinah",
+    "evidence": "Sung Jinah (성진아) is Jinwoo's younger sister."
+  },
+  {
+    "id": "jinwoo-father-disappearance",
+    "tier": "easy",
+    "prompt": "พ่อของจินอูหายตัวไปตั้งแต่ก่อนเริ่มเรื่องได้อย่างไร?",
+    "answer": "หายตัวไปในดันเจี้ยนระหว่างการบุก",
+    "decoys": [
+      "ถูกฮันเตอร์ด้วยกันฆ่าตาย",
+      "เสียชีวิตจากดันเจี้ยนเบรกกลางเมือง",
+      "ล้มป่วยด้วยโรคร้าย"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Sung_Jinah",
+    "evidence": "her father was presumed dead when he mysteriously disappeared inside a dungeon during a raid."
+  },
+  {
+    "id": "jinwoo-hunter-motive",
+    "tier": "easy",
+    "prompt": "เหตุผลหลักที่จินอูยอมทำงานเป็นฮันเตอร์ทั้งที่อ่อนแอคืออะไร?",
+    "answer": "หาเงินดูแลน้องสาวและจ่ายค่ารักษาแม่",
+    "decoys": [
+      "ต้องการชื่อเสียงและการยอมรับ",
+      "อยากเข้ากิลด์ใหญ่ให้ได้",
+      "ใช้หนี้ที่พ่อทิ้งไว้"
+    ],
+    "note": "แม่ของเขานอนไม่ได้สติอยู่ที่โรงพยาบาลมาหลายปี",
+    "source": "https://solo-leveling.fandom.com/wiki/Hunters",
+    "evidence": "enabled him to financially support both himself and his sister, pay for his mother's medical bills when she was sick with Eternal Slumber"
+  },
+  {
+    "id": "joohee-hunter-class",
+    "tier": "easy",
+    "prompt": "อีจูฮี เพื่อนเก่าของจินอู เป็นฮันเตอร์สายใด?",
+    "answer": "ฮีลเลอร์",
+    "decoys": [
+      "เมจ",
+      "แทงเกอร์",
+      "แอสแซสซิน"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Lee_Joohee",
+    "evidence": "Lee Joohee (이주희) is a Korean B-Rank healer."
+  },
+  {
+    "id": "chiyul-raid-leader",
+    "tier": "easy",
+    "prompt": "ใครเป็นหัวหน้าทีมที่พาฮันเตอร์ทั้งกลุ่มเข้าไปในดันเจี้ยนคู่?",
+    "answer": "ซงชียูล",
+    "decoys": [
+      "คิมซังชิก",
+      "อูจินชอล",
+      "คังจองโฮ"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Song_Chi-Yul",
+    "evidence": "Chi-Yul elected himself as leader for the raid to the hunters that gathered in the area."
+  },
+  {
+    "id": "jinchul-hospital-visit",
+    "tier": "easy",
+    "prompt": "หลังเหตุการณ์ดันเจี้ยนคู่ ใครจากสมาคมฮันเตอร์มาวัดค่ามานาของจินอูที่โรงพยาบาล?",
+    "answer": "อูจินชอล",
+    "decoys": [
+      "คังแทชิก",
+      "โกกอนฮี",
+      "ชเวจงอิน"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Woo_Jinchul",
+    "evidence": "Jinchul visited Jinwoo in the hospital that he was staying at to measure his mana output on the belief that Jinwoo had undergone a reawakening."
+  },
+  {
+    "id": "dongsuk-sealed-chamber",
+    "tier": "easy",
+    "prompt": "ในดันเจี้ยนแรงก์ C ใครพาลูกทีมปิดทางออก ขังจินอูกับจินโฮไว้กับบอส?",
+    "answer": "ฮวังดงซอก",
+    "decoys": [
+      "คังแทชิก",
+      "คิมชอล",
+      "ฮวังดงซู"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Yoo_Jinho",
+    "evidence": "However right after Dongsuk and his hunters left the chamber, they sealed the entrance, trapping the young hunters in with the boss."
+  },
+  {
+    "id": "jinho-hunter-rank",
+    "tier": "easy",
+    "prompt": "ยูจินโฮเป็นฮันเตอร์แรงก์ใด?",
+    "answer": "แรงก์ D",
+    "decoys": [
+      "แรงก์ E",
+      "แรงก์ C",
+      "แรงก์ A"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Yoo_Jinho",
+    "evidence": "Yoo Jinho (유진호) is a Korean D-Rank Hunter."
+  },
+  {
+    "id": "jinho-false-ranker",
+    "tier": "easy",
+    "prompt": "หลังเห็นจินอูฆ่าบอสดันเจี้ยนแรงก์ C ได้คนเดียว จินโฮเชื่อว่าจินอูเป็นอะไร?",
+    "answer": "ฟอลส์แรงเกอร์",
+    "decoys": [
+      "ผู้เล่นของระบบ",
+      "ฮันเตอร์ระดับชาติ",
+      "ฮันเตอร์ที่ตื่นพลังครั้งที่สอง"
+    ],
+    "note": "ฟอลส์แรงเกอร์คือฮันเตอร์ที่คุมมานาให้ถูกวัดแรงก์ต่ำกว่าความจริง",
+    "source": "https://solo-leveling.fandom.com/wiki/Yoo_Jinho",
+    "evidence": "The feat confirmed to Jinho that the other Hunter was a False Ranker."
+  },
+  {
+    "id": "jinho-father-name",
+    "tier": "easy",
+    "prompt": "ยูจินโฮเป็นลูกชายของใคร?",
+    "answer": "ยูมยองฮัน",
+    "decoys": [
+      "โกกอนฮี",
+      "ซองอิลฮวาน",
+      "อีวองยู"
+    ],
+    "note": "ยูมยองฮันเป็นประธานบริษัทยูจินคอนสตรักชัน",
+    "source": "https://solo-leveling.fandom.com/wiki/Yoo_Myunghan",
+    "evidence": "Yoo Myunghan (유명한) is the Chairman of Yoojin Construction and Jinho's father."
+  },
+  {
+    "id": "jinho-raid-goal",
+    "tier": "easy",
+    "prompt": "ยูจินโฮชวนจินอูบุกดันเจี้ยนแรงก์ C ด้วยกันหลายครั้งเพื่ออะไร?",
+    "answer": "เพื่อให้ครบเงื่อนไขขึ้นเป็นหัวหน้ากิลด์",
+    "decoys": [
+      "เพื่อหายารักษาแม่ของจินอู",
+      "เพื่อเลื่อนแรงก์ตัวเองเป็นแรงก์ S",
+      "เพื่อจับตาดูจินอูให้สมาคม"
+    ],
+    "note": "เขาต้องการตั้งกิลด์ให้บริษัทของพ่อ",
+    "source": "https://solo-leveling.fandom.com/wiki/Yoo_Jinho",
+    "evidence": "he had only nineteen raids left to be qualified to be a guild master"
+  },
+  {
+    "id": "jinho-hired-hunters",
+    "tier": "easy",
+    "prompt": "ฮันเตอร์ที่จินโฮจ้างมาให้ครบจำนวนทีมบุก ได้รับเงินเพื่อทำอะไร?",
+    "answer": "รออยู่หน้าประตูเฉยๆ",
+    "decoys": [
+      "ขุดผลึกมานาในดันเจี้ยน",
+      "เป็นแนวหน้าคอยล่อมอนสเตอร์",
+      "คุ้มกันจินโฮระหว่างบุก"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Yoo_Jinho",
+    "evidence": "The gathered hunters were credulous that they would be given 2 million won just to wait outside the Gate."
+  },
+  {
+    "id": "taeshik-surveillance-killer",
+    "tier": "easy",
+    "prompt": "เจ้าหน้าที่ทีมตรวจการของสมาคมที่แอบรับจ้างฆ่านักโทษในดันเจี้ยนคือใคร?",
+    "answer": "คังแทชิก",
+    "decoys": [
+      "อูจินชอล",
+      "ฮวังดงซอก",
+      "คิมซังชิก"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Kang_Taeshik",
+    "evidence": "Kang Taeshik (강태식) was a B-Rank Hunter who worked as an inspector for the Korean Hunters Association's Surveillance Team and a hitman for hire."
+  },
+  {
+    "id": "songyi-drops-out",
+    "tier": "easy",
+    "prompt": "ฮันเตอร์สาววัยมัธยมที่ลาออกจากโรงเรียนมารับงานกับยูจินโฮคือใคร?",
+    "answer": "ฮันซองอี",
+    "decoys": [
+      "อีจูฮี",
+      "ยูซูฮยอน",
+      "พัคฮีจิน"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Han_Song-Yi",
+    "evidence": "decided to drop out of school after learning about how much money Jinho was paying her for standing outside a gate and doing nothing."
+  },
+  {
+    "id": "hunter-classes-negative",
+    "tier": "easy",
+    "prompt": "ข้อใดไม่ใช่หนึ่งในหกคลาสของฮันเตอร์?",
+    "answer": "เนโครแมนเซอร์",
+    "decoys": [
+      "ไฟเตอร์",
+      "แทงเกอร์",
+      "เรนเจอร์"
+    ],
+    "note": "หกคลาสของฮันเตอร์คือ แอสแซสซิน ไฟเตอร์ ฮีลเลอร์ เมจ เรนเจอร์ และแทงเกอร์",
+    "source": "https://solo-leveling.fandom.com/wiki/Hunters",
+    "evidence": "six different specific class-types of hunters: Fighters, Mages, Assassins, Tankers, Rangers, and Healers."
+  },
+  {
+    "id": "hunter-license-issuer",
+    "tier": "easy",
+    "prompt": "ผู้ตื่นพลังต้องรับใบอนุญาตฮันเตอร์จากหน่วยงานใดจึงจะเข้าประตูได้?",
+    "answer": "สมาคมฮันเตอร์ของประเทศตน",
+    "decoys": [
+      "กิลด์ที่ตนสังกัด",
+      "สำนักงานฮันเตอร์กลาง (FBH) ของอเมริกา",
+      "ระบบ"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Hunters",
+    "evidence": "awakened individuals have to obtain a hunter's license from their respective country's hunters association."
+  },
+  {
+    "id": "system-store-currency",
+    "tier": "easy",
+    "prompt": "ร้านค้าในระบบของจินอูใช้เงินสกุลใดในการซื้อไอเทม?",
+    "answer": "โกลด์",
+    "decoys": [
+      "วอน",
+      "ผลึกมานา",
+      "หินแก่นเวท"
+    ],
+    "note": "ได้โกลด์จากการฆ่ามอนสเตอร์ ทำเควสต์สำเร็จ หรือขายไอเทมให้ร้านค้า",
+    "source": "https://solo-leveling.fandom.com/wiki/System",
+    "evidence": "The currency used by the store is called gold and is received whenever the Player kills a monster, completes a quest, or sells an item to the store."
+  },
+  {
+    "id": "system-who-sees",
+    "tier": "easy",
+    "prompt": "ใครบ้างที่มองเห็นหน้าต่างระบบของจินอูได้?",
+    "answer": "จินอูคนเดียว",
+    "decoys": [
+      "ฮันเตอร์แรงก์ S ทุกคน",
+      "คนในครอบครัวของจินอู",
+      "ฮีลเลอร์ที่รักษาเขา"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/System",
+    "evidence": "It could only be used by Jinwoo due to his status as the Player and as a result, nobody else could see it."
+  },
+  {
+    "id": "daily-quest-penalty",
+    "tier": "easy",
+    "prompt": "ถ้าจินอูทำเควสต์รายวันไม่ครบภายในเวลาที่กำหนด ระบบจะส่งเขาไปที่ใด?",
+    "answer": "เขตลงโทษ",
+    "decoys": [
+      "ปราสาทปีศาจ",
+      "ประตูแดง",
+      "ดันเจี้ยนคู่"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/The_Preparation_To_Become_Powerful",
+    "evidence": "if Jinwoo fails to complete it on a certain day, then he is automatically teleported to a dungeon called the Penalty Zone."
+  },
+  {
+    "id": "penalty-desert-monster",
+    "tier": "easy",
+    "prompt": "ครั้งแรกที่จินอูไม่ทำเควสต์รายวัน เขาต้องหนีเอาตัวรอดในทะเลทรายจากสัตว์อสูรชนิดใด?",
+    "answer": "ตะขาบยักษ์เขี้ยวพิษ",
+    "decoys": [
+      "หมาป่าเขี้ยวเหล็ก",
+      "แมงมุมยักษ์",
+      "งูพิษยักษ์"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Penalty_Zone",
+    "evidence": "Plagued with 'Poison-fanged Giant Sand Centipedes."
+  },
+  {
+    "id": "daily-quest-tasks",
+    "tier": "easy",
+    "prompt": "ข้อใดไม่ใช่ภารกิจในเควสต์รายวันของจินอู?",
+    "answer": "ดึงข้อ",
+    "decoys": [
+      "วิดพื้น",
+      "ซิทอัพ",
+      "สควอต"
+    ],
+    "note": "ภารกิจคือวิดพื้น ซิทอัพ สควอต และวิ่ง ไม่มีดึงข้อ",
+    "source": "https://solo-leveling.fandom.com/wiki/The_Preparation_To_Become_Powerful",
+    "evidence": "100 Push-Ups 100 Sit-Ups 100 Squats 10 Kilometer Run"
+  },
+  {
+    "id": "jinwoo-secret-quest",
+    "tier": "easy",
+    "prompt": "เควสต์ลับที่จินอูทำสำเร็จโดยไม่ตั้งใจในดันเจี้ยนคู่ จนได้เข้าร่วมระบบ ชื่อว่าอะไร?",
+    "answer": "ความกล้าของผู้อ่อนแอ",
+    "decoys": [
+      "เอาชีวิตรอด",
+      "สังหารศัตรู",
+      "การเตรียมตัวเพื่อเป็นผู้แข็งแกร่ง"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Courage_of_the_Weak",
+    "evidence": "Courage of the Weak was a secret quest that Jinwoo unintentionally completed in his first trip to the Double Dungeon."
+  },
+  {
+    "id": "jinwoo-job-offer",
+    "tier": "easy",
+    "prompt": "เมื่อจบเควสต์เปลี่ยนอาชีพ ระบบเสนออาชีพแรกใดให้จินอู?",
+    "answer": "เนโครแมนเซอร์",
+    "decoys": [
+      "แอสแซสซิน",
+      "ไฟเตอร์",
+      "เรนเจอร์"
+    ],
+    "note": "จินอูสู้แบบสายแอสแซสซินมาตลอด จึงลังเลก่อนรับอาชีพสายเวทนี้",
+    "source": "https://solo-leveling.fandom.com/wiki/Job_Change_Quest",
+    "evidence": "Following his Class Change Quest, Jinwoo was offered the position of Necromancer which soon evolved into the hidden class, Shadow Monarch."
+  },
+  {
+    "id": "jinwoo-hidden-class",
+    "tier": "easy",
+    "prompt": "เพราะจินอูอยู่รอดได้นานและกำจัดศัตรูได้หมดในเควสต์เปลี่ยนอาชีพ อาชีพของเขาจึงถูกยกระดับเป็นคลาสใด?",
+    "answer": "ราชาแห่งเงา",
+    "decoys": [
+      "อัศวินแห่งความตาย",
+      "จอมเวทแห่งเงา",
+      "นักฆ่าแห่งเงา"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Episode_12",
+    "evidence": "Because he lasted so long through the final stage and defeated all enemies, the necromancer class has been upgraded to Shadow Monarch."
+  },
+  {
+    "id": "shadow-extraction-command",
+    "tier": "easy",
+    "prompt": "เมื่อจะสกัดเงาจากศพศัตรู จินอูต้องพูดคำสั่งใด?",
+    "answer": "อาไรส์",
+    "decoys": [
+      "อเวกเคน",
+      "ซัมมอน",
+      "รีเทิร์น"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Episode_12",
+    "evidence": "To extract a shadow and claim it for his army, Jinwoo must speak the command word he chose: \"Arise.\""
+  },
+  {
+    "id": "jinwoo-first-named-shadow",
+    "tier": "easy",
+    "prompt": "เงาตัวแรกที่จินอูเรียกออกมาพร้อมตั้งชื่อให้คือใคร?",
+    "answer": "อิกริส",
+    "decoys": [
+      "ไอรอน",
+      "แทงค์",
+      "ทัสก์"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Job_Change_Arc",
+    "evidence": "Jinwoo summoned his first named shadow, Igris."
+  },
+  {
+    "id": "knight-killer-source",
+    "tier": "easy",
+    "prompt": "จินอูได้กริช \"นักฆ่าอัศวิน\" มาด้วยวิธีใด?",
+    "answer": "ซื้อจากร้านค้าของระบบ",
+    "decoys": [
+      "ดรอปจากบอสดันเจี้ยนชั่วคราว",
+      "รางวัลเควสต์รายวัน",
+      "ได้จากหินรูน"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Knight_Killer",
+    "evidence": "Knight Killer is a dagger that Jinwoo bought from the System Shop"
+  },
+  {
+    "id": "knight-killer-bonus",
+    "tier": "easy",
+    "prompt": "กริชนักฆ่าอัศวินสร้างความเสียหายเพิ่มเป็นพิเศษต่อศัตรูแบบใด?",
+    "answer": "ศัตรูที่สวมเกราะ",
+    "decoys": [
+      "ศัตรูที่บินได้",
+      "ศัตรูเผ่าปีศาจ",
+      "ศัตรูที่ล่องหน"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Sung_Jinwoo/Items",
+    "evidence": "A dagger designed to fight against armored enemies."
+  },
+  {
+    "id": "instant-dungeon-dagger-boss",
+    "tier": "easy",
+    "prompt": "ในดันเจี้ยนชั่วคราวแห่งแรกที่จินอูลุยคนเดียว บอสตัวใดดรอปกริชให้เขา?",
+    "answer": "คาซาก้า",
+    "decoys": [
+      "เซอร์เบอรัส",
+      "บารูก้า",
+      "วัลแคน"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Kasaka's_Venom_Fang",
+    "evidence": "Kasaka's Venom Fang is a dagger that Jinwoo obtained as one of his drop items after killing Blue Venom-Fanged Kasaka."
+  },
+  {
+    "id": "stealth-rune-source",
+    "tier": "easy",
+    "prompt": "จินอูได้สกิลล่องหนจากหินรูนหลังสังหารใคร?",
+    "answer": "คังแทชิก",
+    "decoys": [
+      "ฮวังดงซอก",
+      "คิมชอล",
+      "ฮวังดงซู"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Rune_Stones",
+    "evidence": "Kang Taeshik's Rune Stone contained the skill Stealth"
+  },
+  {
+    "id": "bloodlust-quest-reward",
+    "tier": "easy",
+    "prompt": "สกิลกระหายเลือดเป็นรางวัลจากการทำเควสต์ฉุกเฉินใดสำเร็จ?",
+    "answer": "สังหารศัตรู",
+    "decoys": [
+      "ความกล้าของผู้อ่อนแอ",
+      "เอาชีวิตรอด",
+      "การเตรียมตัวเพื่อเป็นผู้แข็งแกร่ง"
+    ],
+    "note": "เควสต์นี้ขึ้นเมื่อมีคนพยายามฆ่าจินอู และจินอูต้องกำจัดพวกนั้นให้หมด",
+    "source": "https://solo-leveling.fandom.com/wiki/Bloodlust",
+    "evidence": "Jinwoo first acquired Bloodlust as a rune reward for completing the Kill The Enemies emergency quest"
+  },
+  {
+    "id": "bloodlust-anime-name",
+    "tier": "easy",
+    "prompt": "ในอนิเมะ สกิลกระหายเลือด (Bloodlust) ของจินอูถูกเรียกด้วยชื่อใด?",
+    "answer": "เจตนาสังหาร",
+    "decoys": [
+      "เสียงคำรามข่มขวัญ",
+      "แรงกดดันราชา",
+      "สายตาเพชฌฆาต"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Sung_Jinwoo",
+    "evidence": "In the anime, the skill Bloodlust is referred to as Murderous Intent."
+  },
+  {
+    "id": "ruler-hands-rune",
+    "tier": "easy",
+    "prompt": "หลังชนะอัศวินชุดแดงผู้เป็นบอสของดันเจี้ยนเควสต์เปลี่ยนอาชีพ จินอูได้หินรูนที่บรรจุสกิลใด?",
+    "answer": "มือผู้ปกครอง",
+    "decoys": [
+      "ล่องหน",
+      "กระหายเลือด",
+      "ทรหด"
+    ],
+    "note": "สกิลนี้ใช้ขยับสิ่งของได้โดยไม่ต้องแตะ",
+    "source": "https://solo-leveling.fandom.com/wiki/Ruler's_Authority",
+    "evidence": "Jinwoo originally obtained a lesser version of this skill called Ruler's Hands from the rune stone that he got from defeating Igris."
+  },
+  {
+    "id": "wolf-title-anime",
+    "tier": "easy",
+    "prompt": "ในอนิเมะ ตำแหน่ง (Title) ที่จินอูได้จากการล่าฝูงหมาป่าในดันเจี้ยนชั่วคราวคืออะไร?",
+    "answer": "นักฆ่าหมาป่า",
+    "decoys": [
+      "นักล่าปีศาจ",
+      "ผู้เอาชนะความยากลำบาก",
+      "นักล่ามังกร"
+    ],
+    "note": "ในเว็บตูนตำแหน่งนี้ชื่อ Wolf Slayer",
+    "source": "https://solo-leveling.fandom.com/wiki/Episode_4",
+    "evidence": "Title: Wolf Slayer changed to Title: Wolf Assassin."
+  },
+  {
+    "id": "job-change-skills",
+    "tier": "easy",
+    "prompt": "หลังเปลี่ยนอาชีพ จินอูได้สกิลประจำอาชีพสองสกิลแรกคู่ใด?",
+    "answer": "สกัดเงา และ เก็บรักษาเงา",
+    "decoys": [
+      "สกัดเงา และ สลับเงา",
+      "สลับเงา และ อาณาเขตของราชา",
+      "เก็บรักษาเงา และ อาณาเขตของราชา"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Job_Change_Arc",
+    "evidence": "Jinwoo acquired the Job-specific Skills: 'Shadow Extraction' and 'Shadow Preservation'."
+  },
+  {
+    "id": "double-dungeon-gate-rank",
+    "tier": "easy",
+    "prompt": "ดันเจี้ยนคู่ซ่อนอยู่ในประตูที่ทีมของซองจินอูเข้าไปบุก ซึ่งเป็นประตูแรงก์ใด?",
+    "answer": "แรงก์ D",
+    "decoys": [
+      "แรงก์ E",
+      "แรงก์ B",
+      "แรงก์ A"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/D-Rank_Dungeon_Arc",
+    "evidence": "While on a D-Rank dungeon raid, E-Rank Hunter Sung Jinwoo and his raid party discover a second hidden dungeon inside the gate."
+  },
+  {
+    "id": "double-dungeon-other-name",
+    "tier": "easy",
+    "prompt": "ดันเจี้ยนคู่ที่ซองจินอูเกือบตายมีอีกชื่อหนึ่งว่าอะไร?",
+    "answer": "วิหารคาร์เทนอน",
+    "decoys": [
+      "ปราสาทปีศาจ",
+      "ดันเจี้ยนเควสต์เปลี่ยนอาชีพ",
+      "ดันเจี้ยนก็อบลิน"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Cartenon_Temple",
+    "evidence": "The Cartenon Temple, also known as the Double Dungeon"
+  },
+  {
+    "id": "statue-of-god-attack",
+    "tier": "easy",
+    "prompt": "ในตอนแรกของอนิเมะ รูปปั้นเทพเจ้าที่ใหญ่ที่สุดในดันเจี้ยนคู่โจมตีฮันเตอร์ด้วยอะไร?",
+    "answer": "ลำแสงจากดวงตา",
+    "decoys": [
+      "ลมหายใจไฟ",
+      "สายฟ้าจากฟ้า",
+      "เสียงกรีดร้อง"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Cartenon_Temple",
+    "evidence": "is killed instantly by the statue's heat vision"
+  },
+  {
+    "id": "double-dungeon-trial-offer",
+    "tier": "easy",
+    "prompt": "คนที่ผ่านการทดสอบของดันเจี้ยนคู่จะได้รับข้อเสนอให้เป็นอะไร?",
+    "answer": "ผู้เล่นของระบบ",
+    "decoys": [
+      "ราชาแห่งเงา",
+      "ฮันเตอร์แรงก์ S",
+      "ผู้ดูแลวิหาร"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Cartenon_Temple",
+    "evidence": "For the one person who passes the trial, they will be offered the chance to become the Player of the System."
+  },
+  {
+    "id": "hunter-power-limit",
+    "tier": "easy",
+    "prompt": "ตามที่อนิเมะตอนแรกเล่า ฮันเตอร์ทั่วไปเมื่อตื่นพลังแล้ว พลังจะเป็นอย่างไรต่อไป?",
+    "answer": "คงอยู่ที่ระดับเดิม ไม่แข็งแกร่งขึ้นอีก",
+    "decoys": [
+      "เพิ่มขึ้นทุกครั้งที่เคลียร์ดันเจี้ยน",
+      "ลดลงเรื่อย ๆ ตามอายุ",
+      "เพิ่มขึ้นเมื่อกินหินแก่นเวท"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Episode_1",
+    "evidence": "Their powers remain at the level they awakened, never growing any stronger."
+  },
+  {
+    "id": "instant-dungeon-meaning",
+    "tier": "easy",
+    "prompt": "ดันเจี้ยนชั่วคราวต่างจากดันเจี้ยนทั่วไปอย่างไร?",
+    "answer": "เป็นดันเจี้ยนของระบบที่มีเฉพาะซองจินอู",
+    "decoys": [
+      "ประตูจะกลายเป็นสีแดงเมื่อมีคนเข้าไป",
+      "ซ่อนอยู่ใต้ดันเจี้ยนอีกชั้นหนึ่ง",
+      "เกิดขึ้นเฉพาะบนเกาะเชจู"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Dungeons",
+    "evidence": "Instance Dungeons: Unique to Sung Jinwoo, as part of the System."
+  },
+  {
+    "id": "first-instant-dungeon-place",
+    "tier": "easy",
+    "prompt": "ดันเจี้ยนชั่วคราวแห่งแรกที่ซองจินอูเข้าไปล่าคนเดียวอยู่ที่ใด?",
+    "answer": "สถานีรถไฟใต้ดินฮับจอง",
+    "decoys": [
+      "สถานีรถไฟใต้ดินคังนัม",
+      "สถานีโซล",
+      "ตึกแดซอง"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Hapjeong_Subway_Station",
+    "evidence": "Hapjeong Subway Station is an Instant Dungeon accessible with Dungeon Key that Sung Jin-Woo obtained from the System's Random Box."
+  },
+  {
+    "id": "dungeon-break-name",
+    "tier": "easy",
+    "prompt": "ถ้าดันเจี้ยนไม่ถูกเคลียร์ทันเวลา จนสัตว์อสูรข้างในออกมายังโลกมนุษย์ได้ เหตุการณ์นี้เรียกว่าอะไร?",
+    "answer": "ดันเจี้ยนเบรก",
+    "decoys": [
+      "ประตูแดง",
+      "ดันเจี้ยนคู่",
+      "รอยแยกมิติ"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Dungeons",
+    "evidence": "If it is not, then it will undergo what's called a \"Dungeon Break\", meaning that the monsters inside the Dungeon will be able to cross over to the human world and attack the civilian population."
+  },
+  {
+    "id": "gate-stays-open",
+    "tier": "easy",
+    "prompt": "ประตูทั่วไปจะเปิดค้างอยู่จนกว่าจะเกิดอะไรขึ้น?",
+    "answer": "บอสในดันเจี้ยนถูกกำจัด",
+    "decoys": [
+      "ฮันเตอร์ทุกคนออกจากดันเจี้ยน",
+      "เก็บผลึกมานาจนหมด",
+      "สมาคมฮันเตอร์สั่งปิด"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Gates",
+    "evidence": "They remain open until the Dungeon boss inside is defeated."
+  },
+  {
+    "id": "jinho-first-meeting",
+    "tier": "easy",
+    "prompt": "ซองจินอูพบยูจินโฮครั้งแรกในการบุกดันเจี้ยนใด?",
+    "answer": "ดันเจี้ยนแมลง",
+    "decoys": [
+      "ดันเจี้ยนก็อบลิน",
+      "ดันเจี้ยนคู่",
+      "ปราสาทปีศาจ"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Dungeon_&_Lizards_Arc",
+    "evidence": "Jinwoo met Yoo Jinho."
+  },
+  {
+    "id": "demon-castle-gatekeeper",
+    "tier": "easy",
+    "prompt": "บอสตัวแรกที่เป็นผู้เฝ้าประตูของปราสาทปีศาจคือใคร?",
+    "answer": "เซอร์เบอรัส",
+    "decoys": [
+      "วัลแคน",
+      "เมทัส",
+      "บารัน"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Cerberus",
+    "evidence": "Cerberus (켈베로스) was the first boss of the Demon Castle and the gatekeeper of the castle itself."
+  },
+  {
+    "id": "job-change-boss",
+    "tier": "easy",
+    "prompt": "บอสของดันเจี้ยนเควสต์เปลี่ยนอาชีพคือใคร?",
+    "answer": "อิกริส",
+    "decoys": [
+      "บารูก้า",
+      "คาร์กัลกัน",
+      "เมทัส"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Blood-Red_Commander_Igris",
+    "evidence": "Blood-Red Commander Igris (기사단장 핏빛의 이그리트) was the boss of the Job Change Quest Dungeon."
+  },
+  {
+    "id": "dongsoo-revenge-trip",
+    "tier": "medium",
+    "prompt": "ฮันเตอร์แรงก์ S จากอเมริกาที่บินมาเกาหลีเพื่อตามล่าจินอูแก้แค้นให้พี่ชายคือใคร?",
+    "answer": "ฮวังดงซู",
+    "decoys": [
+      "โทมัส อังเดร",
+      "คริสโตเฟอร์ รีด",
+      "แบคยุนโฮ"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Hwang_Dongsoo",
+    "evidence": "Hwang then flew all the way to Korea to hunt them down and kill them."
+  },
+  {
+    "id": "scavenger-strongest-usa",
+    "tier": "medium",
+    "prompt": "กิลด์ใดเป็นกิลด์ที่แข็งแกร่งที่สุดในอเมริกา?",
+    "answer": "กิลด์สกาเวนเจอร์",
+    "decoys": [
+      "กิลด์ชักดาบ",
+      "กิลด์ฮันเตอร์ส",
+      "กิลด์เสือขาว"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Scavenger_Guild",
+    "evidence": "The Scavenger Guild (스케빈저) is the strongest guild in America."
+  },
+  {
+    "id": "white-tiger-master",
+    "tier": "medium",
+    "prompt": "ใครเป็นหัวหน้ากิลด์เสือขาว?",
+    "answer": "แบคยุนโฮ",
+    "decoys": [
+      "ชเวจงอิน",
+      "ลิมแทกยู",
+      "มาดงอุก"
+    ],
+    "source": "https://th.wikipedia.org/wiki/โซโลเลเวลลิง",
+    "evidence": "เขาเป็นกิลด์มาสเตอร์ของกิลด์เสือขาว"
+  },
+  {
+    "id": "hunters-guild-master",
+    "tier": "medium",
+    "prompt": "ใครเป็นหัวหน้ากิลด์ฮันเตอร์ส?",
+    "answer": "ชเวจงอิน",
+    "decoys": [
+      "แบคยุนโฮ",
+      "ลิมแทกยู",
+      "ชาแฮอิน"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Choi_Jong-In",
+    "evidence": "Choi Jong-In (최종인) is a Korean S-Rank Hunter and the Guild Master of the Hunters Guild."
+  },
+  {
+    "id": "haein-guild-position",
+    "tier": "medium",
+    "prompt": "ชาแฮอินมีตำแหน่งอะไรในกิลด์ของเธอ?",
+    "answer": "รองหัวหน้ากิลด์",
+    "decoys": [
+      "หัวหน้ากิลด์",
+      "หัวหน้าทีมจู่โจม B",
+      "หัวหน้าทีมขุดแร่"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Cha_Hae-In",
+    "evidence": "Cha Hae-In (차해인) is a Korean S-Rank Hunter and the Vice-Guild Master of the Hunters Guild."
+  },
+  {
+    "id": "haein-mana-smell",
+    "tier": "medium",
+    "prompt": "อะไรทำให้ชาแฮอินสนใจจินอูตั้งแต่พบกันครั้งแรก?",
+    "answer": "เขาเป็นฮันเตอร์คนเดียวที่ไม่มีกลิ่นเหม็นสำหรับเธอ",
+    "decoys": [
+      "เขาช่วยชีวิตเธอที่เกาะเชจู",
+      "เขาเอาชนะเธอในการประลองดาบ",
+      "เขาเป็นฮันเตอร์แรงก์ S เหมือนเธอ"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Cha_Hae-In",
+    "evidence": "Jinwoo is the only known hunter who does not smell bad to her, due to his status as the Player of the System."
+  },
+  {
+    "id": "haein-kumdo-teacher",
+    "tier": "medium",
+    "prompt": "หลังการบุกเกาะเชจู ชาแฮอินไปฝึกคุมโดกับใคร?",
+    "answer": "ซงชียูล",
+    "decoys": [
+      "โกโตะ ริวจิ",
+      "แบคยุนโฮ",
+      "อูจินชอล"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Song_Chi-Yul",
+    "evidence": "After the Jeju Island Raid, Song Chi-Yul at his kumdo school is seen training Cha Hae-In."
+  },
+  {
+    "id": "lim-ranger-s-rank",
+    "tier": "medium",
+    "prompt": "ฮันเตอร์แรงก์ S ของเกาหลีคนใดเป็นเรนเจอร์ที่ใช้ธนู?",
+    "answer": "ลิมแทกยู",
+    "decoys": [
+      "มาดงอุก",
+      "ชเวจงอิน",
+      "มินบยองกยู"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Lim_Tae-Gyu",
+    "evidence": "Lim is the strongest ranger-type hunter in Korea and performs well in battle even without his bow."
+  },
+  {
+    "id": "minsung-actor-hunter",
+    "tier": "medium",
+    "prompt": "นักแสดงชื่อดังที่ตื่นพลังเป็นแรงก์ A แล้วเข้าร่วมกิลด์ปีศาจคือใคร?",
+    "answer": "อีมินซอง",
+    "decoys": [
+      "ยูซูฮยอน",
+      "ยูจินโฮ",
+      "พัคจงซู"
+    ],
+    "note": "ในอนิเมะเรียกกิลด์นี้ว่า Reapers Guild",
+    "source": "https://solo-leveling.fandom.com/wiki/Lee_Minsung",
+    "evidence": "He is also an A-Rank Hunter and the Vice-Guild Master of the Fiend Guild."
+  },
+  {
+    "id": "jinwoo-registered-mage",
+    "tier": "medium",
+    "prompt": "หลังวัดแรงก์ใหม่ จินอูถูกขึ้นทะเบียนอย่างเป็นทางการว่าเป็นฮันเตอร์สายใด?",
+    "answer": "เมจ",
+    "decoys": [
+      "ไฟเตอร์",
+      "แอสแซสซิน",
+      "แทงเกอร์"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Mage",
+    "evidence": "despite being officially identified as a mage-type hunter"
+  },
+  {
+    "id": "gunhee-association-chairman",
+    "tier": "medium",
+    "prompt": "ใครเป็นประธานสมาคมฮันเตอร์เกาหลีตอนที่จินอูได้รับการประกาศเป็นแรงก์ S?",
+    "answer": "โกกอนฮี",
+    "decoys": [
+      "ชเวจงอิน",
+      "ยูมยองฮัน",
+      "มัตสึโมโตะ ชิเงโอะ"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Go_Gunhee",
+    "evidence": "Go Gunhee (고건희) was a Korean S-Rank Hunter and the Chairman of the Korean Hunters Association."
+  },
+  {
+    "id": "goto-draw-sword-master",
+    "tier": "medium",
+    "prompt": "ในช่วงการบุกเกาะเชจูครั้งที่ 4 ใครเป็นหัวหน้ากิลด์ชักดาบและฮันเตอร์ที่แข็งแกร่งที่สุดของญี่ปุ่น?",
+    "answer": "โกโตะ ริวจิ",
+    "decoys": [
+      "โฮชิโนะ มิโนรุ",
+      "คุมาโมโตะ อัตสึชิ",
+      "ทานากะ เคนโซ"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Goto_Ryuji",
+    "evidence": "was the strongest hunter in Japan and the Guild Master of the Draw Sword Guild."
+  },
+  {
+    "id": "goto-killer",
+    "tier": "medium",
+    "prompt": "ใครสังหารโกโตะ ริวจิบนเกาะเชจู?",
+    "answer": "ราชามด",
+    "decoys": [
+      "ราชินีมด",
+      "คาร์กัลกัน",
+      "วัลแคน"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Ant_King",
+    "evidence": "including Goto Ryuji, the greatest hunter in Japan."
+  },
+  {
+    "id": "byunggyu-temporary-shadow",
+    "tier": "medium",
+    "prompt": "จินอูสกัดเงาของใครชั่วคราวเพื่อใช้เวทรักษาช่วยชีวิตชาแฮอิน?",
+    "answer": "มินบยองกยู",
+    "decoys": [
+      "อีอึนซอก",
+      "คิมชอล",
+      "ซงชียูล"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Cha_Hae-In",
+    "evidence": "To save her life, Jinwoo used his power to turn Byung-Gyu into a Shadow to utilize his healing magic."
+  },
+  {
+    "id": "kimchul-red-gate-leader",
+    "tier": "medium",
+    "prompt": "ใครเป็นหัวหน้าทีมบุกของกิลด์เสือขาวในเหตุการณ์ประตูแดง?",
+    "answer": "คิมชอล",
+    "decoys": [
+      "พัคฮีจิน",
+      "อันซังมิน",
+      "แบคยุนโฮ"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Kim_Chul",
+    "evidence": "Chul was appointed as the leader of the raid party"
+  },
+  {
+    "id": "liu-china-strongest",
+    "tier": "medium",
+    "prompt": "ฮันเตอร์ที่แข็งแกร่งที่สุดของจีนคือใคร?",
+    "answer": "หลิว จื้อกัง",
+    "decoys": [
+      "โทมัส อังเดร",
+      "เลนนาร์ท เนียร์มันน์",
+      "โกโตะ ริวจิ"
+    ],
+    "source": "https://th.wikipedia.org/wiki/โซโลเลเวลลิง",
+    "evidence": "ฮันเตอร์ที่แข็งแกร่งที่สุดในประเทศจีน"
+  },
+  {
+    "id": "korean-s-rank-negative",
+    "tier": "medium",
+    "prompt": "ข้อใดไม่ใช่ฮันเตอร์แรงก์ S ของเกาหลี?",
+    "answer": "อูจินชอล",
+    "decoys": [
+      "มาดงอุก",
+      "ลิมแทกยู",
+      "มินบยองกยู"
+    ],
+    "note": "อูจินชอลเป็นฮันเตอร์แรงก์ A",
+    "source": "https://solo-leveling.fandom.com/wiki/Woo_Jinchul",
+    "evidence": "Woo Jinchul (우진철) is a Korean A-Rank Hunter"
+  },
+  {
+    "id": "jinwoo-mining-team",
+    "tier": "medium",
+    "prompt": "หลังได้แรงก์ S ใหม่ๆ จินอูแอบไปรับงานอะไรในประตูของกิลด์ฮันเตอร์ส?",
+    "answer": "คนงานทีมขุดแร่",
+    "decoys": [
+      "ผู้ประเมินแรงก์ของสมาคม",
+      "ฮีลเลอร์สำรองของทีมจู่โจม",
+      "ผู้คุ้มกันหัวหน้ากิลด์"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Go_Gunhee",
+    "evidence": "Gunhee then learned from Jinchul that Jinwoo had joined a mining team under the Hunters Guild."
+  },
+  {
+    "id": "tank-origin",
+    "tier": "medium",
+    "prompt": "เงาแทงค์มาจากสัตว์อสูรชนิดใดที่จินอูเจอในประตูแดง?",
+    "answer": "หมีน้ำแข็งจ่าฝูง",
+    "decoys": [
+      "เอลฟ์น้ำแข็ง",
+      "ไฮออร์ค",
+      "หมาป่าเขี้ยวเหล็ก"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Tank",
+    "evidence": "is the shadow of an alpha ice bear that Jinwoo encountered during the Red Gate Incident."
+  },
+  {
+    "id": "iron-origin",
+    "tier": "medium",
+    "prompt": "เงาไอรอนตอนยังมีชีวิตคือใคร?",
+    "answer": "คิมชอล",
+    "decoys": [
+      "คังแทชิก",
+      "ฮวังดงซอก",
+      "ฮวังดงซู"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Iron",
+    "evidence": "was the shadow of Kim Chul."
+  },
+  {
+    "id": "beru-origin",
+    "tier": "medium",
+    "prompt": "เงาเบรูสร้างจากศพของสัตว์อสูรตัวใด?",
+    "answer": "ราชามด",
+    "decoys": [
+      "ราชินีมด",
+      "คามิช",
+      "คาร์กัลกัน"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Beru",
+    "evidence": "is the shadow of the Ant King."
+  },
+  {
+    "id": "beru-name-origin",
+    "tier": "medium",
+    "prompt": "จินอูตั้งชื่อเงา \"เบรู\" ตามใคร?",
+    "answer": "แบร์นาร์ แวร์แบร์",
+    "decoys": [
+      "ฌูล แวร์น",
+      "ฟรานซ์ คาฟคา",
+      "เอ็ดการ์ อัลลัน โพ"
+    ],
+    "note": "นักเขียนชาวฝรั่งเศสผู้แต่งนิยายเรื่อง \"มด\"",
+    "source": "https://solo-leveling.fandom.com/wiki/Beru",
+    "evidence": "Beru is named after French novelist Bernard Werber, who authored a famous book in 1991 called Empire of the Ants."
+  },
+  {
+    "id": "kaisel-main-use",
+    "tier": "medium",
+    "prompt": "จินอูมักเรียกเงาไคเซลออกมาเพื่อทำอะไร?",
+    "answer": "ให้บินพาไปยังที่ต่างๆ",
+    "decoys": [
+      "ให้รักษาบาดแผล",
+      "ให้ร่ายเวทไฟ",
+      "ให้ยั่วยุศัตรู"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Kaisel",
+    "evidence": "only ever summoned the wyvern whenever he needed to travel somewhere by air and couldn't use Shadow Exchange."
+  },
+  {
+    "id": "orb-avarice-holder",
+    "tier": "medium",
+    "prompt": "จินอูมอบลูกแก้วแห่งความละโมบให้เงาตนใดใช้?",
+    "answer": "ทัสก์",
+    "decoys": [
+      "เบรู",
+      "ไอรอน",
+      "อิกริส"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Orb_of_Avarice",
+    "evidence": "Realizing its immense value, Jinwoo chose to keep it and later entrusted it to his shadow soldier Tusk."
+  },
+  {
+    "id": "orb-avarice-effect",
+    "tier": "medium",
+    "prompt": "ลูกแก้วแห่งความละโมบช่วยผู้ถืออย่างไร?",
+    "answer": "เพิ่มพลังทำลายของเวทมนตร์",
+    "decoys": [
+      "ฟื้นฟูมานาจนเต็ม",
+      "ทำให้ล่องหนได้",
+      "ป้องกันพิษทุกชนิด"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Sung_Jinwoo/Items",
+    "evidence": "The Orb will empower the wielder's magic and increase the destruction caused."
+  },
+  {
+    "id": "shadow-exchange-escape",
+    "tier": "medium",
+    "prompt": "หลังปราบบารันบนชั้นบนสุดของปราสาทปีศาจ จินอูใช้สกิลใหม่สกิลใดออกจากปราสาทได้ทันที?",
+    "answer": "สลับเงา",
+    "decoys": [
+      "อาณาเขตของราชา",
+      "ล่องหน",
+      "ควิกซิลเวอร์"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Episode_21",
+    "evidence": "Jinwoo instead uses his newly available Shadow Exchange skill, allowing him to exchange positions with one of his shadow soldiers and instantly leave the Demon Castle."
+  },
+  {
+    "id": "holy-water-cure",
+    "tier": "medium",
+    "prompt": "น้ำศักดิ์สิทธิ์แห่งชีวิตที่จินอูทำขึ้น เป็นยาชนิดเดียวที่รักษาโรคใดได้?",
+    "answer": "โรคนิทราชั่วนิรันดร์",
+    "decoys": [
+      "พิษมานา",
+      "คำสาปน้ำแข็ง",
+      "โรคผลึกมานา"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Holy_Water_of_Life",
+    "evidence": "As a result, it is the only known cure to Eternal Slumber."
+  },
+  {
+    "id": "monarchs-domain-orcs",
+    "tier": "medium",
+    "prompt": "ระหว่างสู้กับกองทัพไฮออร์ค จินอูเปิดใช้สกิลใดเพื่อเพิ่มพลังให้ทหารเงาในสนาม?",
+    "answer": "อาณาเขตของราชา",
+    "decoys": [
+      "สลับเงา",
+      "เก็บรักษาเงา",
+      "กระหายเลือด"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Episode_18",
+    "evidence": "Jinwoo activates Monarch's Domain, increasing the combat strength of his shadow soldiers."
+  },
+  {
+    "id": "orc-shadow-specialty",
+    "tier": "medium",
+    "prompt": "เงาที่จินอูได้จากบอสของประตูกิลด์ฮันเตอร์ส โดดเด่นต่างจากเงาตนอื่นในด้านใด?",
+    "answer": "ร่ายเวทมนตร์",
+    "decoys": [
+      "ฝีมือดาบ",
+      "การบิน",
+      "การล่องหน"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Tusk",
+    "evidence": "Tusk's specialty lies in casting powerful spells, making him a crucial asset for magical attacks."
+  },
+  {
+    "id": "monarchs-come-jeju",
+    "tier": "medium",
+    "prompt": "หลังเคลียร์ประตูแรงก์ S ที่เกาะเชจู ราชาสองตนใดเดินทางมาที่เกาะเพราะสัมผัสร่องรอยพลังที่หลงเหลืออยู่?",
+    "answer": "ราคานและซิลลาด",
+    "decoys": [
+      "บารันและเลเกีย",
+      "ทาร์นักและเควเรชา",
+      "แอนทาเรสและโยกุมุนท์"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Rakan",
+    "evidence": "Shortly after the Jeju Island S-Rank Gate was finally cleared, Rakan picked up traces of the Shadow Monarch's power on Jeju and traveled there to make sure. Along the way, he encountered Sillad"
+  },
+  {
+    "id": "jinwoo-monster-tongue",
+    "tier": "medium",
+    "prompt": "จินอูเชื่อว่าเหตุใดเขาจึงฟังภาษาของหัวหน้าเผ่าเอลฟ์น้ำแข็งในประตูแดงออก และพูดตอบได้?",
+    "answer": "เพราะเขาเป็นผู้เล่นของระบบ",
+    "decoys": [
+      "เพราะเขาใช้หินรูนแปลภาษา",
+      "เพราะฮันเตอร์แรงก์ S ทุกคนเข้าใจภาษานี้",
+      "เพราะเงาของเขาช่วยแปลให้"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Baruka",
+    "evidence": "Baruka revealed his intelligence by speaking in his language which Jinwoo understood and even spoke back, which he believed was due to him being the \"player\" and using the System."
+  },
+  {
+    "id": "shadow-regeneration-mana",
+    "tier": "medium",
+    "prompt": "ทหารเงาของจินอูฟื้นฟูร่างกายได้เรื่อยๆ ตราบเท่าที่สิ่งใดยังไม่หมด?",
+    "answer": "มานาของจินอู",
+    "decoys": [
+      "พลังชีวิตของจินอู",
+      "แสงจันทร์",
+      "ผลึกมานาในร่างของเงา"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Igris",
+    "evidence": "Igris can constantly regenerate from damage until Jinwoo's mana is completely depleted."
+  },
+  {
+    "id": "red-gate-original-rank",
+    "tier": "medium",
+    "prompt": "ประตูที่กิลด์เสือขาวซื้อไว้ฝึกเด็กใหม่ ก่อนจะกลายเป็นประตูแดง เดิมเป็นประตูแรงก์ใด?",
+    "answer": "แรงก์ C",
+    "decoys": [
+      "แรงก์ E",
+      "แรงก์ D",
+      "แรงก์ S"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Red_Gate_Incident",
+    "evidence": "The Red Gate Incident was a disastrous event in which a C-Rank Gate that was bought out by White Tiger Guild turned out to be a Red Gate."
+  },
+  {
+    "id": "red-gate-landscape",
+    "tier": "medium",
+    "prompt": "ประตูแดงที่ซองจินอูกับฮันซองอีติดอยู่ พาทีมไปยังภูมิประเทศแบบใด?",
+    "answer": "ทุ่งหิมะเยือกแข็ง",
+    "decoys": [
+      "ทะเลทรายร้อนระอุ",
+      "ป่าดงดิบที่เต็มไปด้วยงูพิษ",
+      "ถ้ำลาวาใต้ดิน"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Red_Gate",
+    "evidence": "the gate that was being used for the exercise turned out to be a Red Gate, stranding them on a freezing, snow-covered landscape."
+  },
+  {
+    "id": "red-gate-elves",
+    "tier": "medium",
+    "prompt": "สัตว์อสูรเผ่าใดที่ซุ่มสังหารทีมของกิลด์เสือขาวในประตูแดง?",
+    "answer": "เอลฟ์น้ำแข็ง",
+    "decoys": [
+      "ไฮออร์ค",
+      "ก็อบลิน",
+      "มนุษย์หมาป่า"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Red_Gate_Arc",
+    "evidence": "Kim Chul and his team are massacred by Ice Elves, forcing him to flee in terror."
+  },
+  {
+    "id": "red-gate-exits",
+    "tier": "medium",
+    "prompt": "ข้อใดไม่ใช่เหตุที่ทำให้ประตูแดงเปิดออกอีกครั้ง?",
+    "answer": "ฮันเตอร์จากข้างนอกพังประตูเข้ามา",
+    "decoys": [
+      "บอสถูกกำจัด",
+      "ทีมที่ติดอยู่ข้างในตายหมด",
+      "เกิดดันเจี้ยนเบรก"
+    ],
+    "note": "ประตูแดงกันไม่ให้คนข้างนอกเข้าไปได้ และจะเปิดเฉพาะสามกรณีในตัวเลือกที่เหลือ",
+    "source": "https://solo-leveling.fandom.com/wiki/Red_Gate",
+    "evidence": "the gate will not open until one of three things happen: the boss is defeated, the entire raid party is killed, or a dungeon break occurs."
+  },
+  {
+    "id": "demon-castle-second-boss",
+    "tier": "medium",
+    "prompt": "บอสตัวที่สองของปราสาทปีศาจ ปีศาจร่างอ้วนมหึมาผู้ครองชั้นล่าง คือใคร?",
+    "answer": "วัลแคน",
+    "decoys": [
+      "เซอร์เบอรัส",
+      "เมทัส",
+      "บารัน"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Vulcan",
+    "evidence": "was the second boss of the Demon Castle and the Ruler of the Lower Floors."
+  },
+  {
+    "id": "demon-castle-guide",
+    "tier": "medium",
+    "prompt": "ปีศาจขุนนางที่ยอมจำนนแล้วนำทางซองจินอูขึ้นปราสาทปีศาจ แลกกับการไว้ชีวิตตระกูลของตน คือใคร?",
+    "answer": "เอซิล ราดิรู",
+    "decoys": [
+      "วัลแคน",
+      "เมทัส",
+      "เซอร์เบอรัส"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Return_to_Demon_Castle_Arc",
+    "evidence": "he meets Esil Radiru, a friendly demon noble who offers to guide him to Baran, the King of Demons and the final boss of the castle, in exchange for sparing the lives of her clan."
+  },
+  {
+    "id": "hunters-gate-monsters",
+    "tier": "medium",
+    "prompt": "สัตว์อสูรเผ่าใดเป็นกองทัพของบอสในประตูแรงก์ A ของกิลด์ฮันเตอร์สที่ซองจินอูเข้าไป?",
+    "answer": "ไฮออร์ค",
+    "decoys": [
+      "เอลฟ์น้ำแข็ง",
+      "มด",
+      "ก็อบลิน"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Hunters_Guild_Gate",
+    "evidence": "Kargalgan, the dungeon Boss, sensing the Hunters presence, sent out a contingent of 22 High Orcs soldiers to greet them."
+  },
+  {
+    "id": "jeju-raid-plan",
+    "tier": "medium",
+    "prompt": "ในแผนบุกประตูแรงก์ S เกาะเชจูร่วมกับญี่ปุ่น ฮันเตอร์แรงก์ S ฝ่ายญี่ปุ่นรับหน้าที่อะไร?",
+    "answer": "เป็นเหยื่อล่อฝูงมดออกจากรัง",
+    "decoys": [
+      "บุกเข้ารังไปฆ่าราชินี",
+      "เฝ้าชายฝั่งกันมดหนีไปแผ่นดินใหญ่",
+      "รักษาผู้บาดเจ็บอยู่แนวหลัง"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Jeju_Island_S-Rank_Gate",
+    "evidence": "the Japanese S-Rank Hunters would use themselves as bait to draw out the ants, while the Korean S-Rank Hunters would sneak into the unguarded nest and kill the Ant Queen."
+  },
+  {
+    "id": "ant-queen-killer",
+    "tier": "medium",
+    "prompt": "ใครเป็นผู้ตัดหัวราชินีมดในรังบนเกาะเชจู?",
+    "answer": "ชาแฮอิน",
+    "decoys": [
+      "ชเวจงอิน",
+      "แบคยุนโฮ",
+      "ลิมแทกยู"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Ant_Queen",
+    "evidence": "Cha Hae-In decapitated the Ant Queen with her sword, killing the creature instantly."
+  },
+  {
+    "id": "jinwoo-jeju-arrival",
+    "tier": "medium",
+    "prompt": "ซองจินอูไปถึงเกาะเชจูกลางการบุกได้อย่างไร?",
+    "answer": "ใช้สลับเงากับเงาที่แอบฝากไว้ในตัวฮันเตอร์",
+    "decoys": [
+      "นั่งเฮลิคอปเตอร์ของสมาคมไป",
+      "ใช้หินกลับบ้าน",
+      "ขี่ไคเซลบินข้ามทะเล"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Episode_23",
+    "evidence": "Jinwoo activates Shadow Exchange, preparing to teleport directly to Jeju Island."
+  },
+  {
+    "id": "jeju-ants-evolve",
+    "tier": "medium",
+    "prompt": "มดบนเกาะเชจูวิวัฒนาการอย่างไร จนเริ่มโจมตีผู้คนบนเกาะใกล้เคียง?",
+    "answer": "งอกปีกบินข้ามทะเลได้",
+    "decoys": [
+      "ขุดอุโมงค์ลอดใต้ทะเล",
+      "ว่ายน้ำข้ามทะเล",
+      "พ่นไฟได้"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Jeju_Island_S-Rank_Gate",
+    "evidence": "the ants eventually evolved by growing wings that enabled them to fly over long distances and started attacking people living on islands that were close by"
+  },
+  {
+    "id": "ant-king-demand",
+    "tier": "medium",
+    "prompt": "ราชามดถามหาอะไรจากฮันเตอร์ที่มันเจอซ้ำแล้วซ้ำเล่า?",
+    "answer": "ราชาของพวกมนุษย์",
+    "decoys": [
+      "ผู้เล่นของระบบคนนั้น",
+      "ทางออกจากเกาะ",
+      "หินแก่นเวท"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Ant_King",
+    "evidence": "as demonstrated when he repeatedly demanded the Korean and Japanese hunters for their \"king.\""
+  },
+  {
+    "id": "jinwoo-skips-jeju",
+    "tier": "medium",
+    "prompt": "ตอนแรกซองจินอูปฏิเสธไม่ร่วมบุกเกาะเชจูเพราะอะไร?",
+    "answer": "อยากอยู่ดูแลแม่ที่เพิ่งฟื้น",
+    "decoys": [
+      "สมาคมไม่ได้เชิญเขา",
+      "ยังติดอยู่ในปราสาทปีศาจ",
+      "บาดเจ็บหนักจากการสู้ในปราสาทปีศาจ"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Episode_22",
+    "evidence": "Despite being requested to join the Fourth Jeju Island Raid, Jinwoo declines because he wants to remain with his recently awakened mother."
+  },
+  {
+    "id": "chiyul-awakened-class",
+    "tier": "hard",
+    "prompt": "ซงชียูลตื่นพลังเป็นฮันเตอร์สายใด?",
+    "answer": "เมจ",
+    "decoys": [
+      "ไฟเตอร์",
+      "ฮีลเลอร์",
+      "แอสแซสซิน"
+    ],
+    "note": "เขาใช้เวทไฟในการต่อสู้",
+    "source": "https://solo-leveling.fandom.com/wiki/Song_Chi-Yul",
+    "evidence": "found himself in the Mage class, which he found ironic considering he was a swordsman."
+  },
+  {
+    "id": "sangshik-sword-chiyul",
+    "tier": "hard",
+    "prompt": "ในวิหารคาร์เทนอน ใครเอาดาบจ่อคอซงชียูลให้ขึ้นแท่นบูชาเป็นเครื่องสังเวย?",
+    "answer": "คิมซังชิก",
+    "decoys": [
+      "คังจองโฮ",
+      "ซองจินอู",
+      "อีจูฮี"
+    ],
+    "note": "ภายหลังเขาทิ้งทุกคนแล้วหนีออกไปเพื่อครอบครัว",
+    "source": "https://solo-leveling.fandom.com/wiki/Song_Chi-Yul",
+    "evidence": "Sangshik hearing this, conjured a sword and pointed it to Chi-Yul's throat demanding he be the sacrifice"
+  },
+  {
+    "id": "taeshik-hunter-class",
+    "tier": "hard",
+    "prompt": "คังแทชิกเป็นฮันเตอร์สายใด?",
+    "answer": "แอสแซสซิน",
+    "decoys": [
+      "ไฟเตอร์",
+      "เมจ",
+      "ฮีลเลอร์"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Kang_Taeshik",
+    "evidence": "As a B-Rank assassin-type hunter, Taeshik was inhumanly fast"
+  },
+  {
+    "id": "ahn-sangmin-deduction",
+    "tier": "hard",
+    "prompt": "พนักงานกิลด์เสือขาวคนใดสืบประวัติจินอูจนสรุปว่าเขาผ่านการตื่นพลังครั้งที่สอง?",
+    "answer": "อันซังมิน",
+    "decoys": [
+      "พัคฮีจิน",
+      "คิมชอล",
+      "แบคยุนโฮ"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Ahn_Sangmin",
+    "evidence": "led Ahn to conclude that Jinwoo had recently undergone a Reawakening."
+  },
+  {
+    "id": "haein-pickaxe-weapon",
+    "tier": "hard",
+    "prompt": "ตอนตามจินอูเข้าประตูแรงก์ A ชาแฮอินถืออะไรเป็นอาวุธ?",
+    "answer": "อีเต้อขุดแร่",
+    "decoys": [
+      "ดาบสำรองจากยิมของสมาคม",
+      "หอกของทีมจู่โจม",
+      "โล่ของทีมขุดแร่"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Cha_Hae-In",
+    "evidence": "she borrowed a miner's pick from Yoon-Suk."
+  },
+  {
+    "id": "matsumoto-abandon-order",
+    "tier": "hard",
+    "prompt": "ใครสั่งให้ทีมฮันเตอร์ญี่ปุ่นถอนตัวและทิ้งทีมเกาหลีไว้บนเกาะเชจู?",
+    "answer": "มัตสึโมโตะ ชิเงโอะ",
+    "decoys": [
+      "โกโตะ ริวจิ",
+      "ซูกิโมโตะ เรจิ",
+      "โฮชิโนะ มิโนรุ"
+    ],
+    "note": "เขาเป็นประธานสมาคมฮันเตอร์ญี่ปุ่น",
+    "source": "https://solo-leveling.fandom.com/wiki/Goto_Ryuji",
+    "evidence": "Matsumoto ordered Goto and his surviving guildmates to leave the island and abandon the Korean raid team to die."
+  },
+  {
+    "id": "kumamoto-berserk",
+    "tier": "hard",
+    "prompt": "ในการประลองที่ยิมของสมาคม ฮันเตอร์ญี่ปุ่นคนใดคลุ้มคลั่งหลังถูกชาแฮอินทำให้บาดเจ็บ?",
+    "answer": "คุมาโมโตะ อัตสึชิ",
+    "decoys": [
+      "ทาวาตะ คานาเอะ",
+      "โฮชิโนะ มิโนรุ",
+      "ทานากะ เคนโซ"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Episode_22",
+    "evidence": "Atsushi Kumamoto enters a berserk state after being injured by Cha and attacks her without holding back."
+  },
+  {
+    "id": "haein-defeats-kanae",
+    "tier": "hard",
+    "prompt": "ในการประลองสี่ต่อสี่ ชาแฮอินเอาชนะฮันเตอร์ญี่ปุ่นคนใดได้อย่างง่ายดาย?",
+    "answer": "ทาวาตะ คานาเอะ",
+    "decoys": [
+      "โฮชิโนะ มิโนรุ",
+      "ทานากะ เคนโซ",
+      "อิชิดะ มาริ"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Cha_Hae-In",
+    "evidence": "Hae-In easily defeated Kanae Tawata"
+  },
+  {
+    "id": "akari-draw-sword-healer",
+    "tier": "hard",
+    "prompt": "ฮีลเลอร์ประจำกิลด์ชักดาบที่ชอบแกล้งทานากะ เคนโซและเรียกค่ารักษาจากเขาคือใคร?",
+    "answer": "ชิมิสึ อาคาริ",
+    "decoys": [
+      "อิชิดะ มาริ",
+      "ทาวาตะ คานาเอะ",
+      "ฮันเซมิ"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Kenzo_Tanaka",
+    "evidence": "He also had a good relationship with Akari, his guild's main healer"
+  },
+  {
+    "id": "eunseok-first-killed",
+    "tier": "hard",
+    "prompt": "ฮันเตอร์แรงก์ S คนแรกของเกาหลีที่เสียชีวิตขณะปฏิบัติหน้าที่คือใคร?",
+    "answer": "อีอึนซอก",
+    "decoys": [
+      "มินบยองกยู",
+      "โกกอนฮี",
+      "คิมชอล"
+    ],
+    "note": "เขาเสียชีวิตในการบุกเกาะเชจูครั้งที่ 3",
+    "source": "https://solo-leveling.fandom.com/wiki/Lee_Eunseok",
+    "evidence": "was the first Korean S-Rank Hunter to ever be killed in action."
+  },
+  {
+    "id": "ma-s-rank-tanker",
+    "tier": "hard",
+    "prompt": "หัวหน้ากิลด์ชาวเกาหลีคนใดเป็นแทงเกอร์แรงก์ S?",
+    "answer": "มาดงอุก",
+    "decoys": [
+      "แบคยุนโฮ",
+      "ลิมแทกยู",
+      "พัคจงซู"
+    ],
+    "note": "พัคจงซูก็เป็นแทงเกอร์ แต่เป็นแรงก์ A",
+    "source": "https://solo-leveling.fandom.com/wiki/Fame_Guild",
+    "evidence": "Ma Dongwook Guild Master S-Rank Tanker Alive"
+  },
+  {
+    "id": "knights-no-s-rank",
+    "tier": "hard",
+    "prompt": "กิลด์ใดในห้ากิลด์ชั้นนำของเกาหลีไม่มีฮันเตอร์แรงก์ S เลย?",
+    "answer": "กิลด์อัศวิน",
+    "decoys": [
+      "กิลด์เกียรติยศ",
+      "กิลด์ปีศาจ",
+      "กิลด์เสือขาว"
+    ],
+    "note": "แต่เป็นกิลด์ที่มีฮันเตอร์แรงก์ A มากที่สุดในประเทศ",
+    "source": "https://solo-leveling.fandom.com/wiki/Knights_Guild",
+    "evidence": "Although it has no S-Rank Hunters, the Knights Guild has the highest number of A-Ranks out of any other guild in the country."
+  },
+  {
+    "id": "heejin-red-gate-survivor",
+    "tier": "hard",
+    "prompt": "ฮันเตอร์แรงก์ B ของกิลด์เสือขาวที่เลือกอยู่กับจินอูแทนการตามหัวหน้าทีมไป และรอดจากประตูแดงคือใคร?",
+    "answer": "พัคฮีจิน",
+    "decoys": [
+      "อีจูฮี",
+      "อีโบรา",
+      "จีนา"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Park_Heejin",
+    "evidence": "Park Heejin (박희진) is a Korean B-Rank Hunter under the White Tiger Guild and one of the five survivors of the Red Gate Incident."
+  },
+  {
+    "id": "joohee-busan-defense",
+    "tier": "hard",
+    "prompt": "ระหว่างการบุกเกาะเชจู อีจูฮีกับซงชียูลเฝ้าชายฝั่งของเมืองใด?",
+    "answer": "ปูซาน",
+    "decoys": [
+      "อินชอน",
+      "โซล",
+      "มกโพ"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Lee_Joohee",
+    "evidence": "Joohee willingly participated alongside Song Chi-Yul in defending the shores of Busan"
+  },
+  {
+    "id": "jinchul-escorts-dongsoo",
+    "tier": "hard",
+    "prompt": "เมื่อฮันเตอร์แรงก์ S จากอเมริกามาเกาหลีเพื่อตามล่าจินอู สมาคมส่งใครไปเป็นคนขับรถคอยประกบเขา?",
+    "answer": "อูจินชอล",
+    "decoys": [
+      "คังแทชิก",
+      "แบคยุนโฮ",
+      "โกกอนฮี"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Woo_Jinchul",
+    "evidence": "Jinchul was forced to act as Hwang's chauffeur and drove him to the gate where Jinwoo was supposed to be located."
+  },
+  {
+    "id": "son-kihoon-squad-leader",
+    "tier": "hard",
+    "prompt": "ใครเป็นหัวหน้าทีมจู่โจม B ของกิลด์ฮันเตอร์สที่จินอูตามเข้าประตูแรงก์ A?",
+    "answer": "ซนกีฮุน",
+    "decoys": [
+      "ชาแฮอิน",
+      "ชเวจงอิน",
+      "แบยุนซอก"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Hunters_Guild",
+    "evidence": "The second squad is led by Son Kihoon and consists of both A-Rank and B-Rank Hunters."
+  },
+  {
+    "id": "thomas-jeju-fee",
+    "tier": "hard",
+    "prompt": "โทมัส อังเดรตอบเรื่องการบุกเกาะเชจูว่าอย่างไร?",
+    "answer": "จะร่วมก็ต่อเมื่อได้รับค่าจ้าง",
+    "decoys": [
+      "ยินดีช่วยโดยไม่คิดเงิน",
+      "จะส่งลูกกิลด์มาช่วยแทน",
+      "ปฏิเสธเพราะต้องปิดประตูในอเมริกา"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Thomas_Andre",
+    "evidence": "made it clear that he would not participate in the Jeju Island Raid unless he was paid his fee."
+  },
+  {
+    "id": "detection-breaks-stealth",
+    "tier": "hard",
+    "prompt": "ในดันเจี้ยนเควสต์เปลี่ยนอาชีพ ศัตรูกลุ่มใดใช้สกิลตรวจจับหาจินอูขณะล่องหนอยู่ได้?",
+    "answer": "เหล่าจอมเวท",
+    "decoys": [
+      "เหล่าอัศวิน",
+      "เหล่านักธนู",
+      "เหล่านักฆ่า"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Detection",
+    "evidence": "Detection is a skill used by the Magicians of the Job Change Quest Dungeon."
+  },
+  {
+    "id": "critical-attack-evolution",
+    "tier": "hard",
+    "prompt": "สกิลโจมตีจุดสำคัญด้วยกริช \"คริติคอลแอทแท็ก\" (ในอนิเมะเรียก Fatal Strike) พัฒนาเป็นรูปแบบสุดท้ายใดระหว่างศึกที่เกาะเชจู?",
+    "answer": "ฟันจุดตาย",
+    "decoys": [
+      "แดกเกอร์รัช",
+      "ควิกซิลเวอร์",
+      "กระหายเลือด"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Jeju_Island_Arc",
+    "evidence": "Jinwoo's Skill: 'Critical Attack' evolved into its final form 'Mutilation'."
+  },
+  {
+    "id": "tenacity-low-health",
+    "tier": "hard",
+    "prompt": "สกิลติดตัวใดของจินอูทำงานเองเมื่อพลังชีวิตเหลือน้อย และลดความเสียหายที่เขาได้รับ?",
+    "answer": "ทรหด",
+    "decoys": [
+      "เจตจำนงฟื้นฟู",
+      "ล้างพิษ",
+      "เทคนิคกริชขั้นสูง"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Sung_Jinwoo",
+    "evidence": "Tenacity: If Jinwoo's health drops below 30% in battle, any further damage that he receives will be reduced by 50% in order to keep him alive."
+  },
+  {
+    "id": "detox-no-drunk",
+    "tier": "hard",
+    "prompt": "เพราะสกิลติดตัวใด จินอูจึงดื่มเหล้าแล้วไม่เมา?",
+    "answer": "ล้างพิษ",
+    "decoys": [
+      "ทรหด",
+      "เจตจำนงฟื้นฟู",
+      "เทคนิคกริชขั้นสูง"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Sung_Jinwoo",
+    "evidence": "Detoxification: Jinwoo's body is able to automatically cleanse itself of any poisons once they are detected in his bloodstream. Unfortunately, alcohol is considered to be a poison and as a result, Jinwoo can't get drunk."
+  },
+  {
+    "id": "dagger-damage-passive",
+    "tier": "hard",
+    "prompt": "สกิลติดตัวใดเพิ่มความเสียหายทุกครั้งที่จินอูใช้กริชต่อสู้?",
+    "answer": "เทคนิคกริชขั้นสูง",
+    "decoys": [
+      "ทรหด",
+      "ล้างพิษ",
+      "เจตจำนงฟื้นฟู"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Sung_Jinwoo",
+    "evidence": "Advanced Dagger Techniques: If Jinwoo uses his daggers in battle, any damage he inflicts on his opponent will be increased by 33%."
+  },
+  {
+    "id": "hearthstone-escape",
+    "tier": "hard",
+    "prompt": "ไอเทมเฉพาะเควสต์ชิ้นใดที่ถ้าทุบแล้วจะพาจินอูออกจากดันเจี้ยนเควสต์เปลี่ยนอาชีพได้ทันที?",
+    "answer": "หินเคลื่อนย้ายทันที",
+    "decoys": [
+      "กุญแจดันเจี้ยน",
+      "หินรูน",
+      "ผลึกมานา"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Sung_Jinwoo/Items",
+    "evidence": "If you break the Hearthstone, you will instantly leave the Dungeon."
+  },
+  {
+    "id": "demon-castle-key",
+    "tier": "hard",
+    "prompt": "จินอูได้กุญแจเข้าปราสาทปีศาจมาจากอะไร?",
+    "answer": "ทำเควสต์ลับของเควสต์รายวันสำเร็จ",
+    "decoys": [
+      "ซื้อจากร้านค้าของระบบ",
+      "ดรอปจากบอสดันเจี้ยนชั่วคราว",
+      "รางวัลเควสต์เปลี่ยนอาชีพ"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Dungeon_&_Prisoners_Arc",
+    "evidence": "Jinwoo completed the hidden quest of the daily tasks and obtained the Demon Castle's Key."
+  },
+  {
+    "id": "orb-avarice-drop",
+    "tier": "hard",
+    "prompt": "ลูกแก้วแห่งความละโมบดรอปจากบอสปีศาจตัวใดในปราสาทปีศาจ?",
+    "answer": "วัลแคน",
+    "decoys": [
+      "เซอร์เบอรัส",
+      "เมทัส",
+      "เอซิล ราดิรู"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Orb_of_Avarice",
+    "evidence": "obtained by Sung Jinwoo in the Demon Castle after defeating the S-Rank demon, Vulcan."
+  },
+  {
+    "id": "metus-drop-ingredient",
+    "tier": "hard",
+    "prompt": "หลังปราบเมทัสในปราสาทปีศาจ จินอูได้วัตถุดิบใดสำหรับทำน้ำศักดิ์สิทธิ์แห่งชีวิต?",
+    "answer": "น้ำพุจากป่าแห่งเสียงสะท้อน",
+    "decoys": [
+      "เศษต้นไม้โลก",
+      "เลือดราชาปีศาจที่ชำระแล้ว",
+      "เขี้ยวของเซอร์เบอรัส"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Demon_Castle_Arc",
+    "evidence": "Jinwoo killed Metus and obtained Spring Water from the Forest of Echoes and Demon Monarch's Necklace."
+  },
+  {
+    "id": "red-gate-failed-extraction",
+    "tier": "hard",
+    "prompt": "ในประตูแดง จินอูพยายามสกัดเงาของใครแต่ล้มเหลวทุกครั้ง?",
+    "answer": "บารูก้า",
+    "decoys": [
+      "คิมชอล",
+      "หมีน้ำแข็งจ่าฝูง",
+      "คาร์กัลกัน"
+    ],
+    "note": "เป้าหมายแข็งแกร่งกว่าจินอูในตอนนั้นมาก",
+    "source": "https://solo-leveling.fandom.com/wiki/Baruka",
+    "evidence": "Afterward, Jinwoo attempted to extract Baruka's shadow but failed all three attempts due to the dungeon boss' superior strength."
+  },
+  {
+    "id": "tank-named-grade",
+    "tier": "hard",
+    "prompt": "เงาแทงค์ได้รับชื่ออย่างเป็นทางการเมื่อถูกเลื่อนขึ้นเป็นระดับใด?",
+    "answer": "ระดับอัศวิน",
+    "decoys": [
+      "ระดับอัศวินชั้นยอด",
+      "ระดับแม่ทัพ",
+      "ระดับจอมพล"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Return_to_Demon_Castle_Arc",
+    "evidence": "'Shadow Monster' was promoted to Knight-Rank and is officially named Tank."
+  },
+  {
+    "id": "beru-gluttony",
+    "tier": "hard",
+    "prompt": "ความสามารถใดทำให้เบรูได้สกิลและความรู้ของผู้ที่มันกินเข้าไป?",
+    "answer": "ตะกละ",
+    "decoys": [
+      "เสียงยั่วยุ",
+      "สำแดงร่างวิญญาณ",
+      "อาณาเขตของราชา"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Beru",
+    "evidence": "Gluttony: Beru is able to absorb the skills and knowledge of those he consumes."
+  },
+  {
+    "id": "baran-twin-daggers",
+    "tier": "hard",
+    "prompt": "อาวุธคู่ใดที่ดรอปจากบารัน และจินอูใช้เป็นอาวุธหลักต่อมา?",
+    "answer": "กริชของราชาปีศาจ",
+    "decoys": [
+      "กริชของบารูก้า",
+      "ความพิโรธของคามิช",
+      "เขี้ยวพิษของคาซาก้า"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Demon_King's_Daggers",
+    "evidence": "Following his death, Jinwoo recovered the daggers as one of his drop items and went on to use them as his main weapon"
+  },
+  {
+    "id": "first-dagger-effects",
+    "tier": "hard",
+    "prompt": "กริชที่จินอูได้จากบอสดันเจี้ยนชั่วคราวแห่งแรกมีผลพิเศษข้อใด?",
+    "answer": "อัมพาตและเลือดไหล",
+    "decoys": [
+      "แช่แข็งและสตัน",
+      "ติดไฟและลดเกราะ",
+      "ดูดเลือดและเพิ่มความเร็ว"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Sung_Jinwoo/Items",
+    "evidence": "A dagger made from Kasaka's Venom Fang. Has two effects: Paralyze and Bleed."
+  },
+  {
+    "id": "demon-hunter-title",
+    "tier": "hard",
+    "prompt": "หลังปราบบารัน จินอูได้ตำแหน่ง (Title) ใหม่ชื่อว่าอะไร?",
+    "answer": "นักล่าปีศาจ",
+    "decoys": [
+      "นักฆ่าหมาป่า",
+      "ผู้พิชิตปราสาท",
+      "นักฆ่ามังกร"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Return_to_Demon_Castle_Arc",
+    "evidence": "Jinwoo acquired the Skill: Shadow Exchange and earned the Title: 'Demon Hunter'."
+  },
+  {
+    "id": "cursed-random-box",
+    "tier": "hard",
+    "prompt": "ในร้านค้าของระบบ \"กล่องสุ่มต้องสาป\" ให้ไอเทมแบบใด?",
+    "answer": "ไอเทมที่ผู้เล่นจำเป็นต้องใช้",
+    "decoys": [
+      "ไอเทมที่ผู้เล่นอยากได้",
+      "ไอเทมแรงก์ S เท่านั้น",
+      "ไอเทมที่ขายได้ราคาสูงสุด"
+    ],
+    "note": "ส่วนกล่องสุ่มแห่งพรให้ไอเทมที่ผู้เล่นอยากได้",
+    "source": "https://solo-leveling.fandom.com/wiki/System",
+    "evidence": "Cursed Random Box: obtain an item the Player needs."
+  },
+  {
+    "id": "extraction-no-demons",
+    "tier": "hard",
+    "prompt": "สกิลสกัดเงาใช้ไม่ได้กับเป้าหมายแบบใด?",
+    "answer": "ผู้ที่มีมานาปนเปื้อนอย่างเหล่าปีศาจ",
+    "decoys": [
+      "ฮันเตอร์มนุษย์",
+      "สัตว์อสูรแรงก์ S",
+      "สัตว์อสูรที่บินได้"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Shadow_Extraction",
+    "evidence": "Shadow Extraction can't be used on targets with contaminated mana, such as demons."
+  },
+  {
+    "id": "first-commandment-bow",
+    "tier": "hard",
+    "prompt": "จะผ่านบัญญัติข้อแรกของดันเจี้ยนคู่ได้ ทุกคนในห้องต้องทำอะไรต่อหน้ารูปปั้นเทพเจ้า?",
+    "answer": "ก้มกราบ",
+    "decoys": [
+      "จุดไฟบูชาที่แท่น",
+      "วางอาวุธทั้งหมด",
+      "ร้องเพลงสรรเสริญ"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Cartenon_Temple",
+    "evidence": "The first commandment can only be fulfilled if every person in the room bows down before the Statue of God."
+  },
+  {
+    "id": "second-commandment-music",
+    "tier": "hard",
+    "prompt": "บัญญัติข้อสองของดันเจี้ยนคู่ ผ่านได้เมื่อแต่ละคนไปยืนอยู่หน้าอะไร?",
+    "answer": "รูปปั้นที่ถือเครื่องดนตรี",
+    "decoys": [
+      "รูปปั้นที่ถืออาวุธ",
+      "แท่นบูชากลางห้อง",
+      "ประตูทางออก"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Cartenon_Temple",
+    "evidence": "The second commandment can only be fulfilled if every person in the room individually stands in front of a statue carrying an instrument"
+  },
+  {
+    "id": "cobra-boss-death",
+    "tier": "hard",
+    "prompt": "ซองจินอูปิดฉากบอสงูเห่าในดันเจี้ยนชั่วคราวแห่งแรกได้อย่างไร?",
+    "answer": "รัดคอมันจนตาย",
+    "decoys": [
+      "แทงกริชเข้าตา",
+      "เผาด้วยเวทไฟ",
+      "ให้เงาทหารรุม"
+    ],
+    "note": "ก่อนหน้านั้นมันฟาดดาบของเขาแตกในครั้งเดียว",
+    "source": "https://solo-leveling.fandom.com/wiki/Blue_Venom-Fanged_Kasaka",
+    "evidence": "was only defeated because Jinwoo narrowly managed to strangle it to death with the help of his strength stats."
+  },
+  {
+    "id": "insects-dungeon-boss",
+    "tier": "hard",
+    "prompt": "บอสของดันเจี้ยนที่ซองจินอูพบยูจินโฮครั้งแรกคืออะไร?",
+    "answer": "แมงมุมยักษ์บูริวรา",
+    "decoys": [
+      "ฮอบก็อบลิน",
+      "มนุษย์หมาป่า",
+      "หมีน้ำแข็ง"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Insects_Dungeon",
+    "evidence": "with the massive Giant Arachnid Buryura as its dungeon boss."
+  },
+  {
+    "id": "goblins-dungeon-victim",
+    "tier": "hard",
+    "prompt": "ในดันเจี้ยนก็อบลิน ผู้รอดชีวิตจากดันเจี้ยนคู่คนใดถูกผู้คุมนักโทษสังหาร?",
+    "answer": "คิมซังชิก",
+    "decoys": [
+      "อีจูฮี",
+      "ซงชียูล",
+      "ซองจินอู"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Dungeon_&_Prisoners_Arc",
+    "evidence": "Kang Taeshik vs Kim Sangshik = Sangshik's death."
+  },
+  {
+    "id": "red-knight-eye",
+    "tier": "hard",
+    "prompt": "ระหว่างสู้บอสอัศวินเกราะแดงในดันเจี้ยนเควสต์เปลี่ยนอาชีพ ซองจินอูแทงกริชเข้าที่ใดจนพลิกเกม?",
+    "answer": "ตาซ้าย",
+    "decoys": [
+      "หัวใจ",
+      "ข้อมือขวา",
+      "ขาซ้าย"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Blood-Red_Commander_Igris",
+    "evidence": "drove his dagger into his left eye, knocking him off-balance."
+  },
+  {
+    "id": "baruka-finisher",
+    "tier": "hard",
+    "prompt": "ใครเป็นผู้ปิดฉากบารูก้าด้วยการทุบด้วยค้อนศึกจากด้านหลัง?",
+    "answer": "ไอรอน",
+    "decoys": [
+      "อิกริส",
+      "แทงค์",
+      "ทัสก์"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Baruka",
+    "evidence": "he failed to see Iron appear behind him and was crushed underneath the shadow's warhammer."
+  },
+  {
+    "id": "demon-castle-look",
+    "tier": "hard",
+    "prompt": "ภายในปราสาทปีศาจมีหน้าตาเป็นอย่างไร?",
+    "answer": "เมืองโซลที่พังยับและลุกเป็นไฟ",
+    "decoys": [
+      "ปราสาทยุโรปยุคกลาง",
+      "ป่าดึกดำบรรพ์",
+      "ทะเลทรายไร้ลม"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Demon_Castle",
+    "evidence": "The Demon Castle appeared as a destroyed version of Seoul littered with ruined buildings and set on fire."
+  },
+  {
+    "id": "metus-power",
+    "tier": "hard",
+    "prompt": "เมทัส บอสของปราสาทปีศาจ ใช้พลังแบบใดสู้กับซองจินอู?",
+    "answer": "ปลุกอันเดดนับพันขึ้นมา",
+    "decoys": [
+      "พ่นสายฟ้า",
+      "แช่แข็งทั้งชั้น",
+      "ฟาดด้วยกระบองจากกิ่งต้นไม้โลก"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Metus",
+    "evidence": "the Guide of the Departed Souls summoned thousands of undead in an attempt to overwhelm Jinwoo and his summons."
+  },
+  {
+    "id": "baran-death",
+    "tier": "hard",
+    "prompt": "ซองจินอูปิดฉากบารันบนชั้นสุดท้ายของปราสาทปีศาจได้อย่างไร?",
+    "answer": "ฉีกแขนซ้ายแล้วต่อยหัวจนหลุด",
+    "decoys": [
+      "แทงด้วยดาบยาวของราชาปีศาจ",
+      "ให้ไคเซลกัดคอ",
+      "ให้เงาจอมเวทเผาจนมอดไหม้"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Baran",
+    "evidence": "Baran was ultimately defeated when Jinwoo ripped off his left arm and punched him in the jaw with all the strength he possessed, blowing off his head and killing him for good."
+  },
+  {
+    "id": "leashed-jackals",
+    "tier": "hard",
+    "prompt": "สัตว์อสูรที่โจมตีทีมกิลด์ฮันเตอร์สเป็นพวกแรก ดูอ่อนแอผิดปกติและมีรอยปลอกคอ คือตัวอะไร?",
+    "answer": "หมาจิ้งจอกดันเจี้ยน",
+    "decoys": [
+      "มนุษย์หมาป่า",
+      "หมาป่าเขี้ยวเหล็ก",
+      "ก็อบลิน"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Hunters_Guild_Gate",
+    "evidence": "Jinwoo noticed that they were not ordinary because they had leash marks around their neck."
+  },
+  {
+    "id": "kargalgan-barrier-breaker",
+    "tier": "hard",
+    "prompt": "ใครทำลายบาเรียป้องกันของคาร์กัลกันได้?",
+    "answer": "จอมเวทเงาของซองจินอู",
+    "decoys": [
+      "อิกริส",
+      "แทงค์",
+      "ซนกีฮุน"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Episode_18",
+    "evidence": "Jinwoo's three Shadow Mages combine their magic to destroy Kargalgan's protective barrier."
+  },
+  {
+    "id": "second-red-gate-inside",
+    "tier": "hard",
+    "prompt": "ประตูแรงก์ B ที่โผล่กลางทางด่วนในโซลหลังศึกเชจู แล้วกลายเป็นประตูแดง ข้างในเป็นแบบใด?",
+    "answer": "ป่าฝนกว้างใหญ่",
+    "decoys": [
+      "ทะเลทรายร้อนระอุ",
+      "ถ้ำลาวาใต้ดิน",
+      "เมืองร้างใต้ทะเล"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/2nd_Red_Gate_Dungeon",
+    "evidence": "The gate was a massive rainy forest, full of humanoids monsters like Treefolk Centaur."
+  },
+  {
+    "id": "ahjin-name-origin",
+    "tier": "very-hard",
+    "prompt": "ชื่อกิลด์อาจินมาจากการสลับตัวอักษรชื่อของใคร?",
+    "answer": "ซองจินอา",
+    "decoys": [
+      "ยูจินโฮ",
+      "ชาแฮอิน",
+      "ซองอิลฮวาน"
+    ],
+    "note": "เธอเป็นคนเสนอชื่อนี้เอง",
+    "source": "https://solo-leveling.fandom.com/wiki/Ahjin_Guild",
+    "evidence": "The name of the guild is the first name of Sung Jinah, Jinwoo's sister, spelled backwards."
+  },
+  {
+    "id": "soohyun-joins-ahjin",
+    "tier": "very-hard",
+    "prompt": "นางแบบและนักแสดงชื่อดังแรงก์ A ที่เข้าร่วมกิลด์อาจินคือใคร?",
+    "answer": "ยูซูฮยอน",
+    "decoys": [
+      "ชาแฮอิน",
+      "ฮันซองอี",
+      "อีจูฮี"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Yoo_Soohyun",
+    "evidence": "was delighted to join the Ahjin Guild as its third member"
+  },
+  {
+    "id": "haein-ahjin-test",
+    "tier": "very-hard",
+    "prompt": "ในการทดสอบเข้ากิลด์อาจิน จินอูเรียกเงาตนใดมาประลองกับชาแฮอินเป็นตนแรก?",
+    "answer": "อิกริส",
+    "decoys": [
+      "เบรู",
+      "ไอรอน",
+      "ทัสก์"
+    ],
+    "note": "เธอชนะ แล้วขอสู้กับเบรูต่อ",
+    "source": "https://solo-leveling.fandom.com/wiki/Cha_Hae-In",
+    "evidence": "Jinwoo then selected Igris to be her opponent with the knight wielding Baran's sword."
+  },
+  {
+    "id": "gunhee-killer",
+    "tier": "very-hard",
+    "prompt": "ใครสังหารโกกอนฮี?",
+    "answer": "ซิลลาด",
+    "decoys": [
+      "ราคาน",
+      "เควเรชา",
+      "ทาร์นัก"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Go_Gunhee",
+    "evidence": "left him wide open for Sillad to fatally stab him right through the chest."
+  },
+  {
+    "id": "gunhee-last-request",
+    "tier": "very-hard",
+    "prompt": "ก่อนสิ้นใจ โกกอนฮีขอให้จินอูทำอะไร?",
+    "answer": "ยืนอยู่ข้างมนุษยชาติต่อไป",
+    "decoys": [
+      "สืบทอดตำแหน่งประธานสมาคม",
+      "ล้างแค้นให้เขา",
+      "ดูแลครอบครัวของเขาแทน"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Go_Gunhee",
+    "evidence": "Gunhee asked Jinwoo to remain on the side of humanity in the coming war with the Monarchs"
+  },
+  {
+    "id": "new-association-chairman",
+    "tier": "very-hard",
+    "prompt": "ช่วงท้ายเรื่อง ใครขึ้นรับตำแหน่งประธานสมาคมฮันเตอร์เกาหลีคนใหม่?",
+    "answer": "อูจินชอล",
+    "decoys": [
+      "ชเวจงอิน",
+      "แบคยุนโฮ",
+      "ยูมยองฮัน"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Woo_Jinchul",
+    "evidence": "officially succeeded Gunhee soon after as the new Chairman of the Association."
+  },
+  {
+    "id": "ilhwan-power-source",
+    "tier": "very-hard",
+    "prompt": "ซองอิลฮวานได้รับพลังมาจากใคร?",
+    "answer": "เหล่าผู้ปกครอง",
+    "decoys": [
+      "เหล่าราชา",
+      "แอชบอร์น",
+      "สถาปนิก"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Sung_Il-Hwan",
+    "evidence": "Il-Hwan was found and saved by the Rulers, who granted him their power"
+  },
+  {
+    "id": "ilhwan-monarch-battle",
+    "tier": "very-hard",
+    "prompt": "ซองอิลฮวานต่อสู้กับราชาสองตนใดเพื่อปกป้องจินอูในกรุงโซล?",
+    "answer": "ราคานและซิลลาด",
+    "decoys": [
+      "ราคานและเควเรชา",
+      "ซิลลาดและทาร์นัก",
+      "เลเกียและบารัน"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Sung_Il-Hwan",
+    "evidence": "he died shortly after he overexerted himself in his battle with Sillad and Rakan."
+  },
+  {
+    "id": "chris-reed-killers",
+    "tier": "very-hard",
+    "prompt": "ใครบุกสังหารคริสโตเฟอร์ รีดถึงบ้านของเขา?",
+    "answer": "ทาร์นัก ราคาน และเควเรชา",
+    "decoys": [
+      "ซิลลาด ราคาน และเลเกีย",
+      "บารัน เลเกีย และทาร์นัก",
+      "แอนทาเรส ซิลลาด และเควเรชา"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Christopher_Reed",
+    "evidence": "Tarnak appeared in front of him, while Rakan and Querehsha came in from behind"
+  },
+  {
+    "id": "jinho-kidnapper-usa",
+    "tier": "very-hard",
+    "prompt": "ระหว่างการประชุมกิลด์นานาชาติที่อเมริกา ใครลักพาตัวยูจินโฮไปทรมาน?",
+    "answer": "ฮวังดงซู",
+    "decoys": [
+      "โทมัส อังเดร",
+      "อดัม ไวท์",
+      "คริสโตเฟอร์ รีด"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Hwang_Dongsoo",
+    "evidence": "Hwang kidnapped Jinho from his hotel and brought him to an abandoned factory on the outskirts of the city."
+  },
+  {
+    "id": "thomas-gift-weapon",
+    "tier": "very-hard",
+    "prompt": "โทมัส อังเดรมอบอาวุธใดให้จินอูเพื่อตอบแทนที่ไว้ชีวิตลูกกิลด์ของเขา?",
+    "answer": "ความพิโรธของคามิช",
+    "decoys": [
+      "กริชของราชาปีศาจ",
+      "นักฆ่าอัศวิน",
+      "กริชของบารูก้า"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Thomas_Andre",
+    "evidence": "give him Kamish's Wrath to repay him for sparing the lives of his guildmates."
+  },
+  {
+    "id": "lennart-saves-thomas",
+    "tier": "very-hard",
+    "prompt": "ใครช่วยโทมัส อังเดรไว้จากราคานด้วยการยิงพลังใส่หน้าราคาน?",
+    "answer": "เลนนาร์ท เนียร์มันน์",
+    "decoys": [
+      "หลิว จื้อกัง",
+      "ชเวจงอิน",
+      "ชาแฮอิน"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Thomas_Andre",
+    "evidence": "Thomas was saved by Lennart Niermann, who was able to force Rakan back by firing an energy blast into his face."
+  },
+  {
+    "id": "adam-white-killer",
+    "tier": "very-hard",
+    "prompt": "ใครสังหารอดัม ไวท์?",
+    "answer": "แอนทาเรส",
+    "decoys": [
+      "ทาร์นัก",
+      "ราคาน",
+      "เลเกีย"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Adam_White",
+    "evidence": "Antares used his breath attack on Adam at point-blank range, killing the latter instantly."
+  },
+  {
+    "id": "norma-upgrade-fails",
+    "tier": "very-hard",
+    "prompt": "เมื่อนอร์มา เซลเนอร์ลองอัปเกรดพลังให้จินอู เกิดอะไรขึ้น?",
+    "answer": "ไม่ได้ผล เพราะพลังของจินอูไม่มีขีดจำกัด",
+    "decoys": [
+      "จินอูแข็งแกร่งขึ้นอีกขั้นทันที",
+      "จินอูได้ขึ้นเป็นฮันเตอร์ระดับชาติ",
+      "จินอูปฏิเสธไม่ให้เธอแตะตัว"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Norma_Selner",
+    "evidence": "informed Michael that Jinwoo's powers had no limits, meaning that her abilities wouldn't work on him."
+  },
+  {
+    "id": "nlh-negative-jonas",
+    "tier": "very-hard",
+    "prompt": "ข้อใดไม่ใช่ฮันเตอร์ระดับชาติ?",
+    "answer": "โจนัส",
+    "decoys": [
+      "โทมัส อังเดร",
+      "หลิว จื้อกัง",
+      "คริสโตเฟอร์ รีด"
+    ],
+    "note": "โจนัส ฮันเตอร์ที่แข็งแกร่งที่สุดของบราซิล ถูกสังหารก่อนได้เป็นฮันเตอร์ระดับชาติ",
+    "source": "https://solo-leveling.fandom.com/wiki/Jonas",
+    "evidence": "Jonas never became a National Level Hunter before his death."
+  },
+  {
+    "id": "nlh-title-origin",
+    "tier": "very-hard",
+    "prompt": "ตำแหน่งฮันเตอร์ระดับชาติถือกำเนิดขึ้นหลังเหตุการณ์ใด?",
+    "answer": "การสังหารมังกรคามิช",
+    "decoys": [
+      "การบุกเกาะเชจูครั้งที่ 4",
+      "เหตุการณ์ดันเจี้ยนคู่",
+      "ดันเจี้ยนเบรกที่โตเกียว"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/National_Level_Hunters",
+    "evidence": "In the aftermath of the death of the dragon Kamish, the five S-Rank Hunters who killed him were each given the authority equal to that of an entire nation's"
+  },
+  {
+    "id": "myunghan-cure",
+    "tier": "very-hard",
+    "prompt": "จินอูแอบใช้สิ่งใดรักษาอาการป่วยของยูมยองฮัน?",
+    "answer": "น้ำศักดิ์สิทธิ์แห่งชีวิต",
+    "decoys": [
+      "ยาอายุวัฒนะ",
+      "ถ้วยแห่งการเวียนว่าย",
+      "หัวใจสีดำ"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Yoo_Myunghan",
+    "evidence": "Jinwoo snuck into Myunghan's room at the hospital with Stealth and used the Holy Water of Life on him."
+  },
+  {
+    "id": "haein-dancer-nickname",
+    "tier": "very-hard",
+    "prompt": "เพื่อนร่วมกิลด์ตั้งฉายาให้ชาแฮอินว่าอะไร?",
+    "answer": "นักเต้น",
+    "decoys": [
+      "ทหารสุดยอด",
+      "วีรบุรุษแห่งจีน",
+      "ผู้อัปเกรด"
+    ],
+    "note": "มาจากท่วงท่าเหมือนร่ายรำตอนเธอฟันมอนสเตอร์ ซึ่งเธออายจนสั่งห้ามเรียก",
+    "source": "https://solo-leveling.fandom.com/wiki/Cha_Hae-In",
+    "evidence": "by her teammates from the dance-like movements she made when she swiftly slaughtered monsters with her sword"
+  },
+  {
+    "id": "sugimoto-new-master",
+    "tier": "very-hard",
+    "prompt": "ใครคือรองหัวหน้ากิลด์ชักดาบที่ภายหลังขึ้นเป็นหัวหน้ากิลด์?",
+    "answer": "ซูกิโมโตะ เรจิ",
+    "decoys": [
+      "โฮชิโนะ มิโนรุ",
+      "ทาวาตะ คานาเอะ",
+      "คุมาโมโตะ อัตสึชิ"
+    ],
+    "source": "https://th.wikipedia.org/wiki/โซโลเลเวลลิง",
+    "evidence": "เป็นรองหัวหน้ากิลด์ก่อนที่จะรับช่วงต่อจาก โกโตะ"
+  },
+  {
+    "id": "shadow-preservation-senses",
+    "tier": "very-hard",
+    "prompt": "เมื่อสกิลเก็บรักษาเงาเลเวลอัป จินอูทำสิ่งใดได้เพิ่มขึ้น?",
+    "answer": "รับรู้ผ่านประสาทสัมผัสของเงาจากระยะไกล",
+    "decoys": [
+      "สลับตำแหน่งกับเงา",
+      "เปลี่ยนรูปร่างของเงาได้อิสระ",
+      "เพิ่มพลังเงาทุกตัวในพื้นที่"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Shadow_Preservation",
+    "evidence": "Upon reaching level 2, the skill also grants the ability to share senses with the Shadows, being able to use them as a means of remote monitoring."
+  },
+  {
+    "id": "ashborn-gift-heart",
+    "tier": "very-hard",
+    "prompt": "เมื่อจินอูกลับไปที่ดันเจี้ยนคู่ แอชบอร์นมอบสิ่งใดให้เขาเพื่อส่งต่อตำแหน่ง?",
+    "answer": "หัวใจสีดำ",
+    "decoys": [
+      "ถ้วยแห่งการเวียนว่าย",
+      "ดาบยาวของราชาปีศาจ",
+      "ลูกแก้วแห่งความละโมบ"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Black_Heart",
+    "evidence": "he chose to betray Kandiaru by locking him out of the System, reneging on their deal, and giving Jinwoo his Black Heart."
+  },
+  {
+    "id": "system-creator",
+    "tier": "very-hard",
+    "prompt": "ใครเป็นผู้สร้างระบบขึ้นมา เพื่อปั้นภาชนะมนุษย์ให้แอชบอร์น?",
+    "answer": "คันดิอารู",
+    "decoys": [
+      "ผู้สัมบูรณ์",
+      "แอนทาเรส",
+      "ซองอิลฮวาน"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/System",
+    "evidence": "the System was originally created by Kandiaru to help Ashborn develop a human vessel strong enough to completely absorb his powers"
+  },
+  {
+    "id": "system-moderator-epithet",
+    "tier": "very-hard",
+    "prompt": "บอสลับของดันเจี้ยนคู่ซึ่งเป็นผู้ดูแลระบบ มีฉายาว่าอะไร?",
+    "answer": "สถาปนิก",
+    "decoys": [
+      "ผู้สัมบูรณ์",
+      "ราชาแห่งปฐมกาล",
+      "ผู้ส่งสารแห่งพระเจ้า"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Kandiaru",
+    "evidence": "also known as the Architect (건축가), was the hidden boss of the Double Dungeon and the moderator of the System."
+  },
+  {
+    "id": "system-lockout",
+    "tier": "very-hard",
+    "prompt": "ในการต่อสู้ครั้งที่สองที่ดันเจี้ยนคู่ ทำไมผู้สร้างระบบจึงริบพลังของจินอูไม่ได้?",
+    "answer": "เพราะแอชบอร์นล็อกเขาออกจากระบบไปแล้ว",
+    "decoys": [
+      "เพราะระบบถูกลบไปก่อนแล้ว",
+      "เพราะเหล่าผู้ปกครองยึดระบบไป",
+      "เพราะจินอูทำลายแกนของระบบได้ก่อน"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Kandiaru",
+    "evidence": "he discovered that Ashborn had already locked him out of the System and that he no longer had access to its controls."
+  },
+  {
+    "id": "rulers-authority-evolution",
+    "tier": "very-hard",
+    "prompt": "สกิลใดของจินอูพัฒนาเป็นรูปแบบสุดท้ายเมื่อเขากลับไปดันเจี้ยนคู่?",
+    "answer": "อำนาจผู้ปกครอง",
+    "decoys": [
+      "ฟันจุดตาย",
+      "กระหายเลือด",
+      "ล่องหน"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Double_Dungeon_Arc",
+    "evidence": "Jinwoo's Skill: 'Dominator Touch' evolved into its final form 'Ruler's Authority'."
+  },
+  {
+    "id": "kamish-rune-skill",
+    "tier": "very-hard",
+    "prompt": "หินรูนที่พบในซากมังกรคามิชบรรจุสกิลใด?",
+    "answer": "ความกลัวมังกร",
+    "decoys": [
+      "สลับเงา",
+      "กระหายเลือด",
+      "ลมหายใจมังกร"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Rune_Stones",
+    "evidence": "Kamish's Rune Stone contained the skill Dragon's Fear"
+  },
+  {
+    "id": "kamish-wrath-useless",
+    "tier": "very-hard",
+    "prompt": "กริชคู่ความพิโรธของคามิชใช้ไม่ได้ผลเลยกับราชาตนใด แม้แต่ผิวก็ไม่ถลอก?",
+    "answer": "แอนทาเรส",
+    "decoys": [
+      "ราคาน",
+      "ซิลลาด",
+      "เควเรชา"
+    ],
+    "note": "เขาคือราชาที่แข็งแกร่งที่สุด และคามิชเคยเป็นข้ารับใช้ของเขา",
+    "source": "https://solo-leveling.fandom.com/wiki/Kamish's_Wrath",
+    "evidence": "they were completely ineffective against Antares, the strongest Monarch, and failed to even scratch his skin"
+  },
+  {
+    "id": "greed-origin",
+    "tier": "very-hard",
+    "prompt": "เงากรีดตอนยังมีชีวิตคือใคร?",
+    "answer": "ฮวังดงซู",
+    "decoys": [
+      "ฮวังดงซอก",
+      "คังแทชิก",
+      "คิมชอล"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Greed",
+    "evidence": "is the shadow of Hwang Dongsoo."
+  },
+  {
+    "id": "jima-origin",
+    "tier": "very-hard",
+    "prompt": "เงาจีมาสร้างจากศพของบอสตัวใด?",
+    "answer": "บอสนาคา",
+    "decoys": [
+      "ราชินีมด",
+      "หมีน้ำแข็งจ่าฝูง",
+      "คาร์กัลกัน"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Jima",
+    "evidence": "is the shadow of the Boss Naga."
+  },
+  {
+    "id": "strongest-shadow",
+    "tier": "very-hard",
+    "prompt": "เงาตนใดแข็งแกร่งที่สุดในกองทัพเงาของจินอู?",
+    "answer": "เบลเลียน",
+    "decoys": [
+      "เบรู",
+      "อิกริส",
+      "กรีด"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Bellion",
+    "evidence": "As the Grand-Marshal Grade shadow, Bellion is an immensely powerful individual and the strongest shadow under Jinwoo's command."
+  },
+  {
+    "id": "demon-longsword-holder",
+    "tier": "very-hard",
+    "prompt": "จินอูมอบดาบยาวของราชาปีศาจให้เงาตนใดใช้เป็นอาวุธหลัก?",
+    "answer": "อิกริส",
+    "decoys": [
+      "เบรู",
+      "กรีด",
+      "ไอรอน"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Demon_King's_Longsword",
+    "evidence": "Following his death, Jinwoo recovered the sword as one of his drop items and eventually gave it to Igris to use as his main weapon."
+  },
+  {
+    "id": "rulers-made-from",
+    "tier": "very-hard",
+    "prompt": "ผู้สัมบูรณ์สร้างเหล่าผู้ปกครองขึ้นมาจากสิ่งใด?",
+    "answer": "แสงสว่าง",
+    "decoys": [
+      "ความมืด",
+      "เปลวไฟ",
+      "ความว่างเปล่า"
+    ],
+    "note": "ส่วนเหล่าราชาถูกสร้างขึ้นจากความมืด",
+    "source": "https://solo-leveling.fandom.com/wiki/Rulers",
+    "evidence": "the Absolute Being split the light to create the Rulers and split the darkness to create the Monarchs."
+  },
+  {
+    "id": "cup-reincarnation-power",
+    "tier": "very-hard",
+    "prompt": "ถ้วยแห่งการเวียนว่ายมีพลังอะไร?",
+    "answer": "ย้อนเวลา",
+    "decoys": [
+      "มอบมานาไม่จำกัด",
+      "รักษาโรคได้ทุกชนิด",
+      "เปิดประตูข้ามโลก"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Cup_of_Reincarnation",
+    "evidence": "The Cup of Reincarnation is an item created by the Absolute Being that has the power to rewind time."
+  },
+  {
+    "id": "legia-no-shadow",
+    "tier": "very-hard",
+    "prompt": "เหตุใดจินอูจึงเปลี่ยนเลเกียเป็นทหารเงาไม่ได้?",
+    "answer": "เพราะเลเกียเป็นสิ่งมีชีวิตทางวิญญาณที่ไม่มีร่างกาย",
+    "decoys": [
+      "เพราะเลเกียตายมานานเกินไป",
+      "เพราะเลเกียมีมานาปนเปื้อนแบบปีศาจ",
+      "เพราะเลเกียถูกโซ่ดูดมานาผูกไว้"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Legia",
+    "evidence": "He also explained that Jinwoo could not turn him into a shadow soldier as he was a spiritual organism and lacked an organic body."
+  },
+  {
+    "id": "seoul-killing-blow",
+    "tier": "very-hard",
+    "prompt": "ในศึกที่โซล ราชาตนใดแทงทะลุอกจินอูจากด้านหลังด้วยกรงเล็บจนเขาเสียชีวิตชั่วคราว?",
+    "answer": "ราคาน",
+    "decoys": [
+      "ซิลลาด",
+      "เควเรชา",
+      "ทาร์นัก"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Sillad",
+    "evidence": "distracting the latter long enough for Rakan to come in and fatally stab him in the chest from behind with his claws."
+  },
+  {
+    "id": "monarch-of-frost",
+    "tier": "very-hard",
+    "prompt": "ราชาแห่งน้ำแข็ง ผู้เป็นราชาของชนเผ่าหิมะ คือใคร?",
+    "answer": "ซิลลาด",
+    "decoys": [
+      "เลเกีย",
+      "ทาร์นัก",
+      "โยกุมุนท์"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Monarchs",
+    "evidence": "Sillad: The Monarch of Frost, the King of Snow Folk"
+  },
+  {
+    "id": "monarchs-true-form",
+    "tier": "very-hard",
+    "prompt": "สกิลใดที่เหล่าราชาทุกตนใช้เพื่อแปลงเป็นร่างที่แท้จริงและปลดปล่อยพลังที่แท้จริง?",
+    "answer": "สำแดงร่างวิญญาณ",
+    "decoys": [
+      "อาณาเขตของราชา",
+      "ความกลัวมังกร",
+      "ตะกละ"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Monarchs",
+    "evidence": "The Monarchs are all capable of using a skill called Spiritual Body Manifestation, which enables them to take on their true forms and access their true powers."
+  },
+  {
+    "id": "shadow-top-grade",
+    "tier": "very-hard",
+    "prompt": "ระดับสูงสุดของทหารเงา ซึ่งสงวนไว้ให้เงาที่แข็งแกร่งที่สุดเพียงตนเดียวในกองทัพ คือระดับใด?",
+    "answer": "ระดับจอมพลใหญ่",
+    "decoys": [
+      "ระดับจอมพล",
+      "ระดับแม่ทัพ",
+      "ระดับอัศวินชั้นยอด"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Shadows",
+    "evidence": "Grand Marshal Grade : As the ultimate rank, this grade is reserved for the strongest shadow in the entire Shadow Army."
+  },
+  {
+    "id": "system-after-rebirth",
+    "tier": "very-hard",
+    "prompt": "หลังจินอูถูกสังหารแล้วฟื้นคืนชีพพร้อมพลังเต็มของแอชบอร์น ระบบเป็นอย่างไรต่อ?",
+    "answer": "ถูกลบไปโดยอัตโนมัติ",
+    "decoys": [
+      "ถูกส่งต่อให้ซองจินอา",
+      "กลับไปอยู่ในมือผู้สร้างระบบ",
+      "กลายเป็นอาวุธประจำตัวของจินอู"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/System",
+    "evidence": "With the System having finally accomplished its purpose, it was then automatically deleted as Jinwoo was reborn with the true powers of the Shadow Monarch."
+  },
+  {
+    "id": "kandiaru-prophecy",
+    "tier": "very-hard",
+    "prompt": "ก่อนร่างจะแตกสลาย ผู้สร้างระบบสาปแช่งซองจินอูไว้ว่าอย่างไร?",
+    "answer": "เขาจะต้องตายด้วยน้ำมือของเหล่าราชา",
+    "decoys": [
+      "เขาจะถูกเหล่าผู้ปกครองทรยศ",
+      "น้องสาวของเขาจะต้องตาย",
+      "เขาจะติดอยู่ในดันเจี้ยนคู่ตลอดกาล"
+    ],
+    "note": "ซองจินอูยอมรับคำทำนายนั้นโดยไม่หวั่นไหว",
+    "source": "https://solo-leveling.fandom.com/wiki/Cartenon_Temple",
+    "evidence": "Kandiaru cursed Jinwoo with a prophecy that once the Monarchs emerged from hiding and launched their crusade against humanity, he would inevitably die at their hands."
+  },
+  {
+    "id": "kandiaru-invitation",
+    "tier": "very-hard",
+    "prompt": "ผู้สร้างระบบเรียกซองจินอูกลับไปดันเจี้ยนคู่เพื่อจุดประสงค์ใด?",
+    "answer": "ให้แอชบอร์นเข้าครองร่างของเขาเป็นภาชนะ",
+    "decoys": [
+      "มอบตำแหน่งผู้ดูแลระบบให้เขา",
+      "ส่งเขาไปสู้กับเหล่าผู้ปกครอง",
+      "ให้เขาปลดผนึกเลเกีย"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Kandiaru",
+    "evidence": "Kandiaru invited him back to the Double Dungeon so that Ashborn could take control of him as his vessel"
+  },
+  {
+    "id": "temple-rescuers",
+    "tier": "very-hard",
+    "prompt": "ใครไม่ได้อยู่ในกลุ่มฮันเตอร์ที่บุกเข้าดันเจี้ยนคู่ตามหาซองจินอู ขณะเขาอยู่ในภวังค์?",
+    "answer": "แบคยุนโฮ",
+    "decoys": [
+      "อูจินชอล",
+      "ชเวจงอิน",
+      "ชาแฮอิน"
+    ],
+    "note": "แบคยุนโฮไม่ได้ร่วมบุก ส่วนอีกสามคนเข้าไปสู้กับรูปปั้นในดันเจี้ยนคู่",
+    "source": "https://solo-leveling.fandom.com/wiki/Cartenon_Temple",
+    "evidence": "a group of hunters, including Woo Jinchul, Choi Jong-In, and Cha Hae-In, entered the temple in search of Jinwoo."
+  },
+  {
+    "id": "tokyo-gate-monsters",
+    "tier": "very-hard",
+    "prompt": "ประตูแรงก์ S โตเกียว ปล่อยสัตว์อสูรชนิดใดออกมาจนเกิดวิกฤตในญี่ปุ่น?",
+    "answer": "ยักษ์",
+    "decoys": [
+      "มดมีปีก",
+      "มังกร",
+      "ปีศาจ"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Tokyo_S-Rank_Gate",
+    "evidence": "easily slaughtered 28 of the 29 remaining giants all on his own"
+  },
+  {
+    "id": "legia-lie",
+    "tier": "very-hard",
+    "prompt": "ในห้องบอสของประตูโตเกียว ซองจินอูรู้ได้อย่างไรว่าเลเกียหลอกเขา?",
+    "answer": "พบหินแก่นเวทฝังอยู่ที่ท้ายทอยของเลเกีย",
+    "decoys": [
+      "ระบบส่งข้อความเตือน",
+      "อิกริสเตือนเขาไว้",
+      "เลเกียพูดภาษามนุษย์ผิดเพี้ยน"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Legia",
+    "evidence": "Jinwoo was not as gullible as he thought and discovered the essence stone in the back of his neck."
+  },
+  {
+    "id": "tokyo-barrier-hunter",
+    "tier": "very-hard",
+    "prompt": "ฮันเตอร์แรงก์ S ชาวรัสเซียที่รับจ้างกั้นประตูโตเกียวด้วยบาเรีย แต่ถูกกลืนกินเมื่อบาเรียแตก คือใคร?",
+    "answer": "ยูริ ออร์ลอฟ",
+    "decoys": [
+      "โทมัส อังเดร",
+      "คริสโตเฟอร์ รีด",
+      "เลนนาร์ท เนียร์มันน์"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Tokyo_S-Rank_Gate",
+    "evidence": "The Russian S-Rank Hunter Yuri Orloff was one of the first to answer the Japanese government's call for international aid and he offered to block off the gate with his barrier magic"
+  },
+  {
+    "id": "escaped-tokyo-monster",
+    "tier": "very-hard",
+    "prompt": "สัตว์อสูรตัวเดียวที่หนีรอดจากประตูโตเกียวแล้วข้ามทะเลไปจีน ถูกใครสังหาร?",
+    "answer": "หลิว จื้อกัง",
+    "decoys": [
+      "ซองจินอู",
+      "โทมัส อังเดร",
+      "สิทธารถ พัจจัน"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Tokyo_S-Rank_Gate",
+    "evidence": "Before it could make landfall, it was intercepted off the coastline and easily killed by Liu Zhigang."
+  },
+  {
+    "id": "first-monarch-down",
+    "tier": "very-hard",
+    "prompt": "เมื่อราชาสามองค์รุมสู้ซองจินอูในเกาหลี ราชาองค์ใดตายก่อน?",
+    "answer": "เควเรชา",
+    "decoys": [
+      "ราคาน",
+      "ซิลลาด",
+      "ทาร์นัก"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Monarchs_War_Arc",
+    "evidence": "Rakan, Querehsha & Sillad vs Sung Jinwoo = Querehsha's death."
+  },
+  {
+    "id": "seoul-giant-gate",
+    "tier": "very-hard",
+    "prompt": "เมื่อประตูที่ใหญ่ที่สุดเท่าที่เคยมีโผล่ขึ้นในโซล ใครเดินออกมาและสาบานตนรับใช้ซองจินอู?",
+    "answer": "เบลเลียนกับกองทัพเงาของแอชบอร์น",
+    "decoys": [
+      "กองทัพมังกรของแอนทาเรส",
+      "ทหารของเหล่าผู้ปกครอง",
+      "ฝูงไฮออร์คของคาร์กัลกัน"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Monarchs_War_Arc",
+    "evidence": "Bellion and the rest of Ashborn's shadow army emerged from the gate and pledged their service to Jinwoo as their new master."
+  },
+  {
+    "id": "antares-gate-country",
+    "tier": "very-hard",
+    "prompt": "แอนทาเรส ราชามังกร โผล่ออกมาจากประตูในประเทศใด?",
+    "answer": "แคนาดา",
+    "decoys": [
+      "ญี่ปุ่น",
+      "จีน",
+      "บราซิล"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Final_Battle_Arc",
+    "evidence": "Antares emerged from the gate in Canada."
+  },
+  {
+    "id": "tarnak-death",
+    "tier": "very-hard",
+    "prompt": "ในศึกสุดท้าย ราชาองค์ใดถูกโทมัส อังเดรกับเงาทหารของซองจินอูร่วมกันสังหาร?",
+    "answer": "ทาร์นัก",
+    "decoys": [
+      "แอนทาเรส",
+      "ราคาน",
+      "เควเรชา"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Final_Battle_Arc",
+    "evidence": "Thomas Andre, Bellion & Beru vs Tarnak & Humanoids = Tarnak's death."
+  },
+  {
+    "id": "epilogue-battlefield",
+    "tier": "very-hard",
+    "prompt": "ในภาคบทส่งท้าย ซองจินอูไปสู้กับเหล่าราชาอีกครั้งที่ใด?",
+    "answer": "รอยแยกมิติ",
+    "decoys": [
+      "ปราสาทปีศาจ",
+      "เกาะเชจู",
+      "ใจกลางกรุงโซล"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Epilogue",
+    "evidence": "Jinwoo won his fight against the Monarchs again after 27 years in the Dimensional Crack."
+  },
+  {
+    "id": "gates-true-origin",
+    "tier": "very-hard",
+    "prompt": "ตามความจริงที่เผยในภายหลัง ประตูเริ่มปรากฏในโลกมนุษย์เพราะเหตุใด?",
+    "answer": "ผู้ปกครองต้องการเติมมานาให้โลกมนุษย์ทนสงครามกับเหล่าราชาได้",
+    "decoys": [
+      "ระบบสร้างขึ้นเพื่อฝึกซองจินอู",
+      "ผู้สัมบูรณ์ต้องการทดสอบมนุษย์",
+      "แอนทาเรสต้องการกินมานาของมนุษย์"
+    ],
+    "source": "https://solo-leveling.fandom.com/wiki/Gates",
+    "evidence": "as a result of an intent of the Rulers to saturate the human world with Mana in order for it to withstand their war against the Monarchs."
+  },
+  {
+    "id": "ant-queen-shadow",
+    "tier": "very-hard",
+    "prompt": "ในฉากที่อนิเมะตัดออก เกิดอะไรขึ้นเมื่อซองจินอูสกัดเงาราชินีมด?",
+    "answer": "เงาอ่อนแอกว่าที่คิด เขาจึงยกเลิกการสกัด",
+    "decoys": [
+      "สกัดไม่สำเร็จทั้งสามครั้ง",
+      "กลายเป็นหัวหน้ากองทัพมดเงา",
+      "ฟักไข่มดเงาเพิ่มให้กองทัพ"
+    ],
+    "note": "พลังหลักของราชินีมดคือการสืบพันธุ์ ซึ่งเงาที่ไม่มีร่างกายทำไม่ได้",
+    "source": "https://solo-leveling.fandom.com/wiki/Ant_Queen",
+    "evidence": "However, her shadow turned out much weaker than expected."
+  }
+]

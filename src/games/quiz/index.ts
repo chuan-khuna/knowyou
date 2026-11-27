@@ -8,7 +8,7 @@
 export { bandFor, type ScoreBand } from "./bands";
 export { parseQuestions } from "./bank";
 export { MIN_QUESTIONS_PER_TIER, quizIssues } from "./check";
-export { parseGlossary, termsIn, type Gloss, type PromptTerm } from "./glosses";
+export { parseGlossary, termsIn, type Gloss, type JapaneseGloss, type KoreanGloss, type PromptTerm } from "./glosses";
 export { TIERS, type QuestionBank, type QuizQuestion, type Tier } from "./question";
 export {
   MIN_QUESTIONS_PER_PLAY,

@@ -17,6 +17,7 @@ One quiz module plays every title, and one screen shows it. A title is data: its
 | คุณรู้จัก Naruto ดีแค่ไหน | `src/games/naruto/` | `/naruto` |
 | คุณรู้จัก Prince of Tennis ดีแค่ไหน | `src/games/prince-of-tennis/` | `/prince-of-tennis` |
 | คุณรู้จัก Reborn ดีแค่ไหน | `src/games/reborn/` | `/reborn` |
+| คุณรู้จัก Solo Leveling ดีแค่ไหน | `src/games/solo-leveling/` | `/solo-leveling` |
 
 ## Question shape
 
@@ -36,7 +37,7 @@ interface QuizQuestion {
 }
 ```
 
-A title's `glossary.json` is an object keyed by the exact option label, each entry with `romaji`, `kanji` and `english`, and optionally `aka`: other Thai names fans know the same thing by, such as a TV dub's name where the label follows the manga (`"เกี๊ยวซ่า": { "aka": ["…"], … }`). `parseGlossary` in `glosses.ts` reads it, and throws on an entry without all three names or with an `aka` that isn't a list of strings. One entry covers that label wherever it appears: as an answer, as a decoy, or named inside a prompt. Add an `aka` only with a page that shows the name in use; the spec is `.scratch/quiz-aka/spec.md`.
+A title's `glossary.json` is an object keyed by the exact option label. Each entry is a `Gloss`, Japanese or Korean, told apart by its fields: `english` plus either `romaji` and `kanji` (`JapaneseGloss`) or `romanization` and `hangul` (`KoreanGloss`, Revised Romanization). Either may have `aka`: other Thai names fans know the same thing by, such as a TV dub's name where the label follows the manga (`"เกี๊ยวซ่า": { "aka": ["…"], … }`). `parseGlossary` in `glosses.ts` reads it, and throws on an entry without `english`, without exactly one complete pair (half a pair, or both pairs), or with an `aka` that isn't a list of strings, listing every such entry. One entry covers that label wherever it appears: as an answer, as a decoy, or named inside a prompt. Add an `aka` only with a page that shows the name in use; the spec is `.scratch/quiz-aka/spec.md`.
 
 ## A title's content
 
@@ -167,6 +168,16 @@ Each title's `bands.ts` holds its bands for a score out of 20, lowest first. `ba
 | 13–16 | สมาชิกวาเรีย | ฝีมือระดับนี้ ซันซัสคงอยากชวนเข้าหน่วยลอบสังหาร |
 | 17–20 | บอสวองโกเล่รุ่นที่ 10 | รีบอร์นยอมรับคุณแล้ว คุณพร้อมสืบทอดวองโกเล่ |
 
+**Solo Leveling** (`SCORE_BANDS` in `src/games/solo-leveling/bands.ts`), as hunter ranks:
+
+| Score | Title | Line |
+| --- | --- | --- |
+| 0–4 | ฮันเตอร์แรงก์ E | ยังเป็นฮันเตอร์ที่อ่อนแอที่สุดอยู่เลย ลองกลับเข้าดันเจี้ยนอีกสักรอบนะ |
+| 5–8 | ฮันเตอร์แรงก์ C | ผ่านดันเจี้ยนระดับต่ำมาได้ แต่เควสต์รายวันยังรอคุณอยู่ทุกเช้า |
+| 9–12 | ฮันเตอร์แรงก์ A | ฝีมือระดับนี้ กิลด์ใหญ่คงอยากชวนเข้าทีมบุกแล้ว |
+| 13–16 | ฮันเตอร์แรงก์ S | คุณอยู่ระดับสูงสุดของสมาคมฮันเตอร์ พร้อมรับมือประตูทุกสีแล้ว |
+| 17–20 | ราชาแห่งเงา | คุณรู้จักเรื่องนี้ทุกซอกทุกมุม จนกองทัพเงาพร้อมลุกขึ้นเดินตามคุณ |
+
 ## Saved play
 
 The same rules as the games' saved play (`play-screen.md`), in the quiz's own `record.ts`, because `src/lib/play-record.ts` is typed to the game `Engine`.
@@ -185,7 +196,7 @@ The same rules as the games' saved play (`play-screen.md`), in the quiz's own `r
 - **Seed code in the top strip.** From `sm` up, a chip left of ข้อ N/total shows `รหัส` and the seed code, on the question and reveal screens. Double-click it, or press Enter on it, to copy the code; the chip turns mint and says คัดลอกแล้ว for 1.5 s. Seed codes everywhere (chip, result, field) use a monospace font with a slashed zero, so 0 and O never look alike.
 - **Reveal switch in the top strip.** An eye icon button, `aria-pressed`, beside the reset, theme and sound buttons on the question and reveal screens: an open eye when on, a crossed eye when off. These screens pass `crowded` to `Shell`, which hides the theme button below `sm` (`theme.md`).
 - **Other names.** A label whose gloss has an `aka` shows those names right after it in small muted text: `โกคู โงกุน`. This holds on options, prompt terms and the right answer in เฉลย.
-- **Glosses.** Under an option with a gloss, two lines: `Romaji, 漢字` then the English name. The same shows under the right answer in เฉลย. Under a prompt that names glossary terms, each term shows as a small card (the label in bold, then the same two lines), two cards across from `sm` up, on the question and reveal screens.
+- **Glosses.** Under an option with a gloss, two lines: the original name, then the English name. The original name is `Romaji, 漢字` for a Japanese gloss (`lang="ja-Latn"` and `lang="ja"`) and `romanization, 한글` for a Korean one (`lang="ko-Latn"` and `lang="ko"`). The same shows under the right answer in เฉลย. Under a prompt that names glossary terms, each term shows as a small card (the label in bold, then the same two lines), two cards across from `sm` up, on the question and reveal screens.
 - **Reset.** The question and reveal screens pass `reset` to `Shell` as `onReset`, so the top strip shows the reset button (`play-screen.md`). A confirmed reset clears the saved play and returns to the intro, with ตั้งค่า, the count and the seed code as the player left them. It starts no play, so it makes no sound, and a refresh straight after it shows the intro.
 - **Result.** The score out of `total`, the band title and line, the seed code as a chip that copies the share link on double-click or Enter (it says คัดลอกลิงก์แล้ว; its tooltip says so), and the count as a chip beside it. Right under that card comes เล่นอีกครั้ง, on a paper band that sticks to the top of the viewport once the page scrolls past it, so เฉลย scrolls under it. Then เฉลย: every question with a check or cross, its right answer, the player's answer on a miss, and the note when there is one. เล่นอีกครั้ง starts a new play of the same count. Sound `guess` when it opens.
 
@@ -210,8 +221,9 @@ The same rules as the games' saved play (`play-screen.md`), in the quiz's own `r
    - Naruto: Naruto and Naruto Shippuden, up to the end of the Fourth Shinobi World War. No Boruto, films or games. Glosses cover jutsu, dōjutsu, swords, elements and lands; a land's `aka` holds the Thai Wikipedia names (แคว้นเหล็ก, เทะซึโนะคุนิ).
    - Prince of Tennis: the manga, the TV anime and the National Tournament OVAs, up to the end of the National Tournament. Ask only about moves and special moves, schools, or story events. Don't ask about birthdays, numbers, scores or personal trivia (family, pets, hobbies, food). The research brief is `prince-of-tennis-quiz-format.md`.
    - Reborn: the whole Katekyo Hitman Reborn! manga, to the end of the Curse of the Rainbow, and the TV anime where it follows the manga. No anime-only arcs, OVAs, light novels or games. Name the manga when an arc is manga-only. Glosses cover flame attributes, techniques, rings, gear and Tri-ni-sette items.
+   - Solo Leveling: the main story only, webtoon chapters 1–179 and the anime where it adapts them. No side stories, *Ragnarok*, games or novel-only details. Characters keep their Korean names. Source the Solo Leveling wiki (`solo-leveling.fandom.com`), with Thai Wikipedia for Thai names. Glosses are Korean (`romanization`, `hangul`), only where a page gives the hangul. The spec is `.scratch/solo-leveling-quiz/spec.md`.
 2. Add an object to the title's `questions.json` with a new, stable `id`. Never reuse or rename an id, because a saved play names its questions by id.
 3. Write the prompt, the answer and three plausible decoys in the spellings Thai fans use.
-4. If an option, or a move or term the prompt names, is a Japanese name or a Thai translation of one, add its `romaji`, `kanji` and `english` names to the title's `glossary.json`, keyed by the exact label. Write the prompt with the label exactly as the glossary spells it, so the screen finds it.
+4. If an option, or a move or term the prompt names, is a Japanese or Korean name or a Thai translation of one, add it to the title's `glossary.json`, keyed by the exact label: `romaji`, `kanji` and `english` for a Japanese name, or `romanization`, `hangul` and `english` for a Korean one. Add a Korean gloss only where a page gives the hangul. Write the prompt with the label exactly as the glossary spells it, so the screen finds it.
 5. Set the tier, the page's URL as `source`, and a short quote from that page as `evidence`. Add a one-line `note` if it makes the เฉลย better.
 6. Run `bun test src/games/<id>`.

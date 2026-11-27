@@ -575,11 +575,13 @@ function NameWithAka({ label, gloss }: { label: string; gloss?: Gloss | undefine
   );
 }
 
+/** Two lines: the original name, `Romaji, 漢字` or `romanization, 한글`, then the English name. */
 function GlossLines({ gloss }: { gloss: Gloss }) {
+  const [latin, native, lang] = "hangul" in gloss ? [gloss.romanization, gloss.hangul, "ko"] : [gloss.romaji, gloss.kanji, "ja"];
   return (
     <>
-      <span lang="ja-Latn" className="block text-sm font-normal text-muted">
-        {gloss.romaji}, <span lang="ja">{gloss.kanji}</span>
+      <span lang={`${lang}-Latn`} className="block text-sm font-normal text-muted">
+        {latin}, <span lang={lang}>{native}</span>
       </span>
       <span lang="en" className="block text-sm font-normal text-muted">
         {gloss.english}

@@ -25,6 +25,7 @@ const QUIZZES: readonly Card[] = [
   { href: "/naruto", title: "คุณรู้จัก Naruto ดีแค่ไหน", blurb: "ตอบคำถามแล้วดูว่าคุณเป็นนินจาระดับไหน", ready: true },
   { href: "/prince-of-tennis", title: "คุณรู้จัก Prince of Tennis ดีแค่ไหน", blurb: "ตอบคำถามแล้วดูว่าคุณเป็นแฟนระดับไหน", ready: true },
   { href: "/reborn", title: "คุณรู้จัก Reborn ดีแค่ไหน", blurb: "ตอบคำถามแล้วดูว่าคุณอยู่ระดับไหนในแฟมิลี่", ready: true },
+  { href: "/solo-leveling", title: "คุณรู้จัก Solo Leveling ดีแค่ไหน", blurb: "ตอบคำถามแล้วดูว่าคุณเป็นฮันเตอร์แรงก์ไหน", ready: true },
 ];
 
 export default function Home() {

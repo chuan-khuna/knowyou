@@ -1,6 +1,8 @@
 import { describe, expect, test } from "bun:test";
-import { MIN_QUESTIONS_PER_TIER, parseGlossary, parseQuestions, quizIssues, type QuestionBank, type QuizContent } from ".";
-import { FIXTURE_BANDS, fixtureContent } from "./testing/fixture-bank";
+import { Glob } from "bun";
+import { join } from "node:path";
+import { MIN_QUESTIONS_PER_TIER, parseGlossary, parseQuestions, quizIssues, type QuestionBank, type QuizContent } from "@/games/quiz";
+import { FIXTURE_BANDS, fixtureContent } from "@/games/quiz/testing/fixture-bank";
 
 describe("reading the JSON files", () => {
   const question = { id: "a-b", tier: "easy", prompt: "p?", answer: "a", decoys: ["b", "c", "d"], source: "https://example.org" };
@@ -20,8 +22,39 @@ describe("reading the JSON files", () => {
     expect(() => parseQuestions(raw)).toThrow(issue);
   });
 
-  test("rejects a glossary entry without all three names", () => {
-    expect(() => parseGlossary({ "ท่า": { romaji: "Waza", kanji: "技" } })).toThrow("ท่า: needs romaji, kanji and english");
+  test("reads a Japanese or a Korean entry", () => {
+    const japanese = { romaji: "Waza", kanji: "技", english: "Technique" };
+    const korean = { romanization: "Geurimja Gyohwan", hangul: "그림자 교환", english: "Shadow Exchange" };
+    expect(parseGlossary({ ท่า: japanese, สลับเงา: korean })).toEqual({ ท่า: japanese, สลับเงา: korean });
+  });
+
+  test("reports every entry without english and exactly one complete pair", () => {
+    let message = "";
+    try {
+      parseGlossary({
+        ไม่มีอังกฤษ: { romaji: "Waza", kanji: "技" },
+        ไม่มีคู่: { english: "Technique" },
+        ครึ่งญี่ปุ่น: { romaji: "Waza", english: "Technique" },
+        ครึ่งเกาหลี: { hangul: "그림자", english: "Shadow" },
+        สองคู่: { romaji: "Waza", kanji: "技", romanization: "Gisul", hangul: "기술", english: "Technique" },
+      });
+    } catch (error) {
+      message = String(error);
+    }
+    expect(message).toContain("ไม่มีอังกฤษ: needs english");
+    expect(message).toContain("ไม่มีคู่: needs romaji and kanji, or romanization and hangul");
+    expect(message).toContain("ครึ่งญี่ปุ่น: needs both romaji and kanji");
+    expect(message).toContain("ครึ่งเกาหลี: needs both romanization and hangul");
+    expect(message).toContain("สองคู่: has both romaji/kanji and romanization/hangul; keep one pair");
+  });
+
+  test("every shipped glossary still parses", async () => {
+    const files = await Array.fromAsync(new Glob("src/games/*/glossary.json").scan({ cwd: join(import.meta.dir, "../../..") }));
+    expect(files.length).toBeGreaterThan(0);
+    for (const file of files) {
+      const raw: unknown = await Bun.file(join(import.meta.dir, "../../..", file)).json();
+      expect(() => parseGlossary(raw)).not.toThrow();
+    }
   });
 
   test("reads other names, and rejects an aka that isn't a list of names", () => {

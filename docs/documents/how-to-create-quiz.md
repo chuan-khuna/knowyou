@@ -17,6 +17,7 @@ The shipped titles came in three ways:
 | Prince of Tennis | A session wrote 120 questions and checked each answer against the series wiki. Research agents then wrote 207 more from the format brief, and a maintainer imported them. |
 | Naruto, Dragon Ball, Reborn | The user researched each bank outside the repo, with a topic sheet, hand-over notes and Thai-name sources. The banks were imported as they are. Only the JSON is in the repo. |
 | Kuroko no Basket | The series wiki was saved as plain text in `tmp/kuroko/`. Three parallel passes drafted questions from that text. The drafts were merged, and every `evidence` quote was checked against its downloaded page. |
+| Bleach, Solo Leveling | As Kuroko, with `scripts/quiz-sources.ts` saving the pages and checking every quote. Each title had a Thai name sheet that every pass followed. |
 
 Prefer the Kuroko way for a new title. The agent that writes a question reads only the saved source text, so each answer can be traced to a page, and a quote that is not in the text is caught at once.
 
@@ -48,7 +49,7 @@ Prefer the Kuroko way for a new title. The agent that writes a question reads on
    | `hard` | A fan who remembers match or episode details |
    | `very-hard` | A close reader of the manga |
 
-7. **Write the glossary.** Add one entry for each Japanese name, or Thai translation of one, that an option or a prompt uses. The key is the exact Thai label. Each entry has `romaji`, `kanji` and `english`. Add an `aka` only with a page that shows the name in use. Plain English names and character names need no entry.
+7. **Write the glossary.** Add one entry for each Japanese or Korean name, or Thai translation of one, that an option or a prompt uses. The key is the exact Thai label. A Japanese entry has `romaji`, `kanji` and `english`; a Korean entry has `romanization` (Revised Romanization), `hangul` and `english`. Give a Korean entry only where a page gives the hangul; never guess it. Add an `aka` only with a page that shows the name in use. Plain English names and character names need no entry.
 8. **Mark what you could not verify.** The Kuroko spec lists Thai move names and some kanji that came from memory, not from a Thai edition or a page. Write such gaps under `## Assumptions` in the spec so the user can correct them.
 9. **Build the module.** Follow "How to add a title" in [quiz.md](quiz.md). In short: `src/games/<slug>/` with `questions.json`, `glossary.json`, `bands.ts`, `index.ts`, `bank.test.ts` and `boundaries.test.ts`; a route in `src/app/<slug>/` with `page.tsx` and a client component; one line in `QUIZZES` in `src/app/page.tsx`. Copy the Kuroko files and change the names.
 10. **Test and run.**
