@@ -14,3 +14,5 @@ Each ticket is `needs-triage`. Set it to `ready-for-agent` when you pick it, the
 - [ ] [08 Demon Slayer](issues/08-demon-slayer.md) — finished, breathing forms
 - [ ] [09 Jujutsu Kaisen](issues/09-jujutsu-kaisen.md) — finished, domain expansions
 - [ ] [10 Doraemon](issues/10-doraemon.md) — gadgets, more family than superfan
+- [ ] [11 Solo Leveling](issues/11-solo-leveling.md) — user request, first Korean title
+- [ ] [12 My Hero Academia](issues/12-my-hero-academia.md) — user request, finished, Quirks and hero names

@@ -8,7 +8,7 @@ All CSS lives in `src/styles/`. `src/app/layout.tsx` imports one file, `src/styl
 |---|---|
 | `globals.css` | The Hallmark stamp (it must stay on the first lines), then the imports below, in order |
 | `tokens.css` | Every colour, face, size, line height, radius and shadow, as a Tailwind `@theme` block; each colour that changes in dark mode is a `light-dark()` pair (`theme.md`) |
-| `base.css` | Element defaults, in the `base` layer |
+| `base.css` | Element defaults, and the root view-transition reset for the theme switch (`theme.md`), in the `base` layer |
 | `layout.css` | Page chrome: the shell, the top strip, the question head, the sticky play-again band |
 | `controls.css` | Card-stock buttons and their variants (`.stock`, `.option`, `.game-card`), the province select, the icon button |
 | `surfaces.css` | The confidence meter, paper sheets, the cue, the guess figure, the quiz verdict, links |

@@ -1,0 +1,122 @@
+{
+  "กิลด์อาจิน": {
+    "romanization": "Ajin",
+    "hangul": "아진",
+    "english": "Ahjin Guild"
+  },
+  "กิลด์ฮันเตอร์ส": {
+    "romanization": "Heonteoseu Gildeu",
+    "hangul": "헌터스 길드",
+    "english": "Hunters Guild"
+  },
+  "กิลด์เสือขาว": {
+    "romanization": "Baekho Gildeu",
+    "hangul": "백호 길드",
+    "english": "White Tiger Guild"
+  },
+  "กิลด์ปีศาจ": {
+    "romanization": "Sasin Gildeu",
+    "hangul": "사신 길드",
+    "english": "Fiend Guild"
+  },
+  "กิลด์อัศวิน": {
+    "romanization": "Gisadan Gildeu",
+    "hangul": "기사단 길드",
+    "english": "Knights Guild"
+  },
+  "กิลด์เกียรติยศ": {
+    "romanization": "Myeongseong Gildeu",
+    "hangul": "명성 길드",
+    "english": "Fame Guild"
+  },
+  "กิลด์สกาเวนเจอร์": {
+    "romanization": "Seukebinjeo",
+    "hangul": "스케빈저",
+    "english": "Scavenger Guild"
+  },
+  "กิลด์ชักดาบ": {
+    "romanization": "Balgeom Gildeu",
+    "hangul": "발검 길드",
+    "english": "Draw Sword Guild"
+  },
+  "ฮันเตอร์ระดับชาติ": {
+    "romanization": "Gukgagwollyeokgeup Heonteo",
+    "hangul": "국가권력급 헌터",
+    "english": "National Level Hunters"
+  },
+  "เหล่าผู้ปกครอง": {
+    "romanization": "Jibaejadeul",
+    "hangul": "지배자들",
+    "english": "Rulers"
+  },
+  "เหล่าราชา": {
+    "romanization": "Gunju",
+    "hangul": "군주",
+    "english": "Monarchs"
+  },
+  "สถาปนิก": {
+    "romanization": "Geonchukga",
+    "hangul": "건축가",
+    "english": "the Architect"
+  },
+  "ราชามด": {
+    "romanization": "Gaemiwang",
+    "hangul": "개미왕",
+    "english": "Ant King"
+  },
+  "ราชินีมด": {
+    "romanization": "Yeowanggaemi",
+    "hangul": "여왕개미",
+    "english": "Ant Queen"
+  },
+  "สกัดเงา": {
+    "romanization": "Geurimja Chuchul",
+    "hangul": "그림자 추출",
+    "english": "Shadow Extraction"
+  },
+  "สลับเงา": {
+    "romanization": "Geurimja Gyohwan",
+    "hangul": "그림자 교환",
+    "english": "Shadow Exchange"
+  },
+  "อำนาจผู้ปกครอง": {
+    "romanization": "Jibaejaui Gwonneung",
+    "hangul": "지배자의 권능",
+    "english": "Ruler's Authority"
+  },
+  "ความกลัวมังกร": {
+    "romanization": "Deuraegon Pieo",
+    "hangul": "드래곤 피어",
+    "english": "Dragon's Fear"
+  },
+  "ผู้สัมบูรณ์": {
+    "romanization": "Jeoldaeja",
+    "hangul": "절대자",
+    "english": "Absolute Being"
+  },
+  "ไฮออร์ค": {
+    "romanization": "Haiokeu",
+    "hangul": "하이오크",
+    "english": "High Orcs"
+  },
+  "เอลฟ์น้ำแข็ง": {
+    "romanization": "Aiseu Elpeu",
+    "hangul": "아이스 엘프",
+    "english": "Ice Elves"
+  },
+  "มด": {
+    "romanization": "Gaemi",
+    "hangul": "개미",
+    "english": "Ants"
+  },
+  "ประตูแรงก์ S โตเกียว": {
+    "romanization": "Dokyo S-geup Geiteu",
+    "hangul": "도쿄 S급 게이트",
+    "english": "Tokyo S-Rank Gate"
+  },
+  "ประตูแรงก์ S เกาะเชจู": {
+    "romanization": "Jejudo S-geup Geiteu",
+    "hangul": "제주도S급 게이트",
+    "english": "Jeju Island S-Rank Gate"
+  }
+}

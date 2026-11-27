@@ -1,6 +1,6 @@
 # Bleach quiz
 
-Status: needs-triage
+Status: ready-for-agent
 
 Title: คุณรู้จัก Bleach ดีแค่ไหน (บลีช)
 
