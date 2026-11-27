@@ -17,15 +17,16 @@ const NEIGHBOUR_NAMES: Record<NeighbourCode, string> = { MM: "เมียนม
 const WEST_EDGE_LABEL: NeighbourCode = "MM";
 
 /**
- * How a province is drawn from its belief: faded to the paper tone once the
- * game has ruled it out, otherwise tinted toward the accent by its share of
- * the leader's belief.
+ * How a province is drawn from its belief: the plain paper-3 grey once the
+ * game has ruled it out, otherwise that grey warmed toward the deep accent by
+ * its share of the leader's belief, so the leader is the strongest amber and
+ * no live province is quieter than a ruled-out one.
  */
 function fillFor(p: number, leader: number): string {
   const share = leader > 0 ? p / leader : 0;
   if (share < PROVINCE_RULES.ruledOutBelow) return "var(--color-paper-3)";
-  const accent = Math.round(18 + 82 * Math.sqrt(share));
-  return `color-mix(in oklch, var(--color-accent) ${accent}%, var(--color-paper-2))`;
+  const accent = Math.round(25 + 75 * Math.sqrt(share));
+  return `color-mix(in oklch, var(--color-accent-deep) ${accent}%, var(--color-paper-3))`;
 }
 
 const shapeOf = (id: ProvinceId) => PROVINCE_SHAPES[PROVINCE_ISO[id]]!;
