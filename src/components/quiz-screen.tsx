@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useState, type Dispatch, type ReactNode, type SetStateAction } from "react";
+import { useCallback, useEffect, useRef, useState, type Dispatch, type ReactNode, type SetStateAction } from "react";
 import {
   MIN_QUESTIONS_PER_PLAY,
   QUESTIONS_PER_PLAY,
@@ -23,10 +23,12 @@ import {
   type Tier,
 } from "@/games/quiz";
 import { setRevealOn, useRevealOn } from "@/lib/quiz-reveal";
-import { copyEffect } from "@/lib/sakuga";
+import { answerEffect, copyEffect, expectLanding, finishEffect, nextEffect, pickEffect, pressPoint, rollEffect, startEffect, stepEffect, warmEffects } from "@/lib/anime-fx";
 import { sound } from "@/lib/sound";
 import { AdsCafe, AdsFigure, AdsManga, AdsRamen, AdsSketchbook } from "@/components/ads";
-import { BigButton, PlayAgainBar, Shell } from "@/components/play-screen";
+import { BigButton, optionButton, PlayAgainBar, Shell, type Press } from "@/components/play-screen";
+import { ResultHeading } from "@/components/result-heading";
+import { AnimeSwitch } from "@/components/anime-switch";
 
 interface QuizScreenProps {
   readonly quiz: Quiz;
@@ -121,7 +123,10 @@ export function QuizScreen({ quiz, title, intro }: QuizScreenProps) {
   // Switching the reveal off, here or in another tab, moves past an answer on show.
   useEffect(() => {
     if (!revealOn && screen.kind === "playing" && screen.seen < screen.play.answered.length) {
-      if (screen.play.phase === "finished") sound.guess();
+      if (screen.play.phase === "finished") {
+        sound.guess();
+        expectLanding();
+      }
       setScreen({ ...screen, seen: screen.play.answered.length });
     }
   }, [revealOn, screen]);
@@ -146,20 +151,31 @@ export function QuizScreen({ quiz, title, intro }: QuizScreenProps) {
   const reset = useCallback(() => setScreen({ kind: "intro" }), []);
 
   const play = screen.kind === "playing" ? screen.play : null;
+  const startButton = useRef<HTMLButtonElement>(null);
+  const advanceButton = useRef<HTMLButtonElement>(null);
+
+  useEffect(warmEffects, []);
+
   const revealing = revealOn && screen.kind === "playing" && screen.seen < screen.play.answered.length;
 
   const choose = useCallback(
-    (key: string) => {
+    (key: string, press: Press = { el: optionButton(key) }) => {
       if (play?.phase !== "asking" || revealing) return;
       const next = quiz.answer(play, key);
       if (revealOn) {
         if (next.answered.at(-1)!.correct) sound.right();
         else sound.wrong();
+        answerEffect(press.el, press.at);
         setScreen({ kind: "playing", play: next, seen: play.answered.length });
         return;
       }
-      if (next.phase === "finished") sound.guess();
-      else sound.answer();
+      if (next.phase === "finished") {
+        sound.guess();
+        finishEffect(press.el, press.at);
+      } else {
+        sound.answer();
+        answerEffect(press.el, press.at);
+      }
       setScreen({ kind: "playing", play: next, seen: next.answered.length });
     },
     [quiz, play, revealing, revealOn],
@@ -178,7 +194,12 @@ export function QuizScreen({ quiz, title, intro }: QuizScreenProps) {
       if (event.key === "Enter" && event.target instanceof HTMLButtonElement) return;
       if (event.key === "Enter" && (screen.kind === "intro" || revealing)) {
         event.preventDefault();
-        return screen.kind === "intro" ? start() : advance();
+        if (screen.kind === "intro") {
+          if (countValid) startEffect(startButton.current);
+          return start();
+        }
+        if (play) (play.phase === "finished" ? finishEffect : nextEffect)(advanceButton.current);
+        return advance();
       }
       if (play?.phase !== "asking" || revealing) return;
       const option = play.question.options[Number(event.key) - 1];
@@ -186,7 +207,7 @@ export function QuizScreen({ quiz, title, intro }: QuizScreenProps) {
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [screen.kind, play, revealing, start, choose, advance]);
+  }, [screen.kind, play, revealing, countValid, start, choose, advance]);
 
   if (screen.kind === "checking") return <Shell>{null}</Shell>;
 
@@ -207,9 +228,9 @@ export function QuizScreen({ quiz, title, intro }: QuizScreenProps) {
             <span className="block text-lg font-semibold">เฉลยทุกข้อ</span>
             <span className="block text-sm text-muted">ดูว่าถูกหรือผิดทันทีหลังตอบแต่ละข้อ เปิดปิดระหว่างเล่นได้</span>
           </span>
-          <input type="checkbox" role="switch" className="switch" checked={revealOn} onChange={(event) => setRevealOn(event.target.checked)} />
+          <AnimeSwitch checked={revealOn} onChange={setRevealOn} />
         </label>
-        <BigButton onClick={start} disabled={!countValid}>
+        <BigButton ref={startButton} onClick={start} fx={startEffect} disabled={!countValid}>
           เริ่มเลย
         </BigButton>
         <AdsCafe />
@@ -233,7 +254,7 @@ export function QuizScreen({ quiz, title, intro }: QuizScreenProps) {
       <Shell status={status(last.question.number)} onReset={reset} crowded>
         <QuestionHeading card={last.question} />
         <Reveal answer={last} />
-        <BigButton onClick={advance} autoFocus>
+        <BigButton ref={advanceButton} onClick={advance} fx={current.phase === "finished" ? finishEffect : nextEffect} autoFocus>
           {current.phase === "finished" ? "ดูคะแนน" : "ข้อต่อไป"}
         </BigButton>
         <p className="mt-4 hidden select-none text-center text-sm text-muted sm:block">กด Enter เพื่อไปต่อ</p>
@@ -256,7 +277,12 @@ export function QuizScreen({ quiz, title, intro }: QuizScreenProps) {
       <ol className="mt-6 grid gap-4">
         {current.question.options.map((option, i) => (
           <li key={option.key}>
-            <button type="button" onClick={() => choose(option.key)} className="stock option">
+            <button
+              type="button"
+              onClick={(event) => choose(option.key, { el: event.currentTarget, at: pressPoint(event) })}
+              className="stock option"
+              data-option-key={option.key}
+            >
               <kbd className="option-key">{i + 1}</kbd>
               <OptionLabel option={option} />
             </button>
@@ -285,7 +311,10 @@ function SettingPicker({ setting, onChange }: { setting: Setting; onChange: (set
             type="button"
             className="stock num"
             aria-pressed={setting === choice.setting}
-            onClick={() => onChange(choice.setting)}
+            onClick={(event) => {
+              if (setting !== choice.setting) pickEffect(event.currentTarget);
+              onChange(choice.setting);
+            }}
           >
             {choice.label}
           </button>
@@ -332,7 +361,15 @@ function CountField({ size, text, valid, onChange }: { size: number; text: strin
         จำนวนข้อ
       </label>
       <div className="stepper mt-3">
-        <button type="button" aria-label="ลดจำนวนข้อ" onClick={() => onChange((current) => String(step(current, -1)))} disabled={Number(text) <= MIN_QUESTIONS_PER_PLAY}>
+        <button
+          type="button"
+          aria-label="ลดจำนวนข้อ"
+          onClick={(event) => {
+            stepEffect(event.currentTarget, fieldOf(event.currentTarget), -1);
+            onChange((current) => String(step(current, -1)));
+          }}
+          disabled={Number(text) <= MIN_QUESTIONS_PER_PLAY}
+        >
           <StepIcon plus={false} />
         </button>
         <input
@@ -347,7 +384,15 @@ function CountField({ size, text, valid, onChange }: { size: number; text: strin
           aria-invalid={!valid}
           aria-describedby="count-range"
         />
-        <button type="button" aria-label="เพิ่มจำนวนข้อ" onClick={() => onChange((current) => String(step(current, 1)))} disabled={Number(text) >= size}>
+        <button
+          type="button"
+          aria-label="เพิ่มจำนวนข้อ"
+          onClick={(event) => {
+            stepEffect(event.currentTarget, fieldOf(event.currentTarget), 1);
+            onChange((current) => String(step(current, 1)));
+          }}
+          disabled={Number(text) >= size}
+        >
           <StepIcon plus />
         </button>
       </div>
@@ -362,6 +407,11 @@ function CountField({ size, text, valid, onChange }: { size: number; text: strin
  * The intro's seed code: up to 6 letters or digits, uppercased as typed, with
  * any other character dropped. Empty means a random play.
  */
+/** The input in the same `.stepper` as `button`, for an effect that pops its value. */
+function fieldOf(button: Element): HTMLInputElement | null {
+  return button.closest(".stepper")?.querySelector("input") ?? null;
+}
+
 function SeedCodeField({ text, onChange }: { text: string; onChange: (text: string) => void }) {
   return (
     <div className="min-w-0">
@@ -383,7 +433,15 @@ function SeedCodeField({ text, onChange }: { text: string; onChange: (text: stri
           aria-describedby="seed-code-hint"
           className="seed-code uppercase"
         />
-        <button type="button" aria-label="สุ่มรหัส" title="สุ่มรหัส" onClick={() => onChange(seedCode(randomSeed()))}>
+        <button
+          type="button"
+          aria-label="สุ่มรหัส"
+          title="สุ่มรหัส"
+          onClick={(event) => {
+            rollEffect(event.currentTarget, fieldOf(event.currentTarget));
+            onChange(seedCode(randomSeed()));
+          }}
+        >
           <DiceIcon />
         </button>
       </div>
@@ -525,8 +583,8 @@ function Reveal({ answer }: { answer: AnsweredQuizQuestion }) {
   const rightLabel = answer.question.options.find((o) => o.key === answer.rightKey)!.label;
   return (
     <>
-      <p className={`verdict mt-6 ${answer.correct ? "verdict--right" : "verdict--wrong"}`} role="status">
-        <Mark correct={answer.correct} />
+      {/* The option tags show right or wrong; this line only tells a screen reader. */}
+      <p className="sr-only" role="status">
         {answer.correct ? "ถูกต้อง!" : `ยังไม่ถูก คำตอบคือ ${rightLabel}`}
       </p>
       <ol className="mt-6 grid gap-4">
@@ -618,7 +676,7 @@ function Result({ play, playAgain }: { play: FinishedQuizPlay; playAgain: () => 
         <p className="guess">
           {play.score}/{play.total}
         </p>
-        <h1 className="mt-4 max-w-none text-3xl">{play.band.title}</h1>
+        <ResultHeading className="mt-4 max-w-none text-3xl">{play.band.title}</ResultHeading>
         <p className="mt-2 text-lg">{play.band.line}</p>
         <div className="mt-5 flex flex-wrap items-center gap-2">
           <SeedChip code={seedCode(play.seed)} link={shareLink(play)} className="inline-flex" />

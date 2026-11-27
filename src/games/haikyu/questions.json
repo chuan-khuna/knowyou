@@ -1,0 +1,2017 @@
+[
+  {
+    "id": "aoba-johsai-short-name",
+    "tier": "easy",
+    "prompt": "อาโอบะโจไซมีชื่อเรียกสั้นๆ ว่าอะไร?",
+    "answer": "เซโจ",
+    "decoys": [
+      "วาคุนัน",
+      "ดาเตะโค",
+      "คาราสุ"
+    ],
+    "note": "มาจากการนำอักษรตัวแรกและตัวที่สามของชื่อโรงเรียนมารวมกัน",
+    "source": "https://haikyuu.fandom.com/wiki/Aoba_Johsai_High",
+    "evidence": "The school's shortened name is 青城 (romanized as Seijō or Seijoh)."
+  },
+  {
+    "id": "aoba-practice-condition",
+    "tier": "easy",
+    "prompt": "แมตช์ซ้อมนัดแรกที่ทาเคดะขอมาได้หลังรับสมาชิกใหม่ มีเงื่อนไขว่าอย่างไร?",
+    "answer": "คาเงยามะต้องเล่นเซ็ตเตอร์ตลอดทั้งแมตช์",
+    "decoys": [
+      "ฮินาตะห้ามลงสนาม",
+      "แข่งกันเพียงเซตเดียว",
+      "สึกะวาระต้องเป็นกัปตันในสนาม"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Ittetsu_Takeda",
+    "evidence": "there is one condition Karasuno must follow in order to have the match and that is that Kageyama has to play as the setter throughout the entire match."
+  },
+  {
+    "id": "aone-main-pillar",
+    "tier": "easy",
+    "prompt": "มิดเดิลบล็อกเกอร์ปีสองที่เป็นเสาหลักการบล็อกของดาเตะโค คือใคร?",
+    "answer": "อาโอเนะ ทาคาโนบุ",
+    "decoys": [
+      "ฟุตาคุจิ เคนจิ",
+      "โมนิวะ คานาเมะ",
+      "ซาคุนามิ โคสุเกะ"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Takanobu_Aone",
+    "evidence": "He plays as a middle blocker on the Boys' Volleyball Team and is famously known as the main pillar of the \"Iron Wall\"."
+  },
+  {
+    "id": "asahi-ace",
+    "tier": "easy",
+    "prompt": "ใครคือเอซปี 3 ของคาราสุโนะ?",
+    "answer": "อาซึมาเนะ อาซาฮิ",
+    "decoys": [
+      "ซาวามุระ ไดจิ",
+      "สึกะวาระ โคชิ",
+      "เอ็นโนะชิตะ ชิคาระ"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Asahi_Azumane",
+    "evidence": "He was a wing spiker and ace for the boys' volleyball club."
+  },
+  {
+    "id": "asahi-quit-reason",
+    "tier": "easy",
+    "prompt": "เอซของคาราสุโนะเคยหยุดมาชมรมไปพักหนึ่ง หลังถูกบล็อกของโรงเรียนใดปิดตายซ้ำแล้วซ้ำเล่า?",
+    "answer": "ดาเตะโค",
+    "decoys": [
+      "อาโอบะโจไซ",
+      "ชิราโทริซาวะ",
+      "เนโคมะ"
+    ],
+    "note": "บล็อกของทีมนี้ได้ฉายาว่ากำแพงเหล็ก",
+    "source": "https://haikyuu.fandom.com/wiki/Karasuno_vs_Neighborhood_Association",
+    "evidence": "flashes back to the Date Tech match from a few months ago, to which Asahi gets blocked several times by Aone and Futakuchi"
+  },
+  {
+    "id": "daichi-captain",
+    "tier": "easy",
+    "prompt": "ใครเป็นกัปตันทีมวอลเลย์บอลชายคาราสุโนะในปีที่ฮินาตะเข้าเรียน?",
+    "answer": "ซาวามุระ ไดจิ",
+    "decoys": [
+      "สึกะวาระ โคชิ",
+      "อาซึมาเนะ อาซาฮิ",
+      "ทานากะ ริวโนสุเกะ"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Daichi_Sawamura",
+    "evidence": "He was the captain and a starting wing spiker for the Boys' Volleyball Team."
+  },
+  {
+    "id": "date-tech-nickname",
+    "tier": "easy",
+    "prompt": "ดาเตะโคได้ฉายาว่าอะไร เพราะมีอัตราการบล็อกสูงที่สุดในจังหวัด?",
+    "answer": "กำแพงเหล็ก",
+    "decoys": [
+      "ฝูงแมว",
+      "ฝูงอีกา",
+      "อินทรีขาว"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Date_Tech_High",
+    "evidence": "it has the highest blocking rate in the prefecture, thus nicknamed the \"Iron Wall\""
+  },
+  {
+    "id": "flightless-crows",
+    "tier": "easy",
+    "prompt": "หลังยุครุ่งเรืองจบลงและทีมตกรอบต่อเนื่อง คาราสุโนะถูกเรียกขานอย่างดูแคลนว่าอะไร?",
+    "answer": "อีกาที่บินไม่ได้",
+    "decoys": [
+      "กำแพงเหล็ก",
+      "ราชาเจ้าคอร์ต",
+      "เหยื่อล่อสุดแกร่ง"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Karasuno_High",
+    "evidence": "received the derogatory nicknames \"The Fallen Champions\" and \"The Flightless/Wingless Crows\"."
+  },
+  {
+    "id": "freak-quick-eyes-closed",
+    "tier": "easy",
+    "prompt": "ตอนเล่นบอลเร็วประหลาดสำเร็จครั้งแรก ฮินาตะทำอะไรที่ทำให้ทุกคนตกใจ?",
+    "answer": "หลับตาตอนตบ",
+    "decoys": [
+      "กระโดดตบจากหลังเส้นแดนหลัง",
+      "ตบด้วยมือซ้าย",
+      "ตบโดยไม่ต้องวิ่งเข้าหาลูก"
+    ],
+    "note": "เขาหลับตาเพราะคาเงยามะบอกไม่ให้มองลูก",
+    "source": "https://haikyuu.fandom.com/wiki/Hinata,_Kageyama,_and_Tanaka_vs._Tsukishima,_Yamaguchi,_and_Sawamura",
+    "evidence": "As Hinata lands, Daichi points out in shock that Hinata had his eyes closed, surprising everyone."
+  },
+  {
+    "id": "garbage-dump-name",
+    "tier": "easy",
+    "prompt": "แมตช์ระหว่างคาราสุโนะกับเนโคมะถูกขนานนามว่าอะไร?",
+    "answer": "ศึกที่ทิ้งขยะ",
+    "decoys": [
+      "ศึกสองราชา",
+      "ศึกพิฆาตนกฮูก",
+      "ศึกแห่งกำแพงเหล็ก"
+    ],
+    "note": "ชื่อนี้มาจากแมวกับอีกาที่มักเจอกันแถวกองขยะ",
+    "source": "https://haikyuu.fandom.com/wiki/Karasuno_High",
+    "evidence": "Because their animal representatives (cat and crow) are usually found by the dumpster, their matches are called the \"Battle at the Garbage Dump\"."
+  },
+  {
+    "id": "hinata-great-king",
+    "tier": "easy",
+    "prompt": "ฮินาตะตั้งฉายาให้โออิคาวะ โทรุ ว่าอะไร?",
+    "answer": "มหาราชา",
+    "decoys": [
+      "ราชาเจ้าคอร์ต",
+      "ยักษ์ใหญ่ตัวจิ๋ว",
+      "กำแพงเหล็ก"
+    ],
+    "note": "เพราะโออิคาวะเป็นรุ่นพี่ที่คาเงยามะเรียนเทคนิคมาหลายอย่าง",
+    "source": "https://haikyuu.fandom.com/wiki/Shōyō_Hinata",
+    "evidence": "Hinata started calling Oikawa \"The Great King\" because he's Kageyama's former upperclassman"
+  },
+  {
+    "id": "hinata-junior-high",
+    "tier": "easy",
+    "prompt": "ฮินาตะ โชโย จบมัธยมต้นจากโรงเรียนใด?",
+    "answer": "ยูกิกาโอกะ",
+    "decoys": [
+      "คิตากาวะ ไดอิจิ",
+      "จิโดริยามะ",
+      "อิซุมิทาเตะ"
+    ],
+    "note": "ชมรมวอลเลย์บอลที่นั่นมีสมาชิกแค่ฮินาตะคนเดียวอยู่นาน",
+    "source": "https://haikyuu.fandom.com/wiki/Shōyō_Hinata",
+    "evidence": "He joined the volleyball club upon entering Yukigaoka Junior High but found himself to be the only member."
+  },
+  {
+    "id": "hinata-position",
+    "tier": "easy",
+    "prompt": "ที่คาราสุโนะ ฮินาตะเล่นตำแหน่งใด?",
+    "answer": "มิดเดิลบล็อกเกอร์",
+    "decoys": [
+      "เซ็ตเตอร์",
+      "ลิเบอโร",
+      "โอโพสิต"
+    ],
+    "note": "สมัยมัธยมต้นเขาเล่นเอาท์ไซด์ฮิตเตอร์และเป็นกัปตันทีม",
+    "source": "https://haikyuu.fandom.com/wiki/Shōyō_Hinata",
+    "evidence": "He was one of the middle blockers for the Boys' Volleyball Team."
+  },
+  {
+    "id": "interhigh-loss",
+    "tier": "easy",
+    "prompt": "คาราสุโนะตกรอบอินเตอร์ไฮศึกคัดเลือกตัวแทนจังหวัดมิยางิ เพราะแพ้ทีมใด?",
+    "answer": "อาโอบะโจไซ",
+    "decoys": [
+      "ดาเตะโค",
+      "ชิราโทริซาวะ",
+      "โทโคนามิ"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Karasuno_High",
+    "evidence": "before losing in the third round to Aoba Johsai. Overall, they placed within the top 16."
+  },
+  {
+    "id": "iwaizumi-oikawa-friends",
+    "tier": "easy",
+    "prompt": "อิวาอิซุมิ ฮาจิเมะ เป็นอะไรกับโออิคาวะ โทรุ?",
+    "answer": "เพื่อนสมัยเด็ก",
+    "decoys": [
+      "พี่ชายแท้ๆ",
+      "ลูกพี่ลูกน้อง",
+      "คู่ปรับจากโรงเรียนอื่น"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Aoba_Johsai_vs_Oomisaki",
+    "evidence": "Kageyama also reveals that Oikawa and Iwaizumi are childhood friends."
+  },
+  {
+    "id": "kageyama-junior-high",
+    "tier": "easy",
+    "prompt": "คาเงยามะ โทบิโอะ จบมัธยมต้นจากโรงเรียนใด?",
+    "answer": "คิตากาวะ ไดอิจิ",
+    "decoys": [
+      "ยูกิกาโอกะ",
+      "จิโดริยามะ",
+      "อิซุมิทาเตะ"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Tobio_Kageyama",
+    "evidence": "Once he entered Kitagawa Daiichi Junior High, it was clear that his potential would be much higher than the other players on his team"
+  },
+  {
+    "id": "kageyama-king-origin",
+    "tier": "easy",
+    "prompt": "ฉายา ราชาเจ้าคอร์ต ของคาเงยามะ แท้จริงแล้วมีที่มาอย่างไร?",
+    "answer": "เพื่อนร่วมทีมตั้งให้เพื่อประชดที่เขาเอาแต่สั่งการ",
+    "decoys": [
+      "คู่แข่งตั้งให้เพราะยอมรับฝีมือเซ็ตของเขา",
+      "นักข่าวตั้งให้หลังเขาพาทีมคว้าแชมป์",
+      "โค้ชตั้งให้เพราะเขาเป็นกัปตันทีมตั้งแต่ปี 1"
+    ],
+    "note": "คนนอกทีมส่วนใหญ่เข้าใจผิดว่าเป็นคำชมฝีมือ",
+    "source": "https://haikyuu.fandom.com/wiki/Tobio_Kageyama",
+    "evidence": "His habit of complaining about their performance and barking orders at them eventually led the other players in Kitagawa Daiichi to nickname him the \"King of the Court,\""
+  },
+  {
+    "id": "keishin-grandfather",
+    "tier": "easy",
+    "prompt": "อุไค เคย์ชิน โค้ชคนใหม่ของคาราสุโนะ เป็นหลานของใคร?",
+    "answer": "อุไค อิกเคย์",
+    "decoys": [
+      "เนโกะมาตะ ยาสุฟุมิ",
+      "วาชิโจ ทันจิ",
+      "ทาเคดะ อิตเท็ตสึ"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Keishin_Ukai",
+    "evidence": "Keishin Ukai is Ikkei Ukai's grandson."
+  },
+  {
+    "id": "kenma-heart-brain",
+    "tier": "easy",
+    "prompt": "เพื่อนร่วมทีมเนโคมะเรียกโคซึเมะ เค็นมะ ว่าเป็นอะไรของทีม?",
+    "answer": "สมองและหัวใจ",
+    "decoys": [
+      "ปีกและกรงเล็บ",
+      "โล่และกำแพง",
+      "ดาบและหอก"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Kenma_Kozume",
+    "evidence": "He was the Volleyball Team's setter and was referred to as the \"heart\" and \"brain\" of the team by his teammates."
+  },
+  {
+    "id": "kuroo-position",
+    "tier": "easy",
+    "prompt": "คุโรโอะ เท็ตสึโร่ กัปตันของเนโคมะ เล่นตำแหน่งอะไร?",
+    "answer": "มิดเดิลบล็อกเกอร์",
+    "decoys": [
+      "เซ็ตเตอร์",
+      "ลิเบอโร",
+      "วิงสไปเกอร์"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Tetsurō_Kuroo",
+    "evidence": "He was the captain and one of the starting middle blockers for the Boys' Volleyball Team."
+  },
+  {
+    "id": "little-giant-inspiration",
+    "tier": "easy",
+    "prompt": "อะไรทำให้ฮินาตะอยากเล่นวอลเลย์บอล?",
+    "answer": "เห็นยักษ์ใหญ่ตัวจิ๋วของคาราสุโนะแข่งทางทีวี",
+    "decoys": [
+      "ได้ดูคาเงยามะแข่งตั้งแต่สมัยประถม",
+      "เพื่อนชวนเข้าชมรมเพราะตัวเล็กและว่องไว",
+      "โค้ชคาราสุโนะไปชวนถึงบ้าน"
+    ],
+    "note": "เขาเห็นการแข่งฮารุโคผ่านทีวีหน้าร้านเครื่องใช้ไฟฟ้า",
+    "source": "https://haikyuu.fandom.com/wiki/Shōyō_Hinata",
+    "evidence": "He stopped upon hearing the name \"Small Giant\" from the big screen TV at the storefront."
+  },
+  {
+    "id": "little-giant-number-10",
+    "tier": "easy",
+    "prompt": "ยักษ์ใหญ่ตัวจิ๋วใส่เสื้อเบอร์อะไรตอนแข่งให้คาราสุโนะ ซึ่งเป็นเบอร์เดียวกับที่ฮินาตะได้ใส่?",
+    "answer": "เบอร์ 10",
+    "decoys": [
+      "เบอร์ 1",
+      "เบอร์ 4",
+      "เบอร์ 9"
+    ],
+    "note": "ฮินาตะได้เบอร์นี้มาโดยบังเอิญ",
+    "source": "https://haikyuu.fandom.com/wiki/Tenma_Udai",
+    "evidence": "During games, he wore Karasuno's volleyball uniform with the number 10."
+  },
+  {
+    "id": "nekoma-chant",
+    "tier": "easy",
+    "prompt": "ก่อนแข่ง ผู้เล่นเนโคมะท่องว่าพวกเราเป็นเหมือนอะไร ที่ต้องไหลเวียนไม่หยุด?",
+    "answer": "เลือดในเส้นเลือด",
+    "decoys": [
+      "สายน้ำในแม่น้ำ",
+      "ลมใต้ปีก",
+      "รากของต้นไม้"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Nekoma_High",
+    "evidence": "We're like the blood in our veins. We must flow without stopping."
+  },
+  {
+    "id": "nekoma-coach-rival",
+    "tier": "easy",
+    "prompt": "โค้ชของเนโคมะ ผู้เป็นคู่ปรับเก่าแก่ของอุไค อิกเคย์ คือใคร?",
+    "answer": "เนโกะมาตะ ยาสุฟุมิ",
+    "decoys": [
+      "วาชิโจ ทันจิ",
+      "อิริฮาตะ โนบุเทรุ",
+      "โออิวาเกะ ทาคุโร่"
+    ],
+    "note": "การแข่งขันกันมายาวนานของโค้ชทั้งสอง ทำให้เนโคมะกับคาราสุโนะถูกเรียกว่าคู่ปรับโดยกำเนิด",
+    "source": "https://haikyuu.fandom.com/wiki/Nekoma_High",
+    "evidence": "Nekoma and Karasuno are said to be \"destined rivals\" because of the longtime competition between their respective coaches, Yasufumi Nekomata and Ikkei Ukai"
+  },
+  {
+    "id": "nekoma-practice-promise",
+    "tier": "easy",
+    "prompt": "หลังแพ้แมตช์ซ้อมครั้งแรกกับเนโคมะ ฮินาตะประกาศว่าสักวันจะทำให้เค็นมะต้องพูดคำใด?",
+    "answer": "สนุกจัง",
+    "decoys": [
+      "ยอมแพ้แล้ว",
+      "นายเก่งกว่าฉัน",
+      "ขอแข่งอีกรอบ"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Karasuno_vs_Nekoma_(Practice_Match)",
+    "evidence": "he'll play a game against him and make him play so hard, that he'll have no choice but to say: \"That was fun.\""
+  },
+  {
+    "id": "nishinoya-guardian-deity",
+    "tier": "easy",
+    "prompt": "เพื่อนร่วมทีมยกย่องนิชิโนะยะ ยู ด้วยฉายาใด?",
+    "answer": "เทพผู้พิทักษ์",
+    "decoys": [
+      "กำแพงเหล็ก",
+      "ราชาเจ้าคอร์ต",
+      "เหยื่อล่อสุดแกร่ง"
+    ],
+    "note": "ฉายานี้มาจากฝีมือการรับลูกของเขาในตำแหน่งลิเบอโร",
+    "source": "https://haikyuu.fandom.com/wiki/Yū_Nishinoya",
+    "evidence": "was referred to as \"Karasuno's Guardian Deity\" by his teammates, for his remarkable skills."
+  },
+  {
+    "id": "nishinoya-suspension",
+    "tier": "easy",
+    "prompt": "เพราะเหตุใดนิชิโนะยะจึงถูกพักการเรียนและห้ามร่วมกิจกรรมชมรม?",
+    "answer": "โวยวายจนทำกระถางต้นไม้ของรองผู้อำนวยการล้ม",
+    "decoys": [
+      "ชกต่อยกับนักเรียนโรงเรียนอื่น",
+      "สอบตกหลายวิชา",
+      "แอบหนีซ้อมไปเล่นเกม"
+    ],
+    "note": "เขาโวยวายเพราะเพื่อนรุ่นพี่ประกาศว่าจะเลิกเล่นวอลเลย์บอล",
+    "source": "https://haikyuu.fandom.com/wiki/Karasuno_vs_Neighborhood_Association",
+    "evidence": "but he retaliates and knocks down the VP's plant. This caused him to be suspended for a week and also banned from club activities for a month."
+  },
+  {
+    "id": "oikawa-junior-high",
+    "tier": "easy",
+    "prompt": "ก่อนเข้าอาโอบะโจไซ โออิคาวะ โทรุ เรียนมัธยมต้นที่โรงเรียนไหน?",
+    "answer": "คิตากาวะ ไดอิจิ",
+    "decoys": [
+      "ยูกิกาโอกะ",
+      "มินามิ ไดซัน",
+      "ชิราโทริซาวะ"
+    ],
+    "note": "คาเงยามะก็เรียนที่นี่และเป็นรุ่นน้องของโออิคาวะ",
+    "source": "https://haikyuu.fandom.com/wiki/Tōru_Oikawa",
+    "evidence": "Oikawa was said to have been a highly skilled player by the time he began attending Kitagawa Daiichi"
+  },
+  {
+    "id": "sugawara-role",
+    "tier": "easy",
+    "prompt": "สึกะวาระ โคชิ มีบทบาทอะไรในทีมคาราสุโนะ?",
+    "answer": "รองกัปตันและเซ็ตเตอร์สำรอง",
+    "decoys": [
+      "กัปตันและเอซ",
+      "ลิเบอโรตัวสำรอง",
+      "ผู้จัดการทีม"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Kōshi_Sugawara",
+    "evidence": "He was the vice captain, a substitute setter, and pinch server for the Boys' Volleyball Team."
+  },
+  {
+    "id": "takeda-subject",
+    "tier": "easy",
+    "prompt": "ทาเคดะ อิตเท็ตสึ ครูที่ปรึกษาชมรม สอนวิชาอะไรที่คาราสุโนะ?",
+    "answer": "วรรณคดีญี่ปุ่นสมัยใหม่",
+    "decoys": [
+      "ภาษาอังกฤษ",
+      "คณิตศาสตร์",
+      "พลศึกษา"
+    ],
+    "note": "เขาแทบไม่มีประสบการณ์วอลเลย์บอล แต่คอยติดต่อขอแมตช์ซ้อมให้ทีม",
+    "source": "https://haikyuu.fandom.com/wiki/Ittetsu_Takeda",
+    "evidence": "Takeda teaches contemporary Japanese literature at Karasuno High."
+  },
+  {
+    "id": "three-on-three-partner",
+    "tier": "easy",
+    "prompt": "ในแมตช์ 3 ต่อ 3 ที่ตัดสินว่าฮินาตะกับคาเงยามะจะได้เข้าชมรมหรือไม่ ใครอยู่ทีมเดียวกับทั้งสองคน?",
+    "answer": "ทานากะ ริวโนสุเกะ",
+    "decoys": [
+      "ซาวามุระ ไดจิ",
+      "สึกิชิมะ เคย์",
+      "ยามากุจิ ทาดาชิ"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Hinata,_Kageyama,_and_Tanaka_vs._Tsukishima,_Yamaguchi,_and_Sawamura",
+    "evidence": "Hinata, Kageyama, and Tanaka vs Tsukishima, Yamaguchi, and Sawamura was a practice match among Karasuno High's first and third years."
+  },
+  {
+    "id": "yaku-position",
+    "tier": "easy",
+    "prompt": "ยาคุ โมริสุเกะ ผู้เล่นปีสามของเนโคมะ เล่นตำแหน่งอะไร?",
+    "answer": "ลิเบอโร",
+    "decoys": [
+      "เซ็ตเตอร์",
+      "มิดเดิลบล็อกเกอร์",
+      "วิงสไปเกอร์"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Morisuke_Yaku",
+    "evidence": "He was the starting libero for the Boys' Volleyball Team."
+  },
+  {
+    "id": "akaashi-setter-vice",
+    "tier": "medium",
+    "prompt": "ใครคือเซ็ตเตอร์ตัวจริงและรองกัปตันของฟุคุโรดานิ?",
+    "answer": "อาคาอาชิ เคย์จิ",
+    "decoys": [
+      "โคโนฮะ อากิโนริ",
+      "วาชิโอะ ทัตสึกิ",
+      "ซารุคุอิ ยามาโตะ"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Keiji_Akaashi",
+    "evidence": "He played as the starting setter and vice-captain on the Boys' Volleyball Team."
+  },
+  {
+    "id": "akiteru-lie",
+    "tier": "medium",
+    "prompt": "สึกิชิมะ อากิเทรุ โกหกน้องชายเรื่องอะไรสมัยเล่นให้คาราสุโนะ?",
+    "answer": "ว่าตนเป็นเอซตัวจริงของทีม",
+    "decoys": [
+      "ว่าตนเป็นกัปตันทีม",
+      "ว่าตนได้ทุนไปเล่นในมหาวิทยาลัย",
+      "ว่าตนเลิกเล่นวอลเลย์บอลแล้ว"
+    ],
+    "note": "น้องชายรู้ความจริงเมื่อไปดูแข่งแล้วเห็นพี่นั่งอยู่บนอัฒจันทร์",
+    "source": "https://haikyuu.fandom.com/wiki/Kei_Tsukishima",
+    "evidence": "Akiteru is shown to have lied to Tsukishima about being the ace player of the volleyball team"
+  },
+  {
+    "id": "atsumu-reputation",
+    "tier": "medium",
+    "prompt": "มิยะ อัตสึมุ แห่งอินาริซากิ ได้ชื่อว่าเป็นอะไร?",
+    "answer": "เซ็ตเตอร์และนักเสิร์ฟที่ดีที่สุดของมัธยมปลายญี่ปุ่น",
+    "decoys": [
+      "ลิเบอโรอันดับหนึ่งของมัธยมปลาย",
+      "หนึ่งในเอซสามอันดับแรกของประเทศ",
+      "บล็อกเกอร์ที่ทายใจเก่งที่สุดในประเทศ"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Atsumu_Miya",
+    "evidence": "He was known as Japan's best high school setter and server."
+  },
+  {
+    "id": "bokuto-feint",
+    "tier": "medium",
+    "prompt": "ระหว่างค่ายฝึกช่วงฤดูร้อน ใครสอนลูกหยอดให้ฮินาตะ?",
+    "answer": "โบคุโตะ โคทาโร่",
+    "decoys": [
+      "อาคาอาชิ เคย์จิ",
+      "โคซึเมะ เค็นมะ",
+      "ไฮบะ เลฟ"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Karasuno_vs_Fukurōdani_(Practice_Match)",
+    "evidence": "Bokuto yells in shock at this, only for Akaashi to remind him that he was the one who taught Hinata the move."
+  },
+  {
+    "id": "bokuto-top-five",
+    "tier": "medium",
+    "prompt": "โบคุโตะ โคทาโร่ ถูกยอมรับว่าเป็นเอซกี่อันดับแรกของประเทศ?",
+    "answer": "ห้าอันดับแรก",
+    "decoys": [
+      "สามอันดับแรก",
+      "สิบอันดับแรก",
+      "อันดับหนึ่ง"
+    ],
+    "note": "เขาพลาดการติดสามอันดับแรกไปอย่างฉิวเฉียด",
+    "source": "https://haikyuu.fandom.com/wiki/Kōtarō_Bokuto",
+    "evidence": "He was acknowledged as one of the top five aces in the country, barely missing the top three"
+  },
+  {
+    "id": "camp-not-member",
+    "tier": "medium",
+    "prompt": "โรงเรียนใดไม่ได้ร่วมแข่งกับคาราสุโนะในค่ายฝึกช่วงฤดูร้อน?",
+    "answer": "ดาเตะโค",
+    "decoys": [
+      "ฟุคุโรดานิ",
+      "ชินเซ็น",
+      "อุบุกาวะ"
+    ],
+    "note": "ค่ายนี้เป็นการซ้อมร่วมของโรงเรียนในภูมิภาคคันโต",
+    "source": "https://haikyuu.fandom.com/wiki/Karasuno_High",
+    "evidence": "Karasuno played several sets against Nekoma, Fukurōdani, Shinzen, and Ubugawa (3 wins, 63 losses)."
+  },
+  {
+    "id": "futakuchi-new-captain",
+    "tier": "medium",
+    "prompt": "หลังปีสามรีไทร์ไปหลังอินเตอร์ไฮ ใครได้เป็นกัปตันคนใหม่ของดาเตะโค?",
+    "answer": "ฟุตาคุจิ เคนจิ",
+    "decoys": [
+      "อาโอเนะ ทาคาโนบุ",
+      "โคกาเนงาวะ คันจิ",
+      "ซาคุนามิ โคสุเกะ"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Kenji_Futakuchi",
+    "evidence": "After the Interhigh, the third-years retired and Futakuchi became the new team captain"
+  },
+  {
+    "id": "goshiki-only-first-year",
+    "tier": "medium",
+    "prompt": "ผู้เล่นปีหนึ่งคนเดียวที่ได้เป็นตัวจริงของชิราโทริซาวะ และถูกมองว่าเป็นเอซคนต่อไป คือใคร?",
+    "answer": "โกชิกิ ซึโตมุ",
+    "decoys": [
+      "คาวานิชิ ไทจิ",
+      "เซมิ เอตะ",
+      "ยามากาตะ ฮายาโตะ"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Tsutomu_Goshiki",
+    "evidence": "He is the only first-year to play as a starting regular on the volleyball team as a wing spiker and is acknowledged as the team's up-and-coming ace"
+  },
+  {
+    "id": "hyakuzawa-school",
+    "tier": "medium",
+    "prompt": "เฮียคุซาวะ ยูได ผู้เล่นตัวสูงที่คาราสุโนะต้องเจอในรอบคัดเลือกแรกของฮารุโค เล่นให้โรงเรียนใด?",
+    "answer": "คาคุกาวะ",
+    "decoys": [
+      "โองิมินามิ",
+      "วาคุทานิมินามิ",
+      "โทโคนามิ"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Yūdai_Hyakuzawa",
+    "evidence": "Hyakuzawa and his team, Kakugawa, face off against Karasuno in the second match of the First Spring High Preliminary."
+  },
+  {
+    "id": "ikkei-teaches-hinata",
+    "tier": "medium",
+    "prompt": "เมื่อฮินาตะอยากตบบอลเร็วด้วยตัวเองโดยไม่หลับตา โค้ชอุไคพาเขาไปเรียนพื้นฐานการตบกับใคร?",
+    "answer": "อุไค อิกเคย์",
+    "decoys": [
+      "เนโกะมาตะ ยาสุฟุมิ",
+      "สึกะวาระ โคชิ",
+      "ชิมาดะ มาโกโตะ"
+    ],
+    "note": "เขาสอนว่าในบอลเร็ว ผู้ตบคือฝ่ายที่นำจังหวะ",
+    "source": "https://haikyuu.fandom.com/wiki/Shōyō_Hinata",
+    "evidence": "Ukai decides to take him to someone else: the original Coach Ikkei Ukai."
+  },
+  {
+    "id": "inarizaki-captain",
+    "tier": "medium",
+    "prompt": "ใครคือกัปตันของอินาริซากิในฮารุโคที่เจอกับคาราสุโนะ?",
+    "answer": "คิตะ ชินสุเกะ",
+    "decoys": [
+      "มิยะ โอซามุ",
+      "ซุนะ รินทาโร่",
+      "อาคางิ มิจินาริ"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Shinsuke_Kita",
+    "evidence": "He was a wing spiker and the team captain for the Boys' Volleyball Team."
+  },
+  {
+    "id": "inarizaki-motto",
+    "tier": "medium",
+    "prompt": "คติประจำทีมของอินาริซากิคืออะไร?",
+    "answer": "ไม่ต้องการความทรงจำ",
+    "decoys": [
+      "เชื่อมต่อ",
+      "ครองสนาม",
+      "ความพยายาม"
+    ],
+    "note": "หมายถึงไม่ยึดติดกับความสำเร็จในอดีต และพร้อมรับความท้าทายใหม่เสมอ",
+    "source": "https://haikyuu.fandom.com/wiki/Inarizaki_High",
+    "evidence": "The team's motto is: \"We don't need (things like) memories\""
+  },
+  {
+    "id": "johzenji-captain",
+    "tier": "medium",
+    "prompt": "ใครคือกัปตันของโจเซ็นจิที่เจอกับคาราสุโนะในรอบคัดเลือกฮารุโค?",
+    "answer": "เทรุชิมะ ยูจิ",
+    "decoys": [
+      "ฟุตามาตะ ทาเคฮารุ",
+      "โบบาตะ คาซึมะ",
+      "ฮิงาชิยามะ คัตสึมิจิ"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Yūji_Terushima",
+    "evidence": "He is part of the Boys' Volleyball Club, playing as a wing spiker and the team captain."
+  },
+  {
+    "id": "keishin-setter-past",
+    "tier": "medium",
+    "prompt": "สมัยเป็นนักเรียนคาราสุโนะ อุไค เคย์ชิน เล่นตำแหน่งอะไร?",
+    "answer": "เซ็ตเตอร์",
+    "decoys": [
+      "ลิเบอโร",
+      "มิดเดิลบล็อกเกอร์",
+      "วิงสไปเกอร์"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Keishin_Ukai",
+    "evidence": "He is also an alumnus and former player on the team, having played as a setter."
+  },
+  {
+    "id": "koganegawa-position",
+    "tier": "medium",
+    "prompt": "โคกาเนงาวะ คันจิ ปีหนึ่งของดาเตะโค ได้เป็นตัวจริงในตำแหน่งอะไรหลังปีสามรีไทร์?",
+    "answer": "เซ็ตเตอร์",
+    "decoys": [
+      "ลิเบอโร",
+      "มิดเดิลบล็อกเกอร์",
+      "วิงสไปเกอร์"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Kanji_Koganegawa",
+    "evidence": "He became the Boys' Volleyball Team's regular setter after the third-years retired during the Interhigh Tournament."
+  },
+  {
+    "id": "komori-top-libero",
+    "tier": "medium",
+    "prompt": "ใครถูกนิตยสาร Volleyball Monthly ยกให้เป็นลิเบอโรอันดับหนึ่งของมัธยมปลาย?",
+    "answer": "โคโมริ โมโตยะ",
+    "decoys": [
+      "ยาคุ โมริสุเกะ",
+      "อาคางิ มิจินาริ",
+      "โคมิ ฮารุกิ"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Motoya_Komori",
+    "evidence": "He was referred to as the #1 high school libero in Volleyball Monthly"
+  },
+  {
+    "id": "kuroo-taught-tsukishima",
+    "tier": "medium",
+    "prompt": "ฮินาตะบอกว่าใครคือคนที่ช่วยให้สึกิชิมะกลายเป็นบล็อกเกอร์อย่างทุกวันนี้?",
+    "answer": "คุโรโอะ เท็ตสึโร่",
+    "decoys": [
+      "อาโอเนะ ทาคาโนบุ",
+      "อุชิจิมะ วาคาโทชิ",
+      "ไค โนบุยูกิ"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Haikyu!!_The_Dumpster_Battle",
+    "evidence": "Kuroo is the one who helped Tsukishima become the blocker he is now."
+  },
+  {
+    "id": "kyotani-mad-dog",
+    "tier": "medium",
+    "prompt": "โออิคาวะตั้งฉายาให้เคียวทานิ เคนทาโร่ ว่าอะไร?",
+    "answer": "หมาบ้า",
+    "decoys": [
+      "ยักษ์ใหญ่ตัวจิ๋ว",
+      "เหยื่อล่อสุดแกร่ง",
+      "ราชาเจ้าคอร์ต"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Kentarō_Kyōtani",
+    "evidence": "While Oikawa attempts to get Kyōtani to be more of a team player and nicknamed him 'Mad Dog'"
+  },
+  {
+    "id": "lev-position",
+    "tier": "medium",
+    "prompt": "ไฮบะ เลฟ ปีหนึ่งของเนโคมะที่ประกาศตัวเองว่าเป็นเอซ เล่นตำแหน่งอะไร?",
+    "answer": "มิดเดิลบล็อกเกอร์",
+    "decoys": [
+      "เซ็ตเตอร์",
+      "ลิเบอโร",
+      "โอโพสิต"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Lev_Haiba",
+    "evidence": "He was one of the middle blockers and the self-declared ace of the team."
+  },
+  {
+    "id": "minus-tempo",
+    "tier": "medium",
+    "prompt": "จังหวะการโจมตีที่ผู้ตบวิ่งเข้าเสร็จก่อนเซ็ตเตอร์จะเซ็ตลูก ซึ่งบอลเร็วของฮินาตะกับคาเงยามะใช้ เรียกว่าอะไร?",
+    "answer": "เทมโปลบ",
+    "decoys": [
+      "การโจมตีแบบซิงโคร",
+      "บรอดแอทแท็ก",
+      "ลูกฟรีบอล"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Karasuno_vs_Kakugawa",
+    "evidence": "minus tempo, which is when the spiker already finishes their approach before the setter sets the ball."
+  },
+  {
+    "id": "miya-twins-quick",
+    "tier": "medium",
+    "prompt": "ในการแข่งขันระดับชาติ อินาริซากิทำอะไรที่ทำให้คาราสุโนะทั้งทีมตกตะลึง?",
+    "answer": "ฝาแฝดมิยะเล่นบอลเร็วประหลาดแบบเดียวกับฮินาตะและคาเงยามะ",
+    "decoys": [
+      "ส่งลิเบอโรสองคนลงสลับกันทุกแต้ม",
+      "ให้กองเชียร์ร้องเพลงเชียร์คาราสุโนะ",
+      "ใช้เซ็ตเตอร์สองคนพร้อมกันตลอดเกม"
+    ],
+    "note": "ฝาแฝดทำได้ตั้งแต่ครั้งแรกที่ลอง",
+    "source": "https://haikyuu.fandom.com/wiki/Karasuno_vs_Inarizaki",
+    "evidence": "the entire Karasuno team is shocked when they witness Miya's perfectly performed Hinata and Kageyama's freak quick attack."
+  },
+  {
+    "id": "nationals-first-opponent",
+    "tier": "medium",
+    "prompt": "คาราสุโนะพบทีมใดในนัดแรกของการแข่งขันระดับชาติ (ฮารุโค)?",
+    "answer": "สึบากิฮาระ",
+    "decoys": [
+      "อินาริซากิ",
+      "คาโมเมะได",
+      "อิทาจิยามะ"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Karasuno_vs_Inarizaki",
+    "evidence": "The evening of the first day of the tournament is celebrated by Karasuno for having won against Tsubakihara Academy and advancing to the next round."
+  },
+  {
+    "id": "new-quick-stop",
+    "tier": "medium",
+    "prompt": "บอลเร็วประหลาดแบบใหม่ที่ฝึกในช่วงค่ายฤดูร้อน ต่างจากแบบเดิมอย่างไร?",
+    "answer": "ลูกจะหยุดและตกลงตรงจุดตบ ให้ฮินาตะควบคุมการตบเองได้",
+    "decoys": [
+      "ฮินาตะตบจากแดนหลังแทนแดนหน้า",
+      "คาเงยามะกระโดดตบเองแทนการเซ็ต",
+      "ลูกพุ่งโค้งออกไปทางเสาอากาศ"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Tobio_Kageyama",
+    "evidence": "Ever since the summer training camp, Kageyama has modified his toss to one that stops and falls around the spiker's hitting zone to give Hinata more control in mid-air."
+  },
+  {
+    "id": "saeko-drive-tokyo",
+    "tier": "medium",
+    "prompt": "ฮินาตะกับคาเงยามะสอบตกจนต้องเรียนซ่อม ใครขับรถพาทั้งสองตามไปงานเก็บตัวแข่งที่โตเกียว?",
+    "answer": "ทานากะ ซาเอโกะ",
+    "decoys": [
+      "อุไค เคย์ชิน",
+      "ทาเคดะ อิตเท็ตสึ",
+      "สึกิชิมะ อากิเทรุ"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Shōyō_Hinata",
+    "evidence": "his sister Saeko will drive them to Tokyo once they finish their make-up exams."
+  },
+  {
+    "id": "sakusa-school",
+    "tier": "medium",
+    "prompt": "ซากุสะ คิโยโอมิ หนึ่งในเอซสามอันดับแรกของประเทศ เป็นเอซของโรงเรียนไหน?",
+    "answer": "อิทาจิยามะ",
+    "decoys": [
+      "มุจินาซากะ",
+      "อินาริซากิ",
+      "ฟุคุโรดานิ"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Kiyoomi_Sakusa",
+    "evidence": "Sakusa attended Itachiyama Institute for high school and became known as one of the top three aces in the nation."
+  },
+  {
+    "id": "semi-pinch-server",
+    "tier": "medium",
+    "prompt": "นอกจากเป็นเซ็ตเตอร์แล้ว เซมิ เอตะ ของชิราโทริซาวะ ยังลงสนามในบทบาทไหน?",
+    "answer": "พินช์เสิร์ฟเวอร์",
+    "decoys": [
+      "ลิเบอโร",
+      "มิดเดิลบล็อกเกอร์",
+      "เอซ"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Eita_Semi",
+    "evidence": "He was a setter and pinch server for the Boys' Volleyball Team."
+  },
+  {
+    "id": "shirabu-starting-setter",
+    "tier": "medium",
+    "prompt": "ใครได้เป็นเซ็ตเตอร์ตัวจริงของชิราโทริซาวะแทนเซมิ เอตะ?",
+    "answer": "ชิราบุ เคนจิโร่",
+    "decoys": [
+      "โอฮิระ เรอง",
+      "คาวานิชิ ไทจิ",
+      "ยามากาตะ ฮายาโตะ"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Kenjirō_Shirabu",
+    "evidence": "he was chosen to replace Semi as the starting setter"
+  },
+  {
+    "id": "synchronized-attack",
+    "tier": "medium",
+    "prompt": "การโจมตีที่ผู้ตบทุกคนวิ่งเข้าตบพร้อมกันในจังหวะเดียว จนบล็อกเกอร์เลือกประกบใครไม่ได้ ซึ่งคาราสุโนะฝึกในค่ายฤดูร้อน เรียกว่าอะไร?",
+    "answer": "การโจมตีแบบซิงโคร",
+    "decoys": [
+      "บรอดแอทแท็ก",
+      "บอลเร็วประหลาด",
+      "ดีเลย์สไปก์"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Karasuno_vs_Fukurōdani_(Practice_Match)",
+    "evidence": "All spikers run up at the same time, performing a synchronized attack at first tempo."
+  },
+  {
+    "id": "tendo-guess-monster",
+    "tier": "medium",
+    "prompt": "เท็นโด ซาโตริ มิดเดิลบล็อกเกอร์ของชิราโทริซาวะ ถูกทีมอื่นเรียกว่าอะไร?",
+    "answer": "GUESS.MONSTER",
+    "decoys": [
+      "ราชาเจ้าคอร์ต",
+      "เหยื่อล่อสุดแกร่ง",
+      "เทพผู้พิทักษ์"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Satori_Tendō",
+    "evidence": "He was often referred to as the Guess Monster"
+  },
+  {
+    "id": "tsukishima-final-injury",
+    "tier": "medium",
+    "prompt": "ในรอบชิงชนะเลิศจังหวัดกับชิราโทริซาวะ เกิดอะไรขึ้นกับสึกิชิมะ เคย์?",
+    "answer": "นิ้วบาดเจ็บจากการบล็อกเอซของคู่แข่ง จนต้องออกไปพัก",
+    "decoys": [
+      "ป่วยเป็นไข้จนลงเล่นไม่ได้ทั้งแมตช์",
+      "ถูกกรรมการเตือนเพราะเถียงคู่แข่ง",
+      "ต้องลงเล่นเซ็ตเตอร์แทนคาเงยามะ"
+    ],
+    "note": "เขากลับมาลงสนามได้ทันช่วงท้ายเซตที่ห้า",
+    "source": "https://haikyuu.fandom.com/wiki/Kei_Tsukishima",
+    "evidence": "However, when he jumps to block Ushijima, the ball scrapes his finger."
+  },
+  {
+    "id": "ushijima-chance-meeting",
+    "tier": "medium",
+    "prompt": "ระหว่างทางกลับจากติวหนังสือที่บ้านยาจิ ฮินาตะกับคาเงยามะบังเอิญเจอใคร จนได้ตามไปดูการซ้อมของชิราโทริซาวะ?",
+    "answer": "อุชิจิมะ วาคาโทชิ",
+    "decoys": [
+      "เท็นโด ซาโตริ",
+      "โออิคาวะ โทรุ",
+      "ชิราบุ เคนจิโร่"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Shōyō_Hinata",
+    "evidence": "Hinata asks him if, by Shiratorizawa, he means Ushijima and coincidentally, Ushijima's just passing by when Hinata mentions him."
+  },
+  {
+    "id": "ushijima-left-handed",
+    "tier": "medium",
+    "prompt": "สไปค์ของอุชิจิมะ วาคาโทชิ รับยาก เพราะลูกหมุนต่างจากที่ผู้เล่นส่วนใหญ่คุ้นเคย สาเหตุคืออะไร?",
+    "answer": "เขาถนัดซ้าย",
+    "decoys": [
+      "เขาตีลูกด้วยหลังมือ",
+      "เขากระโดดตีจากแนวหลังทุกลูก",
+      "เขาหมุนตัวกลางอากาศก่อนตี"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Wakatoshi_Ushijima",
+    "evidence": "Because he is left-handed, the ball tends to have a different spin than most players are use to"
+  },
+  {
+    "id": "ushijima-ushiwaka",
+    "tier": "medium",
+    "prompt": "อุชิจิมะ วาคาโทชิ มักถูกเรียกด้วยชื่อเล่นว่าอะไร?",
+    "answer": "อุชิวากะ",
+    "decoys": [
+      "ยักษ์ใหญ่ตัวจิ๋ว",
+      "เทพผู้พิทักษ์",
+      "เหยื่อล่อสุดแกร่ง"
+    ],
+    "note": "มาจาก “อุชิ” ในนามสกุลกับ “วากะ” ในชื่อของเขา",
+    "source": "https://haikyuu.fandom.com/wiki/Wakatoshi_Ushijima",
+    "evidence": "He has commonly been referred to as \"Ushiwaka\" most likely because of the \"Ushi\" in Ushijima and \"Waka\" in Wakatoshi."
+  },
+  {
+    "id": "wakutani-captain-idol",
+    "tier": "medium",
+    "prompt": "นาคาชิมะ ทาเครุ กัปตันของวาคุทานิมินามิ ชื่นชมและเล่นตามสไตล์ของใคร?",
+    "answer": "อุได เท็นมะ",
+    "decoys": [
+      "อุชิจิมะ วาคาโทชิ",
+      "อาซึมาเนะ อาซาฮิ",
+      "โออิคาวะ โทรุ"
+    ],
+    "note": "อุได เท็นมะ คือยักษ์ใหญ่ตัวจิ๋ว เอซของคาราสุโนะในยุคที่แข็งแกร่งที่สุด",
+    "source": "https://haikyuu.fandom.com/wiki/Wakutani_Minami_High",
+    "evidence": "The team captain, Takeru Nakashima, idolizes the Little Giant"
+  },
+  {
+    "id": "wakutani-ennoshita",
+    "tier": "medium",
+    "prompt": "ในรอบก่อนรองชนะเลิศฮารุโค ศึกคัดเลือกตัวแทนจังหวัดมิยางิ ใครถูกส่งลงแทนผู้เล่นที่บาดเจ็บจากการชนกับเพื่อนร่วมทีม?",
+    "answer": "เอ็นโนะชิตะ ชิคาระ",
+    "decoys": [
+      "นาริตะ คาซึฮิโตะ",
+      "คิโนชิตะ ฮิซาชิ",
+      "ยามากุจิ ทาดาชิ"
+    ],
+    "note": "คู่แข่งในแมตช์นี้คือวาคุทานิมินามิ",
+    "source": "https://haikyuu.fandom.com/wiki/Chikara_Ennoshita",
+    "evidence": "After Daichi has to be switched out because of an injury in the match against Wakutani Minami, Ennoshita replaces him."
+  },
+  {
+    "id": "yachi-recruit",
+    "tier": "medium",
+    "prompt": "ใครเป็นคนชักชวนยาจิ ฮิโตกะ ให้มาเป็นผู้จัดการทีมคนที่สอง?",
+    "answer": "ชิมิซึ คิโยโกะ",
+    "decoys": [
+      "ทาเคดะ อิตเท็ตสึ",
+      "ทานากะ ซาเอโกะ",
+      "ซาวามุระ ไดจิ"
+    ],
+    "note": "เธอหาคนมาแทนตัวเองก่อนเกษียณหลังฮารุโค",
+    "source": "https://haikyuu.fandom.com/wiki/Karasuno_High",
+    "evidence": "Hitoka Yachi, a first-year recruited by Kiyoko after the first tournament."
+  },
+  {
+    "id": "yamaguchi-shimada",
+    "tier": "medium",
+    "prompt": "ยามากุจิไปขอให้ใครสอนเสิร์ฟลอยกระโดด?",
+    "answer": "ชิมาดะ มาโกโตะ",
+    "decoys": [
+      "อุไค เคย์ชิน",
+      "ทาคิโนะอุเอะ ยูสุเกะ",
+      "สึกะวาระ โคชิ"
+    ],
+    "note": "เขาเป็นศิษย์เก่าคาราสุโนะและเล่นให้ทีมสมาคมละแวกบ้าน",
+    "source": "https://haikyuu.fandom.com/wiki/Makoto_Shimada",
+    "evidence": "As his mentor, Shimada taught Yamaguchi the jump float serve and gave him countless tips to help improve this skill."
+  },
+  {
+    "id": "bokuto-weakness",
+    "tier": "hard",
+    "prompt": "จุดอ่อนที่ทำให้ฟอร์มของโบคุโตะ โคทาโร่ ขึ้นลงระหว่างเกมคืออะไร?",
+    "answer": "อารมณ์แปรปรวน",
+    "decoys": [
+      "อาการบาดเจ็บที่หัวเข่า",
+      "รับลูกเสิร์ฟไม่ได้",
+      "เสิร์ฟพลาดบ่อย"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Kōtarō_Bokuto",
+    "evidence": "Bokuto is well known to suffer mood swings that can affect his performance during games"
+  },
+  {
+    "id": "daisho-nekoma-first-set",
+    "tier": "hard",
+    "prompt": "ระหว่างดูแมตช์คาราสุโนะกับเนโคมะ ไดโช สึงุรุ อธิบายว่าเนโคมะมักใช้เซ็ตแรกทำอะไร?",
+    "answer": "ศึกษาคู่แข่งเพื่อหาทางรับมือ",
+    "decoys": [
+      "ทดลองผู้เล่นสำรอง",
+      "ไล่ทำแต้มให้นำห่างไว้ก่อน",
+      "ถนอมแรงของผู้เล่นตัวหลัก"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Haikyu!!_The_Dumpster_Battle",
+    "evidence": "Suguru explains that Nekoma typically uses the first set to study their opponents and figure out how to counter certain plays"
+  },
+  {
+    "id": "date-tech-bunch-shift",
+    "tier": "hard",
+    "prompt": "ดาเตะโคใช้การบล็อกแบบไหน ที่บล็อกเกอร์ทั้งสามรวมตัวกันกลางสนามแล้วขยับไปบล็อกพร้อมกัน?",
+    "answer": "บันช์ชิฟต์",
+    "decoys": [
+      "สเปรดชิฟต์",
+      "สแต็กชิฟต์",
+      "เดดิเคตชิฟต์"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Date_Tech_High",
+    "evidence": "The team's employs bunch shift in their blocking, in which all three blockers gather at the center of the court and form a stance there."
+  },
+  {
+    "id": "dumpster-set-two-point",
+    "tier": "hard",
+    "prompt": "ในศึกที่ทิ้งขยะ คาราสุโนะปิดเซ็ตที่ 2 กับเนโคมะได้อย่างไร?",
+    "answer": "ฮินาตะรับลูกตบของยามาโมโตะ แล้วลูกกระดอนกลับไปตกในแดนเนโคมะ",
+    "decoys": [
+      "อาซาฮิตบทะลุบล็อกสามคน",
+      "ยามากุจิเสิร์ฟลอยกระโดดได้เอซ",
+      "สึกิชิมะบล็อกคุโรโอะได้"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Haikyu!!_The_Dumpster_Battle",
+    "evidence": "The force behind it sends the ball back to Nekoma's side, and it lands in a vacant spot, winning the set for Karasuno."
+  },
+  {
+    "id": "hinata-cheek-save",
+    "tier": "hard",
+    "prompt": "ในเซตที่ห้ากับชิราโทริซาวะ ฮินาตะช่วยลูกที่ถูกบล็อกกลับมาด้วยส่วนใดของร่างกาย?",
+    "answer": "แก้ม",
+    "decoys": [
+      "ศีรษะ",
+      "หน้าอก",
+      "หลัง"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Shōyō_Hinata",
+    "evidence": "When Asahi gets blocked, Hinata uses his cheek to save the ball."
+  },
+  {
+    "id": "inarizaki-interhigh-result",
+    "tier": "hard",
+    "prompt": "ในอินเตอร์ไฮครั้งล่าสุดก่อนฮารุโค อินาริซากิจบที่อันดับไหน?",
+    "answer": "รองชนะเลิศ",
+    "decoys": [
+      "ชนะเลิศ",
+      "อันดับสาม",
+      "ตกรอบแปดทีมสุดท้าย"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Inarizaki_High",
+    "evidence": "They are the runners-up of the last Interhigh and the current 2nd seed."
+  },
+  {
+    "id": "interhigh-last-block",
+    "tier": "hard",
+    "prompt": "ลูกสุดท้ายที่ทำให้คาราสุโนะตกรอบอินเตอร์ไฮ บอลเร็วของฮินาตะถูกใครบล็อก?",
+    "answer": "คินดะอิจิ ยูทาโร่",
+    "decoys": [
+      "อิวาอิซุมิ ฮาจิเมะ",
+      "โออิคาวะ โทรุ",
+      "มัตสึคาวะ อิซเซย์"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Karasuno_vs_Aoba_Johsai_(Interhigh)",
+    "evidence": "Hinata spikes with all his force, but in the end, Kindaichi blocks the ball."
+  },
+  {
+    "id": "inuoka-stops-quick",
+    "tier": "hard",
+    "prompt": "ในแมตช์ซ้อมครั้งแรกกับเนโคมะ ใครบล็อกบอลเร็วของฮินาตะจนเนโคมะชนะเซตแรก?",
+    "answer": "อินุโอกะ โซ",
+    "decoys": [
+      "ยามาโมโตะ ทาเคโทระ",
+      "ไค โนบุยูกิ",
+      "ไฮบะ เลฟ"
+    ],
+    "note": "เป็นแมตช์แรกที่บอลเร็วของฮินาตะถูกหยุดได้",
+    "source": "https://haikyuu.fandom.com/wiki/Karasuno_vs_Nekoma_(Practice_Match)",
+    "evidence": "Inuoka is able to catch up to him and completely shuts down the quick, winning the set for Nekoma 25-22."
+  },
+  {
+    "id": "johzenji-kageyama-nosebleed",
+    "tier": "hard",
+    "prompt": "ทำไมคาเงยามะต้องออกไปห้องพยาบาลระหว่างแมตช์กับโจเซ็นจิ?",
+    "answer": "บล็อกลูกด้วยหน้าจนเลือดกำเดาไหล",
+    "decoys": [
+      "ข้อเท้าพลิกตอนลงพื้น",
+      "นิ้วซ้นจากการเซ็ต",
+      "ชนกับเพื่อนร่วมทีมจนหัวโน"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Karasuno_vs_Johzenji",
+    "evidence": "he actually blocked with his face, causing his nose to bleed."
+  },
+  {
+    "id": "johzenji-narita",
+    "tier": "hard",
+    "prompt": "ในแมตช์กับโจเซ็นจิ หลังคาเงยามะต้องออกจากสนามชั่วคราว ใครถูกส่งลงแทนฮินาตะ?",
+    "answer": "นาริตะ คาซึฮิโตะ",
+    "decoys": [
+      "คิโนชิตะ ฮิซาชิ",
+      "เอ็นโนะชิตะ ชิคาระ",
+      "ยามากุจิ ทาดาชิ"
+    ],
+    "note": "โค้ชเลือกเขาเพราะเคยเล่นกับเซ็ตเตอร์สำรองมามากกว่า",
+    "source": "https://haikyuu.fandom.com/wiki/Karasuno_vs_Johzenji",
+    "evidence": "Narita then subs in for Hinata."
+  },
+  {
+    "id": "johzenji-two-on-two",
+    "tier": "hard",
+    "prompt": "อานาบาระ ทาคาอากิ โค้ชคนใหม่ของโจเซ็นจิ สร้างทีมใหม่ด้วยการให้ผู้เล่นฝึกแบบไหน?",
+    "answer": "แข่งสองต่อสองกันเอง",
+    "decoys": [
+      "วิ่งขึ้นเนินทุกเช้า",
+      "รับลูกเสิร์ฟวันละพันลูก",
+      "ซ้อมกับทีมมหาวิทยาลัยทุกสัปดาห์"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Johzenji_High",
+    "evidence": "the new coach Anabara had its members practice through two-on-two matches against one another"
+  },
+  {
+    "id": "kamomedai-first-round",
+    "tier": "hard",
+    "prompt": "ในฮารุโค คาโมเมะไดลงเล่นนัดแรกกับโรงเรียนไหน?",
+    "answer": "ชิคุอิดะ",
+    "decoys": [
+      "โทโคนามิ",
+      "สึบากิฮาระ",
+      "มุจินาซากะ"
+    ],
+    "note": "คาโมเมะไดไม่ได้สิทธิ์ข้ามรอบแรก จึงต้องเล่นตั้งแต่นัดแรก",
+    "source": "https://haikyuu.fandom.com/wiki/Kamomedai_High",
+    "evidence": "Kamomedai High School vs Chikuida High School [Ibaraki]"
+  },
+  {
+    "id": "kenma-after-nekoma-loss",
+    "tier": "hard",
+    "prompt": "เมื่อแมตช์คาราสุโนะกับเนโคมะในการแข่งขันระดับชาติจบลง เค็นมะบอกอะไรกับคุโรโอะ?",
+    "answer": "สนุกมาก และขอบคุณที่พาเขามาเล่นวอลเลย์บอล",
+    "decoys": [
+      "ขอโทษที่ทำให้ทีมแพ้",
+      "อยากเลิกเล่นวอลเลย์บอลหลังจบฮารุโค",
+      "อยากย้ายไปเป็นลิเบอโรในปีหน้า"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Haikyu!!_The_Dumpster_Battle",
+    "evidence": "Kuroo approaches Kenma and hears the setter express how much fun he had before expressing gratitude to Kuroo for introducing him to the sport"
+  },
+  {
+    "id": "kunimi-late-game",
+    "tier": "hard",
+    "prompt": "คุนิมิ อากิระ ของอาโอบะโจไซดูเหมือนไม่ทุ่มเต็มที่ในเกม แต่จุดแข็งจริงๆ ของเขาคืออะไร?",
+    "answer": "เก็บแรงไว้เล่นได้ดีในช่วงท้ายเกม",
+    "decoys": [
+      "เสิร์ฟกระโดดที่แรงที่สุดในทีม",
+      "บล็อกเดี่ยวหยุดเอซคู่แข่งได้",
+      "เซ็ตลูกแทนเซ็ตเตอร์ได้"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Akira_Kunimi",
+    "evidence": "his true strength lies in his late game plays because of his \"conservative\" nature"
+  },
+  {
+    "id": "kuroo-kenma-neighbors",
+    "tier": "hard",
+    "prompt": "คุโรโอะกับเค็นมะรู้จักกันตั้งแต่เด็กได้อย่างไร?",
+    "answer": "คุโรโอะย้ายมาอยู่ละแวกบ้านของเค็นมะ",
+    "decoys": [
+      "เรียนห้องเดียวกันตอนประถม",
+      "พ่อของทั้งคู่ทำงานที่เดียวกัน",
+      "เจอกันที่ชมรมวอลเลย์บอลมัธยมต้น"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Tetsurō_Kuroo",
+    "evidence": "Kuroo moved into Kenma's neighborhood when they were young, and they gradually became close friends"
+  },
+  {
+    "id": "kuroo-lower-net",
+    "tier": "hard",
+    "prompt": "ตอนเด็ก คุโรโอะลังเลจะฝึกตบเพราะตัวยังเล็ก ใครแนะนำให้ลดตาข่ายลง?",
+    "answer": "เนโกะมาตะ ยาสุฟุมิ",
+    "decoys": [
+      "อุไค อิกเคย์",
+      "นาโออิ มานาบุ",
+      "วาชิโจ ทันจิ"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Haikyu!!_The_Dumpster_Battle",
+    "evidence": "lowering the net for those who want to better improve their abilities in something they find enjoyable, the man being Coach Nekomata"
+  },
+  {
+    "id": "little-giant-blockouts",
+    "tier": "hard",
+    "prompt": "ยักษ์ใหญ่ตัวจิ๋วใช้วิธีใดสู้กับบล็อกเกอร์ที่สูงกว่า?",
+    "answer": "จงใจตบให้ลูกโดนช่องว่างหรือปลายนิ้วบล็อกเกอร์แล้วกระเด็นออก",
+    "decoys": [
+      "กระโดดตบจากแดนหลังแทบทุกลูก",
+      "ใช้แต่ลูกหยอดข้ามบล็อก",
+      "เสิร์ฟกระโดดทำเอซให้มากที่สุด"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Tenma_Udai",
+    "evidence": "he developed a play style using block-outs where he intentionally aims for the small gaps of a block and the blocker's fingertips so that the ball would ricochet."
+  },
+  {
+    "id": "nakashima-block-out",
+    "tier": "hard",
+    "prompt": "นาคาชิมะ ทาเครุ ชอบเล็งตีลูกใส่มือบล็อกเกอร์ให้ลูกกระเด็นออก เทคนิคนี้เรียกว่าอะไร?",
+    "answer": "บล็อกเอาท์",
+    "decoys": [
+      "เกสบล็อก",
+      "บรอดแอทแท็ก",
+      "การโจมตีแบบซิงโคร"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Takeru_Nakashima",
+    "evidence": "Nakashima still proves to be a fearsome player when aiming at Hinata's hand to perform a block-out"
+  },
+  {
+    "id": "nekoma-final-point",
+    "tier": "hard",
+    "prompt": "แต้มสุดท้ายที่ทำให้คาราสุโนะชนะเนโคมะในการแข่งขันระดับชาติ เกิดขึ้นอย่างไร?",
+    "answer": "ลูกลื่นหลุดมือเค็นมะเพราะเหงื่อตอนจะเซ็ต",
+    "decoys": [
+      "ฮินาตะตบผ่านบล็อกสามคน",
+      "เลฟเสิร์ฟติดตาข่าย",
+      "คุโรโอะตบออกนอกสนาม"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Haikyu!!_The_Dumpster_Battle",
+    "evidence": "when the ball touches his hands, it slips from his grasp due to the sweat covering it and lands before anyone can save it."
+  },
+  {
+    "id": "nekoma-first-ace",
+    "tier": "hard",
+    "prompt": "ในแมตช์คาราสุโนะพบเนโคมะในการแข่งขันระดับชาติ ใครทำเอซจากการเสิร์ฟได้เป็นคนแรก?",
+    "answer": "ยามากุจิ ทาดาชิ",
+    "decoys": [
+      "คาเงยามะ โทบิโอะ",
+      "อาซึมาเนะ อาซาฮิ",
+      "ฮินาตะ โชโย"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Haikyu!!_The_Dumpster_Battle",
+    "evidence": "Yamaguchi performs a jump float and gets the first service ace when Yamamoto is unable to save the ball."
+  },
+  {
+    "id": "nekoma-first-point",
+    "tier": "hard",
+    "prompt": "แต้มแรกของแมตช์คาราสุโนะพบเนโคมะในการแข่งขันระดับชาติ ได้มาอย่างไร?",
+    "answer": "ฮินาตะตบลงจนเค็นมะรับไม่ได้",
+    "decoys": [
+      "คาเงยามะเสิร์ฟเอซ",
+      "อาซาฮิตบผ่านบล็อกสามคน",
+      "สึกิชิมะบล็อกเลฟได้"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Haikyu!!_The_Dumpster_Battle",
+    "evidence": "Hinata spikes the ball and gains the first point of the match when Kenma is unable to receive the ball."
+  },
+  {
+    "id": "new-quick-first-success",
+    "tier": "hard",
+    "prompt": "บอลเร็วประหลาดแบบใหม่ที่ฝึกระหว่างค่ายฤดูร้อน สำเร็จครั้งแรกในแมตช์ซ้อมกับทีมใด?",
+    "answer": "ฟุคุโรดานิ",
+    "decoys": [
+      "เนโคมะ",
+      "อุบุกาวะ",
+      "ชินเซ็น"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Karasuno_vs_Fukurōdani_(Practice_Match)",
+    "evidence": "The ball comes to Hinata and stops in mid-air, giving Hinata the chance to spike it himself."
+  },
+  {
+    "id": "nishinoya-foot-save",
+    "tier": "hard",
+    "prompt": "ในแต้มสุดท้ายที่คาราสุโนะชนะในรอบสองของอินเตอร์ไฮ นิชิโนะยะช่วยลูกไว้ด้วยส่วนใดของร่างกาย?",
+    "answer": "เท้า",
+    "decoys": [
+      "ศีรษะ",
+      "หลัง",
+      "หน้าอก"
+    ],
+    "note": "จากนั้นอาซาฮิตบผ่านบล็อกเป็นแต้มชนะ",
+    "source": "https://haikyuu.fandom.com/wiki/Karasuno_vs_Date_Tech_(Interhigh)",
+    "evidence": "Nishinoya sticks out his foot at the last second and saves the ball, shocking the entire audience."
+  },
+  {
+    "id": "ohgiminami-crushed",
+    "tier": "hard",
+    "prompt": "ในรอบสองของอินเตอร์ไฮมิยางิ ชิราโทริซาวะชนะโรงเรียนไหนแบบขาดลอย?",
+    "answer": "โองิมินามิ",
+    "decoys": [
+      "โจเซ็นจิ",
+      "วาคุทานิมินามิ",
+      "คาคุกาวะ"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Shiratorizawa_vs_Ohgiminami",
+    "evidence": "The match ended in an easy win for Shiratorizawa and a crushing defeat for Ohgiminami."
+  },
+  {
+    "id": "sakusa-wrists",
+    "tier": "hard",
+    "prompt": "อะไรทำให้สไปค์ของซากุสะ คิโยโอมิ หมุนแรงจนรับยาก?",
+    "answer": "ข้อมือที่อ่อนกว่าปกติมาก",
+    "decoys": [
+      "เขาตีลูกด้วยหลังมือ",
+      "เขากระโดดตีจากแนวหลังทุกลูก",
+      "เขาหมุนตัวกลางอากาศก่อนตี"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Kiyoomi_Sakusa",
+    "evidence": "Sakusa's unique and most outstanding quirk is his abnormally flexible wrists, which can bend until his palms are touching his forearms"
+  },
+  {
+    "id": "shiratorizawa-banner",
+    "tier": "hard",
+    "prompt": "ป้ายเชียร์ของชิราโทริซาวะเขียนว่าอะไร?",
+    "answer": "จงแข็งแกร่ง",
+    "decoys": [
+      "ทุ่มสุดใจในทุกลูก",
+      "ความเรียบง่ายและความอดทน",
+      "ความพยายาม"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Shiratorizawa_Academy",
+    "evidence": "Their official banner reads \"強者であれ\" (\"Tsuwamono de are\") which translates to \"Be strong.\""
+  },
+  {
+    "id": "shiratorizawa-last-receive",
+    "tier": "hard",
+    "prompt": "ลูกตบสุดท้ายของฮินาตะที่ทำให้คาราสุโนะชนะชิราโทริซาวะ ผู้เล่นคนใดของคู่แข่งรับพลาดจนลูกออก?",
+    "answer": "ยามากาตะ ฮายาโตะ",
+    "decoys": [
+      "เท็นโด ซาโตริ",
+      "ชิราบุ เคนจิโร่",
+      "โกชิกิ ซึโตมุ"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Shōyō_Hinata",
+    "evidence": "Yamagata fails to receive it properly and it goes out."
+  },
+  {
+    "id": "suna-position",
+    "tier": "hard",
+    "prompt": "ซุนะ รินทาโร่ ของอินาริซากิ เล่นตำแหน่งอะไร?",
+    "answer": "มิดเดิลบล็อกเกอร์",
+    "decoys": [
+      "เซ็ตเตอร์",
+      "ลิเบอโร",
+      "วิงสไปเกอร์"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Rintarō_Suna",
+    "evidence": "He plays as a middle blocker on the volleyball team"
+  },
+  {
+    "id": "takeda-team-of-black",
+    "tier": "hard",
+    "prompt": "ตอนปิดค่ายฝึกช่วงฤดูร้อน ทาเคดะขอให้ผู้เล่นเป็นทีมแบบใด?",
+    "answer": "ทีมสีดำที่เกิดจากการผสมทุกสีเข้าด้วยกัน เหมือนอีกา",
+    "decoys": [
+      "ทีมสีขาวที่ไร้มลทิน",
+      "ทีมสีส้มที่ร้อนแรงไม่มีวันมอด",
+      "ทีมที่ไร้จุดอ่อนเหมือนกำแพง"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Shōyō_Hinata",
+    "evidence": "Takeda asks the players to become a team of black like the crows they represent."
+  },
+  {
+    "id": "teshiro-subs-lev",
+    "tier": "hard",
+    "prompt": "ในแมตช์คาราสุโนะกับเนโคมะในการแข่งขันระดับชาติ โค้ชของเนโคมะส่งใครลงแทนเลฟเมื่อถึงคิวเลฟเสิร์ฟ?",
+    "answer": "เทชิโระ ทามาฮิโกะ",
+    "decoys": [
+      "อินุโอกะ โซ",
+      "ชิบายามะ ยูกิ",
+      "ฟุคุนากะ โชเฮ"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Haikyu!!_The_Dumpster_Battle",
+    "evidence": "Coach Nekomata speaks to Teshiro about how he will subbing with Lev when the middle blocker is up to serve"
+  },
+  {
+    "id": "tsubakihara-captain",
+    "tier": "hard",
+    "prompt": "ใครคือกัปตันและเซ็ตเตอร์ของสึบากิฮาระ?",
+    "answer": "เอจิโกะ ซาคาเอะ",
+    "decoys": [
+      "เทราโดมาริ โมโตกิ",
+      "ไคคาเกะ อากิฟุมิ",
+      "อิวามุโระ โทโกะ"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Sakae_Echigo",
+    "evidence": "He plays as the setter and captain of the Boys' Volleyball Team."
+  },
+  {
+    "id": "tsubakihara-shoes",
+    "tier": "hard",
+    "prompt": "ก่อนนัดแรกในการแข่งขันระดับชาติ ใครเป็นคนไปเอารองเท้าของฮินาตะที่ถูกเด็กหยิบกระเป๋าไปผิดกลับมา?",
+    "answer": "ชิมิซึ คิโยโกะ",
+    "decoys": [
+      "ยาจิ ฮิโตกะ",
+      "ทาเคดะ อิตเท็ตสึ",
+      "ทานากะ ซาเอโกะ"
+    ],
+    "note": "เธอวิ่งกลับสนามทันด้วยความเร็วจากสมัยเป็นนักกรีฑา",
+    "source": "https://haikyuu.fandom.com/wiki/Kiyoko_Shimizu",
+    "evidence": "Kiyoko is able to meet the boy and his mother and get Hinata's shoes but misses the bus to return to the stadium."
+  },
+  {
+    "id": "washijo-short-player",
+    "tier": "hard",
+    "prompt": "สมัยเป็นผู้เล่น วาชิโจ ทันจิ โค้ชของชิราโทริซาวะ ฝึกการรับลูกและการกระโดดอย่างหนักเพราะอะไร?",
+    "answer": "เขาตัวค่อนข้างเตี้ย",
+    "decoys": [
+      "เขาเคยบาดเจ็บหัวเข่า",
+      "เขาเริ่มเล่นวอลเลย์บอลช้ากว่าคนอื่น",
+      "เขาถูกย้ายจากตำแหน่งเซ็ตเตอร์"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Tanji_Washijō",
+    "evidence": "it was later revealed that he worked hard on this area due to the fact that he was rather short"
+  },
+  {
+    "id": "yamaguchi-first-serve",
+    "tier": "hard",
+    "prompt": "ครั้งแรกที่ยามากุจิถูกส่งลงเป็นพินช์เสิร์ฟเวอร์ในอินเตอร์ไฮ ผลเป็นอย่างไร?",
+    "answer": "เสิร์ฟลอยกระโดดติดตาข่าย เสียแต้ม",
+    "decoys": [
+      "เสิร์ฟเอซได้ทันที",
+      "เสิร์ฟเกิน 8 วินาทีจนถูกขานฟาวล์",
+      "เสิร์ฟออกนอกสนามไปไกล"
+    ],
+    "note": "เขาเดินออกจากสนามทั้งน้ำตา",
+    "source": "https://haikyuu.fandom.com/wiki/Karasuno_vs_Aoba_Johsai_(Interhigh)",
+    "evidence": "it hits the net and lands back on Karasuno's side, giving Aoba Johsai a point"
+  },
+  {
+    "id": "adlers-captain",
+    "tier": "very-hard",
+    "prompt": "ในปี 2018 ใครเป็นกัปตันของชไวเดน แอดเลอร์ส?",
+    "answer": "ฮิรุงามิ ฟุคุโร่",
+    "decoys": [
+      "อุชิจิมะ วาคาโทชิ",
+      "นิโคลัส โรเมโร่",
+      "เฮวะจิมะ โทชิโร่"
+    ],
+    "note": "เขาเป็นมิดเดิลบล็อกเกอร์ และเป็นพี่ชายของฮิรุงามิ ซาจิโร่",
+    "source": "https://haikyuu.fandom.com/wiki/Fukurō_Hirugami",
+    "evidence": "is a middle blocker and the captain for the Schweiden Adlers, a Division 1 V.League team."
+  },
+  {
+    "id": "asahi-after-timeskip",
+    "tier": "very-hard",
+    "prompt": "หลังไทม์สคิป อาซึมาเนะ อาซาฮิ ทำงานอะไรที่โตเกียว?",
+    "answer": "นักออกแบบเสื้อผ้า",
+    "decoys": [
+      "ช่างภาพ",
+      "บรรณาธิการนิตยสารการ์ตูน",
+      "ช่างทำผมฝึกหัด"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Asahi_Azumane",
+    "evidence": "As of 2018, he is working as an apparel designer in Tokyo"
+  },
+  {
+    "id": "atsumu-national-number",
+    "tier": "very-hard",
+    "prompt": "ในทีมชาติญี่ปุ่นปี 2021 มิยะ อัตสึมุ สวมเบอร์ 11 ซึ่งเป็นเบอร์ของใครสมัยอินาริซากิ?",
+    "answer": "มิยะ โอซามุ",
+    "decoys": [
+      "คิตะ ชินสุเกะ",
+      "ซุนะ รินทาโร่",
+      "โอจิโระ อารัน"
+    ],
+    "note": "เขาไม่ได้ใช้เบอร์ของตัวเองสมัยปีสองที่อินาริซากิ",
+    "source": "https://haikyuu.fandom.com/wiki/Japan_Men's_National_Volleyball_Team",
+    "evidence": "Instead of wearing his own number from his second year at Inarizaki, Atsumu is seen wearing Osamu's number, 11."
+  },
+  {
+    "id": "daichi-after-timeskip",
+    "tier": "very-hard",
+    "prompt": "หลังไทม์สคิป ซาวามุระ ไดจิ ทำงานอะไร?",
+    "answer": "ตำรวจจังหวัดมิยางิ",
+    "decoys": [
+      "พนักงานบริษัทรถไฟ",
+      "นักกายภาพบำบัด",
+      "พนักงานบริษัทอสังหาริมทรัพย์"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Daichi_Sawamura",
+    "evidence": "As of 2018, he is currently part of the Miyagi Prefectural Police in the Community Safety Division."
+  },
+  {
+    "id": "elementary-teacher",
+    "tier": "very-hard",
+    "prompt": "หลังไทม์สคิป อดีตรุ่นพี่ปี 3 คนไหนของคาราสุโนะเป็นครูประถมที่มิยางิ?",
+    "answer": "สึกะวาระ โคชิ",
+    "decoys": [
+      "ซาวามุระ ไดจิ",
+      "อาซึมาเนะ อาซาฮิ",
+      "ชิมิซึ คิโยโกะ"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Kōshi_Sugawara",
+    "evidence": "As of 2018, he is an elementary school teacher in Miyagi."
+  },
+  {
+    "id": "final-last-set",
+    "tier": "very-hard",
+    "prompt": "ในลูกสุดท้ายของรอบชิงชนะเลิศฮารุโค ใครจำใจต้องเซ็ตลูกให้โบคุโตะแทนเซ็ตเตอร์?",
+    "answer": "โคโนฮะ อากิโนริ",
+    "decoys": [
+      "โคมิ ฮารุกิ",
+      "ซารุคุอิ ยามาโตะ",
+      "วาชิโอะ ทัตสึกิ"
+    ],
+    "note": "เซ็ตนั้นสั้นเกินไป โบคุโตะจึงถูกบล็อกสามคนปิดตาย",
+    "source": "https://haikyuu.fandom.com/wiki/Ichibayashi_vs_Fukurōdani",
+    "evidence": "After the ball went to Akaashi, Konoha was forced to set the ball to Bokuto."
+  },
+  {
+    "id": "fukurodani-quarterfinal",
+    "tier": "very-hard",
+    "prompt": "ในรอบก่อนรองชนะเลิศฮารุโค ฟุคุโรดานิพลิกล็อกชนะทีมไหน?",
+    "answer": "มุจินาซากะ",
+    "decoys": [
+      "อินาริซากิ",
+      "สึบากิฮาระ",
+      "อิทาจิยามะ"
+    ],
+    "note": "ทีมที่แพ้มีคิริว วาคัตสึ หนึ่งในเอซสามอันดับแรกของประเทศ",
+    "source": "https://haikyuu.fandom.com/wiki/Fukurōdani_vs_Mujinazaka",
+    "evidence": "The game was a quarter final in which Fukurōdani pulled off the upset beating the 4th seed Mujinazaka"
+  },
+  {
+    "id": "hinata-beach-partner",
+    "tier": "very-hard",
+    "prompt": "ที่บราซิล ใครชวนฮินาตะมาเป็นคู่หูวอลเลย์บอลชายหาดลงแข่งทัวร์นาเมนต์ด้วยกัน?",
+    "answer": "เอโตร์ ซานตานา",
+    "decoys": [
+      "เปโดร",
+      "นิโคลัส โรเมโร่",
+      "กาเบรียล"
+    ],
+    "note": "หลังแพ้นัดสุดท้ายของโซลการ์ดคัพ ฮินาตะได้ไปร่วมงานแต่งงานของคู่หูคนนี้ก่อนกลับญี่ปุ่น",
+    "source": "https://haikyuu.fandom.com/wiki/Shōyō_Hinata",
+    "evidence": "He is approached by Heitor Santana and is asked to become his new partner for an upcoming tournament"
+  },
+  {
+    "id": "hinata-brazil-coach",
+    "tier": "very-hard",
+    "prompt": "เมื่อฮินาตะไปถึงบราซิล โค้ชวอลเลย์บอลชายหาดที่มารับเขา ซึ่งเป็นศิษย์เก่าชิราโทริซาวะและลูกศิษย์ของวาชิโจ คือใคร?",
+    "answer": "ลูซิโอ คาโต้",
+    "decoys": [
+      "แซมสัน ฟอสเตอร์",
+      "แอรอน เมอร์ฟี่",
+      "ซูซากุ บันโจ"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Shōyō_Hinata",
+    "evidence": "he meets with Lucio Katō, a graduate of Shiratorizawa Academy and former student of Washijō who became a beach volleyball coach"
+  },
+  {
+    "id": "hinata-brazil-nickname",
+    "tier": "very-hard",
+    "prompt": "ระหว่างเล่นวอลเลย์บอลชายหาดที่บราซิล ผู้คนบนชายหาดเรียกฮินาตะด้วยฉายาอะไร?",
+    "answer": "นินจาโชโย",
+    "decoys": [
+      "ยักษ์ใหญ่ตัวจิ๋ว",
+      "เหยื่อล่อสุดแกร่ง",
+      "ราชาเจ้าคอร์ต"
+    ],
+    "note": "ลูกชายของโรเมโร่หันมาสนใจวอลเลย์บอลชายหาดเพราะได้ดูฮินาตะเล่น",
+    "source": "https://haikyuu.fandom.com/wiki/Shōyō_Hinata",
+    "evidence": "Hinata's reputation on the beach has grown and he is now known by the people as Ninja Shoyo."
+  },
+  {
+    "id": "hinata-recalls-setters",
+    "tier": "very-hard",
+    "prompt": "ในมังงะ ตอนฮินาตะกระโดดตบลูกสูงเหนือบล็อกสามคนของเนโคมะ เขานึกถึงอะไรซึ่งภาพยนตร์ไม่ได้แสดง?",
+    "answer": "ทุกคนที่เคยเซ็ตลูกให้เขา",
+    "decoys": [
+      "ภาพยักษ์ใหญ่ตัวจิ๋วในทีวี",
+      "คำท้าของโฮชิอุมิ โคไร",
+      "ความพ่ายแพ้ในอินเตอร์ไฮ"
+    ],
+    "note": "ในมังงะเขากระโดดตบสูงสองครั้ง ครั้งแรกกลายเป็นลูกหยอดโดยบังเอิญ",
+    "source": "https://haikyuu.fandom.com/wiki/Haikyu!!_The_Dumpster_Battle",
+    "evidence": "He also recalls everyone who has set to him in the past."
+  },
+  {
+    "id": "hinata-third-set-left",
+    "tier": "very-hard",
+    "prompt": "ในแมตช์กับชไวเดน แอดเลอร์ส ฮินาตะปิดเซ็ตที่ 3 ด้วยลูกแบบไหน?",
+    "answer": "ทำท่าจะเซ็ตแล้วตบด้วยมือซ้าย",
+    "decoys": [
+      "เสิร์ฟเอซ",
+      "บล็อกเดี่ยว",
+      "ลูกหยอดหลังบล็อก"
+    ],
+    "note": "ฮินาตะฝึกตบด้วยมือซ้ายด้วยตัวเองระหว่างอยู่บราซิล",
+    "source": "https://haikyuu.fandom.com/wiki/Shōyō_Hinata",
+    "evidence": "Hinata suddenly spikes with his left hand. This wins the third set for the Jackals at 25-23."
+  },
+  {
+    "id": "hirugami-after-volleyball",
+    "tier": "very-hard",
+    "prompt": "หลังเลิกเล่นวอลเลย์บอล ฮิรุงามิ ซาจิโร่ เรียนต่อเพื่อเป็นอะไร?",
+    "answer": "สัตวแพทย์",
+    "decoys": [
+      "แพทย์",
+      "นักกายภาพบำบัด",
+      "ช่างภาพ"
+    ],
+    "note": "ในเดือนพฤศจิกายน 2018 เขาเป็นนักศึกษาสัตวแพทย์ปีห้า",
+    "source": "https://haikyuu.fandom.com/wiki/Sachirō_Hirugami",
+    "evidence": "By November 2018, he is a fifth year veterinary school student."
+  },
+  {
+    "id": "hirugami-nickname",
+    "tier": "very-hard",
+    "prompt": "ฮิรุงามิ ซาจิโร่ มิดเดิลบล็อกเกอร์ของคาโมเมะได ที่ไม่เคยหลงกลตัวล่อ มีฉายาว่าอะไร?",
+    "answer": "ฮิรุงามิผู้ไม่หวั่นไหว",
+    "decoys": [
+      "ยักษ์ใหญ่ตัวจิ๋ว",
+      "เทพผู้พิทักษ์",
+      "ราชาเจ้าคอร์ต"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Kamomedai_High",
+    "evidence": "Hirugami, nicknamed the \"Immovable Hirugami\", is its cornerstone blocker"
+  },
+  {
+    "id": "ikkei-nekomata-first-meeting",
+    "tier": "very-hard",
+    "prompt": "ตามฉากย้อนอดีตในมังงะที่ภาพยนตร์ตัดออก เนโกะมาตะ ยาสุฟุมิ กับอดีตโค้ชผู้พาคาราสุโนะไปแข่งระดับชาติ เจอกันครั้งแรกเมื่อไร?",
+    "answer": "สมัยมัธยมต้นปี 2 ในการแข่งวอลเลย์บอล",
+    "decoys": [
+      "สมัยมัธยมปลาย ในการแข่งฮารุโค",
+      "ตอนที่ทั้งคู่เริ่มเป็นโค้ช",
+      "สมัยมหาวิทยาลัย ตอนอยู่ทีมเดียวกัน"
+    ],
+    "note": "เนโกะมาตะรับลูกตบของเขาได้ทุกลูก ทั้งคู่จึงเป็นคู่ปรับกันนับแต่นั้น",
+    "source": "https://haikyuu.fandom.com/wiki/Ikkei_Ukai",
+    "evidence": "During his second year of middle school, Ikkei had encountered Yasufumi Nekomata during a volleyball match."
+  },
+  {
+    "id": "iwaizumi-after-timeskip",
+    "tier": "very-hard",
+    "prompt": "ในโอลิมปิกปี 2021 อิวาอิซุมิ ฮาจิเมะ ทำงานกับทีมชาติญี่ปุ่นชายในตำแหน่งอะไร?",
+    "answer": "เทรนเนอร์กีฬา",
+    "decoys": [
+      "หัวหน้าโค้ช",
+      "ผู้เล่นตัวสำรอง",
+      "นักวิเคราะห์ข้อมูล"
+    ],
+    "note": "เขาเรียนสาขาวิทยาศาสตร์การกีฬาในมหาวิทยาลัย",
+    "source": "https://haikyuu.fandom.com/wiki/Hajime_Iwaizumi",
+    "evidence": "In 2021, he is an athletic trainer and is seen working with the Japanese National Volleyball Team."
+  },
+  {
+    "id": "jackals-adlers-winning-spike",
+    "tier": "very-hard",
+    "prompt": "ในแมตช์ เอ็มเอสบีวาย แบล็คแจ็คคัลส์ กับ ชไวเดน แอดเลอร์ส ปี 2018 ใครตบแต้มสุดท้ายที่ปิดเกม?",
+    "answer": "โบคุโตะ โคทาโร่",
+    "decoys": [
+      "ฮินาตะ โชโย",
+      "ซากุสะ คิโยโอมิ",
+      "มิยะ อัตสึมุ"
+    ],
+    "note": "ฮินาตะใช้หลังเท้าเตะลูกขึ้น แล้วทำทีจะตบเพื่อดึงบล็อกไว้",
+    "source": "https://haikyuu.fandom.com/wiki/Shōyō_Hinata",
+    "evidence": "keeps the attention of the blocker just long enough that Bokuto is able to spike and land the spike that wins the game"
+  },
+  {
+    "id": "kageyama-2022-league",
+    "tier": "very-hard",
+    "prompt": "ในปี 2022 คาเงยามะเล่นให้สโมสรอาชีพในลีกของประเทศไหน?",
+    "answer": "อิตาลี",
+    "decoys": [
+      "บราซิล",
+      "โปแลนด์",
+      "อาร์เจนตินา"
+    ],
+    "note": "เขาเจอฮินาตะอีกครั้งในนัดชิงชิงแชมป์สโมสรโลก",
+    "source": "https://haikyuu.fandom.com/wiki/Shōyō_Hinata",
+    "evidence": "Kageyama who has now become part of the Italian Serie A professional team Ali Roma"
+  },
+  {
+    "id": "kageyama-olympic-debut",
+    "tier": "very-hard",
+    "prompt": "คาเงยามะลงเล่นโอลิมปิกครั้งแรกในปี 2016 ที่เมืองไหน?",
+    "answer": "ริโอเดจาเนโร",
+    "decoys": [
+      "โตเกียว",
+      "ลอนดอน",
+      "ปารีส"
+    ],
+    "note": "เขาเข้าวีลีกทันทีหลังจบมัธยมปลาย โดยไม่เรียนต่อมหาวิทยาลัย",
+    "source": "https://haikyuu.fandom.com/wiki/Tobio_Kageyama",
+    "evidence": "He became a part of Japan's national volleyball team at the age of 19, participating in the Rio Olympics in 2016."
+  },
+  {
+    "id": "kageyama-turned-down-invite",
+    "tier": "very-hard",
+    "prompt": "ในมังงะ ช่วงแมตช์ซ้อมนัดแรก เผยว่าคาเงยามะเคยได้รับเทียบเชิญจากโรงเรียนใดแต่ปฏิเสธไป?",
+    "answer": "อาโอบะโจไซ",
+    "decoys": [
+      "ชิราโทริซาวะ",
+      "ดาเตะโค",
+      "เนโคมะ"
+    ],
+    "note": "เขาปฏิเสธเพราะหวังจะสอบเข้าชิราโทริซาวะ",
+    "source": "https://haikyuu.fandom.com/wiki/Tobio_Kageyama",
+    "evidence": "During the practice match against Seijoh in the manga, it is revealed Kageyama received an invitation to attend Aoba Johsai High but he turned it down in hopes of getting into Shiratorizawa."
+  },
+  {
+    "id": "kamomedai-final-spike",
+    "tier": "very-hard",
+    "prompt": "แต้มสุดท้ายที่ทำให้คาราสุโนะแพ้คาโมเมะได มาจากลูกตบของใคร?",
+    "answer": "โฮชิอุมิ โคไร",
+    "decoys": [
+      "ฮิรุงามิ ซาจิโร่",
+      "ฮาคุบะ กาโอ",
+      "เบ็ตโช คาซึโยชิ"
+    ],
+    "note": "ลูกนั้นทะลุแขนยามากุจิที่กระโดดบล็อกเร็วไป แล้วกระดอนออกจากแขนนิชิโนะยะ",
+    "source": "https://haikyuu.fandom.com/wiki/Karasuno_vs_Kamomedai",
+    "evidence": "failing to receive Hoshiumi's last spike, which made them lose the final point"
+  },
+  {
+    "id": "kamomedai-hinata-fever",
+    "tier": "very-hard",
+    "prompt": "ทำไมฮินาตะต้องออกจากสนามกลางเซ็ตที่ 3 ในแมตช์กับคาโมเมะได?",
+    "answer": "ไข้ขึ้นสูง",
+    "decoys": [
+      "ข้อเท้าแพลง",
+      "นิ้วหัก",
+      "ถูกลูกกระแทกหน้า"
+    ],
+    "note": "ทาเคดะบอกฮินาตะว่าตอนนี้เขาไม่ได้รับอนุญาตให้อยู่ในสนาม และต้องเรียนรู้ที่จะขยายขีดจำกัดของตัวเอง",
+    "source": "https://haikyuu.fandom.com/wiki/Karasuno_vs_Kamomedai",
+    "evidence": "Kageyama says to Hinata that he is running a fever."
+  },
+  {
+    "id": "kamomedai-hinata-replaced",
+    "tier": "very-hard",
+    "prompt": "หลังฮินาตะต้องออกจากสนามในแมตช์กับคาโมเมะได ใครลงเล่นแทน?",
+    "answer": "นาริตะ คาซึฮิโตะ",
+    "decoys": [
+      "คิโนชิตะ ฮิซาชิ",
+      "เอ็นโนะชิตะ ชิคาระ",
+      "สึกะวาระ โคชิ"
+    ],
+    "note": "นี่เป็นครั้งแรกในวันนั้นที่เขาได้ลงสนาม",
+    "source": "https://haikyuu.fandom.com/wiki/Karasuno_vs_Kamomedai",
+    "evidence": "Narita is subbed in and Hinata apologizes."
+  },
+  {
+    "id": "kamomedai-leg-cramp",
+    "tier": "very-hard",
+    "prompt": "ช่วงท้ายเซ็ตที่ 3 กับคาโมเมะได ผู้เล่นคาราสุโนะคนไหนเป็นตะคริวที่ขาจนต้องเปลี่ยนตัวออก?",
+    "answer": "สึกิชิมะ เคย์",
+    "decoys": [
+      "ทานากะ ริวโนสุเกะ",
+      "อาซึมาเนะ อาซาฮิ",
+      "ซาวามุระ ไดจิ"
+    ],
+    "note": "ก่อนออกจากสนาม เขาบอกทีมให้ช่วยกันดูทั้งสนามไม่ให้มีช่องโหว่",
+    "source": "https://haikyuu.fandom.com/wiki/Karasuno_vs_Kamomedai",
+    "evidence": "Tsukishima gets a leg cramp while jumping and the ball hits the floor"
+  },
+  {
+    "id": "kamomedai-name-bird",
+    "tier": "very-hard",
+    "prompt": "คำว่า \"คาโมเม\" ในชื่อคาโมเมะได แปลว่านกอะไร?",
+    "answer": "นกนางนวล",
+    "decoys": [
+      "อีกา",
+      "นกฮูก",
+      "นกอินทรี"
+    ],
+    "note": "โค้ชเมอร์ฟี่เปรียบจิตใจของทีมกับนกนางนวลที่บินได้ในทุกสภาพอากาศ",
+    "source": "https://haikyuu.fandom.com/wiki/Kamomedai_High",
+    "evidence": "Kamome (鴎) in Kamomedai translates to seagull."
+  },
+  {
+    "id": "karasuno-first-nationals-finish",
+    "tier": "very-hard",
+    "prompt": "ฮารุโคครั้งแรกของคาราสุโนะรุ่นฮินาตะ จบลงที่รอบไหน?",
+    "answer": "รอบก่อนรองชนะเลิศ",
+    "decoys": [
+      "รอบสาม",
+      "รอบรองชนะเลิศ",
+      "รอบชิงชนะเลิศ"
+    ],
+    "note": "ไดจิบอกว่าการติด 8 ทีมสุดท้ายของประเทศในการไปแข่งระดับชาติครั้งแรกถือว่ายอดเยี่ยม",
+    "source": "https://haikyuu.fandom.com/wiki/Timeline",
+    "evidence": "Karasuno vs. Nekoma High and loses to Kamomedai High in the Spring Tournament quarterfinals"
+  },
+  {
+    "id": "karasuno-second-interhigh",
+    "tier": "very-hard",
+    "prompt": "ปีสองของฮินาตะ คาราสุโนะแพ้ทีมไหนในรอบลึกของรอบคัดเลือกอินเตอร์ไฮจังหวัดมิยางิ?",
+    "answer": "ดาเตะโค",
+    "decoys": [
+      "อาโอบะโจไซ",
+      "ชิราโทริซาวะ",
+      "วาคุทานิมินามิ"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Timeline",
+    "evidence": "June: Karasuno loses to Date Tech High in the final rounds of the Miyagi Prefecture Interhigh Qualifier"
+  },
+  {
+    "id": "karasuno-third-year-semifinal",
+    "tier": "very-hard",
+    "prompt": "ปีสามของฮินาตะ คาราสุโนะแพ้ทีมไหนในรอบรองชนะเลิศฮารุโค จนได้อันดับสามของประเทศ?",
+    "answer": "อิทาจิยามะ",
+    "decoys": [
+      "อินาริซากิ",
+      "คาโมเมะได",
+      "ฟุคุโรดานิ"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Timeline",
+    "evidence": "January: Karasuno loses to Itachiyama Institute in the semifinals and places third nationally"
+  },
+  {
+    "id": "kenma-not-career",
+    "tier": "very-hard",
+    "prompt": "หลังไทม์สคิป ข้อใดไม่ใช่งานของโคซึเมะ เค็นมะ?",
+    "answer": "นักวอลเลย์บอลอาชีพ",
+    "decoys": [
+      "เทรดเดอร์หุ้น",
+      "นักเล่นเกมมืออาชีพ",
+      "ซีอีโอบริษัทของตัวเอง"
+    ],
+    "note": "เค็นมะไม่ได้เล่นวอลเลย์บอลอาชีพ แต่เป็นสปอนเซอร์ให้ฮินาตะระหว่างอยู่บราซิล",
+    "source": "https://haikyuu.fandom.com/wiki/Kenma_Kozume",
+    "evidence": "he is a university student and seems to hold various careers such as a stock trader, professional gamer, YouTuber, and the CEO of his own company, Bouncing Ball Corp."
+  },
+  {
+    "id": "kenma-praises-receives",
+    "tier": "very-hard",
+    "prompt": "ในมังงะ ตอนเปลี่ยนแดนหลังจบเซตแรกของแมตช์คาราสุโนะพบเนโคมะ เค็นมะบอกอะไรกับฮินาตะ (ฉากนี้ไม่มีในภาพยนตร์)?",
+    "answer": "ดูแมตช์กับอินาริซากิแล้ว เห็นว่าการรับลูกของฮินาตะพัฒนาขึ้น",
+    "decoys": [
+      "เนโคมะจะเสิร์ฟใส่ฮินาตะไปตลอดเกม",
+      "ตนอยากให้แมตช์นี้จบเร็ว ๆ",
+      "คุโรโอะสั่งให้ตนเล่นเต็มที่"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Haikyu!!_The_Dumpster_Battle",
+    "evidence": "Manga: When the teams are switching sides, Kenma tells Hinata he watched him play against Inarizaki and noticed how his receives have improved."
+  },
+  {
+    "id": "kiyoko-married",
+    "tier": "very-hard",
+    "prompt": "หลังไทม์สคิป ชิมิซึ คิโยโกะ แต่งงานกับใคร?",
+    "answer": "ทานากะ ริวโนสุเกะ",
+    "decoys": [
+      "นิชิโนะยะ ยู",
+      "อาซึมาเนะ อาซาฮิ",
+      "เอ็นโนะชิตะ ชิคาระ"
+    ],
+    "note": "เธอเปลี่ยนนามสกุลตามสามี และทำงานในร้านอุปกรณ์กีฬา",
+    "source": "https://haikyuu.fandom.com/wiki/Kiyoko_Shimizu",
+    "evidence": "As of November 2018, she is married to Ryūnosuke Tanaka and has changed her name to Kiyoko Tanaka"
+  },
+  {
+    "id": "kuroo-after-timeskip",
+    "tier": "very-hard",
+    "prompt": "หลังไทม์สคิป คุโรโอะ เท็ตสึโร่ ทำงานที่ไหน?",
+    "answer": "ฝ่ายส่งเสริมกีฬาของสมาคมวอลเลย์บอลญี่ปุ่น",
+    "decoys": [
+      "บริษัทผลิตรถยนต์",
+      "สำนักพิมพ์นิตยสารการ์ตูน",
+      "พิพิธภัณฑ์เมืองเซนได"
+    ],
+    "note": "หลังแมตช์วีลีก เขามาชวนฮินาตะเล่นวิดีโอโปรโมตกีฬาที่ทำร่วมกับเค็นมะ",
+    "source": "https://haikyuu.fandom.com/wiki/Tetsurō_Kuroo",
+    "evidence": "As of November 2018, he is part of the Japan Volleyball Association's sports promotion division."
+  },
+  {
+    "id": "lev-sieve-taunt",
+    "tier": "very-hard",
+    "prompt": "ในแมตช์ชิงตัวแทนโตเกียวทีมที่สาม ผู้เล่นทีมคู่แข่งล้อการบล็อกของเลฟว่าเป็นอะไร?",
+    "answer": "ตะแกรง",
+    "decoys": [
+      "ประตูเปิดอ้า",
+      "หุ่นไล่กา",
+      "กำแพงกระดาษ"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Lev_Haiba",
+    "evidence": "Lev is taunted by the Nohebi players, being referred to as a sieve when it comes to blocking"
+  },
+  {
+    "id": "nekoma-third-tokyo-spot",
+    "tier": "very-hard",
+    "prompt": "ในรอบชิงตัวแทนโตเกียวไปฮารุโค เนโคมะได้เป็นตัวแทนทีมที่สามหลังชนะใคร?",
+    "answer": "โนเฮบิ",
+    "decoys": [
+      "ฟุคุโรดานิ",
+      "ชินเซ็น",
+      "อุบุกาวะ"
+    ],
+    "note": "ก่อนหน้านั้นเนโคมะแพ้ฟุคุโรดานิในรอบรองชนะเลิศ",
+    "source": "https://haikyuu.fandom.com/wiki/Nekoma_High",
+    "evidence": "although Nekoma lost to Fukurōdani Academy in the semifinals, they defeated Nohebi Academy in the third place match"
+  },
+  {
+    "id": "nishinoya-after-school",
+    "tier": "very-hard",
+    "prompt": "หลังจบมัธยมปลาย นิชิโนะยะ ยู เลือกทำอะไร?",
+    "answer": "เลิกเล่นวอลเลย์บอลแล้วออกเดินทางรอบโลก",
+    "decoys": [
+      "เป็นลิเบอโรทีมวีลีก",
+      "เป็นโค้ชชมรมวอลเลย์บอลคาราสุโนะ",
+      "เรียนต่อมหาวิทยาลัยสายกีฬา"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Yū_Nishinoya",
+    "evidence": "After high school, Nishinoya retired from volleyball in favor of traveling the world."
+  },
+  {
+    "id": "oikawa-citizenship",
+    "tier": "very-hard",
+    "prompt": "ในปี 2021 โออิคาวะ โทรุ โอนสัญชาติเป็นพลเมืองของประเทศไหน?",
+    "answer": "อาร์เจนตินา",
+    "decoys": [
+      "บราซิล",
+      "อิตาลี",
+      "สเปน"
+    ],
+    "note": "เขาลงเล่นโอลิมปิกโตเกียวในฐานะเซ็ตเตอร์ตัวจริงของทีมชาตินั้น และเจอทีมชาติญี่ปุ่น",
+    "source": "https://haikyuu.fandom.com/wiki/Tōru_Oikawa",
+    "evidence": "By 2021, Oikawa has naturalized as an Argentinean citizen."
+  },
+  {
+    "id": "oikawa-setter-idol",
+    "tier": "very-hard",
+    "prompt": "เซ็ตเตอร์ที่โออิคาวะได้ดูเล่นตอนเด็กจนอยากเป็นเซ็ตเตอร์ และต่อมาเป็นโค้ชทีมชาติที่โออิคาวะเล่นให้ คือใคร?",
+    "answer": "โฮเซ่ บลังโก",
+    "decoys": [
+      "แซมสัน ฟอสเตอร์",
+      "แอรอน เมอร์ฟี่",
+      "ฮิบาริดะ ฟุคิ"
+    ],
+    "note": "เขาลงมาเป็นเซ็ตเตอร์สำรอง และช่วยให้เอซที่กำลังตันกลับมาทำแต้มได้",
+    "source": "https://haikyuu.fandom.com/wiki/Tōru_Oikawa",
+    "evidence": "Blanco was Oikawa's source of inspiration to becoming a setter after having seen him play during his childhood."
+  },
+  {
+    "id": "onigiri-shop-owner",
+    "tier": "very-hard",
+    "prompt": "อดีตผู้เล่นอินาริซากิคนไหนเลิกเล่นวอลเลย์บอลหลังจบมัธยม แล้วเปิดร้านข้าวปั้นของตัวเอง?",
+    "answer": "มิยะ โอซามุ",
+    "decoys": [
+      "คิตะ ชินสุเกะ",
+      "โอจิโระ อารัน",
+      "ซุนะ รินทาโร่"
+    ],
+    "note": "เขาตัดสินใจตั้งแต่ปีสองว่าจะเลิกเล่นหลังจบมัธยม เพื่อไปทำงานเกี่ยวกับอาหาร",
+    "source": "https://haikyuu.fandom.com/wiki/Osamu_Miya",
+    "evidence": "In his second year, he decided he would quit volleyball after high school in order to pursue a food-related occupation"
+  },
+  {
+    "id": "sendai-frogs-karasuno",
+    "tier": "very-hard",
+    "prompt": "หลังไทม์สคิป ใครจากคาราสุโนะเรียนมหาวิทยาลัยควบกับเล่นมิดเดิลบล็อกเกอร์ให้เซนได ฟร็อกส์?",
+    "answer": "สึกิชิมะ เคย์",
+    "decoys": [
+      "ยามากุจิ ทาดาชิ",
+      "คาเงยามะ โทบิโอะ",
+      "ฮินาตะ โชโย"
+    ],
+    "note": "เขาจะเริ่มงานที่พิพิธภัณฑ์เมืองเซนไดหลังเรียนจบ",
+    "source": "https://haikyuu.fandom.com/wiki/Kei_Tsukishima",
+    "evidence": "He is currently a college student as well as a middle blocker for the Sendai Frogs, a Division 2 team in the V League"
+  },
+  {
+    "id": "spring-high-2013-champion",
+    "tier": "very-hard",
+    "prompt": "ในฮารุโคปีที่คาราสุโนะแพ้คาโมเมะได ทีมไหนได้แชมป์?",
+    "answer": "อิจิบายาชิ",
+    "decoys": [
+      "คาโมเมะได",
+      "ฟุคุโรดานิ",
+      "อิทาจิยามะ"
+    ],
+    "note": "แชมป์ทีมนี้ชนะคาโมเมะไดในรอบรองชนะเลิศ และชนะฟุคุโรดานิในนัดชิง",
+    "source": "https://haikyuu.fandom.com/wiki/Timeline",
+    "evidence": "9th: Ichibayashi beats Fukurōdani in the Final of Spring Tournament"
+  },
+  {
+    "id": "tanaka-chest-bump",
+    "tier": "very-hard",
+    "prompt": "ในมังงะ แมตช์กับเนโคมะมีฉากที่ทานากะตบทำแต้มแล้วชนอกฉลองกับใคร ซึ่งภาพยนตร์ไม่ได้ใส่ไว้?",
+    "answer": "อุไค เคย์ชิน",
+    "decoys": [
+      "นิชิโนะยะ ยู",
+      "ทานากะ ซาเอโกะ",
+      "ซาวามุระ ไดจิ"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Haikyu!!_The_Dumpster_Battle",
+    "evidence": "Manga: When Tanaka lands his spike, he and Ukai chest bump."
+  },
+  {
+    "id": "tendo-after-timeskip",
+    "tier": "very-hard",
+    "prompt": "หลังไทม์สคิป เท็นโด ซาโตริ ทำงานอะไร?",
+    "answer": "ช่างทำช็อกโกแลตที่ปารีส",
+    "decoys": [
+      "นักแสดง",
+      "นักดนตรีในวงดนตรี",
+      "นักศึกษาแพทย์"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Satori_Tendō",
+    "evidence": "Tendō currently works as a chocolatier in Paris, France."
+  },
+  {
+    "id": "top-seed-setter-injury",
+    "tier": "very-hard",
+    "prompt": "ในเซ็ตที่สามของแมตช์ที่ทีมเต็งอันดับหนึ่งตกรอบ เซ็ตเตอร์คนไหนบาดเจ็บข้อเท้าจนเกมรุกของทีมสะดุด?",
+    "answer": "อิอิซึนะ ซึคาสะ",
+    "decoys": [
+      "มิยะ อัตสึมุ",
+      "อุซึริ มิจิรุ",
+      "โคซึเมะ เค็นมะ"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Inubushi_Higashi_vs_Itachiyama",
+    "evidence": "Itachiyama's setter, Iizuna, injured his ankle, which thwarted Itachiyama's offensive abilities."
+  },
+  {
+    "id": "top-seed-upset",
+    "tier": "very-hard",
+    "prompt": "ทีมไหนเขี่ยทีมเต็งอันดับหนึ่งตกรอบในรอบก่อนรองชนะเลิศฮารุโค?",
+    "answer": "อินุบุชิ ฮิงาชิ",
+    "decoys": [
+      "อิจิบายาชิ",
+      "ฟุคุโรดานิ",
+      "อินาริซากิ"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Inubushi_Higashi_vs_Itachiyama",
+    "evidence": "Inubushi Higashi won in a massive upset, eliminating the number 1 seed, Itachiyama Institute."
+  },
+  {
+    "id": "udai-after-volleyball",
+    "tier": "very-hard",
+    "prompt": "หลังเลิกเล่นวอลเลย์บอล อุได เท็นมะ ยักษ์ใหญ่ตัวจิ๋วของคาราสุโนะ ทำอาชีพอะไร?",
+    "answer": "นักเขียนการ์ตูน",
+    "decoys": [
+      "บรรณาธิการนิตยสารการ์ตูน",
+      "ช่างภาพ",
+      "โค้ชวอลเลย์บอล"
+    ],
+    "note": "ภายหลังเขาเริ่มเขียนการ์ตูนเรื่องใหม่เกี่ยวกับวอลเลย์บอลชื่อ Meteo Attack",
+    "source": "https://haikyuu.fandom.com/wiki/Tenma_Udai",
+    "evidence": "As of November 2018, he is currently working as a manga artist."
+  },
+  {
+    "id": "yaku-injury-sub",
+    "tier": "very-hard",
+    "prompt": "ในแมตช์ชิงตัวแทนโตเกียวทีมที่สาม ใครลงเล่นแทนยาคุหลังเขาเจ็บเท้า?",
+    "answer": "ชิบายามะ ยูกิ",
+    "decoys": [
+      "เทชิโระ ทามาฮิโกะ",
+      "อินุโอกะ โซ",
+      "ฟุคุนากะ โชเฮ"
+    ],
+    "source": "https://haikyuu.fandom.com/wiki/Isumi_Sakishima",
+    "evidence": "As the match progresses, Yaku injures his foot, and gets replaced by Shibayama."
+  },
+  {
+    "id": "yaku-pro-league",
+    "tier": "very-hard",
+    "prompt": "ในปี 2021 ยาคุ โมริสุเกะ เล่นวอลเลย์บอลอาชีพในลีกของประเทศไหน?",
+    "answer": "รัสเซีย",
+    "decoys": [
+      "อิตาลี",
+      "โปแลนด์",
+      "บราซิล"
+    ],
+    "note": "เขาเล่นให้ทีกร์ เยคาเตรินบูร์ก และติดทีมชาติญี่ปุ่นด้วย",
+    "source": "https://haikyuu.fandom.com/wiki/Morisuke_Yaku",
+    "evidence": "As of 2021, he plays for Tigr Ekaterinburg, a professional volleyball team in the Russian Volleyball Super League."
+  }
+]

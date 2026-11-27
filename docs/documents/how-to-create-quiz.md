@@ -17,7 +17,7 @@ The shipped titles came in three ways:
 | Prince of Tennis | A session wrote 120 questions and checked each answer against the series wiki. Research agents then wrote 207 more from the format brief, and a maintainer imported them. |
 | Naruto, Dragon Ball, Reborn | The user researched each bank outside the repo, with a topic sheet, hand-over notes and Thai-name sources. The banks were imported as they are. Only the JSON is in the repo. |
 | Kuroko no Basket | The series wiki was saved as plain text in `tmp/kuroko/`. Three parallel passes drafted questions from that text. The drafts were merged, and every `evidence` quote was checked against its downloaded page. |
-| Bleach, Solo Leveling | As Kuroko, with `scripts/quiz-sources.ts` saving the pages and checking every quote. Each title had a Thai name sheet that every pass followed. |
+| Bleach, Solo Leveling, Haikyu!! | As Kuroko, with `scripts/quiz-sources.ts` saving the pages and checking every quote. Each title had a Thai name sheet that every pass followed. |
 
 Prefer the Kuroko way for a new title. The agent that writes a question reads only the saved source text, so each answer can be traced to a page, and a quote that is not in the text is caught at once.
 

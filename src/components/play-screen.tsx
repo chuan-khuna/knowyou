@@ -1,8 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { useCallback, useEffect, useState, type ReactNode } from "react";
+import { useCallback, useEffect, useRef, useState, type ReactNode, type Ref } from "react";
 import type { Cue, Engine, FinishedPlay, Play } from "@/games/engine";
+import { answerEffect, finishEffect, pressPoint, startEffect, warmEffects, type PagePoint } from "@/lib/anime-fx";
 import { sound } from "@/lib/sound";
 import { AdsCafe, AdsNightMarket } from "@/components/ads";
 import { ResetButton } from "@/components/reset-button";
@@ -81,13 +82,21 @@ export function PlayScreen<V, X, L, R>({ game, engine, title, intro, parseReveal
   }, [engine, storageKey]);
 
   const play = screen.kind === "playing" ? screen.play : null;
+  const startButton = useRef<HTMLButtonElement>(null);
+
+  useEffect(warmEffects, []);
 
   const choose = useCallback(
-    (key: string) => {
+    (key: string, press: Press = { el: optionButton(key) }) => {
       if (play?.phase !== "asking") return;
       const next = engine.answer(play, key);
-      if (next.phase === "finished") sound.guess();
-      else sound.answer();
+      if (next.phase === "finished") {
+        sound.guess();
+        finishEffect(press.el, press.at);
+      } else {
+        sound.answer();
+        answerEffect(press.el, press.at);
+      }
       setScreen({ kind: "playing", play: next, reveal: undefined });
     },
     [engine, play],
@@ -101,7 +110,10 @@ export function PlayScreen<V, X, L, R>({ game, engine, title, intro, parseReveal
   useEffect(() => {
     const onKey = (event: KeyboardEvent) => {
       if (event.altKey || event.ctrlKey || event.metaKey) return;
-      if (screen.kind === "intro" && event.key === "Enter") return start();
+      if (screen.kind === "intro" && event.key === "Enter") {
+        startEffect(startButton.current);
+        return start();
+      }
       if (play?.phase !== "asking") return;
       const option = play.question.options[Number(event.key) - 1];
       if (option) choose(option.key);
@@ -117,7 +129,9 @@ export function PlayScreen<V, X, L, R>({ game, engine, title, intro, parseReveal
       <Shell>
         <h1 className="mt-10 text-3xl sm:text-[2.75rem]">{title}</h1>
         <div className="mt-5 space-y-3 text-lg">{intro}</div>
-        <BigButton onClick={start}>เริ่มเลย</BigButton>
+        <BigButton ref={startButton} onClick={start} fx={startEffect}>
+          เริ่มเลย
+        </BigButton>
         <AdsNightMarket />
       </Shell>
     );
@@ -152,7 +166,12 @@ export function PlayScreen<V, X, L, R>({ game, engine, title, intro, parseReveal
       <ol className="mt-8 grid gap-4">
         {current.question.options.map((option, i) => (
           <li key={option.key}>
-            <button type="button" onClick={() => choose(option.key)} className="stock option">
+            <button
+              type="button"
+              onClick={(event) => choose(option.key, { el: event.currentTarget, at: pressPoint(event) })}
+              className="stock option"
+              data-option-key={option.key}
+            >
               <kbd className="option-key">{i + 1}</kbd>
               <span>
                 <span className="block text-lg">{option.label}</span>
@@ -209,27 +228,63 @@ export function Shell({ status, onReset, crowded = false, children }: { status?:
 export function PlayAgainBar({ onClick, pin = "bottom" }: { onClick: () => void; pin?: "top" | "bottom" }) {
   return (
     <div className={pin === "top" ? "play-again play-again--top" : "play-again"}>
-      <button type="button" onClick={onClick} className="stock stock--primary text-lg">
+      <button
+        type="button"
+        onClick={(event) => {
+          startEffect(event.currentTarget, pressPoint(event));
+          onClick();
+        }}
+        className="stock stock--primary text-lg"
+      >
         เล่นอีกครั้ง
       </button>
     </div>
   );
 }
 
+/**
+ * The primary button under a screen. `fx` is the drawn effect its press
+ * throws, given the button and the press point (none for a key press).
+ */
 export function BigButton({
   children,
   onClick,
+  fx,
+  ref,
   autoFocus,
   disabled,
 }: {
   children: ReactNode;
   onClick: () => void;
+  fx?: (el: Element, at?: PagePoint) => void;
+  ref?: Ref<HTMLButtonElement>;
   autoFocus?: boolean;
   disabled?: boolean;
 }) {
   return (
-    <button type="button" onClick={onClick} autoFocus={autoFocus} disabled={disabled} className="stock stock--primary mt-10 text-lg">
+    <button
+      ref={ref}
+      type="button"
+      onClick={(event) => {
+        fx?.(event.currentTarget, pressPoint(event));
+        onClick();
+      }}
+      autoFocus={autoFocus}
+      disabled={disabled}
+      className="stock stock--primary mt-10 text-lg"
+    >
       {children}
     </button>
   );
+}
+
+/** Where an answer was given: the option's button and, for a tap or click, the press point. */
+export interface Press {
+  el: Element | null;
+  at?: PagePoint;
+}
+
+/** An answer option's button, for a key press that answers without touching it. */
+export function optionButton(key: string): Element | null {
+  return document.querySelector(`[data-option-key="${CSS.escape(key)}"]`);
 }

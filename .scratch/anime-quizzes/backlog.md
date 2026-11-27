@@ -1,6 +1,6 @@
 # Anime quiz backlog
 
-Candidate anime for new คุณรู้จัก … ดีแค่ไหน quizzes, in recommended order. Existing titles: Dragon Ball, Naruto, Reborn, Prince of Tennis, Kuroko no Basket.
+Candidate anime for new คุณรู้จัก … ดีแค่ไหน quizzes, in recommended order. Existing titles: Dragon Ball, Naruto, Reborn, Prince of Tennis, Kuroko no Basket, Bleach, Solo Leveling.
 
 Each ticket is `needs-triage`. Set it to `ready-for-agent` when you pick it, then run the requirements gate in `CLAUDE.md`. Set `wontfix` to drop it.
 
@@ -16,3 +16,4 @@ Each ticket is `needs-triage`. Set it to `ready-for-agent` when you pick it, the
 - [ ] [10 Doraemon](issues/10-doraemon.md) — gadgets, more family than superfan
 - [x] [11 Solo Leveling](issues/11-solo-leveling.md) — user request, first Korean title
 - [ ] [12 My Hero Academia](issues/12-my-hero-academia.md) — user request, finished, Quirks and hero names
+- [ ] [13 Haikyu!!](issues/13-haikyu.md) — user request, finished sports manga, schools, quicks and nicknames

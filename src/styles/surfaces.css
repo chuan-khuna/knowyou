@@ -89,14 +89,6 @@
     font-weight: 400;
   }
 
-  .verdict {
-    display: flex;
-    align-items: center;
-    gap: var(--space-sm);
-    font-family: var(--font-display);
-    font-size: var(--text-xl);
-    font-weight: 600;
-  }
   .verdict--right {
     color: var(--color-mint-deep);
   }
@@ -113,9 +105,9 @@
      Motion runs only with no reduced-motion preference: an entrance once, set by
      data-motion from MockAd, a lift on hover, and a squash on press. */
   .mock-ad {
-    --ad-edge: color-mix(in oklch, var(--color-ink) 80%, var(--color-paper));
+    --ad-edge: var(--color-line);
     --ad-shadow: color-mix(in oklch, var(--ad-tone) 28%, var(--color-rule));
-    --fx-tone: var(--ad-tone); /* the drawn effects' tone, src/lib/sakuga.ts */
+    --fx-tone: var(--ad-tone); /* the drawn effects' tone, src/lib/anime-fx */
     position: relative;
     border: 2px solid var(--ad-edge);
     border-radius: var(--radius-stock);

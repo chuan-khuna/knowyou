@@ -7,7 +7,7 @@ export function AdsManga() {
       headline="ชั้นหนังสือปลาวาฬ"
       copy="มังงะมือสองครบชุด ส่งทั่วไทย"
       cta="เลือกเล่ม"
-      word="pon"
+      word="pok"
       art={
         <>
           <path className="spot" d="M24 14 q-9-6-18-3 v26 q9-3 18 3z" />

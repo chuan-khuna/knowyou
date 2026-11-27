@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { AdsNightMarket, AdsRamen } from "@/components/ads";
 import { GameLink } from "@/components/game-link";
 import { SiteFooter } from "@/components/site-footer";
@@ -22,6 +23,7 @@ const GAMES: readonly Card[] = [
 const QUIZZES: readonly Card[] = [
   { href: "/bleach", title: "คุณรู้จัก Bleach ดีแค่ไหน", blurb: "จงปลดปล่อยความรู้ของเจ้า แล้วดูว่าเจ้าคือยมทูตระดับใด", ready: true },
   { href: "/dragon-ball", title: "คุณรู้จัก Dragon Ball ดีแค่ไหน", blurb: "รวบรวมพลังให้ถึงขีดสุด แล้วดูว่าเจ้าคือนักสู้ระดับใด", ready: true },
+  { href: "/haikyu", title: "คุณรู้จัก Haikyu!! ดีแค่ไหน", blurb: "จงทะยานข้ามกำแพงตรงหน้า แล้วดูว่าเจ้าคือนักตบระดับใด", ready: true },
   { href: "/kuroko-no-basket", title: "คุณรู้จัก Kuroko no Basket ดีแค่ไหน", blurb: "ก้าวลงสนามแห่งปาฏิหาริย์ แล้วดูว่าเจ้าคือผู้เล่นระดับใด", ready: true },
   { href: "/naruto", title: "คุณรู้จัก Naruto ดีแค่ไหน", blurb: "ประสานอินให้มั่น แล้วดูว่าเจ้าคือนินจาระดับใด", ready: true },
   { href: "/prince-of-tennis", title: "คุณรู้จัก Prince of Tennis ดีแค่ไหน", blurb: "จงลงสนามด้วยความหยิ่งทะนง แล้วดูว่าเจ้าคือแฟนระดับใด", ready: true },
@@ -33,7 +35,9 @@ export default function Home() {
   return (
     <main className="shell">
       <header className="topbar">
-        <span className="wordmark">byou</span>
+        <Link href="/" className="wordmark" aria-current="page">
+          byou
+        </Link>
         <div className="topbar-end">
           <ThemeToggle />
           <SoundToggle />
