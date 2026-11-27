@@ -34,7 +34,7 @@ function apply(theme: Theme | null): void {
   else delete document.documentElement.dataset.theme;
 }
 
-export function setTheme(theme: Theme): void {
+function setTheme(theme: Theme): void {
   fallback = theme;
   try {
     localStorage.setItem(STORAGE_KEY, theme);
@@ -43,6 +43,11 @@ export function setTheme(theme: Theme): void {
   }
   apply(theme);
   for (const listener of listeners) listener();
+}
+
+/** Flips light and dark, reading the theme now rather than at the last render. */
+export function toggleTheme(): void {
+  setTheme(readTheme() === "dark" ? "light" : "dark");
 }
 
 function subscribe(listener: () => void): () => void {

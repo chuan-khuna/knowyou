@@ -17,6 +17,11 @@ The root layout puts `THEME_INIT_SCRIPT` in `<head>`. It reads `knowyou:theme` f
 
 - A 44px `icon-button` immediately before the sound button: a sun in light mode, a moon in dark mode, in the style of Lucide's `sun` and `moon`. Its accessible name and `title` are โหมดมืด, and `aria-pressed` is true in dark mode.
 - One tap flips light and dark. There is no "auto" state; before the first tap the button shows the device's scheme.
+- A tap reveals the new theme as a circle that grows from the button's centre until it reaches the farthest corner of the window, in 500 ms, ease-out. The switch wraps the change in `document.startViewTransition` and, once the transition is ready, animates `clip-path` on `::view-transition-new(root)`. `base.css` turns off the default cross-fade on the root snapshots, so the old theme stays still beneath the circle.
+- The change runs inside `flushSync`, so the new icon is already in the new snapshot. The new sun or moon turns in from -90° and 40% scale in 300 ms.
+- With `prefers-reduced-motion: reduce`, or in a browser without `startViewTransition`, the theme changes at once and the icon does not turn. A change from another tab or from the device's scheme also applies at once.
+- Chrome sends pointer events to `<html>` while a view transition runs, so taps during the 500 ms reveal are dropped. The icon always matches `data-theme`.
+- `toggleTheme()` in `theme.ts` reads the theme when it runs, not at the last render, so a tap never flips from a stale value.
 - The choice is stored under `knowyou:theme`, survives a refresh, and follows other open tabs through the `storage` event. With localStorage blocked it lasts until the page closes.
 - It makes no sound.
 - The server render shows the sun; the client corrects the icon after hydration, as the sound button does.
