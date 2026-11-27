@@ -13,6 +13,7 @@ One quiz module plays every title, and one screen shows it. A title is data: its
 | --- | --- | --- |
 | คุณรู้จัก Bleach ดีแค่ไหน | `src/games/bleach/` | `/bleach` |
 | คุณรู้จัก Dragon Ball ดีแค่ไหน | `src/games/dragon-ball/` | `/dragon-ball` |
+| คุณรู้จัก Haikyu!! ดีแค่ไหน | `src/games/haikyu/` | `/haikyu` |
 | คุณรู้จัก Kuroko no Basket ดีแค่ไหน | `src/games/kuroko-no-basket/` | `/kuroko-no-basket` |
 | คุณรู้จัก Naruto ดีแค่ไหน | `src/games/naruto/` | `/naruto` |
 | คุณรู้จัก Prince of Tennis ดีแค่ไหน | `src/games/prince-of-tennis/` | `/prince-of-tennis` |
@@ -128,6 +129,16 @@ Each title's `bands.ts` holds its bands for a score out of 20, lowest first. `ba
 | 13–16 | ซูเปอร์ไซย่า | ผมเปลี่ยนเป็นสีทองแล้ว ความรู้ของคุณระเบิดออกมาเต็มที่ |
 | 17–20 | นักรบผู้ปกป้องโลก | ต่อให้จอมมารบูมาก็ไม่กลัว คุณรู้จักดราก้อนบอลทุกซอกทุกมุม |
 
+**Haikyu!!** (`SCORE_BANDS` in `src/games/haikyu/bands.ts`), as volleyball club ranks:
+
+| Score | Title | Line |
+| --- | --- | --- |
+| 0–4 | คนดูบนอัฒจันทร์ | ยังมองตามลูกไม่ทันเลย ลองดูการแข่งอีกสักแมตช์นะ |
+| 5–8 | ปีหนึ่งชมรมวอลเลย์ | ได้เข้าชมรมแล้ว แต่ยังต้องรับลูกตามเมนูซ้อมอีกเยอะ |
+| 9–12 | ตัวจริงคาราสุโนะ | ลงสนามได้แล้ว พร้อมกระโดดตบบอลเร็วไปกับเซ็ตเตอร์ |
+| 13–16 | เอซของทีม | ฝีมือระดับนี้ ทั้งทีมพร้อมส่งลูกสุดท้ายให้คุณตบ |
+| 17–20 | ยักษ์ใหญ่ตัวจิ๋วคนใหม่ | คุณรู้จักไฮคิวทุกซอกทุกมุม ราวกับบินข้ามกำแพงตรงหน้าไปได้แล้ว |
+
 **Kuroko no Basket** (`SCORE_BANDS` in `src/games/kuroko-no-basket/bands.ts`), as basketball ranks:
 
 | Score | Title | Line |
@@ -218,6 +229,7 @@ The same rules as the games' saved play (`play-screen.md`), in the quiz's own `r
 1. Find a page that confirms the answer, such as the series wiki or Wikipedia. Keep to the title's scope:
    - Bleach: the manga (686 chapters), the TV anime (366 episodes) and the *Thousand-Year Blood War* anime; where TYBW changes the manga, the manga wins. No filler arcs, films, novels, games, musicals or the *No Breaths From Hell* one-shot. Ask only about zanpakutō and releases, kidō, techniques, divisions and groups, ranks, places, nicknames and story events. Source the Bleach wiki (`bleach.fandom.com`). Glosses cover Japanese names and the Spanish and German Hollow and Quincy terms. The spec is `.scratch/bleach-quiz/spec.md`.
    - Dragon Ball: the manga and the TV anime Dragon Ball and Dragon Ball Z, canon story only, up to the end of the Majin Buu arc. No filler, films, OVAs, GT, Super, Daima or games. Ask only about named moves, transformations and items, places and groups, teachers and rivals, aliases, and story events. Glosses cover techniques, transformations, fusions and named items, and characters whose other Thai names (a TV dub's, an older edition's) are sourced in `.scratch/quiz-aka/spec.md`, such as โกคู (โงกุน). Keep only the best-known other name, not every spelling.
+   - Haikyu!!: the whole manga, chapters 1–402 (the Kamomedai match, the timeskip and the pro and Olympic chapters included), and the anime (four TV seasons and *The Dumpster Battle*) where it adapts the manga. No OVAs, recap films, novels, *Haikyū-bu!!*, games or stage plays. Ask about schools, positions, plays, nicknames, matches and story events, and a few jersey numbers the story turns on (Hinata's #10); no scores, heights, stats, birthdays or personal trivia. Source the Haikyu!! wiki (`haikyuu.fandom.com`). Thai names follow the Siam Inter Comics edition where its blurbs or chapter titles show them (คาราสุโนะ, เนโคมะ, บอลเร็วประหลาด, ราชาเจ้าคอร์ต). Glosses cover schools, plays and nicknames whose kanji a page gives. The spec is `.scratch/haikyu-quiz/spec.md`.
    - Kuroko no Basket: the manga, the three TV seasons and the EXTRA GAME sequel. No *Last Game* film-only changes, novels, games or stage plays. Ask only about moves, schools, team roles, nicknames and story events; no birthdays, heights, numbers, scores or personal trivia. Source the Kuroko no Basuke wiki (`kurokonobasuke.fandom.com`). Glosses cover named moves and abilities. The spec is `.scratch/kuroko-quiz/spec.md`.
    - Naruto: Naruto and Naruto Shippuden, up to the end of the Fourth Shinobi World War. No Boruto, films or games. Glosses cover jutsu, dōjutsu, swords, elements and lands; a land's `aka` holds the Thai Wikipedia names (แคว้นเหล็ก, เทะซึโนะคุนิ).
    - Prince of Tennis: the manga, the TV anime and the National Tournament OVAs, up to the end of the National Tournament. Ask only about moves and special moves, schools, or story events. Don't ask about birthdays, numbers, scores or personal trivia (family, pets, hobbies, food). The research brief is `prince-of-tennis-quiz-format.md`.
