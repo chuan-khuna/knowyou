@@ -15,7 +15,7 @@ The root layout puts `THEME_INIT_SCRIPT` in `<head>`. It reads `knowyou:theme` f
 
 ## The switch
 
-- It is a `role="switch"` button, 58 by 44px, immediately before the sound button. Its accessible name and `title` are โหมดมืด, and `aria-checked` is true in dark mode. Inside it is a 52 by 30px track with a 2px line: a sky by day and a night by night. The 22px knob on it is itself the sun or the moon, drawn like the effects in a light tone, a shadow tone and a line. The sun is a butter disc with eight short rays, and the moon is a cream full moon with three craters. The knob sits left in light mode and right in dark mode. Styles: `.theme-switch` in `controls.css`.
+- It is a `role="switch"` button, 58 by 44px, immediately before the sound button. Its accessible name and `title` are โหมดมืด, and `aria-checked` is true in dark mode. Inside it is a 52 by 30px track with a 2px line: white (the card colour) by day and a night by night. The 22px knob on it is itself the sun or the moon, drawn like the effects in a light tone, a shadow tone and a line. The sun is a butter disc inside a ring of ten sharp points, and the moon is a cream full moon with three craters. The knob sits left in light mode and right in dark mode. Styles: `.theme-switch` in `controls.css`.
 - One tap flips light and dark. There is no "auto" state; before the first tap the switch shows the device's scheme.
 - A flip is drawn like an anime cut, after Sakuga VFX's toggle. Upstream's toggle is painted frames that cannot be recoloured, so this one is drawn in code:
   1. **Crouch and dash (210 ms).** The knob squashes against its start, then smears across the track, stretched to 1.75 times its width. Speed lines streak out behind it (`dashEffect`, `drawn-effects.md`).

@@ -454,7 +454,7 @@
     translate: none;
   }
 
-  /* The theme switch (src/components/theme-toggle.tsx): a sky track by day and a night track
+  /* The theme switch (src/components/theme-toggle.tsx): a white track by day and a night track
      by night, and a knob that is the sun or the moon, each a light tone, a shadow tone and a line. The knob's dash is a Web Animation;
      TRAVEL in the component is the track's inside width less the knob (52 - 2·2 - 2·2 - 22). */
   .theme-switch {
@@ -484,8 +484,8 @@
     height: 30px;
     border: 2px solid var(--switch-line);
     border-radius: 999px;
-    /* Each track shows only in its own theme: the sky in light, the night in dark. */
-    background: color-mix(in oklch, var(--color-accent-2) 24%, var(--color-card));
+    /* Each track shows only in its own theme: white card in light, the night in dark. */
+    background: var(--color-card);
   }
 
   .theme-switch[aria-checked="true"] .theme-switch-track {
@@ -515,10 +515,11 @@
 
   .theme-switch-sun .theme-switch-light { fill: var(--color-accent); }
   .theme-switch-sun .theme-switch-shade { fill: var(--color-accent-deep); }
-  .theme-switch-rays line {
-    stroke: var(--color-accent-deep);
-    stroke-width: 2.2;
-    stroke-linecap: round;
+  .theme-switch-points {
+    fill: var(--color-accent-deep);
+    stroke: var(--switch-line);
+    stroke-width: 1.4;
+    stroke-linejoin: round;
   }
 
   /* In dark mode the ink is the light cream, so the moon is drawn from it, with the dark paper as its line. */

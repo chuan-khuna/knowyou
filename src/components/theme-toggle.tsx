@@ -130,17 +130,23 @@ export function ThemeToggle({ className }: { className?: string }) {
   );
 }
 
-/** The knob by day: a disc in two tones with a line, and eight short rays around it. */
+/** Ten points of a star around the sun's disc, as one path: tips at radius 11.4, notches at 7.4. */
+const SUN_POINTS = (() => {
+  const points = 10;
+  const corners = Array.from({ length: points * 2 }, (_, i) => {
+    const a = (i * Math.PI) / points - Math.PI / 2;
+    const r = i % 2 ? 7.4 : 11.4;
+    return `${(12 + Math.cos(a) * r).toFixed(2)} ${(12 + Math.sin(a) * r).toFixed(2)}`;
+  });
+  return `M${corners.join("L")}Z`;
+})();
+
+/** The knob by day: a disc in two tones with a line, inside a ring of sharp points. */
 function Sun() {
   const clip = useId();
   return (
     <g className="theme-switch-sun">
-      <g className="theme-switch-rays">
-        {Array.from({ length: 8 }, (_, i) => {
-          const a = (i * Math.PI) / 4;
-          return <line key={i} x1={12 + Math.cos(a) * 9} y1={12 + Math.sin(a) * 9} x2={12 + Math.cos(a) * 11.2} y2={12 + Math.sin(a) * 11.2} />;
-        })}
-      </g>
+      <path className="theme-switch-points" d={SUN_POINTS} />
       <clipPath id={clip}>
         <circle cx="12" cy="12" r="6.6" />
       </clipPath>
