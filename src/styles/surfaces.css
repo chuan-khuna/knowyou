@@ -89,14 +89,6 @@
     font-weight: 400;
   }
 
-  .verdict {
-    display: flex;
-    align-items: center;
-    gap: var(--space-sm);
-    font-family: var(--font-display);
-    font-size: var(--text-xl);
-    font-weight: 600;
-  }
   .verdict--right {
     color: var(--color-mint-deep);
   }

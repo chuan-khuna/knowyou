@@ -11,7 +11,7 @@ All CSS lives in `src/styles/`. `src/app/layout.tsx` imports one file, `src/styl
 | `base.css` | Element defaults, and the root view-transition reset for the theme switch (`theme.md`), in the `base` layer |
 | `layout.css` | Page chrome: the shell, the top strip, the question head, the sticky play-again band |
 | `controls.css` | Card-stock buttons and their variants (`.stock`, `.option`, `.game-card`), the province select, the icon button, the seed chip; `.icon-button` and `.seed-chip` set `--fx-tone` for the drawn effects (`drawn-effects.md`) |
-| `surfaces.css` | The confidence meter, paper sheets, the cue, the guess figure, the quiz verdict, links, the mock ads (`.mock-ad`, its tones, its `--fx-tone` for the drawn effects, and its motion, which sits inside `prefers-reduced-motion: no-preference`) |
+| `surfaces.css` | The confidence meter, paper sheets, the cue, the guess figure, the quiz's right and wrong colours, links, the mock ads (`.mock-ad`, its tones, its `--fx-tone` for the drawn effects, and its motion, which sits inside `prefers-reduced-motion: no-preference`) |
 | `map.css` | The province map, live and on the result |
 
 ## Rules

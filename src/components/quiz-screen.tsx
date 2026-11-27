@@ -525,8 +525,8 @@ function Reveal({ answer }: { answer: AnsweredQuizQuestion }) {
   const rightLabel = answer.question.options.find((o) => o.key === answer.rightKey)!.label;
   return (
     <>
-      <p className={`verdict mt-6 ${answer.correct ? "verdict--right" : "verdict--wrong"}`} role="status">
-        <Mark correct={answer.correct} />
+      {/* The option tags show right or wrong; this line only tells a screen reader. */}
+      <p className="sr-only" role="status">
         {answer.correct ? "ถูกต้อง!" : `ยังไม่ถูก คำตอบคือ ${rightLabel}`}
       </p>
       <ol className="mt-6 grid gap-4">
