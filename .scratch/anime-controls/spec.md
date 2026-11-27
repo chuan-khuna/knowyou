@@ -1,6 +1,6 @@
 # Anime controls
 
-Status: ready-for-agent
+Status: done
 
 ## Problem Statement
 
@@ -57,3 +57,5 @@ Every card-stock control across the site takes the anime look: a 2px ink line, a
 - **Dark contrast** (asked in chat). The first drop was mixed from ink and rule, and in dark mode that made a light grey-pink slab. The drop is now its own token, `--color-drop`: a grey-blue by day and a night blue by night. The dark card is lifted from 23% to 25.5% lightness, and `--color-knob` lifts the switch's knob off its dark track.
 - `--color-edge` is gone: nothing used it after the restyle.
 
+- **Dark yellows** (asked in chat). In dark mode `--color-accent` and `--color-highlight` were 84% lightness, which glared on the dark page. They are now a muted gold, about 73%, and `--color-accent-deep` is 58%. The ink type still reads at about 5:1. The primary button's shadow is mixed in oklab from accent-deep and the drop, because an oklch mix of yellow and blue swings through green.
+- Merged in PR #9 (merge commit 37c472f on `main`). The follow-ups after it (the muted dark-mode yellows and the Sakuga VFX credit in the footer) are on `haikyu-quiz` at 865f777, waiting for their own PR.

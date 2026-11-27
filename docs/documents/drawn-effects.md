@@ -4,7 +4,7 @@ The small hand-drawn effects a tap throws: an impact star, a puff of smoke, spar
 
 ## Where it comes from
 
-- **Core.** It is forked from `core.js` in [finktheartist/sakuga-vfx](https://github.com/finktheartist/sakuga-vfx), commit `c3dabb173928a3ad2372183103caf2e6f50953d0` (2026-11-15). The licence is MIT, copyright 2026 Justin Finkelman. The notice is in the header of `core.ts`, which ships in the bundle with the code.
+- **Core.** It is forked from `core.js` in [finktheartist/sakuga-vfx](https://github.com/finktheartist/sakuga-vfx), commit `c3dabb173928a3ad2372183103caf2e6f50953d0` (2026-11-15). The licence is MIT, copyright 2026 Justin Finkelman. The notice is in the header of `core.ts`, which ships in the bundle with the code. The home page footer (`SiteFooter`) also credits Sakuga VFX by Justin Finkelman, with a link to its gallery, for the anime look and the effects.
 - **What changed from upstream.**
   - The core is an ES module in TypeScript.
   - Each effect takes its palette when it starts, instead of reading one shared palette every frame, so two effects in different tones never recolour each other.
