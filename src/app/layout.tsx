@@ -19,7 +19,7 @@ const mali = Mali({
 
 export const metadata: Metadata = {
   title: "byou",
-  description: "เกมทายใจ ถามจนแน่ใจ แล้วทายครั้งเดียว",
+  description: "ผนึกถูกปลดแล้ว… จงตอบคำถามของข้า แล้วความลับในตัวเจ้าจะถูกเปิดเผยเพียงครั้งเดียว",
 };
 
 export const viewport: Viewport = {
