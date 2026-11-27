@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { NarutoQuiz } from "./naruto-quiz";
 
 export const metadata: Metadata = {
-  title: "คุณรู้จัก Naruto ดีแค่ไหน · KnowYou",
+  title: "คุณรู้จัก Naruto ดีแค่ไหน · byou",
   description: "ตอบคำถามแล้วดูว่าคุณเป็นนินจาระดับไหน",
 };
 

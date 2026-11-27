@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Mali, Noto_Sans_Thai_Looped } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import { THEME_INIT_SCRIPT } from "@/lib/theme-script";
 import "@/styles/globals.css";
 
@@ -17,7 +18,7 @@ const mali = Mali({
 });
 
 export const metadata: Metadata = {
-  title: "KnowYou",
+  title: "byou",
   description: "เกมทายใจ ถามจนแน่ใจ แล้วทายครั้งเดียว",
 };
 
@@ -33,7 +34,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <script dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        {/* Page views for the Vercel dashboard; it reports only on a Vercel deployment. */}
+        <Analytics />
+      </body>
     </html>
   );
 }

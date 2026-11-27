@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { SoloLevelingQuiz } from "@/app/solo-leveling/solo-leveling-quiz";
 
 export const metadata: Metadata = {
-  title: "คุณรู้จัก Solo Leveling ดีแค่ไหน · KnowYou",
+  title: "คุณรู้จัก Solo Leveling ดีแค่ไหน · byou",
   description: "ตอบคำถามแล้วดูว่าคุณเป็นฮันเตอร์แรงก์ไหน",
 };
 

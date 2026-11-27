@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { RebornQuiz } from "./reborn-quiz";
 
 export const metadata: Metadata = {
-  title: "คุณรู้จัก Reborn ดีแค่ไหน · KnowYou",
+  title: "คุณรู้จัก Reborn ดีแค่ไหน · byou",
   description: "ตอบคำถามแล้วดูว่าคุณอยู่ระดับไหนในแฟมิลี่",
 };
 

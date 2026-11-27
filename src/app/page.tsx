@@ -33,7 +33,7 @@ export default function Home() {
   return (
     <main className="shell">
       <header className="topbar">
-        <span className="wordmark">KnowYou</span>
+        <span className="wordmark">byou</span>
         <div className="topbar-end">
           <ThemeToggle />
           <SoundToggle />
@@ -41,7 +41,7 @@ export default function Home() {
       </header>
 
       {/* The page still needs a top heading for screen readers; it just isn't shown. */}
-      <h1 className="sr-only">KnowYou</h1>
+      <h1 className="sr-only">byou</h1>
 
       <CardSection heading="ทายตัวคุณ" line="เกมจะถามไปเรื่อย ๆ จนมั่นใจ แล้วทายเรื่องของคุณครั้งเดียว" cards={GAMES} />
       <AdsRamen />
