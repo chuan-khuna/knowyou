@@ -1,0 +1,882 @@
+{
+  "กนเรียวมารุ": {
+    "romaji": "Gonryōmaru",
+    "kanji": "厳霊丸",
+    "english": "Stern Spirit"
+  },
+  "การ์กันต้า": {
+    "romaji": "Garuganta",
+    "kanji": "黒腔",
+    "english": "Throat"
+  },
+  "กินโต": {
+    "romaji": "Gintō",
+    "kanji": "銀筒",
+    "english": "Silver Tubes"
+  },
+  "เก็ตสึกะ จูจิโช": {
+    "romaji": "Getsuga Jūjishō",
+    "kanji": "月牙十字衝",
+    "english": "Moon Fang Cross-Shaped Piercer"
+  },
+  "เก็ตสึกะ เท็นโช": {
+    "romaji": "Getsuga Tenshō",
+    "kanji": "月牙天衝",
+    "english": "Moon Fang Heaven-Piercer"
+  },
+  "เกะเก็ตสึบุริ": {
+    "romaji": "Gegetsuburi",
+    "kanji": "五形頭",
+    "english": "Five-Formed Head"
+  },
+  "โกเค": {
+    "romaji": "Gōkei",
+    "kanji": "吭景",
+    "english": "Mawscape"
+  },
+  "โกริวเท็นเม็ตสึ": {
+    "romaji": "Goryūtenmetsu",
+    "kanji": "五龍転滅",
+    "english": "Five Swirling Dragons of Destruction"
+  },
+  "ควินซี่": {
+    "romaji": "Kuinshī",
+    "kanji": "滅却師",
+    "english": "Quincy"
+  },
+  "ควินซี่ ฟอลชเตนดิก": {
+    "romaji": "Kuinshī Forushutendihhi",
+    "kanji": "滅却師完聖体",
+    "english": "Quincy: Complete"
+  },
+  "ควินซี่ เลทซ์ สติล": {
+    "romaji": "Kuinshī Retsutoshutīru",
+    "kanji": "滅却師最終形態",
+    "english": "Quincy: Last Style"
+  },
+  "คอนจิกิ อาชิโซกิ จิโซ": {
+    "romaji": "Konjiki Ashisogi Jizō",
+    "kanji": "金色疋殺地蔵",
+    "english": "Golden Leg-Cutting Jizō"
+  },
+  "คันเซ็น บังไค": {
+    "romaji": "Kanzen Bankai",
+    "kanji": "完全卍解",
+    "english": "Complete Bankai"
+  },
+  "คันนงบิรากิ เบนิฮิเมะ อาราตาเมะ": {
+    "romaji": "Kannonbiraki Benihime Aratame",
+    "kanji": "観音開紅姫改メ",
+    "english": "Modification of the Crimson Princess' Dissection at the Doors of Avalokiteśvara"
+  },
+  "คาเซะชินิ": {
+    "romaji": "Kazeshini",
+    "kanji": "風死",
+    "english": "Wind of Death"
+  },
+  "คาเท็น เคียวคตสึ": {
+    "romaji": "Katen Kyōkotsu",
+    "kanji": "花天狂骨",
+    "english": "Bones of Heavenly Blooming Madness"
+  },
+  "คาเท็น เคียวคตสึ คารามัตสึ ชินจู": {
+    "romaji": "Katen Kyōkotsu: Karamatsu Shinjū",
+    "kanji": "花天狂骨枯松心中",
+    "english": "Bones of Heavenly Blooming Madness: Withering Pine Lovers' Suicide"
+  },
+  "คามิชินิ โนะ ยาริ": {
+    "romaji": "Kamishini no Yari",
+    "kanji": "神殺鎗",
+    "english": "God-Killing Spear"
+  },
+  "คิโด": {
+    "romaji": "Kidō",
+    "kanji": "鬼道",
+    "english": "Demon/Spirit Way"
+  },
+  "คินชาระ": {
+    "romaji": "Kinshara",
+    "kanji": "金沙羅",
+    "english": "Golden Sal Tree"
+  },
+  "คินชาระ บุโทดัน": {
+    "romaji": "Kinshara Butōdan",
+    "kanji": "金沙羅舞踏団",
+    "english": "Golden Sal Tree Dancing Troupe"
+  },
+  "คินปิกะ": {
+    "romaji": "Kinpika",
+    "kanji": "金毘迦",
+    "english": "Gilded Splendor"
+  },
+  "คุกใต้ดินใหญ่กลาง": {
+    "romaji": "Shin'ōchikadaikangoku",
+    "kanji": "真央地下大監獄",
+    "english": "Central Great Underground Prison"
+  },
+  "คุโรฮิตสึงิ": {
+    "romaji": "Kurohitsugi",
+    "kanji": "黒棺",
+    "english": "Black Coffin"
+  },
+  "เคนปาจิ": {
+    "romaji": "Kenpachi",
+    "kanji": "剣八",
+    "english": "Sword-Eight"
+  },
+  "เคียวกะ ซุยเก็ตสึ": {
+    "romaji": "Kyōka Suigetsu",
+    "kanji": "鏡花水月",
+    "english": "Mirror Flower, Water Moon"
+  },
+  "โคคุโจ เท็นเง็น เมียวโอ": {
+    "romaji": "Kokujō Tengen Myō'ō",
+    "kanji": "黒縄天譴明王",
+    "english": "Vidyaraja of Kalasutra's Heavenly Punishment"
+  },
+  "โคโค กนเรียว ริคิว": {
+    "romaji": "Kōkō Gonryō Rikyū",
+    "kanji": "黄煌厳霊離宮",
+    "english": "Yellow-Glittering Royal Villa of the Stern Spirit"
+  },
+  "โคเท็น ซันชุน": {
+    "romaji": "Koten Zanshun",
+    "kanji": "孤天斬盾",
+    "english": "Solitary Sacred Cutting Shield"
+  },
+  "ไคโด": {
+    "romaji": "Kaidō",
+    "kanji": "回道",
+    "english": "Turn Way"
+  },
+  "จงกระจาย": {
+    "romaji": "Chire",
+    "kanji": "散れ",
+    "english": "Scatter"
+  },
+  "จงกลืนกิน": {
+    "romaji": "Kuitsukuse",
+    "kanji": "喰い尽くせ",
+    "english": "Devour"
+  },
+  "จงกึกก้อง": {
+    "romaji": "Todoroke",
+    "kanji": "轟け",
+    "english": "Roar"
+  },
+  "จงเก็บเกี่ยว": {
+    "romaji": "Kare",
+    "kanji": "刈れ",
+    "english": "Reap"
+  },
+  "จงขู่คำราม": {
+    "romaji": "Unare",
+    "kanji": "唸れ",
+    "english": "Growl"
+  },
+  "จงคำราม": {
+    "romaji": "Hoero",
+    "kanji": "咆えろ",
+    "english": "Howl"
+  },
+  "จงดื่มกิน": {
+    "romaji": "Nome",
+    "kanji": "呑め",
+    "english": "Drink"
+  },
+  "จงดูดดื่ม": {
+    "romaji": "Susure",
+    "kanji": "啜れ",
+    "english": "Sip"
+  },
+  "จงตื่น": {
+    "romaji": "Okiro",
+    "kanji": "起きろ",
+    "english": "Awaken"
+  },
+  "จงเติบโต": {
+    "romaji": "Nobiro",
+    "kanji": "延びろ",
+    "english": "Grow"
+  },
+  "จงแตกสลาย": {
+    "romaji": "Kudakero",
+    "kanji": "砕けろ",
+    "english": "Shatter"
+  },
+  "จงทำลาย": {
+    "romaji": "Ute",
+    "kanji": "討て",
+    "english": "Destroy"
+  },
+  "จงเน่าเปื่อย": {
+    "romaji": "Kuchiro",
+    "kanji": "朽ちろ",
+    "english": "Rot"
+  },
+  "จงบดขยี้": {
+    "romaji": "Kishire",
+    "kanji": "軋れ",
+    "english": "Grind"
+  },
+  "จงปิดล้อม": {
+    "romaji": "Tozase",
+    "kanji": "鎖せ",
+    "english": "Enclose"
+  },
+  "จงภาวนา": {
+    "romaji": "Inore",
+    "kanji": "祈れ",
+    "english": "Pray"
+  },
+  "จงยิงสังหาร": {
+    "romaji": "Ikorose",
+    "kanji": "射殺せ",
+    "english": "Shoot to kill"
+  },
+  "จงร่ายรำ": {
+    "romaji": "Mae",
+    "kanji": "舞え",
+    "english": "Dance"
+  },
+  "จงสงบ": {
+    "romaji": "Shizumare",
+    "kanji": "鎮まれ",
+    "english": "Suppress"
+  },
+  "จาคุโฮ ไรโคเบ็น": {
+    "romaji": "Jakuhō Raikōben",
+    "kanji": "雀蜂雷公鞭",
+    "english": "Hornet Thunder Duke Whip"
+  },
+  "ชักคาโฮ": {
+    "romaji": "Shakkahō",
+    "kanji": "赤火砲",
+    "english": "Red Fire Cannon"
+  },
+  "ชัทเทน เบไรช์": {
+    "romaji": "Shatten Beraihi",
+    "kanji": "影の領域",
+    "english": "Shadow Realm"
+  },
+  "ชิไค": {
+    "romaji": "Shikai",
+    "kanji": "始解",
+    "english": "Initial Release"
+  },
+  "ชิงารามิ": {
+    "romaji": "Shigarami",
+    "kanji": "刺絡",
+    "english": "Piercing Entanglement"
+  },
+  "ชิเท็น โคชุน": {
+    "romaji": "Shiten Kōshun",
+    "kanji": "四天抗盾",
+    "english": "Shield of Four Heavens' Resistance"
+  },
+  "ชินโซ": {
+    "romaji": "Shinsō",
+    "kanji": "神鎗",
+    "english": "God Spear"
+  },
+  "ชินอุจิ": {
+    "romaji": "Shin'uchi",
+    "kanji": "真打",
+    "english": "True Strike"
+  },
+  "ชุนโค": {
+    "romaji": "Shunkō",
+    "kanji": "瞬閧",
+    "english": "Flash War Cry"
+  },
+  "ชุนชุนริกกะ": {
+    "romaji": "Shun Shun Rikka",
+    "kanji": "盾舜六花",
+    "english": "Six Flowers of the Hibiscus Shield"
+  },
+  "ชุนโป": {
+    "romaji": "Shunpo",
+    "kanji": "瞬歩",
+    "english": "Flash Steps"
+  },
+  "ชูเค ฮาคุเทย์เค็น": {
+    "romaji": "Shūkei: Hakuteiken",
+    "kanji": "終景・白帝剣",
+    "english": "Endscape: White Imperial Sword"
+  },
+  "ซันกะ โนะ ทาจิ": {
+    "romaji": "Zanka no Tachi",
+    "kanji": "残火の太刀",
+    "english": "Longsword of the Remnant Flame"
+  },
+  "ซันเก็ตสึ": {
+    "romaji": "Zangetsu",
+    "kanji": "斬月",
+    "english": "Slaying Moon"
+  },
+  "ซันจุตสึ": {
+    "romaji": "Zanjutsu",
+    "kanji": "斬術",
+    "english": "Swordsmanship"
+  },
+  "ซันเท็น เคสชุน": {
+    "romaji": "Santen Kesshun",
+    "kanji": "三天結盾",
+    "english": "Three Sacred Links Shield"
+  },
+  "ซันเรย์ โกลฟ": {
+    "romaji": "Sanrei Shutō",
+    "kanji": "散霊手套",
+    "english": "Spirit-Scattering Hand Envelope"
+  },
+  "ซากาชิมะ โยโคชิมะ ฮัปโปฟุซางาริ": {
+    "romaji": "Sakashima Yokoshima Happōfusagari",
+    "kanji": "逆様邪八宝塞",
+    "english": "Reversed Evil Eight Treasure Blockade"
+  },
+  "ซาคานาเดะ": {
+    "romaji": "Sakanade",
+    "kanji": "逆撫",
+    "english": "Counter Stroke"
+  },
+  "ซาบิมารุ": {
+    "romaji": "Zabimaru",
+    "kanji": "蛇尾丸",
+    "english": "Snake Tail"
+  },
+  "ซิลเบิร์น": {
+    "romaji": "Jirubān",
+    "kanji": "銀架城",
+    "english": "Silver"
+  },
+  "ซุซุมุชิ": {
+    "romaji": "Suzumushi",
+    "kanji": "清虫",
+    "english": "Cricket"
+  },
+  "ซุซุเมะบาจิ": {
+    "romaji": "Suzumebachi",
+    "kanji": "雀蜂",
+    "english": "Hornet"
+  },
+  "เซกุนด้า เอทาปา": {
+    "romaji": "Resurekushion Segunda Etāpa",
+    "kanji": "刀剣解放第二階層",
+    "english": "Resurrection: Second Stage"
+  },
+  "เซ็นกะ": {
+    "romaji": "Senka",
+    "kanji": "閃花",
+    "english": "Flash Blossom"
+  },
+  "เซ็นเค": {
+    "romaji": "Senkei",
+    "kanji": "殲景",
+    "english": "Slaughterscape"
+  },
+  "เซ็นจู โคเท็น ไทโฮ": {
+    "romaji": "Senju Kōten Taihō",
+    "kanji": "千手皎天汰炮",
+    "english": "Thousand-Hand Incandent Heaven Culling-Sear"
+  },
+  "เซ็มบงซากุระ": {
+    "romaji": "Senbonzakura",
+    "kanji": "千本桜",
+    "english": "Thousand Cherry Blossoms"
+  },
+  "เซ็มบงซากุระ คาเงโยชิ": {
+    "romaji": "Senbonzakura Kageyoshi",
+    "kanji": "千本桜景厳",
+    "english": "Vibrant Display of a Thousand Cherry Blossoms"
+  },
+  "เซย์เรย์เทย์": {
+    "romaji": "Seireitei",
+    "kanji": "瀞霊廷",
+    "english": "Court of Pure Souls"
+  },
+  "โซเกียว โนะ โคโตวาริ": {
+    "romaji": "Sōgyo no Kotowari",
+    "kanji": "双魚理",
+    "english": "Truth of Pisces"
+  },
+  "โซคัตซุย": {
+    "romaji": "Sōkatsui",
+    "kanji": "蒼火墜",
+    "english": "Blue Fire, Crash Down"
+  },
+  "โซเดะ โนะ ชิรายูกิ": {
+    "romaji": "Sode no Shirayuki",
+    "kanji": "袖白雪",
+    "english": "Sleeved White Snow"
+  },
+  "โซเท็น คิสชุน": {
+    "romaji": "Sōten Kisshun",
+    "kanji": "双天帰盾",
+    "english": "Twin Sacred Return Shield"
+  },
+  "โซนีโด": {
+    "romaji": "Sonīdo",
+    "kanji": "響転",
+    "english": "Sound"
+  },
+  "โซโอ ซาบิมารุ": {
+    "romaji": "Sōō Zabimaru",
+    "kanji": "双王蛇尾丸",
+    "english": "Twin Kings Snake Tail"
+  },
+  "ดังไก": {
+    "romaji": "Dangai",
+    "kanji": "断界",
+    "english": "Parsing World"
+  },
+  "ดังคู": {
+    "romaji": "Dankū",
+    "kanji": "斷空",
+    "english": "Splitting Void"
+  },
+  "ดาบฟันวิญญาณ": {
+    "romaji": "Zanpakutō",
+    "kanji": "斬魄刀",
+    "english": "Soul-Cutter Sword"
+  },
+  "ไดกุเร็น เฮียวรินมารุ": {
+    "romaji": "Daiguren Hyōrinmaru",
+    "kanji": "大紅蓮氷輪丸",
+    "english": "Mahāpadma Ice Ring"
+  },
+  "ทาจิคาเซะ": {
+    "romaji": "Tachikaze",
+    "kanji": "断地風",
+    "english": "Earth-Severing Wind"
+  },
+  "เท็กเค็น ทาจิคาเซะ": {
+    "romaji": "Tekken Tachikaze",
+    "kanji": "鐵拳断風",
+    "english": "Iron Fist Severing Wind"
+  },
+  "เท็นเค็น": {
+    "romaji": "Tenken",
+    "kanji": "天譴",
+    "english": "Heavenly Punishment"
+  },
+  "เท็นโซ จูริน": {
+    "romaji": "Tensō Jūrin",
+    "kanji": "天相従臨",
+    "english": "Subjugation of the Heavens"
+  },
+  "เท็นเทย์คูระ": {
+    "romaji": "Tenteikūra",
+    "kanji": "天挺空羅",
+    "english": "Heavenly Rickshaws in Silken Air"
+  },
+  "เท็นสะ ซันเก็ตสึ": {
+    "romaji": "Tensa Zangetsu",
+    "kanji": "天鎖斬月",
+    "english": "Heaven Chain Slaying Moon"
+  },
+  "เทพธิดาแห่งความเร็ว": {
+    "romaji": "Shunshin",
+    "kanji": "瞬神",
+    "english": "Flash Goddess"
+  },
+  "เทพแห่งดาบ": {
+    "romaji": "Tōshin",
+    "kanji": "刀神",
+    "english": "God of the Sword"
+  },
+  "โทบิอุเมะ": {
+    "romaji": "Tobiume",
+    "kanji": "飛梅",
+    "english": "Flying Plum Tree"
+  },
+  "เนจิบานะ": {
+    "romaji": "Nejibana",
+    "kanji": "捩花",
+    "english": "Spiranthes"
+  },
+  "เนินโซเคียวคุ": {
+    "romaji": "Sōkyoku no Oka",
+    "kanji": "双殛の丘",
+    "english": "Sōkyoku Hill"
+  },
+  "โนซาราชิ": {
+    "romaji": "Nozarashi",
+    "kanji": "野晒",
+    "english": "Weather-Beaten One"
+  },
+  "บริงเกอร์ไลท์": {
+    "romaji": "Buringā Raito",
+    "kanji": "完現光 (ブリンガーライト)",
+    "english": "Full Manifestation Light"
+  },
+  "บังไค": {
+    "romaji": "Bankai",
+    "kanji": "卍解",
+    "english": "Final Release"
+  },
+  "บาคุโด": {
+    "romaji": "Bakudō",
+    "kanji": "縛道",
+    "english": "Way of Binding"
+  },
+  "บาคุเอ็น มุโซ": {
+    "romaji": "Shunkō: Bakuen Musō",
+    "kanji": "瞬閧 爆炎無双",
+    "english": "Flash War Cry: Exploding Flames Unparalleled"
+  },
+  "เบนิฮิเมะ": {
+    "romaji": "Benihime",
+    "kanji": "紅姫",
+    "english": "Crimson Princess"
+  },
+  "เบียคุไร": {
+    "romaji": "Byakurai",
+    "kanji": "白雷",
+    "english": "Pale Lightning"
+  },
+  "ประตูเซ็นไคมง": {
+    "romaji": "Senkaimon",
+    "kanji": "穿界門",
+    "english": "World Penetration Gate"
+  },
+  "ผู้บัญชาการหน่วยคิโด": {
+    "romaji": "Dai Kidōchō",
+    "kanji": "大鬼道長",
+    "english": "Grand Kidō Chief"
+  },
+  "ผู้บัญชาการใหญ่": {
+    "romaji": "Sōtaichō",
+    "kanji": "総隊長",
+    "english": "Captain-Commander"
+  },
+  "ฟูลบริง": {
+    "romaji": "Furuburingu",
+    "kanji": "完現術 (フルブリング)",
+    "english": "Full Manifestation Art"
+  },
+  "ฟูลบริงเกอร์": {
+    "romaji": "Furuburingā",
+    "kanji": "完現術者 (フルブリンガー)",
+    "english": "Full Manifestation Artist"
+  },
+  "มุเค็น": {
+    "romaji": "Muken",
+    "kanji": "無間",
+    "english": "Avīci"
+  },
+  "มุเง็ตสึ": {
+    "romaji": "Mugetsu",
+    "kanji": "無月",
+    "english": "Moonless Sky"
+  },
+  "ยมทูต": {
+    "romaji": "Shinigami",
+    "kanji": "死神",
+    "english": "Death God(s)"
+  },
+  "ยมทูตตัวแทน": {
+    "romaji": "Shinigami Daikō",
+    "kanji": "死神代行",
+    "english": "Substitute Shinigami"
+  },
+  "รองหัวหน้าหน่วย": {
+    "romaji": "Fukutaichō",
+    "kanji": "副隊長",
+    "english": "Lieutenant"
+  },
+  "ราชาวิญญาณ": {
+    "romaji": "Reiō",
+    "kanji": "霊王",
+    "english": "Soul King"
+  },
+  "ราชาแห่งธัญพืช": {
+    "romaji": "Kokuō",
+    "kanji": "穀王",
+    "english": "Ruler of Grain"
+  },
+  "ริคุโจโคโร": {
+    "romaji": "Rikujōkōrō",
+    "kanji": "六杖光牢",
+    "english": "Six Rods Prison of Light"
+  },
+  "ริวจิน จักกะ": {
+    "romaji": "Ryūjin Jakka",
+    "kanji": "流刃若火",
+    "english": "Flowing Blade-like Flame"
+  },
+  "ริวมง โฮซึกิมารุ": {
+    "romaji": "Ryūmon Hōzukimaru",
+    "kanji": "龍紋鬼灯丸",
+    "english": "Dragon Crest Demon Light"
+  },
+  "รุคงไก": {
+    "romaji": "Rukongai",
+    "kanji": "流魂街",
+    "english": "Wandering Soul City"
+  },
+  "รุริอิโระ คุจาคุ": {
+    "romaji": "Ruri'iro Kujaku",
+    "kanji": "瑠璃色孔雀",
+    "english": "Azure Peacock"
+  },
+  "เรซูเรคซิออน": {
+    "romaji": "Resurekushion",
+    "kanji": "帰刃",
+    "english": "Resurrection"
+  },
+  "ไรโคโฮ": {
+    "romaji": "Raikōhō",
+    "kanji": "雷吼炮",
+    "english": "Thunder Roar Sear"
+  },
+  "ไรจิน เซ็นเค": {
+    "romaji": "Shunkō: Raijin Senkei",
+    "kanji": "瞬閧 雷神戦形",
+    "english": "Flash War Cry: Thunder God Battle Form"
+  },
+  "ไรจู เซ็นเค ชุนริว โคคุเบียว เซ็นกิ": {
+    "romaji": "Shunkō: Raijū Senkei: Shunryū Kokubyō Senki",
+    "kanji": "瞬閧 雷獣戦形 瞬霳黒猫戦姫",
+    "english": "Flash War Cry: Thunder Beast Battle Form: Flash God Black Cat Warrior Princess"
+  },
+  "ไรโอเค็น": {
+    "romaji": "Raiōken",
+    "kanji": "雷王拳",
+    "english": "Thunder King Fist"
+  },
+  "ลาส โนเชส": {
+    "romaji": "Rasu Nōchesu",
+    "kanji": "虚夜宮",
+    "english": "The Nights"
+  },
+  "โลกกลับด้าน": {
+    "romaji": "Sakasama no Sekai",
+    "kanji": "逆様の世界",
+    "english": "Inverted World"
+  },
+  "โลกแห่งอวิชชา": {
+    "romaji": "Mumyō no Sekai",
+    "kanji": "無明の世界",
+    "english": "World of Avidyā"
+  },
+  "วังราชาวิญญาณ": {
+    "romaji": "Reiōkyū",
+    "kanji": "霊王宮",
+    "english": "Soul King Palace"
+  },
+  "วาบิสุเกะ": {
+    "romaji": "Wabisuke",
+    "kanji": "侘助",
+    "english": "The Wretched One"
+  },
+  "วาห์ร์เวลท์": {
+    "romaji": "Vāruveruto",
+    "kanji": "真世界城",
+    "english": "True World"
+  },
+  "เวโก้ มุนโด้": {
+    "romaji": "Ueko Mundo",
+    "kanji": "虚圏",
+    "english": "Hollow World"
+  },
+  "ไวเซิร์ด": {
+    "romaji": "Vaizādo",
+    "kanji": "仮面の軍勢",
+    "english": "Masked Army"
+  },
+  "สถาบันชินโอ": {
+    "romaji": "Shinōreijutsuin",
+    "kanji": "真央霊術院",
+    "english": "Spiritual Arts Academy"
+  },
+  "สถาบันวิจัยและพัฒนาเทคโนโลยี": {
+    "romaji": "Gijutsukaihatsu Kyoku",
+    "kanji": "技術開発局",
+    "english": "Shinigami Research and Development Institute"
+  },
+  "สภา 46 ห้อง": {
+    "romaji": "Chūō Shijūroku",
+    "kanji": "中央四十六",
+    "english": "Central 46"
+  },
+  "สมาคมยมทูตหญิง": {
+    "romaji": "Josei Shinigami Kyōkai",
+    "kanji": "女性死神協会",
+    "english": "Shinigami Women's Association"
+  },
+  "สะกดจิตสมบูรณ์": {
+    "romaji": "Kanzen Saimin",
+    "kanji": "完全催眠",
+    "english": "Complete Hypnosis"
+  },
+  "สึริโบชิ": {
+    "romaji": "Tsuriboshi",
+    "kanji": "吊星",
+    "english": "Suspending Star"
+  },
+  "หน่วยคิโด": {
+    "romaji": "Kidōshū",
+    "kanji": "鬼道衆",
+    "english": "Kidō Corps"
+  },
+  "หน่วยที่ 10": {
+    "romaji": "Jūbantai",
+    "kanji": "十番隊",
+    "english": "Tenth Division"
+  },
+  "หน่วยที่ 11": {
+    "romaji": "Jūichibantai",
+    "kanji": "十一番隊",
+    "english": "Eleventh Division"
+  },
+  "หน่วยที่ 12": {
+    "romaji": "Jūnibantai",
+    "kanji": "十二番隊",
+    "english": "Twelfth Division"
+  },
+  "หน่วยที่ 13": {
+    "romaji": "Jūsanbantai",
+    "kanji": "十三番隊",
+    "english": "Thirteenth Division"
+  },
+  "หน่วยที่ 2": {
+    "romaji": "Nibantai",
+    "kanji": "二番隊",
+    "english": "Second Division"
+  },
+  "หน่วยที่ 3": {
+    "romaji": "Sanbantai",
+    "kanji": "三番隊",
+    "english": "Third Division"
+  },
+  "หน่วยที่ 4": {
+    "romaji": "Yonbantai",
+    "kanji": "四番隊",
+    "english": "Fourth Division"
+  },
+  "หน่วยที่ 5": {
+    "romaji": "Gobantai",
+    "kanji": "五番隊",
+    "english": "Fifth Division"
+  },
+  "หน่วยที่ 6": {
+    "romaji": "Rokubantai",
+    "kanji": "六番隊",
+    "english": "Sixth Division"
+  },
+  "หน่วยที่ 7": {
+    "romaji": "Nanabantai",
+    "kanji": "七番隊",
+    "english": "Seventh Division"
+  },
+  "หน่วยที่ 8": {
+    "romaji": "Hachibantai",
+    "kanji": "八番隊",
+    "english": "Eighth Division"
+  },
+  "หน่วยที่ 9": {
+    "romaji": "Kyūbantai",
+    "kanji": "九番隊",
+    "english": "Ninth Division"
+  },
+  "หน่วยพิทักษ์ 13 หน่วย": {
+    "romaji": "Goteijūsantai",
+    "kanji": "護廷十三隊",
+    "english": "13 Division Imperial Guards"
+  },
+  "หน่วยลับ (ออนมิตสึคิโด)": {
+    "romaji": "Onmitsukidō",
+    "kanji": "隠密機動",
+    "english": "Secret Tactics"
+  },
+  "หน่วยศูนย์": {
+    "romaji": "Zerobantai",
+    "kanji": "零番隊",
+    "english": "Zero Division"
+  },
+  "หอสำนึกผิด (เซ็นไซคิว)": {
+    "romaji": "Senzaikyū",
+    "kanji": "懺罪宮",
+    "english": "Palace of Penitence"
+  },
+  "หัวหน้าหน่วย": {
+    "romaji": "Taichō",
+    "kanji": "隊長",
+    "english": "Captain"
+  },
+  "หัวหน้าหน่วยศูนย์": {
+    "romaji": "Zerobantai Hittō",
+    "kanji": "零番隊筆頭",
+    "english": "Leader of the Zero Division"
+  },
+  "อาซาอุจิ": {
+    "romaji": "Asauchi",
+    "kanji": "浅打",
+    "english": "Shallow Hit"
+  },
+  "อิจิมอนจิ": {
+    "romaji": "Ichimonji",
+    "kanji": "一文字",
+    "english": "Straight Line"
+  },
+  "อิตโต คาโซ": {
+    "romaji": "Ittō Kasō",
+    "kanji": "一刀火葬",
+    "english": "Single Blade Cremation"
+  },
+  "เอ็นเก็ตสึ": {
+    "romaji": "Engetsu",
+    "kanji": "剡月",
+    "english": "Scathing Moon"
+  },
+  "เอ็นมะ โคโรกิ": {
+    "romaji": "Suzumushi Tsuishiki: Enma Kōrogi",
+    "kanji": "清虫終式・閻魔蟋蟀",
+    "english": "Cricket Final Form: Yama Cricket"
+  },
+  "ฮักกะ โนะ โทงาเมะ": {
+    "romaji": "Hakka no Togame",
+    "kanji": "白霞罸",
+    "english": "Censure of the White Haze"
+  },
+  "ฮาโด": {
+    "romaji": "Hadō",
+    "kanji": "破道",
+    "english": "Way of Destruction"
+  },
+  "ฮิริว เกคิโซคุ ชินเท็น ไรโฮ": {
+    "romaji": "Hiryū Gekizoku Shinten Raihō",
+    "kanji": "飛竜撃賊震天雷炮",
+    "english": "Flying Dragon-Striking Heaven-Shaking Thunder Cannon"
+  },
+  "ฮิเร็นเคียคุ": {
+    "romaji": "Hirenkyaku",
+    "kanji": "飛廉脚",
+    "english": "Pure Flying Step"
+  },
+  "ฮิฮิโอ ซาบิมารุ": {
+    "romaji": "Hihiō Zabimaru",
+    "kanji": "狒々王蛇尾丸",
+    "english": "Baboon King Snake Tail"
+  },
+  "เฮียวรินมารุ": {
+    "romaji": "Hyōrinmaru",
+    "kanji": "氷輪丸",
+    "english": "Ice Ring"
+  },
+  "โฮเกียวคุ": {
+    "romaji": "Hōgyoku",
+    "kanji": "崩玉",
+    "english": "Crumbling Orb"
+  },
+  "โฮซึกิมารุ": {
+    "romaji": "Hōzukimaru",
+    "kanji": "鬼灯丸",
+    "english": "Demon Light"
+  },
+  "ไฮเนโกะ": {
+    "romaji": "Haineko",
+    "kanji": "灰猫",
+    "english": "Ash Cat"
+  }
+}

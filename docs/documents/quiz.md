@@ -11,6 +11,7 @@ One quiz module plays every title, and one screen shows it. A title is data: its
 
 | Title | Module | Route |
 | --- | --- | --- |
+| คุณรู้จัก Bleach ดีแค่ไหน | `src/games/bleach/` | `/bleach` |
 | คุณรู้จัก Dragon Ball ดีแค่ไหน | `src/games/dragon-ball/` | `/dragon-ball` |
 | คุณรู้จัก Kuroko no Basket ดีแค่ไหน | `src/games/kuroko-no-basket/` | `/kuroko-no-basket` |
 | คุณรู้จัก Naruto ดีแค่ไหน | `src/games/naruto/` | `/naruto` |
@@ -106,6 +107,16 @@ A play is its count, its seed and the answer keys so far. `start(seed, count?)` 
 
 Each title's `bands.ts` holds its bands for a score out of 20, lowest first. `bandFor(bands, score)` returns the one band that holds the score. A play of any other count is scaled first: its band is the one for `Math.round(score * 20 / total)`, so 40 of 50 earns the 16 band and 49 of 50 the 20 band.
 
+**Bleach** (`SCORE_BANDS` in `src/games/bleach/bands.ts`), as Soul Society ranks:
+
+| Score | Title | Line |
+| --- | --- | --- |
+| 0–4 | ดวงวิญญาณล่องลอย | ยังมองไม่เห็นยมทูตเลย ลองตั้งสมาธิแล้วมองดี ๆ อีกครั้งนะ |
+| 5–8 | นักเรียนสถาบันยมทูต | ได้ดาบมาแล้ว แต่ยังไม่ได้ยินเสียงเรียกชื่อของมันเลย |
+| 9–12 | ยมทูตผู้ปลดชิไค | ดาบของคุณตอบรับชื่อแล้ว พร้อมออกไปปราบฮอลโลว์ที่โลกมนุษย์ |
+| 13–16 | รองหัวหน้าหน่วย | ฝีมือระดับนี้ อีกก้าวเดียวก็ปลดบังไคได้แล้ว |
+| 17–20 | หัวหน้าหน่วยพิทักษ์ | คุณรู้จักบลีชทุกซอกทุกมุม ราวกับสวมฮาโอริของหัวหน้าหน่วยมาเอง |
+
 **Dragon Ball** (`SCORE_BANDS` in `src/games/dragon-ball/bands.ts`), as fighter ranks:
 
 | Score | Title | Line |
@@ -193,6 +204,7 @@ The same rules as the games' saved play (`play-screen.md`), in the quiz's own `r
 ## How to add a question
 
 1. Find a page that confirms the answer, such as the series wiki or Wikipedia. Keep to the title's scope:
+   - Bleach: the manga (686 chapters), the TV anime (366 episodes) and the *Thousand-Year Blood War* anime; where TYBW changes the manga, the manga wins. No filler arcs, films, novels, games, musicals or the *No Breaths From Hell* one-shot. Ask only about zanpakutō and releases, kidō, techniques, divisions and groups, ranks, places, nicknames and story events. Source the Bleach wiki (`bleach.fandom.com`). Glosses cover Japanese names and the Spanish and German Hollow and Quincy terms. The spec is `.scratch/bleach-quiz/spec.md`.
    - Dragon Ball: the manga and the TV anime Dragon Ball and Dragon Ball Z, canon story only, up to the end of the Majin Buu arc. No filler, films, OVAs, GT, Super, Daima or games. Ask only about named moves, transformations and items, places and groups, teachers and rivals, aliases, and story events. Glosses cover techniques, transformations, fusions and named items, and characters whose other Thai names (a TV dub's, an older edition's) are sourced in `.scratch/quiz-aka/spec.md`, such as โกคู (โงกุน). Keep only the best-known other name, not every spelling.
    - Kuroko no Basket: the manga, the three TV seasons and the EXTRA GAME sequel. No *Last Game* film-only changes, novels, games or stage plays. Ask only about moves, schools, team roles, nicknames and story events; no birthdays, heights, numbers, scores or personal trivia. Source the Kuroko no Basuke wiki (`kurokonobasuke.fandom.com`). Glosses cover named moves and abilities. The spec is `.scratch/kuroko-quiz/spec.md`.
    - Naruto: Naruto and Naruto Shippuden, up to the end of the Fourth Shinobi World War. No Boruto, films or games. Glosses cover jutsu, dōjutsu, swords, elements and lands; a land's `aka` holds the Thai Wikipedia names (แคว้นเหล็ก, เทะซึโนะคุนิ).

@@ -1,0 +1,2733 @@
+[
+  {
+    "id": "aizen-escaped-with",
+    "tier": "easy",
+    "prompt": "ตอนจบภาคโซลโซไซตี้ ใครสองคนหนีไปเวโก้ มุนโด้พร้อมไอเซ็น?",
+    "answer": "อิจิมารุ กิน กับ โทเซ็น คานาเมะ",
+    "decoys": [
+      "อิจิมารุ กิน กับ คิระ อิซึรุ",
+      "โทเซ็น คานาเมะ กับ ฮิซางิ ชูเฮ",
+      "คุโรซึจิ มายูริ กับ คุโรซึจิ เนมุ"
+    ],
+    "note": "เมนอส กรันเด้ช่วยพาทั้งสามหนีไปหลังไอเซ็นได้โฮเกียวคุจากรูเคีย",
+    "source": "https://bleach.fandom.com/wiki/Ryoka_Invasion",
+    "evidence": "escapes alongside Gin and Tōsen into Hueco Mundo with the aid of the Menos Grande"
+  },
+  {
+    "id": "aizen-zanpakuto-name",
+    "tier": "easy",
+    "prompt": "ดาบฟันวิญญาณของไอเซ็น โซสึเกะ ที่สะกดจิตทุกคนที่เคยเห็นการปลดปล่อยของมัน ชื่ออะไร?",
+    "answer": "เคียวกะ ซุยเก็ตสึ",
+    "decoys": [
+      "ซุซุมุชิ",
+      "เบนิฮิเมะ",
+      "ชินโซ"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Sousuke_Aizen",
+    "evidence": "The hypnosis is triggered when someone sees Kyōka Suigetsu being released even once"
+  },
+  {
+    "id": "byakuya-bankai-name",
+    "tier": "easy",
+    "prompt": "บังไคของคุจิกิ เบียคุยะ ที่ทิ้งดาบลงพื้นแล้วเกิดใบดาบยักษ์นับพันขึ้นมา ชื่ออะไร?",
+    "answer": "เซ็มบงซากุระ คาเงโยชิ",
+    "decoys": [
+      "ไดกุเร็น เฮียวรินมารุ",
+      "คามิชินิ โนะ ยาริ",
+      "จาคุโฮ ไรโคเบ็น"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Byakuya_Kuchiki",
+    "evidence": "Bankai: Senbonzakura Kageyoshi (千本桜景厳, Vibrant Display of a Thousand Cherry Blossoms): To activate Senbonzakura Kageyoshi, Byakuya drops his sealed Zanpakutō straight down"
+  },
+  {
+    "id": "byakuya-concedes-ichigo",
+    "tier": "easy",
+    "prompt": "หลังการปะทะครั้งสุดท้าย ใครยอมรับความพ่ายแพ้ต่ออิจิโกะแล้วเดินจากไป เมื่อเข้าใจว่ากฎคือศัตรูของอิจิโกะมาตลอด?",
+    "answer": "คุจิกิ เบียคุยะ",
+    "decoys": [
+      "โคมามูระ ซาจิน",
+      "อิจิมารุ กิน",
+      "ฮิตสึกายะ โทชิโร่"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Ryoka_Invasion",
+    "evidence": "Byakuya concedes victory to Ichigo and departs"
+  },
+  {
+    "id": "byakuya-shikai-command",
+    "tier": "easy",
+    "prompt": "คำสั่งปลดปล่อยชิไคของคุจิกิ เบียคุยะ คือคำว่าอะไร?",
+    "answer": "จงกระจาย",
+    "decoys": [
+      "จงคำราม",
+      "จงร่ายรำ",
+      "จงตื่น"
+    ],
+    "note": "ใบดาบจะแตกออกเป็นใบมีดเล็กจิ๋วนับพันเหมือนกลีบซากุระ",
+    "source": "https://bleach.fandom.com/wiki/Byakuya_Kuchiki",
+    "evidence": "The release command of Byakuya's Shikai is \"Scatter\" (散れ, chire)."
+  },
+  {
+    "id": "central-46-murderer",
+    "tier": "easy",
+    "prompt": "ใครสังหารสภา 46 ห้อง แล้วออกคำสั่งแทนเพื่อจัดฉากโทษประหารของรูเคีย?",
+    "answer": "ไอเซ็น โซสึเกะ",
+    "decoys": [
+      "ยามาโมโตะ เก็นริวไซ ชิเงคุนิ",
+      "คุจิกิ เบียคุยะ",
+      "คุโรซึจิ มายูริ"
+    ],
+    "note": "ฮิตสึกายะเป็นผู้พบว่าสภาถูกสังหารไปนานแล้ว คำสั่งที่หน่วยต่างๆ ทำตามจึงเป็นของปลอม",
+    "source": "https://bleach.fandom.com/wiki/Ryoka_Invasion",
+    "evidence": "Aizen reveals that he murdered the Central 46 as soon as she was discovered in the Human World and set up her execution by issuing orders in their place."
+  },
+  {
+    "id": "chad-defeated-by",
+    "tier": "easy",
+    "prompt": "ในเซย์เรย์เทย์ ใครเป็นผู้เอาชนะแชด ซึ่งเป็นความพ่ายแพ้ครั้งแรกของกลุ่มผู้บุกรุก?",
+    "answer": "เคียวราคุ ชุนซุย",
+    "decoys": [
+      "ซาราคิ เคนปาจิ",
+      "คุจิกิ เบียคุยะ",
+      "โคมามูระ ซาจิน"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Ryoka_Invasion",
+    "evidence": "Captain Shunsui Kyōraku defeats Yasutora Sado in the Ryoka's first loss."
+  },
+  {
+    "id": "chad-first-armor",
+    "tier": "easy",
+    "prompt": "ตอนพลังของแชดตื่นขึ้นครั้งแรก เกราะปรากฏขึ้นที่ส่วนใดของร่าง?",
+    "answer": "แขนขวา",
+    "decoys": [
+      "แขนซ้าย",
+      "ขาทั้งสองข้าง",
+      "แผ่นหลัง"
+    ],
+    "note": "เกราะก่อตัวขึ้นเมื่อเขานึกได้ว่ากำปั้นของตนมีไว้ปกป้องผู้อื่น",
+    "source": "https://bleach.fandom.com/wiki/Yasutora_Sado",
+    "evidence": "this causes armor to form around his right arm and allows him to gain the advantage."
+  },
+  {
+    "id": "fourth-division-role",
+    "tier": "easy",
+    "prompt": "หน่วยใดในหน่วยพิทักษ์ 13 หน่วย ทำหน้าที่รักษาพยาบาลและส่งกำลังบำรุง?",
+    "answer": "หน่วยที่ 4",
+    "decoys": [
+      "หน่วยที่ 2",
+      "หน่วยที่ 9",
+      "หน่วยที่ 13"
+    ],
+    "note": "งานใช้แรงงานส่วนใหญ่ เช่น งานทำความสะอาด ก็เป็นหน้าที่ของหน่วยนี้ด้วย",
+    "source": "https://bleach.fandom.com/wiki/Fourth_Division",
+    "evidence": "The 4th Division is the medical/supply division."
+  },
+  {
+    "id": "ganju-kukaku-sibling",
+    "tier": "easy",
+    "prompt": "ชิบะ กันจู เป็นอะไรกับชิบะ คูคาคุ?",
+    "answer": "น้องชาย",
+    "decoys": [
+      "พี่ชาย",
+      "ลูกพี่ลูกน้อง",
+      "หลานชาย"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Ganju_Shiba",
+    "evidence": "younger brother of Kaien and Kūkaku"
+  },
+  {
+    "id": "hisana-rukia-relation",
+    "tier": "easy",
+    "prompt": "คุจิกิ ฮิซานะ เป็นอะไรกับคุจิกิ รูเคีย?",
+    "answer": "พี่สาวแท้ๆ",
+    "decoys": [
+      "แม่แท้ๆ",
+      "น้องสาวแท้ๆ",
+      "ลูกพี่ลูกน้อง"
+    ],
+    "note": "ฮิซานะทิ้งรูเคียไว้ตอนยังเป็นทารก และรู้สึกผิดจนไม่กล้าให้รูเคียรู้ว่าเป็นพี่สาว",
+    "source": "https://bleach.fandom.com/wiki/Hisana_Kuchiki",
+    "evidence": "Hisana bore a very strong resemblance to her younger sister, Rukia."
+  },
+  {
+    "id": "hitsugaya-childhood-friend",
+    "tier": "easy",
+    "prompt": "ฮิตสึกายะ โทชิโร่ ปกป้องใครเป็นพิเศษเพราะเป็นเพื่อนสนิทสมัยเด็ก?",
+    "answer": "ฮินาโมริ โมโมะ",
+    "decoys": [
+      "มัตสึโมโตะ รันงิคุ",
+      "คุจิกิ รูเคีย",
+      "คุซาจิชิ ยาจิรุ"
+    ],
+    "source": "https://bleach.fandom.com/wiki/T%C5%8Dshir%C5%8D_Hitsugaya",
+    "evidence": "Hinamori (whom he is overly protective of due to the two of them being close childhood friends)"
+  },
+  {
+    "id": "hitsugaya-zanpakuto-name",
+    "tier": "easy",
+    "prompt": "ดาบฟันวิญญาณของฮิตสึกายะ โทชิโร่ ซึ่งเป็นดาบธาตุน้ำแข็งที่แข็งแกร่งที่สุด ชื่ออะไร?",
+    "answer": "เฮียวรินมารุ",
+    "decoys": [
+      "ริวจิน จักกะ",
+      "ชินโซ",
+      "ซุซุมุชิ"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Tōshirō_Hitsugaya",
+    "evidence": "Hitsugaya then explains that he doesn't have to wait for water, as Hyōrinmaru is the most powerful ice-based Zanpakutō"
+  },
+  {
+    "id": "hogyoku-hidden-by",
+    "tier": "easy",
+    "prompt": "ใครเป็นผู้ซ่อนโฮเกียวคุไว้ในวิญญาณของรูเคีย?",
+    "answer": "อุราฮาระ คิสุเกะ",
+    "decoys": [
+      "ไอเซ็น โซสึเกะ",
+      "คุโรซึจิ มายูริ",
+      "ชิโฮวอิน โยรุอิจิ"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Kisuke_Urahara",
+    "evidence": "Revealing his involvement in placing the Hōgyoku within the soul of Rukia"
+  },
+  {
+    "id": "ichigo-bankai-name",
+    "tier": "easy",
+    "prompt": "บังไคของคุโรซากิ อิจิโกะ ชื่ออะไร?",
+    "answer": "เท็นสะ ซันเก็ตสึ",
+    "decoys": [
+      "ไดกุเร็น เฮียวรินมารุ",
+      "ฮิฮิโอ ซาบิมารุ",
+      "คอนจิกิ อาชิโซกิ จิโซ"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Ichigo_Kurosaki",
+    "evidence": "Bankai: Tensa Zangetsu (天鎖斬月, Heaven Chain Slaying Moon): Ichigo points his Zanpakutō in a straight direction"
+  },
+  {
+    "id": "ichigo-beats-ikkaku",
+    "tier": "easy",
+    "prompt": "ในการบุกเซย์เรย์เทย์ อิจิโกะเอาชนะใครด้วยท่าที่ปล่อยออกมาโดยสัญชาตญาณ?",
+    "answer": "มาดาราเมะ อิกคาคุ",
+    "decoys": [
+      "อายาเซงาวะ ยุมิจิกะ",
+      "คุซาจิชิ ยาจิรุ",
+      "อิบะ เท็ตสึซาเอมอน"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Ryoka_Invasion",
+    "evidence": "Ichigo defeats Ikkaku Madarame with an instinctively-released Getsuga Tenshō."
+  },
+  {
+    "id": "ichigo-getsuga-tensho",
+    "tier": "easy",
+    "prompt": "ท่าที่อิจิโกะฟันปล่อยพลังวิญญาณออกไปเป็นคลื่นรูปพระจันทร์เสี้ยว ชื่ออะไร?",
+    "answer": "เก็ตสึกะ เท็นโช",
+    "decoys": [
+      "มุเง็ตสึ",
+      "เซ็นเค",
+      "ชุนโค"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Getsuga_Tenshō",
+    "evidence": "Ichigo's basic Getsuga Tenshō is gold in color and creates a crescent wave of energy."
+  },
+  {
+    "id": "ichigo-powers-from-rukia",
+    "tier": "easy",
+    "prompt": "ใครเป็นผู้แทงดาบเข้าที่อกของอิจิโกะเพื่อถ่ายพลังยมทูตให้เป็นครั้งแรก?",
+    "answer": "คุจิกิ รูเคีย",
+    "decoys": [
+      "อุราฮาระ คิสุเกะ",
+      "ชิโฮวอิน โยรุอิจิ",
+      "อาบาราอิ เร็นจิ"
+    ],
+    "note": "รูเคียตั้งใจถ่ายพลังให้เพียงครึ่งหนึ่ง เพื่อให้อิจิโกะปกป้องครอบครัวจากฮอลโลว์",
+    "source": "https://bleach.fandom.com/wiki/Ichigo_Kurosaki",
+    "evidence": "Rukia offers to temporarily turn him into a Shinigami by piercing his chest with her Zanpakutō and transferring half of her power to him"
+  },
+  {
+    "id": "ichigo-zanpakuto-name",
+    "tier": "easy",
+    "prompt": "ดาบฟันวิญญาณของคุโรซากิ อิจิโกะ ชื่ออะไร?",
+    "answer": "ซันเก็ตสึ",
+    "decoys": [
+      "เซ็มบงซากุระ",
+      "ซาบิมารุ",
+      "เฮียวรินมารุ"
+    ],
+    "note": "ดาบอยู่ในสภาพชิไคตลอดเวลา เพราะอิจิโกะไม่เคยผนึกมันเลย",
+    "source": "https://bleach.fandom.com/wiki/Ichigo_Kurosaki",
+    "evidence": "Zangetsu (斬月, Slaying Moon) is Ichigo's Zanpakutō and is uniquely in a perpetual state of Shikai"
+  },
+  {
+    "id": "kaien-killed-by",
+    "tier": "easy",
+    "prompt": "ชิบะ ไคเอน ที่ถูกฮอลโลว์สิงร่าง ต้องตายด้วยดาบของใคร?",
+    "answer": "คุจิกิ รูเคีย",
+    "decoys": [
+      "อุคิทาเกะ จูชิโร่",
+      "คุจิกิ เบียคุยะ",
+      "ชิบะ คูคาคุ"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Kaien_Shiba",
+    "evidence": "When Rukia impaled a Metastacia-possessed Kaien"
+  },
+  {
+    "id": "kenpachi-beaten-by",
+    "tier": "easy",
+    "prompt": "ในภาคโซลโซไซตี้ ใครเอาชนะซาราคิ เคนปาจิ ได้?",
+    "answer": "คุโรซากิ อิจิโกะ",
+    "decoys": [
+      "คุจิกิ เบียคุยะ",
+      "ชิโฮวอิน โยรุอิจิ",
+      "ชิบะ กันจู"
+    ],
+    "note": "ในศึกนี้อิจิโกะเรียนรู้ที่จะต่อสู้ร่วมกับดาบฟันวิญญาณของตัวเอง",
+    "source": "https://bleach.fandom.com/wiki/Ryoka_Invasion",
+    "evidence": "Ichigo defeats Captain Kenpachi Zaraki and learns to fight alongside Zangetsu"
+  },
+  {
+    "id": "kenpachi-division",
+    "tier": "easy",
+    "prompt": "ซาราคิ เคนปาจิ เป็นหัวหน้าหน่วยของหน่วยใด?",
+    "answer": "หน่วยที่ 11",
+    "decoys": [
+      "หน่วยที่ 6",
+      "หน่วยที่ 7",
+      "หน่วยที่ 9"
+    ],
+    "note": "หน่วยที่เน้นการต่อสู้ด้วยดาบล้วน ๆ",
+    "source": "https://bleach.fandom.com/wiki/Eleventh_Division",
+    "evidence": "sometimes called the Zaraki Corps and Zaraki Squad, is one of the Gotei 13, headed by Captain Kenpachi Zaraki."
+  },
+  {
+    "id": "masaki-killed-by",
+    "tier": "easy",
+    "prompt": "ฮอลโลว์ตนใดเป็นผู้ฆ่าคุโรซากิ มาซากิ แม่ของอิจิโกะ?",
+    "answer": "แกรนด์ฟิชเชอร์",
+    "decoys": [
+      "เมทาสตาเซีย",
+      "อาโรนิเอโร่ อาร์รูรูเอรี",
+      "ยามี่ ลีอาโก้"
+    ],
+    "note": "มันใช้เหยื่อล่อเป็นร่างหญิงสาวที่ทำท่าจะกระโดดลงแม่น้ำ จนอิจิโกะวัยเก้าขวบวิ่งตามไป",
+    "source": "https://bleach.fandom.com/wiki/Grand_Fisher",
+    "evidence": "is responsible for the death of Ichigo Kurosaki's mother, Masaki Kurosaki"
+  },
+  {
+    "id": "menos-grande-origin",
+    "tier": "easy",
+    "prompt": "เมนอส กรันเด้ เกิดขึ้นจากอะไร?",
+    "answer": "ฮอลโลว์ธรรมดาหลายร้อยตัวรวมร่างกัน",
+    "decoys": [
+      "ยมทูตที่ถูกฮอลโลว์กลืนกิน",
+      "วิญญาณมนุษย์ที่ตกนรก",
+      "ควินซี่ที่สูญเสียพลัง"
+    ],
+    "note": "เมนอสเกิดจากฮอลโลว์ที่กินกันเองจนรวมเป็นร่างเดียว จึงแข็งแกร่งกว่าฮอลโลว์ทั่วไปมาก",
+    "source": "https://bleach.fandom.com/wiki/Hollow",
+    "evidence": "Menos are conglomerations of hundreds of normal Hollows, resulting in a single composite entity of far greater strength than any normal Hollow."
+  },
+  {
+    "id": "orihime-hairpins-gift",
+    "tier": "easy",
+    "prompt": "กิ๊บติดผมคู่ที่โอริฮิเมะติดไว้เสมอ เป็นของขวัญจากใคร?",
+    "answer": "อิโนอุเอะ โซระ พี่ชายของเธอ",
+    "decoys": [
+      "อาริซาวะ ทัตสึกิ เพื่อนสนิทของเธอ",
+      "คุโรซากิ มาซากิ แม่ของอิจิโกะ",
+      "อุราฮาระ คิสุเกะ เจ้าของร้านอุราฮาระ"
+    ],
+    "note": "โซระพาโอริฮิเมะหนีจากพ่อแม่ตั้งแต่เธออายุสามขวบ และเลี้ยงดูเธอมาคนเดียว",
+    "source": "https://bleach.fandom.com/wiki/Orihime_Inoue",
+    "evidence": "One day, Sora gave Orihime a pair of hairpins."
+  },
+  {
+    "id": "orihime-tsubaki-attack",
+    "tier": "easy",
+    "prompt": "ภูติตนใดใน ชุนชุนริกกะ ที่โอริฮิเมะเรียกออกมาเมื่อใช้ท่าโจมตี โคเท็น ซันชุน?",
+    "answer": "สึบากิ",
+    "decoys": [
+      "อายาเมะ",
+      "ชุนโอ",
+      "ฮินางิคุ"
+    ],
+    "note": "ภูติตนนี้ฟันได้ทุกสิ่ง แต่โอริฮิเมะไม่อยากทำร้ายใคร ท่านี้จึงอ่อนลง",
+    "source": "https://bleach.fandom.com/wiki/Koten_Zanshun",
+    "evidence": "To initiate the ability, Orihime summons Tsubaki and continues her kotodama by calling out the name of the technique."
+  },
+  {
+    "id": "quincy-hollow-soul",
+    "tier": "easy",
+    "prompt": "ฮอลโลว์ที่ถูกควินซี่ฆ่า จะเป็นอย่างไร?",
+    "answer": "วิญญาณถูกทำลายสิ้นไปด้วย",
+    "decoys": [
+      "ถูกชำระบาปแล้วไปโซลโซไซตี้",
+      "กลับไปเกิดใหม่ที่เวโก้ มุนโด้",
+      "กลายเป็นวิญญาณดัดแปลง"
+    ],
+    "note": "ต่างจากดาบฟันวิญญาณของยมทูตที่ชำระวิญญาณฮอลโลว์ จึงกระทบสมดุลของสามโลก",
+    "source": "https://bleach.fandom.com/wiki/Hollow",
+    "evidence": "When a Hollow is killed by a Quincy, it is destroyed, soul and all"
+  },
+  {
+    "id": "renji-bankai-soul-society",
+    "tier": "easy",
+    "prompt": "บังไครูปโครงกระดูกงูยักษ์ที่อาบาราอิ เร็นจิ ใช้สู้กับคุจิกิ เบียคุยะ เพื่อช่วยรูเคีย ชื่ออะไร?",
+    "answer": "ฮิฮิโอ ซาบิมารุ",
+    "decoys": [
+      "ริวมง โฮซึกิมารุ",
+      "ไดกุเร็น เฮียวรินมารุ",
+      "คอนจิกิ อาชิโซกิ จิโซ"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Renji_Abarai",
+    "evidence": "Renji then activates his Bankai, Hihiō Zabimaru, and declares that he will save Rukia."
+  },
+  {
+    "id": "renji-zanpakuto-name",
+    "tier": "easy",
+    "prompt": "ดาบฟันวิญญาณของอาบาราอิ เร็นจิ ที่ยืดออกเป็นดาบหลายท่อนใช้ได้เหมือนแส้ ชื่ออะไร?",
+    "answer": "ซาบิมารุ",
+    "decoys": [
+      "โฮซึกิมารุ",
+      "คาเซะชินิ",
+      "ชินโซ"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Renji_Abarai",
+    "evidence": "Because of the way its Shikai doubles as a whip, Renji states that out of all the Zanpakutō wielded by the lieutenants, Zabimaru is the most difficult to master."
+  },
+  {
+    "id": "rukia-adoptive-brother",
+    "tier": "easy",
+    "prompt": "คุจิกิ รูเคีย เป็นน้องสาวบุญธรรมของใคร?",
+    "answer": "คุจิกิ เบียคุยะ",
+    "decoys": [
+      "คุจิกิ กินเร",
+      "ชิบะ ไคเอน",
+      "อุคิทาเกะ จูชิโร่"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Rukia_Kuchiki",
+    "evidence": "Rukia is the adoptive sister of Byakuya Kuchiki"
+  },
+  {
+    "id": "rukia-childhood-friend",
+    "tier": "easy",
+    "prompt": "ใครเป็นเพื่อนสมัยเด็กที่เติบโตมาด้วยกันกับรูเคียในรุคงไก?",
+    "answer": "อาบาราอิ เร็นจิ",
+    "decoys": [
+      "ฮินาโมริ โมโมะ",
+      "อิจิมารุ กิน",
+      "ฮิตสึกายะ โทชิโร่"
+    ],
+    "note": "เขาโตมาในเขตที่ 78 อินุซุริ",
+    "source": "https://bleach.fandom.com/wiki/Renji_Abarai",
+    "evidence": "how close he is with his fellow childhood friend, Rukia Kuchiki"
+  },
+  {
+    "id": "rukia-execution-place",
+    "tier": "easy",
+    "prompt": "พิธีประหารคุจิกิ รูเคีย จัดขึ้นที่ใด?",
+    "answer": "เนินโซเคียวคุ",
+    "decoys": [
+      "หอสำนึกผิด (เซ็นไซคิว)",
+      "มุเค็น",
+      "รุคงไก"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Sōkyoku_Hill",
+    "evidence": "The Sōkyoku Hill is the scene of the execution ceremony of Rukia Kuchiki and several battles"
+  },
+  {
+    "id": "rukia-sokatsui",
+    "tier": "easy",
+    "prompt": "คิโดสายฮาโดที่ 33 ที่ยิงเปลวไฟสีฟ้าออกจากฝ่ามือ ซึ่งรูเคียใช้ ชื่ออะไร?",
+    "answer": "โซคัตซุย",
+    "decoys": [
+      "ชักคาโฮ",
+      "เบียคุไร",
+      "ไรโคโฮ"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Sōkatsui",
+    "evidence": "Blue flames discharge from the palm."
+  },
+  {
+    "id": "rukia-zanpakuto-name",
+    "tier": "easy",
+    "prompt": "ดาบฟันวิญญาณธาตุน้ำแข็งของคุจิกิ รูเคีย ชื่ออะไร?",
+    "answer": "โซเดะ โนะ ชิรายูกิ",
+    "decoys": [
+      "ไฮเนโกะ",
+      "โทบิอุเมะ",
+      "ซุซุเมะบาจิ"
+    ],
+    "note": "ได้ชื่อว่าเป็นดาบฟันวิญญาณที่งามที่สุดในโซลโซไซตี้",
+    "source": "https://bleach.fandom.com/wiki/Rukia_Kuchiki",
+    "evidence": "Sode no Shirayuki, Rukia's Zanpakutō, was ranked the 2nd most popular Zanpakutō in the first Zanpakutō poll"
+  },
+  {
+    "id": "ryoka-enter-seireitei",
+    "tier": "easy",
+    "prompt": "กลุ่มของอิจิโกะบุกเข้าเซย์เรย์เทย์ได้สำเร็จด้วยวิธีใด?",
+    "answer": "ถูกยิงข้ามม่านพลังด้วยลูกปืนใหญ่",
+    "decoys": [
+      "เดินผ่านประตูที่ผู้เฝ้าประตูเปิดให้",
+      "ขุดอุโมงค์ลอดกำแพง",
+      "ปลอมตัวเป็นยมทูตเดินผ่านด่าน"
+    ],
+    "note": "ชิบะ คูคาคุ เป็นผู้ยิงพวกเขาเข้าไป หลังจากถูกขวางที่ประตูทางเข้า",
+    "source": "https://bleach.fandom.com/wiki/Ryoka_Invasion",
+    "evidence": "leading them to seek help from Kūkaku Shiba, who fires them through the Shakonmaku surrounding the Seireitei"
+  },
+  {
+    "id": "second-division-stealth",
+    "tier": "easy",
+    "prompt": "หัวหน้าหน่วยของหน่วยที่ 2 ยังเป็นผู้นำขององค์กรใดด้วย?",
+    "answer": "หน่วยลับ (ออนมิตสึคิโด)",
+    "decoys": [
+      "หน่วยคิโด",
+      "สถาบันวิจัยและพัฒนาเทคโนโลยี",
+      "สภา 46 ห้อง"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Second_Division",
+    "evidence": "Because the Captain of the 2nd Division also leads the Onmitsukidō"
+  },
+  {
+    "id": "soken-mayuri-research",
+    "tier": "easy",
+    "prompt": "ใครจงใจถ่วงเวลาไม่ให้ยมทูตไปช่วยอิชิดะ โซเคน ปู่ของอุริว เพื่อเอาวิญญาณของเขาไปวิจัย?",
+    "answer": "คุโรซึจิ มายูริ",
+    "decoys": [
+      "ไอเซ็น โซสึเกะ",
+      "อิจิมารุ กิน",
+      "ซาราคิ เคนปาจิ"
+    ],
+    "source": "https://bleach.fandom.com/wiki/S%C5%8Dken_Ishida",
+    "evidence": "Mayuri Kurotsuchi reveals to Uryū that this was his doing; he delayed the Shinigami meant to protect Sōken so that he could study Sōken's soul for his research."
+  },
+  {
+    "id": "sokyoku-destroyed-by",
+    "tier": "easy",
+    "prompt": "ใครสองคนทำลายเครื่องมือที่ใช้ประหารรูเคีย?",
+    "answer": "เคียวราคุ ชุนซุย กับ อุคิทาเกะ จูชิโร่",
+    "decoys": [
+      "อิจิมารุ กิน กับ โทเซ็น คานาเมะ",
+      "คุจิกิ เบียคุยะ กับ อาบาราอิ เร็นจิ",
+      "ซอยฟง กับ โอมาเอดะ มาเรจิโยะ"
+    ],
+    "note": "หลังทำลายแล้ว ทั้งสองถูกยามาโมโตะเข้าขวาง",
+    "source": "https://bleach.fandom.com/wiki/Ryoka_Invasion",
+    "evidence": "Having destroyed the Sōkyoku, Shunsui and Captain Jūshirō Ukitake are confronted by Captain-Commander Genryūsai Shigekuni Yamamoto"
+  },
+  {
+    "id": "suifeng-mentor",
+    "tier": "easy",
+    "prompt": "ซอยฟงเคยเป็นองครักษ์และลูกศิษย์ใกล้ชิดของใคร?",
+    "answer": "ชิโฮวอิน โยรุอิจิ",
+    "decoys": [
+      "อุโนฮานะ เร็ตสึ",
+      "อุราฮาระ คิสุเกะ",
+      "ยามาโมโตะ เก็นริวไซ ชิเงคุนิ"
+    ],
+    "note": "ซอยฟงยังโทษอุราฮาระที่ทำให้อาจารย์ของเธอทิ้งโซลโซไซตี้ไปเมื่อกว่าร้อยปีก่อน",
+    "source": "https://bleach.fandom.com/wiki/Su%C3%AC-F%C4%93ng",
+    "evidence": "Yoruichi took Suì-Fēng under her wing as her protégée, and they developed a close relationship as student and mentor."
+  },
+  {
+    "id": "uryu-letzt-stil-cost",
+    "tier": "easy",
+    "prompt": "หลังใช้ ควินซี่ เลทซ์ สติล ในเซย์เรย์เทย์ อุริวต้องแลกกับอะไร?",
+    "answer": "พลังควินซี่ทั้งหมดถูกผนึก",
+    "decoys": [
+      "แขนซ้ายใช้การไม่ได้ถาวร",
+      "อายุขัยสั้นลงครึ่งหนึ่ง",
+      "ความทรงจำเรื่องควินซี่หายไป"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Sanrei_Glove",
+    "evidence": "Quincy: Letzt Stil (One use only, and seals all of the Quincy's powers afterward.)"
+  },
+  {
+    "id": "yoruichi-cat-form",
+    "tier": "easy",
+    "prompt": "ตอนแรกที่ปรากฏตัว ชิโฮวอิน โยรุอิจิ อยู่ในร่างของสัตว์อะไร?",
+    "answer": "แมวดำ",
+    "decoys": [
+      "นกอีกาดำ",
+      "สุนัขจิ้งจอกขาว",
+      "กระต่ายขาว"
+    ],
+    "note": "เธอเป็นยมทูตคนเดียวที่รู้จักว่าแปลงร่างเป็นแมวดำได้นานๆ",
+    "source": "https://bleach.fandom.com/wiki/Yoruichi_Shih%C5%8Din",
+    "evidence": "Unlike any other known Shinigami, she can transform into a small black cat for long periods of time."
+  },
+  {
+    "id": "yoruichi-flash-goddess",
+    "tier": "easy",
+    "prompt": "ด้วยฝีมือชุนโปที่ไม่มีใครเทียบ ชิโฮวอิน โยรุอิจิ ได้รับฉายาว่าอะไร?",
+    "answer": "เทพธิดาแห่งความเร็ว",
+    "decoys": [
+      "เคนปาจิ",
+      "เทพแห่งดาบ",
+      "ราชาแห่งธัญพืช"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Yoruichi_Shih%C5%8Din",
+    "evidence": "Yoruichi holds the title of \"Flash Goddess\""
+  },
+  {
+    "id": "aaroniero-killed-by",
+    "tier": "medium",
+    "prompt": "เอสปาด้าที่ปรากฏตัวในร่างของชิบะ ไคเอน ถูกใครสังหาร?",
+    "answer": "คุจิกิ รูเคีย",
+    "decoys": [
+      "อาบาราอิ เร็นจิ",
+      "อิชิดะ อุริว",
+      "ซาโดะ ยาสึโทระ"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Aaroniero_Arruruerie",
+    "evidence": "Rukia then reveals her San no mai, Shirafune technique, which impales Aaroniero through his head."
+  },
+  {
+    "id": "aizen-former-captain",
+    "tier": "medium",
+    "prompt": "110 ปีก่อนเรื่องหลัก ไอเซ็น โซสึเกะ เป็นรองหัวหน้าหน่วยของใคร?",
+    "answer": "ฮิราโกะ ชินจิ",
+    "decoys": [
+      "อุราฮาระ คิสุเกะ",
+      "มุงูรุมะ เคนเซย์",
+      "โอโตริบาชิ โรจูโร่"
+    ],
+    "note": "หัวหน้าของเขาระแวงเขาอยู่แล้ว จึงจงใจเก็บไว้ใกล้ตัวเพื่อจับตาดู",
+    "source": "https://bleach.fandom.com/wiki/Shinji_Hirako",
+    "evidence": "Shinji Hirako served as Captain of the Fifth Division of the Gotei 13, with Sōsuke Aizen serving as his lieutenant."
+  },
+  {
+    "id": "aizen-sealed-by",
+    "tier": "medium",
+    "prompt": "หลังพ่ายแพ้ในศึกสุดท้าย ไอเซ็นถูกใครผนึกไว้ด้วยวิชาที่เตรียมไว้ล่วงหน้า?",
+    "answer": "อุราฮาระ คิสุเกะ",
+    "decoys": [
+      "ยามาโมโตะ เก็นริวไซ ชิเงคุนิ",
+      "สึคาบิชิ เทสไซ",
+      "คุโรซากิ อิชชิน"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Sousuke_Aizen",
+    "evidence": "When Urahara seals him away using Kyūjūrokkei Kakafūmetsu, he refuses to accept defeat"
+  },
+  {
+    "id": "arrancar-garganta",
+    "tier": "medium",
+    "prompt": "ช่องว่างระหว่างสามโลก ที่อารันคาร์ใช้เดินทางจากเวโก้ มุนโด้ มายังโลกมนุษย์ เรียกว่าอะไร?",
+    "answer": "การ์กันต้า",
+    "decoys": [
+      "ดังไก",
+      "ประตูเซ็นไคมง",
+      "ชัทเทน เบไรช์"
+    ],
+    "note": "ผู้เดินทางต้องสร้างทางเดินจากอนุภาควิญญาณเองระหว่างทาง",
+    "source": "https://bleach.fandom.com/wiki/Garganta",
+    "evidence": "is the void that exists between the Three Worlds that is mainly used by Souls that have become Arrancars and Hollows to move between Hueco Mundo, the Human World, and Soul Society."
+  },
+  {
+    "id": "arrancar-hierro",
+    "tier": "medium",
+    "prompt": "เทคนิคป้องกันของอารันคาร์ ที่อัดพลังจนผิวหนังแข็งพอจะรับคมดาบได้ ชื่ออะไร?",
+    "answer": "เอียร์โร่",
+    "decoys": [
+      "เปสกิซ่า",
+      "โซนีโด",
+      "บาล่า"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Hierro",
+    "evidence": "The user's Reiryoku condenses, creating steel-hard skin strong enough to block a Zanpakutō."
+  },
+  {
+    "id": "arrancar-release-form",
+    "tier": "medium",
+    "prompt": "การปลดปล่อยดาบของอารันคาร์ ซึ่งเทียบได้กับบังไคของยมทูต เรียกว่าอะไร?",
+    "answer": "เรซูเรคซิออน",
+    "decoys": [
+      "ควินซี่ ฟอลชเตนดิก",
+      "ฟูลบริง",
+      "ควินซี่ เลทซ์ สติล"
+    ],
+    "note": "การปลดปล่อยนี้คืนพลังของร่างฮอลโลว์เดิมกลับสู่ร่างมนุษย์",
+    "source": "https://bleach.fandom.com/wiki/Resurrección",
+    "evidence": "It is an Arrancar's equivalent to a Shinigami's Bankai."
+  },
+  {
+    "id": "arrancar-sonido",
+    "tier": "medium",
+    "prompt": "เทคนิคเคลื่อนที่ความเร็วสูงที่ฮอลโลว์และอารันคาร์ใช้ ชื่ออะไร?",
+    "answer": "โซนีโด",
+    "decoys": [
+      "ชุนโป",
+      "ฮิเร็นเคียคุ",
+      "บริงเกอร์ไลท์"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Sonído",
+    "evidence": "Sonído (響転 (ソニード), Sonīdo; Spanish for \"Sound\", Japanese for \"Reverberating Turn\") is a high-speed movement technique utilized by Hollows and Arrancar."
+  },
+  {
+    "id": "espada-number-meaning",
+    "tier": "medium",
+    "prompt": "หมายเลขประจำตัวของเอสปาด้าบอกถึงอะไร?",
+    "answer": "ยิ่งเลขน้อย ยิ่งมีพลังวิญญาณมาก",
+    "decoys": [
+      "ยิ่งเลขมาก ยิ่งแข็งแกร่ง",
+      "ลำดับที่ถูกสร้างเป็นอารันคาร์",
+      "จำนวนฟรัคซิออนที่ปกครอง"
+    ],
+    "note": "หมายเลขถูกสักไว้บนร่าง และต่างคนต่างตำแหน่งกัน",
+    "source": "https://bleach.fandom.com/wiki/Espada",
+    "evidence": "The lower the number, the more Reiryoku the Espada has."
+  },
+  {
+    "id": "espada-primera",
+    "tier": "medium",
+    "prompt": "เอสปาด้าอันดับ 1 (พรีเมร่า) คือใคร?",
+    "answer": "คอยโยตี้ สตาร์ค",
+    "decoys": [
+      "บารากัน ลุยเซ็นบาร์น",
+      "เทียร์ ฮาลิเบล",
+      "อุลคิโอร่า ชิฟเฟอร์"
+    ],
+    "note": "เขาเป็นตัวแทนความตายแบบความโดดเดี่ยว และแยกร่างเป็นสองกับลิลลี่เน็ตต์",
+    "source": "https://bleach.fandom.com/wiki/Espada",
+    "evidence": "Coyote Starrk, the Primera Espada, governs the form of death of solitude"
+  },
+  {
+    "id": "final-getsuga-training-place",
+    "tier": "medium",
+    "prompt": "ก่อนศึกสุดท้ายกับไอเซ็น อิจิโกะฝึกกับอิชชินเพื่อเรียนรู้ท่าไม้ตายสุดท้ายที่ไหน?",
+    "answer": "ดังไก",
+    "decoys": [
+      "ห้องฝึกใต้ร้านอุราฮาระ",
+      "ลาส โนเชส",
+      "เนินโซเคียวคุ"
+    ],
+    "note": "เวลาในที่นั้นเดินต่างจากโลกภายนอก อิชชินจึงหาเวลาฝึกให้ได้ถึงสามเดือน",
+    "source": "https://bleach.fandom.com/wiki/Ichigo_Kurosaki",
+    "evidence": "In the Dangai, Isshin takes advantage of the absence of the Kōtotsu to allow Ichigo to learn the final Getsuga Tenshō."
+  },
+  {
+    "id": "fullbringer-bringer-light",
+    "tier": "medium",
+    "prompt": "แสงสีเขียวที่วาบขึ้นทุกครั้งที่ฟูลบริงเกอร์เคลื่อนที่ความเร็วสูง เรียกว่าอะไร?",
+    "answer": "บริงเกอร์ไลท์",
+    "decoys": [
+      "โซนีโด",
+      "ฮิเร็นเคียคุ",
+      "ชุนโป"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Fullbringer",
+    "evidence": "a green luminescence called Bringer Light (完現光 (ブリンガーライト), Buringā Raito; Japanese for \"Full Manifestation Light\"), which is the preliminary for each high-speed movement."
+  },
+  {
+    "id": "fullbringer-origin",
+    "tier": "medium",
+    "prompt": "ฟูลบริงเกอร์ทุกคนมีจุดร่วมอะไรตั้งแต่ก่อนเกิด?",
+    "answer": "พ่อหรือแม่เคยรอดจากการถูกฮอลโลว์โจมตี",
+    "decoys": [
+      "พ่อหรือแม่เป็นยมทูต",
+      "พ่อหรือแม่เป็นควินซี่",
+      "เกิดในเมืองคาราคุระ"
+    ],
+    "note": "ร่องรอยพลังฮอลโลว์ตกค้างในร่างแม่ แล้วส่งต่อถึงลูกตอนเกิด",
+    "source": "https://bleach.fandom.com/wiki/Fullbringer",
+    "evidence": "However, they differ in that they each have a parent who survived a Hollow attack before they were born."
+  },
+  {
+    "id": "gin-bankai-name",
+    "tier": "medium",
+    "prompt": "บังไคของอิจิมารุ กิน ชื่ออะไร?",
+    "answer": "คามิชินิ โนะ ยาริ",
+    "decoys": [
+      "เอ็นมะ โคโรกิ",
+      "จาคุโฮ ไรโคเบ็น",
+      "ริวมง โฮซึกิมารุ"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Gin_Ichimaru",
+    "evidence": "Bankai: Kamishini no Yari (神殺鎗, God-Killing Spear): In its Bankai form, Gin's Zanpakutō does not change in appearance at all"
+  },
+  {
+    "id": "gin-true-goal",
+    "tier": "medium",
+    "prompt": "อิจิมารุ กิน ทำทีทรยศโซลโซไซตี้และติดตามไอเซ็นมากว่าร้อยปี เพื่อเป้าหมายใด?",
+    "answer": "หาโอกาสลอบสังหารไอเซ็น",
+    "decoys": [
+      "แก้แค้นแทนโทเซ็น คานาเมะ",
+      "ขึ้นเป็นราชาวิญญาณองค์ใหม่",
+      "แก้แค้นยามาโมโตะ เก็นริวไซ ชิเงคุนิ"
+    ],
+    "note": "แผนเกือบสำเร็จ หากโฮเกียวคุไม่กลับเข้าไปรักษาไอเซ็นเสียก่อน",
+    "source": "https://bleach.fandom.com/wiki/Gin_Ichimaru",
+    "evidence": "Gin's ingenious mind allowed him to elaborately plot his attempt to assassinate Aizen for over 100 years"
+  },
+  {
+    "id": "ginjo-first-substitute",
+    "tier": "medium",
+    "prompt": "ในภาคฟูลบริง ใครถูกเปิดเผยว่าเป็นยมทูตตัวแทนคนแรก?",
+    "answer": "กินโจ คูโกะ",
+    "decoys": [
+      "สึคิชิมะ ชูคุโร",
+      "คุโรซากิ อิชชิน",
+      "ชิบะ ไคเอน"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Tale_of_the_Lost_Agent",
+    "evidence": "Ginjō is revealed as being the first Substitute Shinigami."
+  },
+  {
+    "id": "gran-rey-cero-blood",
+    "tier": "medium",
+    "prompt": "เอสปาด้าทำให้ กรัน เรย์ เซโร่ รุนแรงกว่าเซโร่ธรรมดาได้อย่างไร?",
+    "answer": "ผสมเลือดของตนเข้ากับเซโร่",
+    "decoys": [
+      "รวมเซโร่ของเอสปาด้าสองคนเข้าด้วยกัน",
+      "ดึงพลังจากโฮเกียวคุ",
+      "ยิงจากดาบแทนปาก"
+    ],
+    "note": "พลังของมันรุนแรงจนเอสปาด้าถูกห้ามใช้ภายในลาส โนเชส",
+    "source": "https://bleach.fandom.com/wiki/Gran_Rey_Cero",
+    "evidence": "By mixing their blood with a Cero, an Espada can fire a Cero with much greater attack power and speed"
+  },
+  {
+    "id": "grand-fisher-final-death",
+    "tier": "medium",
+    "prompt": "ฮอลโลว์ที่ฆ่าแม่ของอิจิโกะ กลับมาอีกครั้งในร่างอารันคาร์ไม่สมบูรณ์ แล้วถูกใครสังหาร?",
+    "answer": "คุโรซากิ อิชชิน",
+    "decoys": [
+      "คุโรซากิ อิจิโกะ",
+      "ฮิราโกะ ชินจิ",
+      "อิชิดะ ริวเคน"
+    ],
+    "note": "อิชชินเผยตัวว่าเป็นยมทูตในเหตุการณ์นี้",
+    "source": "https://bleach.fandom.com/wiki/Grand_Fisher",
+    "evidence": "He later transformed into an imperfect Arrancar following his defeat at the hands of Ichigo, but was killed by Isshin Kurosaki."
+  },
+  {
+    "id": "grimmjow-arm-severed",
+    "tier": "medium",
+    "prompt": "ใครตัดแขนซ้ายของกริมจอว์ทิ้ง เพื่อลงโทษที่บุกเมืองคาราคุระโดยพลการ?",
+    "answer": "โทเซ็น คานาเมะ",
+    "decoys": [
+      "ไอเซ็น โซสึเกะ",
+      "อิจิมารุ กิน",
+      "อุลคิโอร่า ชิฟเฟอร์"
+    ],
+    "note": "ภายหลังโอริฮิเมะฟื้นฟูแขนข้างนี้คืนให้ตามคำสั่งของไอเซ็น",
+    "source": "https://bleach.fandom.com/wiki/Arrancar_Invasion",
+    "evidence": "Kaname Tōsen severs and destroys his left arm as punishment for his insubordination."
+  },
+  {
+    "id": "grimmjow-release-name",
+    "tier": "medium",
+    "prompt": "ร่างปลดปล่อยดาบของกริมจอว์ เจเกอร์แจ๊คส์ ชื่ออะไร?",
+    "answer": "แพนเทรา",
+    "decoys": [
+      "ลอส โลบอส",
+      "อาร์โรกันเต",
+      "มูร์ซีเอลาโก"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Resurrección",
+    "evidence": "Pantera (豹王 (パンテラ), Pantera; Spanish for \"Panther\", Japanese for \"Panther/Leopard King\") Katana Grind Grimmjow Jaegerjaquez"
+  },
+  {
+    "id": "hirako-division-return",
+    "tier": "medium",
+    "prompt": "หลังไอเซ็นพ่ายแพ้ ฮิราโกะ ชินจิ กลับมาเป็นหัวหน้าหน่วยของหน่วยใด?",
+    "answer": "หน่วยที่ 5",
+    "decoys": [
+      "หน่วยที่ 3",
+      "หน่วยที่ 9",
+      "หน่วยที่ 6"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Fifth_Division",
+    "evidence": "Some time after Aizen's defeat, Shinji Hirako once again became captain of the 5th Division."
+  },
+  {
+    "id": "hisagi-zanpakuto-name",
+    "tier": "medium",
+    "prompt": "ชิไคของฮิซางิ ชูเฮ ที่กลายเป็นอาวุธคล้ายเคียวโซ่คู่ ชื่ออะไร?",
+    "answer": "คาเซะชินิ",
+    "decoys": [
+      "วาบิสุเกะ",
+      "เกะเก็ตสึบุริ",
+      "ทาจิคาเซะ"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Shūhei_Hisagi",
+    "evidence": "Kazeshini's Shikai command is \"Reap\" (刈れ, kare). When released, it takes the form of two kusarigama-like weapons"
+  },
+  {
+    "id": "hitsugaya-bankai-name",
+    "tier": "medium",
+    "prompt": "บังไคของฮิตสึกายะ โทชิโร่ ที่ห่อหุ้มร่างด้วยน้ำแข็งและปีกมังกร ชื่ออะไร?",
+    "answer": "ไดกุเร็น เฮียวรินมารุ",
+    "decoys": [
+      "ฮักกะ โนะ โทงาเมะ",
+      "ซันกะ โนะ ทาจิ",
+      "โคคุโจ เท็นเง็น เมียวโอ"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Tōshirō_Hitsugaya",
+    "evidence": "Daiguren Hyōrinmaru (大紅蓮氷輪丸, Mahāpadma Ice Ring; Viz \"Grand Crimson Lotus Ice Ring\"): Hitsugaya's Bankai causes ice to flow"
+  },
+  {
+    "id": "hueco-mundo-companions",
+    "tier": "medium",
+    "prompt": "ใครสองคนออกเดินทางไปเวโก้ มุนโด้พร้อมอิจิโกะตั้งแต่แรก เพื่อช่วยโอริฮิเมะ?",
+    "answer": "ซาโดะ ยาสึโทระ กับ อิชิดะ อุริว",
+    "decoys": [
+      "คุจิกิ รูเคีย กับ อาบาราอิ เร็นจิ",
+      "อุราฮาระ คิสุเกะ กับ ชิโฮวอิน โยรุอิจิ",
+      "ฮิตสึกายะ โทชิโร่ กับ มัตสึโมโตะ รันงิคุ"
+    ],
+    "note": "รูเคียกับเร็นจิตามไปสมทบทีหลัง",
+    "source": "https://bleach.fandom.com/wiki/Arrancar_Invasion",
+    "evidence": "Ichigo goes to Urahara for help in entering Hueco Mundo and is joined by Sado and Uryū."
+  },
+  {
+    "id": "ichigo-mugetsu",
+    "tier": "medium",
+    "prompt": "ท่าที่อิจิโกะใช้ฟันไอเซ็นจนบาดเจ็บสาหัส แลกกับการสูญเสียพลังยมทูตทั้งหมด ชื่ออะไร?",
+    "answer": "มุเง็ตสึ",
+    "decoys": [
+      "เก็ตสึกะ เท็นโช",
+      "เก็ตสึกะ จูจิโช",
+      "เซ็นเค"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Ichigo_Kurosaki",
+    "evidence": "using Mugetsu, severely wounds and weakens Aizen."
+  },
+  {
+    "id": "ichigo-powers-restored-by",
+    "tier": "medium",
+    "prompt": "ในภาคฟูลบริง หลังอิจิโกะถูกขโมยพลังไป ใครปรากฏตัวและคืนพลังยมทูตให้เขา?",
+    "answer": "คุจิกิ รูเคีย",
+    "decoys": [
+      "อิโนอุเอะ โอริฮิเมะ",
+      "ซาโดะ ยาสึโทระ",
+      "อิชิดะ อุริว"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Tale_of_the_Lost_Agent",
+    "evidence": "Rukia Kuchiki arrives and restores Ichigo's Shinigami powers."
+  },
+  {
+    "id": "ikkaku-hidden-bankai",
+    "tier": "medium",
+    "prompt": "บังไคที่มาดาราเมะ อิกคาคุ ปิดไว้ไม่ให้ใครรู้ นอกจากเร็นจิและยุมิจิกะ ชื่ออะไร?",
+    "answer": "ริวมง โฮซึกิมารุ",
+    "decoys": [
+      "ฮิฮิโอ ซาบิมารุ",
+      "จาคุโฮ ไรโคเบ็น",
+      "เท็กเค็น ทาจิคาเซะ"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Ikkaku_Madarame",
+    "evidence": "Bankai: Ryūmon Hōzukimaru (龍紋鬼灯丸, Dragon Crest Demon Light): To activate it during his battle with Edrad"
+  },
+  {
+    "id": "komamura-bankai-name",
+    "tier": "medium",
+    "prompt": "บังไคของโคมามูระ ซาจิน ที่เรียกนักรบยักษ์ในชุดเกราะออกมา ชื่ออะไร?",
+    "answer": "โคคุโจ เท็นเง็น เมียวโอ",
+    "decoys": [
+      "เอ็นมะ โคโรกิ",
+      "คอนจิกิ อาชิโซกิ จิโซ",
+      "คินชาระ บุโทดัน"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Sajin_Komamura",
+    "evidence": "Bankai: Kokujō Tengen Myō'ō (黒縄天譴明王, Vidyaraja of Kalasutra's Heavenly Punishment; Viz \"Divine Retribution, Black Ropes of Ruination\"): Komamura brings forth the entire giant"
+  },
+  {
+    "id": "kyoraku-zanpakuto-name",
+    "tier": "medium",
+    "prompt": "ดาบฟันวิญญาณคู่ของเคียวราคุ ชุนซุย ที่ทำให้การละเล่นของเด็กกลายเป็นจริง ชื่ออะไร?",
+    "answer": "คาเท็น เคียวคตสึ",
+    "decoys": [
+      "โซเกียว โนะ โคโตวาริ",
+      "ซาคานาเดะ",
+      "คินชาระ"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Shunsui_Kyōraku",
+    "evidence": "Katen Kyōkotsu has the ability to \"turn children's games into reality\""
+  },
+  {
+    "id": "mayuri-bankai-name",
+    "tier": "medium",
+    "prompt": "บังไคของคุโรซึจิ มายูริ ที่เป็นสัตว์ประหลาดยักษ์ลำตัวหนอนผีเสื้อ ชื่ออะไร?",
+    "answer": "คอนจิกิ อาชิโซกิ จิโซ",
+    "decoys": [
+      "โคคุโจ เท็นเง็น เมียวโอ",
+      "เอ็นมะ โคโรกิ",
+      "คินชาระ บุโทดัน"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Mayuri_Kurotsuchi",
+    "evidence": "Bankai: Konjiki Ashisogi Jizō (金色疋殺地蔵, Golden Leg-Cutting Jizō; Viz \"Divine Leg-Cutting Jizō\"): The baby's head on the guard opens its mouth as it produces a giant creature"
+  },
+  {
+    "id": "menos-highest-class",
+    "tier": "medium",
+    "prompt": "ระดับวิวัฒนาการขั้นสูงสุดของเมนอส กรันเด้ คือข้อใด?",
+    "answer": "วาสโต้ ลอร์เด้",
+    "decoys": [
+      "กิลเลียน",
+      "อาจูคัส",
+      "ฮอลโลว์ยักษ์"
+    ],
+    "note": "เมนอสระดับนี้หายากมาก และตัวเล็กราวมนุษย์",
+    "source": "https://bleach.fandom.com/wiki/Hollow",
+    "evidence": "Vasto Lordes (最上大虚 (ヴァストローデ), Vasuto Rōde; Spanish for \"Vast Lord\", Japanese for \"Highest Great Hollow\") are the third classification of Menos and the highest level of evolution."
+  },
+  {
+    "id": "momo-zanpakuto-name",
+    "tier": "medium",
+    "prompt": "ชิไคของฮินาโมริ โมโมะ ที่ยิงลูกไฟระเบิดออกจากใบดาบ ชื่ออะไร?",
+    "answer": "โทบิอุเมะ",
+    "decoys": [
+      "ไฮเนโกะ",
+      "วาบิสุเกะ",
+      "คาเซะชินิ"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Momo_Hinamori",
+    "evidence": "Shikai Special Ability: In this form, Tobiume can release fireballs that explode on impact"
+  },
+  {
+    "id": "nnoitra-killed-by",
+    "tier": "medium",
+    "prompt": "ใครสังหารโนอิตร้า กิลก้า ในลาส โนเชส?",
+    "answer": "ซาราคิ เคนปาจิ",
+    "decoys": [
+      "คุจิกิ เบียคุยะ",
+      "คุโรซึจิ มายูริ",
+      "คุโรซากิ อิจิโกะ"
+    ],
+    "note": "เขาใช้วิชาเคนโด้ปิดฉากการต่อสู้",
+    "source": "https://bleach.fandom.com/wiki/Invasion_of_Hueco_Mundo",
+    "evidence": "Zaraki uses kendō to kill Nnoitra."
+  },
+  {
+    "id": "orihime-soten-kisshun-fairies",
+    "tier": "medium",
+    "prompt": "ท่า โซเท็น คิสชุน ของโอริฮิเมะ ใช้ภูติคู่ใด?",
+    "answer": "อายาเมะ กับ ชุนโอ",
+    "decoys": [
+      "ฮินางิคุ กับ ลิลลี่",
+      "สึบากิ กับ ไบกง",
+      "ลิลลี่ กับ ไบกง"
+    ],
+    "note": "ภูติทั้งสองสร้างม่านครึ่งวงรีครอบสิ่งที่เธอต้องการคืนสภาพ",
+    "source": "https://bleach.fandom.com/wiki/Sōten_Kisshun",
+    "evidence": "Orihime recites her kotodama, which involves summoning Ayame and Shun'ō to form a half-oval barrier around whatever or whomever Orihime wishes"
+  },
+  {
+    "id": "orihime-ultimatum",
+    "tier": "medium",
+    "prompt": "ใครดักพบโอริฮิเมะระหว่างทางกลับจากโซลโซไซตี้ และยื่นคำขาดให้เธอไปอยู่ฝ่ายอารันคาร์เพื่อแลกกับชีวิตเพื่อนๆ?",
+    "answer": "อุลคิโอร่า ชิฟเฟอร์",
+    "decoys": [
+      "กริมจอว์ เจเกอร์แจ๊คส์",
+      "ยามี่ ลีอาโก้",
+      "โทเซ็น คานาเมะ"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Arrancar_Invasion",
+    "evidence": "Ulquiorra confronts Orihime on her way back from Soul Society and gives her an ultimatum of defecting to the Arrancar in order to save her friends."
+  },
+  {
+    "id": "privaron-espada-member",
+    "tier": "medium",
+    "prompt": "อารันคาร์คนใดเป็นพริวารอน เอสปาด้า (อดีตเอสปาด้าที่ถูกลดตำแหน่ง)?",
+    "answer": "ดอร์โดนี่",
+    "decoys": [
+      "จีโอ เวก้า",
+      "ชาลอง คูฟาง",
+      "เทสลา ลินโดครูซ"
+    ],
+    "note": "พริวารอน เอสปาด้าได้รับหมายเลขสามหลัก ดอร์โดนี่คืออารันคาร์หมายเลข 103",
+    "source": "https://bleach.fandom.com/wiki/Dordoni_Alessandro_Del_Socaccio",
+    "evidence": "He was demoted to the 103rd Arrancar and the rank of Privaron Espada."
+  },
+  {
+    "id": "quincy-bladed-weapon",
+    "tier": "medium",
+    "prompt": "อาวุธควินซี่ชนิดเดียวที่มีใบมีด ชื่ออะไร?",
+    "answer": "ซีเลอ ชไนเดอร์",
+    "decoys": [
+      "กินโต",
+      "ซันเรย์ โกลฟ",
+      "ไม้กางเขนควินซี่"
+    ],
+    "note": "อุริวใช้มันทั้งเป็นดาบและเป็นลูกศร",
+    "source": "https://bleach.fandom.com/wiki/Seele_Schneider",
+    "evidence": "According to Uryū Ishida, the Seele Schneider is the only Quincy weapon that has a blade."
+  },
+  {
+    "id": "quincy-hirenkyaku",
+    "tier": "medium",
+    "prompt": "เทคนิคเคลื่อนที่ความเร็วสูงของควินซี่ ที่ขี่กระแสพลังซึ่งสร้างไว้ใต้เท้า ชื่ออะไร?",
+    "answer": "ฮิเร็นเคียคุ",
+    "decoys": [
+      "โซนีโด",
+      "ชุนโป",
+      "บริงเกอร์ไลท์"
+    ],
+    "note": "มายูริชมว่าอุริวใช้ท่านี้ได้ทั้งที่ยังอายุน้อย",
+    "source": "https://bleach.fandom.com/wiki/Hirenkyaku",
+    "evidence": "is an advanced Quincy movement technique, allowing the user to move at high speed by riding on the flow of Reishi created below their feet."
+  },
+  {
+    "id": "quincy-purge-200-years",
+    "tier": "medium",
+    "prompt": "เมื่อกว่า 200 ปีก่อน ควินซี่ส่วนใหญ่ในโลกมนุษย์ถูกฝ่ายใดกวาดล้าง?",
+    "answer": "โซลโซไซตี้",
+    "decoys": [
+      "วันเดนไรช์",
+      "กองทัพอารันคาร์",
+      "ฮอลโลว์จากเวโก้ มุนโด้"
+    ],
+    "note": "การกวาดล้างนี้ทำเพื่อป้องกันการล่มสลายของโลกทั้งสาม",
+    "source": "https://bleach.fandom.com/wiki/Quincy",
+    "evidence": "Most Quincy residing in the Human World were exterminated by the Soul Society over 200 years ago to prevent the collapse of the worlds"
+  },
+  {
+    "id": "rangiku-saved-by",
+    "tier": "medium",
+    "prompt": "ในวัยเด็ก มัตสึโมโตะ รันงิคุ รอดจากความอดอยากเพราะใครช่วยไว้?",
+    "answer": "อิจิมารุ กิน",
+    "decoys": [
+      "ไอเซ็น โซสึเกะ",
+      "ฮิตสึกายะ โทชิโร่",
+      "คิระ อิซึรุ"
+    ],
+    "note": "เขาบอกว่าวันที่ทั้งสองพบกันให้นับเป็นวันเกิดของเธอ",
+    "source": "https://bleach.fandom.com/wiki/Rangiku_Matsumoto",
+    "evidence": "As a child, she was saved by Gin Ichimaru from starvation."
+  },
+  {
+    "id": "rangiku-zanpakuto-name",
+    "tier": "medium",
+    "prompt": "ดาบฟันวิญญาณของมัตสึโมโตะ รันงิคุ ที่สลายใบดาบเป็นผงเถ้า ชื่ออะไร?",
+    "answer": "ไฮเนโกะ",
+    "decoys": [
+      "โทบิอุเมะ",
+      "ซุซุเมะบาจิ",
+      "โซเดะ โนะ ชิรายูกิ"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Rangiku_Matsumoto",
+    "evidence": "Haineko (灰猫, Ash Cat): The Zanpakutō's form is that of a straight-bladed katana."
+  },
+  {
+    "id": "riruka-dollhouse-power",
+    "tier": "medium",
+    "prompt": "ฟูลบริง ดอลล์เฮาส์ ของโดคุกามิเนะ ริรุกะ ทำอะไรได้?",
+    "answer": "ย้ายคนหรือสิ่งของเข้าออกสิ่งที่เธอเห็นว่าน่ารัก",
+    "decoys": [
+      "ย้อนเวลาของสิ่งของที่ทำสัญญาไว้",
+      "แทรกตัวเองเข้าไปในอดีตของเป้าหมาย",
+      "ดึงคนเข้าไปในโลกของวิดีโอเกม"
+    ],
+    "note": "เธอเคยย่อรูเคียแล้วจับใส่ไว้ในตุ๊กตา",
+    "source": "https://bleach.fandom.com/wiki/Riruka_Dokugamine",
+    "evidence": "Riruka's Fullbring gives her the ability to freely move people and objects into or out of anything that she adores or finds cute."
+  },
+  {
+    "id": "ryuken-true-last-quincy",
+    "tier": "medium",
+    "prompt": "ใครเผยตัวว่าเป็นควินซี่คนสุดท้ายตัวจริง?",
+    "answer": "อิชิดะ ริวเคน",
+    "decoys": [
+      "อิชิดะ อุริว",
+      "อิชิดะ โซเคน",
+      "อุราฮาระ คิสุเกะ"
+    ],
+    "note": "เขาคือพ่อของอุริว และเสนอจะคืนพลังให้ลูกชาย",
+    "source": "https://bleach.fandom.com/wiki/Arrancar_Invasion",
+    "evidence": "Ryūken Ishida reveals himself as Uryū Ishida's father and the true Last Quincy."
+  },
+  {
+    "id": "sexta-replacement",
+    "tier": "medium",
+    "prompt": "ช่วงที่กริมจอว์เสียแขนซ้ายไป ใครได้เป็นเอสปาด้าอันดับ 6 แทน?",
+    "answer": "ลุปปี้ อันเทนอร์",
+    "decoys": [
+      "วันเดอร์ไวส์ มาร์เจล่า",
+      "ซาเอลอัปโปโร กรานซ์",
+      "โนอิตร้า กิลก้า"
+    ],
+    "note": "เมื่อโอริฮิเมะรักษาแขนให้ กริมจอว์ก็ฆ่าลุปปี้แล้วชิงตำแหน่งคืน",
+    "source": "https://bleach.fandom.com/wiki/Luppi_Antenor",
+    "evidence": "Shortly after Grimmjow has his arm removed and burned by Kaname Tōsen, Luppi is appointed as the Sexta Espada, replacing the aforementioned Arrancar."
+  },
+  {
+    "id": "shinji-transfer-student",
+    "tier": "medium",
+    "prompt": "ไวเซิร์ดคนใดปลอมตัวเป็นนักเรียนย้ายเข้ามาเรียนในโรงเรียนของอิจิโกะ?",
+    "answer": "ฮิราโกะ ชินจิ",
+    "decoys": [
+      "ซารุงาคิ ฮิโยริ",
+      "ยาโดมารุ ลิซ่า",
+      "มุงูรุมะ เคนเซย์"
+    ],
+    "note": "เขาแนะนำตัวด้วยการเขียนชื่อกลับหลังบนกระดานดำ",
+    "source": "https://bleach.fandom.com/wiki/Shinji_Hirako",
+    "evidence": "Shinji disguises himself as a student at Ichigo's school"
+  },
+  {
+    "id": "shunko-technique",
+    "tier": "medium",
+    "prompt": "เทคนิคขั้นสูงที่ผสานศิลปะการต่อสู้มือเปล่าเข้ากับคิโด ซึ่งโยรุอิจิและซอยฟงใช้ ชื่ออะไร?",
+    "answer": "ชุนโค",
+    "decoys": [
+      "ชุนโป",
+      "ไคโด",
+      "ซันจุตสึ"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Shunkō",
+    "evidence": "Shunkō (瞬閧, Flash War Cry; Viz \"Instant War Cry\") is an advanced battle technique which combines the physical techniques of Hakuda with the spell-based techniques of Kidō."
+  },
+  {
+    "id": "soifon-bankai-name",
+    "tier": "medium",
+    "prompt": "บังไคของซอยฟง ที่มีรูปร่างเป็นฐานยิงขีปนาวุธสีทองหุ้มแขนขวา ชื่ออะไร?",
+    "answer": "จาคุโฮ ไรโคเบ็น",
+    "decoys": [
+      "คามิชินิ โนะ ยาริ",
+      "เท็กเค็น ทาจิคาเซะ",
+      "เซ็มบงซากุระ คาเงโยชิ"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Suì-Fēng",
+    "evidence": "Being a ranged weapon of the artillery sort, Jakuhō Raikōben has the ability to launch the missile attached to its base."
+  },
+  {
+    "id": "soifon-shikai-name",
+    "tier": "medium",
+    "prompt": "ชิไคของซอยฟง ที่ฆ่าศัตรูได้เมื่อแทงจุดเดิมเป็นครั้งที่สอง ชื่ออะไร?",
+    "answer": "ซุซุเมะบาจิ",
+    "decoys": [
+      "ไฮเนโกะ",
+      "คาเซะชินิ",
+      "ทาจิคาเซะ"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Suì-Fēng",
+    "evidence": "As its first step, Suì-Fēng stabs her enemy with Suzumebachi's blade."
+  },
+  {
+    "id": "starrk-defeated-by",
+    "tier": "medium",
+    "prompt": "ในเมืองคาราคุระจำลอง ใครเอาชนะคอยโยตี้ สตาร์ค ได้ทั้งที่ใช้เพียงชิไค?",
+    "answer": "เคียวราคุ ชุนซุย",
+    "decoys": [
+      "โคมามูระ ซาจิน",
+      "ซอยฟง",
+      "ยามาโมโตะ เก็นริวไซ ชิเงคุนิ"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Shunsui_Ky%C5%8Draku",
+    "evidence": "His power is further displayed in his ability to defeat Coyote Starrk's, the Primera Espada, released form with only his Shikai."
+  },
+  {
+    "id": "strike-force-leader",
+    "tier": "medium",
+    "prompt": "หน่วยยมทูตที่โซลโซไซตี้ส่งมาช่วยอิจิโกะที่เมืองคาราคุระหลังอารันคาร์บุกครั้งแรก มีใครเป็นผู้นำ?",
+    "answer": "ฮิตสึกายะ โทชิโร่",
+    "decoys": [
+      "คุจิกิ รูเคีย",
+      "อาบาราอิ เร็นจิ",
+      "มัตสึโมโตะ รันงิคุ"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Arrancar_Invasion",
+    "evidence": "a Shinigami Strike Force led by Tōshirō Hitsugaya and including Rukia Kuchiki is sent to Karakura Town to assist Ichigo"
+  },
+  {
+    "id": "tosen-bankai-name",
+    "tier": "medium",
+    "prompt": "บังไคของโทเซ็น คานาเมะ ที่สร้างโดมสีดำตัดประสาทสัมผัสของศัตรู ชื่ออะไร?",
+    "answer": "เอ็นมะ โคโรกิ",
+    "decoys": [
+      "คอนจิกิ อาชิโซกิ จิโซ",
+      "โคคุโจ เท็นเง็น เมียวโอ",
+      "คามิชินิ โนะ ยาริ"
+    ],
+    "note": "ผู้ถูกขังเหลือเพียงประสาทสัมผัสทางกาย",
+    "source": "https://bleach.fandom.com/wiki/Kaname_Tōsen",
+    "evidence": "Bankai: Suzumushi Tsuishiki: Enma Kōrogi (清虫終式・閻魔蟋蟀, Cricket Final Form: Yama Cricket"
+  },
+  {
+    "id": "tsukishima-fullbring-name",
+    "tier": "medium",
+    "prompt": "ฟูลบริงของสึคิชิมะ ชูคุโร ที่แปลงที่คั่นหนังสือเป็นดาบ ชื่ออะไร?",
+    "answer": "บุ๊ค ออฟ ดิ เอนด์",
+    "decoys": [
+      "ครอส ออฟ สแคฟโฟลด์",
+      "ไทม์ เทลส์ โน ไลส์",
+      "ดอลล์เฮาส์"
+    ],
+    "note": "ดาบเล่มนี้ฟันได้สองแบบ แบบหนึ่งทำร้ายศัตรู อีกแบบแทรกตัวเขาเข้าไปในอดีตของเป้าหมาย",
+    "source": "https://bleach.fandom.com/wiki/Shūkurō_Tsukishima",
+    "evidence": "Book of the End (ブック・オブ・ジ・エンド, Bukku obu ji Endo): Tsukishima's Fullbring manifests itself in his bookmark"
+  },
+  {
+    "id": "ukitake-gives-badge",
+    "tier": "medium",
+    "prompt": "ใครมอบตรายมทูตตัวแทนให้อิจิโกะ เป็นการขอบคุณที่ช่วยรูเคีย?",
+    "answer": "อุคิทาเกะ จูชิโร่",
+    "decoys": [
+      "ยามาโมโตะ เก็นริวไซ ชิเงคุนิ",
+      "อุราฮาระ คิสุเกะ",
+      "เคียวราคุ ชุนซุย"
+    ],
+    "source": "https://bleach.fandom.com/wiki/J%C5%ABshir%C5%8D_Ukitake",
+    "evidence": "As thanks for helping save Rukia, Ukitake later gives Ichigo Kurosaki a badge"
+  },
+  {
+    "id": "ulquiorra-final-fight",
+    "tier": "medium",
+    "prompt": "ในเวโก้ มุนโด้ อิจิโกะในร่างฮอลโลว์ร่างใหม่ สังหารเอสปาด้าคนใดในการต่อสู้ครั้งสุดท้าย?",
+    "answer": "อุลคิโอร่า ชิฟเฟอร์",
+    "decoys": [
+      "กริมจอว์ เจเกอร์แจ๊คส์",
+      "โนอิตร้า กิลก้า",
+      "ยามี่ ลีอาโก้"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Invasion_of_Hueco_Mundo",
+    "evidence": "Ichigo finally kills Ulquiorra in their final fight due to his new Hollow form."
+  },
+  {
+    "id": "ulquiorra-form-of-death",
+    "tier": "medium",
+    "prompt": "อุลคิโอร่า ชิฟเฟอร์ เอสปาด้าอันดับ 4 เป็นตัวแทนของความตายแบบใด?",
+    "answer": "ความว่างเปล่า",
+    "decoys": [
+      "ความสิ้นหวัง",
+      "ความโดดเดี่ยว",
+      "ความบ้าคลั่ง"
+    ],
+    "note": "เขาเชื่อว่าสิ่งที่ตามองไม่เห็นย่อมไม่มีอยู่จริง",
+    "source": "https://bleach.fandom.com/wiki/Espada",
+    "evidence": "Ulquiorra Cifer, the Cuatro Espada, governs the form of death of nihility"
+  },
+  {
+    "id": "ulquiorra-second-release",
+    "tier": "medium",
+    "prompt": "ร่างปลดปล่อยขั้นที่สองที่อุลคิโอร่าใช้สู้กับอิจิโกะ เรียกว่าอะไร?",
+    "answer": "เซกุนด้า เอทาปา",
+    "decoys": [
+      "บังไค",
+      "ควินซี่ ฟอลชเตนดิก",
+      "ควินซี่ เลทซ์ สติล"
+    ],
+    "note": "ในบรรดาเอสปาด้า มีเขาเพียงคนเดียวที่แปลงร่างขั้นนี้ได้",
+    "source": "https://bleach.fandom.com/wiki/Resurrección",
+    "evidence": "Ulquiorra Cifer, the 4th Espada, has demonstrated the ability to attain a second form of Resurrección called Segunda Etapa"
+  },
+  {
+    "id": "urahara-exile-sentence",
+    "tier": "medium",
+    "prompt": "หลังเหตุการณ์ฮอลโลว์ฟิเคชันเมื่อกว่าร้อยปีก่อน อุราฮาระ คิสุเกะ ถูกตัดสินลงโทษอย่างไร?",
+    "answer": "ถูกริบพลังยมทูตและเนรเทศไปโลกมนุษย์",
+    "decoys": [
+      "ถูกจองจำในมุเค็นตลอดกาล",
+      "ถูกประหารบนโซเคียวคุ",
+      "ถูกขังในหอสำนึกผิด"
+    ],
+    "note": "ไอเซ็นเป็นผู้ใส่ร้ายให้อุราฮาระกับเทสไซเป็นแพะรับบาป",
+    "source": "https://bleach.fandom.com/wiki/Kisuke_Urahara",
+    "evidence": "Urahara was sentenced to be stripped of his Shinigami powers and exiled to the Human World."
+  },
+  {
+    "id": "urahara-former-division",
+    "tier": "medium",
+    "prompt": "อุราฮาระ คิสุเกะ เคยเป็นหัวหน้าหน่วยของหน่วยใด?",
+    "answer": "หน่วยที่ 12",
+    "decoys": [
+      "หน่วยที่ 2",
+      "หน่วยที่ 6",
+      "หน่วยที่ 10"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Twelfth_Division",
+    "evidence": "The 12th Division has been directly linked to the Shinigami Research and Development Institute over 100 years ago by former Captain Kisuke Urahara."
+  },
+  {
+    "id": "urahara-zanpakuto-name",
+    "tier": "medium",
+    "prompt": "ดาบฟันวิญญาณของอุราฮาระ คิสุเกะ ชื่ออะไร?",
+    "answer": "เบนิฮิเมะ",
+    "decoys": [
+      "ไฮเนโกะ",
+      "โทบิอุเมะ",
+      "ซุซุเมะบาจิ"
+    ],
+    "note": "เป็นหนึ่งในดาบไม่กี่เล่มที่วิญญาณดาบเป็นหญิงแต่ผู้ถือเป็นชาย",
+    "source": "https://bleach.fandom.com/wiki/Kisuke_Urahara",
+    "evidence": "Benihime (紅姫, Crimson Princess; Viz \"Red Princess\"): A blade described by Urahara as \"not nice\", it is one of the few known Zanpakutō with a female spirit"
+  },
+  {
+    "id": "visored-what-they-are",
+    "tier": "medium",
+    "prompt": "ไวเซิร์ด คือกลุ่มของผู้ใด?",
+    "answer": "ยมทูตที่ได้พลังฮอลโลว์",
+    "decoys": [
+      "ฮอลโลว์ที่ถอดหน้ากากออก",
+      "มนุษย์ที่เกิดมาพร้อมพลังฮอลโลว์",
+      "ควินซี่ที่ได้พลังยมทูต"
+    ],
+    "note": "พวกเขาเคยเป็นหัวหน้าและรองหัวหน้าหน่วย แต่ถูกตราหน้าว่าเป็นอาชญากรเพราะได้พลังต้องห้าม",
+    "source": "https://bleach.fandom.com/wiki/Visored",
+    "evidence": "The Visored (仮面の軍勢 (ヴァイザード), Vaizādo; Japanese for \"Masked Army\"; Viz \"Vizard\") are a group of Shinigami that have acquired Hollow powers."
+  },
+  {
+    "id": "yamamoto-zanpakuto-name",
+    "tier": "medium",
+    "prompt": "ดาบฟันวิญญาณธาตุไฟของยามาโมโตะ เก็นริวไซ ชิเงคุนิ ซึ่งในสภาพผนึกดูเหมือนไม้เท้า ชื่ออะไร?",
+    "answer": "ริวจิน จักกะ",
+    "decoys": [
+      "เอ็นเก็ตสึ",
+      "โทบิอุเมะ",
+      "คาเท็น เคียวคตสึ"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Genryūsai_Shigekuni_Yamamoto",
+    "evidence": "In its sealed form, Ryūjin Jakka usually takes the appearance of a wooden cane"
+  },
+  {
+    "id": "yammy-first-incursion",
+    "tier": "medium",
+    "prompt": "ในการบุกเมืองคาราคุระครั้งแรกของอารันคาร์ ใครทุบตีอิจิโกะกับเพื่อนอย่างโหดเหี้ยม จนอุราฮาระกับโยรุอิจิต้องมาช่วย?",
+    "answer": "ยามี่ ลีอาโก้",
+    "decoys": [
+      "กริมจอว์ เจเกอร์แจ๊คส์",
+      "ลุปปี้ อันเทนอร์",
+      "โนอิตร้า กิลก้า"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Arrancar_Invasion",
+    "evidence": "with Yammy viciously brutalizing Ichigo and his friends until Kisuke Urahara and Yoruichi Shihōin save them"
+  },
+  {
+    "id": "aizen-tricks-yhwach",
+    "tier": "hard",
+    "prompt": "ในศึกสุดท้ายที่เซย์เรย์เทย์ ใครใช้ภาพลวงตาหลอกยูไฮบาค เปิดโอกาสให้อิจิโกะฟันเขาขาดสองท่อน?",
+    "answer": "ไอเซ็น โซสึเกะ",
+    "decoys": [
+      "อุราฮาระ คิสุเกะ",
+      "เคียวราคุ ชุนซุย",
+      "โอโตริบาชิ โรจูโร่"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Quincy_Blood_War",
+    "evidence": "Aizen tricks Yhwach with Kanzen Saimin, giving Ichigo the opportunity to nearly kill him."
+  },
+  {
+    "id": "arrancar-pesquisa",
+    "tier": "hard",
+    "prompt": "เทคนิคของอารันคาร์ ที่ส่งคลื่นออกไปหาตำแหน่งและวัดพลังของผู้อื่น ชื่ออะไร?",
+    "answer": "เปสกิซ่า",
+    "decoys": [
+      "เอียร์โร่",
+      "โซนีโด",
+      "บาล่า"
+    ],
+    "note": "กริมจอว์และฟรัคซิออนต้องหลับตาทำสมาธิก่อนใช้",
+    "source": "https://bleach.fandom.com/wiki/Pesquisa",
+    "evidence": "The practitioner sends out a radiating pulse which reacts to sources of Reiatsu within a certain proximity"
+  },
+  {
+    "id": "as-nodt-killed-by",
+    "tier": "hard",
+    "prompt": "ใครสังหารแอส โนดท์ หลังจากที่เขาเอาชนะคุจิกิ เบียคุยะ ได้?",
+    "answer": "คุจิกิ รูเคีย",
+    "decoys": [
+      "คุจิกิ เบียคุยะ",
+      "อาบาราอิ เร็นจิ",
+      "ฮิตสึกายะ โทชิโร่"
+    ],
+    "note": "เขาถูกแช่แข็งและแตกสลายด้วยบังไคของผู้ชนะ",
+    "source": "https://bleach.fandom.com/wiki/%C3%84s_N%C3%B6dt",
+    "evidence": "Äs is frozen and killed by Rukia's Bankai, Hakka no Togame, his body shattering and falling apart."
+  },
+  {
+    "id": "badge-true-purpose",
+    "tier": "hard",
+    "prompt": "จุดประสงค์ที่แท้จริงของตรายมทูตตัวแทนคืออะไร?",
+    "answer": "สอดส่องและจำกัดพลังของผู้ถือ",
+    "decoys": [
+      "เพิ่มพลังวิญญาณของผู้ถือให้แข็งแกร่งขึ้น",
+      "ใช้เปิดประตูไปโซลโซไซตี้ได้เอง",
+      "บันทึกความทรงจำของผู้ถือไว้"
+    ],
+    "source": "https://bleach.fandom.com/wiki/K%C5%ABgo_Ginj%C5%8D",
+    "evidence": "the true purpose of the Substitute Shinigami Badge is to observe and restrict the power of its owner"
+  },
+  {
+    "id": "bala-vs-cero",
+    "tier": "hard",
+    "prompt": "บาล่า ต่างจากเซโร่อย่างไร?",
+    "answer": "พลังน้อยกว่า แต่เร็วกว่ามาก",
+    "decoys": [
+      "พลังมากกว่า แต่ช้ากว่ามาก",
+      "ใช้ได้เฉพาะเอสปาด้า",
+      "ใช้ได้เฉพาะในร่างปลดปล่อยดาบ"
+    ],
+    "note": "บาล่าเร็วกว่าเซโร่ราว 20 เท่า จึงยิงต่อเนื่องได้",
+    "source": "https://bleach.fandom.com/wiki/Bala",
+    "evidence": "While similar in function to a Cero, a Bala is not nearly as powerful, but thanks to its composition, its speed is 20 times faster"
+  },
+  {
+    "id": "bambietta-schrift",
+    "tier": "hard",
+    "prompt": "ชริฟท์ของแบมบีเอตต้า บาสเตอร์ไบน์ คืออะไร?",
+    "answer": "E: ดิ เอ็กซ์โพลด",
+    "decoys": [
+      "F: เดอะ เฟียร์",
+      "H: เดอะ ฮีต",
+      "T: เดอะ ธันเดอร์โบลต์"
+    ],
+    "note": "ชริฟท์นี้ทำให้เธอเปลี่ยนสิ่งที่พลังแตะเป็นระเบิดได้",
+    "source": "https://bleach.fandom.com/wiki/Bambietta_Basterbine",
+    "evidence": "is a Quincy and a member of the Wandenreich's Sternritter with the designation E: The Explode."
+  },
+  {
+    "id": "baraggan-form-of-death",
+    "tier": "hard",
+    "prompt": "บารากัน ลุยเซ็นบาร์น เอสปาด้าอันดับ 2 เป็นตัวแทนของความตายแบบใด?",
+    "answer": "ความชรา",
+    "decoys": [
+      "ความโกรธ",
+      "ความโลภ",
+      "ความเสียสละ"
+    ],
+    "note": "พลังของเขาเร่งให้ทุกสิ่งที่สัมผัสแก่และเน่าผุ แต่สุดท้ายเขาก็ตายด้วยพลังของตัวเอง",
+    "source": "https://bleach.fandom.com/wiki/Espada",
+    "evidence": "Baraggan Louisenbairn, the Segunda Espada, governs the form of death of old age"
+  },
+  {
+    "id": "blut-weakness",
+    "tier": "hard",
+    "prompt": "จุดอ่อนสำคัญของ บลูท เทคนิคเสริมพลังโจมตีและป้องกันของควินซี่ คืออะไร?",
+    "answer": "ใช้แบบโจมตีกับแบบป้องกันพร้อมกันไม่ได้",
+    "decoys": [
+      "ใช้แล้วพลังควินซี่หายไปถาวร",
+      "ใช้ได้เฉพาะควินซี่สายเลือดบริสุทธิ์",
+      "ใช้ได้เฉพาะในเวลากลางคืน"
+    ],
+    "note": "สองแบบนี้ใช้ระบบพลังแยกกัน จึงเปิดพร้อมกันไม่ได้",
+    "source": "https://bleach.fandom.com/wiki/Blut",
+    "evidence": "because the independent forms of the technique for attack and defense operate using two different Reishi systems, they cannot be employed simultaneously."
+  },
+  {
+    "id": "byakuya-senkei",
+    "tier": "hard",
+    "prompt": "รูปแบบบังไคของคุจิกิ เบียคุยะ ซึ่งเป็นร่างแท้ของดาบและต้องใช้เลือดของเขาในการปลดปล่อย ชื่ออะไร?",
+    "answer": "เซ็นเค",
+    "decoys": [
+      "โกเค",
+      "ชูเค ฮาคุเทย์เค็น",
+      "เซ็นกะ"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Byakuya_Kuchiki",
+    "evidence": "It represents the true form of Senbonzakura and requires Byakuya's blood to be activated."
+  },
+  {
+    "id": "chad-left-arm-attack",
+    "tier": "hard",
+    "prompt": "ท่าโจมตีของ บราโซ อิซเกียร์ดา เดล ดิอาโบล แขนปีศาจของแชด ชื่ออะไร?",
+    "answer": "ลา มูเอร์เต้",
+    "decoys": [
+      "เอล ดิเรคโต",
+      "บาล่า",
+      "กรัน เรย์ เซโร่"
+    ],
+    "source": "https://bleach.fandom.com/wiki/La_Muerte",
+    "evidence": "is a technique used by Yasutora Sado while utilizing his Fullbring, Brazo Izquierda del Diablo."
+  },
+  {
+    "id": "espada-zero",
+    "tier": "hard",
+    "prompt": "เอสปาด้าคนใดเปลี่ยนจากหมายเลข 10 เป็นหมายเลข 0 หลังปลดปล่อยดาบ?",
+    "answer": "ยามี่ ลีอาโก้",
+    "decoys": [
+      "อาโรนิเอโร่ อาร์รูรูเอรี",
+      "ซาเอลอัปโปโร กรานซ์",
+      "โซมาริ เลอโร"
+    ],
+    "note": "เขาเผยว่าอันดับเอสปาด้าที่แท้จริงไล่จาก 0 ถึง 9",
+    "source": "https://bleach.fandom.com/wiki/Yammy_Llargo",
+    "evidence": "He normally holds the rank of Diez (10) Espada, but becomes the Cero (0) Espada after releasing his Zanpakutō."
+  },
+  {
+    "id": "gin-shikai-command",
+    "tier": "hard",
+    "prompt": "คำสั่งปลดปล่อยชิไคของอิจิมารุ กิน คือคำว่าอะไร?",
+    "answer": "จงยิงสังหาร",
+    "decoys": [
+      "จงแตกสลาย",
+      "จงกึกก้อง",
+      "จงคำราม"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Gin_Ichimaru",
+    "evidence": "It is triggered by the phrase \"Shoot to kill\" (射殺せ, Ikorose)."
+  },
+  {
+    "id": "giriko-fullbring-object",
+    "tier": "hard",
+    "prompt": "ฟูลบริงของคุตสึซาวะ กิริโกะ สถิตอยู่ในสิ่งใด?",
+    "answer": "นาฬิกาพกมรดกตระกูล",
+    "decoys": [
+      "ที่คั่นหนังสือ",
+      "เครื่องเล่นเกมพกพา",
+      "จี้สร้อยคอรูปกากบาท"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Giriko_Kutsuzawa",
+    "evidence": "Giriko is very attached to his family heirloom, the antiquated pocket watch that became his Fullbring."
+  },
+  {
+    "id": "grimmjow-menos-class",
+    "tier": "hard",
+    "prompt": "ก่อนจะเป็นอารันคาร์ กริมจอว์เป็นเมนอสระดับใด?",
+    "answer": "อาจูคัส",
+    "decoys": [
+      "กิลเลียน",
+      "วาสโต้ ลอร์เด้",
+      "ฮอลโลว์ยักษ์"
+    ],
+    "note": "ตอนนั้นเขามีร่างเป็นเสือดำตัวเล็ก",
+    "source": "https://bleach.fandom.com/wiki/Grimmjow_Jaegerjaquez",
+    "evidence": "Before becoming an Arrancar, Grimmjow was a small panther-like Adjuchas."
+  },
+  {
+    "id": "harribel-fraccion-name",
+    "tier": "hard",
+    "prompt": "ฟรัคซิออนทั้งสามของเทียร์ ฮาลิเบล (อาปาชี่ มิลา โรส และซุนซุน) ถูกเรียกรวมกันว่าอะไร?",
+    "answer": "เทรส เบสเตียส",
+    "decoys": [
+      "พริวารอน เอสปาด้า",
+      "นูเมรอส",
+      "เอ็กเซเกียส"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Emilou_Apacci",
+    "evidence": "one of Tier Harribel's three Fracción, collectively known as the Tres Bestias."
+  },
+  {
+    "id": "harribel-imprisoned",
+    "tier": "hard",
+    "prompt": "หลังวันเดนไรช์พิชิตเวโก้ มุนโด้ ใครถูกจับขังไว้?",
+    "answer": "เทียร์ ฮาลิเบล",
+    "decoys": [
+      "เนลลิเอล ทู โอเดลชวานค์",
+      "กริมจอว์ เจเกอร์แจ๊คส์",
+      "อุลคิโอร่า ชิฟเฟอร์"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Quincy_Blood_War",
+    "evidence": "The Wandenreich conquer Hueco Mundo and imprison Tier Harribel."
+  },
+  {
+    "id": "harribel-release-name",
+    "tier": "hard",
+    "prompt": "เทียร์ ฮาลิเบล ปลดปล่อยดาบเป็นร่างใดตอนสู้กับฮิตสึกายะ?",
+    "answer": "ติบูรอน",
+    "decoys": [
+      "ลอส โลบอส",
+      "กลอโตเนเรีย",
+      "มูร์ซีเอลาโก"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Tier_Harribel",
+    "evidence": "wondering how Apacci, Mila Rose, and Sung-Sun could have lost, activates her Zanpakutō's Resurrección, Tiburón."
+  },
+  {
+    "id": "hirako-shikai-ability",
+    "tier": "hard",
+    "prompt": "ความสามารถชิไคของซาคานาเดะ ดาบฟันวิญญาณของฮิราโกะ ชินจิ เรียกว่าอะไร?",
+    "answer": "โลกกลับด้าน",
+    "decoys": [
+      "สะกดจิตสมบูรณ์",
+      "โลกแห่งอวิชชา",
+      "เท็นโซ จูริน"
+    ],
+    "note": "ศัตรูจะรับรู้ซ้ายขวา บนล่าง หน้าหลังกลับกันหมด",
+    "source": "https://bleach.fandom.com/wiki/Shinji_Hirako",
+    "evidence": "Sakanade's Shikai ability creates a Sakasama no Sekai (逆様の世界, Inverted World; Viz \"Upside Down World\")."
+  },
+  {
+    "id": "hiyori-cut-by",
+    "tier": "hard",
+    "prompt": "ในเมืองคาราคุระจำลอง ใครฟันซารุงาคิ ฮิโยริ ขาดเป็นสองท่อนจากด้านหลัง?",
+    "answer": "อิจิมารุ กิน",
+    "decoys": [
+      "ไอเซ็น โซสึเกะ",
+      "โทเซ็น คานาเมะ",
+      "วันเดอร์ไวส์ มาร์เจล่า"
+    ],
+    "source": "https://bleach.fandom.com/wiki/White_Invasion",
+    "evidence": "Hiyori is bifurcated from behind by Gin Ichimaru and left in critical condition."
+  },
+  {
+    "id": "hogyoku-true-power",
+    "tier": "hard",
+    "prompt": "พลังที่แท้จริงของ โฮเกียวคุ คืออะไร?",
+    "answer": "ทำให้ความปรารถนาของผู้คนรอบตัวกลายเป็นจริง",
+    "decoys": [
+      "มองเห็นอนาคตทุกแบบพร้อมกัน",
+      "ขโมยพลังของผู้ที่อยู่ใกล้",
+      "ย้อนเวลาของสิ่งที่สัมผัส"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Hōgyoku",
+    "evidence": "Rather, the Hōgyoku's true power is the ability to absorb the desires of those around it and manifest them into reality."
+  },
+  {
+    "id": "isshin-former-division",
+    "tier": "hard",
+    "prompt": "คุโรซากิ อิชชิน พ่อของอิจิโกะ เคยเป็นหัวหน้าหน่วยของหน่วยใด?",
+    "answer": "หน่วยที่ 10",
+    "decoys": [
+      "หน่วยที่ 12",
+      "หน่วยที่ 6",
+      "หน่วยที่ 3"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Isshin_Kurosaki",
+    "evidence": "is the former captain of the 10th Division, husband of Masaki Kurosaki"
+  },
+  {
+    "id": "ittou-kaso",
+    "tier": "hard",
+    "prompt": "ฮาโดที่ 96 ซึ่งเป็นคาถาต้องห้ามที่ผู้ใช้ต้องใช้ร่างกายตัวเองเป็นเครื่องสังเวย ชื่ออะไร?",
+    "answer": "อิตโต คาโซ",
+    "decoys": [
+      "คุโรฮิตสึงิ",
+      "โกริวเท็นเม็ตสึ",
+      "เซ็นจู โคเท็น ไทโฮ"
+    ],
+    "note": "ยามาโมโตะใช้คาถานี้ในการต่อสู้ครั้งสุดท้ายกับไอเซ็น",
+    "source": "https://bleach.fandom.com/wiki/Ittō_Kasō",
+    "evidence": "Ittō Kasō is a forbidden offensive technique. The practitioner can only activate the spell by using their own body as the catalyst."
+  },
+  {
+    "id": "kenpachi-zanpakuto-name",
+    "tier": "hard",
+    "prompt": "ดาบฟันวิญญาณของซาราคิ เคนปาจิ ซึ่งเขาเพิ่งได้รู้ชื่อในสงครามเลือดพันปี ชื่ออะไร?",
+    "answer": "โนซาราชิ",
+    "decoys": [
+      "โฮซึกิมารุ",
+      "กนเรียวมารุ",
+      "เท็นเค็น"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Kenpachi_Zaraki",
+    "evidence": "Before Zaraki knew its name, Soul Society believed that Zaraki's overwhelming Reiatsu was forcing Nozarashi into a constant released state"
+  },
+  {
+    "id": "kira-wabisuke-ability",
+    "tier": "hard",
+    "prompt": "ความสามารถชิไคของวาบิสุเกะ ดาบฟันวิญญาณของคิระ อิซึรุ คืออะไร?",
+    "answer": "เพิ่มน้ำหนักของสิ่งที่ฟันโดนเป็นสองเท่า",
+    "decoys": [
+      "แช่แข็งทุกสิ่งที่ใบดาบฟันโดน",
+      "ทำให้ศัตรูเห็นภาพลวงตา",
+      "ทำให้สิ่งที่ฟันโดนเบาลงครึ่งหนึ่ง"
+    ],
+    "note": "ฟันซ้ำกี่ครั้งก็เพิ่มเป็นสองเท่าไปเรื่อย ๆ จนศัตรูยกดาบไม่ขึ้น",
+    "source": "https://bleach.fandom.com/wiki/Izuru_Kira",
+    "evidence": "Shikai Special Ability: In this form, Wabisuke doubles the weight of any object it strikes."
+  },
+  {
+    "id": "kurohitsugi",
+    "tier": "hard",
+    "prompt": "ฮาโดที่ 90 ที่ขังเป้าหมายไว้ในโลงศพสีดำ ชื่ออะไร?",
+    "answer": "คุโรฮิตสึงิ",
+    "decoys": [
+      "โกริวเท็นเม็ตสึ",
+      "เซ็นจู โคเท็น ไทโฮ",
+      "ไรโคโฮ"
+    ],
+    "note": "ไอเซ็นเป็นผู้ใช้คาถานี้ที่โด่งดังที่สุด",
+    "source": "https://bleach.fandom.com/wiki/Kurohitsugi",
+    "evidence": "Kurohitsugi is a high-level Kidō which seals its target in a black spiritual coffin."
+  },
+  {
+    "id": "kyoraku-bankai-name",
+    "tier": "hard",
+    "prompt": "บังไคของเคียวราคุ ชุนซุย ที่บังคับให้คู่ต่อสู้เล่นละครโศกนาฏกรรมคู่รักฆ่าตัวตาย ชื่ออะไร?",
+    "answer": "คาเท็น เคียวคตสึ คารามัตสึ ชินจู",
+    "decoys": [
+      "คินชาระ บุโทดัน",
+      "ซากาชิมะ โยโคชิมะ ฮัปโปฟุซางาริ",
+      "คันนงบิรากิ เบนิฮิเมะ อาราตาเมะ"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Shunsui_Kyōraku",
+    "evidence": "Bankai: Katen Kyōkotsu: Karamatsu Shinjū (花天狂骨枯松心中, Bones of Heavenly Blooming Madness: Withering Pine Lovers' Suicide;"
+  },
+  {
+    "id": "kyoraku-new-rank",
+    "tier": "hard",
+    "prompt": "หลังยามาโมโตะเสียชีวิตในสงครามเลือดพันปี เคียวราคุ ชุนซุย ได้รับตำแหน่งใด?",
+    "answer": "ผู้บัญชาการใหญ่",
+    "decoys": [
+      "หัวหน้าหน่วยศูนย์",
+      "ผู้บัญชาการหน่วยคิโด",
+      "รองหัวหน้าหน่วย"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Shunsui_Kyōraku",
+    "evidence": "Upon being promoted to Captain-Commander, Shunsui is willing to make highly risky and controversial decisions"
+  },
+  {
+    "id": "las-noches-release-ban",
+    "tier": "hard",
+    "prompt": "ตามคำของอุลคิโอร่า เอสปาด้ากลุ่มใดห้ามปลดปล่อยดาบภายในลาส โนเชส?",
+    "answer": "อันดับ 4 ขึ้นไป",
+    "decoys": [
+      "อันดับ 5 ลงไป",
+      "เฉพาะอันดับ 1",
+      "เฉพาะผู้ที่มีฟรัคซิออน"
+    ],
+    "note": "พลังของพวกเขารุนแรงพอจะทำลายป้อมทั้งหลังได้",
+    "source": "https://bleach.fandom.com/wiki/Espada",
+    "evidence": "any Espada ranked 4th or higher are not allowed to release their Zanpakutō within Las Noches"
+  },
+  {
+    "id": "masaki-race",
+    "tier": "hard",
+    "prompt": "คุโรซากิ มาซากิ แม่ของอิจิโกะ เป็นเผ่าพันธุ์ใด?",
+    "answer": "ควินซี่",
+    "decoys": [
+      "ยมทูต",
+      "ฟูลบริงเกอร์",
+      "ไวเซิร์ด"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Masaki_Kurosaki",
+    "evidence": "After saving him, she introduced herself and said that she was a Quincy"
+  },
+  {
+    "id": "mask-killed-by",
+    "tier": "hard",
+    "prompt": "ในสงครามเลือดพันปี ใครเผามาสก์ เดอ มาสคิวลีน จนสิ้นซาก?",
+    "answer": "อาบาราอิ เร็นจิ",
+    "decoys": [
+      "มุงูรุมะ เคนเซย์",
+      "โอโตริบาชิ โรจูโร่",
+      "ฮิตสึกายะ โทชิโร่"
+    ],
+    "note": "เขาได้บังไคที่แท้จริงจากการฝึกกับเฮียวสุเบะ อิจิเบ",
+    "source": "https://bleach.fandom.com/wiki/Quincy_Blood_War",
+    "evidence": "Renji, having gained his true Bankai by training with Ichibe'e, uses it to incinerate Mask."
+  },
+  {
+    "id": "nimaiya-asauchi",
+    "tier": "hard",
+    "prompt": "ใครเป็นผู้ตีอาซาอุจิทุกเล่มด้วยตัวเอง?",
+    "answer": "นิไมยะ โอเอ็ตสึ",
+    "decoys": [
+      "เฮียวสุเบะ อิจิเบ",
+      "คิรินจิ เท็นจิโร่",
+      "ชูทาระ เซ็นจูมารุ"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Ōetsu_Nimaiya",
+    "evidence": "As the creator of the Shinigami's Zanpakutō, who also forges every Asauchi himself"
+  },
+  {
+    "id": "nnoitra-release-name",
+    "tier": "hard",
+    "prompt": "ดาบรูปเคียวยักษ์ของโนอิตร้า กิลก้า ชื่ออะไร?",
+    "answer": "ซันตา เทเรซา",
+    "decoys": [
+      "อาร์โรกันเต",
+      "กามูซา",
+      "ฟอร์นิคาราส"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Nnoitra_Gilga",
+    "evidence": "unlike the basic sword shape of most Arrancar, Santa Teresa takes the form of a giant scythe-like weapon"
+  },
+  {
+    "id": "orihime-reflecting-shield",
+    "tier": "hard",
+    "prompt": "ท่าของโอริฮิเมะที่สร้างโล่ซึ่งส่งแรงโจมตีย้อนกลับไปตามทิศที่โจมตีมา ชื่ออะไร?",
+    "answer": "ชิเท็น โคชุน",
+    "decoys": [
+      "ซันเท็น เคสชุน",
+      "โซเท็น คิสชุน",
+      "โคเท็น ซันชุน"
+    ],
+    "note": "ภูติสามตนสร้างโล่ แล้วภูติตนที่สี่อยู่ตรงกลางคอยสะท้อนแรง",
+    "source": "https://bleach.fandom.com/wiki/Shiten_Kōshun",
+    "evidence": "When the shield receives an attack, Tsubaki disperses the resultant force as a concentrated explosion, which is automatically returned along the attack's opposing trajectory."
+  },
+  {
+    "id": "quilge-killed-by",
+    "tier": "hard",
+    "prompt": "ในเวโก้ มุนโด้ ใครสังหารควิลเก โอพี?",
+    "answer": "กริมจอว์ เจเกอร์แจ๊คส์",
+    "decoys": [
+      "คุโรซากิ อิจิโกะ",
+      "อุราฮาระ คิสุเกะ",
+      "เนลลิเอล ทู โอเดลชวานค์"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Quincy_Blood_War",
+    "evidence": "Quilge is killed by Grimmjow Jaegerjaquez."
+  },
+  {
+    "id": "quincy-vollstandig",
+    "tier": "hard",
+    "prompt": "ร่างแปลงของควินซี่ที่วันเดนไรช์คิดค้นขึ้น เพื่อแก้จุดด้อยของ ควินซี่ เลทซ์ สติล ชื่ออะไร?",
+    "answer": "ควินซี่ ฟอลชเตนดิก",
+    "decoys": [
+      "เซกุนด้า เอทาปา",
+      "เรซูเรคซิออน",
+      "บังไค"
+    ],
+    "note": "ร่างนี้ส่วนใหญ่มอบปีกแสงและวงแหวนเหนือศีรษะให้ผู้ใช้",
+    "source": "https://bleach.fandom.com/wiki/Quincy:_Vollständig",
+    "evidence": "is an evolved Quincy transformation created by the Wandenreich to address the drawbacks of the outdated Quincy: Letzt Stil."
+  },
+  {
+    "id": "renji-true-bankai",
+    "tier": "hard",
+    "prompt": "บังไคที่แท้จริงของอาบาราอิ เร็นจิ ซึ่งเขาได้มาหลังฝึกในวังราชาวิญญาณ ชื่ออะไร?",
+    "answer": "โซโอ ซาบิมารุ",
+    "decoys": [
+      "ริวมง โฮซึกิมารุ",
+      "จาคุโฮ ไรโคเบ็น",
+      "เท็กเค็น ทาจิคาเซะ"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Renji_Abarai",
+    "evidence": "Mask unleashes another attack, which Renji blocks with the release of his true Bankai, Sōō Zabimaru."
+  },
+  {
+    "id": "rose-bankai-name",
+    "tier": "hard",
+    "prompt": "บังไคของโอโตริบาชิ โรจูโร่ ที่ใช้เสียงดนตรีสร้างภาพลวงตาจนทำร้ายผู้ฟังได้จริง ชื่ออะไร?",
+    "answer": "คินชาระ บุโทดัน",
+    "decoys": [
+      "คาเท็น เคียวคตสึ คารามัตสึ ชินจู",
+      "ซากาชิมะ โยโคชิมะ ฮัปโปฟุซางาริ",
+      "เท็กเค็น ทาจิคาเซะ"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Rōjūrō_Ōtoribashi",
+    "evidence": "The power of Kinshara Butōdan is to use music (音楽, ongaku) to cast illusions"
+  },
+  {
+    "id": "rukia-bankai-name",
+    "tier": "hard",
+    "prompt": "บังไคของคุจิกิ รูเคีย ที่ทำให้อุณหภูมิลดลงถึงศูนย์สัมบูรณ์ ชื่ออะไร?",
+    "answer": "ฮักกะ โนะ โทงาเมะ",
+    "decoys": [
+      "ไดกุเร็น เฮียวรินมารุ",
+      "ซันกะ โนะ ทาจิ",
+      "ฮิฮิโอ ซาบิมารุ"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Rukia_Kuchiki",
+    "evidence": "Bankai Special Ability: Hakka no Togame increases the area of influence of Rukia's ability to reach the temperature of absolute zero."
+  },
+  {
+    "id": "rukia-husband",
+    "tier": "hard",
+    "prompt": "ในตอนจบเรื่อง คุจิกิ รูเคีย แต่งงานกับใคร?",
+    "answer": "อาบาราอิ เร็นจิ",
+    "decoys": [
+      "คุโรซากิ อิจิโกะ",
+      "ฮิตสึกายะ โทชิโร่",
+      "ชิบะ ไคเอน"
+    ],
+    "note": "ทั้งสองมีลูกสาวชื่ออาบาราอิ อิจิกะ",
+    "source": "https://bleach.fandom.com/wiki/Rukia_Kuchiki",
+    "evidence": "the mother of Ichika Abarai, and the wife of Renji Abarai"
+  },
+  {
+    "id": "soul-king-killer",
+    "tier": "hard",
+    "prompt": "ที่วังราชาวิญญาณ ยูไฮบาคหลอกให้ใครเป็นผู้สังหารราชาวิญญาณ?",
+    "answer": "คุโรซากิ อิจิโกะ",
+    "decoys": [
+      "อิชิดะ อุริว",
+      "ยูแกรม ฮัชวัลธ์",
+      "เฮียวสุเบะ อิจิเบ"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Quincy_Blood_War",
+    "evidence": "When Ichigo and his friends arrive, Yhwach tricks Ichigo into killing the Soul King."
+  },
+  {
+    "id": "sternritter-medallion",
+    "tier": "hard",
+    "prompt": "เหรียญตราที่สเติร์นริทเทอร์ทุกคนพกติดตัวในการบุก ใช้ทำอะไร?",
+    "answer": "ขโมยบังไคของยมทูต",
+    "decoys": [
+      "ลบความทรงจำของยมทูต",
+      "ส่งตำแหน่งของตนให้ยูไฮบาค",
+      "เปิดทางกลับสู่วันเดนไรช์"
+    ],
+    "note": "เหรียญขโมยได้เฉพาะบังไคที่กำลังปลดปล่อยอยู่ใกล้ๆ",
+    "source": "https://bleach.fandom.com/wiki/Sternritter",
+    "evidence": "When activated, a Quincy medallion is capable of stealing a Shinigami's currently released Bankai in the immediate vicinity."
+  },
+  {
+    "id": "tosen-defeated-by",
+    "tier": "hard",
+    "prompt": "ในเมืองคาราคุระจำลอง ใครเอาชนะโทเซ็น คานาเมะ ก่อนที่โทเซ็นจะถูกไอเซ็นสังหาร?",
+    "answer": "ฮิซางิ ชูเฮ",
+    "decoys": [
+      "อิบะ เท็ตสึซาเอมอน",
+      "คิระ อิซึรุ",
+      "มาดาราเมะ อิกคาคุ"
+    ],
+    "note": "ผู้ชนะคืออดีตรองหัวหน้าหน่วยของโทเซ็นเอง",
+    "source": "https://bleach.fandom.com/wiki/White_Invasion",
+    "evidence": "Kaname Tōsen is defeated by his former lieutenant, Shūhei Hisagi, and then betrayed and killed by Aizen."
+  },
+  {
+    "id": "ukitake-sacrifice",
+    "tier": "hard",
+    "prompt": "ใครสละชีวิตเพื่อค้ำจุนราชาวิญญาณไว้ด้วยพลังของมิมิฮากิ?",
+    "answer": "อุคิทาเกะ จูชิโร่",
+    "decoys": [
+      "เคียวราคุ ชุนซุย",
+      "อุโนฮานะ เร็ตสึ",
+      "คุจิกิ เบียคุยะ"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Quincy_Blood_War",
+    "evidence": "Jushirō Ukitake sacrifices his life to save the Soul King with the aid of Mimihagi, the right arm of the Soul King."
+  },
+  {
+    "id": "ulquiorra-release-command",
+    "tier": "hard",
+    "prompt": "คำปลดปล่อยดาบ มูร์ซีเอลาโก ของอุลคิโอร่า คือคำใด?",
+    "answer": "จงปิดล้อม",
+    "decoys": [
+      "จงบดขยี้",
+      "จงภาวนา",
+      "จงทำลาย"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Ulquiorra_Cifer",
+    "evidence": "Its release command is \"Enclose\" (鎖せ, tozase; Viz \"Imprison\")."
+  },
+  {
+    "id": "urahara-bankai-name",
+    "tier": "hard",
+    "prompt": "บังไคของอุราฮาระ คิสุเกะ ชื่ออะไร?",
+    "answer": "คันนงบิรากิ เบนิฮิเมะ อาราตาเมะ",
+    "decoys": [
+      "คาเท็น เคียวคตสึ คารามัตสึ ชินจู",
+      "คินชาระ บุโทดัน",
+      "ซากาชิมะ โยโคชิมะ ฮัปโปฟุซางาริ"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Kisuke_Urahara",
+    "evidence": "Bankai: Kannonbiraki Benihime Aratame (観音開紅姫改メ, Modification of the Crimson Princess' Dissection at the Doors of Avalokiteśvara;"
+  },
+  {
+    "id": "uryu-las-noches-opponent",
+    "tier": "hard",
+    "prompt": "ในลาส โนเชส หลังแยกจากกลุ่ม อุริวต้องสู้กับอารันคาร์ตนใด?",
+    "answer": "ซิรุชชี่ ซันเดอร์วิชชี่",
+    "decoys": [
+      "ดอร์โดนี่",
+      "กันเตนไบเน่ มอสเกด้า",
+      "อาโรนิเอโร่ อาร์รูรูเอรี"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Cirucci_Sanderwicci",
+    "evidence": "Cirucci ends up fighting Uryū after he separates from the group in Las Noches"
+  },
+  {
+    "id": "uryu-licht-regen",
+    "tier": "hard",
+    "prompt": "ท่าที่อุริวสะสมพลังไว้ตามแขนจนเลยไหล่ แล้วยิงลูกศรจำนวนนับไม่ถ้วนใส่เป้าหมายเดียว ชื่ออะไร?",
+    "answer": "ลิคท์ เรเกน",
+    "decoys": [
+      "ชเปรงเงอร์",
+      "ไฮเซ็น",
+      "กริทซ์"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Licht_Regen",
+    "evidence": "Uryū unleashes a devastating volley of innumerable Heilig Pfeil upon a single target."
+  },
+  {
+    "id": "uryu-schrift",
+    "tier": "hard",
+    "prompt": "ชริฟท์ที่อุริวได้รับตอนเข้าร่วมวันเดนไรช์ คืออะไร?",
+    "answer": "A: แอนติเธซิส",
+    "decoys": [
+      "B: เดอะ บาลานซ์",
+      "C: เดอะ คอมพัลซอรี",
+      "Q: เดอะ เควสชัน"
+    ],
+    "note": "พลังนี้สลับเหตุการณ์ได้ เช่น ย้ายบาดแผลของตนไปไว้ที่ศัตรู",
+    "source": "https://bleach.fandom.com/wiki/Uryū_Ishida",
+    "evidence": "as a former Sternritter with the designation A: Antithesis"
+  },
+  {
+    "id": "wandenreich-ice-palace",
+    "tier": "hard",
+    "prompt": "ปราสาทที่มีน้ำแข็งเกาะ ซึ่งเป็นฐานทัพของวันเดนไรช์ ชื่ออะไร?",
+    "answer": "ซิลเบิร์น",
+    "decoys": [
+      "วาห์ร์เวลท์",
+      "ลาส โนเชส",
+      "วังราชาวิญญาณ"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Silbern",
+    "evidence": "was a large, ice-encrusted palace that served as the base of the Lichtreich and later the Wandenreich during the Quincy Blood War."
+  },
+  {
+    "id": "wonderweiss-destroyed-by",
+    "tier": "hard",
+    "prompt": "ใครทำลายวันเดอร์ไวส์ มาร์เจล่า อารันคาร์ดัดแปลงที่ไอเซ็นสร้างขึ้น?",
+    "answer": "ยามาโมโตะ เก็นริวไซ ชิเงคุนิ",
+    "decoys": [
+      "เคียวราคุ ชุนซุย",
+      "ซอยฟง",
+      "โคมามูระ ซาจิน"
+    ],
+    "note": "ยามาโมโตะยอมเสียแขนซ้ายในศึกนี้",
+    "source": "https://bleach.fandom.com/wiki/White_Invasion",
+    "evidence": "Yamamoto effortlessly destroys Wonderweiss Margela."
+  },
+  {
+    "id": "yamamoto-bankai-name",
+    "tier": "hard",
+    "prompt": "บังไคของยามาโมโตะ เก็นริวไซ ชิเงคุนิ ที่ร้อนจนความชื้นทั้งพื้นที่ระเหยหายไป ชื่ออะไร?",
+    "answer": "ซันกะ โนะ ทาจิ",
+    "decoys": [
+      "ฮักกะ โนะ โทงาเมะ",
+      "คามิชินิ โนะ ยาริ",
+      "คาเท็น เคียวคตสึ คารามัตสึ ชินจู"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Genryūsai_Shigekuni_Yamamoto",
+    "evidence": "Zanka no Tachi has the side-effect of generating a heatwave that depletes the moisture in an entire area"
+  },
+  {
+    "id": "yamamoto-killed-by",
+    "tier": "hard",
+    "prompt": "ในการบุกโซลโซไซตี้ครั้งแรกของวันเดนไรช์ ใครสังหารยามาโมโตะ เก็นริวไซ ชิเงคุนิ?",
+    "answer": "ยูไฮบาค",
+    "decoys": [
+      "รอยด์ ลอยด์",
+      "ดริสคอลล์ เบอร์ซี",
+      "ยูแกรม ฮัชวัลธ์"
+    ],
+    "note": "ก่อนหน้านั้นยามาโมโตะสู้กับร่างปลอมที่แปลงเป็นยูไฮบาค",
+    "source": "https://bleach.fandom.com/wiki/Quincy_Blood_War",
+    "evidence": "Emperor Yhwach kills Captain-Commander Genryūsai Shigekuni Yamamoto."
+  },
+  {
+    "id": "yhwach-auswahlen",
+    "tier": "hard",
+    "prompt": "เอาส์เวเลน ของยูไฮบาค มีผลอย่างไรกับควินซี่ที่เขาเลือก?",
+    "answer": "ดึงพลังของพวกเขามาเป็นของตน",
+    "decoys": [
+      "มอบชริฟท์ให้เป็นสเติร์นริทเทอร์",
+      "ปลุกคนที่ตายแล้วให้ฟื้น",
+      "ส่งพวกเขาไปยังเวโก้ มุนโด้"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Auswählen",
+    "evidence": "After selecting Quincy whom he deems impure, including those with mixed blood, Yhwach can steal their powers and make them his own."
+  },
+  {
+    "id": "yhwach-soul-king",
+    "tier": "hard",
+    "prompt": "ยูไฮบาคมีความเกี่ยวข้องกับ ราชาวิญญาณ อย่างไร?",
+    "answer": "เป็นลูกชาย",
+    "decoys": [
+      "เป็นพี่ชาย",
+      "เป็นผู้สร้าง",
+      "เป็นร่างโคลน"
+    ],
+    "note": "ยูไฮบาคถูกเรียกว่าเป็น \"บิดา\" ของควินซี่ทั้งปวง",
+    "source": "https://bleach.fandom.com/wiki/Quincy",
+    "evidence": "It is led by Yhwach, the son of the Soul King and the alleged \"Father\" of all Quincy."
+  },
+  {
+    "id": "yhwach-successor",
+    "tier": "hard",
+    "prompt": "ยูไฮบาคประกาศให้ใครเป็นผู้สืบทอดของเขา?",
+    "answer": "อิชิดะ อุริว",
+    "decoys": [
+      "ยูแกรม ฮัชวัลธ์",
+      "คุโรซากิ อิจิโกะ",
+      "แอสกิน นัคค์ เลอ วาร์"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Quincy_Blood_War",
+    "evidence": "Yhwach announces Uryū Ishida will be his successor."
+  },
+  {
+    "id": "yumichika-true-zanpakuto",
+    "tier": "hard",
+    "prompt": "ร่างที่แท้จริงของดาบฟันวิญญาณของอายาเซงาวะ ยุมิจิกะ ซึ่งเขาปลดปล่อยเมื่อไม่มีใครเห็นเท่านั้น ชื่ออะไร?",
+    "answer": "รุริอิโระ คุจาคุ",
+    "decoys": [
+      "ไฮเนโกะ",
+      "เนจิบานะ",
+      "คินชาระ"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Yumichika_Ayasegawa",
+    "evidence": "Realizing that no one can see them, Yumichika activates his sword's true form, Ruri'iro Kujaku, and drains his Spiritual Energy."
+  },
+  {
+    "id": "zombie-schrift-holder",
+    "tier": "hard",
+    "prompt": "สเติร์นริทเทอร์คนใดมีชริฟท์ Z: เดอะ ซอมบี้?",
+    "answer": "จีเซลล์ เกเวลล์",
+    "decoys": [
+      "แคนดิซ แคทนิปป์",
+      "ลิลทอตโต้ แลมเพิร์ด",
+      "เมนินาส แม็คอัลลอน"
+    ],
+    "note": "ใครที่โดนเลือดของเธอจะตกอยู่ใต้การควบคุม",
+    "source": "https://bleach.fandom.com/wiki/Giselle_Gewelle",
+    "evidence": "is a Quincy and a former member of the Wandenreich's Sternritter with the designation Z: The Zombie."
+  },
+  {
+    "id": "almighty-night-holder",
+    "tier": "very-hard",
+    "prompt": "ยามยูไฮบาคหลับ เขาสลับพลังกับใคร จนอีกฝ่ายได้ใช้ ดิ ออลไมตี้?",
+    "answer": "ยูแกรม ฮัชวัลธ์",
+    "decoys": [
+      "ลิลเล บาร์โร",
+      "แอสกิน นัคค์ เลอ วาร์",
+      "เจอราร์ด วัลคิรี"
+    ],
+    "note": "ส่วนยูไฮบาคได้ชริฟท์ของอีกฝ่ายไป แต่ไม่ได้ใช้เพราะหลับอยู่",
+    "source": "https://bleach.fandom.com/wiki/Yhwach",
+    "evidence": "Yhwach gains Haschwalth's The Balance while Haschwalth gains Yhwach's The Almighty."
+  },
+  {
+    "id": "askin-schrift-power",
+    "tier": "very-hard",
+    "prompt": "ชริฟท์ D: เดอะ เดธดีลลิง ของแอสกิน นัคค์ เลอ วาร์ ควบคุมอะไรได้?",
+    "answer": "ปริมาณของสิ่งต่างๆ ที่ทำให้ถึงตาย",
+    "decoys": [
+      "ความน่าจะเป็นที่ปาฏิหาริย์จะเกิด",
+      "ความกลัวในใจผู้อื่น",
+      "ทิศทางของการโจมตี"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Askin_Nakk_Le_Vaar",
+    "evidence": "Askin's Schrift grants him precise control over lethal doses."
+  },
+  {
+    "id": "bambietta-killed-by",
+    "tier": "very-hard",
+    "prompt": "หลังพ่ายแพ้ให้โคมามูระ แบมบีเอตต้า บาสเตอร์ไบน์ ถูกใครสังหาร?",
+    "answer": "จีเซลล์ เกเวลล์",
+    "decoys": [
+      "โคมามูระ ซาจิน",
+      "คุโรซึจิ มายูริ",
+      "ยูไฮบาค"
+    ],
+    "note": "จีเซลล์กับสาวๆ กลุ่มแบมบีส์ลงมือเพราะแค้นที่แบมบีเอตต้าเคยทำกับพวกเธอ",
+    "source": "https://bleach.fandom.com/wiki/Quincy_Blood_War",
+    "evidence": "Bambietta is confronted and killed by Giselle Gewelle and the other Bambies out of spite for her earlier behavior toward them."
+  },
+  {
+    "id": "bankai-old-name",
+    "tier": "very-hard",
+    "prompt": "ก่อนที่เฮียวสุเบะ อิจิเบ จะตั้งชื่อว่า \"บังไค\" ร่างปลดปล่อยขั้นสุดท้ายของดาบฟันวิญญาณเคยถูกเรียกว่าอะไร?",
+    "answer": "ชินอุจิ",
+    "decoys": [
+      "อาซาอุจิ",
+      "ชิไค",
+      "คันเซ็น บังไค"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Zanpakutō",
+    "evidence": "Prior to Ichibe'e Hyōsube giving this form its name, it was known as a Shin'uchi (真打, True Strike)"
+  },
+  {
+    "id": "bazz-b-haschwalth-bond",
+    "tier": "very-hard",
+    "prompt": "บาซซ์-บี กับยูแกรม ฮัชวัลธ์ มีความสัมพันธ์กันอย่างไร?",
+    "answer": "เพื่อนเก่าตั้งแต่วัยเยาว์",
+    "decoys": [
+      "พี่น้องแท้ๆ",
+      "อาจารย์กับลูกศิษย์",
+      "ลูกพี่ลูกน้อง"
+    ],
+    "note": "ในที่สุดบาซซ์-บีพ่ายแพ้และบาดเจ็บสาหัสด้วยมือของเพื่อนคนนี้",
+    "source": "https://bleach.fandom.com/wiki/Quincy_Blood_War",
+    "evidence": "Recalling his youth with Haschwalth and their friendship fraying over the years once Yhwach recruited Haschwalth as his \"other half\""
+  },
+  {
+    "id": "danku",
+    "tier": "very-hard",
+    "prompt": "บาคุโดที่ 81 ที่สร้างกำแพงป้องกันซึ่งหยุดคิโดโจมตีได้ถึงระดับ 89 ชื่ออะไร?",
+    "answer": "ดังคู",
+    "decoys": [
+      "ริคุโจโคโร",
+      "สึริโบชิ",
+      "เท็นเทย์คูระ"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Dankū",
+    "evidence": "it can stop offensive Kidō spells up to level 89"
+  },
+  {
+    "id": "elite-guard-leader",
+    "tier": "very-hard",
+    "prompt": "ใครคือหัวหน้าองครักษ์ชั้นยอดของยูไฮบาค และเป็นควินซี่คนแรกที่ได้รับชริฟท์?",
+    "answer": "ลิลเล บาร์โร",
+    "decoys": [
+      "ยูแกรม ฮัชวัลธ์",
+      "เพอร์นิดา พาร์นค์กยาส",
+      "เจอราร์ด วัลคิรี"
+    ],
+    "note": "เขาเชื่อว่าตนไม่มีวันถูกบังไคของยมทูตฆ่าได้",
+    "source": "https://bleach.fandom.com/wiki/Lille_Barro",
+    "evidence": "Lille was the first Quincy to ever be bestowed a Schrift by Yhwach, which made him the self-proclaimed greatest creation of the Quincy emperor."
+  },
+  {
+    "id": "espada-gillian-origin",
+    "tier": "very-hard",
+    "prompt": "เอสปาด้ารุ่นล่าสุดคนใด ที่เดิมเป็นเมนอสระดับกิลเลียน?",
+    "answer": "อาโรนิเอโร่ อาร์รูรูเอรี",
+    "decoys": [
+      "ยามี่ ลีอาโก้",
+      "โซมาริ เลอโร",
+      "ซาเอลอัปโปโร กรานซ์"
+    ],
+    "note": "เขาเป็นสมาชิกเอสปาด้ารุ่นแรกเพียงคนเดียวที่ยังอยู่ในรุ่นปัจจุบัน",
+    "source": "https://bleach.fandom.com/wiki/Hollow",
+    "evidence": "Aaroniero Arruruerie is the only member of the most recent generation of the Espada that was originally a Gillian-class Menos prior to becoming an Arrancar."
+  },
+  {
+    "id": "espada-released-cero",
+    "tier": "very-hard",
+    "prompt": "เซโร่แบบพิเศษที่เอสปาด้าใช้ได้ในร่างปลดปล่อยดาบ ชื่ออะไร?",
+    "answer": "เซโร่ ออสคูรัส",
+    "decoys": [
+      "กรัน เรย์ เซโร่",
+      "เซโร่ เมทราลเลต้า",
+      "บาล่า"
+    ],
+    "note": "อุลคิโอร่าใช้มันยิงทะลุหน้าอกอิจิโกะ",
+    "source": "https://bleach.fandom.com/wiki/Espada",
+    "evidence": "Cero Oscuras (黒虚閃 (セロ・オスキュラス), Sero Osukyurasu; Spanish for \"Dark Zero\", Japanese for \"Black Hollow Flash\") is a variation of the Cero technique used by the Espada in their released state."
+  },
+  {
+    "id": "gerard-soul-king-part",
+    "tier": "very-hard",
+    "prompt": "เจอราร์ด วัลคิรี แท้จริงแล้วคือส่วนใดของราชาวิญญาณ?",
+    "answer": "หัวใจของราชาวิญญาณ",
+    "decoys": [
+      "แขนซ้ายของราชาวิญญาณ",
+      "แขนขวาของราชาวิญญาณ",
+      "ดวงตาของราชาวิญญาณ"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Gerard_Valkyrie",
+    "evidence": "He is also the Heart of the Soul King"
+  },
+  {
+    "id": "hado-88",
+    "tier": "very-hard",
+    "prompt": "ฮาโดที่ 88 ซึ่งมีแต่ผู้เชี่ยวชาญคิโดเท่านั้นที่ใช้ได้ และสึคาบิชิ เทสไซ เคยใช้ ชื่ออะไร?",
+    "answer": "ฮิริว เกคิโซคุ ชินเท็น ไรโฮ",
+    "decoys": [
+      "เซ็นจู โคเท็น ไทโฮ",
+      "โกริวเท็นเม็ตสึ",
+      "ไรโคโฮ"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Hiryū_Gekizoku_Shinten_Raihō",
+    "evidence": "A high-level Hadō which only Kidō masters can use."
+  },
+  {
+    "id": "hikifune-former-division",
+    "tier": "very-hard",
+    "prompt": "ก่อนจะขึ้นไปอยู่หน่วยศูนย์ ฮิคิฟุเนะ คิริโอะ เคยเป็นหัวหน้าหน่วยของหน่วยใด?",
+    "answer": "หน่วยที่ 12",
+    "decoys": [
+      "หน่วยที่ 8",
+      "หน่วยที่ 5",
+      "หน่วยที่ 13"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Kirio_Hikifune",
+    "evidence": "Kirio Hikifune (曳舟 桐生, Hikifune Kirio) is a former captain of the 12th Division and a member of the Royal Guard"
+  },
+  {
+    "id": "hogyoku-first-maker",
+    "tier": "very-hard",
+    "prompt": "ใครสร้าง โฮเกียวคุ ของตัวเองสำเร็จ ก่อนที่อุราฮาระจะคิดแนวคิดนี้ขึ้นมาเสียอีก?",
+    "answer": "ไอเซ็น โซสึเกะ",
+    "decoys": [
+      "คุโรซึจิ มายูริ",
+      "อิจิมารุ กิน",
+      "สึคาบิชิ เทสไซ"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Hōgyoku",
+    "evidence": "Some time before Kisuke Urahara even conceived the concept of the Hōgyoku, Sousuke Aizen, having already come to the same conclusion, had created one of his own."
+  },
+  {
+    "id": "iba-final-division",
+    "tier": "very-hard",
+    "prompt": "ในตอนจบของเรื่อง อิบะ เท็ตสึซาเอมอน เป็นหัวหน้าหน่วยของหน่วยใด?",
+    "answer": "หน่วยที่ 7",
+    "decoys": [
+      "หน่วยที่ 9",
+      "หน่วยที่ 3",
+      "หน่วยที่ 2"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Seventh_Division",
+    "evidence": "is one of the Gotei 13, headed by Captain Tetsuzaemon Iba."
+  },
+  {
+    "id": "ichibe-zanpakuto-name",
+    "tier": "very-hard",
+    "prompt": "ดาบฟันวิญญาณรูปพู่กันของเฮียวสุเบะ อิจิเบ ที่ใช้หมึกลบชื่อของสิ่งต่าง ๆ ชื่ออะไร?",
+    "answer": "อิจิมอนจิ",
+    "decoys": [
+      "โนซาราชิ",
+      "คินปิกะ",
+      "ชิงารามิ"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Ichibe'e_Hyōsube",
+    "evidence": "Ichimonji (一文字, Straight Line; Viz \"One Written Character\"): Its sealed form takes the form of a large calligraphy brush"
+  },
+  {
+    "id": "isshin-original-clan",
+    "tier": "very-hard",
+    "prompt": "ก่อนมาเป็นหัวหน้าครอบครัวคุโรซากิ อิชชินเคยเป็นหัวหน้าสาขาหนึ่งของตระกูลใด?",
+    "answer": "ตระกูลชิบะ",
+    "decoys": [
+      "ตระกูลคุจิกิ",
+      "ตระกูลชิโฮวอิน",
+      "ตระกูลสึนายาชิโระ"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Isshin_Kurosaki",
+    "evidence": "Isshin is the former head of a branch of the Shiba Clan and the current head of the Kurosaki Family."
+  },
+  {
+    "id": "kaido-creator",
+    "tier": "very-hard",
+    "prompt": "ใครเป็นผู้พัฒนาไคโด คิโดสำหรับรักษาบาดแผล จนได้เลื่อนขึ้นสู่หน่วยศูนย์?",
+    "answer": "คิรินจิ เท็นจิโร่",
+    "decoys": [
+      "อุโนฮานะ เร็ตสึ",
+      "ฮิคิฟุเนะ คิริโอะ",
+      "ยามาดะ ฮานาทาโร่"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Kaidō",
+    "evidence": "It was developed by Tenjirō Kirinji, which earned him a promotion to the Royal Guard."
+  },
+  {
+    "id": "kenpachi-shikai-command",
+    "tier": "very-hard",
+    "prompt": "คำสั่งปลดปล่อยชิไคของดาบฟันวิญญาณของซาราคิ เคนปาจิ คือคำว่าอะไร?",
+    "answer": "จงดื่มกิน",
+    "decoys": [
+      "จงเติบโต",
+      "จงเก็บเกี่ยว",
+      "จงขู่คำราม"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Kenpachi_Zaraki",
+    "evidence": "Its release command is Drink (呑め, nome)."
+  },
+  {
+    "id": "kensei-bankai-name",
+    "tier": "very-hard",
+    "prompt": "บังไคของมุงูรุมะ เคนเซย์ ชื่ออะไร?",
+    "answer": "เท็กเค็น ทาจิคาเซะ",
+    "decoys": [
+      "โคโค กนเรียว ริคิว",
+      "ริวมง โฮซึกิมารุ",
+      "โซโอ ซาบิมารุ"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Kensei_Muguruma",
+    "evidence": "Bankai: Tekken Tachikaze (鐵拳断風, Iron Fist Severing Wind; Viz \"Iron Fist Earth-Severing Wind\"): Upon activation, an explosion of wind erupts around Kensei"
+  },
+  {
+    "id": "lisa-final-division",
+    "tier": "very-hard",
+    "prompt": "ในตอนจบของเรื่อง ยาโดมารุ ลิซ่า เป็นหัวหน้าหน่วยของหน่วยใด?",
+    "answer": "หน่วยที่ 8",
+    "decoys": [
+      "หน่วยที่ 5",
+      "หน่วยที่ 9",
+      "หน่วยที่ 3"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Eighth_Division",
+    "evidence": "is one of the Gotei 13, headed by Captain Lisa Yadomaru."
+  },
+  {
+    "id": "masaki-teen-hollow",
+    "tier": "very-hard",
+    "prompt": "ตอนยังเป็นวัยรุ่น คุโรซากิ มาซากิ เอาชนะฮอลโลว์ทรงพลังตนใดได้ด้วยการโจมตีครั้งเดียว?",
+    "answer": "ไวท์",
+    "decoys": [
+      "แกรนด์ฟิชเชอร์",
+      "เมทาสตาเซีย",
+      "ยามี่ ลีอาโก้"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Masaki_Kurosaki",
+    "evidence": "Even as a teenager, she was powerful enough to defeat the powerful Hollow White with a single attack."
+  },
+  {
+    "id": "mask-superstar-power",
+    "tier": "very-hard",
+    "prompt": "ชริฟท์ S: เดอะ ซูเปอร์สตาร์ ทำให้มาสก์ เดอ มาสคิวลีน ฟื้นตัวและแข็งแกร่งขึ้นเมื่อใด?",
+    "answer": "เมื่อได้รับเสียงเชียร์จากเจมส์",
+    "decoys": [
+      "เมื่อได้ฆ่าศัตรู",
+      "เมื่อได้กินศัตรู",
+      "เมื่อโดนเลือดของศัตรู"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Mask_De_Masculine",
+    "evidence": "When Mask is being cheered on by his partner James, their shared Schrift activates"
+  },
+  {
+    "id": "mimihagi-soul-king-part",
+    "tier": "very-hard",
+    "prompt": "มิมิฮากิ คือส่วนใดของ ราชาวิญญาณ?",
+    "answer": "แขนขวา",
+    "decoys": [
+      "แขนซ้าย",
+      "หัวใจ",
+      "ปอด"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Mimihagi",
+    "evidence": "Its true identity is the Right Arm of the Soul King (霊王の右腕, Reiō no Migiude), which governs \"Stillness\""
+  },
+  {
+    "id": "muken-level",
+    "tier": "very-hard",
+    "prompt": "ชั้นที่ 8 ซึ่งเป็นชั้นสุดท้ายของคุกใต้ดินใหญ่กลาง เรียกว่าอะไร?",
+    "answer": "มุเค็น",
+    "decoys": [
+      "หอสำนึกผิด (เซ็นไซคิว)",
+      "ดังไก",
+      "เนินโซเคียวคุ"
+    ],
+    "note": "ไอเซ็นถูกตัดสินจำคุกไว้ในชั้นนี้",
+    "source": "https://bleach.fandom.com/wiki/Central_Great_Underground_Prison",
+    "evidence": "Muken (無間, Avīci) is the eighth and final level of the underground prison."
+  },
+  {
+    "id": "nanao-kyoraku-relation",
+    "tier": "very-hard",
+    "prompt": "อิเสะ นานาโอะ เป็นอะไรกับเคียวราคุ ชุนซุย?",
+    "answer": "หลานสาว",
+    "decoys": [
+      "ลูกสาว",
+      "น้องสาว",
+      "ลูกพี่ลูกน้อง"
+    ],
+    "note": "พ่อของเธอคือเคียวราคุ ชุนซัง พี่น้องของชุนซุย",
+    "source": "https://bleach.fandom.com/wiki/Nanao_Ise",
+    "evidence": "Isuzu Ise (Mother, deceased) Shunzan Kyōraku (Father, deceased) Shunsui Kyōraku (Uncle)"
+  },
+  {
+    "id": "nelliel-release-name",
+    "tier": "very-hard",
+    "prompt": "ร่างปลดปล่อยดาบของเนลลิเอล ทู โอเดลชวานค์ ที่ทำให้เธอรบแบบอัศวินขี่ม้า ชื่ออะไร?",
+    "answer": "กามูซา",
+    "decoys": [
+      "ติบูรอน",
+      "ตรีปาโดรา",
+      "บรูเฮเรีย"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Nelliel_Tu_Odelschwanck",
+    "evidence": "In its release form, Gamuza gives Nelliel the physical features associated with mounted combat"
+  },
+  {
+    "id": "old-zangetsu-identity",
+    "tier": "very-hard",
+    "prompt": "ชายชราในโลกภายในของอิจิโกะ ที่เรียกตัวเองด้วยชื่อดาบของเขา แท้จริงคืออะไร?",
+    "answer": "พลังควินซี่ในตัวอิจิโกะ",
+    "decoys": [
+      "พลังฮอลโลว์ในตัวอิจิโกะ",
+      "วิญญาณของคุโรซากิ อิชชิน",
+      "เศษวิญญาณของราชาวิญญาณ"
+    ],
+    "note": "เขามีรูปลักษณ์เหมือนยูไฮบาคเมื่อ 1,000 ปีก่อน",
+    "source": "https://bleach.fandom.com/wiki/Zangetsu_(Quincy_Powers)",
+    "evidence": "he is the manifestation of the Quincy powers within Ichigo, and he both is and is not Yhwach."
+  },
+  {
+    "id": "pernida-soul-king-part",
+    "tier": "very-hard",
+    "prompt": "เพอร์นิดา พาร์นค์กยาส คือส่วนใดของ ราชาวิญญาณ?",
+    "answer": "แขนซ้าย",
+    "decoys": [
+      "แขนขวา",
+      "หัวใจ",
+      "ขาซ้าย"
+    ],
+    "note": "มันควบคุม \"ความก้าวหน้า\" และมายูริเป็นผู้เปิดโปงร่างแท้ของมัน",
+    "source": "https://bleach.fandom.com/wiki/Pernida_Parnkgjas",
+    "evidence": "revealing its true form as the left arm of the Soul King."
+  },
+  {
+    "id": "quincy-mixed-blood",
+    "tier": "very-hard",
+    "prompt": "ควินซี่ที่มีสายเลือดผสม ถูกเรียกว่าอะไร?",
+    "answer": "เกมิชท์",
+    "decoys": [
+      "เอคท์",
+      "สเติร์นริทเทอร์",
+      "ชุทซ์ชตัฟเฟิล"
+    ],
+    "note": "ควินซี่สายเลือดผสมจำนวนมากถูกเอาส์เวเลนดูดพลังจนสิ้นชีวิต",
+    "source": "https://bleach.fandom.com/wiki/Quincy",
+    "evidence": "Gemischt (混血統 (ゲミシュト), Gemishuto; German for \"Mixed\", Japanese for \"Mixed-Blooded\"; Viz \"Mixed Breeds\")"
+  },
+  {
+    "id": "rukia-final-division",
+    "tier": "very-hard",
+    "prompt": "ในตอนจบของเรื่อง คุจิกิ รูเคีย เป็นหัวหน้าหน่วยของหน่วยใด?",
+    "answer": "หน่วยที่ 13",
+    "decoys": [
+      "หน่วยที่ 6",
+      "หน่วยที่ 5",
+      "หน่วยที่ 10"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Thirteenth_Division",
+    "evidence": "is one of the Gotei 13, headed by Captain Rukia Kuchiki."
+  },
+  {
+    "id": "ryuken-silver-arrowhead",
+    "tier": "very-hard",
+    "prompt": "ใครนำหัวลูกศรที่ทำจากเงินซึ่งเก็บจากเหยื่อของเอาส์เวเลนครั้งแรก มามอบให้อุริวใช้สู้กับยูไฮบาค?",
+    "answer": "อิชิดะ ริวเคน",
+    "decoys": [
+      "คุโรซากิ อิชชิน",
+      "อุราฮาระ คิสุเกะ",
+      "อิชิดะ โซเคน"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Quincy_Blood_War",
+    "evidence": "Ryūken delivers the Standspitze, an arrowhead made of Still Silver collected from victims of the first Auswählen, to Uryū"
+  },
+  {
+    "id": "sasakibe-bankai-name",
+    "tier": "very-hard",
+    "prompt": "บังไคสายฟ้าของซาซาคิเบะ โจจิโร่ รองหัวหน้าหน่วยที่ 1 ชื่ออะไร?",
+    "answer": "โคโค กนเรียว ริคิว",
+    "decoys": [
+      "เท็กเค็น ทาจิคาเซะ",
+      "จาคุโฮ ไรโคเบ็น",
+      "คินชาระ บุโทดัน"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Chōjirō_Sasakibe",
+    "evidence": "Bankai: Kōkō Gonryō Rikyū (黄煌厳霊離宮, Yellow-Glittering Royal Villa of the Stern Spirit; Viz \"Golden Lightning Palace\")"
+  },
+  {
+    "id": "sasakibe-killed-by",
+    "tier": "very-hard",
+    "prompt": "ใครสังหารซาซาคิเบะ โจจิโร่?",
+    "answer": "ดริสคอลล์ เบอร์ซี",
+    "decoys": [
+      "แอส โนดท์",
+      "บาซซ์-บี",
+      "มาสก์ เดอ มาสคิวลีน"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Quincy_Blood_War",
+    "evidence": "Driscoll Berci, who reveals that he killed Chōjirō earlier that day"
+  },
+  {
+    "id": "shino-academy-founder",
+    "tier": "very-hard",
+    "prompt": "สถาบันที่ยามาโมโตะ เก็นริวไซ ชิเงคุนิ ก่อตั้งขึ้น และมีชื่อเล่นว่าโรงเรียนยมทูต ชื่ออะไร?",
+    "answer": "สถาบันชินโอ",
+    "decoys": [
+      "สถาบันวิจัยและพัฒนาเทคโนโลยี",
+      "สมาคมยมทูตหญิง",
+      "สภา 46 ห้อง"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Shin'ō_Academy",
+    "evidence": "sometimes called the Shinigami Academy, is an institution founded by Genryūsai Shigekuni Yamamoto."
+  },
+  {
+    "id": "sternritter-blood-ritual",
+    "tier": "very-hard",
+    "prompt": "สเติร์นริทเทอร์ได้รับตัวอักษรชริฟท์ผ่านพิธีใด?",
+    "answer": "ดื่มเลือดของยูไฮบาค",
+    "decoys": [
+      "กลืนเศษของโฮเกียวคุ",
+      "สาบานต่อหน้าราชาวิญญาณ",
+      "รับเหรียญตราจากยูไฮบาค"
+    ],
+    "note": "ยูไฮบาคสลักวิญญาณส่วนหนึ่งของตนลงในพวกเขา และได้มันคืนเมื่อพวกเขาตาย",
+    "source": "https://bleach.fandom.com/wiki/Sternritter",
+    "evidence": "Each member participated in an engraving ritual by drinking Yhwach's blood; this enabled Yhwach to carve a part of his soul into theirs."
+  },
+  {
+    "id": "szayelaporro-release-command",
+    "tier": "very-hard",
+    "prompt": "คำปลดปล่อยดาบ ฟอร์นิคาราส ของซาเอลอัปโปโร กรานซ์ คือคำใด?",
+    "answer": "จงดูดดื่ม",
+    "decoys": [
+      "จงกลืนกิน",
+      "จงสงบ",
+      "จงเน่าเปื่อย"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Szayelaporro_Granz",
+    "evidence": "Its release command is Sip (啜れ, Susure)"
+  },
+  {
+    "id": "tessai-former-post",
+    "tier": "very-hard",
+    "prompt": "เมื่อร้อยปีก่อน สึคาบิชิ เทสไซ เคยเป็นผู้นำขององค์กรใดในโซลโซไซตี้?",
+    "answer": "หน่วยคิโด",
+    "decoys": [
+      "หน่วยลับ (ออนมิตสึคิโด)",
+      "สถาบันวิจัยและพัฒนาเทคโนโลยี",
+      "หน่วยศูนย์"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Tessai_Tsukabishi",
+    "evidence": "One hundred years ago, he was the captain of the Kidō Corps in Soul Society."
+  },
+  {
+    "id": "unohana-first-kenpachi",
+    "tier": "very-hard",
+    "prompt": "ใครคือเคนปาจิรุ่นแรก?",
+    "answer": "อุโนฮานะ เร็ตสึ",
+    "decoys": [
+      "ซาราคิ เคนปาจิ",
+      "ยามาโมโตะ เก็นริวไซ ชิเงคุนิ",
+      "คุซาจิชิ ยาจิรุ"
+    ],
+    "note": "เธอเสียชีวิตในการดวลกับซาราคิ เคนปาจิ",
+    "source": "https://bleach.fandom.com/wiki/Retsu_Unohana",
+    "evidence": "Unohana laid the foundations of what would be known as the 11th Division and became its first captain, as well as the first Kenpachi."
+  },
+  {
+    "id": "uryu-ichigo-kinship",
+    "tier": "very-hard",
+    "prompt": "ทางสายเลือด อิชิดะ อุริว เป็นอะไรกับคุโรซากิ อิจิโกะ?",
+    "answer": "ลูกพี่ลูกน้องชั้นที่สองฝ่ายแม่",
+    "decoys": [
+      "ลูกพี่ลูกน้องฝ่ายพ่อ",
+      "พี่น้องต่างแม่",
+      "ไม่ได้เป็นญาติกัน"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Ichigo_Kurosaki",
+    "evidence": "Ganju Shiba (Paternal Cousin) Uryū Ishida (Maternal Second Cousin)"
+  },
+  {
+    "id": "yhwach-almighty-power",
+    "tier": "very-hard",
+    "prompt": "ตามคำของยูไฮบาค พลังที่แท้จริงของ ดิ ออลไมตี้ คืออะไร?",
+    "answer": "เปลี่ยนอนาคตให้เป็นไปตามที่ต้องการ",
+    "decoys": [
+      "หยุดเวลาของทุกสิ่งรอบตัว",
+      "ย้อนเวลากลับไปในอดีต",
+      "ทำให้จินตนาการกลายเป็นจริง"
+    ],
+    "note": "เขามองเห็นอนาคตทุกแบบพร้อมกัน แต่มองไม่เห็นการกระทำของมิมิฮากิ",
+    "source": "https://bleach.fandom.com/wiki/Yhwach",
+    "evidence": "Yhwach states that the true power of The Almighty is the ability to alter the future into whatever outcome he desires."
+  },
+  {
+    "id": "yoruichi-black-cat-form",
+    "tier": "very-hard",
+    "prompt": "ร่างขั้นสูงของชิโฮวอิน โยรุอิจิ ที่แปลงทั้งกายและใจเป็นสัตว์สายฟ้า ชื่ออะไร?",
+    "answer": "ไรจู เซ็นเค ชุนริว โคคุเบียว เซ็นกิ",
+    "decoys": [
+      "ไรจิน เซ็นเค",
+      "บาคุเอ็น มุโซ",
+      "ไรโอเค็น"
+    ],
+    "source": "https://bleach.fandom.com/wiki/Yoruichi_Shihōin",
+    "evidence": "Shunkō: Raijū Senkei: Shunryū Kokubyō Senki (瞬閧 雷獣戦形 瞬霳黒猫戦姫, Flash War Cry: Thunder Beast Battle Form: Flash God Black Cat Warrior Princess): While Shunkō: Raijin Senkei is already activated"
+  },
+  {
+    "id": "yukio-fullbring-name",
+    "tier": "very-hard",
+    "prompt": "ฟูลบริงของยูกิโอะ ฮันส์ โฟราร์ลเบอร์นา ที่ทำงานผ่านเครื่องเล่นเกมพกพา ชื่ออะไร?",
+    "answer": "อินเวเดอร์ส มัสต์ ดาย",
+    "decoys": [
+      "แจ็คพอต นัคเคิล",
+      "เดอร์ตี้ บู๊ทส์",
+      "ไทม์ เทลส์ โน ไลส์"
+    ],
+    "note": "พลังนี้สร้างมิติแยกของตัวเองขึ้นภายในเกม",
+    "source": "https://bleach.fandom.com/wiki/Yukio_Hans_Vorarlberna",
+    "evidence": "This power is activated by Yukio's handheld video game console and gives him access to a variety of abilities"
+  },
+  {
+    "id": "zommari-form-of-death",
+    "tier": "very-hard",
+    "prompt": "โซมาริ เลอโร เอสปาด้าอันดับ 7 เป็นตัวแทนของความตายแบบใด?",
+    "answer": "ความมึนเมา",
+    "decoys": [
+      "ความบ้าคลั่ง",
+      "ความโลภ",
+      "การทำลายล้าง"
+    ],
+    "note": "ร่างปลดปล่อยของเขาบังคับร่างกายผู้อื่นให้ทำตามใจได้",
+    "source": "https://bleach.fandom.com/wiki/Espada",
+    "evidence": "Zommari Rureaux, the Séptima Espada, governs the form of death of intoxication"
+  }
+]
