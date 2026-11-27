@@ -234,7 +234,7 @@
   }
 
   .stock--primary {
-    --drop-tone: color-mix(in oklch, var(--color-accent-deep) 75%, var(--color-line));
+    --drop-tone: color-mix(in oklab, var(--color-accent-deep) 75%, var(--color-drop)); /* oklab: an oklch mix of yellow and blue swings through green */
     background: var(--color-accent);
     color: var(--color-accent-ink);
   }
