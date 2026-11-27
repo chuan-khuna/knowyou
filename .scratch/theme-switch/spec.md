@@ -1,6 +1,6 @@
 # Theme switch
 
-Status: ready-for-agent
+Status: done
 
 ## Problem Statement
 
@@ -43,3 +43,4 @@ The top strip gets a theme button beside the sound button, on the home page and 
 ## Comments
 
 - Narrow strip (asked in chat during the build): on a quiz question or reveal screen the strip already holds the progress chip and the reveal, reset and sound buttons, and the theme button pushed the sound button off phones under ~425px. `Shell` takes `crowded`, which the quiz passes on those screens, and hides the theme button below `sm`. See `docs/documents/theme.md`.
+- Shipped in commit 29643f8 on `main`.
