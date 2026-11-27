@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { AdsFigure, AdsNightMarket } from "@/components/ads";
 import { PlayAgainBar, type ResultControls } from "@/components/play-screen";
 import type { RevealParser } from "@/lib/play-record";
 import { sound } from "@/lib/sound";
@@ -93,6 +94,8 @@ export function AnimeAgeResult({
         )}
       </section>
 
+      <AdsFigure />
+
       <MemoryStrata strata={play.extras.strata} />
 
       {deciding ? (
@@ -122,6 +125,8 @@ export function AnimeAgeResult({
       </section>
 
       {process.env.NODE_ENV === "development" ? <PersonaRecorder play={play} reveal={reveal} /> : null}
+
+      <AdsNightMarket />
 
       <PlayAgainBar onClick={playAgain} />
     </div>

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useCallback, useEffect, useState, type ReactNode } from "react";
 import type { Cue, Engine, FinishedPlay, Play } from "@/games/engine";
 import { sound } from "@/lib/sound";
+import { AdsCafe, AdsNightMarket } from "@/components/ads";
 import { ResetButton } from "@/components/reset-button";
 import { SoundToggle } from "@/components/sound-toggle";
 import { ThemeToggle } from "@/components/theme-toggle";
@@ -117,6 +118,7 @@ export function PlayScreen<V, X, L, R>({ game, engine, title, intro, parseReveal
         <h1 className="mt-10 text-3xl sm:text-[2.75rem]">{title}</h1>
         <div className="mt-5 space-y-3 text-lg">{intro}</div>
         <BigButton onClick={start}>เริ่มเลย</BigButton>
+        <AdsNightMarket />
       </Shell>
     );
   }
@@ -160,7 +162,8 @@ export function PlayScreen<V, X, L, R>({ game, engine, title, intro, parseReveal
           </li>
         ))}
       </ol>
-      <p className="mt-8 hidden text-center text-sm text-muted sm:block">กดปุ่มตัวเลขบนคีย์บอร์ดเพื่อตอบได้</p>
+      <p className="mt-8 hidden select-none text-center text-sm text-muted sm:block">กดปุ่มตัวเลขบนคีย์บอร์ดเพื่อตอบได้</p>
+      <AdsCafe />
     </Shell>
   );
 }

@@ -1,4 +1,4 @@
-/* Surfaces: the confidence meter, paper sheets, the cue, the guess figure and links. */
+/* Surfaces: the confidence meter, paper sheets, the cue, the guess figure, links and the mock ads. */
 @layer components {
   .meter {
     height: 10px;
@@ -107,5 +107,108 @@
     flex: none;
     width: 1.25em;
     height: 1.25em;
+  }
+
+  /* Mock ads (src/components/ads): a muted neo-brutal banner, one tone per ad.
+     Motion runs only with no reduced-motion preference: an entrance once, set by
+     data-motion from MockAd, a lift on hover, and a squash on press. */
+  .mock-ad {
+    --ad-edge: color-mix(in oklch, var(--color-ink) 80%, var(--color-paper));
+    --ad-shadow: color-mix(in oklch, var(--ad-tone) 28%, var(--color-rule));
+    --fx-tone: var(--ad-tone); /* the drawn effects' tone, src/lib/sakuga.ts */
+    position: relative;
+    border: 2px solid var(--ad-edge);
+    border-radius: var(--radius-stock);
+    background: color-mix(in oklch, var(--ad-tone) 6%, var(--color-card));
+    box-shadow: 4px 5px 0 var(--ad-shadow);
+    color: var(--color-ink);
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  .mock-ad--clay { --ad-tone: var(--color-accent-3); }
+  .mock-ad--sea { --ad-tone: var(--color-accent-2); }
+  .mock-ad--moss { --ad-tone: var(--color-mint-deep); }
+  .mock-ad--wheat { --ad-tone: var(--color-accent-deep); }
+  .mock-ad--plum { --ad-tone: color-mix(in oklch, var(--color-accent-2), var(--color-accent-3)); }
+  .mock-ad--slate { --ad-tone: var(--color-muted); }
+  .mock-ad-art {
+    border: 2px solid var(--ad-edge);
+    border-radius: 12px;
+    background: color-mix(in oklch, var(--ad-tone) 20%, var(--color-card));
+    color: var(--ad-edge);
+  }
+  .mock-ad-art .spot {
+    fill: color-mix(in oklch, var(--ad-tone) 6%, var(--color-card));
+  }
+  .mock-ad-head {
+    font-style: italic;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+  }
+  .mock-ad-cta {
+    border: 2px solid var(--ad-edge);
+    border-radius: var(--radius-pill);
+    background: color-mix(in oklch, var(--ad-tone) 20%, var(--color-card));
+    box-shadow: 2px 2px 0 var(--ad-edge);
+    font-style: italic;
+    font-weight: 800;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .mock-ad {
+      transition:
+        translate var(--dur-long) var(--ease-spring),
+        scale var(--dur-long) var(--ease-spring),
+        box-shadow var(--dur-long) var(--ease-spring);
+    }
+    @media (hover: hover) {
+      .mock-ad:hover {
+        translate: -1px -1px;
+        box-shadow: 5px 6px 0 var(--ad-shadow);
+      }
+    }
+    .mock-ad:active {
+      translate: 3px 4px;
+      scale: 1.005 0.98;
+      box-shadow: 1px 1px 0 var(--ad-shadow);
+      transition-duration: var(--dur-micro);
+      transition-timing-function: var(--ease-out);
+    }
+    .mock-ad[data-motion="pending"] {
+      opacity: 0;
+    }
+    .mock-ad[data-motion="seen"] {
+      animation:
+        mock-ad-rise var(--dur-long) var(--ease-spring) backwards,
+        mock-ad-shadow 300ms var(--ease-spring) 160ms backwards;
+    }
+    .mock-ad[data-motion="seen"] .mock-ad-art {
+      animation: mock-ad-bounce 480ms var(--ease-out) 200ms;
+    }
+    .mock-ad[data-motion="seen"] .puff {
+      animation: mock-ad-puff 520ms var(--ease-out) 280ms backwards;
+    }
+    .mock-ad[data-motion="seen"] .twinkle {
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: mock-ad-twinkle 360ms var(--ease-spring) 320ms backwards;
+    }
+  }
+  @keyframes mock-ad-rise {
+    from { opacity: 0; translate: 0 10px; }
+  }
+  @keyframes mock-ad-shadow {
+    from { box-shadow: 0 0 0 var(--ad-shadow); }
+  }
+  @keyframes mock-ad-bounce {
+    30% { scale: 1.08 0.9; }
+    55% { scale: 0.95 1.06; }
+    80% { scale: 1.02 0.98; }
+  }
+  @keyframes mock-ad-puff {
+    from { opacity: 0; translate: 0 4px; }
+  }
+  @keyframes mock-ad-twinkle {
+    from { scale: 0; }
   }
 }

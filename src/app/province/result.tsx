@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { AdsRamen, AdsSketchbook } from "@/components/ads";
 import { PlayAgainBar, type ResultControls } from "@/components/play-screen";
 import { PROVINCES, PROVINCE_IDS, REGION_NAMES, isProvinceId, toPersonaSource, type FinishedProvincePlay, type ProvinceId, type Region } from "@/games/province";
 import type { RevealParser } from "@/lib/play-record";
@@ -118,6 +119,8 @@ export function ProvinceResult({
         )}
       </section>
 
+      <AdsSketchbook />
+
       <section className="mt-12">
         <h2 className="text-2xl">เกมคิดอะไรอยู่</h2>
         <p className="mt-1 text-sm text-muted">สีเข้มคือจังหวัดที่เกมคิดว่าน่าจะใช่ จังหวัดสีจางคือจังหวัดที่ตัดออกไปแล้ว</p>
@@ -170,6 +173,8 @@ export function ProvinceResult({
       </section>
 
       {process.env.NODE_ENV === "development" ? <PersonaRecorder play={play} real={real} /> : null}
+
+      <AdsRamen />
 
       <PlayAgainBar onClick={playAgain} />
     </div>
