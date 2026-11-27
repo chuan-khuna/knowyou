@@ -95,3 +95,12 @@ byou gets its own effects layer, forked from the Sakuga VFX core into the app's 
 - Upstream: https://github.com/finktheartist/sakuga-vfx (MIT, © 2026 Justin Finkelman). Font: Playpen Sans Thai, TypeTogether and others, OFL, from `google/fonts` `ofl/playpensansthai`.
 - `docs/documents/drawn-effects.md` must be rewritten for the fork, the Thai words and the new moments, and INDEX.md's line updated, in the same change.
 - At the time of writing, the working tree carries uncommitted Haikyu quiz work on `haikyu-quiz`. Build this on its own branch from `main`.
+
+## Comments
+
+Changes from the spec, decided while building (2026-11-27):
+
+- **Moments, not button components.** Number keys and Enter answer and start without touching a button. So the effects fire from the play logic beside each sound cue, and the keys find their button (`data-option-key`, refs). `FxOption` and `FxButton` were not built. `BigButton` takes an `fx` prop, and the one new component is `ResultHeading` in `src/components/`.
+- **No burst behind the button.** เริ่มเลย, an answer and ดูคะแนน unmount on press, so a layer inside them would vanish at once. Every effect draws on the page canvas, at the point the press landed.
+- **One word per reaction.** In frame sheets, ปัง! at the last press and ตึ้ง!! on the result landed on top of each other. The last press now throws the small answer effect, and the result owns the hit and its word. The result burst sits just past the end of the heading's last line, so it does not cover the title.
+- **Fork trimmed further.** It also drops upstream's frame-stepping hooks. `drawn-effects.md` describes how to step frames without them.

@@ -124,15 +124,14 @@ export function answerEffect(el: Element | null | undefined, at?: PagePoint): vo
   });
 }
 
-/** The press that ends a play: a burst and ปัง! where it landed, then the result lands too (`useResultLanding`). */
+/**
+ * The press that ends a play: the answer's own small effect, and the result
+ * heading lands when it shows (`resultLanding`). The hit and its word belong
+ * to the result, so the screen never shows two words at once.
+ */
 export function finishEffect(el: Element | null | undefined, at?: PagePoint): void {
-  draw(el, (fx, P, box) => {
-    const x = at?.x ?? box.cx;
-    const y = at?.y ?? box.cy;
-    fx.burst(P, x, y, { r: 34, spikes: 11 });
-    fx.puff(P, x + 20, y - 6, { n: 4, size: 9, vy: -16, life: 0.7 });
-    fx.word(P, "pang", x - 6, y - 40, { size: 64, life: 0.75 });
-  });
+  if (!at && el) squash(el);
+  answerEffect(el, at);
   expectLanding();
 }
 
@@ -143,9 +142,9 @@ export function startEffect(el: Element | null | undefined, at?: PagePoint): voi
     const x = at?.x ?? box.cx;
     const y = at?.y ?? box.cy;
     fx.burst(P, x, y, { r: 40, spikes: 12 });
-    fx.puff(P, box.left + 18, box.bottom - 6, { n: 4, size: 9, vx: -18, vy: -10, life: 0.7 });
-    fx.puff(P, box.right - 18, box.bottom - 6, { n: 4, size: 9, vx: 18, vy: -10, life: 0.7 });
-    fx.word(P, "pang", box.cx, box.top - 26, { size: 72, life: 0.8 });
+    fx.puff(P, x - 46, y + 4, { n: 4, size: 9, vx: -22, vy: -10, life: 0.65 });
+    fx.puff(P, x + 46, y + 4, { n: 4, size: 9, vx: 22, vy: -10, life: 0.65 });
+    fx.word(P, "pang", x, y - 58, { size: 80, life: 0.8 });
   });
 }
 
@@ -174,11 +173,21 @@ export function resultLanding(el: Element | null): void {
   if (!el || !landingAt || performance.now() - landingAt > LANDING_WINDOW_MS) return;
   landingAt = 0;
   setTimeout(() => {
+    // The burst goes off just past the end of the heading's last line, so it frames the words instead of covering them.
+    const range = document.createRange();
+    range.selectNodeContents(el);
+    const lines = range.getClientRects();
+    const end = lines[lines.length - 1];
     draw(el, (fx, P, box) => {
-      const x = Math.min(box.right, box.left + 140);
-      fx.burst(P, x, box.cy, { r: 56, spikes: 14, life: 0.4 });
-      fx.word(P, "tueng", x + 70, box.top - 18, { size: 104, rot: -0.12, life: 1, hollow: true });
-      fx.ticks(P, x - 46, box.top, { n: 4, r: 10, len: 12, dir: -2.3, fan: 0.4, life: 0.45 });
+      const r = 38;
+      const word = 96;
+      const x = end ? Math.min(end.right + scrollX + r * 1.2, scrollX + innerWidth - r - 6) : box.cx;
+      const y = end ? end.top + scrollY + end.height / 2 : box.cy;
+      fx.burst(P, x, y, { r, spikes: 13, life: 0.4 });
+      fx.ticks(P, x, y, { n: 5, r: r + 4, len: 12, dir: -Math.PI / 2, fan: 0.55, life: 0.45 });
+      // The word sits on the impact, as manga letters a hit, so it stays in the space the burst already takes.
+      const wx = Math.min(x, scrollX + innerWidth - word / 2 - 8);
+      fx.word(P, "tueng", wx, y - r * 0.7, { size: word, rot: -0.12, life: 1, hollow: true });
     });
   }, LANDING_DELAY_MS);
 }
