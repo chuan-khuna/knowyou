@@ -30,14 +30,15 @@ Prefer the Kuroko way for a new title. The agent that writes a question reads on
    - Source: one main wiki for the series, with Wikipedia as the second choice.
    - Thai spellings: the edition fans use for names (the Kuroko spec uses the Siam Inter Comics edition).
    - Route slug in kebab-case, the Thai title `คุณรู้จัก <ชื่อเรื่อง> ดีแค่ไหน`, and five score bands.
-2. **Save the source pages as plain text.** Create `tmp/<slug>/` and save one text file per wiki page: main characters, teams or schools, techniques, arcs and episodes. Keep the page URL with each file, because `source` needs it. The repo does not record the download method used for Kuroko, so any method that gives clean text per page works. A fandom wiki runs MediaWiki, so its `api.php` is one option; this is untested here.
+2. **Save the source pages as plain text.** Run `bun scripts/quiz-sources.ts fetch <slug> <page url>...`. It saves one text file per page in `tmp/<slug>/`, with the page URL on the first line. Save main characters, teams or schools, techniques, arcs and episodes. A redirect saves the target page, so cite that URL in `source`. The script works with any MediaWiki: a fandom wiki or Wikipedia. Find page titles with the wiki's `api.php`, such as `list=categorymembers`.
+   Write a Thai name sheet beside the pages before drafting, so every pass spells names the same way.
 3. **Draft the questions in parallel passes.** Split the source by topic, such as characters, techniques, teams and story arcs, and give each pass to one agent. Brief each agent with the question fields and rules in [prince-of-tennis-quiz-format.md](prince-of-tennis-quiz-format.md), the saved text only, and the scope from the spec. Each agent returns one JSON file with `questions` and `glossary`. An agent must not write a question the text cannot confirm.
 4. **Merge the passes.** Check the whole set, not each file:
    - Every `id` is new, kebab-case and stable. A saved play names its questions by id, so never rename or reuse one.
    - No two questions ask the same fact in other words.
    - No prompt, note or decoy gives away the answer to another question.
    - Every decoy is the same kind of thing as its answer and is false by the source.
-5. **Check every quote.** Open each `source` and confirm that `evidence` is on the page. For a saved text file, search it for the quote. Fix the question or drop it when the quote is missing. Kuroko shipped only after this check.
+5. **Check every quote.** Run `bun scripts/quiz-sources.ts check <slug>`. It finds the saved page for each `source` and searches it for the `evidence` quote. Fix the question or drop it when the quote is missing. Ship only when it prints N/N.
 6. **Balance the tiers.** The module needs at least 15 questions in each tier, and `createQuiz` needs at least 5 in each. The shipped banks have 150 to 169 questions, with a spread like Kuroko's: 33 easy, 46 medium, 47 hard, 43 very hard.
 
    | Tier | Who can answer |
@@ -58,6 +59,6 @@ Prefer the Kuroko way for a new title. The agent that writes a question reads on
 
 ## Limits
 
-- The repo has no script that downloads source text or checks quotes. Both steps are manual or agent work.
+- `scripts/quiz-sources.ts` checks that a quote is on its page, not that the page backs the answer. A reviewer still reads the question against the quote.
 - For Naruto, Dragon Ball and Reborn, the source notes live outside the repo. Ask the user for them before you extend those banks.
 - Thai move names are the weakest data. A name with no Thai edition behind it is a guess; flag it.
