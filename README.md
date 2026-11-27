@@ -1,4 +1,4 @@
-# KnowYou
+# byou
 
 A family of guessing games for Thai players. Each game asks questions until it is confident, then guesses one hidden fact about you, just once.
 
@@ -32,6 +32,10 @@ bun run curve <question-id>   # print one question's P(answer | age)
 bun run sim [playsPerAge]     # simulate players and report hit rate by age
 ```
 
+## Analytics
+
+The root layout renders `<Analytics />` from `@vercel/analytics`, which counts page views on the Vercel deployment and does nothing elsewhere. It sets no cookies. The spec is `.scratch/byou-and-analytics/spec.md`.
+
 ## Credits
 
-Inspired by [あなたの年齢を当てます (nenrei)](https://kepigame.com/games/nenrei.html) by kepigame, which guesses your age from the fads you remember. KnowYou is an independent project with its own questions and code. It is not affiliated with kepigame.
+Inspired by [あなたの年齢を当てます (nenrei)](https://kepigame.com/games/nenrei.html) by kepigame, which guesses your age from the fads you remember. byou is an independent project with its own questions and code. It is not affiliated with kepigame.

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { PrinceOfTennisQuiz } from "./prince-of-tennis-quiz";
 
 export const metadata: Metadata = {
-  title: "คุณรู้จัก Prince of Tennis ดีแค่ไหน · KnowYou",
+  title: "คุณรู้จัก Prince of Tennis ดีแค่ไหน · byou",
   description: "ตอบคำถามแล้วดูว่าคุณเป็นแฟนระดับไหน",
 };
 

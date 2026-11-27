@@ -1,4 +1,4 @@
-# KnowYou
+# byou
 
 A family of guessing games that ask questions until they are confident, then guess one hidden fact about the player once: their province, their university, or their age from the anime they watched.
 

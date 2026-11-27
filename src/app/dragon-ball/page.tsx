@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { DragonBallQuiz } from "./dragon-ball-quiz";
 
 export const metadata: Metadata = {
-  title: "คุณรู้จัก Dragon Ball ดีแค่ไหน · KnowYou",
+  title: "คุณรู้จัก Dragon Ball ดีแค่ไหน · byou",
   description: "ตอบคำถามแล้วดูว่าคุณเป็นนักสู้ระดับไหน",
 };
 

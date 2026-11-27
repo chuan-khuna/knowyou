@@ -185,7 +185,7 @@ export function Shell({ status, onReset, crowded = false, children }: { status?:
     <main className="shell">
       <header className="topbar">
         <Link href="/" className="wordmark">
-          KnowYou
+          byou
         </Link>
         <div className="topbar-end">
           {status}

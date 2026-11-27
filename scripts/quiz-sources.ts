@@ -14,7 +14,7 @@
 import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
-const USER_AGENT = "knowyou-quiz-sources/1.0";
+const USER_AGENT = "byou-quiz-sources/1.0";
 
 /** Whitespace, quote marks and dashes vary between the page and a quote copied from it. */
 function normalize(text: string): string {
