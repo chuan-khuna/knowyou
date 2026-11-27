@@ -1,7 +1,11 @@
 /* Controls: card-stock buttons, answer options, the province select and the icon button. */
 @layer components {
+  /* Card stock, drawn: a 2px line and a flat shadow at --drop-x --drop-y. Hover lifts it off the shadow,
+     a press sinks it into the shadow with a small squash, and release springs back. */
   .stock {
-    --edge: 2px;
+    --drop-x: 3px;
+    --drop-y: 4px;
+    --drop-tone: var(--color-drop);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,41 +13,50 @@
     width: 100%;
     min-height: 54px;
     padding: var(--space-sm) var(--space-lg);
-    border: 0;
+    border: 2px solid var(--color-line);
     border-radius: var(--radius-stock);
     background: var(--color-card);
     color: var(--color-ink);
     font-weight: 600;
     text-decoration: none;
     cursor: pointer;
-    box-shadow: inset 0 0 0 1px var(--color-rule), 0 var(--edge) 0 0 var(--color-edge);
+    box-shadow: var(--drop-x) var(--drop-y) 0 0 var(--drop-tone);
     transition:
-      translate var(--dur-micro) var(--ease-snap),
-      box-shadow var(--dur-micro) var(--ease-snap);
+      translate var(--dur-micro) var(--ease-spring),
+      scale var(--dur-micro) var(--ease-spring),
+      box-shadow var(--dur-micro) var(--ease-spring);
   }
 
   .stock:hover {
-    --edge: 3px;
-    translate: 0 -1px;
+    --drop-x: 4px;
+    --drop-y: 5px;
+    translate: -1px -1px;
   }
 
   .stock:active {
-    --edge: 0px;
-    translate: 0 2px;
+    --drop-x: 0px;
+    --drop-y: 0px;
+    translate: 3px 4px;
+    scale: 1.015 0.97;
+    transition-duration: 60ms;
   }
 
   .stock:disabled {
     cursor: not-allowed;
     opacity: 0.5;
-    --edge: 0px;
-    translate: 0 2px;
+    --drop-x: 0px;
+    --drop-y: 0px;
+    translate: 3px 4px;
+    scale: none;
   }
 
-  /* A picked choice among several, such as the quiz's count presets: ink with paper type, as Hum picks a pill. */
+  /* A picked choice among several, such as the quiz's count presets: ink with paper type, pressed half into its shadow. */
   .stock[aria-pressed="true"] {
+    --drop-x: 1px;
+    --drop-y: 2px;
     background: var(--color-ink);
     color: var(--color-paper);
-    box-shadow: 0 var(--edge) 0 0 var(--color-edge);
+    translate: 2px 2px;
   }
 
   /* A whole-row setting on card stock: the text on the left, a .switch on the right. */
@@ -52,59 +65,88 @@
     align-items: center;
     gap: var(--space-md);
     padding: var(--space-sm) var(--space-md);
+    border: 2px solid var(--color-line);
     border-radius: var(--radius-input);
     background: var(--color-card);
     cursor: pointer;
-    box-shadow: inset 0 0 0 1px var(--color-rule), 0 2px 0 0 var(--color-edge);
-    transition: box-shadow var(--dur-micro) var(--ease-snap);
+    box-shadow: 3px 4px 0 0 var(--color-drop);
+    transition:
+      translate var(--dur-micro) var(--ease-spring),
+      box-shadow var(--dur-micro) var(--ease-spring);
   }
 
   .toggle-row:hover {
-    box-shadow: inset 0 0 0 1px var(--color-muted), 0 2px 0 0 var(--color-edge);
+    translate: -1px -1px;
+    box-shadow: 4px 5px 0 0 var(--color-drop);
   }
 
-  .toggle-row:has(.switch:checked) {
-    background: color-mix(in oklch, var(--color-accent) 8%, var(--color-card));
+  .toggle-row:has(.switch input:checked) {
+    background: color-mix(in oklch, var(--color-mint) 10%, var(--color-card));
   }
 
-  /* A checkbox drawn as a pill switch; give it role="switch". */
+  /* A drawn switch (src/components/anime-switch.tsx): a real checkbox, transparent, over a track and
+     a knob. Off: a white track. On: a mint track and a tick on the knob. The knob's dash is a Web
+     Animation; KNOB_TRAVEL in src/lib/anime-fx/knob.ts is the track's inside width less the knob (52 - 2·2 - 2·2 - 22). */
   .switch {
-    appearance: none;
+    --fx-tone: var(--color-mint-deep); /* the switch's effects' tone, src/lib/anime-fx */
     position: relative;
+    display: inline-flex;
     flex: none;
-    width: 48px;
-    height: 28px;
+  }
+
+  .switch input {
+    appearance: none;
+    position: absolute;
+    inset: 0;
     margin: 0;
     border-radius: var(--radius-pill);
-    background: var(--color-paper-3);
     cursor: pointer;
-    transition: background-color var(--dur-micro) var(--ease-snap);
   }
 
-  .switch::after {
-    content: "";
+  .switch:has(input:focus-visible) {
+    outline: 2px solid var(--color-focus);
+    outline-offset: 3px;
+    border-radius: var(--radius-pill);
+  }
+
+  .switch-track {
+    position: relative;
+    width: 52px;
+    height: 30px;
+    border: 2px solid var(--color-line);
+    border-radius: var(--radius-pill);
+    background: var(--color-card);
+    pointer-events: none;
+  }
+
+  .switch:has(input:checked) .switch-track {
+    background: color-mix(in oklch, var(--color-mint) 55%, var(--color-card));
+  }
+
+  .switch-knob {
     position: absolute;
-    top: 3px;
-    left: 3px;
+    top: 2px;
+    left: 2px;
+    display: grid;
+    place-items: center;
     width: 22px;
     height: 22px;
+    border: 2px solid var(--color-line);
     border-radius: 50%;
-    background: var(--color-card);
-    box-shadow: 0 1px 2px color-mix(in oklch, var(--color-ink) 25%, transparent);
-    transition: translate var(--dur-micro) var(--ease-snap);
+    background: var(--color-knob);
+    color: var(--color-mint-deep);
   }
 
-  .switch:checked {
-    background: var(--color-accent);
+  .switch:has(input:checked) .switch-knob {
+    translate: 22px 0;
   }
 
-  .switch:checked::after {
-    translate: 20px 0;
+  .switch-knob svg {
+    opacity: 0;
   }
 
-  .switch:focus-visible {
-    outline: 2px solid var(--color-focus);
-    outline-offset: 2px;
+  .switch:has(input:checked) .switch-knob svg {
+    opacity: 1;
   }
 
   /* A number field between − and + buttons, on the same stock as .select. */
@@ -112,14 +154,10 @@
     display: flex;
     align-items: stretch;
     min-height: 54px;
+    border: 2px solid var(--color-line);
     border-radius: var(--radius-input);
     background: var(--color-card);
-    box-shadow: inset 0 0 0 1px var(--color-rule), 0 2px 0 0 var(--color-edge);
-    transition: box-shadow var(--dur-micro) var(--ease-snap);
-  }
-
-  .stepper:hover {
-    box-shadow: inset 0 0 0 1px var(--color-muted), 0 2px 0 0 var(--color-edge);
+    box-shadow: 3px 4px 0 0 var(--color-drop);
   }
 
   .stepper:has(input:focus-visible) {
@@ -128,7 +166,7 @@
   }
 
   .stepper:has(input[aria-invalid="true"]) {
-    box-shadow: inset 0 0 0 2px var(--color-error), 0 2px 0 0 var(--color-edge);
+    border-color: var(--color-error);
   }
 
   .stepper input {
@@ -166,7 +204,8 @@
     cursor: pointer;
     transition:
       background-color var(--dur-micro) var(--ease-snap),
-      color var(--dur-micro) var(--ease-snap);
+      color var(--dur-micro) var(--ease-snap),
+      scale var(--dur-micro) var(--ease-spring);
   }
 
   /* The seed code field has one button, on the right: keep the code centred by padding the left to match. */
@@ -181,6 +220,7 @@
 
   .stepper button:active:not(:disabled) {
     background: var(--color-paper-3);
+    scale: 1.08 0.88;
   }
 
   .stepper button:focus-visible {
@@ -194,10 +234,9 @@
   }
 
   .stock--primary {
+    --drop-tone: color-mix(in oklch, var(--color-accent-deep) 75%, var(--color-line));
     background: var(--color-accent);
     color: var(--color-accent-ink);
-    box-shadow: 0 var(--edge) 0 0 var(--color-accent-deep);
-    transition-timing-function: var(--ease-spring);
   }
 
   .option {
@@ -227,22 +266,13 @@
     width: 100%;
     min-height: 54px;
     padding: var(--space-sm) var(--space-md);
-    border: 0;
+    border: 2px solid var(--color-line);
     border-radius: var(--radius-input);
     background: var(--color-card);
     color: var(--color-ink);
     font-size: var(--text-lg);
     cursor: pointer;
-    box-shadow: inset 0 0 0 1px var(--color-rule), 0 2px 0 0 var(--color-edge);
-    transition: box-shadow var(--dur-micro) var(--ease-snap);
-  }
-
-  .select:hover {
-    box-shadow: inset 0 0 0 1px var(--color-muted), 0 2px 0 0 var(--color-edge);
-  }
-
-  .select:active {
-    box-shadow: inset 0 0 0 1px var(--color-muted);
+    box-shadow: 3px 4px 0 0 var(--color-drop);
   }
 
   .select:focus-visible {
@@ -456,10 +486,10 @@
 
   /* The theme switch (src/components/theme-toggle.tsx): a white track by day and a night track
      by night, and a knob that is the sun or the moon, each a light tone, a shadow tone and a line. The knob's dash is a Web Animation;
-     TRAVEL in the component is the track's inside width less the knob (52 - 2·2 - 2·2 - 22). */
+     KNOB_TRAVEL in src/lib/anime-fx/knob.ts is the track's inside width less the knob (52 - 2·2 - 2·2 - 22). */
   .theme-switch {
     --fx-tone: var(--color-accent-deep); /* the dash and slam effects' tone, src/lib/anime-fx */
-    --switch-line: color-mix(in oklch, var(--color-ink) 80%, var(--color-paper));
+    --switch-line: var(--color-line);
     display: inline-flex;
     flex: none;
     align-items: center;
@@ -562,17 +592,22 @@
   .option--locked {
     cursor: default;
   }
-  .option--locked:hover {
-    --edge: 2px;
+  .option--locked:hover,
+  .option--locked:active {
+    --drop-x: 3px;
+    --drop-y: 4px;
     translate: none;
+    scale: none;
   }
   .option--right {
     background: color-mix(in oklch, var(--color-mint) 18%, var(--color-card));
-    box-shadow: inset 0 0 0 2px var(--color-mint-deep), 0 var(--edge) 0 0 var(--color-edge);
+    border-color: var(--color-mint-deep);
+    --drop-tone: color-mix(in oklch, var(--color-mint-deep) 45%, var(--color-drop));
   }
   .option--wrong {
     background: color-mix(in oklch, var(--color-accent-3) 14%, var(--color-card));
-    box-shadow: inset 0 0 0 2px var(--color-accent-3), 0 var(--edge) 0 0 var(--color-edge);
+    border-color: var(--color-accent-3);
+    --drop-tone: color-mix(in oklch, var(--color-accent-3) 45%, var(--color-drop));
   }
   .option--faded {
     opacity: 0.6;

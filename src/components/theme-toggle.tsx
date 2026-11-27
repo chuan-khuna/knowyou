@@ -3,37 +3,11 @@
 import { useId, useRef } from "react";
 import { flushSync } from "react-dom";
 import { dashEffect, slamEffect } from "@/lib/anime-fx";
+import { DASH_MS, dashFrames, SETTLE_MS, settleFrames } from "@/lib/anime-fx/knob";
 import { toggleTheme, useTheme } from "@/lib/theme";
 
-/** How far the knob travels, in px: the track's inside width less the knob. Matches `.theme-switch` in controls.css. */
-const TRAVEL = 22;
-/** The crouch, the dash and the slam into the far end. */
-const DASH_MS = 210;
-/** The squash at the end springing back to round. */
-const SETTLE_MS = 320;
 const REVEAL_MS = 500;
 const SPIN_MS = 300;
-
-/** The knob's dash, relative to where it starts, moving `dir` (1 right, -1 left): crouch, smear, slam. */
-function dashFrames(dir: number): Keyframe[] {
-  return [
-    { transform: "translateX(0) scale(1, 1)" },
-    { transform: `translateX(${-2 * dir}px) scale(0.82, 1.14)`, offset: 0.2, easing: "ease-in" },
-    { transform: `translateX(${10 * dir}px) scale(1.75, 0.72)`, offset: 0.55 },
-    { transform: `translateX(${20 * dir}px) scale(1.3, 0.86)`, offset: 0.85 },
-    { transform: `translateX(${(TRAVEL + 1) * dir}px) scale(0.72, 1.22)` },
-  ];
-}
-
-/** From the slam, at its new end: the squash springs back with one overshoot. */
-function settleFrames(dir: number): Keyframe[] {
-  return [
-    { transform: `translateX(${dir}px) scale(0.72, 1.22)` },
-    { transform: `translateX(${-dir}px) scale(1.1, 0.92)`, offset: 0.4 },
-    { transform: "translateX(0) scale(0.97, 1.03)", offset: 0.7 },
-    { transform: "translateX(0) scale(1, 1)" },
-  ];
-}
 
 /**
  * The top strip's light/dark switch: a track with a knob that carries the sun

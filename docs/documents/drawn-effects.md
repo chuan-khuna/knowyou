@@ -75,7 +75,11 @@ The play moments fire from the play logic, beside the sound cue of the same mome
 | A press on a mock ad, released inside it | `pressEffect` | At the press point: a small impact star (radius 30), one puff, and the ad's sound word above it (52px wide) |
 | A mock ad's entrance | `entranceSparkle` | One sparkle on the art tile's top-right corner, 320 ms after the entrance starts |
 | A seed code or share link copied | `copyEffect` | The chip squashes and springs back (320 ms); ติ๊ง! just above it, a glint on its right end, three ticks off its top-right corner |
-| The theme switch's knob setting off | `dashEffect` | 70 ms in, four speed lines streak out behind the knob |
+| A preset picked (20 ข้อ, 30 ข้อ, ขั้นสูง) | `pickEffect` | Three ticks off its top-right corner |
+| − or + beside the count field | `stepEffect` | The button squashes, three wedges fly off its outer side, and the number pops 122% and springs back |
+| The dice beside the seed code | `rollEffect` | The die tumbles a full turn, the new code pops, a glint at the die's corner and a small puff |
+| The เฉลยทุกข้อ switch's knob reaching its end (`AnimeSwitch`) | `switchEffect` | Turning on: a small impact at the right end, three wedges and ติ๊ง! above the knob. Turning off: one small puff at the left end |
+| A drawn switch's knob setting off (the theme switch and `AnimeSwitch`) | `dashEffect` | 70 ms in, four speed lines streak out behind the knob |
 | The knob slamming into the far end, as the new theme starts to show | `slamEffect` | A small impact star at the end it hit, three wedges off that end; then to light a ring of rays like a sun flare, to dark three stars around the switch |
 | The sound button | `soundEffect` | The button squashes and springs back. Turning on: three ticks to the right, like sound waves, and a small ป๊อก below. Turning off: one small puff |
 
@@ -85,7 +89,7 @@ No effect depends on whether an answer was right. The quiz's reveal stays the on
 
 The squashes are Web Animations on the button, skipped under reduced motion. A double-click or Enter shows no `:active` state, so CSS alone could not show the press.
 
-The theme switch's slam fires once its view transition is ready. The new page shows live inside the growing circle, so the impact appears inside the circle as it grows (`theme.md`).
+Both drawn switches move their knob with the keyframes in `knob.ts`: a crouch, a smear across, a slam squashed into the far end, and a spring back to round. The theme switch plays the dash and the settle as two animations around its view transition. `AnimeSwitch` changes state at once and plays `flipFrames`, the whole flip measured from the knob's new end. The theme switch's slam fires once its view transition is ready. The new page shows live inside the growing circle, so the impact appears inside the circle as it grows (`theme.md`).
 
 ## Checking a change
 

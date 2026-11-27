@@ -26,7 +26,7 @@ type Core = typeof import("@/lib/anime-fx/core");
 const PALETTE: Palette = {
   fill: "var(--color-card)",
   shade: "color-mix(in oklch, var(--fx-tone, var(--color-accent-2)) 20%, var(--color-card))",
-  line: "color-mix(in oklch, var(--color-ink) 80%, var(--color-paper))",
+  line: "var(--color-line)",
   accent: "color-mix(in oklch, var(--fx-tone, var(--color-accent-2)) 55%, var(--color-card))",
 };
 const REDUCED_MOTION = "(prefers-reduced-motion: reduce)";
@@ -243,6 +243,57 @@ export function slamEffect(knob: Element, dark: boolean): void {
     } else {
       fx.ticks(P, box.cx, box.cy, { dir: -Math.PI / 2, n: 5, r: 15, len: 8, fan: 0.6, life: 0.45 });
     }
+  });
+}
+
+/** A drawn switch's knob reaching its end: turning on, a small impact, wedges off the end and ติ๊ง! above; turning off, one small puff. */
+export function switchEffect(knob: Element, on: boolean): void {
+  draw(knob, (fx, P, box) => {
+    if (on) {
+      fx.burst(P, box.right, box.cy, { r: 11, spikes: 9, life: 0.26 });
+      fx.ticks(P, box.right, box.cy, { n: 3, r: 10, len: 9, dir: 0, fan: 0.55, life: 0.4 });
+      fx.word(P, "ting", box.cx - 4, box.top - 20, { size: 46, life: 0.7 });
+    } else {
+      fx.puff(P, box.left - 2, box.cy - 2, { n: 3, size: 7, vx: -10, vy: -10, life: 0.5 });
+    }
+  });
+}
+
+/** A field's value changing under a press: it pops a size up and springs back. */
+function pop(el: Element | null | undefined): void {
+  if (!el || calm()) return;
+  el.animate([{ scale: "1" }, { scale: "1.22", offset: 0.3 }, { scale: "0.96", offset: 0.65 }, { scale: "1" }], { duration: 300, easing: "ease-out" });
+}
+
+/** − or + beside a number field: the button squashes, wedges fly off its outer side, and the number pops. */
+export function stepEffect(button: Element, field: Element | null, dir: -1 | 1): void {
+  squash(button);
+  pop(field);
+  draw(button, (fx, P, box) => {
+    const x = dir > 0 ? box.right - 4 : box.left + 4;
+    fx.ticks(P, x, box.cy, { n: 3, r: 6, len: 9, dir: dir > 0 ? 0 : Math.PI, fan: 0.5, life: 0.36 });
+  });
+}
+
+/** The dice beside the seed code: the die tumbles a full turn, the new code pops, and a glint and a puff go off at the die. */
+export function rollEffect(button: Element, field: Element | null): void {
+  pop(field);
+  if (!calm()) {
+    button.querySelector("svg")?.animate(
+      [{ rotate: "0deg", scale: "1" }, { rotate: "200deg", scale: "1.3", offset: 0.5 }, { rotate: "380deg", scale: "0.9", offset: 0.8 }, { rotate: "360deg", scale: "1" }],
+      { duration: 420, easing: "ease-out" },
+    );
+  }
+  draw(button, (fx, P, box) => {
+    fx.puff(P, box.left + 4, box.bottom - 4, { n: 3, size: 6, vx: -10, vy: -8, life: 0.45 });
+    fx.kira(P, box.right - 2, box.top + 2, { r: 8, life: 0.5 });
+  });
+}
+
+/** A preset picked among several: three ticks fly off its top-right corner. */
+export function pickEffect(el: Element): void {
+  draw(el, (fx, P, box) => {
+    fx.ticks(P, box.right - 6, box.top + 6, { n: 3, r: 6, len: 10, dir: -0.8, fan: 0.45, life: 0.4 });
   });
 }
 

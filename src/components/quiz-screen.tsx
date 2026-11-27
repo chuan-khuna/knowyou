@@ -23,11 +23,12 @@ import {
   type Tier,
 } from "@/games/quiz";
 import { setRevealOn, useRevealOn } from "@/lib/quiz-reveal";
-import { answerEffect, copyEffect, expectLanding, finishEffect, nextEffect, pressPoint, startEffect, warmEffects } from "@/lib/anime-fx";
+import { answerEffect, copyEffect, expectLanding, finishEffect, nextEffect, pickEffect, pressPoint, rollEffect, startEffect, stepEffect, warmEffects } from "@/lib/anime-fx";
 import { sound } from "@/lib/sound";
 import { AdsCafe, AdsFigure, AdsManga, AdsRamen, AdsSketchbook } from "@/components/ads";
 import { BigButton, optionButton, PlayAgainBar, Shell, type Press } from "@/components/play-screen";
 import { ResultHeading } from "@/components/result-heading";
+import { AnimeSwitch } from "@/components/anime-switch";
 
 interface QuizScreenProps {
   readonly quiz: Quiz;
@@ -227,7 +228,7 @@ export function QuizScreen({ quiz, title, intro }: QuizScreenProps) {
             <span className="block text-lg font-semibold">เฉลยทุกข้อ</span>
             <span className="block text-sm text-muted">ดูว่าถูกหรือผิดทันทีหลังตอบแต่ละข้อ เปิดปิดระหว่างเล่นได้</span>
           </span>
-          <input type="checkbox" role="switch" className="switch" checked={revealOn} onChange={(event) => setRevealOn(event.target.checked)} />
+          <AnimeSwitch checked={revealOn} onChange={setRevealOn} />
         </label>
         <BigButton ref={startButton} onClick={start} fx={startEffect} disabled={!countValid}>
           เริ่มเลย
@@ -310,7 +311,10 @@ function SettingPicker({ setting, onChange }: { setting: Setting; onChange: (set
             type="button"
             className="stock num"
             aria-pressed={setting === choice.setting}
-            onClick={() => onChange(choice.setting)}
+            onClick={(event) => {
+              if (setting !== choice.setting) pickEffect(event.currentTarget);
+              onChange(choice.setting);
+            }}
           >
             {choice.label}
           </button>
@@ -357,7 +361,15 @@ function CountField({ size, text, valid, onChange }: { size: number; text: strin
         จำนวนข้อ
       </label>
       <div className="stepper mt-3">
-        <button type="button" aria-label="ลดจำนวนข้อ" onClick={() => onChange((current) => String(step(current, -1)))} disabled={Number(text) <= MIN_QUESTIONS_PER_PLAY}>
+        <button
+          type="button"
+          aria-label="ลดจำนวนข้อ"
+          onClick={(event) => {
+            stepEffect(event.currentTarget, fieldOf(event.currentTarget), -1);
+            onChange((current) => String(step(current, -1)));
+          }}
+          disabled={Number(text) <= MIN_QUESTIONS_PER_PLAY}
+        >
           <StepIcon plus={false} />
         </button>
         <input
@@ -372,7 +384,15 @@ function CountField({ size, text, valid, onChange }: { size: number; text: strin
           aria-invalid={!valid}
           aria-describedby="count-range"
         />
-        <button type="button" aria-label="เพิ่มจำนวนข้อ" onClick={() => onChange((current) => String(step(current, 1)))} disabled={Number(text) >= size}>
+        <button
+          type="button"
+          aria-label="เพิ่มจำนวนข้อ"
+          onClick={(event) => {
+            stepEffect(event.currentTarget, fieldOf(event.currentTarget), 1);
+            onChange((current) => String(step(current, 1)));
+          }}
+          disabled={Number(text) >= size}
+        >
           <StepIcon plus />
         </button>
       </div>
@@ -387,6 +407,11 @@ function CountField({ size, text, valid, onChange }: { size: number; text: strin
  * The intro's seed code: up to 6 letters or digits, uppercased as typed, with
  * any other character dropped. Empty means a random play.
  */
+/** The input in the same `.stepper` as `button`, for an effect that pops its value. */
+function fieldOf(button: Element): HTMLInputElement | null {
+  return button.closest(".stepper")?.querySelector("input") ?? null;
+}
+
 function SeedCodeField({ text, onChange }: { text: string; onChange: (text: string) => void }) {
   return (
     <div className="min-w-0">
@@ -408,7 +433,15 @@ function SeedCodeField({ text, onChange }: { text: string; onChange: (text: stri
           aria-describedby="seed-code-hint"
           className="seed-code uppercase"
         />
-        <button type="button" aria-label="สุ่มรหัส" title="สุ่มรหัส" onClick={() => onChange(seedCode(randomSeed()))}>
+        <button
+          type="button"
+          aria-label="สุ่มรหัส"
+          title="สุ่มรหัส"
+          onClick={(event) => {
+            rollEffect(event.currentTarget, fieldOf(event.currentTarget));
+            onChange(seedCode(randomSeed()));
+          }}
+        >
           <DiceIcon />
         </button>
       </div>
