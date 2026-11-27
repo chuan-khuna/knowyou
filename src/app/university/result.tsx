@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { AdsCafe, AdsManga } from "@/components/ads";
 import { PlayAgainBar, type ResultControls } from "@/components/play-screen";
 import {
   AREA_NAMES,
@@ -140,6 +141,8 @@ export function UniversityResult({
         )}
       </section>
 
+      <AdsManga />
+
       <section className="mt-12">
         <h2 className="text-2xl">เกมคิดอะไรอยู่</h2>
         <p className="mt-1 text-sm text-muted">มหาวิทยาลัยที่เกมคิดว่าน่าจะใช่ที่สุด 3 อันดับ</p>
@@ -190,6 +193,8 @@ export function UniversityResult({
       </section>
 
       {process.env.NODE_ENV === "development" ? <PersonaRecorder play={play} real={real} /> : null}
+
+      <AdsCafe />
 
       <PlayAgainBar onClick={playAgain} />
     </div>

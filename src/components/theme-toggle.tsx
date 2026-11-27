@@ -2,6 +2,7 @@
 
 import { useRef, type MouseEvent } from "react";
 import { flushSync } from "react-dom";
+import { themeEffect } from "@/lib/sakuga";
 import { toggleTheme, useTheme } from "@/lib/theme";
 
 const REVEAL_MS = 500;
@@ -13,19 +14,22 @@ const SPIN_MS = 300;
  * for hiding it on a crowded strip.
  *
  * A tap reveals the new theme as a circle growing from the button, through a
- * view transition, and spins the new icon in. With reduced motion, or without
- * view transitions, the theme changes at once.
+ * view transition, and spins the new icon in; once the circle has filled the
+ * window, a drawn flourish plays at the button (`themeEffect`). With reduced
+ * motion, or without view transitions, the theme changes at once.
  */
 export function ThemeToggle({ className }: { className?: string }) {
   const dark = useTheme() === "dark";
   const icon = useRef<SVGSVGElement>(null);
 
   function onClick(event: MouseEvent<HTMLButtonElement>) {
+    const button = event.currentTarget;
     if (!document.startViewTransition || matchMedia("(prefers-reduced-motion: reduce)").matches) {
       toggleTheme();
+      themeEffect(button, !dark);
       return;
     }
-    const box = event.currentTarget.getBoundingClientRect();
+    const box = button.getBoundingClientRect();
     const x = box.left + box.width / 2;
     const y = box.top + box.height / 2;
     const radius = Math.hypot(Math.max(x, innerWidth - x), Math.max(y, innerHeight - y));
@@ -40,6 +44,11 @@ export function ThemeToggle({ className }: { className?: string }) {
           { duration: REVEAL_MS, easing: "ease-out", pseudoElement: "::view-transition-new(root)" },
         );
       },
+      () => {},
+    );
+    // The live page, and the effects canvas with it, is hidden under the transition's snapshots until it ends.
+    transition.finished.then(
+      () => themeEffect(button, !dark),
       () => {},
     );
   }

@@ -23,7 +23,9 @@ import {
   type Tier,
 } from "@/games/quiz";
 import { setRevealOn, useRevealOn } from "@/lib/quiz-reveal";
+import { copyEffect } from "@/lib/sakuga";
 import { sound } from "@/lib/sound";
+import { AdsCafe, AdsFigure, AdsManga, AdsRamen, AdsSketchbook } from "@/components/ads";
 import { BigButton, PlayAgainBar, Shell } from "@/components/play-screen";
 
 interface QuizScreenProps {
@@ -210,6 +212,7 @@ export function QuizScreen({ quiz, title, intro }: QuizScreenProps) {
         <BigButton onClick={start} disabled={!countValid}>
           เริ่มเลย
         </BigButton>
+        <AdsCafe />
       </Shell>
     );
   }
@@ -233,7 +236,8 @@ export function QuizScreen({ quiz, title, intro }: QuizScreenProps) {
         <BigButton onClick={advance} autoFocus>
           {current.phase === "finished" ? "ดูคะแนน" : "ข้อต่อไป"}
         </BigButton>
-        <p className="mt-4 hidden text-center text-sm text-muted sm:block">กด Enter เพื่อไปต่อ</p>
+        <p className="mt-4 hidden select-none text-center text-sm text-muted sm:block">กด Enter เพื่อไปต่อ</p>
+        <AdsSketchbook />
       </Shell>
     );
   }
@@ -259,7 +263,8 @@ export function QuizScreen({ quiz, title, intro }: QuizScreenProps) {
           </li>
         ))}
       </ol>
-      <p className="mt-8 hidden text-center text-sm text-muted sm:block">กดปุ่มตัวเลขบนคีย์บอร์ดเพื่อตอบได้</p>
+      <p className="mt-8 hidden select-none text-center text-sm text-muted sm:block">กดปุ่มตัวเลขบนคีย์บอร์ดเพื่อตอบได้</p>
+      <AdsManga />
     </Shell>
   );
 }
@@ -411,7 +416,8 @@ function RevealToggle({ on }: { on: boolean }) {
 
 /**
  * The play's seed code as a chip. Double-click, or Enter when focused, copies
- * it, and the chip says คัดลอกแล้ว for a moment.
+ * it, and the chip says คัดลอกแล้ว for a moment and throws a small drawn
+ * flourish (`copyEffect`).
  */
 function SeedChip({
   code,
@@ -429,11 +435,12 @@ function SeedChip({
     const timer = setTimeout(() => setCopied(false), 1500);
     return () => clearTimeout(timer);
   }, [copied]);
-  const copy = () => {
+  const copy = (chip: HTMLElement) => {
     navigator.clipboard?.writeText(link ?? code).then(
       () => {
         setCopied(true);
         sound.copy();
+        copyEffect(chip);
       },
       () => {}, // Clipboard can be blocked; the code is still on screen to copy by hand.
     );
@@ -445,11 +452,11 @@ function SeedChip({
       title={link ? "ดับเบิลคลิกเพื่อคัดลอกลิงก์ ส่งให้เพื่อนเล่นชุดเดียวกัน" : "ดับเบิลคลิกเพื่อคัดลอกรหัส ใส่รหัสนี้และจำนวนข้อเท่ากันเพื่อเล่นชุดเดียวกัน"}
       aria-label={`รหัสชุดคำถาม ${code} กด Enter เพื่อคัดลอก${link ? "ลิงก์" : ""}`}
       data-copied={copied || undefined}
-      onDoubleClick={copy}
+      onDoubleClick={(event) => copy(event.currentTarget)}
       onKeyDown={(event) => {
         if (event.key === "Enter") {
           event.preventDefault();
-          copy();
+          copy(event.currentTarget);
         }
       }}
     >
@@ -621,6 +628,8 @@ function Result({ play, playAgain }: { play: FinishedQuizPlay; playAgain: () => 
 
       <PlayAgainBar onClick={playAgain} pin="top" />
 
+      <AdsFigure />
+
       <section className="mt-12">
         <h2 className="text-2xl">เฉลย</h2>
         <ol className="sheet mt-4 divide-y divide-rule overflow-hidden">
@@ -629,6 +638,8 @@ function Result({ play, playAgain }: { play: FinishedQuizPlay; playAgain: () => 
           ))}
         </ol>
       </section>
+
+      <AdsRamen />
     </div>
   );
 }

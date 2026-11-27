@@ -376,6 +376,7 @@
     cursor: pointer;
     user-select: none;
     box-shadow: inset 0 0 0 1px var(--color-rule);
+    --fx-tone: var(--color-mint-deep); /* the copy effect's tone, src/lib/sakuga.ts */
     transition:
       background-color var(--dur-micro) var(--ease-snap),
       box-shadow var(--dur-micro) var(--ease-snap);
@@ -424,6 +425,7 @@
     background: transparent;
     color: var(--color-muted);
     cursor: pointer;
+    --fx-tone: var(--color-accent-deep); /* the theme and sound effects' tone, src/lib/sakuga.ts */
     transition:
       background-color var(--dur-micro) var(--ease-snap),
       color var(--dur-micro) var(--ease-snap),

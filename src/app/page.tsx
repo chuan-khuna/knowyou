@@ -1,3 +1,4 @@
+import { AdsNightMarket, AdsRamen } from "@/components/ads";
 import { GameLink } from "@/components/game-link";
 import { SiteFooter } from "@/components/site-footer";
 import { SoundToggle } from "@/components/sound-toggle";
@@ -43,7 +44,9 @@ export default function Home() {
       <h1 className="sr-only">KnowYou</h1>
 
       <CardSection heading="ทายตัวคุณ" line="เกมจะถามไปเรื่อย ๆ จนมั่นใจ แล้วทายเรื่องของคุณครั้งเดียว" cards={GAMES} />
+      <AdsRamen />
       <CardSection heading="ควิซ" line="ตอบคำถามเรื่องที่คุณชอบ แล้วดูว่าคุณรู้จักดีแค่ไหน" cards={QUIZZES} />
+      <AdsNightMarket />
 
       <SiteFooter />
     </main>
