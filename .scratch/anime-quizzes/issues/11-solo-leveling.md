@@ -1,6 +1,6 @@
 # Solo Leveling quiz
 
-Status: ready-for-agent
+Status: done
 
 Title: คุณรู้จัก Solo Leveling ดีแค่ไหน (โซโล่เลเวลลิ่ง)
 
@@ -15,3 +15,6 @@ The first Korean title: glosses need hangul and a romanization, not romaji and k
 ## Next step
 
 The spec is `.scratch/solo-leveling-quiz/spec.md`.
+
+## Comments
+- 2026-11-27: shipped in PR #3 (merge 7af9c1f).

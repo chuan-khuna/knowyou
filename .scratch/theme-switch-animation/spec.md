@@ -1,6 +1,6 @@
 # Spec: Theme switch animation
 
-Status: ready-for-agent
+Status: done
 
 Terms follow `GLOSSARY.md`. The theme switch is in `docs/documents/theme.md`; its spec is `.scratch/theme-switch/spec.md`.
 
@@ -41,3 +41,6 @@ Verify in the real app on a page with the switch: a tap grows the circle from th
 ## Out of Scope
 
 Animating any other colour change; a third "auto" state.
+
+## Comments
+- 2026-11-27: shipped in PR #3 (merge 7af9c1f).
