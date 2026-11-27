@@ -38,5 +38,6 @@ Sound reinforces visible feedback, never replaces it. Every sound below has a vi
 ## Mute and the first gesture
 
 - The top strip has a 44px square icon button: a speaker when sound is on, a speaker with an X when it is muted. Its accessible name and `title` are เสียง, and `aria-pressed` carries the state, so the state never rests on colour alone. The icons are inline 24px-grid line icons in the style of Lucide's `volume-2` and `volume-x`, stroked in `currentColor`.
+- A tap squashes the button and throws a small drawn effect (`soundEffect`, `drawn-effects.md`): turning sound on, three ticks like sound waves and a small ポン; turning it off, one small puff. None with reduced motion.
 - The choice is stored in localStorage under `knowyou:sound` and survives a refresh.
 - No sound plays before a user gesture. The player, and with it the AudioContext, is created on the first sound, which always comes from a click or a key press. A restored play makes no sound.

@@ -152,8 +152,8 @@ export function themeEffect(el: Element, dark: boolean): void {
       fx.kira(box.right - 4, box.top + 14, { r: 8, life: 0.55 });
       fx.kira(box.cx + 4, box.bottom - 4, { r: 5, life: 0.45 });
     } else {
-      fx.burst(box.cx, box.cy, { r: 18, spikes: 9, life: 0.3 });
-      fx.ticks(box.cx, box.cy, { dir: -Math.PI / 2, n: 5, r: 17, len: 8, fan: 0.6, life: 0.45 });
+      fx.burst(box.cx, box.cy, { r: 13, spikes: 9, life: 0.28 });
+      fx.ticks(box.cx, box.cy, { dir: -Math.PI / 2, n: 5, r: 15, len: 9, fan: 0.6, life: 0.45 });
     }
   });
 }
