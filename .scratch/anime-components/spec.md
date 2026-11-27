@@ -1,6 +1,6 @@
 # Anime components
 
-Status: ready-for-agent
+Status: done
 
 ## Problem Statement
 
@@ -105,3 +105,4 @@ Changes from the spec, decided while building (2026-11-27):
 - **One word per reaction.** In frame sheets, ปัง! at the last press and ตึ้ง!! on the result landed on top of each other. The last press now throws the small answer effect, and the result owns the hit and its word. The result burst sits just past the end of the heading's last line, so it does not cover the title.
 - **Fork trimmed further.** It also drops upstream's frame-stepping hooks. `drawn-effects.md` describes how to step frames without them.
 - **Theme switch** (asked in chat during the build). The theme button became a drawn toggle switch, after upstream's toggle. Upstream's toggle is painted frames in its own colours, with カチッ painted in, so this one is drawn in code. The knob is itself the sun or the moon (asked in chat), drawn in two tones and a line. It crouches, dashes with speed lines, and slams into the end. The theme's circle reveal then grows from the knob, and the impact lands inside it. This also fixes the flourish that played 0.5 s late, after the reveal ended. `lines` came back from upstream for the speed lines. See `docs/documents/theme.md`.
+- Merged in PR #9 (merge commit 37c472f on `main`). The follow-ups after it (the muted dark-mode yellows and the Sakuga VFX credit in the footer) are on `haikyu-quiz` at 865f777, waiting for their own PR.
