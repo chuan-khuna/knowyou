@@ -140,6 +140,8 @@ export function QuizScreen({ quiz, title, intro }: QuizScreenProps) {
     () => startWith(screen.kind === "playing" ? screen.play.total : QUESTIONS_PER_PLAY),
     [startWith, screen],
   );
+  // Back to ตั้งค่า as the player left it; the save effect drops the record once the intro shows.
+  const reset = useCallback(() => setScreen({ kind: "intro" }), []);
 
   const play = screen.kind === "playing" ? screen.play : null;
   const revealing = revealOn && screen.kind === "playing" && screen.seen < screen.play.answered.length;
@@ -225,7 +227,7 @@ export function QuizScreen({ quiz, title, intro }: QuizScreenProps) {
   if (revealing) {
     const last = current.answered.at(-1)!;
     return (
-      <Shell status={status(last.question.number)} onReset={playAgain} crowded>
+      <Shell status={status(last.question.number)} onReset={reset} crowded>
         <QuestionHeading card={last.question} />
         <Reveal answer={last} />
         <BigButton onClick={advance} autoFocus>
@@ -245,7 +247,7 @@ export function QuizScreen({ quiz, title, intro }: QuizScreenProps) {
   }
 
   return (
-    <Shell status={status(current.question.number)} onReset={playAgain} crowded>
+    <Shell status={status(current.question.number)} onReset={reset} crowded>
       <QuestionHeading card={current.question} />
       <ol className="mt-6 grid gap-4">
         {current.question.options.map((option, i) => (
