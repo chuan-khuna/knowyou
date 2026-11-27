@@ -107,7 +107,7 @@
   .mock-ad {
     --ad-edge: color-mix(in oklch, var(--color-ink) 80%, var(--color-paper));
     --ad-shadow: color-mix(in oklch, var(--ad-tone) 28%, var(--color-rule));
-    --fx-tone: var(--ad-tone); /* the drawn effects' tone, src/lib/sakuga.ts */
+    --fx-tone: var(--ad-tone); /* the drawn effects' tone, src/lib/anime-fx */
     position: relative;
     border: 2px solid var(--ad-edge);
     border-radius: var(--radius-stock);

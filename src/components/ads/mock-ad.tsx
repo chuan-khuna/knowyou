@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, type PointerEvent, type ReactNode } from "react";
-import { entranceSparkle, pressEffect, type SakugaWord } from "@/lib/sakuga";
+import { entranceSparkle, pressEffect, type WordId } from "@/lib/anime-fx";
 
 export type AdTone = "clay" | "sea" | "moss" | "wheat" | "plum" | "slate";
 
@@ -15,8 +15,8 @@ interface MockAdProps {
   headline: string;
   copy: string;
   cta: string;
-  /** The manga sound word a press throws. */
-  word: SakugaWord;
+  /** The Thai sound word a press throws. */
+  word: WordId;
 }
 
 /**
@@ -25,7 +25,7 @@ interface MockAdProps {
  * link. The first time it scrolls into view it sets `data-motion="seen"`,
  * which plays the entrance in `surfaces.css` (`pending` hides it until then)
  * and throws one sparkle on the art tile. A press, released inside the ad,
- * throws an impact, a puff and `word` at the press point (`@/lib/sakuga`).
+ * throws an impact, a puff and `word` at the press point (`@/lib/anime-fx`).
  * See "Ad slot" in `docs/documents/quiz.md`.
  */
 export function MockAd({ tone, art, headline, copy, cta, word }: MockAdProps) {

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { AdsFigure, AdsNightMarket } from "@/components/ads";
 import { PlayAgainBar, type ResultControls } from "@/components/play-screen";
+import { ResultHeading } from "@/components/result-heading";
 import type { RevealParser } from "@/lib/play-record";
 import { sound } from "@/lib/sound";
 import { isHit, toPersonaSource, type AgeGuessValue, type FinishedAnimeAgePlay, type Stratum } from "@/games/anime-age";
@@ -49,7 +50,7 @@ export function AnimeAgeResult({
   return (
     <div>
       <section className="sheet--gold mt-8 rounded-card p-6 sm:p-8">
-        <h1 className="guess max-w-none">{play.guess.label}</h1>
+        <ResultHeading className="guess max-w-none">{play.guess.label}</ResultHeading>
         <p className="num mt-6 flex flex-wrap gap-x-4 font-semibold">
           <span>ถาม {play.questionsAsked} ข้อ</span>
           <span>มั่นใจ {Math.round(play.confidence * 100)}%</span>

@@ -7,7 +7,7 @@ export function AdsCafe() {
       headline="คาเฟ่ช่องที่ 9"
       copy="นั่งอ่านการ์ตูนได้ทั้งวัน กาแฟ 55 บาท"
       cta="ดูแผนที่"
-      word="kachi"
+      word="ting"
       art={
         <>
           <path className="puff" d="M17 14 q3-3 0-6 M24 14 q3-3 0-6" />

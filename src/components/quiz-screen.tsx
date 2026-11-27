@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useState, type Dispatch, type ReactNode, type SetStateAction } from "react";
+import { useCallback, useEffect, useRef, useState, type Dispatch, type ReactNode, type SetStateAction } from "react";
 import {
   MIN_QUESTIONS_PER_PLAY,
   QUESTIONS_PER_PLAY,
@@ -23,10 +23,11 @@ import {
   type Tier,
 } from "@/games/quiz";
 import { setRevealOn, useRevealOn } from "@/lib/quiz-reveal";
-import { copyEffect } from "@/lib/sakuga";
+import { answerEffect, copyEffect, expectLanding, finishEffect, nextEffect, pressPoint, startEffect, warmEffects } from "@/lib/anime-fx";
 import { sound } from "@/lib/sound";
 import { AdsCafe, AdsFigure, AdsManga, AdsRamen, AdsSketchbook } from "@/components/ads";
-import { BigButton, PlayAgainBar, Shell } from "@/components/play-screen";
+import { BigButton, optionButton, PlayAgainBar, Shell, type Press } from "@/components/play-screen";
+import { ResultHeading } from "@/components/result-heading";
 
 interface QuizScreenProps {
   readonly quiz: Quiz;
@@ -121,7 +122,10 @@ export function QuizScreen({ quiz, title, intro }: QuizScreenProps) {
   // Switching the reveal off, here or in another tab, moves past an answer on show.
   useEffect(() => {
     if (!revealOn && screen.kind === "playing" && screen.seen < screen.play.answered.length) {
-      if (screen.play.phase === "finished") sound.guess();
+      if (screen.play.phase === "finished") {
+        sound.guess();
+        expectLanding();
+      }
       setScreen({ ...screen, seen: screen.play.answered.length });
     }
   }, [revealOn, screen]);
@@ -146,20 +150,31 @@ export function QuizScreen({ quiz, title, intro }: QuizScreenProps) {
   const reset = useCallback(() => setScreen({ kind: "intro" }), []);
 
   const play = screen.kind === "playing" ? screen.play : null;
+  const startButton = useRef<HTMLButtonElement>(null);
+  const advanceButton = useRef<HTMLButtonElement>(null);
+
+  useEffect(warmEffects, []);
+
   const revealing = revealOn && screen.kind === "playing" && screen.seen < screen.play.answered.length;
 
   const choose = useCallback(
-    (key: string) => {
+    (key: string, press: Press = { el: optionButton(key) }) => {
       if (play?.phase !== "asking" || revealing) return;
       const next = quiz.answer(play, key);
       if (revealOn) {
         if (next.answered.at(-1)!.correct) sound.right();
         else sound.wrong();
+        answerEffect(press.el, press.at);
         setScreen({ kind: "playing", play: next, seen: play.answered.length });
         return;
       }
-      if (next.phase === "finished") sound.guess();
-      else sound.answer();
+      if (next.phase === "finished") {
+        sound.guess();
+        finishEffect(press.el, press.at);
+      } else {
+        sound.answer();
+        answerEffect(press.el, press.at);
+      }
       setScreen({ kind: "playing", play: next, seen: next.answered.length });
     },
     [quiz, play, revealing, revealOn],
@@ -178,7 +193,12 @@ export function QuizScreen({ quiz, title, intro }: QuizScreenProps) {
       if (event.key === "Enter" && event.target instanceof HTMLButtonElement) return;
       if (event.key === "Enter" && (screen.kind === "intro" || revealing)) {
         event.preventDefault();
-        return screen.kind === "intro" ? start() : advance();
+        if (screen.kind === "intro") {
+          if (countValid) startEffect(startButton.current);
+          return start();
+        }
+        if (play) (play.phase === "finished" ? finishEffect : nextEffect)(advanceButton.current);
+        return advance();
       }
       if (play?.phase !== "asking" || revealing) return;
       const option = play.question.options[Number(event.key) - 1];
@@ -186,7 +206,7 @@ export function QuizScreen({ quiz, title, intro }: QuizScreenProps) {
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [screen.kind, play, revealing, start, choose, advance]);
+  }, [screen.kind, play, revealing, countValid, start, choose, advance]);
 
   if (screen.kind === "checking") return <Shell>{null}</Shell>;
 
@@ -209,7 +229,7 @@ export function QuizScreen({ quiz, title, intro }: QuizScreenProps) {
           </span>
           <input type="checkbox" role="switch" className="switch" checked={revealOn} onChange={(event) => setRevealOn(event.target.checked)} />
         </label>
-        <BigButton onClick={start} disabled={!countValid}>
+        <BigButton ref={startButton} onClick={start} fx={startEffect} disabled={!countValid}>
           เริ่มเลย
         </BigButton>
         <AdsCafe />
@@ -233,7 +253,7 @@ export function QuizScreen({ quiz, title, intro }: QuizScreenProps) {
       <Shell status={status(last.question.number)} onReset={reset} crowded>
         <QuestionHeading card={last.question} />
         <Reveal answer={last} />
-        <BigButton onClick={advance} autoFocus>
+        <BigButton ref={advanceButton} onClick={advance} fx={current.phase === "finished" ? finishEffect : nextEffect} autoFocus>
           {current.phase === "finished" ? "ดูคะแนน" : "ข้อต่อไป"}
         </BigButton>
         <p className="mt-4 hidden select-none text-center text-sm text-muted sm:block">กด Enter เพื่อไปต่อ</p>
@@ -256,7 +276,12 @@ export function QuizScreen({ quiz, title, intro }: QuizScreenProps) {
       <ol className="mt-6 grid gap-4">
         {current.question.options.map((option, i) => (
           <li key={option.key}>
-            <button type="button" onClick={() => choose(option.key)} className="stock option">
+            <button
+              type="button"
+              onClick={(event) => choose(option.key, { el: event.currentTarget, at: pressPoint(event) })}
+              className="stock option"
+              data-option-key={option.key}
+            >
               <kbd className="option-key">{i + 1}</kbd>
               <OptionLabel option={option} />
             </button>
@@ -618,7 +643,7 @@ function Result({ play, playAgain }: { play: FinishedQuizPlay; playAgain: () => 
         <p className="guess">
           {play.score}/{play.total}
         </p>
-        <h1 className="mt-4 max-w-none text-3xl">{play.band.title}</h1>
+        <ResultHeading className="mt-4 max-w-none text-3xl">{play.band.title}</ResultHeading>
         <p className="mt-2 text-lg">{play.band.line}</p>
         <div className="mt-5 flex flex-wrap items-center gap-2">
           <SeedChip code={seedCode(play.seed)} link={shareLink(play)} className="inline-flex" />

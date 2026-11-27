@@ -7,7 +7,7 @@ export function AdsSketchbook() {
       headline="สมุดสเก็ตช์เส้นไว"
       copy="กระดาษ 160 แกรม ไม่ซึมทุกปากกา"
       cta="สั่งเลย"
-      word="shu"
+      word="fiw"
       art={
         <>
           <path className="spot" d="M8 9 h24 v32 h-24z" />

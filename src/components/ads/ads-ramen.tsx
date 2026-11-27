@@ -7,7 +7,7 @@ export function AdsRamen() {
       headline="ราเมงจันทร์เสี้ยว"
       copy="ซุปกระดูกหมูเคี่ยว 12 ชั่วโมง"
       cta="ดูเมนู"
-      word="pon"
+      word="pok"
       art={
         <>
           <path d="M30 5 L38 20 M37 4 L43 18" />

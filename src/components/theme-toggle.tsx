@@ -2,7 +2,7 @@
 
 import { useRef, type MouseEvent } from "react";
 import { flushSync } from "react-dom";
-import { themeEffect } from "@/lib/sakuga";
+import { themeEffect } from "@/lib/anime-fx";
 import { toggleTheme, useTheme } from "@/lib/theme";
 
 const REVEAL_MS = 500;

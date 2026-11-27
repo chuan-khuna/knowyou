@@ -1,6 +1,6 @@
 "use client";
 
-import { soundEffect } from "@/lib/sakuga";
+import { soundEffect } from "@/lib/anime-fx";
 import { setSoundOn, useSoundOn } from "@/lib/sound";
 
 /**

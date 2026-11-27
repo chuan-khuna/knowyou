@@ -1,4 +1,4 @@
-/* Page chrome: the shell, the top strip, the question head and the sticky play-again band. */
+/* Page chrome: the shell, the top strip, the question head, the sticky play-again band and the drawn-effects canvas. */
 @layer components {
   .shell {
     width: 100%;
@@ -108,5 +108,15 @@
      Important because a status may carry a display utility, and utilities outrank this layer. */
   .topbar-end:has(> .icon-button--armed) > :not(button) {
     display: none !important;
+  }
+
+  /* The drawn effects' one canvas (src/lib/anime-fx), over everything and never in the way of a tap. */
+  .anime-fx {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: calc(var(--z-tooltip) + 100);
   }
 }

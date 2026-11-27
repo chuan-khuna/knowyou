@@ -7,7 +7,7 @@ export function AdsFigure() {
       headline="ฟิกเกอร์นักดาบจันทรา 1/7"
       copy="เปิดจองถึงสิ้นเดือน มัดจำ 500 บาท"
       cta="จองเลย"
-      word="don"
+      word="tueng"
       art={
         <>
           <circle className="spot" cx="22" cy="12" r="5" />

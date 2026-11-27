@@ -7,7 +7,7 @@ export function AdsNightMarket() {
       headline="ตลาดนัดโอตาคุยามค่ำ"
       copy="ทุกวันเสาร์ ห้าโมงเย็นถึงเที่ยงคืน"
       cta="ดูวันจัด"
-      word="zuza"
+      word="pang"
       art={
         <>
           <path d="M22 3 v5" />
