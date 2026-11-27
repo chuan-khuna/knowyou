@@ -218,16 +218,30 @@ export function copyEffect(el: Element): void {
   });
 }
 
-/** The theme switch once the new theme shows: a few stars for dark, a small sun flare for light. */
-export function themeEffect(el: Element, dark: boolean): void {
-  draw(el, (fx, P, box) => {
+/** The theme switch's knob setting off, moving `dir` (1 right, -1 left): speed lines streak out behind it as it smears. */
+export function dashEffect(knob: Element, dir: number): void {
+  draw(knob, (fx, P, box) => {
+    setTimeout(() => fx.lines(P, dir > 0 ? box.left + 2 : box.right - 2, box.cy, { n: 4, dir: dir > 0 ? Math.PI : 0, len: 16, spread: 6, life: 0.24 }), 70);
+  });
+}
+
+/**
+ * The theme switch's knob slamming into the far end, as the new theme starts
+ * to show: a small impact at the end it hit, wedges flying off that end, then
+ * a sun flare (to light) or a few stars (to dark).
+ */
+export function slamEffect(knob: Element, dark: boolean): void {
+  draw(knob, (fx, P, box) => {
+    const dir = dark ? 1 : -1;
+    const edge = dark ? box.right : box.left;
+    fx.burst(P, edge, box.cy, { r: 12, spikes: 9, life: 0.26 });
+    fx.ticks(P, edge, box.cy, { n: 3, r: 10, len: 9, dir: dark ? 0 : Math.PI, fan: 0.55, life: 0.4 });
     if (dark) {
-      fx.kira(P, box.left + 6, box.top + 8, { r: 6, life: 0.5 });
-      fx.kira(P, box.right - 4, box.top + 14, { r: 8, life: 0.55 });
-      fx.kira(P, box.cx + 4, box.bottom - 4, { r: 5, life: 0.45 });
+      fx.kira(P, box.left - 14, box.top - 2, { r: 6, life: 0.55 });
+      fx.kira(P, box.cx - 26, box.bottom + 4, { r: 5, life: 0.5 });
+      fx.kira(P, box.cx + 2 * dir, box.top - 12, { r: 8, life: 0.6 });
     } else {
-      fx.burst(P, box.cx, box.cy, { r: 13, spikes: 9, life: 0.28 });
-      fx.ticks(P, box.cx, box.cy, { dir: -Math.PI / 2, n: 5, r: 15, len: 9, fan: 0.6, life: 0.45 });
+      fx.ticks(P, box.cx, box.cy, { dir: -Math.PI / 2, n: 5, r: 15, len: 8, fan: 0.6, life: 0.45 });
     }
   });
 }

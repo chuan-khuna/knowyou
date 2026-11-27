@@ -271,6 +271,30 @@ export function burst(P: Palette, x: number, y: number, { r = 44, spikes = 13, l
   });
 }
 
+/** Speed lines: strokes that shoot out one way from (x, y) and thin away. */
+export function lines(P: Palette, x: number, y: number, { n = 7, dir = Math.PI, len = 46, spread = 26, life = 0.3 } = {}): void {
+  for (let i = 0; i < n; i++) {
+    const o = rnd(-spread, spread);
+    const l = len * rnd(0.5, 1.3);
+    const d = rnd(0, 0.25);
+    const w = rnd(1, 2.6);
+    add(life, (k) => {
+      const kk = clamp((k - d) / (1 - d));
+      const a = out(kk);
+      const b = inn(kk);
+      const px = x - Math.sin(dir) * o;
+      const py = y + Math.cos(dir) * o;
+      if (kk <= 0) return;
+      g.strokeStyle = P.line;
+      g.lineWidth = w * (1 - b);
+      g.beginPath();
+      g.moveTo(px + Math.cos(dir) * l * b * 1.4, py + Math.sin(dir) * l * b * 1.4);
+      g.lineTo(px + Math.cos(dir) * l * (0.2 + a * 1.2), py + Math.sin(dir) * l * (0.2 + a * 1.2));
+      g.stroke();
+    });
+  }
+}
+
 /** Accent ticks: little wedges that point at something and fly off it. */
 export function ticks(P: Palette, x: number, y: number, { n = 3, r = 16, len = 9, dir = -0.9, life = 0.4, fan = 0.42 } = {}): void {
   add(life, (k) => {

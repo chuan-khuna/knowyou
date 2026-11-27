@@ -9,7 +9,7 @@ The small hand-drawn effects a tap throws: an impact star, a puff of smoke, spar
   - The core is an ES module in TypeScript.
   - Each effect takes its palette when it starts, instead of reading one shared palette every frame, so two effects in different tones never recolour each other.
   - The words are byou's Thai words.
-  - These parts are gone, because no moment uses them: the custom-element base, the `--sk-*` styles, the back layers, the frame-stepping hooks, and the effects `shards`, `ring`, `splash`, `slash`, `lines`, `donut` and `wob`. Take one back from upstream when a moment needs it.
+  - These parts are gone, because no moment uses them: the custom-element base, the `--sk-*` styles, the back layers, the frame-stepping hooks, and the effects `shards`, `ring`, `splash`, `slash`, `donut` and `wob`. Take one back from upstream when a moment needs it.
 - **Font.** The words are set in [Playpen Sans Thai](https://github.com/TypeTogether/Playpen-Sans) (TypeTogether and others). The licence is SIL OFL 1.1. It was taken from `google/fonts` at `ofl/playpensansthai`, commit `5026800714d07231937d92eb4cceabf06e05d74e`. The font and its `OFL.txt` are in `scripts/fonts/`. The font is a build input only: the browser gets the words as paths, never the font file.
 - **What the core does on the page.** It makes no network requests, uses no `eval` and has no dependencies. On the first effect it appends one `canvas.anime-fx` to `<body>`. The canvas is fixed over the viewport, takes no pointer events, and is `aria-hidden`. Its rule is in `layout.css`. The canvas draws only while an effect is alive, and is clear otherwise.
 
@@ -55,7 +55,7 @@ Each effect draws in one palette (fill, shade, line, accent). The palette comes 
 | line | `--color-ink` 80% into `--color-paper` (the mock ads' border colour) |
 | accent | `--fx-tone` 55% into `--color-card` |
 
-`--fx-tone` is the ad's own tone on `.mock-ad` (`surfaces.css`), `--color-mint-deep` on `.seed-chip`, and `--color-accent-deep` on `.icon-button` (`controls.css`). Answer options, primary buttons and result headings take the default.
+`--fx-tone` is the ad's own tone on `.mock-ad` (`surfaces.css`), `--color-mint-deep` on `.seed-chip`, and `--color-accent-deep` on `.icon-button` and `.theme-switch` (`controls.css`). Answer options, primary buttons and result headings take the default.
 
 `paletteOf()` resolves each colour through a hidden probe `<span>` inside the element and `getComputedStyle`, because canvas takes only plain colour strings. Because it reads at every effect, an effect always draws in the theme showing at that moment, with no theme listener.
 
@@ -75,7 +75,8 @@ The play moments fire from the play logic, beside the sound cue of the same mome
 | A press on a mock ad, released inside it | `pressEffect` | At the press point: a small impact star (radius 30), one puff, and the ad's sound word above it (52px wide) |
 | A mock ad's entrance | `entranceSparkle` | One sparkle on the art tile's top-right corner, 320 ms after the entrance starts |
 | A seed code or share link copied | `copyEffect` | The chip squashes and springs back (320 ms); ติ๊ง! just above it, a glint on its right end, three ticks off its top-right corner |
-| The theme switch, after the circle reveal ends | `themeEffect` | To dark: three small sparkles around the button. To light: a small impact star with five ticks, a sun flare |
+| The theme switch's knob setting off | `dashEffect` | 70 ms in, four speed lines streak out behind the knob |
+| The knob slamming into the far end, as the new theme starts to show | `slamEffect` | A small impact star at the end it hit, three wedges off that end; then to light a ring of rays like a sun flare, to dark three stars around the switch |
 | The sound button | `soundEffect` | The button squashes and springs back. Turning on: three ticks to the right, like sound waves, and a small ป๊อก below. Turning off: one small puff |
 
 The press that ends a play throws only the small answer effect. The hit and its word belong to the result, so the screen never shows two words at once, which is upstream's rule of one word per reaction.
@@ -84,7 +85,7 @@ No effect depends on whether an answer was right. The quiz's reveal stays the on
 
 The squashes are Web Animations on the button, skipped under reduced motion. A double-click or Enter shows no `:active` state, so CSS alone could not show the press.
 
-The theme switch's effect waits for `transition.finished`: while a view transition runs, the live page and the canvas with it sit under the transition's snapshots.
+The theme switch's slam fires once its view transition is ready. The new page shows live inside the growing circle, so the impact appears inside the circle as it grows (`theme.md`).
 
 ## Checking a change
 

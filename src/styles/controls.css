@@ -454,6 +454,87 @@
     translate: none;
   }
 
+  /* The theme switch (src/components/theme-toggle.tsx): a sky track by day and a night track
+     by night, and a knob that is the sun or the moon, each a light tone, a shadow tone and a line. The knob's dash is a Web Animation;
+     TRAVEL in the component is the track's inside width less the knob (52 - 2·2 - 2·2 - 22). */
+  .theme-switch {
+    --fx-tone: var(--color-accent-deep); /* the dash and slam effects' tone, src/lib/anime-fx */
+    --switch-line: color-mix(in oklch, var(--color-ink) 80%, var(--color-paper));
+    display: inline-flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    width: 58px;
+    height: 44px;
+    padding: 0;
+    border: 0;
+    border-radius: var(--radius-input);
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .theme-switch:focus-visible {
+    outline: 2px solid var(--color-focus);
+    outline-offset: 2px;
+  }
+
+  .theme-switch-track {
+    position: relative;
+    width: 52px;
+    height: 30px;
+    border: 2px solid var(--switch-line);
+    border-radius: 999px;
+    /* Each track shows only in its own theme: the sky in light, the night in dark. */
+    background: color-mix(in oklch, var(--color-accent-2) 24%, var(--color-card));
+  }
+
+  .theme-switch[aria-checked="true"] .theme-switch-track {
+    background: color-mix(in oklch, var(--color-accent-2) 22%, var(--color-paper));
+  }
+
+  .theme-switch-knob {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    display: grid;
+    place-items: center;
+    width: 22px;
+    height: 22px;
+    transition: scale var(--dur-micro) var(--ease-snap);
+  }
+
+  .theme-switch-knob svg {
+    overflow: visible;
+  }
+
+  .theme-switch-line {
+    fill: none;
+    stroke: var(--switch-line);
+    stroke-width: 1.8;
+  }
+
+  .theme-switch-sun .theme-switch-light { fill: var(--color-accent); }
+  .theme-switch-sun .theme-switch-shade { fill: var(--color-accent-deep); }
+  .theme-switch-rays line {
+    stroke: var(--color-accent-deep);
+    stroke-width: 2.2;
+    stroke-linecap: round;
+  }
+
+  /* In dark mode the ink is the light cream, so the moon is drawn from it, with the dark paper as its line. */
+  .theme-switch-moon .theme-switch-light { fill: var(--color-ink); }
+  .theme-switch-moon .theme-switch-shade,
+  .theme-switch-moon .theme-switch-crater { fill: color-mix(in oklch, var(--color-ink) 72%, var(--color-paper)); }
+  .theme-switch-moon .theme-switch-line { stroke: var(--color-paper); stroke-width: 1.4; }
+
+  .theme-switch[aria-checked="true"] .theme-switch-knob {
+    translate: 22px 0;
+  }
+
+  .theme-switch:hover .theme-switch-knob {
+    scale: 1.08;
+  }
+
   .icon-button--armed,
   .icon-button--armed:hover,
   .icon-button--armed:active {
